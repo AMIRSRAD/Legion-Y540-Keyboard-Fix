@@ -1,0 +1,7 @@
+build/
+logs/
+*.etl
+*.bin
+*.zip
+samples/
+__pycache__/

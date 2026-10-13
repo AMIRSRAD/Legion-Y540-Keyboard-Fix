@@ -1,0 +1,26 @@
+ 2067 08:31:09.123739 HUB3 43  boot device bound: \??\USB#VID_048D&PID_89DB#5&1f456139&0&9#{a5dcbf10-6530-11d2-901f-00c04fb951ed}  port=9  UsbDevice=0x1AF1065D33E8
+ 2069 08:31:09.123832 HUB3 51  D0 (resume) requested TargetState=0x1
+ 2073 08:31:09.123835 HUB3 52  D0 (resume) completed NtStatus=0x0
+ 2075 08:31:09.125099 UCX control completion setup=0x80,0x6,0x100,0x12 status=0x0 bytes=0x12
+ 2077 08:31:09.125975 UCX control completion setup=0x80,0x6,0x200,0x9 status=0x0 bytes=0x9
+ 2079 08:31:09.127740 UCX control completion setup=0x80,0x6,0x200,0x22 status=0x0 bytes=0x22
+ 2115 08:31:09.128917 UCX control completion setup=0x21,0xA,0x0,0x0 status=0x0 bytes=0x0
+ 2117 08:31:09.130288 UCX control completion setup=0x81,0x6,0x2200,0x55 status=0x0 bytes=0x15
+ 2227 08:31:15.157666 HUB3 96  idle-suspend path entered 
+ 2234 08:31:15.157678 HUB3 98  idle-suspend path continued 
+ 2235 08:31:15.157731 HUB3 53  low-power (suspend) requested TargetState=0x4
+ 2262 08:31:15.157843 HUB3 54  low-power (suspend) completed NtStatus=0x0
+ 2266 08:31:15.648191 HUB3 97  idle request completed/cancelled NtStatus=0xC0000120
+ 2267 08:31:15.648300 HUB3 51  D0 (resume) requested TargetState=0x1
+ 2285 08:31:15.698779 HUB3 100 port 9 status=0x103 change=0x4  (change 0x4 = suspend/resume change)
+ 2294 08:31:15.698795 HUB3 100 port 9 status=0x103 change=0x0  (change 0x4 = suspend/resume change)
+ 2336 08:31:15.709524 HUB3 52  D0 (resume) completed NtStatus=0x0
+ 2342 08:31:15.709784 UCX control completion setup=0x21,0xA,0x0,0x0 status=0xC0000011 bytes=0x0
+ 2348 08:31:15.743813 UCX control completion setup=0x21,0x9,0x300,0x3F status=0xC0000011 bytes=0x0
+ 2354 08:31:15.854485 UCX control completion setup=0x21,0x9,0x300,0x3F status=0xC0000011 bytes=0x0
+ 2360 08:31:15.965392 UCX control completion setup=0x21,0x9,0x300,0x3F status=0xC0000011 bytes=0x0
+ 3063 08:31:36.128217 HUB3 96  idle-suspend path entered 
+ 3070 08:31:36.128238 HUB3 98  idle-suspend path continued 
+ 3071 08:31:36.128298 HUB3 53  low-power (suspend) requested TargetState=0x4
+ 3098 08:31:36.128482 HUB3 54  low-power (suspend) completed NtStatus=0x0
+... 121 control transfers on this device completed with USBD 0xC0000011 in total; none succeeded after the resume.
