@@ -1,0 +1,48 @@
+Y540 firmware44 NO-DEEP-SLEEP EXPERIMENT 1
+Experimental modified firmware. Not a confirmed repair. Hardware untested.
+
+This image bypasses one identified deep-sleep entry gate before its sleep
+flags, clocks, and timer changes. It does not disable every low-power path.
+It may increase power use or change suspend/wake behavior. Modified firmware
+could stop USB enumeration. Stock firmware is included, but rollback requires
+a usable update interface; recovery is not guaranteed.
+
+Files:
+  44-nosleep-exp1.bin   EXPERIMENTAL image; checksum 5642
+  44-stock-restore.bin Original firmware44; checksum 5622
+  SHFU.ini             Original update profile
+
+Use the fix2 updater that previously completed your hardware update.
+This package intentionally contains no automatic flashing script.
+
+Installation on the affected Y540 only:
+1. Save work. Start in the known working Windows keyboard state, using your
+   forced-power-off recovery if needed. Connect AC and keep it connected.
+2. Close other updater copies. Open fix2 as administrator.
+3. In the Firmware row, Browse to 44-nosleep-exp1.bin from THIS folder.
+4. In the SHFU.ini row, Browse to SHFU.ini from THIS folder.
+5. Click Validate firmware. It must show 55296 bytes, sum/stored 5642,
+   residual 0000. If it does not, stop.
+6. Click Advanced firmware write ONCE and read the confirmation. This performs
+   a real erase/write after its required backup. Do not interrupt erase/write.
+7. If it fails, stop and retain all logs and backup files. Do not keep retrying.
+
+After a completed, matching readback:
+- Confirm typing immediately after the update.
+- Save work, perform an ordinary Windows Restart, then test typing.
+- If that succeeds, do ordinary Windows Shut down then power on and test.
+- Record each result separately. Do not treat the successful flash as proof
+  that the startup fault is repaired. No extra AC/battery tests are needed yet.
+- Send the entire new logs folder and any before-flash backup file.
+
+If failure occurs, the existing forced-off procedure may recover it, but has
+not been validated with this modified image. Use an external keyboard to save
+work before forced power-off when possible.
+
+Rollback, only if a healthy update interface is available:
+Select 44-stock-restore.bin in fix2, Validate (5622), and use the normal
+backup-before-write workflow. This restores original bytes; stock firmware
+was already shown not to repair your startup fault. Do not use BIOS/EC files.
+
+Both images still identify as firmware revision44. Distinguish them by filename,
+checksum and SHA-256 in patch-manifest.json, not the USB revision string.

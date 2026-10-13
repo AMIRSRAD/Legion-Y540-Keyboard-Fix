@@ -1,0 +1,25 @@
+Y540 updater fix2 (0.3.1)
+
+Corrects fix1 rejecting 17-byte normal-mode feature reports. Boot reports
+still require 64 bytes. Firmware 44.bin is unchanged. Hardware validation is
+outstanding; this is not a proven repair for the keyboard startup fault.
+Original fix1 source and releases are preserved.
+
+For the owner-authorized update attempt:
+1. Extract the whole folder on the affected Y540. Close other updater copies.
+2. Begin with the keyboard typing normally in Windows after the established
+   forced-power-off recovery. Connect AC and keep it connected.
+3. Run Y540Updater.exe as administrator. Confirm the window says fix2.
+4. Select "Advanced firmware write" once and read its confirmation.
+   This can erase/write firmware. Do not interrupt erasing or writing.
+5. If it fails, stop. Use "Open logs folder" and retain all logs and backup
+   .bin files. An empty .bin is not a successful backup.
+
+Two matching full-image reads and a saved, flushed backup are required before
+an erase. Identity/chip checks are retained. Descriptor-failure devices have
+no usable HID update interface.
+
+Logs: logs beside the EXE, fallback LocalAppData\Y540Updater-fix2\logs.
+Nothing uploads automatically.
+Rebuild: run .\build.ps1 in the fix2 source folder with Windows x64 MinGW-w64
+GCC and windres. This builds the updater, not the supplied MCU firmware.

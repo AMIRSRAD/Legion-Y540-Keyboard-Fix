@@ -1,0 +1,26 @@
+﻿2026-10-12T13:50:23.5013934Z USB diagnosis only: no device restart, HID feature report, firmware write, or power-policy change is performed by this script.
+2026-10-12T13:50:23.5078420Z Operator scenario: keyboard already failing; observe one manually confirmed fix1 USB retry.
+2026-10-12T13:50:23.7188471Z logman create trace -n Y540Diag-94946c51a216407f8abe36024f93517f -o C:\Users\user\Desktop\Y540-USB-trace-kit\Y540-USB-trace-kit\recording-20261012T135023471Z\usb.etl -f bincirc -max 128 -nb 16 64 -bs 64
+2026-10-12T13:50:23.7546219Z The command completed successfully.
+2026-10-12T13:50:23.7561237Z exit_code=0
+2026-10-12T13:50:23.7679152Z logman update trace -n Y540Diag-94946c51a216407f8abe36024f93517f -p Microsoft-Windows-USB-USBXHCI (Default,StateMachine,HeadersBusTrace)
+2026-10-12T13:50:23.9081411Z The command completed successfully.
+2026-10-12T13:50:23.9091362Z exit_code=0
+2026-10-12T13:50:23.9186018Z logman update trace -n Y540Diag-94946c51a216407f8abe36024f93517f -p Microsoft-Windows-USB-UCX (Default,StateMachine,HeadersBusTrace)
+2026-10-12T13:50:24.0858484Z The command completed successfully.
+2026-10-12T13:50:24.0868495Z exit_code=0
+2026-10-12T13:50:24.0997929Z logman update trace -n Y540Diag-94946c51a216407f8abe36024f93517f -p Microsoft-Windows-USB-USBHUB3 (Default,StateMachine,HeadersBusTrace)
+2026-10-12T13:50:24.2375354Z The command completed successfully.
+2026-10-12T13:50:24.2375354Z exit_code=0
+2026-10-12T13:50:24.2495533Z logman start -n Y540Diag-94946c51a216407f8abe36024f93517f
+2026-10-12T13:50:24.7606085Z The command completed successfully.
+2026-10-12T13:50:24.7747619Z exit_code=0
+2026-10-12T13:50:24.7843468Z TRACE STARTED. Events before this moment are not recorded.
+2026-10-12T13:53:24.8525086Z Capture wait ended at 180 seconds.
+2026-10-12T13:53:24.8535669Z logman stop -n Y540Diag-94946c51a216407f8abe36024f93517f
+2026-10-12T13:53:25.9066897Z The command completed successfully.
+2026-10-12T13:53:25.9066897Z exit_code=0
+2026-10-12T13:53:25.9155951Z TRACE STOPPED.
+2026-10-12T13:53:25.9252483Z logman delete -n Y540Diag-94946c51a216407f8abe36024f93517f
+2026-10-12T13:53:25.9639223Z The command completed successfully.
+2026-10-12T13:53:25.9649246Z exit_code=0

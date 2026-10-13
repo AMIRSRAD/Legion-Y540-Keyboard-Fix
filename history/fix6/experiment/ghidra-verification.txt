@@ -1,0 +1,2 @@
+PASS: CODE:4c79 SJMP 0x4ce1 (2 bytes) -> CODE:4ce1 RET
+Static disassembly only; no firmware execution.

@@ -1,0 +1,1 @@
+PASS: offline protocol model; durable backup, no final erase/reset on failure, aborts, chip identity, key cleanup, report 5A only and payload-only D1 responses

@@ -1,0 +1,17 @@
+﻿2026-10-13T05:00:36.1399122Z Final user-authorized experiment. Wrapper records USB events and launches GUI; it never clicks Write, resets a device, or flashes automatically.
+2026-10-13T05:00:36.1485635Z logman create trace -n Y540Fix4-94e25560fb7d425c9893d2dd4e6a04b2 -o C:\Users\user\Desktop\Y540Updater-fix4-portable\Y540Updater-fix4\final-recording-20261013T050036127Z\usb.etl -f bincirc -max 128 -nb 16 64 -bs 64
+2026-10-13T05:00:36.2028542Z The command completed successfully.
+2026-10-13T05:00:36.2078055Z logman update trace -n Y540Fix4-94e25560fb7d425c9893d2dd4e6a04b2 -p Microsoft-Windows-USB-USBXHCI (Default,StateMachine,HeadersBusTrace)
+2026-10-13T05:00:36.3640544Z The command completed successfully.
+2026-10-13T05:00:36.3650547Z logman update trace -n Y540Fix4-94e25560fb7d425c9893d2dd4e6a04b2 -p Microsoft-Windows-USB-UCX (Default,StateMachine,HeadersBusTrace)
+2026-10-13T05:00:36.5239322Z The command completed successfully.
+2026-10-13T05:00:36.5249343Z logman update trace -n Y540Fix4-94e25560fb7d425c9893d2dd4e6a04b2 -p Microsoft-Windows-USB-USBHUB3 (Default,StateMachine,HeadersBusTrace)
+2026-10-13T05:00:36.6717941Z The command completed successfully.
+2026-10-13T05:00:36.6727931Z logman start -n Y540Fix4-94e25560fb7d425c9893d2dd4e6a04b2
+2026-10-13T05:00:37.2065759Z The command completed successfully.
+2026-10-13T05:00:37.2145270Z TRACE STARTED; launching interactive fix4 GUI.
+2026-10-13T05:01:46.6642974Z Updater exited; preparing completed logs.
+2026-10-13T05:01:46.6763318Z logman stop -n Y540Fix4-94e25560fb7d425c9893d2dd4e6a04b2
+2026-10-13T05:01:47.6539993Z The command completed successfully.
+2026-10-13T05:01:47.6550105Z logman delete -n Y540Fix4-94e25560fb7d425c9893d2dd4e6a04b2
+2026-10-13T05:01:47.6949109Z The command completed successfully.
