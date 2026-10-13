@@ -1,0 +1,210 @@
+{
+  "status": "passed",
+  "repository": "AMIRSRAD/Y540-Keyboard",
+  "release": "preservation-2026-10-13",
+  "assets": [
+    {
+      "name": "archive-part-0001.zip",
+      "bytes": 280175431,
+      "sha256": "051c4d92a8554f57252b6e3ff3df2673ff48eb1e7aba3b0219245e1010b92cbc",
+      "downloaded_back_from_github": true
+    },
+    {
+      "name": "archive-part-0002.zip",
+      "bytes": 235771539,
+      "sha256": "876dde6a4efb62ed65f7f2db220d636ef15fcb7c09a4d8a77ab590e0e9a785fc",
+      "downloaded_back_from_github": true
+    },
+    {
+      "name": "archive-part-0003.zip",
+      "bytes": 294211345,
+      "sha256": "b1713ec3014bcaa5a08e91bd6c6e2f46aa1129e16a0737627e88c0543ef1026e",
+      "downloaded_back_from_github": true
+    },
+    {
+      "name": "archive-part-0004.zip",
+      "bytes": 118705331,
+      "sha256": "3509c33e493f319a3d57484e7d3504c487a7750c4b490034354999fe767e8e00",
+      "github_server_sha256_compared": true,
+      "downloaded_back_from_github": false
+    },
+    {
+      "name": "archive-part-0005.zip",
+      "bytes": 118727765,
+      "sha256": "cf158d8dc21228a48b51dda335540adeacab31269a3e6f471ffefb625da22806",
+      "github_server_sha256_compared": true,
+      "downloaded_back_from_github": false
+    },
+    {
+      "name": "archive-part-0006.zip",
+      "bytes": 124322700,
+      "sha256": "af900d4457d246f443c46d6ca6bdab4c7a9aa7fa51a3e70755e72d8b01285b9d",
+      "github_server_sha256_compared": true,
+      "downloaded_back_from_github": false
+    },
+    {
+      "name": "archive-part-0007.zip",
+      "bytes": 108765000,
+      "sha256": "bf44fd896bcfd7b42213a831a030bb1a3ac24e47311eb0973b08c1db5830d53a",
+      "github_server_sha256_compared": true,
+      "downloaded_back_from_github": false
+    },
+    {
+      "name": "archive-part-0008.zip",
+      "bytes": 158112907,
+      "sha256": "01a928f60300eaae038f6c479945f0c57a9bc81d508998a82cc2b5a8dbda6b2a",
+      "github_server_sha256_compared": true,
+      "downloaded_back_from_github": false
+    },
+    {
+      "name": "archive-part-0009.zip",
+      "bytes": 301039200,
+      "sha256": "665368df0d5fe297ae69fbbc096d12cff38c3ee548a4187b5ce6f51b2ff7daed",
+      "github_server_sha256_compared": true,
+      "downloaded_back_from_github": false
+    },
+    {
+      "name": "archive-part-0010.zip",
+      "bytes": 402654526,
+      "sha256": "a30be299c1a1134f1a06217833a0d4d94101d9647d7cf86fd361c3df5246fd2d",
+      "github_server_sha256_compared": true,
+      "downloaded_back_from_github": false
+    },
+    {
+      "name": "archive-part-0011.zip",
+      "bytes": 402654526,
+      "sha256": "9d8cda5506a5c8c6271369b6859e73947147ae85785c109463c6b24151c81ded",
+      "github_server_sha256_compared": true,
+      "downloaded_back_from_github": false
+    },
+    {
+      "name": "archive-part-0012.zip",
+      "bytes": 402654526,
+      "sha256": "7c39789e92d220135fda2f14c597ecbe3dde4a5a0402f434cfb1160e6534b0c5",
+      "github_server_sha256_compared": true,
+      "downloaded_back_from_github": false
+    },
+    {
+      "name": "archive-part-0013.zip",
+      "bytes": 402654526,
+      "sha256": "938264effdfa9a56a662fcde086f25dfbd3fc8d47bacfd522c6d522c1659be16",
+      "github_server_sha256_compared": true,
+      "downloaded_back_from_github": false
+    },
+    {
+      "name": "archive-part-0014.zip",
+      "bytes": 402654526,
+      "sha256": "796af80912327917f2054da3e47a80cb07e9c48a40d4eb6c4ff1ec1172bf0c6b",
+      "github_server_sha256_compared": true,
+      "downloaded_back_from_github": false
+    },
+    {
+      "name": "archive-part-0015.zip",
+      "bytes": 402654526,
+      "sha256": "1cd92ef0f7ddfba0fafd65d4baf8b00a20147845a940f0510fd265da0353a53c",
+      "github_server_sha256_compared": true,
+      "downloaded_back_from_github": false
+    },
+    {
+      "name": "archive-part-0016.zip",
+      "bytes": 402654526,
+      "sha256": "927190dab2c1fd2f8e40ec05964233830ae3161424c599092a190b77dfe9b204",
+      "github_server_sha256_compared": true,
+      "downloaded_back_from_github": false
+    },
+    {
+      "name": "archive-part-0017.zip",
+      "bytes": 402654526,
+      "sha256": "234cc4894cb5e4070cf30a2c0372c4124771d83f90aac59ef31c30241a81ea1f",
+      "github_server_sha256_compared": true,
+      "downloaded_back_from_github": false
+    },
+    {
+      "name": "archive-part-0018.zip",
+      "bytes": 402654526,
+      "sha256": "0439da7f23abcb3bc5fe4fd33383df72b9af73939dc9af15eb7a89a8aeb4f231",
+      "github_server_sha256_compared": true,
+      "downloaded_back_from_github": false
+    },
+    {
+      "name": "archive-part-0019.zip",
+      "bytes": 355164365,
+      "sha256": "1a26655feb8a54410706623f0eb5ba94a67bb4fc6dd7e8d2c9429dbbb6c13dcb",
+      "github_server_sha256_compared": true,
+      "downloaded_back_from_github": false
+    },
+    {
+      "name": "archive-part-0020.zip",
+      "bytes": 402654526,
+      "sha256": "8983fe0a0b5c63708ed261ba4d5e5f5df694f58a6549d57e5c8451ea3dd06fd5",
+      "github_server_sha256_compared": true,
+      "downloaded_back_from_github": false
+    },
+    {
+      "name": "archive-part-0021.zip",
+      "bytes": 166997096,
+      "sha256": "2e875d5a40b15905bc6d39a24fc07e48314c3ad0920485185dbca98bbec52d92",
+      "github_server_sha256_compared": true,
+      "downloaded_back_from_github": false
+    },
+    {
+      "name": "ARCHIVE-SHA256.json",
+      "bytes": 3285,
+      "sha256": "7281bc4c2e2b784d67fc3522066f63a825309c6d3380a45a1dee2dcc8d4b7902",
+      "github_server_sha256_compared": true,
+      "downloaded_back_from_github": false
+    },
+    {
+      "name": "ARCHIVE-SUMMARY.json",
+      "bytes": 4886,
+      "sha256": "06d5e215e8093ed17daafd7472c4841b43ea21527dbb1f922262b467e497a8c1",
+      "github_server_sha256_compared": true,
+      "downloaded_back_from_github": false
+    },
+    {
+      "name": "file-index.jsonl.gz",
+      "bytes": 5243287,
+      "sha256": "636ef575a97e5319731936944dba0986bb1d7d7877640f3b9faa388259caefe6",
+      "github_server_sha256_compared": true,
+      "downloaded_back_from_github": false
+    },
+    {
+      "name": "LOCAL-VERIFICATION.json",
+      "bytes": 459,
+      "sha256": "90281afaefde72ed5fc46b34ec74869f436384fff81125af38c2bac7839ab4e7",
+      "github_server_sha256_compared": true,
+      "downloaded_back_from_github": false
+    },
+    {
+      "name": "object-index.json.gz",
+      "bytes": 1868070,
+      "sha256": "66eed2910e58f98231a6ff40ef506787c85985f0e59b72ad2e6ffe9471ef69a2",
+      "github_server_sha256_compared": true,
+      "downloaded_back_from_github": false
+    },
+    {
+      "name": "RESTORE-VERIFICATION.json",
+      "bytes": 286,
+      "sha256": "5b4fdb207cb481aa3f104ef1dfafb7035efdb4808873c5741acd1d8f7233ab8a",
+      "github_server_sha256_compared": true,
+      "downloaded_back_from_github": false
+    },
+    {
+      "name": "restore_archive.py",
+      "bytes": 6673,
+      "sha256": "40f2b4751dfecb847c3c2dbb6a46ba5e315595a1912082e9c124b7b645fc3935",
+      "github_server_sha256_compared": true,
+      "downloaded_back_from_github": false
+    },
+    {
+      "name": "SOURCE-AUDIT.json",
+      "bytes": 285,
+      "sha256": "22b85cb71b84ea0bec90ecfee4a9c79868ff73780b3a8b211354cd58430dd20d",
+      "github_server_sha256_compared": true,
+      "downloaded_back_from_github": false
+    }
+  ],
+  "all_assets_sha256_compared": true,
+  "verification": "Actual downloads for initial parts; GitHub stored SHA-256 digest for remaining assets; download fallback if digest unavailable.",
+  "unavailable_owner_waived_trace": "fix9-recording-20261013T115002055Z.zip"
+}
