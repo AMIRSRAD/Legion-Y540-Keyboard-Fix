@@ -1,0 +1,13 @@
+PASS: real firmware checksum/corruption, INI fields, C1/C3 wire bytes, staging boundaries and partial padding
+HID transport offline tests passed
+PASS: offline protocol model; durable backup, no final erase/reset on failure, aborts, chip identity, key cleanup, report 5A only and payload-only D1 responses
+Device-state offline fixtures passed; no Windows device APIs were executed.
+Session log file/UTF-8/unique-path tests passed; no device access.
+Session log: C:\Users\a.saberi\Documents\Codex\2026-10-12\https-github-com-morluto-rea-https\outputs\fix9\build\logs\fix9-20261013T113719746Z-p16756-1.log
+
+Validated 55296 bytes. Sum=5622 stored=5622 residual=0000.
+
+Absent CHECKSUMLASTBYTESBEFF uses recovered zero initialization/default.
+
+GUI controls initialized (hidden; no device access)
+Built: C:\Users\a.saberi\Documents\Codex\2026-10-12\https-github-com-morluto-rea-https\outputs\fix9\build\Y540Updater.exe

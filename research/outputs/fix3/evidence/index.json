@@ -1,0 +1,403 @@
+[
+  {
+    "file": "evidence/rea/001-open.json",
+    "tool": "open_binary",
+    "arguments": {
+      "path": "C:/Users/a.saberi/Desktop/Y540-keyboard-firmware-00000044/extracted-IT/ITESHFU.exe",
+      "provider_id": "ghidra"
+    },
+    "evidence_id": null,
+    "error": false
+  },
+  {
+    "file": "evidence/rea/010-procedures.json",
+    "tool": "search_procedures",
+    "arguments": {
+      "pattern": "HidD|SHFU|Checksum|Flash|Burn|Device",
+      "mode": "regex",
+      "case_sensitive": false
+    },
+    "evidence_id": "ev_e9af1d793e4539a48d28b872e0c6e600ae309e9877b6f61740db28140d00941c",
+    "error": false
+  },
+  {
+    "file": "evidence/rea/011-strings.json",
+    "tool": "search_strings",
+    "arguments": {
+      "pattern": "failed HidD|Enter Flash|Checksum Error|SHFU.ini",
+      "mode": "regex"
+    },
+    "evidence_id": "ev_4778d1e47332045a6cee24c0ff68976f4936fab0d550b2ba16a80821895a688f",
+    "error": false
+  },
+  {
+    "file": "evidence/rea/020-xref-setfeature-error.json",
+    "tool": "xrefs",
+    "arguments": {
+      "address": "0x6e0364"
+    },
+    "evidence_id": "ev_6280ccbf88667d0c470a2c40c7e381d447554b534d77be89ef9f101c6d054297",
+    "error": false
+  },
+  {
+    "file": "evidence/rea/021-xref-getfeature-error.json",
+    "tool": "xrefs",
+    "arguments": {
+      "address": "0x6e037e"
+    },
+    "evidence_id": "ev_f92c1849e3dfd1c6e026ce717f52f659c8e493ae9d41b99d474e20f85e180c56",
+    "error": false
+  },
+  {
+    "file": "evidence/rea/022-xref-checksum-error.json",
+    "tool": "xrefs",
+    "arguments": {
+      "address": "0x6e059b"
+    },
+    "evidence_id": "ev_05b2990f92ea630231031e97a81c1e938f8a0df58fd1b57d0484388f57534d0d",
+    "error": false
+  },
+  {
+    "file": "evidence/rea/023-xref-enter-flash.json",
+    "tool": "xrefs",
+    "arguments": {
+      "address": "0x6e05c7"
+    },
+    "evidence_id": "ev_f21d471c47771aa536c4cb4ff23d6d53858738b273f9ffea8719e9b420f6b360",
+    "error": false
+  },
+  {
+    "file": "evidence/rea/030-connect.json",
+    "tool": "procedure_pseudo_code",
+    "arguments": {
+      "procedure": "0x4089d0"
+    },
+    "evidence_id": "ev_7cc3999b3ca15069693099660667a52b139fc83d3c0d50a086eeffb05b426860",
+    "error": false
+  },
+  {
+    "file": "evidence/rea/031-checkdevice.json",
+    "tool": "procedure_pseudo_code",
+    "arguments": {
+      "procedure": "0x407d10"
+    },
+    "evidence_id": "ev_14567034c8a2e4fcf6488306689f3124d73505c8a498851db4f37871a5921d22",
+    "error": false
+  },
+  {
+    "file": "evidence/rea/032-checksum.json",
+    "tool": "procedure_pseudo_code",
+    "arguments": {
+      "procedure": "0x40b260"
+    },
+    "evidence_id": "ev_d7d8a962af833b8fbaa710f84a02e240eaa96b25126558ce9c456da0bbfdac4f",
+    "error": false
+  },
+  {
+    "file": "evidence/rea/033-writeflash.json",
+    "tool": "procedure_pseudo_code",
+    "arguments": {
+      "procedure": "0x40ab30"
+    },
+    "evidence_id": "ev_0ec97c6a7a23c2807143087e87132b7fd3e110afdcfe39bd3e2930e9f8560e4c",
+    "error": false
+  },
+  {
+    "file": "evidence/rea/034-setfeature-owner.json",
+    "tool": "resolve_containing_procedure",
+    "arguments": {
+      "address": "0x40a025"
+    },
+    "evidence_id": "ev_a1ba1a124b0333c0f384cf836caefb8d8c00a774acd960f6ca4a0d7366989bab",
+    "error": false
+  },
+  {
+    "file": "evidence/rea/035-getfeature-owner.json",
+    "tool": "resolve_containing_procedure",
+    "arguments": {
+      "address": "0x40a189"
+    },
+    "evidence_id": "ev_022a4f473f3d098bc795d970543c0d7b355b77e21b694981bfcc96c23ea7df2a",
+    "error": false
+  },
+  {
+    "file": "evidence/rea/040-hidrequests.json",
+    "tool": "procedure_pseudo_code",
+    "arguments": {
+      "procedure": "0x409e80"
+    },
+    "evidence_id": "ev_fc31ea46a52a64ee982df8d42de6b3992d98c9c41b92d270ce8d982dbc356626",
+    "error": false
+  },
+  {
+    "file": "evidence/rea/041-checksum-callers.json",
+    "tool": "procedure_callers",
+    "arguments": {
+      "procedure": "0x40b260"
+    },
+    "evidence_id": "ev_d05e2dee4d1273c050278de2a756c2ab9b2d969c3e61805175baa51ca0f8bdfc",
+    "error": false
+  },
+  {
+    "file": "evidence/rea/042-hidrequest-callers.json",
+    "tool": "procedure_callers",
+    "arguments": {
+      "procedure": "0x409e80"
+    },
+    "evidence_id": "ev_a568b75241a806c8ec27ebaa239a9143a6fc6bb2bbe5fb349063ccb000b3e26d",
+    "error": false
+  },
+  {
+    "file": "evidence/rea/043-update-owner.json",
+    "tool": "resolve_containing_procedure",
+    "arguments": {
+      "address": "0x40fe52"
+    },
+    "evidence_id": "ev_c73515727328e3bcc95880003716434590af1208d4651e10746f32d32e67f959",
+    "error": false
+  },
+  {
+    "file": "evidence/rea/044-cmd-setdata.json",
+    "tool": "procedure_pseudo_code",
+    "arguments": {
+      "procedure": "cmd_set_data"
+    },
+    "evidence_id": "ev_95995aceca788b8d7995f1143ffdbab2c4b25eedad86ea29fb90a3a414715457",
+    "error": false
+  },
+  {
+    "file": "evidence/rea/045-cmd-buffer-checksum.json",
+    "tool": "procedure_pseudo_code",
+    "arguments": {
+      "procedure": "cmd_get_buffer_checksum"
+    },
+    "evidence_id": "ev_d6b395e7a2528f17bdf7b487ad26640e37356c66b788bc7a2ebad85bc9dd54f4",
+    "error": false
+  },
+  {
+    "file": "evidence/rea/050-checksum-validation.json",
+    "tool": "procedure_pseudo_code",
+    "arguments": {
+      "procedure": "0x40fcc0"
+    },
+    "evidence_id": "ev_8aee45406c44b2ebef5aae274cbe2756f0768c09a788965aaec74e7ec72b5ac1",
+    "error": false
+  },
+  {
+    "file": "evidence/rea/051-hidrequests-assembly.json",
+    "tool": "procedure_assembly",
+    "arguments": {
+      "procedure": "0x409e80"
+    },
+    "evidence_id": "ev_c1e2256612790474ac0108d8787fe4ebd5e1ad37ea7851f50df021b981d3fcb8",
+    "error": false
+  },
+  {
+    "file": "evidence/rea/090-close.json",
+    "tool": "close_binary",
+    "arguments": {
+      "snapshot_path": "C:\\Users\\a.saberi\\Documents\\Codex\\2026-10-12\\https-github-com-morluto-rea-https\\outputs\\y540-research\\evidence\\rea-snapshot.json",
+      "overwrite": false
+    },
+    "evidence_id": null,
+    "error": false
+  },
+  {
+    "file": "evidence/rea/100-open.json",
+    "tool": "open_binary",
+    "arguments": {
+      "path": "C:/Users/a.saberi/Desktop/Y540-keyboard-firmware-00000044/extracted-IT/ITESHFU.exe",
+      "provider_id": "ghidra"
+    },
+    "evidence_id": null,
+    "error": false
+  },
+  {
+    "file": "evidence/rea/101-all-functions.json",
+    "tool": "list_procedures",
+    "arguments": {},
+    "evidence_id": null,
+    "error": true
+  },
+  {
+    "file": "evidence/rea/102-path-discovery.json",
+    "tool": "procedure_pseudo_code",
+    "arguments": {
+      "procedure": "0x407a40"
+    },
+    "evidence_id": "ev_6ef5890e89f7a837db7ddc99fa9efff5fdc6d829e6b04a5b922c2e3dd19c8304",
+    "error": false
+  },
+  {
+    "file": "evidence/rea/103-update-button.json",
+    "tool": "procedure_pseudo_code",
+    "arguments": {
+      "procedure": "0x40ffc0"
+    },
+    "evidence_id": "ev_895a0dce07dfe002b129280b0b40b797ed49c9cc171ce5cdb664c231812bb6d1",
+    "error": false
+  },
+  {
+    "file": "evidence/rea/110-protocol-409cc0.json",
+    "tool": "procedure_pseudo_code",
+    "arguments": {
+      "procedure": "0x409cc0"
+    },
+    "evidence_id": "ev_259810e6d186b8f28376c5757e01da78213741ecb2fd2a62f6cefed7d1fd5c84",
+    "error": false
+  },
+  {
+    "file": "evidence/rea/111-protocol-40a280.json",
+    "tool": "procedure_pseudo_code",
+    "arguments": {
+      "procedure": "0x40a280"
+    },
+    "evidence_id": "ev_fd5cef455511f38958e586f0c63ecf627ff68d3d1ca88e0a045f3270e297dd99",
+    "error": false
+  },
+  {
+    "file": "evidence/rea/112-protocol-40a620.json",
+    "tool": "procedure_pseudo_code",
+    "arguments": {
+      "procedure": "0x40a620"
+    },
+    "evidence_id": "ev_e347ed71e03c961e0f90f6dcf1dadc0c191e008495db1abc702f05867e74c433",
+    "error": false
+  },
+  {
+    "file": "evidence/rea/113-protocol-40a690.json",
+    "tool": "procedure_pseudo_code",
+    "arguments": {
+      "procedure": "0x40a690"
+    },
+    "evidence_id": "ev_5e4aa41def2793c0f97b87c31cf39631a35af1ca1195683dca9a664cc44f18e2",
+    "error": false
+  },
+  {
+    "file": "evidence/rea/114-protocol-40a7a0.json",
+    "tool": "procedure_pseudo_code",
+    "arguments": {
+      "procedure": "0x40a7a0"
+    },
+    "evidence_id": "ev_a382016c8cd48791a0b0170deac1a56028dcf25fe1e0862a276dfd4526cd775c",
+    "error": false
+  },
+  {
+    "file": "evidence/rea/115-protocol-40a830.json",
+    "tool": "procedure_pseudo_code",
+    "arguments": {
+      "procedure": "0x40a830"
+    },
+    "evidence_id": "ev_bf59420f4f3952466a63c6449544d06c3683a67c1c645e41c360767491330c6b",
+    "error": false
+  },
+  {
+    "file": "evidence/rea/116-protocol-40a8c0.json",
+    "tool": "procedure_pseudo_code",
+    "arguments": {
+      "procedure": "0x40a8c0"
+    },
+    "evidence_id": "ev_38fb8a4a8fb50d76748d5e6f8f8eccb1d9252e640969fe91e52a2226db5d44ea",
+    "error": false
+  },
+  {
+    "file": "evidence/rea/117-protocol-40a910.json",
+    "tool": "procedure_pseudo_code",
+    "arguments": {
+      "procedure": "0x40a910"
+    },
+    "evidence_id": "ev_3f14e3762bc3984cd60b38146278cceba1bf5b68ae0087f6dcba404a5b5b1ade",
+    "error": false
+  },
+  {
+    "file": "evidence/rea/118-protocol-40aa50.json",
+    "tool": "procedure_pseudo_code",
+    "arguments": {
+      "procedure": "0x40aa50"
+    },
+    "evidence_id": "ev_e5ac5178d378672969e09416dbbbcda0173562cb5834abefa27305664b20cfa3",
+    "error": false
+  },
+  {
+    "file": "evidence/rea/119-protocol-40aef0.json",
+    "tool": "procedure_pseudo_code",
+    "arguments": {
+      "procedure": "0x40aef0"
+    },
+    "evidence_id": "ev_f0769a257046630fc1bb86097fd64039f7a366f6a7181fa611f08f671c59dbe3",
+    "error": false
+  },
+  {
+    "file": "evidence/rea/120-protocol-40b8e0.json",
+    "tool": "procedure_pseudo_code",
+    "arguments": {
+      "procedure": "0x40b8e0"
+    },
+    "evidence_id": "ev_540c1379522c8ad1d3bdce2018b380face98576398d13818a670c1ee262a3860",
+    "error": false
+  },
+  {
+    "file": "evidence/rea/130-formcreate.json",
+    "tool": "procedure_pseudo_code",
+    "arguments": {
+      "procedure": "0x41fb80"
+    },
+    "evidence_id": "ev_bd2a063ba6a2ef5456a4fcd9720823340cf223b0b0c2d0dc8e021c01b4dfb967",
+    "error": false
+  },
+  {
+    "file": "evidence/rea/131-timer-update.json",
+    "tool": "procedure_pseudo_code",
+    "arguments": {
+      "procedure": "0x4107e0"
+    },
+    "evidence_id": "ev_1fae91709c936fa7b727cbb9a528d32691eb9c35860542a1f11e6fc6f8efb8a4",
+    "error": false
+  },
+  {
+    "file": "evidence/rea/132-auto-update.json",
+    "tool": "procedure_pseudo_code",
+    "arguments": {
+      "procedure": "0x412c40"
+    },
+    "evidence_id": "ev_0359cc80f3ca5ed016cdd2e5474e0816aac312e41a4e2fcf57446b49b58669ce",
+    "error": false
+  },
+  {
+    "file": "evidence/rea/133-connecthub.json",
+    "tool": "procedure_pseudo_code",
+    "arguments": {
+      "procedure": "0x40ec20"
+    },
+    "evidence_id": "ev_df593b7de2b7c80d368dcf8a71c26e28ff180f687ce5f38cb22a36f5394fb9d9",
+    "error": false
+  },
+  {
+    "file": "evidence/rea/134-bin-info.json",
+    "tool": "procedure_pseudo_code",
+    "arguments": {
+      "procedure": "0x40f9a0"
+    },
+    "evidence_id": "ev_f9e95dab94dae4366022c6526e4bffa4e904fa9619a4888ceda3b46a96564f76",
+    "error": false
+  },
+  {
+    "file": "evidence/rea/140-enterboot-assembly.json",
+    "tool": "procedure_assembly",
+    "arguments": {
+      "procedure": "0x40ffc0"
+    },
+    "evidence_id": "ev_3cad5a49e0a438aab3e3e6c7e2c2fcdd3c05df8eba5effb09cdc7e9f65950ec7",
+    "error": false
+  },
+  {
+    "file": "evidence/rea/190-close.json",
+    "tool": "close_binary",
+    "arguments": {
+      "snapshot_path": "C:\\Users\\a.saberi\\Documents\\Codex\\2026-10-12\\https-github-com-morluto-rea-https\\outputs\\y540-research\\evidence\\reconstruction-snapshot.json",
+      "overwrite": false
+    },
+    "evidence_id": null,
+    "error": false
+  }
+]

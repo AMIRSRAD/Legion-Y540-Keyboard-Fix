@@ -1,0 +1,573 @@
+[
+  {
+    "path": "work\\bios-reset-45\\volumes\\0x7fba10\\volume-0\\file-20bc8ac9-94d1-4208-ab28-5d673fd73486\\section0\\section1.fv",
+    "size": 11325440,
+    "hits": [
+      "DSDT",
+      "SSDT",
+      "_PS0",
+      "_PS3"
+    ]
+  },
+  {
+    "path": "work\\bios-reset-45\\volumes\\0x7fba10\\volume-0\\file-20bc8ac9-94d1-4208-ab28-5d673fd73486\\section0\\section1\\volume-ee4e5898-3914-4259-9d6e-dc7bd79403cf.fv",
+    "size": 11325440,
+    "hits": [
+      "DSDT",
+      "SSDT",
+      "_PS0",
+      "_PS3"
+    ]
+  },
+  {
+    "path": "work\\bios-reset-45\\volumes\\0x7fba10\\volume-0\\file-20bc8ac9-94d1-4208-ab28-5d673fd73486\\section0\\section1\\volume-ee4e5898-3914-4259-9d6e-dc7bd79403cf\\filesystem.ffs",
+    "size": 11325368,
+    "hits": [
+      "DSDT",
+      "SSDT",
+      "_PS0",
+      "_PS3"
+    ]
+  },
+  {
+    "path": "work\\bios-reset-45\\volumes\\0x7fba10\\volume-0\\file-20bc8ac9-94d1-4208-ab28-5d673fd73486\\section0\\section1\\volume-ee4e5898-3914-4259-9d6e-dc7bd79403cf\\file-07709c98-414a-4039-b7d0-29c21f105e92\\file.obj",
+    "size": 14187,
+    "hits": [
+      "SSDT"
+    ]
+  },
+  {
+    "path": "work\\bios-reset-45\\volumes\\0x7fba10\\volume-0\\file-20bc8ac9-94d1-4208-ab28-5d673fd73486\\section0\\section1\\volume-ee4e5898-3914-4259-9d6e-dc7bd79403cf\\file-07709c98-414a-4039-b7d0-29c21f105e92\\section1.pe",
+    "size": 10368,
+    "hits": [
+      "SSDT"
+    ]
+  },
+  {
+    "path": "work\\bios-reset-45\\volumes\\0x7fba10\\volume-0\\file-20bc8ac9-94d1-4208-ab28-5d673fd73486\\section0\\section1\\volume-ee4e5898-3914-4259-9d6e-dc7bd79403cf\\file-07709c98-414a-4039-b7d0-29c21f105e92\\section7.raw",
+    "size": 3119,
+    "hits": [
+      "SSDT"
+    ]
+  },
+  {
+    "path": "work\\bios-reset-45\\volumes\\0x7fba10\\volume-0\\file-20bc8ac9-94d1-4208-ab28-5d673fd73486\\section0\\section1\\volume-ee4e5898-3914-4259-9d6e-dc7bd79403cf\\file-15b985c5-7103-4f35-b59d-2235fc5f3ffe\\file.obj",
+    "size": 5666,
+    "hits": [
+      "SSDT",
+      "_PS0",
+      "_PS3"
+    ]
+  },
+  {
+    "path": "work\\bios-reset-45\\volumes\\0x7fba10\\volume-0\\file-20bc8ac9-94d1-4208-ab28-5d673fd73486\\section0\\section1\\volume-ee4e5898-3914-4259-9d6e-dc7bd79403cf\\file-15b985c5-7103-4f35-b59d-2235fc5f3ffe\\section4.raw",
+    "size": 2198,
+    "hits": [
+      "SSDT",
+      "_PS0",
+      "_PS3"
+    ]
+  },
+  {
+    "path": "work\\bios-reset-45\\volumes\\0x7fba10\\volume-0\\file-20bc8ac9-94d1-4208-ab28-5d673fd73486\\section0\\section1\\volume-ee4e5898-3914-4259-9d6e-dc7bd79403cf\\file-30b7c490-d693-40be-b1c7-6e01b927c041\\file.obj",
+    "size": 11204,
+    "hits": [
+      "DSDT"
+    ]
+  },
+  {
+    "path": "work\\bios-reset-45\\volumes\\0x7fba10\\volume-0\\file-20bc8ac9-94d1-4208-ab28-5d673fd73486\\section0\\section1\\volume-ee4e5898-3914-4259-9d6e-dc7bd79403cf\\file-30b7c490-d693-40be-b1c7-6e01b927c041\\section1.pe",
+    "size": 11072,
+    "hits": [
+      "DSDT"
+    ]
+  },
+  {
+    "path": "work\\bios-reset-45\\volumes\\0x7fba10\\volume-0\\file-20bc8ac9-94d1-4208-ab28-5d673fd73486\\section0\\section1\\volume-ee4e5898-3914-4259-9d6e-dc7bd79403cf\\file-3acc966d-8e33-45c6-b4fe-62724bcd15a9\\file.obj",
+    "size": 94408,
+    "hits": [
+      "SSDT"
+    ]
+  },
+  {
+    "path": "work\\bios-reset-45\\volumes\\0x7fba10\\volume-0\\file-20bc8ac9-94d1-4208-ab28-5d673fd73486\\section0\\section1\\volume-ee4e5898-3914-4259-9d6e-dc7bd79403cf\\file-3acc966d-8e33-45c6-b4fe-62724bcd15a9\\section5.raw",
+    "size": 76,
+    "hits": [
+      "SSDT"
+    ]
+  },
+  {
+    "path": "work\\bios-reset-45\\volumes\\0x7fba10\\volume-0\\file-20bc8ac9-94d1-4208-ab28-5d673fd73486\\section0\\section1\\volume-ee4e5898-3914-4259-9d6e-dc7bd79403cf\\file-3bbb09da-1e0f-469b-8997-d440f101d6f1\\file.obj",
+    "size": 28319,
+    "hits": [
+      "SSDT"
+    ]
+  },
+  {
+    "path": "work\\bios-reset-45\\volumes\\0x7fba10\\volume-0\\file-20bc8ac9-94d1-4208-ab28-5d673fd73486\\section0\\section1\\volume-ee4e5898-3914-4259-9d6e-dc7bd79403cf\\file-3bbb09da-1e0f-469b-8997-d440f101d6f1\\section0.raw",
+    "size": 28291,
+    "hits": [
+      "SSDT"
+    ]
+  },
+  {
+    "path": "work\\bios-reset-45\\volumes\\0x7fba10\\volume-0\\file-20bc8ac9-94d1-4208-ab28-5d673fd73486\\section0\\section1\\volume-ee4e5898-3914-4259-9d6e-dc7bd79403cf\\file-42293093-76b9-4482-8c02-3befdea9b35d\\file.obj",
+    "size": 11850,
+    "hits": [
+      "SSDT"
+    ]
+  },
+  {
+    "path": "work\\bios-reset-45\\volumes\\0x7fba10\\volume-0\\file-20bc8ac9-94d1-4208-ab28-5d673fd73486\\section0\\section1\\volume-ee4e5898-3914-4259-9d6e-dc7bd79403cf\\file-42293093-76b9-4482-8c02-3befdea9b35d\\section4.raw",
+    "size": 930,
+    "hits": [
+      "SSDT"
+    ]
+  },
+  {
+    "path": "work\\bios-reset-45\\volumes\\0x7fba10\\volume-0\\file-20bc8ac9-94d1-4208-ab28-5d673fd73486\\section0\\section1\\volume-ee4e5898-3914-4259-9d6e-dc7bd79403cf\\file-44a20657-10b8-4049-a148-acd8812af257\\file.obj",
+    "size": 16341,
+    "hits": [
+      "SSDT"
+    ]
+  },
+  {
+    "path": "work\\bios-reset-45\\volumes\\0x7fba10\\volume-0\\file-20bc8ac9-94d1-4208-ab28-5d673fd73486\\section0\\section1\\volume-ee4e5898-3914-4259-9d6e-dc7bd79403cf\\file-44a20657-10b8-4049-a148-acd8812af257\\section4.raw",
+    "size": 1921,
+    "hits": [
+      "SSDT"
+    ]
+  },
+  {
+    "path": "work\\bios-reset-45\\volumes\\0x7fba10\\volume-0\\file-20bc8ac9-94d1-4208-ab28-5d673fd73486\\section0\\section1\\volume-ee4e5898-3914-4259-9d6e-dc7bd79403cf\\file-506533a6-e626-4500-b14f-17939c0e5b60\\file.obj",
+    "size": 23942,
+    "hits": [
+      "DSDT"
+    ]
+  },
+  {
+    "path": "work\\bios-reset-45\\volumes\\0x7fba10\\volume-0\\file-20bc8ac9-94d1-4208-ab28-5d673fd73486\\section0\\section1\\volume-ee4e5898-3914-4259-9d6e-dc7bd79403cf\\file-506533a6-e626-4500-b14f-17939c0e5b60\\section1.pe",
+    "size": 23840,
+    "hits": [
+      "DSDT"
+    ]
+  },
+  {
+    "path": "work\\bios-reset-45\\volumes\\0x7fba10\\volume-0\\file-20bc8ac9-94d1-4208-ab28-5d673fd73486\\section0\\section1\\volume-ee4e5898-3914-4259-9d6e-dc7bd79403cf\\file-662d072e-70a0-4e14-901f-8db301631647\\file.obj",
+    "size": 11140,
+    "hits": [
+      "SSDT",
+      "_PS0",
+      "_PS3"
+    ]
+  },
+  {
+    "path": "work\\bios-reset-45\\volumes\\0x7fba10\\volume-0\\file-20bc8ac9-94d1-4208-ab28-5d673fd73486\\section0\\section1\\volume-ee4e5898-3914-4259-9d6e-dc7bd79403cf\\file-662d072e-70a0-4e14-901f-8db301631647\\section0.raw",
+    "size": 11112,
+    "hits": [
+      "SSDT",
+      "_PS0",
+      "_PS3"
+    ]
+  },
+  {
+    "path": "work\\bios-reset-45\\volumes\\0x7fba10\\volume-0\\file-20bc8ac9-94d1-4208-ab28-5d673fd73486\\section0\\section1\\volume-ee4e5898-3914-4259-9d6e-dc7bd79403cf\\file-6684d675-ee06-49b2-876f-79c58fdda5b7\\file.obj",
+    "size": 203,
+    "hits": [
+      "SSDT"
+    ]
+  },
+  {
+    "path": "work\\bios-reset-45\\volumes\\0x7fba10\\volume-0\\file-20bc8ac9-94d1-4208-ab28-5d673fd73486\\section0\\section1\\volume-ee4e5898-3914-4259-9d6e-dc7bd79403cf\\file-6684d675-ee06-49b2-876f-79c58fdda5b7\\section0.raw",
+    "size": 175,
+    "hits": [
+      "SSDT"
+    ]
+  },
+  {
+    "path": "work\\bios-reset-45\\volumes\\0x7fba10\\volume-0\\file-20bc8ac9-94d1-4208-ab28-5d673fd73486\\section0\\section1\\volume-ee4e5898-3914-4259-9d6e-dc7bd79403cf\\file-7d279373-eecc-4d4f-ae2f-cec4b706b06a\\file.obj",
+    "size": 1142,
+    "hits": [
+      "SSDT"
+    ]
+  },
+  {
+    "path": "work\\bios-reset-45\\volumes\\0x7fba10\\volume-0\\file-20bc8ac9-94d1-4208-ab28-5d673fd73486\\section0\\section1\\volume-ee4e5898-3914-4259-9d6e-dc7bd79403cf\\file-7d279373-eecc-4d4f-ae2f-cec4b706b06a\\section0.raw",
+    "size": 1114,
+    "hits": [
+      "SSDT"
+    ]
+  },
+  {
+    "path": "work\\bios-reset-45\\volumes\\0x7fba10\\volume-0\\file-20bc8ac9-94d1-4208-ab28-5d673fd73486\\section0\\section1\\volume-ee4e5898-3914-4259-9d6e-dc7bd79403cf\\file-7e1cabe3-34d8-4f54-831c-9e1d52f48f8e\\file.obj",
+    "size": 20884,
+    "hits": [
+      "SSDT",
+      "_PS0",
+      "_PS3"
+    ]
+  },
+  {
+    "path": "work\\bios-reset-45\\volumes\\0x7fba10\\volume-0\\file-20bc8ac9-94d1-4208-ab28-5d673fd73486\\section0\\section1\\volume-ee4e5898-3914-4259-9d6e-dc7bd79403cf\\file-7e1cabe3-34d8-4f54-831c-9e1d52f48f8e\\section0.raw",
+    "size": 20856,
+    "hits": [
+      "SSDT",
+      "_PS0",
+      "_PS3"
+    ]
+  },
+  {
+    "path": "work\\bios-reset-45\\volumes\\0x7fba10\\volume-0\\file-20bc8ac9-94d1-4208-ab28-5d673fd73486\\section0\\section1\\volume-ee4e5898-3914-4259-9d6e-dc7bd79403cf\\file-7e374e25-8e01-4fee-87f2-390c23c606cd\\file.obj",
+    "size": 280995,
+    "hits": [
+      "DSDT",
+      "SSDT",
+      "_PS0",
+      "_PS3"
+    ]
+  },
+  {
+    "path": "work\\bios-reset-45\\volumes\\0x7fba10\\volume-0\\file-20bc8ac9-94d1-4208-ab28-5d673fd73486\\section0\\section1\\volume-ee4e5898-3914-4259-9d6e-dc7bd79403cf\\file-7e374e25-8e01-4fee-87f2-390c23c606cd\\section10.raw",
+    "size": 12563,
+    "hits": [
+      "SSDT",
+      "_PS0",
+      "_PS3"
+    ]
+  },
+  {
+    "path": "work\\bios-reset-45\\volumes\\0x7fba10\\volume-0\\file-20bc8ac9-94d1-4208-ab28-5d673fd73486\\section0\\section1\\volume-ee4e5898-3914-4259-9d6e-dc7bd79403cf\\file-7e374e25-8e01-4fee-87f2-390c23c606cd\\section11.raw",
+    "size": 10541,
+    "hits": [
+      "SSDT",
+      "_PS0",
+      "_PS3"
+    ]
+  },
+  {
+    "path": "work\\bios-reset-45\\volumes\\0x7fba10\\volume-0\\file-20bc8ac9-94d1-4208-ab28-5d673fd73486\\section0\\section1\\volume-ee4e5898-3914-4259-9d6e-dc7bd79403cf\\file-7e374e25-8e01-4fee-87f2-390c23c606cd\\section12.raw",
+    "size": 12169,
+    "hits": [
+      "SSDT"
+    ]
+  },
+  {
+    "path": "work\\bios-reset-45\\volumes\\0x7fba10\\volume-0\\file-20bc8ac9-94d1-4208-ab28-5d673fd73486\\section0\\section1\\volume-ee4e5898-3914-4259-9d6e-dc7bd79403cf\\file-7e374e25-8e01-4fee-87f2-390c23c606cd\\section13.raw",
+    "size": 12168,
+    "hits": [
+      "SSDT"
+    ]
+  },
+  {
+    "path": "work\\bios-reset-45\\volumes\\0x7fba10\\volume-0\\file-20bc8ac9-94d1-4208-ab28-5d673fd73486\\section0\\section1\\volume-ee4e5898-3914-4259-9d6e-dc7bd79403cf\\file-7e374e25-8e01-4fee-87f2-390c23c606cd\\section14.raw",
+    "size": 12291,
+    "hits": [
+      "SSDT"
+    ]
+  },
+  {
+    "path": "work\\bios-reset-45\\volumes\\0x7fba10\\volume-0\\file-20bc8ac9-94d1-4208-ab28-5d673fd73486\\section0\\section1\\volume-ee4e5898-3914-4259-9d6e-dc7bd79403cf\\file-7e374e25-8e01-4fee-87f2-390c23c606cd\\section15.raw",
+    "size": 12163,
+    "hits": [
+      "SSDT"
+    ]
+  },
+  {
+    "path": "work\\bios-reset-45\\volumes\\0x7fba10\\volume-0\\file-20bc8ac9-94d1-4208-ab28-5d673fd73486\\section0\\section1\\volume-ee4e5898-3914-4259-9d6e-dc7bd79403cf\\file-7e374e25-8e01-4fee-87f2-390c23c606cd\\section8.raw",
+    "size": 196404,
+    "hits": [
+      "DSDT",
+      "_PS0",
+      "_PS3"
+    ]
+  },
+  {
+    "path": "work\\bios-reset-45\\volumes\\0x7fba10\\volume-0\\file-20bc8ac9-94d1-4208-ab28-5d673fd73486\\section0\\section1\\volume-ee4e5898-3914-4259-9d6e-dc7bd79403cf\\file-7e374e25-8e01-4fee-87f2-390c23c606cd\\section9.raw",
+    "size": 11199,
+    "hits": [
+      "SSDT",
+      "_PS0",
+      "_PS3"
+    ]
+  },
+  {
+    "path": "work\\bios-reset-45\\volumes\\0x7fba10\\volume-0\\file-20bc8ac9-94d1-4208-ab28-5d673fd73486\\section0\\section1\\volume-ee4e5898-3914-4259-9d6e-dc7bd79403cf\\file-8029a5b5-4088-48d2-96e0-f7052bc0a842\\file.obj",
+    "size": 9622,
+    "hits": [
+      "SSDT"
+    ]
+  },
+  {
+    "path": "work\\bios-reset-45\\volumes\\0x7fba10\\volume-0\\file-20bc8ac9-94d1-4208-ab28-5d673fd73486\\section0\\section1\\volume-ee4e5898-3914-4259-9d6e-dc7bd79403cf\\file-8029a5b5-4088-48d2-96e0-f7052bc0a842\\section1.pe",
+    "size": 9408,
+    "hits": [
+      "SSDT"
+    ]
+  },
+  {
+    "path": "work\\bios-reset-45\\volumes\\0x7fba10\\volume-0\\file-20bc8ac9-94d1-4208-ab28-5d673fd73486\\section0\\section1\\volume-ee4e5898-3914-4259-9d6e-dc7bd79403cf\\file-8a97b11e-ee8e-11e2-b664-047d7b99e097\\file.obj",
+    "size": 7334,
+    "hits": [
+      "DSDT"
+    ]
+  },
+  {
+    "path": "work\\bios-reset-45\\volumes\\0x7fba10\\volume-0\\file-20bc8ac9-94d1-4208-ab28-5d673fd73486\\section0\\section1\\volume-ee4e5898-3914-4259-9d6e-dc7bd79403cf\\file-8a97b11e-ee8e-11e2-b664-047d7b99e097\\section1.pe",
+    "size": 7200,
+    "hits": [
+      "DSDT"
+    ]
+  },
+  {
+    "path": "work\\bios-reset-45\\volumes\\0x7fba10\\volume-0\\file-20bc8ac9-94d1-4208-ab28-5d673fd73486\\section0\\section1\\volume-ee4e5898-3914-4259-9d6e-dc7bd79403cf\\file-8de8964f-2939-4b49-a348-f6b2b2de4a42\\file.obj",
+    "size": 319,
+    "hits": [
+      "SSDT"
+    ]
+  },
+  {
+    "path": "work\\bios-reset-45\\volumes\\0x7fba10\\volume-0\\file-20bc8ac9-94d1-4208-ab28-5d673fd73486\\section0\\section1\\volume-ee4e5898-3914-4259-9d6e-dc7bd79403cf\\file-8de8964f-2939-4b49-a348-f6b2b2de4a42\\section0.raw",
+    "size": 291,
+    "hits": [
+      "SSDT"
+    ]
+  },
+  {
+    "path": "work\\bios-reset-45\\volumes\\0x7fba10\\volume-0\\file-20bc8ac9-94d1-4208-ab28-5d673fd73486\\section0\\section1\\volume-ee4e5898-3914-4259-9d6e-dc7bd79403cf\\file-9a8f82d5-39b1-48da-92dc-a22da8834df6\\file.obj",
+    "size": 98,
+    "hits": [
+      "SSDT"
+    ]
+  },
+  {
+    "path": "work\\bios-reset-45\\volumes\\0x7fba10\\volume-0\\file-20bc8ac9-94d1-4208-ab28-5d673fd73486\\section0\\section1\\volume-ee4e5898-3914-4259-9d6e-dc7bd79403cf\\file-9a8f82d5-39b1-48da-92dc-a22da8834df6\\section0.raw",
+    "size": 70,
+    "hits": [
+      "SSDT"
+    ]
+  },
+  {
+    "path": "work\\bios-reset-45\\volumes\\0x7fba10\\volume-0\\file-20bc8ac9-94d1-4208-ab28-5d673fd73486\\section0\\section1\\volume-ee4e5898-3914-4259-9d6e-dc7bd79403cf\\file-c38fb0e2-0c43-49c9-b544-9b17aa4dcba3\\file.obj",
+    "size": 25804,
+    "hits": [
+      "SSDT"
+    ]
+  },
+  {
+    "path": "work\\bios-reset-45\\volumes\\0x7fba10\\volume-0\\file-20bc8ac9-94d1-4208-ab28-5d673fd73486\\section0\\section1\\volume-ee4e5898-3914-4259-9d6e-dc7bd79403cf\\file-c38fb0e2-0c43-49c9-b544-9b17aa4dcba3\\section0.raw",
+    "size": 778,
+    "hits": [
+      "SSDT"
+    ]
+  },
+  {
+    "path": "work\\bios-reset-45\\volumes\\0x7fba10\\volume-0\\file-20bc8ac9-94d1-4208-ab28-5d673fd73486\\section0\\section1\\volume-ee4e5898-3914-4259-9d6e-dc7bd79403cf\\file-c38fb0e2-0c43-49c9-b544-9b17aa4dcba3\\section1.raw",
+    "size": 791,
+    "hits": [
+      "SSDT"
+    ]
+  },
+  {
+    "path": "work\\bios-reset-45\\volumes\\0x7fba10\\volume-0\\file-20bc8ac9-94d1-4208-ab28-5d673fd73486\\section0\\section1\\volume-ee4e5898-3914-4259-9d6e-dc7bd79403cf\\file-c38fb0e2-0c43-49c9-b544-9b17aa4dcba3\\section10.raw",
+    "size": 6940,
+    "hits": [
+      "SSDT"
+    ]
+  },
+  {
+    "path": "work\\bios-reset-45\\volumes\\0x7fba10\\volume-0\\file-20bc8ac9-94d1-4208-ab28-5d673fd73486\\section0\\section1\\volume-ee4e5898-3914-4259-9d6e-dc7bd79403cf\\file-c38fb0e2-0c43-49c9-b544-9b17aa4dcba3\\section11.raw",
+    "size": 2511,
+    "hits": [
+      "SSDT"
+    ]
+  },
+  {
+    "path": "work\\bios-reset-45\\volumes\\0x7fba10\\volume-0\\file-20bc8ac9-94d1-4208-ab28-5d673fd73486\\section0\\section1\\volume-ee4e5898-3914-4259-9d6e-dc7bd79403cf\\file-c38fb0e2-0c43-49c9-b544-9b17aa4dcba3\\section12.raw",
+    "size": 1828,
+    "hits": [
+      "SSDT"
+    ]
+  },
+  {
+    "path": "work\\bios-reset-45\\volumes\\0x7fba10\\volume-0\\file-20bc8ac9-94d1-4208-ab28-5d673fd73486\\section0\\section1\\volume-ee4e5898-3914-4259-9d6e-dc7bd79403cf\\file-c38fb0e2-0c43-49c9-b544-9b17aa4dcba3\\section13.raw",
+    "size": 141,
+    "hits": [
+      "SSDT"
+    ]
+  },
+  {
+    "path": "work\\bios-reset-45\\volumes\\0x7fba10\\volume-0\\file-20bc8ac9-94d1-4208-ab28-5d673fd73486\\section0\\section1\\volume-ee4e5898-3914-4259-9d6e-dc7bd79403cf\\file-c38fb0e2-0c43-49c9-b544-9b17aa4dcba3\\section14.raw",
+    "size": 1576,
+    "hits": [
+      "SSDT"
+    ]
+  },
+  {
+    "path": "work\\bios-reset-45\\volumes\\0x7fba10\\volume-0\\file-20bc8ac9-94d1-4208-ab28-5d673fd73486\\section0\\section1\\volume-ee4e5898-3914-4259-9d6e-dc7bd79403cf\\file-c38fb0e2-0c43-49c9-b544-9b17aa4dcba3\\section2.raw",
+    "size": 1532,
+    "hits": [
+      "SSDT"
+    ]
+  },
+  {
+    "path": "work\\bios-reset-45\\volumes\\0x7fba10\\volume-0\\file-20bc8ac9-94d1-4208-ab28-5d673fd73486\\section0\\section1\\volume-ee4e5898-3914-4259-9d6e-dc7bd79403cf\\file-c38fb0e2-0c43-49c9-b544-9b17aa4dcba3\\section3.raw",
+    "size": 2736,
+    "hits": [
+      "SSDT"
+    ]
+  },
+  {
+    "path": "work\\bios-reset-45\\volumes\\0x7fba10\\volume-0\\file-20bc8ac9-94d1-4208-ab28-5d673fd73486\\section0\\section1\\volume-ee4e5898-3914-4259-9d6e-dc7bd79403cf\\file-c38fb0e2-0c43-49c9-b544-9b17aa4dcba3\\section4.raw",
+    "size": 2297,
+    "hits": [
+      "SSDT"
+    ]
+  },
+  {
+    "path": "work\\bios-reset-45\\volumes\\0x7fba10\\volume-0\\file-20bc8ac9-94d1-4208-ab28-5d673fd73486\\section0\\section1\\volume-ee4e5898-3914-4259-9d6e-dc7bd79403cf\\file-c38fb0e2-0c43-49c9-b544-9b17aa4dcba3\\section5.raw",
+    "size": 1024,
+    "hits": [
+      "SSDT"
+    ]
+  },
+  {
+    "path": "work\\bios-reset-45\\volumes\\0x7fba10\\volume-0\\file-20bc8ac9-94d1-4208-ab28-5d673fd73486\\section0\\section1\\volume-ee4e5898-3914-4259-9d6e-dc7bd79403cf\\file-c38fb0e2-0c43-49c9-b544-9b17aa4dcba3\\section6.raw",
+    "size": 283,
+    "hits": [
+      "SSDT"
+    ]
+  },
+  {
+    "path": "work\\bios-reset-45\\volumes\\0x7fba10\\volume-0\\file-20bc8ac9-94d1-4208-ab28-5d673fd73486\\section0\\section1\\volume-ee4e5898-3914-4259-9d6e-dc7bd79403cf\\file-c38fb0e2-0c43-49c9-b544-9b17aa4dcba3\\section7.raw",
+    "size": 2069,
+    "hits": [
+      "SSDT"
+    ]
+  },
+  {
+    "path": "work\\bios-reset-45\\volumes\\0x7fba10\\volume-0\\file-20bc8ac9-94d1-4208-ab28-5d673fd73486\\section0\\section1\\volume-ee4e5898-3914-4259-9d6e-dc7bd79403cf\\file-c38fb0e2-0c43-49c9-b544-9b17aa4dcba3\\section8.raw",
+    "size": 244,
+    "hits": [
+      "SSDT"
+    ]
+  },
+  {
+    "path": "work\\bios-reset-45\\volumes\\0x7fba10\\volume-0\\file-20bc8ac9-94d1-4208-ab28-5d673fd73486\\section0\\section1\\volume-ee4e5898-3914-4259-9d6e-dc7bd79403cf\\file-c38fb0e2-0c43-49c9-b544-9b17aa4dcba3\\section9.raw",
+    "size": 955,
+    "hits": [
+      "SSDT"
+    ]
+  },
+  {
+    "path": "work\\bios-reset-45\\volumes\\0x7fba10\\volume-0\\file-20bc8ac9-94d1-4208-ab28-5d673fd73486\\section0\\section1\\volume-ee4e5898-3914-4259-9d6e-dc7bd79403cf\\file-ca89914d-2317-452e-b245-36c6fb77a9c6\\file.obj",
+    "size": 12780,
+    "hits": [
+      "SSDT"
+    ]
+  },
+  {
+    "path": "work\\bios-reset-45\\volumes\\0x7fba10\\volume-0\\file-20bc8ac9-94d1-4208-ab28-5d673fd73486\\section0\\section1\\volume-ee4e5898-3914-4259-9d6e-dc7bd79403cf\\file-ca89914d-2317-452e-b245-36c6fb77a9c6\\section0.raw",
+    "size": 12752,
+    "hits": [
+      "SSDT"
+    ]
+  },
+  {
+    "path": "work\\bios-reset-45\\volumes\\0x7fba10\\volume-0\\file-20bc8ac9-94d1-4208-ab28-5d673fd73486\\section0\\section1\\volume-ee4e5898-3914-4259-9d6e-dc7bd79403cf\\file-cb933912-df8f-4305-b1f9-7b44fa11395c\\file.obj",
+    "size": 22534,
+    "hits": [
+      "DSDT"
+    ]
+  },
+  {
+    "path": "work\\bios-reset-45\\volumes\\0x7fba10\\volume-0\\file-20bc8ac9-94d1-4208-ab28-5d673fd73486\\section0\\section1\\volume-ee4e5898-3914-4259-9d6e-dc7bd79403cf\\file-cb933912-df8f-4305-b1f9-7b44fa11395c\\section1.pe",
+    "size": 22240,
+    "hits": [
+      "DSDT"
+    ]
+  },
+  {
+    "path": "work\\bios-reset-45\\volumes\\0x7fba10\\volume-0\\file-20bc8ac9-94d1-4208-ab28-5d673fd73486\\section0\\section1\\volume-ee4e5898-3914-4259-9d6e-dc7bd79403cf\\file-de23acee-cf55-4fb6-aa77-984ab53de823\\file.obj",
+    "size": 45582,
+    "hits": [
+      "DSDT"
+    ]
+  },
+  {
+    "path": "work\\bios-reset-45\\volumes\\0x7fba10\\volume-0\\file-20bc8ac9-94d1-4208-ab28-5d673fd73486\\section0\\section1\\volume-ee4e5898-3914-4259-9d6e-dc7bd79403cf\\file-de23acee-cf55-4fb6-aa77-984ab53de823\\section1.pe",
+    "size": 45472,
+    "hits": [
+      "DSDT"
+    ]
+  },
+  {
+    "path": "work\\bios-reset-45\\volumes\\0x7fba10\\volume-0\\file-20bc8ac9-94d1-4208-ab28-5d673fd73486\\section0\\section1\\volume-ee4e5898-3914-4259-9d6e-dc7bd79403cf\\file-e3164526-690a-4e0d-b028-aea16fe2bcf3\\file.obj",
+    "size": 1855,
+    "hits": [
+      "SSDT"
+    ]
+  },
+  {
+    "path": "work\\bios-reset-45\\volumes\\0x7fba10\\volume-0\\file-20bc8ac9-94d1-4208-ab28-5d673fd73486\\section0\\section1\\volume-ee4e5898-3914-4259-9d6e-dc7bd79403cf\\file-e3164526-690a-4e0d-b028-aea16fe2bcf3\\section0.raw",
+    "size": 1827,
+    "hits": [
+      "SSDT"
+    ]
+  },
+  {
+    "path": "work\\bios-reset-45\\volumes\\0x7fba10\\volume-0\\file-20bc8ac9-94d1-4208-ab28-5d673fd73486\\section0\\section1\\volume-ee4e5898-3914-4259-9d6e-dc7bd79403cf\\file-ea139578-fea0-4dd2-91b5-6953819ef1e4\\file.obj",
+    "size": 17618,
+    "hits": [
+      "SSDT"
+    ]
+  },
+  {
+    "path": "work\\bios-reset-45\\volumes\\0x7fba10\\volume-0\\file-20bc8ac9-94d1-4208-ab28-5d673fd73486\\section0\\section1\\volume-ee4e5898-3914-4259-9d6e-dc7bd79403cf\\file-ea139578-fea0-4dd2-91b5-6953819ef1e4\\section0.raw",
+    "size": 17590,
+    "hits": [
+      "SSDT"
+    ]
+  },
+  {
+    "path": "work\\bios-reset-45\\volumes\\0x7fba10\\volume-0\\file-20bc8ac9-94d1-4208-ab28-5d673fd73486\\section0\\section1\\volume-ee4e5898-3914-4259-9d6e-dc7bd79403cf\\file-f5255151-dd1f-4bd9-a350-235200798740\\file.obj",
+    "size": 11174,
+    "hits": [
+      "DSDT"
+    ]
+  },
+  {
+    "path": "work\\bios-reset-45\\volumes\\0x7fba10\\volume-0\\file-20bc8ac9-94d1-4208-ab28-5d673fd73486\\section0\\section1\\volume-ee4e5898-3914-4259-9d6e-dc7bd79403cf\\file-f5255151-dd1f-4bd9-a350-235200798740\\section1.pe",
+    "size": 11040,
+    "hits": [
+      "DSDT"
+    ]
+  },
+  {
+    "path": "work\\bios-reset-45\\volumes\\0x7fba10\\volume-0\\file-20bc8ac9-94d1-4208-ab28-5d673fd73486\\section0\\section1\\volume-ee4e5898-3914-4259-9d6e-dc7bd79403cf\\file-f7731b4c-58a2-4df4-8980-5645d39ece58\\file.obj",
+    "size": 12086,
+    "hits": [
+      "SSDT"
+    ]
+  },
+  {
+    "path": "work\\bios-reset-45\\volumes\\0x7fba10\\volume-0\\file-20bc8ac9-94d1-4208-ab28-5d673fd73486\\section0\\section1\\volume-ee4e5898-3914-4259-9d6e-dc7bd79403cf\\file-f7731b4c-58a2-4df4-8980-5645d39ece58\\section1.pe",
+    "size": 11936,
+    "hits": [
+      "SSDT"
+    ]
+  },
+  {
+    "path": "work\\bios-reset-45\\volumes\\0x7fba10\\volume-0\\file-20bc8ac9-94d1-4208-ab28-5d673fd73486\\section0\\section1\\volume-ee4e5898-3914-4259-9d6e-dc7bd79403cf\\file-f80e66a2-1a2c-415b-9b9c-066c1f04b626\\file.obj",
+    "size": 30142,
+    "hits": [
+      "DSDT"
+    ]
+  },
+  {
+    "path": "work\\bios-reset-45\\volumes\\0x7fba10\\volume-0\\file-20bc8ac9-94d1-4208-ab28-5d673fd73486\\section0\\section1\\volume-ee4e5898-3914-4259-9d6e-dc7bd79403cf\\file-f80e66a2-1a2c-415b-9b9c-066c1f04b626\\section1.pe",
+    "size": 29984,
+    "hits": [
+      "DSDT"
+    ]
+  }
+]

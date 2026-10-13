@@ -1,0 +1,30 @@
+{
+  "44-nosleep-exp1.bin": {
+    "bytes": 55296,
+    "sha256": "2b34b6d59db8443831a7e0387ae65970307f516e816dd481f1ba513d3f9de773"
+  },
+  "patch-manifest.json": {
+    "bytes": 1344,
+    "sha256": "8da5c9fde6cbf449fb9443de9648478f839394de54acddbf01c0eb607c1aa956"
+  },
+  "RETURN-EXP1.ps1": {
+    "bytes": 5583,
+    "sha256": "9f42bcea4250162ec5575a7500281568f131b7f928b45b9329799b902ed72c40"
+  },
+  "RUN-RETURN.cmd": {
+    "bytes": 113,
+    "sha256": "06ea0455bd65643ce0a9810c8afb2e80459dcfda4a8e22de41525f97136e2405"
+  },
+  "SHFU.ini": {
+    "bytes": 890,
+    "sha256": "87d8a39d9cb1a107c0d24b5a929d46051c54a089c8042e6b044c02d2ffefb64a"
+  },
+  "START-HERE.md": {
+    "bytes": 1490,
+    "sha256": "7d4ea71e05b37aea67374cdad35804efd616e9a0a8ff7a74930e3b33ad1d4c5d"
+  },
+  "Y540Updater.exe": {
+    "bytes": 205125,
+    "sha256": "e7f24d2a4bae97213d248090d3058e0463dbb891424c18481f044c3ff384d24b"
+  }
+}

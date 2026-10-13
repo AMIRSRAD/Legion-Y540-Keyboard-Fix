@@ -1,0 +1,66 @@
+{
+  "version": "0.3.0-fix1",
+  "compiler": "gcc (MinGW-W64 x86_64-ucrt-posix-seh, built by Brecht Sanders, r8) 13.2.0",
+  "architecture": "Windows x64",
+  "exe_sha256": "27d0856d0c64c3a4bd352c03a4afc4a3b66f35341a4cbf5924a0e733a55591b2",
+  "exe_bytes": 187362,
+  "imported_dlls": [
+    "comdlg32.dll",
+    "GDI32.dll",
+    "HID.DLL",
+    "KERNEL32.dll",
+    "api-ms-win-crt-convert-l1-1-0.dll",
+    "api-ms-win-crt-environment-l1-1-0.dll",
+    "api-ms-win-crt-heap-l1-1-0.dll",
+    "api-ms-win-crt-math-l1-1-0.dll",
+    "api-ms-win-crt-private-l1-1-0.dll",
+    "api-ms-win-crt-runtime-l1-1-0.dll",
+    "api-ms-win-crt-stdio-l1-1-0.dll",
+    "api-ms-win-crt-string-l1-1-0.dll",
+    "api-ms-win-crt-time-l1-1-0.dll",
+    "SETUPAPI.dll",
+    "SHELL32.dll",
+    "USER32.dll"
+  ],
+  "tests": {
+    "core": {
+      "status": "passed",
+      "evidence": "evidence/fix1-build-log.txt",
+      "marker": "PASS: real firmware"
+    },
+    "transport_memory_backend": {
+      "status": "passed",
+      "evidence": "evidence/fix1-build-log.txt",
+      "marker": "HID transport offline tests passed"
+    },
+    "protocol_emulator": {
+      "status": "passed",
+      "evidence": "evidence/fix1-build-log.txt",
+      "marker": "PASS: offline protocol model"
+    },
+    "device_state_fixtures": {
+      "status": "passed",
+      "evidence": "evidence/fix1-build-log.txt",
+      "marker": "Device-state offline fixtures passed"
+    },
+    "session_log_files": {
+      "status": "passed",
+      "evidence": "evidence/fix1-build-log.txt",
+      "marker": "Session log file/UTF-8/unique-path tests passed"
+    },
+    "app_sample_verify": {
+      "status": "passed",
+      "evidence": "evidence/fix1-build-log.txt",
+      "marker": "Validated 55296 bytes."
+    },
+    "hidden_gui_initialization": {
+      "status": "passed",
+      "evidence": "evidence/fix1-build-log.txt",
+      "marker": "GUI controls initialized (hidden; no device access)"
+    }
+  },
+  "hardware_validation": "not performed",
+  "original_executable_execution": "not performed",
+  "source_is_vendor_original": false,
+  "firmware_modified": false
+}

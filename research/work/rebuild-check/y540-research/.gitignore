@@ -1,0 +1,9 @@
+samples/*
+!samples/manifest.json
+work/
+__pycache__/
+*.pyc
+
+build/
+dist/
+*.o

@@ -1,0 +1,46 @@
+{
+  "imports_relevant": {
+    "HID.DLL": [
+      "HidD_FreePreparsedData",
+      "HidD_GetAttributes",
+      "HidD_GetFeature",
+      "HidD_GetHidGuid",
+      "HidD_GetPreparsedData",
+      "HidD_SetFeature",
+      "HidP_GetCaps"
+    ],
+    "SETUPAPI": [
+      "SetupDiChangeState",
+      "SetupDiDestroyDeviceInfoList",
+      "SetupDiEnumDeviceInfo",
+      "SetupDiEnumDeviceInterfaces",
+      "SetupDiGetClassDevsA",
+      "SetupDiGetDeviceInterfaceDetailA",
+      "SetupDiGetDeviceRegistryPropertyA",
+      "SetupDiRemoveDevice",
+      "SetupDiSetClassInstallParamsA"
+    ],
+    "KERNEL32": [
+      "CreateFileA",
+      "CreateFileW",
+      "ReadFile",
+      "WriteFile"
+    ],
+    "GDI32": [
+      "GetDeviceCaps"
+    ]
+  },
+  "embedded_firmware_exact_offset": -1,
+  "embedded_firmware_prefix_offsets": [],
+  "usb_device_descriptor": {
+    "offset": "0x5307",
+    "vid": "048D",
+    "pid": "C100",
+    "bcdDevice": "0044"
+  },
+  "usb_strings": {
+    "0x5349": "ITE Tech. Inc.",
+    "0x536b": "ITE Device(8910)",
+    "0x5391": "I8380689FA08"
+  }
+}

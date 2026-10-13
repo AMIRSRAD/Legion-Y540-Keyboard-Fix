@@ -1,0 +1,21 @@
+exp2 code: 181 bytes at 0x8a00
+ALL OK
+{
+  "legacy_startup": {
+    "bank": 2,
+    "iram_clear_completed": false,
+    "instructions": 2000
+  },
+  "reviewed_startup": {
+    "bank": 0,
+    "iram_clear_completed": true,
+    "instructions": 512
+  },
+  "scratch_values_tested": 256,
+  "atomic_operation_cases": 128,
+  "delivered_interrupt_injections": 6,
+  "reviewed_code_bytes": 181,
+  "reviewed_checksum": "0x3b9",
+  "limits": "CPU instruction models only; no hardware reset, USB, clock, RAM-ownership or trigger validation",
+  "firmware_file_written": false
+}

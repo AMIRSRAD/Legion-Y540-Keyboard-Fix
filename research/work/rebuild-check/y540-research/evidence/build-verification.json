@@ -1,0 +1,35 @@
+{
+  "version": "0.2.0",
+  "compiler": "MinGW-w64 GCC 13.2.0",
+  "architecture": "Windows x64",
+  "exe_sha256": "a050ab9081b01aea302c96386333a6817a09a4742dd7da8d60a9584098a8b006",
+  "exe_bytes": 118359,
+  "imported_dlls": [
+    "comdlg32.dll",
+    "GDI32.dll",
+    "HID.DLL",
+    "KERNEL32.dll",
+    "api-ms-win-crt-convert-l1-1-0.dll",
+    "api-ms-win-crt-environment-l1-1-0.dll",
+    "api-ms-win-crt-heap-l1-1-0.dll",
+    "api-ms-win-crt-math-l1-1-0.dll",
+    "api-ms-win-crt-private-l1-1-0.dll",
+    "api-ms-win-crt-runtime-l1-1-0.dll",
+    "api-ms-win-crt-stdio-l1-1-0.dll",
+    "api-ms-win-crt-string-l1-1-0.dll",
+    "api-ms-win-crt-time-l1-1-0.dll",
+    "SETUPAPI.dll",
+    "USER32.dll"
+  ],
+  "tests": {
+    "core": "passed",
+    "transport_memory_backend": "passed",
+    "protocol_emulator": "passed",
+    "app_sample_verify": "passed",
+    "hidden_gui_initialization": "passed",
+    "cmake_ctest": "5/5 passed"
+  },
+  "hardware_validation": "not performed",
+  "original_executable_execution": "not performed",
+  "source_is_vendor_original": false
+}

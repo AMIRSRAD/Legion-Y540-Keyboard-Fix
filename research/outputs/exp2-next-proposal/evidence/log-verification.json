@@ -1,0 +1,80 @@
+{
+  "source_zip_sha256": "4ec7c0c09300ea963a817d373b8ce0e8d680b9375674af02da8111c99559a4a2",
+  "d1_successful_pairs": 1976,
+  "complete_read_hashes": [
+    "82c94fd50191a3ad8b4f9760ebf588b911b193450dd7edeeec06bacba338e1b8",
+    "2b34b6d59db8443831a7e0387ae65970307f516e816dd481f1ba513d3f9de773"
+  ],
+  "coverage_bytes_each": 55296,
+  "failed_application_transfer_attempts": 0,
+  "records": [
+    {
+      "model": "81SX",
+      "action": "Record",
+      "last_boot_utc": "2026-10-13T09:36:03.5000000Z",
+      "policy_after": {
+        "scheme": "381b4222-f694-41f0-9685-ff5bb260df2e",
+        "dc": 0,
+        "ac": 0
+      },
+      "utc": "2026-10-13T10:04:46.3741017Z",
+      "policy_before": {
+        "scheme": "381b4222-f694-41f0-9685-ff5bb260df2e",
+        "dc": 0,
+        "ac": 0
+      },
+      "owner_note": "exp1 5642; forced-off start; baseline",
+      "active_scheme": "381b4222-f694-41f0-9685-ff5bb260df2e",
+      "windows_build": "26200",
+      "product": "Legion Y540-15IRH",
+      "owner_reported_keyboard": "working",
+      "limits": "PnP inventory is not a USB transfer trace. Owner typing result is self-reported; this script does not test the built-in keyboard or measure USB suspend."
+    },
+    {
+      "model": "81SX",
+      "action": "Disable",
+      "last_boot_utc": "2026-10-13T09:36:03.5000000Z",
+      "policy_after": {
+        "scheme": "381b4222-f694-41f0-9685-ff5bb260df2e",
+        "dc": 0,
+        "ac": 0
+      },
+      "utc": "2026-10-13T11:02:40.0173235Z",
+      "policy_before": {
+        "scheme": "381b4222-f694-41f0-9685-ff5bb260df2e",
+        "dc": 0,
+        "ac": 0
+      },
+      "owner_note": "exp1 5642; begin suspend-off comparison",
+      "active_scheme": "381b4222-f694-41f0-9685-ff5bb260df2e",
+      "windows_build": "26200",
+      "product": "Legion Y540-15IRH",
+      "owner_reported_keyboard": "working",
+      "limits": "PnP inventory is not a USB transfer trace. Owner typing result is self-reported; this script does not test the built-in keyboard or measure USB suspend."
+    },
+    {
+      "model": "81SX",
+      "action": "Record",
+      "last_boot_utc": "2026-10-13T11:03:40.5000000Z",
+      "policy_after": {
+        "scheme": "381b4222-f694-41f0-9685-ff5bb260df2e",
+        "dc": 0,
+        "ac": 0
+      },
+      "utc": "2026-10-13T11:05:33.9819916Z",
+      "policy_before": {
+        "scheme": "381b4222-f694-41f0-9685-ff5bb260df2e",
+        "dc": 0,
+        "ac": 0
+      },
+      "owner_note": "exp1 5642; suspend off; normal restart 1",
+      "active_scheme": "381b4222-f694-41f0-9685-ff5bb260df2e",
+      "windows_build": "26200",
+      "product": "Legion Y540-15IRH",
+      "owner_reported_keyboard": "working",
+      "limits": "PnP inventory is not a USB transfer trace. Owner typing result is self-reported; this script does not test the built-in keyboard or measure USB suspend."
+    }
+  ],
+  "owner_latest_outcome": "Keyboard fails on first ordinary restart; overrides working annotation in last comparison record",
+  "interpretation_limit": "Power-plan AC/DC values are zero; snapshots are not direct observation of all USB power transitions during reboot."
+}

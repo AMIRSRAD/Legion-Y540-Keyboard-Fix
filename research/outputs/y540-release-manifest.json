@@ -1,0 +1,63 @@
+{
+  "files": [
+    {
+      "name": "y540-research-source.zip",
+      "bytes": 2096330,
+      "sha256": "4bcd0b60f936a7d11da374e2aff0973b8eb47703bdc3caac73a18178edf5ee86"
+    },
+    {
+      "name": "Y540Updater-0.2.0-portable.zip",
+      "bytes": 57050,
+      "sha256": "682c071587ac71994d3dcdf9c745bbb9f7cd8ddb7097c2eea51c356d795b05ae"
+    }
+  ],
+  "exe": {
+    "version": "0.2.0",
+    "compiler": "MinGW-w64 GCC 13.2.0",
+    "architecture": "Windows x64",
+    "exe_sha256": "a050ab9081b01aea302c96386333a6817a09a4742dd7da8d60a9584098a8b006",
+    "exe_bytes": 118359,
+    "imported_dlls": [
+      "comdlg32.dll",
+      "GDI32.dll",
+      "HID.DLL",
+      "KERNEL32.dll",
+      "api-ms-win-crt-convert-l1-1-0.dll",
+      "api-ms-win-crt-environment-l1-1-0.dll",
+      "api-ms-win-crt-heap-l1-1-0.dll",
+      "api-ms-win-crt-math-l1-1-0.dll",
+      "api-ms-win-crt-private-l1-1-0.dll",
+      "api-ms-win-crt-runtime-l1-1-0.dll",
+      "api-ms-win-crt-stdio-l1-1-0.dll",
+      "api-ms-win-crt-string-l1-1-0.dll",
+      "api-ms-win-crt-time-l1-1-0.dll",
+      "SETUPAPI.dll",
+      "USER32.dll"
+    ],
+    "tests": {
+      "core": {
+        "status": "passed",
+        "output": "PASS: real firmware checksum/corruption, INI fields, C1/C3 wire bytes, staging boundaries and partial padding"
+      },
+      "transport_memory_backend": {
+        "status": "passed",
+        "output": "HID transport offline tests passed"
+      },
+      "protocol_emulator": {
+        "status": "passed",
+        "output": "PASS: complete firmware emulator, first-block-last ordering, FF skip, retry cleanup, aborts, chip identity and handshake report IDs"
+      },
+      "app_sample_verify": {
+        "status": "passed",
+        "output": "Validated 55296 bytes. Sum=5622 stored=5622 residual=0000.\n\nAbsent CHECKSUMLASTBYTESBEFF uses recovered zero initialization/default."
+      },
+      "hidden_gui_initialization": {
+        "status": "passed",
+        "output": "GUI controls initialized (hidden; no device access)"
+      }
+    },
+    "hardware_validation": "not performed",
+    "original_executable_execution": "not performed",
+    "source_is_vendor_original": false
+  }
+}

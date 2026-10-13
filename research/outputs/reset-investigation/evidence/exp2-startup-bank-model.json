@@ -1,0 +1,36 @@
+{
+  "0": {
+    "terminates": true,
+    "iterations": 255,
+    "r0_address": 0
+  },
+  "2": {
+    "terminates": false,
+    "cycle_at_iteration": 240,
+    "cycle_first_seen": 0,
+    "reason": "R0 storage cleared while used as pointer",
+    "r0_address": 16,
+    "last_addresses": [
+      35,
+      34,
+      33,
+      32,
+      31,
+      30,
+      29,
+      28,
+      27,
+      26,
+      25,
+      24,
+      23,
+      22,
+      21,
+      20,
+      19,
+      18,
+      17,
+      16
+    ]
+  }
+}

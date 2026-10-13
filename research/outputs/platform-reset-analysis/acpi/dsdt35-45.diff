@@ -1,0 +1,77 @@
+--- BHCN35WW
++++ BHCN45WW
+@@ -5,13 +5,13 @@
+  * 
+  * Disassembling to symbolic ASL+ operators
+  *
+- * Disassembly of C:/Users/a.saberi/Documents/Codex/2026-10-12/https-github-com-morluto-rea-https/work/bios-reset-35-36/35/acpi/DSDT-1b97557dfc45.aml
++ * Disassembly of work/bios-reset-45/acpi/DSDT-SKL_____-63ad8207.aml
+  *
+  * Original Table Header:
+  *     Signature        "DSDT"
+- *     Length           0x0002FE66 (196198)
++ *     Length           0x0002FF34 (196404)
+  *     Revision         0x02
+- *     Checksum         0x19
++ *     Checksum         0x50
+  *     OEM ID           "INTEL"
+  *     OEM Table ID     "SKL     "
+  *     OEM Revision     0x00000000 (0)
+@@ -19903,6 +19903,37 @@
+                     0x1000, 
+                     0x2A30
+                 })
++                OperationRegion (BTW5, SystemMemory, 0xB2022408, 0xFF)
++                Field (BTW5, DWordAcc, NoLock, Preserve)
++                {
++                    HWA5,   32
++                }
++
++                OperationRegion (BTW6, SystemMemory, 0xA3022408, 0xFF)
++                Field (BTW6, DWordAcc, NoLock, Preserve)
++                {
++                    HWA6,   32
++                }
++
++                OperationRegion (BTW7, SystemMemory, 0xB3022408, 0xFF)
++                Field (BTW7, DWordAcc, NoLock, Preserve)
++                {
++                    HWA7,   32
++                }
++
++                OperationRegion (ECS2, SystemIO, 0x72, 0x02)
++                Field (ECS2, ByteAcc, Lock, Preserve)
++                {
++                    INX2,   8, 
++                    DAT2,   8
++                }
++
++                Method (RCM2, 1, Serialized)
++                {
++                    INX2 = Arg0
++                    Return (DAT2) /* \_SB_.PCI0.LPCB.EC0_.BAT0.DAT2 */
++                }
++
+                 Method (_STA, 0, NotSerialized)  // _STA: Status
+                 {
+                     If (ECAV)
+@@ -20133,6 +20164,19 @@
+                                 OBPV = B1FV /* \_SB_.PCI0.LPCB.EC0_.B1FV */
+                                 OBRC *= 0x0A
+                                 OBPR = ((OBAC * OBPV) / 0x03E8)
++                                If ((RCM2 (0x67) == 0x67))
++                                {
++                                    If ((RCM2 (0x69) == 0x69))
++                                    {
++                                        HWA5 |= 0x30000000
++                                        HWA7 |= 0x30000000
++                                    }
++                                    ElseIf ((RCM2 (0x68) == 0x68))
++                                    {
++                                        HWA6 |= 0x30000000
++                                    }
++                                }
++
+                                 PBST [Zero] = OBST /* \_SB_.PCI0.LPCB.EC0_.BAT0.OBST */
+                                 PBST [One] = OBPR /* \_SB_.PCI0.LPCB.EC0_.BAT0.OBPR */
+                                 PBST [0x02] = OBRC /* \_SB_.PCI0.LPCB.EC0_.BAT0.OBRC */

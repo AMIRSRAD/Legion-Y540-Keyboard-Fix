@@ -1,0 +1,266 @@
+{
+  "35": {
+    "sha256": "13580df46ce2b5d54a7b6fdeef770634f7cd5bbf75650da9b6a1ae9f2ec6219f",
+    "size": 18072648,
+    "pe_offset": 200,
+    "sections": [
+      {
+        "name": ".text",
+        "raw_offset": 640,
+        "raw_size": 20384
+      },
+      {
+        "name": "",
+        "raw_offset": 21024,
+        "raw_size": 640
+      },
+      {
+        "name": ".xdata",
+        "raw_offset": 21664,
+        "raw_size": 224
+      },
+      {
+        "name": ".reloc",
+        "raw_offset": 21888,
+        "raw_size": 18049344
+      }
+    ],
+    "firmware_volumes": [
+      {
+        "offset": 8370704,
+        "length": 3616768,
+        "header_length": 72,
+        "checksum_ok": true
+      },
+      {
+        "offset": 11987472,
+        "length": 229376,
+        "header_length": 72,
+        "checksum_ok": true
+      },
+      {
+        "offset": 12200472,
+        "length": 229376,
+        "header_length": 72,
+        "checksum_ok": true
+      },
+      {
+        "offset": 12380688,
+        "length": 217088,
+        "header_length": 72,
+        "checksum_ok": true
+      },
+      {
+        "offset": 13167120,
+        "length": 655360,
+        "header_length": 72,
+        "checksum_ok": true
+      },
+      {
+        "offset": 15919632,
+        "length": 393216,
+        "header_length": 72,
+        "checksum_ok": true
+      },
+      {
+        "offset": 16312848,
+        "length": 851968,
+        "header_length": 72,
+        "checksum_ok": true
+      },
+      {
+        "offset": 17164816,
+        "length": 20480,
+        "header_length": 72,
+        "checksum_ok": true
+      },
+      {
+        "offset": 17185296,
+        "length": 557056,
+        "header_length": 72,
+        "checksum_ok": true
+      },
+      {
+        "offset": 17754640,
+        "length": 262144,
+        "header_length": 72,
+        "checksum_ok": true
+      }
+    ],
+    "strings": [
+      {
+        "offset": 21984,
+        "text": "$_IFLASH_DRV_IMG"
+      },
+      {
+        "offset": 1239544,
+        "text": "$_IFLASH_BIOSIMG"
+      },
+      {
+        "offset": 12216861,
+        "text": "$BHCN35WW"
+      },
+      {
+        "offset": 18016792,
+        "text": "$_IFLASH_INI_IMG"
+      },
+      {
+        "offset": 18050870,
+        "text": "EC_Verify=0"
+      },
+      {
+        "offset": 18050883,
+        "text": "EC_VerifyErrorRetry=3"
+      },
+      {
+        "offset": 18052244,
+        "text": ";EC_Verify                          (w)"
+      },
+      {
+        "offset": 18052420,
+        "text": ";EC_VerifyErrorRetry                (w)"
+      },
+      {
+        "offset": 18069496,
+        "text": "$_IFLASH_BIOSCER"
+      },
+      {
+        "offset": 18069784,
+        "text": "$_IFLASH_BIOSCR2"
+      }
+    ],
+    "uncompressed_acpi": []
+  },
+  "36": {
+    "sha256": "df9a58f2a2dda87d39cd510fb597b6e7e7d44dd947782bba0f09942231923db3",
+    "size": 18072648,
+    "pe_offset": 200,
+    "sections": [
+      {
+        "name": ".text",
+        "raw_offset": 640,
+        "raw_size": 20384
+      },
+      {
+        "name": "",
+        "raw_offset": 21024,
+        "raw_size": 640
+      },
+      {
+        "name": ".xdata",
+        "raw_offset": 21664,
+        "raw_size": 224
+      },
+      {
+        "name": ".reloc",
+        "raw_offset": 21888,
+        "raw_size": 18049344
+      }
+    ],
+    "firmware_volumes": [
+      {
+        "offset": 8370704,
+        "length": 3616768,
+        "header_length": 72,
+        "checksum_ok": true
+      },
+      {
+        "offset": 11987472,
+        "length": 229376,
+        "header_length": 72,
+        "checksum_ok": true
+      },
+      {
+        "offset": 12200472,
+        "length": 229376,
+        "header_length": 72,
+        "checksum_ok": true
+      },
+      {
+        "offset": 12380688,
+        "length": 217088,
+        "header_length": 72,
+        "checksum_ok": true
+      },
+      {
+        "offset": 13167120,
+        "length": 655360,
+        "header_length": 72,
+        "checksum_ok": true
+      },
+      {
+        "offset": 15919632,
+        "length": 393216,
+        "header_length": 72,
+        "checksum_ok": true
+      },
+      {
+        "offset": 16312848,
+        "length": 851968,
+        "header_length": 72,
+        "checksum_ok": true
+      },
+      {
+        "offset": 17164816,
+        "length": 20480,
+        "header_length": 72,
+        "checksum_ok": true
+      },
+      {
+        "offset": 17185296,
+        "length": 557056,
+        "header_length": 72,
+        "checksum_ok": true
+      },
+      {
+        "offset": 17754640,
+        "length": 262144,
+        "header_length": 72,
+        "checksum_ok": true
+      }
+    ],
+    "strings": [
+      {
+        "offset": 21984,
+        "text": "$_IFLASH_DRV_IMG"
+      },
+      {
+        "offset": 1239544,
+        "text": "$_IFLASH_BIOSIMG"
+      },
+      {
+        "offset": 12216861,
+        "text": "$BHCN36WW"
+      },
+      {
+        "offset": 18016792,
+        "text": "$_IFLASH_INI_IMG"
+      },
+      {
+        "offset": 18050870,
+        "text": "EC_Verify=0"
+      },
+      {
+        "offset": 18050883,
+        "text": "EC_VerifyErrorRetry=3"
+      },
+      {
+        "offset": 18052244,
+        "text": ";EC_Verify                          (w)"
+      },
+      {
+        "offset": 18052420,
+        "text": ";EC_VerifyErrorRetry                (w)"
+      },
+      {
+        "offset": 18069496,
+        "text": "$_IFLASH_BIOSCER"
+      },
+      {
+        "offset": 18069784,
+        "text": "$_IFLASH_BIOSCR2"
+      }
+    ],
+    "uncompressed_acpi": []
+  }
+}

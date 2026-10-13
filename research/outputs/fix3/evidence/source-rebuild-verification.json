@@ -1,0 +1,13 @@
+{
+  "version": "0.3.0-fix1",
+  "source_archive_rebuild": "passed",
+  "method": "Extracted fix1-source.zip to a fresh work folder and ran build.ps1; verified scoped fixture manifest and equality of all compilation inputs",
+  "original_vendor_exe_in_archive": false,
+  "raw_case_captures_in_archive": false,
+  "build_checks": "all seven checks passed",
+  "cmake_ctest": "7/7 passed separately",
+  "hardware_access": "none",
+  "compilation_inputs_equal": true,
+  "compilation_inputs_sha256": "f66aa7fb843a668f06bf0615092f2838cbeaea8d5322ca7fb1a91ec1f5efca36",
+  "compile_input_file_count": 21
+}

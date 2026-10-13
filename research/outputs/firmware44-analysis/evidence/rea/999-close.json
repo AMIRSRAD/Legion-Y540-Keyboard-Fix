@@ -1,0 +1,21 @@
+{
+  "request": {
+    "name": "close_binary",
+    "arguments": {}
+  },
+  "response": {
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"result\":null}"
+        }
+      ],
+      "structuredContent": {
+        "result": null
+      }
+    },
+    "jsonrpc": "2.0",
+    "id": 4
+  }
+}

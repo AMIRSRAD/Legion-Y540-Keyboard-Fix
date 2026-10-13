@@ -1,0 +1,32 @@
+﻿**********************
+Windows PowerShell transcript start
+Start time: 20261013151800
+Username: GSSINTDC\a.saberi
+RunAs User: GSSINTDC\a.saberi
+Configuration Name: 
+Machine: WORKPC-SABERI (Microsoft Windows NT 10.0.26200.0)
+Host Application: powershell -NoProfile -ExecutionPolicy Bypass -File work\fix9-wrapper-4f8e3589ec544a5489fdae24262e6d42\test.ps1
+Process ID: 14744
+PSVersion: 5.1.26100.9444
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.26100.9444
+BuildVersion: 10.0.26100.9444
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+fix9 launcher: checking administrator rights...
+fix9 launcher: folder C:\Users\a.saberi\Documents\Codex\2026-10-12\https-github-com-morluto-rea-https\work\fix9-wrapper-4f8e3589ec544a5489fdae24262e6d42
+fix9 launcher: package hashes OK
+PS>TerminatingError(): "USB recording setup/cleanup failed: 1"
+USB recording setup/cleanup failed: 1
+SEND THIS FILE: C:\Users\a.saberi\Documents\Codex\2026-10-12\https-github-com-morluto-rea-https\work\fix9-wrapper-4f8e3589ec544a5489fdae24262e6d42\fix9-recording-20261013T114801067Z.zip
+Capture/setup had an error; keep the ZIP and do not retry automatically.
+MOCK WRAPPER PASS
+PS>$global:?
+True
+**********************
+Windows PowerShell transcript end
+End time: 20261013151801
+**********************

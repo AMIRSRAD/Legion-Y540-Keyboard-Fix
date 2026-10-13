@@ -1,0 +1,50 @@
+{
+  "bytes": 55296,
+  "original_sha256": "3afec131c6ed70efa0a3f4b601cb799011a582835d371c57fef68af48519e359",
+  "backup_sha256": "3afec131c6ed70efa0a3f4b601cb799011a582835d371c57fef68af48519e359",
+  "backup_matches_original": true,
+  "read_passes": [
+    {
+      "pass": 1,
+      "sha256": "3afec131c6ed70efa0a3f4b601cb799011a582835d371c57fef68af48519e359",
+      "matches_original": true,
+      "matches_backup": true
+    },
+    {
+      "pass": 2,
+      "sha256": "3afec131c6ed70efa0a3f4b601cb799011a582835d371c57fef68af48519e359",
+      "matches_original": true,
+      "matches_backup": true
+    },
+    {
+      "pass": 3,
+      "sha256": "3afec131c6ed70efa0a3f4b601cb799011a582835d371c57fef68af48519e359",
+      "matches_original": true,
+      "matches_backup": true
+    }
+  ],
+  "successful_boot_command_counts": {
+    "07": 2,
+    "D1": 2964,
+    "C2": 1,
+    "C0": 35,
+    "C1": 630,
+    "D0": 35,
+    "C3": 35,
+    "C4": 1
+  },
+  "inputs": {
+    "before-flash-20261012T125116065Z-p6276-3.bin": {
+      "bytes": 55296,
+      "sha256": "3afec131c6ed70efa0a3f4b601cb799011a582835d371c57fef68af48519e359"
+    },
+    "fix2-20261012T125056093Z-p6276-1.log": {
+      "bytes": 565,
+      "sha256": "5b3f70770bccf261014fb73e9a663772f2246c41d55407a3fe6ec96aec1b78e1"
+    },
+    "fix2-20261012T125113643Z-p6276-2.log": {
+      "bytes": 2196337,
+      "sha256": "02ec95005a2b1b663bea26c5c16ca2a0d2168ddde35bcc7a656efbe149780f6c"
+    }
+  }
+}

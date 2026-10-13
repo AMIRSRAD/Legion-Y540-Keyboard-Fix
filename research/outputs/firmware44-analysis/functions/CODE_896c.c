@@ -1,0 +1,10 @@
+
+void FUN_CODE_896c(undefined1 *param_1,undefined1 param_2,undefined1 param_3,undefined1 param_4)
+
+{
+  *param_1 = param_4;
+  param_1['\x01'] = param_3;
+  param_1['\x02'] = param_2;
+  return;
+}
+

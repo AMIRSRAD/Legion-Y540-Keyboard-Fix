@@ -1,0 +1,50 @@
+{
+  "44-nosleep-exp1.bin": {
+    "bytes": 55296,
+    "sha256": "2b34b6d59db8443831a7e0387ae65970307f516e816dd481f1ba513d3f9de773"
+  },
+  "44-stock-restore.bin": {
+    "bytes": 55296,
+    "sha256": "3afec131c6ed70efa0a3f4b601cb799011a582835d371c57fef68af48519e359"
+  },
+  "analysis.md": {
+    "bytes": 3767,
+    "sha256": "57453cc7922bf19cfc18711b8bcf55f7f540d3f0447161a73be2acde8574d432"
+  },
+  "build_patch.py": {
+    "bytes": 2862,
+    "sha256": "56015eab0ad604b8feac1173d5a9b52bc943ff0e724040ef013f69e97e8bcf3b"
+  },
+  "ghidra-verification.txt": {
+    "bytes": 103,
+    "sha256": "08633ce54db4ab5fe09d14c741a455ef1f959aafce9f4bdff42b476604908b55"
+  },
+  "patch-manifest.json": {
+    "bytes": 1344,
+    "sha256": "8da5c9fde6cbf449fb9443de9648478f839394de54acddbf01c0eb607c1aa956"
+  },
+  "protocol-emulator.txt": {
+    "bytes": 161,
+    "sha256": "97b37466ac32a8f8d5f5055bfda4e57fc22c79c5e41e77503fdc726ec694ac96"
+  },
+  "READ-ME-FIRST.txt": {
+    "bytes": 2613,
+    "sha256": "6d100611b17930b43f165d1db0cf1292e44cff7e6c657569a8c8b185a8418191"
+  },
+  "restore-validation.txt": {
+    "bytes": 296,
+    "sha256": "813d78eefa1a80c8c5727b731f0e195ca05dfb278a54ccebb29aab0a4fcf0df2"
+  },
+  "SHFU.ini": {
+    "bytes": 890,
+    "sha256": "87d8a39d9cb1a107c0d24b5a929d46051c54a089c8042e6b044c02d2ffefb64a"
+  },
+  "updater-validation.txt": {
+    "bytes": 296,
+    "sha256": "c561a02197ec9e2236e1fbace514b83085a11c824575677f5b7bea5cae27250e"
+  },
+  "VerifyPatch.java": {
+    "bytes": 1000,
+    "sha256": "6d143c655696ff9ac09d99d64af30285fceac0211e07fbfdfdb5a02c35d7fee2"
+  }
+}

@@ -1,0 +1,40 @@
+{
+  "name": "Y540 firmware44 no-deep-sleep experiment1",
+  "status": "Experimental; hardware untested; not a confirmed repair",
+  "scope": "Bypass entry through4BC4 at final existing sleep gate; does not disable every possible low-power mechanism",
+  "original_sha256": "3afec131c6ed70efa0a3f4b601cb799011a582835d371c57fef68af48519e359",
+  "patched_sha256": "2b34b6d59db8443831a7e0387ae65970307f516e816dd481f1ba513d3f9de773",
+  "bytes": 55296,
+  "differences": [
+    {
+      "offset": "0x4c79",
+      "before": "60",
+      "after": "80"
+    },
+    {
+      "offset": "0x7fff",
+      "before": "22",
+      "after": "42"
+    }
+  ],
+  "checksum": {
+    "original": "5622",
+    "patched": "5642",
+    "range": "0400-D800 exclusive",
+    "slots": "7FFE(high),7FFF(low)"
+  },
+  "branch": {
+    "address": "4C79",
+    "original": "JZ 4CE1",
+    "patched": "SJMP 4CE1",
+    "target": "4CE1 RET",
+    "modeled_accumulator_inputs": 256
+  },
+  "rollback": "Original image included; requires a usable boot/update interface. Recovery is not guaranteed if modified firmware stops enumeration.",
+  "proof_limits": [
+    "Static base-zero CODE mapping",
+    "No MCU or electrical execution",
+    "No guarantee against indirect entry paths",
+    "Increased power consumption or changed suspend/wake behavior possible"
+  ]
+}

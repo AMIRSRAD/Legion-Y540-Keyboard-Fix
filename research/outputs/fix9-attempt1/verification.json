@@ -1,0 +1,26 @@
+{
+  "backup_sha256": "2b34b6d59db8443831a7e0387ae65970307f516e816dd481f1ba513d3f9de773",
+  "final_readback_sha256": "e0a959a63dceada1f5fad6846451372271e266ec176cfd25bb322a69199b5457",
+  "complete_bytes_each": 55296,
+  "successful_d1_pairs": 1978,
+  "actual_bootloader_dependencies_match": true,
+  "application_failed_transfer_attempts": 0,
+  "reset_command_accepted_utc": "2026-10-13T11:51:44.108Z",
+  "supplied_recording_zip": "Old return-to-exp1 recording; SHA matches the previously analyzed file, not a fix9 USB trace",
+  "restart_outcome": {
+    "evidence_type": "owner report after verified exp3 installation",
+    "ordinary_restart": "works repeatedly; owner says always in performed tests",
+    "ordinary_shutdown_then_power_on": "works repeatedly",
+    "shift_shutdown_then_power_on": "failed",
+    "trial_counts": "multiple, exact counts unspecified",
+    "recovery_after_shift_failure": "not yet reported",
+    "fast_startup": "owner previously reported off; current setting and actual shutdown transition not independently captured"
+  },
+  "final_owner_correction": {
+    "date": "2026-10-13",
+    "normal_restart": "again causes nonworking keyboard",
+    "earlier_success": "temporary and withdrawn as evidence of reliable improvement",
+    "repair_result": "not fixed",
+    "next_action": "preserve on GitHub and remove local research copies"
+  }
+}

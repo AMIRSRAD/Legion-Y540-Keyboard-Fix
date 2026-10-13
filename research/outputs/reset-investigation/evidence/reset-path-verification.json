@@ -1,0 +1,56 @@
+{
+  "dump_sha256": "6160ed916d5356c631a5e7939a55d3dae0b863199e0f33ba7e6680fe6f684d2a",
+  "byte_checks_passed": 9,
+  "switch_records": [
+    {
+      "command": 7,
+      "destination": 61030
+    },
+    {
+      "command": 8,
+      "destination": 61035
+    },
+    {
+      "command": 192,
+      "destination": 60975
+    },
+    {
+      "command": 193,
+      "destination": 60997
+    },
+    {
+      "command": 194,
+      "destination": 61002
+    },
+    {
+      "command": 195,
+      "destination": 61007
+    },
+    {
+      "command": 196,
+      "destination": 61012
+    },
+    {
+      "command": 208,
+      "destination": 61020
+    },
+    {
+      "command": 209,
+      "destination": 61025
+    }
+  ],
+  "terminal_delay_arguments": [
+    5,
+    1000
+  ],
+  "delay_units": "unknown; not asserted to be milliseconds",
+  "terminal_operations": [
+    "XDATA[2F50]=08",
+    "XDATA[1058]|=40",
+    "SFR[8E]&=3F",
+    "SFR[D8]=02",
+    "infinite wait"
+  ],
+  "physical_reset_scope": "unknown without applicable register map or measurement",
+  "mode": "offline byte and branch verification only"
+}

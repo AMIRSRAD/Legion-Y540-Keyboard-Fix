@@ -1,0 +1,44 @@
+Y540 FIX8 (0.8.0)  -  OPTION A: SELF-RECOVERY FIRMWARE (44-selfheal-exp2.bin)
+
+READ THIS FIRST - WHAT IT IS AND THE RISKS
+exp2 = your current no-sleep firmware (exp1) PLUS a small software watchdog (156 bytes added at
+0x8A00, 5 places hooked). It tries to heal the "keyboard chip goes silent" fault by itself:
+  - if the firmware's main loop stalls for ~8 s, it restarts the keyboard firmware;
+  - if the host resets the USB port but never addresses the keyboard within ~3 s, it detaches the
+    USB connection, waits ~0.4 s and restarts (so Windows sees a fresh plug-in and re-enumerates).
+It was tested ONLY on a small 8051 emulator for logic (thresholds, stack, restart sequence).
+It has NEVER run on the real chip. Register 2F40 is used as the 'detach' control by analogy with
+the firmware's own init; its meaning is unverified. It only helps if the chip is stuck in a way the
+firmware can notice (a hung loop or a reset that is never answered). It cannot fix a wedge that
+produces no event at all, nor a hardware fault.
+Worst cases: (a) it does nothing; (b) it restarts when it should not (keyboard blinks off for ~1 s,
+possibly repeatedly); (c) the keyboard misbehaves until you flash a different image.
+
+WAY BACK (do this if anything is worse): run the same updater and write 44-nosleep-exp1.bin (your
+current, known-OK image) or 44-stock-restore.bin. The updater needs the keyboard to be visible;
+a restart loop still leaves it visible between restarts, so retry if the first attempt says "not
+found". Do not interrupt a write.
+
+STEPS
+1. Keyboard working (hold power 10 s first if not), AC connected, nothing else using the keyboard.
+2. Extract this folder fresh. Run RUN-FIX8.cmd as administrator (records USB) or RUN-UPDATER-ONLY.cmd.
+3. Title "Y540 fix8"; firmware must be 44-selfheal-exp2.bin. Click "Validate firmware":
+   55296 bytes, Sum=0C87 stored=0C87 residual=0000.
+4. Click "Advanced firmware write" ONCE. Since the keyboard currently holds exp1, the updater
+   recognises it as a known image and reads it only once (~30 s), then erases, writes, verifies.
+5. After "Firmware readback matched; reset command accepted", wait 10 s. Test typing.
+
+TESTS TO RUN (write down results)
+ a) type for a minute; idle 10 min; type again.
+ b) normal Restart x6 in a row. Note the first one that fails (before: always #3).
+ c) Shutdown, wait 30 s, power on. x3.
+ d) In a failed state, do NOT hold power for the first 15 seconds - wait and see whether the
+    keyboard comes back by itself (that would mean exp2 is healing it). Note how long it took.
+Then send me the logs folder (and the recording ZIP).
+
+FILES
+44-selfheal-exp2.bin   NEW (checksum 0C87)
+44-nosleep-exp1.bin    current image (checksum 5642)
+44-stock-restore.bin   original 44 (checksum 5622)
+build_exp2.py, test_exp2.py   how exp2 was built and its emulator test (needs Python 3)
+exp2-patch-manifest.json      exact hashes and changed bytes

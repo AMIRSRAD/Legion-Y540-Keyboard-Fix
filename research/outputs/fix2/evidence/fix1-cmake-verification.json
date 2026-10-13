@@ -1,0 +1,14 @@
+{
+  "cmake_build": "passed",
+  "ctest": "7/7 passed",
+  "hardware_access": "none",
+  "test_names": [
+    "core",
+    "device-state-fixtures",
+    "session-log-files",
+    "hid-transport-offline",
+    "app-verify",
+    "app-gui-hidden",
+    "protocol-emulator"
+  ]
+}

@@ -1,0 +1,494 @@
+{
+  "source": "C:\\Users\\a.saberi\\Documents\\Codex\\2026-10-12\\https-github-com-morluto-rea-https\\outputs\\y540-research\\samples\\44.bin",
+  "size": 55296,
+  "sha256": "3afec131c6ed70efa0a3f4b601cb799011a582835d371c57fef68af48519e359",
+  "offset_kind": "file",
+  "ini": {
+    "sha256": "87d8a39d9cb1a107c0d24b5a929d46051c54a089c8042e6b044c02d2ffefb64a",
+    "size": 890,
+    "sections": {
+      "MAIN": {
+        "hwid": "USB\\VID_048D&PID_C100"
+      },
+      "BOOT": {
+        "hwid": "USB\\VID_048D&PID_89DB"
+      },
+      "DELAY": {
+        "msec": "6000"
+      },
+      "MESSAGE": {
+        "enable": "1"
+      },
+      "DEVICE": {
+        "mainindex": "0",
+        "removerescan": "1",
+        "checksummode": "1",
+        "neederase": "1",
+        "dockingburn": "0",
+        "programfailretry": "1"
+      },
+      "CLOSEAPP": {
+        "pass": "1",
+        "fail": "0"
+      },
+      "NEWVERSION": {
+        "maindeviceupid": "FF89",
+        "maindeviceuid": "0010",
+        "bootdevicechipid": "8171",
+        "bootdeviceupid": "FF89",
+        "bootdeviceuid": "00DB",
+        "updatestartaddress": "0",
+        "updatefilesizekb": "54",
+        "updateonlyparameter": "0",
+        "checksumstartaddress": "0400",
+        "checksumendaddress": "D800",
+        "checksumvaluehighaddress": "7FFE",
+        "checksumvaluelowaddress": "7FFF",
+        "checksuminvert": "1"
+      },
+      "CHECKVERSION": {
+        "donotupdatethesameversion": "0"
+      },
+      "OPTION": {
+        "programfaileraseskipfirst1k": "1",
+        "programfailerasethenreset": "1",
+        "nocheckivt": "1",
+        "writeflashdatadelay": "0",
+        "allhidcommanddelay": "5",
+        "maxstatecunt": "15",
+        "maxscandevice": "100",
+        "nocheckpid": "0",
+        "oemveroffset": "3100",
+        "popupsfornotifications": "\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffdKB\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd"
+      }
+    }
+  },
+  "candidate_8051_vectors": [
+    {
+      "offset": "0x0",
+      "bytes": "02 01 00",
+      "candidate_8051_ljmp_target": "0x100",
+      "target_bytes": "78 ff e4 f6 d8 fd 90 00 00 7f 00 7e 10 e4 f0 a3"
+    },
+    {
+      "offset": "0x3",
+      "bytes": "02 32 00",
+      "candidate_8051_ljmp_target": "0x3200",
+      "target_bytes": "32 90 07 66 ea f0 a3 eb f0 90 07 63 ef f0 f9 ec"
+    },
+    {
+      "offset": "0xb",
+      "bytes": "02 33 00",
+      "candidate_8051_ljmp_target": "0x3300",
+      "target_bytes": "c0 e0 c0 f0 c0 83 c0 82 c0 d0 75 d0 10 12 0c 33"
+    },
+    {
+      "offset": "0x13",
+      "bytes": "02 34 00",
+      "candidate_8051_ljmp_target": "0x3400",
+      "target_bytes": "c0 e0 c0 f0 c0 83 c0 82 c0 d0 75 d0 10 90 11 10"
+    },
+    {
+      "offset": "0x1b",
+      "bytes": "02 35 00",
+      "candidate_8051_ljmp_target": "0x3500",
+      "target_bytes": "32 7e 0c 7f 2f cc ea cc cd e9 cd 7b 10 7a 00 12"
+    },
+    {
+      "offset": "0x23",
+      "bytes": "02 36 00",
+      "candidate_8051_ljmp_target": "0x3600",
+      "target_bytes": "32 90 07 63 eb f0 a3 ea f0 a3 e9 f0 a3 ed f0 e4"
+    },
+    {
+      "offset": "0x2b",
+      "bytes": "02 37 00",
+      "candidate_8051_ljmp_target": "0x3700",
+      "target_bytes": "32 90 0c 34 e0 d3 94 0a 40 03 74 0a f0 90 0c 33"
+    }
+  ],
+  "candidate_reset_code": {
+    "offset": "0x100",
+    "bytes": "78 ff e4 f6 d8 fd 90 00 00 7f 00 7e 10 e4 f0 a3 df fc de fa 75 81 a0 02 01 20 00 00 00 00 00 00"
+  },
+  "descriptors": [
+    {
+      "offset": "0x5307",
+      "length": 18,
+      "type": 1,
+      "bytes": "12 01 10 01 00 00 00 40 8d 04 00 c1 44 00 01 02 00 01"
+    },
+    {
+      "offset": "0x531d",
+      "length": 9,
+      "type": 2,
+      "bytes": "09 02 22 00 01 01 00 e0 32"
+    },
+    {
+      "offset": "0x5326",
+      "length": 9,
+      "type": 4,
+      "bytes": "09 04 00 00 01 03 01 01 00"
+    },
+    {
+      "offset": "0x532f",
+      "length": 9,
+      "type": 33,
+      "bytes": "09 21 10 01 00 01 22 a1 00"
+    },
+    {
+      "offset": "0x5338",
+      "length": 7,
+      "type": 5,
+      "bytes": "07 05 81 03 40 00 04"
+    },
+    {
+      "offset": "0x5342",
+      "length": 4,
+      "type": 3,
+      "bytes": "04 03 09 04"
+    },
+    {
+      "offset": "0x5349",
+      "length": 30,
+      "type": 3,
+      "bytes": "1e 03 49 00 54 00 45 00 20 00 54 00 65 00 63 00 68 00 2e 00 20 00 49 00 6e 00 63 00 2e 00",
+      "utf16le": "ITE Tech. Inc."
+    },
+    {
+      "offset": "0x536b",
+      "length": 34,
+      "type": 3,
+      "bytes": "22 03 49 00 54 00 45 00 20 00 44 00 65 00 76 00 69 00 63 00 65 00 28 00 38 00 39 00 31 00 30 00 29 00",
+      "utf16le": "ITE Device(8910)"
+    },
+    {
+      "offset": "0x5391",
+      "length": 26,
+      "type": 3,
+      "bytes": "1a 03 49 00 38 00 33 00 38 00 30 00 36 00 38 00 39 00 46 00 41 00 30 00 38 00",
+      "utf16le": "I8380689FA08"
+    }
+  ],
+  "checksum": {
+    "range": "[0x0400,0xd800)",
+    "range_semantics": "candidate exclusive end; d800 is EOF",
+    "stored_offsets": [
+      "0x7ffe",
+      "0x7fff"
+    ],
+    "stored_bytes": "56 22",
+    "stored_be": "0x5622",
+    "hypotheses": {
+      "included": {
+        "byte_sum": {
+          "value": "0x549c",
+          "matches_stored_be": false,
+          "matches_stored_le": false
+        },
+        "byte_sum_ones_complement": {
+          "value": "0xab63",
+          "matches_stored_be": false,
+          "matches_stored_le": false
+        },
+        "byte_sum_twos_complement": {
+          "value": "0xab64",
+          "matches_stored_be": false,
+          "matches_stored_le": false
+        },
+        "big_endian_word_sum": {
+          "value": "0xf40a",
+          "matches_stored_be": false,
+          "matches_stored_le": false
+        },
+        "big_endian_word_sum_ones_complement": {
+          "value": "0x0bf5",
+          "matches_stored_be": false,
+          "matches_stored_le": false
+        },
+        "big_endian_word_sum_twos_complement": {
+          "value": "0x0bf6",
+          "matches_stored_be": false,
+          "matches_stored_le": false
+        },
+        "little_endian_word_sum": {
+          "value": "0xfc92",
+          "matches_stored_be": false,
+          "matches_stored_le": false
+        },
+        "little_endian_word_sum_ones_complement": {
+          "value": "0x036d",
+          "matches_stored_be": false,
+          "matches_stored_le": false
+        },
+        "little_endian_word_sum_twos_complement": {
+          "value": "0x036e",
+          "matches_stored_be": false,
+          "matches_stored_le": false
+        },
+        "crc_hqx_init0": {
+          "value": "0xe485",
+          "matches_stored_be": false,
+          "matches_stored_le": false
+        },
+        "crc_hqx_init0_ones_complement": {
+          "value": "0x1b7a",
+          "matches_stored_be": false,
+          "matches_stored_le": false
+        },
+        "crc_hqx_init0_twos_complement": {
+          "value": "0x1b7b",
+          "matches_stored_be": false,
+          "matches_stored_le": false
+        },
+        "crc_hqx_initffff": {
+          "value": "0x81d3",
+          "matches_stored_be": false,
+          "matches_stored_le": false
+        },
+        "crc_hqx_initffff_ones_complement": {
+          "value": "0x7e2c",
+          "matches_stored_be": false,
+          "matches_stored_le": false
+        },
+        "crc_hqx_initffff_twos_complement": {
+          "value": "0x7e2d",
+          "matches_stored_be": false,
+          "matches_stored_le": false
+        }
+      },
+      "omitted": {
+        "byte_sum": {
+          "value": "0x5424",
+          "matches_stored_be": false,
+          "matches_stored_le": false
+        },
+        "byte_sum_ones_complement": {
+          "value": "0xabdb",
+          "matches_stored_be": false,
+          "matches_stored_le": false
+        },
+        "byte_sum_twos_complement": {
+          "value": "0xabdc",
+          "matches_stored_be": false,
+          "matches_stored_le": false
+        },
+        "big_endian_word_sum": {
+          "value": "0x9de8",
+          "matches_stored_be": false,
+          "matches_stored_le": false
+        },
+        "big_endian_word_sum_ones_complement": {
+          "value": "0x6217",
+          "matches_stored_be": false,
+          "matches_stored_le": false
+        },
+        "big_endian_word_sum_twos_complement": {
+          "value": "0x6218",
+          "matches_stored_be": false,
+          "matches_stored_le": false
+        },
+        "little_endian_word_sum": {
+          "value": "0xda3c",
+          "matches_stored_be": false,
+          "matches_stored_le": false
+        },
+        "little_endian_word_sum_ones_complement": {
+          "value": "0x25c3",
+          "matches_stored_be": false,
+          "matches_stored_le": false
+        },
+        "little_endian_word_sum_twos_complement": {
+          "value": "0x25c4",
+          "matches_stored_be": false,
+          "matches_stored_le": false
+        },
+        "crc_hqx_init0": {
+          "value": "0x5e5a",
+          "matches_stored_be": false,
+          "matches_stored_le": false
+        },
+        "crc_hqx_init0_ones_complement": {
+          "value": "0xa1a5",
+          "matches_stored_be": false,
+          "matches_stored_le": false
+        },
+        "crc_hqx_init0_twos_complement": {
+          "value": "0xa1a6",
+          "matches_stored_be": false,
+          "matches_stored_le": false
+        },
+        "crc_hqx_initffff": {
+          "value": "0xa6ab",
+          "matches_stored_be": false,
+          "matches_stored_le": false
+        },
+        "crc_hqx_initffff_ones_complement": {
+          "value": "0x5954",
+          "matches_stored_be": false,
+          "matches_stored_le": false
+        },
+        "crc_hqx_initffff_twos_complement": {
+          "value": "0x5955",
+          "matches_stored_be": false,
+          "matches_stored_le": false
+        }
+      },
+      "zeroed": {
+        "byte_sum": {
+          "value": "0x5424",
+          "matches_stored_be": false,
+          "matches_stored_le": false
+        },
+        "byte_sum_ones_complement": {
+          "value": "0xabdb",
+          "matches_stored_be": false,
+          "matches_stored_le": false
+        },
+        "byte_sum_twos_complement": {
+          "value": "0xabdc",
+          "matches_stored_be": false,
+          "matches_stored_le": false
+        },
+        "big_endian_word_sum": {
+          "value": "0x9de8",
+          "matches_stored_be": false,
+          "matches_stored_le": false
+        },
+        "big_endian_word_sum_ones_complement": {
+          "value": "0x6217",
+          "matches_stored_be": false,
+          "matches_stored_le": false
+        },
+        "big_endian_word_sum_twos_complement": {
+          "value": "0x6218",
+          "matches_stored_be": false,
+          "matches_stored_le": false
+        },
+        "little_endian_word_sum": {
+          "value": "0xda3c",
+          "matches_stored_be": false,
+          "matches_stored_le": false
+        },
+        "little_endian_word_sum_ones_complement": {
+          "value": "0x25c3",
+          "matches_stored_be": false,
+          "matches_stored_le": false
+        },
+        "little_endian_word_sum_twos_complement": {
+          "value": "0x25c4",
+          "matches_stored_be": false,
+          "matches_stored_le": false
+        },
+        "crc_hqx_init0": {
+          "value": "0x9bc9",
+          "matches_stored_be": false,
+          "matches_stored_le": false
+        },
+        "crc_hqx_init0_ones_complement": {
+          "value": "0x6436",
+          "matches_stored_be": false,
+          "matches_stored_le": false
+        },
+        "crc_hqx_init0_twos_complement": {
+          "value": "0x6437",
+          "matches_stored_be": false,
+          "matches_stored_le": false
+        },
+        "crc_hqx_initffff": {
+          "value": "0xfe9f",
+          "matches_stored_be": false,
+          "matches_stored_le": false
+        },
+        "crc_hqx_initffff_ones_complement": {
+          "value": "0x0160",
+          "matches_stored_be": false,
+          "matches_stored_le": false
+        },
+        "crc_hqx_initffff_twos_complement": {
+          "value": "0x0161",
+          "matches_stored_be": false,
+          "matches_stored_le": false
+        }
+      },
+      "ff_filled": {
+        "byte_sum": {
+          "value": "0x5622",
+          "matches_stored_be": true,
+          "matches_stored_le": false
+        },
+        "byte_sum_ones_complement": {
+          "value": "0xa9dd",
+          "matches_stored_be": false,
+          "matches_stored_le": false
+        },
+        "byte_sum_twos_complement": {
+          "value": "0xa9de",
+          "matches_stored_be": false,
+          "matches_stored_le": false
+        },
+        "big_endian_word_sum": {
+          "value": "0x9de7",
+          "matches_stored_be": false,
+          "matches_stored_le": false
+        },
+        "big_endian_word_sum_ones_complement": {
+          "value": "0x6218",
+          "matches_stored_be": false,
+          "matches_stored_le": false
+        },
+        "big_endian_word_sum_twos_complement": {
+          "value": "0x6219",
+          "matches_stored_be": false,
+          "matches_stored_le": false
+        },
+        "little_endian_word_sum": {
+          "value": "0xda3b",
+          "matches_stored_be": false,
+          "matches_stored_le": false
+        },
+        "little_endian_word_sum_ones_complement": {
+          "value": "0x25c4",
+          "matches_stored_be": false,
+          "matches_stored_le": false
+        },
+        "little_endian_word_sum_twos_complement": {
+          "value": "0x25c5",
+          "matches_stored_be": false,
+          "matches_stored_le": false
+        },
+        "crc_hqx_init0": {
+          "value": "0xfe8e",
+          "matches_stored_be": false,
+          "matches_stored_le": false
+        },
+        "crc_hqx_init0_ones_complement": {
+          "value": "0x0171",
+          "matches_stored_be": false,
+          "matches_stored_le": false
+        },
+        "crc_hqx_init0_twos_complement": {
+          "value": "0x0172",
+          "matches_stored_be": false,
+          "matches_stored_le": false
+        },
+        "crc_hqx_initffff": {
+          "value": "0x9bd8",
+          "matches_stored_be": false,
+          "matches_stored_le": false
+        },
+        "crc_hqx_initffff_ones_complement": {
+          "value": "0x6427",
+          "matches_stored_be": false,
+          "matches_stored_le": false
+        },
+        "crc_hqx_initffff_twos_complement": {
+          "value": "0x6428",
+          "matches_stored_be": false,
+          "matches_stored_le": false
+        }
+      }
+    },
+    "limit": "Numerical matches alone do not verify an algorithm; updater code and/or more samples are required."
+  }
+}

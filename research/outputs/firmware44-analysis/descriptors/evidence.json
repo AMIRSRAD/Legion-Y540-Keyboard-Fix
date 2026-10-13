@@ -1,0 +1,1415 @@
+{
+  "image": "C:\\Users\\a.saberi\\Documents\\Codex\\2026-10-12\\https-github-com-morluto-rea-https\\outputs\\y540-research\\samples\\44.bin",
+  "image_bytes": 55296,
+  "image_sha256": "3afec131c6ed70efa0a3f4b601cb799011a582835d371c57fef68af48519e359",
+  "device_descriptor": {
+    "offset": "0x5307",
+    "hex": "12 01 10 01 00 00 00 40 8d 04 00 c1 44 00 01 02 00 01",
+    "bcdUSB": "0x110",
+    "max_packet_ep0": 64,
+    "VID": "0x48d",
+    "PID": "0xc100",
+    "bcdDevice": "0x44",
+    "manufacturer_index": 1,
+    "product_index": 2,
+    "serial_index": 0,
+    "configurations": 1
+  },
+  "configuration": {
+    "offset": "0x531d",
+    "total_length": 34,
+    "parsed_length": 34,
+    "interfaces": 1,
+    "attributes": "0xe0",
+    "max_power_ma": 100,
+    "nodes": [
+      {
+        "offset": "0x531d",
+        "length": 9,
+        "type": 2,
+        "hex": "09 02 22 00 01 01 00 e0 32"
+      },
+      {
+        "offset": "0x5326",
+        "length": 9,
+        "type": 4,
+        "hex": "09 04 00 00 01 03 01 01 00"
+      },
+      {
+        "offset": "0x532f",
+        "length": 9,
+        "type": 33,
+        "hex": "09 21 10 01 00 01 22 a1 00"
+      },
+      {
+        "offset": "0x5338",
+        "length": 7,
+        "type": 5,
+        "hex": "07 05 81 03 40 00 04"
+      }
+    ]
+  },
+  "primary_report_descriptor": {
+    "file_offset": "0x5184",
+    "length": 161,
+    "sha256": "8c68dabd881510d80624fc50e32b50f49afec31956a1842fb2a935dbc40fa5b7",
+    "hex": "06 89 ff 09 10 a1 01 85 5a 09 01 15 00 26 ff 00 75 08 95 10 b1 00 c0 06 89 ff 09 cd a1 01 85 cd 09 01 15 00 26 ff 00 75 08 95 02 b1 00 c0 05 01 09 06 a1 01 85 01 75 01 95 08 05 07 19 e0 29 e7 15 00 25 01 81 02 95 01 75 08 81 03 95 05 75 01 05 08 19 01 29 05 91 02 95 01 75 03 91 03 95 1e 75 08 15 00 26 ff 00 05 07 19 00 2a ff 00 81 00 c0 05 0c 09 01 a1 01 85 02 19 00 2a 3c 02 15 00 26 3c 02 75 10 95 01 81 00 c0 05 01 09 80 a1 01 85 04 19 81 29 83 15 00 25 01 95 08 75 01 81 02 c0",
+    "items": [
+      {
+        "offset": "0x5184",
+        "bytes": "06 89 ff",
+        "type": 1,
+        "tag": 0,
+        "name": "UsagePage",
+        "value": 65417
+      },
+      {
+        "offset": "0x5187",
+        "bytes": "09 10",
+        "type": 2,
+        "tag": 0,
+        "name": "Usage",
+        "value": 16
+      },
+      {
+        "offset": "0x5189",
+        "bytes": "a1 01",
+        "type": 0,
+        "tag": 10,
+        "name": "Collection",
+        "value": 1
+      },
+      {
+        "offset": "0x518b",
+        "bytes": "85 5a",
+        "type": 1,
+        "tag": 8,
+        "name": "ReportID",
+        "value": 90
+      },
+      {
+        "offset": "0x518d",
+        "bytes": "09 01",
+        "type": 2,
+        "tag": 0,
+        "name": "Usage",
+        "value": 1
+      },
+      {
+        "offset": "0x518f",
+        "bytes": "15 00",
+        "type": 1,
+        "tag": 1,
+        "name": "LogicalMinimum",
+        "value": 0
+      },
+      {
+        "offset": "0x5191",
+        "bytes": "26 ff 00",
+        "type": 1,
+        "tag": 2,
+        "name": "LogicalMaximum",
+        "value": 255
+      },
+      {
+        "offset": "0x5194",
+        "bytes": "75 08",
+        "type": 1,
+        "tag": 7,
+        "name": "ReportSize",
+        "value": 8
+      },
+      {
+        "offset": "0x5196",
+        "bytes": "95 10",
+        "type": 1,
+        "tag": 9,
+        "name": "ReportCount",
+        "value": 16
+      },
+      {
+        "offset": "0x5198",
+        "bytes": "b1 00",
+        "type": 0,
+        "tag": 11,
+        "name": "Feature",
+        "value": 0
+      },
+      {
+        "offset": "0x519a",
+        "bytes": "c0",
+        "type": 0,
+        "tag": 12,
+        "name": "EndCollection",
+        "value": 0
+      },
+      {
+        "offset": "0x519b",
+        "bytes": "06 89 ff",
+        "type": 1,
+        "tag": 0,
+        "name": "UsagePage",
+        "value": 65417
+      },
+      {
+        "offset": "0x519e",
+        "bytes": "09 cd",
+        "type": 2,
+        "tag": 0,
+        "name": "Usage",
+        "value": 205
+      },
+      {
+        "offset": "0x51a0",
+        "bytes": "a1 01",
+        "type": 0,
+        "tag": 10,
+        "name": "Collection",
+        "value": 1
+      },
+      {
+        "offset": "0x51a2",
+        "bytes": "85 cd",
+        "type": 1,
+        "tag": 8,
+        "name": "ReportID",
+        "value": 205
+      },
+      {
+        "offset": "0x51a4",
+        "bytes": "09 01",
+        "type": 2,
+        "tag": 0,
+        "name": "Usage",
+        "value": 1
+      },
+      {
+        "offset": "0x51a6",
+        "bytes": "15 00",
+        "type": 1,
+        "tag": 1,
+        "name": "LogicalMinimum",
+        "value": 0
+      },
+      {
+        "offset": "0x51a8",
+        "bytes": "26 ff 00",
+        "type": 1,
+        "tag": 2,
+        "name": "LogicalMaximum",
+        "value": 255
+      },
+      {
+        "offset": "0x51ab",
+        "bytes": "75 08",
+        "type": 1,
+        "tag": 7,
+        "name": "ReportSize",
+        "value": 8
+      },
+      {
+        "offset": "0x51ad",
+        "bytes": "95 02",
+        "type": 1,
+        "tag": 9,
+        "name": "ReportCount",
+        "value": 2
+      },
+      {
+        "offset": "0x51af",
+        "bytes": "b1 00",
+        "type": 0,
+        "tag": 11,
+        "name": "Feature",
+        "value": 0
+      },
+      {
+        "offset": "0x51b1",
+        "bytes": "c0",
+        "type": 0,
+        "tag": 12,
+        "name": "EndCollection",
+        "value": 0
+      },
+      {
+        "offset": "0x51b2",
+        "bytes": "05 01",
+        "type": 1,
+        "tag": 0,
+        "name": "UsagePage",
+        "value": 1
+      },
+      {
+        "offset": "0x51b4",
+        "bytes": "09 06",
+        "type": 2,
+        "tag": 0,
+        "name": "Usage",
+        "value": 6
+      },
+      {
+        "offset": "0x51b6",
+        "bytes": "a1 01",
+        "type": 0,
+        "tag": 10,
+        "name": "Collection",
+        "value": 1
+      },
+      {
+        "offset": "0x51b8",
+        "bytes": "85 01",
+        "type": 1,
+        "tag": 8,
+        "name": "ReportID",
+        "value": 1
+      },
+      {
+        "offset": "0x51ba",
+        "bytes": "75 01",
+        "type": 1,
+        "tag": 7,
+        "name": "ReportSize",
+        "value": 1
+      },
+      {
+        "offset": "0x51bc",
+        "bytes": "95 08",
+        "type": 1,
+        "tag": 9,
+        "name": "ReportCount",
+        "value": 8
+      },
+      {
+        "offset": "0x51be",
+        "bytes": "05 07",
+        "type": 1,
+        "tag": 0,
+        "name": "UsagePage",
+        "value": 7
+      },
+      {
+        "offset": "0x51c0",
+        "bytes": "19 e0",
+        "type": 2,
+        "tag": 1,
+        "name": "UsageMinimum",
+        "value": 224
+      },
+      {
+        "offset": "0x51c2",
+        "bytes": "29 e7",
+        "type": 2,
+        "tag": 2,
+        "name": "UsageMaximum",
+        "value": 231
+      },
+      {
+        "offset": "0x51c4",
+        "bytes": "15 00",
+        "type": 1,
+        "tag": 1,
+        "name": "LogicalMinimum",
+        "value": 0
+      },
+      {
+        "offset": "0x51c6",
+        "bytes": "25 01",
+        "type": 1,
+        "tag": 2,
+        "name": "LogicalMaximum",
+        "value": 1
+      },
+      {
+        "offset": "0x51c8",
+        "bytes": "81 02",
+        "type": 0,
+        "tag": 8,
+        "name": "Input",
+        "value": 2
+      },
+      {
+        "offset": "0x51ca",
+        "bytes": "95 01",
+        "type": 1,
+        "tag": 9,
+        "name": "ReportCount",
+        "value": 1
+      },
+      {
+        "offset": "0x51cc",
+        "bytes": "75 08",
+        "type": 1,
+        "tag": 7,
+        "name": "ReportSize",
+        "value": 8
+      },
+      {
+        "offset": "0x51ce",
+        "bytes": "81 03",
+        "type": 0,
+        "tag": 8,
+        "name": "Input",
+        "value": 3
+      },
+      {
+        "offset": "0x51d0",
+        "bytes": "95 05",
+        "type": 1,
+        "tag": 9,
+        "name": "ReportCount",
+        "value": 5
+      },
+      {
+        "offset": "0x51d2",
+        "bytes": "75 01",
+        "type": 1,
+        "tag": 7,
+        "name": "ReportSize",
+        "value": 1
+      },
+      {
+        "offset": "0x51d4",
+        "bytes": "05 08",
+        "type": 1,
+        "tag": 0,
+        "name": "UsagePage",
+        "value": 8
+      },
+      {
+        "offset": "0x51d6",
+        "bytes": "19 01",
+        "type": 2,
+        "tag": 1,
+        "name": "UsageMinimum",
+        "value": 1
+      },
+      {
+        "offset": "0x51d8",
+        "bytes": "29 05",
+        "type": 2,
+        "tag": 2,
+        "name": "UsageMaximum",
+        "value": 5
+      },
+      {
+        "offset": "0x51da",
+        "bytes": "91 02",
+        "type": 0,
+        "tag": 9,
+        "name": "Output",
+        "value": 2
+      },
+      {
+        "offset": "0x51dc",
+        "bytes": "95 01",
+        "type": 1,
+        "tag": 9,
+        "name": "ReportCount",
+        "value": 1
+      },
+      {
+        "offset": "0x51de",
+        "bytes": "75 03",
+        "type": 1,
+        "tag": 7,
+        "name": "ReportSize",
+        "value": 3
+      },
+      {
+        "offset": "0x51e0",
+        "bytes": "91 03",
+        "type": 0,
+        "tag": 9,
+        "name": "Output",
+        "value": 3
+      },
+      {
+        "offset": "0x51e2",
+        "bytes": "95 1e",
+        "type": 1,
+        "tag": 9,
+        "name": "ReportCount",
+        "value": 30
+      },
+      {
+        "offset": "0x51e4",
+        "bytes": "75 08",
+        "type": 1,
+        "tag": 7,
+        "name": "ReportSize",
+        "value": 8
+      },
+      {
+        "offset": "0x51e6",
+        "bytes": "15 00",
+        "type": 1,
+        "tag": 1,
+        "name": "LogicalMinimum",
+        "value": 0
+      },
+      {
+        "offset": "0x51e8",
+        "bytes": "26 ff 00",
+        "type": 1,
+        "tag": 2,
+        "name": "LogicalMaximum",
+        "value": 255
+      },
+      {
+        "offset": "0x51eb",
+        "bytes": "05 07",
+        "type": 1,
+        "tag": 0,
+        "name": "UsagePage",
+        "value": 7
+      },
+      {
+        "offset": "0x51ed",
+        "bytes": "19 00",
+        "type": 2,
+        "tag": 1,
+        "name": "UsageMinimum",
+        "value": 0
+      },
+      {
+        "offset": "0x51ef",
+        "bytes": "2a ff 00",
+        "type": 2,
+        "tag": 2,
+        "name": "UsageMaximum",
+        "value": 255
+      },
+      {
+        "offset": "0x51f2",
+        "bytes": "81 00",
+        "type": 0,
+        "tag": 8,
+        "name": "Input",
+        "value": 0
+      },
+      {
+        "offset": "0x51f4",
+        "bytes": "c0",
+        "type": 0,
+        "tag": 12,
+        "name": "EndCollection",
+        "value": 0
+      },
+      {
+        "offset": "0x51f5",
+        "bytes": "05 0c",
+        "type": 1,
+        "tag": 0,
+        "name": "UsagePage",
+        "value": 12
+      },
+      {
+        "offset": "0x51f7",
+        "bytes": "09 01",
+        "type": 2,
+        "tag": 0,
+        "name": "Usage",
+        "value": 1
+      },
+      {
+        "offset": "0x51f9",
+        "bytes": "a1 01",
+        "type": 0,
+        "tag": 10,
+        "name": "Collection",
+        "value": 1
+      },
+      {
+        "offset": "0x51fb",
+        "bytes": "85 02",
+        "type": 1,
+        "tag": 8,
+        "name": "ReportID",
+        "value": 2
+      },
+      {
+        "offset": "0x51fd",
+        "bytes": "19 00",
+        "type": 2,
+        "tag": 1,
+        "name": "UsageMinimum",
+        "value": 0
+      },
+      {
+        "offset": "0x51ff",
+        "bytes": "2a 3c 02",
+        "type": 2,
+        "tag": 2,
+        "name": "UsageMaximum",
+        "value": 572
+      },
+      {
+        "offset": "0x5202",
+        "bytes": "15 00",
+        "type": 1,
+        "tag": 1,
+        "name": "LogicalMinimum",
+        "value": 0
+      },
+      {
+        "offset": "0x5204",
+        "bytes": "26 3c 02",
+        "type": 1,
+        "tag": 2,
+        "name": "LogicalMaximum",
+        "value": 572
+      },
+      {
+        "offset": "0x5207",
+        "bytes": "75 10",
+        "type": 1,
+        "tag": 7,
+        "name": "ReportSize",
+        "value": 16
+      },
+      {
+        "offset": "0x5209",
+        "bytes": "95 01",
+        "type": 1,
+        "tag": 9,
+        "name": "ReportCount",
+        "value": 1
+      },
+      {
+        "offset": "0x520b",
+        "bytes": "81 00",
+        "type": 0,
+        "tag": 8,
+        "name": "Input",
+        "value": 0
+      },
+      {
+        "offset": "0x520d",
+        "bytes": "c0",
+        "type": 0,
+        "tag": 12,
+        "name": "EndCollection",
+        "value": 0
+      },
+      {
+        "offset": "0x520e",
+        "bytes": "05 01",
+        "type": 1,
+        "tag": 0,
+        "name": "UsagePage",
+        "value": 1
+      },
+      {
+        "offset": "0x5210",
+        "bytes": "09 80",
+        "type": 2,
+        "tag": 0,
+        "name": "Usage",
+        "value": 128
+      },
+      {
+        "offset": "0x5212",
+        "bytes": "a1 01",
+        "type": 0,
+        "tag": 10,
+        "name": "Collection",
+        "value": 1
+      },
+      {
+        "offset": "0x5214",
+        "bytes": "85 04",
+        "type": 1,
+        "tag": 8,
+        "name": "ReportID",
+        "value": 4
+      },
+      {
+        "offset": "0x5216",
+        "bytes": "19 81",
+        "type": 2,
+        "tag": 1,
+        "name": "UsageMinimum",
+        "value": 129
+      },
+      {
+        "offset": "0x5218",
+        "bytes": "29 83",
+        "type": 2,
+        "tag": 2,
+        "name": "UsageMaximum",
+        "value": 131
+      },
+      {
+        "offset": "0x521a",
+        "bytes": "15 00",
+        "type": 1,
+        "tag": 1,
+        "name": "LogicalMinimum",
+        "value": 0
+      },
+      {
+        "offset": "0x521c",
+        "bytes": "25 01",
+        "type": 1,
+        "tag": 2,
+        "name": "LogicalMaximum",
+        "value": 1
+      },
+      {
+        "offset": "0x521e",
+        "bytes": "95 08",
+        "type": 1,
+        "tag": 9,
+        "name": "ReportCount",
+        "value": 8
+      },
+      {
+        "offset": "0x5220",
+        "bytes": "75 01",
+        "type": 1,
+        "tag": 7,
+        "name": "ReportSize",
+        "value": 1
+      },
+      {
+        "offset": "0x5222",
+        "bytes": "81 02",
+        "type": 0,
+        "tag": 8,
+        "name": "Input",
+        "value": 2
+      },
+      {
+        "offset": "0x5224",
+        "bytes": "c0",
+        "type": 0,
+        "tag": 12,
+        "name": "EndCollection",
+        "value": 0
+      }
+    ],
+    "fields": [
+      {
+        "offset": "0x5198",
+        "kind": "Feature",
+        "flags": 0,
+        "report_id": 90,
+        "size_bits": 8,
+        "count": 16,
+        "global": {
+          "UsagePage": 65417,
+          "ReportID": 90,
+          "LogicalMinimum": 0,
+          "LogicalMaximum": 255,
+          "ReportSize": 8,
+          "ReportCount": 16
+        },
+        "local": {
+          "Usage": [
+            1
+          ]
+        },
+        "collections": [
+          {
+            "type": 1,
+            "page": 65417,
+            "usage": [
+              16
+            ]
+          }
+        ],
+        "bits": 128
+      },
+      {
+        "offset": "0x51af",
+        "kind": "Feature",
+        "flags": 0,
+        "report_id": 205,
+        "size_bits": 8,
+        "count": 2,
+        "global": {
+          "UsagePage": 65417,
+          "ReportID": 205,
+          "LogicalMinimum": 0,
+          "LogicalMaximum": 255,
+          "ReportSize": 8,
+          "ReportCount": 2
+        },
+        "local": {
+          "Usage": [
+            1
+          ]
+        },
+        "collections": [
+          {
+            "type": 1,
+            "page": 65417,
+            "usage": [
+              205
+            ]
+          }
+        ],
+        "bits": 16
+      },
+      {
+        "offset": "0x51c8",
+        "kind": "Input",
+        "flags": 2,
+        "report_id": 1,
+        "size_bits": 1,
+        "count": 8,
+        "global": {
+          "UsagePage": 7,
+          "ReportID": 1,
+          "LogicalMinimum": 0,
+          "LogicalMaximum": 1,
+          "ReportSize": 1,
+          "ReportCount": 8
+        },
+        "local": {
+          "UsageMinimum": 224,
+          "UsageMaximum": 231
+        },
+        "collections": [
+          {
+            "type": 1,
+            "page": 1,
+            "usage": [
+              6
+            ]
+          }
+        ],
+        "bits": 8
+      },
+      {
+        "offset": "0x51ce",
+        "kind": "Input",
+        "flags": 3,
+        "report_id": 1,
+        "size_bits": 8,
+        "count": 1,
+        "global": {
+          "UsagePage": 7,
+          "ReportID": 1,
+          "LogicalMinimum": 0,
+          "LogicalMaximum": 1,
+          "ReportSize": 8,
+          "ReportCount": 1
+        },
+        "local": {},
+        "collections": [
+          {
+            "type": 1,
+            "page": 1,
+            "usage": [
+              6
+            ]
+          }
+        ],
+        "bits": 8
+      },
+      {
+        "offset": "0x51da",
+        "kind": "Output",
+        "flags": 2,
+        "report_id": 1,
+        "size_bits": 1,
+        "count": 5,
+        "global": {
+          "UsagePage": 8,
+          "ReportID": 1,
+          "LogicalMinimum": 0,
+          "LogicalMaximum": 1,
+          "ReportSize": 1,
+          "ReportCount": 5
+        },
+        "local": {
+          "UsageMinimum": 1,
+          "UsageMaximum": 5
+        },
+        "collections": [
+          {
+            "type": 1,
+            "page": 1,
+            "usage": [
+              6
+            ]
+          }
+        ],
+        "bits": 5
+      },
+      {
+        "offset": "0x51e0",
+        "kind": "Output",
+        "flags": 3,
+        "report_id": 1,
+        "size_bits": 3,
+        "count": 1,
+        "global": {
+          "UsagePage": 8,
+          "ReportID": 1,
+          "LogicalMinimum": 0,
+          "LogicalMaximum": 1,
+          "ReportSize": 3,
+          "ReportCount": 1
+        },
+        "local": {},
+        "collections": [
+          {
+            "type": 1,
+            "page": 1,
+            "usage": [
+              6
+            ]
+          }
+        ],
+        "bits": 3
+      },
+      {
+        "offset": "0x51f2",
+        "kind": "Input",
+        "flags": 0,
+        "report_id": 1,
+        "size_bits": 8,
+        "count": 30,
+        "global": {
+          "UsagePage": 7,
+          "ReportID": 1,
+          "LogicalMinimum": 0,
+          "LogicalMaximum": 255,
+          "ReportSize": 8,
+          "ReportCount": 30
+        },
+        "local": {
+          "UsageMinimum": 0,
+          "UsageMaximum": 255
+        },
+        "collections": [
+          {
+            "type": 1,
+            "page": 1,
+            "usage": [
+              6
+            ]
+          }
+        ],
+        "bits": 240
+      },
+      {
+        "offset": "0x520b",
+        "kind": "Input",
+        "flags": 0,
+        "report_id": 2,
+        "size_bits": 16,
+        "count": 1,
+        "global": {
+          "UsagePage": 12,
+          "ReportID": 2,
+          "LogicalMinimum": 0,
+          "LogicalMaximum": 572,
+          "ReportSize": 16,
+          "ReportCount": 1
+        },
+        "local": {
+          "UsageMinimum": 0,
+          "UsageMaximum": 572
+        },
+        "collections": [
+          {
+            "type": 1,
+            "page": 12,
+            "usage": [
+              1
+            ]
+          }
+        ],
+        "bits": 16
+      },
+      {
+        "offset": "0x5222",
+        "kind": "Input",
+        "flags": 2,
+        "report_id": 4,
+        "size_bits": 1,
+        "count": 8,
+        "global": {
+          "UsagePage": 1,
+          "ReportID": 4,
+          "LogicalMinimum": 0,
+          "LogicalMaximum": 1,
+          "ReportSize": 1,
+          "ReportCount": 8
+        },
+        "local": {
+          "UsageMinimum": 129,
+          "UsageMaximum": 131
+        },
+        "collections": [
+          {
+            "type": 1,
+            "page": 1,
+            "usage": [
+              128
+            ]
+          }
+        ],
+        "bits": 8
+      }
+    ],
+    "reports": [
+      {
+        "kind": "Feature",
+        "report_id": 90,
+        "payload_bits": 128,
+        "payload_bytes": 16,
+        "wire_bytes_including_id": 17
+      },
+      {
+        "kind": "Feature",
+        "report_id": 205,
+        "payload_bits": 16,
+        "payload_bytes": 2,
+        "wire_bytes_including_id": 3
+      },
+      {
+        "kind": "Input",
+        "report_id": 1,
+        "payload_bits": 256,
+        "payload_bytes": 32,
+        "wire_bytes_including_id": 33
+      },
+      {
+        "kind": "Output",
+        "report_id": 1,
+        "payload_bits": 8,
+        "payload_bytes": 1,
+        "wire_bytes_including_id": 2
+      },
+      {
+        "kind": "Input",
+        "report_id": 2,
+        "payload_bits": 16,
+        "payload_bytes": 2,
+        "wire_bytes_including_id": 3
+      },
+      {
+        "kind": "Input",
+        "report_id": 4,
+        "payload_bits": 8,
+        "payload_bytes": 1,
+        "wire_bytes_including_id": 2
+      }
+    ],
+    "bounded_parser_errors": []
+  },
+  "additional_consumer_report_candidate": {
+    "file_offset": "0x5229",
+    "length": 82,
+    "sha256": "dbb3f320d28f3a1cc5f8242600e68b850a45ab61bcb678c5f29ff89e30562e78",
+    "hex": "05 0c 09 01 a1 01 85 01 15 00 25 01 75 01 95 18 09 e2 09 e9 09 ea 09 cd 09 b7 09 b6 09 b5 0a 8a 01 0a 92 01 0a 21 02 0a 23 02 0a 2a 02 0a 27 02 0a 26 02 0a 25 02 0a 24 02 09 e5 09 e7 0a 52 01 0a 53 01 0a 54 01 0a 55 01 0a 83 01 0a 94 01 81 62 c0",
+    "items": [
+      {
+        "offset": "0x5229",
+        "bytes": "05 0c",
+        "type": 1,
+        "tag": 0,
+        "name": "UsagePage",
+        "value": 12
+      },
+      {
+        "offset": "0x522b",
+        "bytes": "09 01",
+        "type": 2,
+        "tag": 0,
+        "name": "Usage",
+        "value": 1
+      },
+      {
+        "offset": "0x522d",
+        "bytes": "a1 01",
+        "type": 0,
+        "tag": 10,
+        "name": "Collection",
+        "value": 1
+      },
+      {
+        "offset": "0x522f",
+        "bytes": "85 01",
+        "type": 1,
+        "tag": 8,
+        "name": "ReportID",
+        "value": 1
+      },
+      {
+        "offset": "0x5231",
+        "bytes": "15 00",
+        "type": 1,
+        "tag": 1,
+        "name": "LogicalMinimum",
+        "value": 0
+      },
+      {
+        "offset": "0x5233",
+        "bytes": "25 01",
+        "type": 1,
+        "tag": 2,
+        "name": "LogicalMaximum",
+        "value": 1
+      },
+      {
+        "offset": "0x5235",
+        "bytes": "75 01",
+        "type": 1,
+        "tag": 7,
+        "name": "ReportSize",
+        "value": 1
+      },
+      {
+        "offset": "0x5237",
+        "bytes": "95 18",
+        "type": 1,
+        "tag": 9,
+        "name": "ReportCount",
+        "value": 24
+      },
+      {
+        "offset": "0x5239",
+        "bytes": "09 e2",
+        "type": 2,
+        "tag": 0,
+        "name": "Usage",
+        "value": 226
+      },
+      {
+        "offset": "0x523b",
+        "bytes": "09 e9",
+        "type": 2,
+        "tag": 0,
+        "name": "Usage",
+        "value": 233
+      },
+      {
+        "offset": "0x523d",
+        "bytes": "09 ea",
+        "type": 2,
+        "tag": 0,
+        "name": "Usage",
+        "value": 234
+      },
+      {
+        "offset": "0x523f",
+        "bytes": "09 cd",
+        "type": 2,
+        "tag": 0,
+        "name": "Usage",
+        "value": 205
+      },
+      {
+        "offset": "0x5241",
+        "bytes": "09 b7",
+        "type": 2,
+        "tag": 0,
+        "name": "Usage",
+        "value": 183
+      },
+      {
+        "offset": "0x5243",
+        "bytes": "09 b6",
+        "type": 2,
+        "tag": 0,
+        "name": "Usage",
+        "value": 182
+      },
+      {
+        "offset": "0x5245",
+        "bytes": "09 b5",
+        "type": 2,
+        "tag": 0,
+        "name": "Usage",
+        "value": 181
+      },
+      {
+        "offset": "0x5247",
+        "bytes": "0a 8a 01",
+        "type": 2,
+        "tag": 0,
+        "name": "Usage",
+        "value": 394
+      },
+      {
+        "offset": "0x524a",
+        "bytes": "0a 92 01",
+        "type": 2,
+        "tag": 0,
+        "name": "Usage",
+        "value": 402
+      },
+      {
+        "offset": "0x524d",
+        "bytes": "0a 21 02",
+        "type": 2,
+        "tag": 0,
+        "name": "Usage",
+        "value": 545
+      },
+      {
+        "offset": "0x5250",
+        "bytes": "0a 23 02",
+        "type": 2,
+        "tag": 0,
+        "name": "Usage",
+        "value": 547
+      },
+      {
+        "offset": "0x5253",
+        "bytes": "0a 2a 02",
+        "type": 2,
+        "tag": 0,
+        "name": "Usage",
+        "value": 554
+      },
+      {
+        "offset": "0x5256",
+        "bytes": "0a 27 02",
+        "type": 2,
+        "tag": 0,
+        "name": "Usage",
+        "value": 551
+      },
+      {
+        "offset": "0x5259",
+        "bytes": "0a 26 02",
+        "type": 2,
+        "tag": 0,
+        "name": "Usage",
+        "value": 550
+      },
+      {
+        "offset": "0x525c",
+        "bytes": "0a 25 02",
+        "type": 2,
+        "tag": 0,
+        "name": "Usage",
+        "value": 549
+      },
+      {
+        "offset": "0x525f",
+        "bytes": "0a 24 02",
+        "type": 2,
+        "tag": 0,
+        "name": "Usage",
+        "value": 548
+      },
+      {
+        "offset": "0x5262",
+        "bytes": "09 e5",
+        "type": 2,
+        "tag": 0,
+        "name": "Usage",
+        "value": 229
+      },
+      {
+        "offset": "0x5264",
+        "bytes": "09 e7",
+        "type": 2,
+        "tag": 0,
+        "name": "Usage",
+        "value": 231
+      },
+      {
+        "offset": "0x5266",
+        "bytes": "0a 52 01",
+        "type": 2,
+        "tag": 0,
+        "name": "Usage",
+        "value": 338
+      },
+      {
+        "offset": "0x5269",
+        "bytes": "0a 53 01",
+        "type": 2,
+        "tag": 0,
+        "name": "Usage",
+        "value": 339
+      },
+      {
+        "offset": "0x526c",
+        "bytes": "0a 54 01",
+        "type": 2,
+        "tag": 0,
+        "name": "Usage",
+        "value": 340
+      },
+      {
+        "offset": "0x526f",
+        "bytes": "0a 55 01",
+        "type": 2,
+        "tag": 0,
+        "name": "Usage",
+        "value": 341
+      },
+      {
+        "offset": "0x5272",
+        "bytes": "0a 83 01",
+        "type": 2,
+        "tag": 0,
+        "name": "Usage",
+        "value": 387
+      },
+      {
+        "offset": "0x5275",
+        "bytes": "0a 94 01",
+        "type": 2,
+        "tag": 0,
+        "name": "Usage",
+        "value": 404
+      },
+      {
+        "offset": "0x5278",
+        "bytes": "81 62",
+        "type": 0,
+        "tag": 8,
+        "name": "Input",
+        "value": 98
+      },
+      {
+        "offset": "0x527a",
+        "bytes": "c0",
+        "type": 0,
+        "tag": 12,
+        "name": "EndCollection",
+        "value": 0
+      }
+    ],
+    "fields": [
+      {
+        "offset": "0x5278",
+        "kind": "Input",
+        "flags": 98,
+        "report_id": 1,
+        "size_bits": 1,
+        "count": 24,
+        "global": {
+          "UsagePage": 12,
+          "ReportID": 1,
+          "LogicalMinimum": 0,
+          "LogicalMaximum": 1,
+          "ReportSize": 1,
+          "ReportCount": 24
+        },
+        "local": {
+          "Usage": [
+            226,
+            233,
+            234,
+            205,
+            183,
+            182,
+            181,
+            394,
+            402,
+            545,
+            547,
+            554,
+            551,
+            550,
+            549,
+            548,
+            229,
+            231,
+            338,
+            339,
+            340,
+            341,
+            387,
+            404
+          ]
+        },
+        "collections": [
+          {
+            "type": 1,
+            "page": 12,
+            "usage": [
+              1
+            ]
+          }
+        ],
+        "bits": 24
+      }
+    ],
+    "reports": [
+      {
+        "kind": "Input",
+        "report_id": 1,
+        "payload_bits": 24,
+        "payload_bytes": 3,
+        "wire_bytes_including_id": 4
+      }
+    ],
+    "bounded_parser_errors": []
+  },
+  "strings": [
+    {
+      "offset": "0x5342",
+      "length": 4,
+      "type": 3,
+      "hex": "04 03 09 04",
+      "LANGIDs": [
+        "0x409"
+      ]
+    },
+    {
+      "offset": "0x5349",
+      "length": 30,
+      "type": 3,
+      "hex": "1e 03 49 00 54 00 45 00 20 00 54 00 65 00 63 00 68 00 2e 00 20 00 49 00 6e 00 63 00 2e 00",
+      "decoded_utf16le": "ITE Tech. Inc."
+    },
+    {
+      "offset": "0x536b",
+      "length": 34,
+      "type": 3,
+      "hex": "22 03 49 00 54 00 45 00 20 00 44 00 65 00 76 00 69 00 63 00 65 00 28 00 38 00 39 00 31 00 30 00 29 00",
+      "decoded_utf16le": "ITE Device(8910)"
+    },
+    {
+      "offset": "0x5391",
+      "length": 26,
+      "type": 3,
+      "hex": "1a 03 49 00 38 00 33 00 38 00 30 00 36 00 38 00 39 00 46 00 41 00 30 00 38 00",
+      "decoded_utf16le": "I8380689FA08"
+    },
+    {
+      "offset": "0x53b4",
+      "length": 18,
+      "type": 3,
+      "hex": "12 03 4d 00 53 00 46 00 54 00 31 00 30 00 30 00 7f 00",
+      "OS_signature": "MSFT100",
+      "vendor_code": 127,
+      "padding": 0
+    }
+  ],
+  "limits": [
+    "File offsets are not established execution addresses.",
+    "Storage and descriptor equality do not establish actual runtime selection or RAM contents.",
+    "No full USB/HID protocol certification or control-request handler analysis.",
+    "Additional 82-byte consumer descriptor has no proven active interface binding."
+  ],
+  "microsoft_extended_properties_candidate": {
+    "offset": "0x53ca",
+    "hex": "4c 00 00 00 00 01 05 00 01 00 42 00 00 00 04 00 00 00 30 00 53 00 65 00 6c 00 65 00 63 00 74 00 69 00 76 00 65 00 53 00 75 00 73 00 70 00 65 00 6e 00 64 00 45 00 6e 00 61 00 62 00 6c 00 65 00 64 00 00 00 04 00 00 00 01 00 00 00",
+    "dwLength": 76,
+    "bcdVersion": "0x100",
+    "wIndex": 5,
+    "wCount": 1,
+    "property": {
+      "offset": "0x53d4",
+      "dwSize": 66,
+      "dwPropertyDataType": 4,
+      "wPropertyNameLength": 48,
+      "name": "SelectiveSuspendEnabled\u0000",
+      "dwPropertyDataLength": 4,
+      "DWORD": 1
+    }
+  }
+}

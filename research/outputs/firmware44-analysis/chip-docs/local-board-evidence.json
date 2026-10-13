@@ -1,0 +1,105 @@
+{
+  "file": "C:\\Users\\a.saberi\\Documents\\Codex\\2026-10-12\\https-github-com-morluto-rea-https\\work\\fw44-board-docs\\Lenovo Legion Y540-15IRH - NM-C221 REV0.1 Boardview .tvw",
+  "size": 19566013,
+  "sha256": "2e5bc9804c6757315d3691db5a90012264dc05096a0b2ad6bca7766db03d7b51",
+  "evidence": [
+    {
+      "token": "IT8176FN-56A-BX_QFN48_6X6",
+      "occurrences": [
+        {
+          "offset": 18613995,
+          "hex": "0x11c06eb"
+        },
+        {
+          "offset": 19291555,
+          "hex": "0x1265da3"
+        }
+      ]
+    },
+    {
+      "token": "IT8226E-128-BX_LQFP128_14X14",
+      "occurrences": [
+        {
+          "offset": 18813096,
+          "hex": "0x11f10a8"
+        },
+        {
+          "offset": 19430940,
+          "hex": "0x1287e1c"
+        }
+      ]
+    },
+    {
+      "token": "USB20_N9_AGKB",
+      "occurrences": [
+        {
+          "offset": 18359471,
+          "hex": "0x11824af"
+        }
+      ]
+    },
+    {
+      "token": "USB20_P9_AGKB",
+      "occurrences": [
+        {
+          "offset": 18359485,
+          "hex": "0x11824bd"
+        }
+      ]
+    },
+    {
+      "token": "AG_WRST#",
+      "occurrences": [
+        {
+          "offset": 18360283,
+          "hex": "0x11827db"
+        }
+      ]
+    },
+    {
+      "token": "AGKB_PWR_EN#",
+      "occurrences": [
+        {
+          "offset": 18360292,
+          "hex": "0x11827e4"
+        }
+      ]
+    },
+    {
+      "token": "AGKB_PWR_OCB",
+      "occurrences": [
+        {
+          "offset": 18360315,
+          "hex": "0x11827fb"
+        }
+      ]
+    },
+    {
+      "token": "USB20_N9",
+      "occurrences": [
+        {
+          "offset": 18359462,
+          "hex": "0x11824a6"
+        },
+        {
+          "offset": 18359471,
+          "hex": "0x11824af"
+        }
+      ]
+    },
+    {
+      "token": "USB20_P9",
+      "occurrences": [
+        {
+          "offset": 18359485,
+          "hex": "0x11824bd"
+        },
+        {
+          "offset": 18359499,
+          "hex": "0x11824cb"
+        }
+      ]
+    }
+  ],
+  "limitation": "Strings only. Proprietary TVW geometry/component/net association not decoded. No physical board revision confirmed."
+}

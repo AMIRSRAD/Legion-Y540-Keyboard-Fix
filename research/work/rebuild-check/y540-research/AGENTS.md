@@ -1,0 +1,3 @@
+# Project instructions
+
+Use the reverse-engineer-anything skill. Preserve samples and validate samples/manifest.json before analysis. Separate observations, inferences, and unknowns. Cite full REA evidence IDs and addresses; ordinary Python reads are not REA evidence. Reuse a single REA session for related native queries and close it with a snapshot. Keep complete raw responses. Do not execute the updater, flash hardware, or install drivers as part of static analysis. Do not patch vendor files. Keep local binaries out of Git. Update docs/findings.md and docs/roadmap.md as questions are resolved.

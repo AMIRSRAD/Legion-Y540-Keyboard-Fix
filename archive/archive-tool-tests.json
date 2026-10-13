@@ -1,0 +1,8 @@
+{
+  "passed": true,
+  "duplicate_content": true,
+  "multi_block_file": true,
+  "empty_file_and_directory": true,
+  "restored_bytes_match": true,
+  "path_traversal_rejected": true
+}

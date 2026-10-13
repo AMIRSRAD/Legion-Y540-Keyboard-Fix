@@ -1,0 +1,78 @@
+
+/* WARNING: Type propagation algorithm not settling */
+/* DWARF original prototype: void Button1Click(TForm1 * this, TObject * Sender) */
+
+void __thiscall TForm1::Button1Click(TForm1 *this,TObject *Sender)
+
+{
+  TEdit *pTVar1;
+  TStrings *pTVar2;
+  _func_int *p_Var3;
+  TMemoryStream *pTVar4;
+  UINT16 UVar5;
+  uint uVar6;
+  int iVar7;
+  undefined4 extraout_var;
+  undefined8 local_58;
+  undefined8 local_50;
+  undefined8 local_48 [3];
+  undefined8 local_30;
+  TObject *Sender_local;
+  TForm1 *this_local;
+  undefined8 *local_18;
+  undefined8 *local_10;
+  
+  Sender_local = Sender;
+  this_local = this;
+  uVar6 = (*(this->OpenDialog1->super_TCommonDialog).super_TComponent.super_TPersistent.
+            super_TObject._vptr_TObject[0x15])(this->OpenDialog1);
+  if ((uVar6 & 1) != 0) {
+    _ZN6System7Classes7TStream9SetSize64Ex(msUpdateBINBuffer,0);
+    pTVar4 = msUpdateBINBuffer;
+    local_18 = &local_30;
+    local_30 = 0;
+    _ZN3Vcl7Dialogs11TOpenDialog11GetFileNameEv(this->OpenDialog1,local_18);
+    _ZN6System7Classes13TMemoryStream12LoadFromFileENS_13UnicodeStringE(pTVar4,local_30);
+    _ZN6System13UnicodeStringD1Ev(&local_30);
+    pTVar1 = this->Edit1;
+    local_10 = local_48;
+    local_48[0] = 0;
+    _ZN3Vcl7Dialogs11TOpenDialog11GetFileNameEv(this->OpenDialog1,local_10);
+    _ZN3Vcl8Controls8TControl7SetTextEN6System13UnicodeStringE(pTVar1,local_48[0]);
+    _ZN6System13UnicodeStringD1Ev(local_48);
+    iVar7 = (**(msUpdateBINBuffer->super_TCustomMemoryStream).super_TStream.super_TObject.
+               _vptr_TObject)(msUpdateBINBuffer);
+    if (CONCAT44(extraout_var,iVar7) == (longlong)(Update_FileSizeKB << 10)) {
+      UVar5 = CalculateWordCheckSum
+                        ((msUpdateBINBuffer->super_TCustomMemoryStream).FMemory,
+                         CheckSum_StartAddress,CheckSum_EndAddress,CheckSum_Value_HighAddress,
+                         CheckSum_Value_LowAddress,CheckSum_Invert);
+      if (UVar5 == 0) {
+        if (SensorCunt != '\0') {
+          (**(code **)((longlong)
+                       (this->Button2->super_TCustomButton).super_TButtonControl.super_TWinControl.
+                       super_TControl.super_TComponent.super_TPersistent.super_TObject + 0x120))
+                    (this->Button2,1);
+        }
+      }
+      else {
+        pTVar2 = (this->Memo1->super_TCustomMemo).FLines;
+        p_Var3 = (pTVar2->super_TPersistent).super_TObject._vptr_TObject[0xf];
+        local_50 = 0;
+        _ZN6System13UnicodeStringC1EPKc(&local_50,s_Checksum_Error__006e059b);
+        (*p_Var3)(pTVar2,local_50);
+        _ZN6System13UnicodeStringD1Ev(&local_50);
+      }
+    }
+    else {
+      pTVar2 = (this->Memo1->super_TCustomMemo).FLines;
+      p_Var3 = (pTVar2->super_TPersistent).super_TObject._vptr_TObject[0xf];
+      local_58 = 0;
+      _ZN6System13UnicodeStringC1EPKc(&local_58,s_Bin_file_size_is_not_match__006e05ab);
+      (*p_Var3)(pTVar2,local_58);
+      _ZN6System13UnicodeStringD1Ev(&local_58);
+    }
+  }
+  return;
+}
+

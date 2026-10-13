@@ -1,0 +1,53 @@
+Y540 FIX4 — FINAL EXPERIMENT (0.4.0)
+
+This is the final owner-requested software attempt. It is not a confirmed repair.
+All prior source/releases and your original firmware are preserved.
+
+WHAT CHANGES
+- The boot vendor HID interface requests read/write access. Previous builds
+  used access0, which succeeded once but later failed chip queries with error31.
+  This alternate open mode is an experiment, not a diagnosed permission fix.
+- The default image is the SAME no-deep-sleep experiment1, checksum5642.
+  It has never been installed in the failed experimental attempts so far.
+- The launcher records USB events around this one attempt and packages logs.
+
+RISKS
+The firmware is hardware-untested. It may change power/sleep behavior or stop
+enumeration. Original stock44 is included, but rollback requires a usable
+update interface; successful recovery is not guaranteed.
+
+ONE FINAL ATTEMPT
+1. Extract the ENTIRE package to a fresh folder on the affected Lenovo.
+2. Save work. Begin in the known working Windows keyboard state. Connect AC
+   and keep it connected. Close every other keyboard updater.
+3. Right-click RUN-FINAL-ATTEMPT.cmd -> Run as administrator.
+   It starts USB recording and opens fix4. It never starts flashing by itself.
+4. Confirm the title says fix4 FINAL EXPERIMENT and firmware is
+   44-nosleep-exp1.bin. Click Validate firmware:55296bytes,5642,residual0000.
+5. Click Advanced firmware write ONCE and read the confirmation.
+   Do not interrupt erase/write. A valid chip response and two matching saved
+   backup reads are still mandatory before erase; no bypass is provided.
+6. Wait for its final message. If it fails, STOP. Do not retry, change access
+   modes manually, or select another firmware. Close fix4 only after it settles.
+7. The recording window displays SEND THIS FILE with a ZIP. Send that ZIP.
+
+Only if programming finishes with matching readback:
+Test typing, ordinary Windows Restart, then ordinary shutdown/power-on.
+Record each result separately. Send results even if the fault remains.
+
+The five-minute recording cap stops tracing only; it never kills the updater.
+If capture setup fails, no updater is launched by this wrapper. Keep its ZIP.
+
+FILES
+44-nosleep-exp1.bin    Experimental5642; two changed bytes versus stock
+44-stock-restore.bin  Original5622; not a proven startup repair
+SHFU.ini              Original device/update profile
+patch-manifest.json   Exact firmware hashes and byte differences
+CASE-RECORD.md         Full findings and unresolved questions
+
+Both images still report revision44. Use filename/checksum/hash to distinguish.
+Normal HID access remains0. No parent hub/controller restart, EC register write,
+BIOS flash or physical pin manipulation is performed by this package.
+
+This final candidate has offline validation only. No further software attempts
+are planned if it fails. Preserve the prior successful full backup and all logs.

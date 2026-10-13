@@ -1,0 +1,9 @@
+PASS: real firmware checksum/corruption, INI fields, C1/C3 wire bytes, staging boundaries and partial padding
+HID transport offline tests passed
+PASS: complete firmware emulator, first-block-last ordering, FF skip, retry cleanup, aborts, chip identity and handshake report IDs
+Validated 55296 bytes. Sum=5622 stored=5622 residual=0000.
+
+Absent CHECKSUMLASTBYTESBEFF uses recovered zero initialization/default.
+
+GUI controls initialized (hidden; no device access)
+Built: C:\Users\a.saberi\Documents\Codex\2026-10-12\https-github-com-morluto-rea-https\outputs\y540-research\build\Y540Updater.exe

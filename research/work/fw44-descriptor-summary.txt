@@ -1,0 +1,99 @@
+{
+  "image_sha256": "3afec131c6ed70efa0a3f4b601cb799011a582835d371c57fef68af48519e359",
+  "primary": [
+    {
+      "kind": "Feature",
+      "report_id": 90,
+      "payload_bits": 128,
+      "payload_bytes": 16,
+      "wire_bytes_including_id": 17
+    },
+    {
+      "kind": "Feature",
+      "report_id": 205,
+      "payload_bits": 16,
+      "payload_bytes": 2,
+      "wire_bytes_including_id": 3
+    },
+    {
+      "kind": "Input",
+      "report_id": 1,
+      "payload_bits": 256,
+      "payload_bytes": 32,
+      "wire_bytes_including_id": 33
+    },
+    {
+      "kind": "Output",
+      "report_id": 1,
+      "payload_bits": 8,
+      "payload_bytes": 1,
+      "wire_bytes_including_id": 2
+    },
+    {
+      "kind": "Input",
+      "report_id": 2,
+      "payload_bits": 16,
+      "payload_bytes": 2,
+      "wire_bytes_including_id": 3
+    },
+    {
+      "kind": "Input",
+      "report_id": 4,
+      "payload_bits": 8,
+      "payload_bytes": 1,
+      "wire_bytes_including_id": 2
+    }
+  ],
+  "primary_errors": [],
+  "additional": [
+    {
+      "kind": "Input",
+      "report_id": 1,
+      "payload_bits": 24,
+      "payload_bytes": 3,
+      "wire_bytes_including_id": 4
+    }
+  ],
+  "additional_errors": [],
+  "strings": [
+    {
+      "offset": "0x5342",
+      "length": 4,
+      "type": 3,
+      "hex": "04 03 09 04",
+      "LANGIDs": [
+        "0x409"
+      ]
+    },
+    {
+      "offset": "0x5349",
+      "length": 30,
+      "type": 3,
+      "hex": "1e 03 49 00 54 00 45 00 20 00 54 00 65 00 63 00 68 00 2e 00 20 00 49 00 6e 00 63 00 2e 00",
+      "decoded_utf16le": "ITE Tech. Inc."
+    },
+    {
+      "offset": "0x536b",
+      "length": 34,
+      "type": 3,
+      "hex": "22 03 49 00 54 00 45 00 20 00 44 00 65 00 76 00 69 00 63 00 65 00 28 00 38 00 39 00 31 00 30 00 29 00",
+      "decoded_utf16le": "ITE Device(8910)"
+    },
+    {
+      "offset": "0x5391",
+      "length": 26,
+      "type": 3,
+      "hex": "1a 03 49 00 38 00 33 00 38 00 30 00 36 00 38 00 39 00 46 00 41 00 30 00 38 00",
+      "decoded_utf16le": "I8380689FA08"
+    },
+    {
+      "offset": "0x53b4",
+      "length": 18,
+      "type": 3,
+      "hex": "12 03 4d 00 53 00 46 00 54 00 31 00 30 00 30 00 7f 00",
+      "OS_signature": "MSFT100",
+      "vendor_code": 127,
+      "padding": 0
+    }
+  ]
+}

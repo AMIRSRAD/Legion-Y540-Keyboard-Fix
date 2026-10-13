@@ -1,0 +1,14 @@
+[
+  {
+    "injected_trace_start_failure": false,
+    "expected_gui_launch_count": 1,
+    "passed": true,
+    "native_trace_or_updater_executed": false
+  },
+  {
+    "injected_trace_start_failure": true,
+    "expected_gui_launch_count": 0,
+    "passed": true,
+    "native_trace_or_updater_executed": false
+  }
+]

@@ -1,0 +1,6 @@
+2026-10-12T13:47:11.9251282Z logman update trace -n offline-session -p Microsoft-Windows-USB-USBHUB3 (Default,StateMachine,HeadersBusTrace) path with spaces
+2026-10-12T13:47:11.9914766Z Fake tool; no trace or hardware APIs invoked.
+2026-10-12T13:47:11.9941666Z exit_code=0
+2026-10-12T13:47:12.0097855Z logman simulate-failure
+2026-10-12T13:47:12.0297081Z Fake tool; no trace or hardware APIs invoked.
+2026-10-12T13:47:12.0308135Z exit_code=7

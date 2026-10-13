@@ -1,0 +1,38 @@
+{
+  "Y540Updater.exe": {
+    "bytes": 189571,
+    "sha256": "287180da9ab0135b073cd2631e1523d38a65d9891a75081da7ef31b027f93293"
+  },
+  "44-nosleep-exp1.bin": {
+    "bytes": 55296,
+    "sha256": "2b34b6d59db8443831a7e0387ae65970307f516e816dd481f1ba513d3f9de773"
+  },
+  "44-stock-restore.bin": {
+    "bytes": 55296,
+    "sha256": "3afec131c6ed70efa0a3f4b601cb799011a582835d371c57fef68af48519e359"
+  },
+  "SHFU.ini": {
+    "bytes": 890,
+    "sha256": "87d8a39d9cb1a107c0d24b5a929d46051c54a089c8042e6b044c02d2ffefb64a"
+  },
+  "START-HERE.txt": {
+    "bytes": 2910,
+    "sha256": "a8acb727d95c7f8b295ad3e66585ee784839b197f283def2bf6245a9a77c0cdb"
+  },
+  "FINAL-ATTEMPT.ps1": {
+    "bytes": 4930,
+    "sha256": "f5c12f72e045dbcd8a14c7f07b8fec1313d8b60342dbbbf802edefeae7146929"
+  },
+  "RUN-FINAL-ATTEMPT.cmd": {
+    "bytes": 97,
+    "sha256": "1389375e6d7951dcfde35d5c1762f4457967a78edd4e600c41dcae72ec0161db"
+  },
+  "CASE-RECORD.md": {
+    "bytes": 17005,
+    "sha256": "f104f701f703015906c4c2b99060209a1cf20764cea5dd5102827e4ccab53932"
+  },
+  "patch-manifest.json": {
+    "bytes": 1344,
+    "sha256": "8da5c9fde6cbf449fb9443de9648478f839394de54acddbf01c0eb607c1aa956"
+  }
+}

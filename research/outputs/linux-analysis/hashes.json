@@ -1,0 +1,14 @@
+[
+  {
+    "Path": "C:\\Users\\a.saberi\\Documents\\Codex\\2026-10-12\\https-github-com-morluto-rea-https\\outputs\\linux-analysis\\evidence\\kernel-log.txt",
+    "Hash": "DF2ED69CB99B08DF305C80B1EC15339067653B9AE1486FECB4EBE5A58BF9017B"
+  },
+  {
+    "Path": "C:\\Users\\a.saberi\\Documents\\Codex\\2026-10-12\\https-github-com-morluto-rea-https\\outputs\\linux-analysis\\evidence\\usb-devices.txt",
+    "Hash": "BDA459D28F2AFCD120BFBB3BCC26B5C0C24A2CB79631EEAB7F260C755CAD020B"
+  },
+  {
+    "Path": "C:\\Users\\a.saberi\\Documents\\Codex\\2026-10-12\\https-github-com-morluto-rea-https\\outputs\\linux-analysis\\evidence\\usb-tree.txt",
+    "Hash": "B8BDF8721A58494BE55313F0EC1873681AF6170FF41308886B652026DB7862D4"
+  }
+]

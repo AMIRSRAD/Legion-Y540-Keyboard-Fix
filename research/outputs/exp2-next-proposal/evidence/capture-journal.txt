@@ -1,0 +1,17 @@
+﻿2026-10-13T09:58:02.7399090Z return-exp1 session. Wrapper records USB events and launches the GUI; it never clicks Write, resets a device, or flashes automatically.
+2026-10-13T09:58:02.7470112Z logman create trace -n Y540ReturnExp1-1546de4aa77042188a69ad6862021ee6 -o C:\Users\AMIRSRAD\Desktop\Y540-Return-to-exp1\return-exp1-recording-20261013T095802730Z\usb.etl -f bincirc -max 128 -nb 16 64 -bs 64
+2026-10-13T09:58:02.7956147Z The command completed successfully.
+2026-10-13T09:58:02.7991752Z logman update trace -n Y540ReturnExp1-1546de4aa77042188a69ad6862021ee6 -p Microsoft-Windows-USB-USBXHCI (Default,StateMachine,HeadersBusTrace)
+2026-10-13T09:58:02.9370724Z The command completed successfully.
+2026-10-13T09:58:02.9380722Z logman update trace -n Y540ReturnExp1-1546de4aa77042188a69ad6862021ee6 -p Microsoft-Windows-USB-UCX (Default,StateMachine,HeadersBusTrace)
+2026-10-13T09:58:03.0876497Z The command completed successfully.
+2026-10-13T09:58:03.0886533Z logman update trace -n Y540ReturnExp1-1546de4aa77042188a69ad6862021ee6 -p Microsoft-Windows-USB-USBHUB3 (Default,StateMachine,HeadersBusTrace)
+2026-10-13T09:58:03.2197087Z The command completed successfully.
+2026-10-13T09:58:03.2207109Z logman start -n Y540ReturnExp1-1546de4aa77042188a69ad6862021ee6
+2026-10-13T09:58:04.0948743Z The command completed successfully.
+2026-10-13T09:58:04.0998071Z TRACE STARTED; launching interactive return-exp1 GUI.
+2026-10-13T10:00:11.8168914Z Updater exited; preparing completed logs.
+2026-10-13T10:00:11.8178480Z logman stop -n Y540ReturnExp1-1546de4aa77042188a69ad6862021ee6
+2026-10-13T10:00:12.8760488Z The command completed successfully.
+2026-10-13T10:00:12.8770611Z logman delete -n Y540ReturnExp1-1546de4aa77042188a69ad6862021ee6
+2026-10-13T10:00:12.9177591Z The command completed successfully.

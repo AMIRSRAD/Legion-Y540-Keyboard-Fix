@@ -1,0 +1,31 @@
+Y540 updater fix1 (0.3.0) - first hardware test
+
+Original source is preserved separately. This build fixes updater failure
+paths and adds diagnosis/recovery. The AC-startup fault is not yet proved fixed.
+Firmware 44.bin is unchanged. No hardware was flashed during development.
+
+1. Extract this entire folder; close other keyboard updaters.
+2. Run Y540Updater.exe while the keyboard fails.
+3. Set the dropdown to the AC/battery condition at the last complete startup.
+4. Click "Diagnose + save log".
+5. Optionally click "Retry USB (no flash)" and confirm the exact device.
+   If access is denied, reopen as administrator and repeat diagnosis/retry.
+6. Click "Open logs folder". Keep both logs. Capture another diagnosis while
+   typing works after startup on battery. Report the typing result and whether
+   failure returns after the next complete startup with AC attached.
+
+USB retry restarts one freshly validated device, not the controller/hub.
+It does not write firmware. Windows accepting restart is not proof of repair.
+An unknown device with failed descriptors cannot be flashed over HID.
+
+Advanced firmware writing is separate. Two matching full-flash reads and a
+saved, flushed backup are required before erase. Final verification failure
+stops without an extra erase or unverified reset.
+
+Logs/backups are in logs beside the EXE (fallback: LocalAppData
+Y540Updater-fix1\logs). Review hardware identifiers before public sharing.
+Nothing uploads automatically. Retain logs and any before-flash .bin files.
+
+Rebuild from fix1-source.zip: extract, open PowerShell in fix1, run .\build.ps1.
+Requires Windows x64 MinGW-w64 GCC + windres. No vendor EXE is needed.
+This compiles the updater; it does not regenerate the supplied MCU firmware.

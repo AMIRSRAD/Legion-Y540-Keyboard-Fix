@@ -1,0 +1,11 @@
+{
+  "status": "passed",
+  "archive_sha256": "a8a4fcd813bac5dc84e897cb47d2216b7e07d8390d7c4e007d16ba89b46aa0b6",
+  "files_verified": 9,
+  "original_matches_preserved": true,
+  "experiment_diff_offsets": [
+    "4C79",
+    "7FFF"
+  ],
+  "original_44_default_absent": true
+}

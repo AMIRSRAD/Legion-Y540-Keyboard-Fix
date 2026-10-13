@@ -1,0 +1,42 @@
+Y540 USB trace capture - run on the AFFECTED Lenovo
+
+This records Windows USB driver events. It does not flash firmware, restart a
+device automatically, change BIOS/power settings, or install a driver.
+
+1. Extract this ZIP to a writable folder on the affected Lenovo.
+2. Use the state where the keyboard already fails after startup with AC attached.
+3. Open fix1 as administrator. Right-click CAPTURE-USB.cmd and choose Run as administrator.
+4. Wait until its window says USB RECORDING IS RUNNING.
+5. In fix1 select AC connected at startup, click Diagnose + save log, then
+   Retry USB (no flash) ONCE and confirm its exact target. Wait about 10 seconds,
+   then click Diagnose + save log again. Do not select advanced firmware writing.
+6. Return to the capture window and press Enter. It stops automatically after
+   3 minutes if you do not press Enter. Leave the window open until it finishes.
+7. Send the new recording-....zip created next to the script, plus the new fix1
+   logs (Open logs folder). Say whether typing changed.
+
+If the script fails, send capture-journal.txt from its new recording folder.
+Do not run repeated recovery attempts to collect the same result.
+
+This recording begins after Windows startup. It cannot see the earlier boot
+failure. Its first purpose is to tell us whether fix1's USB retry causes new
+enumeration requests and what errors/transitions occur. If that yields no useful
+reproduction, an early-startup capture will need a separate configuration.
+
+The capture includes other devices on the USB host stack. It uses Default,
+StateMachine and HeadersBusTrace, not transfer-payload tracing. Metadata may
+include device descriptors/identifiers. Review sharing destinations accordingly.
+Trace size is capped at 128 MB with a circular buffer. No files are uploaded.
+The script attempts to stop/delete its unique trace session on normal completion
+and handled errors, reporting cleanup failures. Do not close the window or reboot
+while capture is running.
+
+Uses Windows built-in PowerShell/logman. ExecutionPolicy Bypass applies only to
+the launched PowerShell process; no persistent execution policy is changed.
+
+Reference:
+https://learn.microsoft.com/en-us/windows-hardware/drivers/usbcon/how-to-capture-a-usb-event-trace
+
+Prepared on the development computer; no live trace or device action was run
+there. Script syntax, argument forwarding and failed-command handling were
+checked using a fake tool. Actual capture behavior needs the affected machine.

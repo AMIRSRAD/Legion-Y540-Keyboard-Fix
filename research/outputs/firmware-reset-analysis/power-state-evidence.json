@@ -1,0 +1,68 @@
+{
+  "input_sha256": "3afec131c6ed70efa0a3f4b601cb799011a582835d371c57fef68af48519e359",
+  "verified_instructions": 952,
+  "byte_mismatches": 0,
+  "ranges_half_open": [
+    [
+      "0x100",
+      "0x20b"
+    ],
+    [
+      "0x400",
+      "0x42c"
+    ],
+    [
+      "0x59d",
+      "0x5e4"
+    ],
+    [
+      "0xc33",
+      "0xc47"
+    ],
+    [
+      "0xe30",
+      "0xe97"
+    ],
+    [
+      "0x2200",
+      "0x2260"
+    ],
+    [
+      "0x2633",
+      "0x267e"
+    ],
+    [
+      "0x26e2",
+      "0x2718"
+    ],
+    [
+      "0x3185",
+      "0x31ff"
+    ],
+    [
+      "0x4bc4",
+      "0x4dda"
+    ],
+    [
+      "0x4f65",
+      "0x4fa0"
+    ],
+    [
+      "0x510d",
+      "0x512d"
+    ],
+    [
+      "0x7c4",
+      "0x7f1"
+    ],
+    [
+      "0x946",
+      "0x966"
+    ],
+    [
+      "0x80e3",
+      "0x81a6"
+    ]
+  ],
+  "scope": "Static exported instructions, not execution trace or silicon register validation."
+}

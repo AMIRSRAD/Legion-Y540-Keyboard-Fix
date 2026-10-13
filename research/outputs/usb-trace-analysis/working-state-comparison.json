@@ -1,0 +1,3077 @@
+{
+  "source_directory": "C:\\Users\\a.saberi\\Desktop\\New folder (3)",
+  "logs": [
+    {
+      "name": "fix1-20261012T141321511Z-p2832-1.log",
+      "bytes": 588,
+      "sha256": "f02c6f0f9f489116c62fbbb02c431078851d0d29ed0e886b26e666da5aaae121",
+      "inventories": [],
+      "events": [
+        {
+          "time": "2026-10-12T14:13:21.512Z",
+          "tick": 98406,
+          "message": "session action=gui-fix1 version=fix1-0.3.0 utc_timestamps=1"
+        },
+        {
+          "time": "2026-10-12T14:13:21.514Z",
+          "tick": 98406,
+          "message": "Session log: C:\\Users\\AMIRSRAD\\Desktop\\Y540Updater-fix1-portable\\Y540Updater-fix1\\logs\\fix1-20261012T141321511Z-p2832-1.log"
+        },
+        {
+          "time": "2026-10-12T14:13:21.553Z",
+          "tick": 98453,
+          "message": "Y540 fix1 - diagnose USB enumeration before firmware writes"
+        }
+      ]
+    },
+    {
+      "name": "fix1-20261012T141330902Z-p2832-2.log",
+      "bytes": 41664,
+      "sha256": "4d1d76b80caeada67f2467ffca295aa2b9587e497b688be3c50a8c6e5e10e0da",
+      "inventories": [
+        {
+          "time": "2026-10-12T14:13:31.958Z",
+          "header": "PnP metadata inventory UTC=2026-10-12T14:13:30Z count=34 AC=0 battery_percent=95 power_error=0",
+          "devices": [
+            {
+              "index": 0,
+              "status_fields": {
+                "present": "1",
+                "kind": "1",
+                "status": "0x0180000A",
+                "problem": "0",
+                "CM": "0x00000000",
+                "presence_CM": "0x00000000",
+                "unavailable": "0x00000000",
+                "can_recover": "1",
+                "can_case_recover": "0"
+              },
+              "instance_id": "USB\\VID_048D&PID_C100\\5&1F456139&0&9",
+              "parent_id": "USB\\ROOT_HUB30\\4&15ED8360&0&0",
+              "class": "HIDClass",
+              "service": "HidUsb",
+              "description": "USB Input Device",
+              "bus_description": "ITE Device(8910)",
+              "location": "Port_#0009.Hub_#0002",
+              "location_paths": "PCIROOT(0)#PCI(1400)#USBROOT(0)#USB(9)|ACPI(_SB_)#ACPI(PCI0)#ACPI(XHC_)#ACPI(RHUB)#ACPI(HS09)",
+              "hardware_ids": "USB\\VID_048D&PID_C100&REV_0044|USB\\VID_048D&PID_C100",
+              "compatible_ids": "USB\\COMPAT_VID_048D&Class_03&SubClass_01&Prot_01|USB\\COMPAT_VID_048D&Class_03&SubClass_01|USB\\COMPAT_VID_048D&Class_03|USB\\Class_03&SubClass_01&Prot_01|USB\\Class_03&SubClass_01|USB\\Class_03",
+              "recovery": "Eligible only for an explicitly confirmed restart of this exact physical ITE USB devnode; recovery is unproven."
+            },
+            {
+              "index": 1,
+              "status_fields": {
+                "present": "1",
+                "kind": "0",
+                "status": "0x0180000A",
+                "problem": "0",
+                "CM": "0x00000000",
+                "presence_CM": "0x00000000",
+                "unavailable": "0x00000038",
+                "can_recover": "0",
+                "can_case_recover": "0"
+              },
+              "instance_id": "HID\\HIDCLASS&COL03\\1&2D595CA7&0&0002",
+              "parent_id": "ROOT\\HIDCLASS\\0000",
+              "class": "Keyboard",
+              "service": "kbdhid",
+              "description": "HID Keyboard Device",
+              "bus_description": "",
+              "location": "",
+              "location_paths": "",
+              "hardware_ids": "HID\\InputDirectorVirtualDriver&Col03|HID_DEVICE_SYSTEM_KEYBOARD|HID_DEVICE_UP:0001_U:0006|HID_DEVICE",
+              "compatible_ids": "",
+              "recovery": "Inventory only: device identity is not an approved physical ITE keyboard."
+            },
+            {
+              "index": 2,
+              "status_fields": {
+                "present": "1",
+                "kind": "0",
+                "status": "0x0180000A",
+                "problem": "0",
+                "CM": "0x00000000",
+                "presence_CM": "0x00000000",
+                "unavailable": "0x00000018",
+                "can_recover": "0",
+                "can_case_recover": "0"
+              },
+              "instance_id": "ACPI\\MSFT0001\\4&5B7D99F&0",
+              "parent_id": "PCI\\VEN_8086&DEV_A30D&SUBSYS_380E17AA&REV_10\\3&11583659&0&F8",
+              "class": "Keyboard",
+              "service": "i8042prt",
+              "description": "Standard PS/2 Keyboard",
+              "bus_description": "",
+              "location": "",
+              "location_paths": "ACPI(_SB_)#ACPI(PCI0)#ACPI(LPCB)#ACPI(PS2K)",
+              "hardware_ids": "ACPI\\VEN_MSFT&DEV_0001|ACPI\\MSFT0001|*MSFT0001",
+              "compatible_ids": "*PNP0303",
+              "recovery": "Inventory only: device identity is not an approved physical ITE keyboard."
+            },
+            {
+              "index": 3,
+              "status_fields": {
+                "present": "0",
+                "kind": "3",
+                "status": "0x00000000",
+                "problem": "0",
+                "CM": "0x0000000D",
+                "presence_CM": "0x0000000D",
+                "unavailable": "0x00000048",
+                "can_recover": "0",
+                "can_case_recover": "0"
+              },
+              "instance_id": "USB\\VID_0000&PID_0002\\5&1F456139&0&9",
+              "parent_id": "USB\\ROOT_HUB30\\4&15ED8360&0&0",
+              "class": "USB",
+              "service": "",
+              "description": "Unknown USB Device (Device Descriptor Request Failed)",
+              "bus_description": "",
+              "location": "Port_#0009.Hub_#0002",
+              "location_paths": "ACPI(_SB_)#ACPI(PCI0)#ACPI(XHC_)#ACPI(RHUB)#ACPI(HS09)",
+              "hardware_ids": "USB\\DEVICE_DESCRIPTOR_FAILURE",
+              "compatible_ids": "USB\\DEVICE_DESCRIPTOR_FAILURE",
+              "recovery": "Inventory only: failed USB descriptors do not establish keyboard identity, even at a historical keyboard port."
+            },
+            {
+              "index": 4,
+              "status_fields": {
+                "present": "1",
+                "kind": "0",
+                "status": "0x0180200A",
+                "problem": "0",
+                "CM": "0x00000000",
+                "presence_CM": "0x00000000",
+                "unavailable": "0x00000078",
+                "can_recover": "0",
+                "can_case_recover": "0"
+              },
+              "instance_id": "HID\\HIDCLASS&COL04\\1&2D595CA7&0&0003",
+              "parent_id": "ROOT\\HIDCLASS\\0000",
+              "class": "HIDClass",
+              "service": "",
+              "description": "HID-compliant device",
+              "bus_description": "",
+              "location": "",
+              "location_paths": "",
+              "hardware_ids": "HID\\InputDirectorVirtualDriver&Col04|HID_DEVICE_UP:0001_U:0000|HID_DEVICE",
+              "compatible_ids": "",
+              "recovery": "Inventory only: device identity is not an approved physical ITE keyboard."
+            },
+            {
+              "index": 5,
+              "status_fields": {
+                "present": "1",
+                "kind": "0",
+                "status": "0x0180200A",
+                "problem": "0",
+                "CM": "0x00000000",
+                "presence_CM": "0x00000000",
+                "unavailable": "0x00000018",
+                "can_recover": "0",
+                "can_case_recover": "0"
+              },
+              "instance_id": "USB\\ROOT_HUB30\\5&3BF6F19&0&0",
+              "parent_id": "PCI\\VEN_10DE&DEV_1AEC&SUBSYS_3FFC17AA&REV_A1\\4&1F1FFAD1&0&0208",
+              "class": "USB",
+              "service": "USBHUB3",
+              "description": "USB Root Hub (USB 3.0)",
+              "bus_description": "",
+              "location": "",
+              "location_paths": "PCIROOT(0)#PCI(0100)#PCI(0002)#USBROOT(0)|ACPI(_SB_)#ACPI(PCI0)#ACPI(PEG0)#ACPI(PXHC)#ACPI(RHUB)",
+              "hardware_ids": "USB\\ROOT_HUB30&VID10DE&PID1AEC&REV00A1|USB\\ROOT_HUB30&VID10DE&PID1AEC|USB\\ROOT_HUB30",
+              "compatible_ids": "",
+              "recovery": "Inventory only: device identity is not an approved physical ITE keyboard."
+            },
+            {
+              "index": 6,
+              "status_fields": {
+                "present": "1",
+                "kind": "0",
+                "status": "0x0180200A",
+                "problem": "0",
+                "CM": "0x00000000",
+                "presence_CM": "0x00000000",
+                "unavailable": "0x00000038",
+                "can_recover": "0",
+                "can_case_recover": "0"
+              },
+              "instance_id": "HID\\MSFT0001&COL01\\5&2A114D5C&0&0000",
+              "parent_id": "ACPI\\MSFT0001\\4&F3E8D59&0",
+              "class": "Mouse",
+              "service": "mouhid",
+              "description": "HID-compliant mouse",
+              "bus_description": "",
+              "location": "",
+              "location_paths": "",
+              "hardware_ids": "HID\\VEN_MSFT&DEV_0001&SUBSYS_SYNA0001&Col01|HID\\MSFT0001&Col01|HID\\*MSFT0001&Col01|HID\\VID_06CB&UP:0001_U:0002|HID_DEVICE_SYSTEM_MOUSE|HID_DEVICE_UP:0001_U:0002|HID_DEVICE",
+              "compatible_ids": "",
+              "recovery": "Inventory only: device identity is not an approved physical ITE keyboard."
+            },
+            {
+              "index": 7,
+              "status_fields": {
+                "present": "1",
+                "kind": "0",
+                "status": "0x0180200A",
+                "problem": "0",
+                "CM": "0x00000000",
+                "presence_CM": "0x00000000",
+                "unavailable": "0x00000000",
+                "can_recover": "0",
+                "can_case_recover": "0"
+              },
+              "instance_id": "PCI\\VEN_10DE&DEV_1AED&SUBSYS_3FFC17AA&REV_A1\\4&1F1FFAD1&0&0308",
+              "parent_id": "PCI\\VEN_8086&DEV_1901&SUBSYS_381217AA&REV_07\\3&11583659&0&08",
+              "class": "USB",
+              "service": "UcmCxUcsiNvppc",
+              "description": "NVIDIA USB Type-C Port Policy Controller",
+              "bus_description": "PCI Device",
+              "location": "PCI bus 1, device 0, function 3",
+              "location_paths": "PCIROOT(0)#PCI(0100)#PCI(0003)|ACPI(_SB_)#ACPI(PCI0)#ACPI(PEG0)#PCI(0003)",
+              "hardware_ids": "PCI\\VEN_10DE&DEV_1AED&SUBSYS_3FFC17AA&REV_A1|PCI\\VEN_10DE&DEV_1AED&SUBSYS_3FFC17AA|PCI\\VEN_10DE&DEV_1AED&CC_0C8000|PCI\\VEN_10DE&DEV_1AED&CC_0C80",
+              "compatible_ids": "PCI\\VEN_10DE&DEV_1AED&REV_A1|PCI\\VEN_10DE&DEV_1AED|PCI\\VEN_10DE&CC_0C8000|PCI\\VEN_10DE&CC_0C80|PCI\\VEN_10DE|PCI\\CC_0C8000&DT_0|PCI\\CC_0C8000|PCI\\CC_0C80&DT_0|PCI\\CC_0C80",
+              "recovery": "Inventory only: device identity is not an approved physical ITE keyboard."
+            },
+            {
+              "index": 8,
+              "status_fields": {
+                "present": "1",
+                "kind": "0",
+                "status": "0x0180200A",
+                "problem": "0",
+                "CM": "0x00000000",
+                "presence_CM": "0x00000000",
+                "unavailable": "0x00000078",
+                "can_recover": "0",
+                "can_case_recover": "0"
+              },
+              "instance_id": "HID\\VID_048D&PID_C100&COL05\\6&8BB26F5&0&0004",
+              "parent_id": "USB\\VID_048D&PID_C100\\5&1F456139&0&9",
+              "class": "HIDClass",
+              "service": "",
+              "description": "HID-compliant system controller",
+              "bus_description": "",
+              "location": "",
+              "location_paths": "",
+              "hardware_ids": "HID\\VID_048D&PID_C100&REV_0044&Col05|HID\\VID_048D&PID_C100&Col05|HID\\VID_048D&UP:0001_U:0080|HID_DEVICE_SYSTEM_CONTROL|HID_DEVICE_UP:0001_U:0080|HID_DEVICE",
+              "compatible_ids": "",
+              "recovery": "Inventory only: device identity is not an approved physical ITE keyboard."
+            },
+            {
+              "index": 9,
+              "status_fields": {
+                "present": "1",
+                "kind": "0",
+                "status": "0x0180200A",
+                "problem": "0",
+                "CM": "0x00000000",
+                "presence_CM": "0x00000000",
+                "unavailable": "0x00000078",
+                "can_recover": "0",
+                "can_case_recover": "0"
+              },
+              "instance_id": "HID\\VID_048D&PID_C100&COL04\\6&8BB26F5&0&0003",
+              "parent_id": "USB\\VID_048D&PID_C100\\5&1F456139&0&9",
+              "class": "HIDClass",
+              "service": "",
+              "description": "HID-compliant consumer control device",
+              "bus_description": "",
+              "location": "",
+              "location_paths": "",
+              "hardware_ids": "HID\\VID_048D&PID_C100&REV_0044&Col04|HID\\VID_048D&PID_C100&Col04|HID\\VID_048D&UP:000C_U:0001|HID_DEVICE_SYSTEM_CONSUMER|HID_DEVICE_UP:000C_U:0001|HID_DEVICE",
+              "compatible_ids": "",
+              "recovery": "Inventory only: device identity is not an approved physical ITE keyboard."
+            },
+            {
+              "index": 10,
+              "status_fields": {
+                "present": "1",
+                "kind": "0",
+                "status": "0x0180000A",
+                "problem": "0",
+                "CM": "0x00000000",
+                "presence_CM": "0x00000000",
+                "unavailable": "0x00000000",
+                "can_recover": "0",
+                "can_case_recover": "0"
+              },
+              "instance_id": "PCI\\VEN_8086&DEV_A36D&SUBSYS_380617AA&REV_10\\3&11583659&0&A0",
+              "parent_id": "ACPI\\PNP0A08\\0",
+              "class": "USB",
+              "service": "USBXHCI",
+              "description": "USB xHCI Compliant Host Controller",
+              "bus_description": "Universal Serial Bus (USB) Controller",
+              "location": "PCI bus 0, device 20, function 0",
+              "location_paths": "PCIROOT(0)#PCI(1400)|ACPI(_SB_)#ACPI(PCI0)#ACPI(XHC_)",
+              "hardware_ids": "PCI\\VEN_8086&DEV_A36D&SUBSYS_380617AA&REV_10|PCI\\VEN_8086&DEV_A36D&SUBSYS_380617AA|PCI\\VEN_8086&DEV_A36D&CC_0C0330|PCI\\VEN_8086&DEV_A36D&CC_0C03",
+              "compatible_ids": "PCI\\VEN_8086&DEV_A36D&REV_10|PCI\\VEN_8086&DEV_A36D|PCI\\VEN_8086&CC_0C0330|PCI\\VEN_8086&CC_0C03|PCI\\VEN_8086|PCI\\CC_0C0330|PCI\\CC_0C03",
+              "recovery": "Inventory only: device identity is not an approved physical ITE keyboard."
+            },
+            {
+              "index": 11,
+              "status_fields": {
+                "present": "1",
+                "kind": "0",
+                "status": "0x0180000A",
+                "problem": "0",
+                "CM": "0x00000000",
+                "presence_CM": "0x00000000",
+                "unavailable": "0x00000038",
+                "can_recover": "0",
+                "can_case_recover": "0"
+              },
+              "instance_id": "HID\\VID_048D&PID_C100&COL03\\6&8BB26F5&0&0002",
+              "parent_id": "USB\\VID_048D&PID_C100\\5&1F456139&0&9",
+              "class": "Keyboard",
+              "service": "kbdhid",
+              "description": "HID Keyboard Device",
+              "bus_description": "",
+              "location": "",
+              "location_paths": "",
+              "hardware_ids": "HID\\VID_048D&PID_C100&REV_0044&Col03|HID\\VID_048D&PID_C100&Col03|HID\\VID_048D&UP:0001_U:0006|HID_DEVICE_SYSTEM_KEYBOARD|HID_DEVICE_UP:0001_U:0006|HID_DEVICE",
+              "compatible_ids": "",
+              "recovery": "Inventory only: device identity is not an approved physical ITE keyboard."
+            },
+            {
+              "index": 12,
+              "status_fields": {
+                "present": "1",
+                "kind": "0",
+                "status": "0x0180200A",
+                "problem": "0",
+                "CM": "0x00000000",
+                "presence_CM": "0x00000000",
+                "unavailable": "0x00000078",
+                "can_recover": "0",
+                "can_case_recover": "0"
+              },
+              "instance_id": "HID\\VID_048D&PID_C100&COL02\\6&8BB26F5&0&0001",
+              "parent_id": "USB\\VID_048D&PID_C100\\5&1F456139&0&9",
+              "class": "HIDClass",
+              "service": "",
+              "description": "HID-compliant vendor-defined device",
+              "bus_description": "",
+              "location": "",
+              "location_paths": "",
+              "hardware_ids": "HID\\VID_048D&PID_C100&REV_0044&Col02|HID\\VID_048D&PID_C100&Col02|HID\\VID_048D&UP:FF89_U:00CD|HID_DEVICE_UP:FF89_U:00CD|HID_DEVICE_UPR:FF00-FFFF|HID_DEVICE",
+              "compatible_ids": "",
+              "recovery": "Inventory only: device identity is not an approved physical ITE keyboard."
+            },
+            {
+              "index": 13,
+              "status_fields": {
+                "present": "1",
+                "kind": "0",
+                "status": "0x0180200A",
+                "problem": "0",
+                "CM": "0x00000000",
+                "presence_CM": "0x00000000",
+                "unavailable": "0x00000078",
+                "can_recover": "0",
+                "can_case_recover": "0"
+              },
+              "instance_id": "HID\\VID_048D&PID_C100&COL01\\6&8BB26F5&0&0000",
+              "parent_id": "USB\\VID_048D&PID_C100\\5&1F456139&0&9",
+              "class": "HIDClass",
+              "service": "",
+              "description": "HID-compliant vendor-defined device",
+              "bus_description": "",
+              "location": "",
+              "location_paths": "",
+              "hardware_ids": "HID\\VID_048D&PID_C100&REV_0044&Col01|HID\\VID_048D&PID_C100&Col01|HID\\VID_048D&UP:FF89_U:0010|HID_DEVICE_UP:FF89_U:0010|HID_DEVICE_UPR:FF00-FFFF|HID_DEVICE",
+              "compatible_ids": "",
+              "recovery": "Inventory only: device identity is not an approved physical ITE keyboard."
+            },
+            {
+              "index": 14,
+              "status_fields": {
+                "present": "0",
+                "kind": "0",
+                "status": "0x00000000",
+                "problem": "0",
+                "CM": "0x0000000D",
+                "presence_CM": "0x0000000D",
+                "unavailable": "0x00000078",
+                "can_recover": "0",
+                "can_case_recover": "0"
+              },
+              "instance_id": "HID\\VID_0BDA&PID_1203&MI_03&COL01\\7&142192F1&0&0000",
+              "parent_id": "USB\\VID_0BDA&PID_1203&MI_03\\6&F7CB55D&1&0003",
+              "class": "HIDClass",
+              "service": "",
+              "description": "HID-compliant consumer control device",
+              "bus_description": "",
+              "location": "",
+              "location_paths": "",
+              "hardware_ids": "HID\\VID_0BDA&PID_1203&REV_0000&MI_03&Col01|HID\\VID_0BDA&PID_1203&MI_03&Col01|HID\\VID_0BDA&UP:000C_U:0001|HID_DEVICE_SYSTEM_CONSUMER|HID_DEVICE_UP:000C_U:0001|HID_DEVICE",
+              "compatible_ids": "",
+              "recovery": "Inventory only: device identity is not an approved physical ITE keyboard."
+            },
+            {
+              "index": 15,
+              "status_fields": {
+                "present": "1",
+                "kind": "0",
+                "status": "0x0180000A",
+                "problem": "0",
+                "CM": "0x00000000",
+                "presence_CM": "0x00000000",
+                "unavailable": "0x00000018",
+                "can_recover": "0",
+                "can_case_recover": "0"
+              },
+              "instance_id": "USB\\ROOT_HUB30\\4&15ED8360&0&0",
+              "parent_id": "PCI\\VEN_8086&DEV_A36D&SUBSYS_380617AA&REV_10\\3&11583659&0&A0",
+              "class": "USB",
+              "service": "USBHUB3",
+              "description": "USB Root Hub (USB 3.0)",
+              "bus_description": "",
+              "location": "",
+              "location_paths": "PCIROOT(0)#PCI(1400)#USBROOT(0)|ACPI(_SB_)#ACPI(PCI0)#ACPI(XHC_)#ACPI(RHUB)",
+              "hardware_ids": "USB\\ROOT_HUB30&VID8086&PIDA36D&REV0010|USB\\ROOT_HUB30&VID8086&PIDA36D|USB\\ROOT_HUB30",
+              "compatible_ids": "",
+              "recovery": "Inventory only: device identity is not an approved physical ITE keyboard."
+            },
+            {
+              "index": 16,
+              "status_fields": {
+                "present": "0",
+                "kind": "0",
+                "status": "0x00000000",
+                "problem": "0",
+                "CM": "0x0000000D",
+                "presence_CM": "0x0000000D",
+                "unavailable": "0x00000018",
+                "can_recover": "0",
+                "can_case_recover": "0"
+              },
+              "instance_id": "TERMINPUT_BUS\\UMB\\2&2C22BCC9&0&SESSION1KEYBOARD0",
+              "parent_id": "UMB\\UMB\\1&841921D&0&TERMINPUT_BUS",
+              "class": "Keyboard",
+              "service": "terminpt",
+              "description": "Remote Desktop Keyboard Device",
+              "bus_description": "",
+              "location": "",
+              "location_paths": "UMBROOT(0)#UMB(TERMINPUT_BUS)#UMB(Session1Keyboard0)",
+              "hardware_ids": "TS_INPT\\TS_KBD",
+              "compatible_ids": "TI_COMPAT_DEVICE",
+              "recovery": "Inventory only: device identity is not an approved physical ITE keyboard."
+            },
+            {
+              "index": 17,
+              "status_fields": {
+                "present": "1",
+                "kind": "0",
+                "status": "0x0180200A",
+                "problem": "0",
+                "CM": "0x00000000",
+                "presence_CM": "0x00000000",
+                "unavailable": "0x00000018",
+                "can_recover": "0",
+                "can_case_recover": "0"
+              },
+              "instance_id": "ACPI\\MSFT0001\\4&F3E8D59&0",
+              "parent_id": "PCI\\VEN_8086&DEV_A369&SUBSYS_380417AA&REV_10\\3&11583659&0&A9",
+              "class": "HIDClass",
+              "service": "hidi2c",
+              "description": "I2C HID Device",
+              "bus_description": "",
+              "location": "",
+              "location_paths": "ACPI(_SB_)#ACPI(PCI0)#ACPI(I2C1)#ACPI(TPD0)",
+              "hardware_ids": "ACPI\\VEN_MSFT&DEV_0001&SUBSYS_SYNA0001|ACPI\\MSFT0001|*MSFT0001",
+              "compatible_ids": "ACPI\\VEN_MSFT&DEV_0001|ACPI\\PNP0C50|PNP0C50",
+              "recovery": "Inventory only: device identity is not an approved physical ITE keyboard."
+            },
+            {
+              "index": 18,
+              "status_fields": {
+                "present": "1",
+                "kind": "0",
+                "status": "0x0180200A",
+                "problem": "0",
+                "CM": "0x00000000",
+                "presence_CM": "0x00000000",
+                "unavailable": "0x00000078",
+                "can_recover": "0",
+                "can_case_recover": "0"
+              },
+              "instance_id": "HID\\MSFT0001&COL02\\5&2A114D5C&0&0001",
+              "parent_id": "ACPI\\MSFT0001\\4&F3E8D59&0",
+              "class": "HIDClass",
+              "service": "",
+              "description": "HID-compliant touch pad",
+              "bus_description": "",
+              "location": "",
+              "location_paths": "",
+              "hardware_ids": "HID\\VEN_MSFT&DEV_0001&SUBSYS_SYNA0001&Col02|HID\\MSFT0001&Col02|HID\\*MSFT0001&Col02|HID\\VID_06CB&UP:000D_U:0005|HID_DEVICE_UP:000D_U:0005|HID_DEVICE",
+              "compatible_ids": "",
+              "recovery": "Inventory only: device identity is not an approved physical ITE keyboard."
+            },
+            {
+              "index": 19,
+              "status_fields": {
+                "present": "1",
+                "kind": "0",
+                "status": "0x0180200A",
+                "problem": "0",
+                "CM": "0x00000000",
+                "presence_CM": "0x00000000",
+                "unavailable": "0x00000000",
+                "can_recover": "0",
+                "can_case_recover": "0"
+              },
+              "instance_id": "PCI\\VEN_10DE&DEV_1AEC&SUBSYS_3FFC17AA&REV_A1\\4&1F1FFAD1&0&0208",
+              "parent_id": "PCI\\VEN_8086&DEV_1901&SUBSYS_381217AA&REV_07\\3&11583659&0&08",
+              "class": "USB",
+              "service": "USBXHCI",
+              "description": "USB xHCI Compliant Host Controller",
+              "bus_description": "Universal Serial Bus (USB) Controller",
+              "location": "PCI bus 1, device 0, function 2",
+              "location_paths": "PCIROOT(0)#PCI(0100)#PCI(0002)|ACPI(_SB_)#ACPI(PCI0)#ACPI(PEG0)#ACPI(PXHC)",
+              "hardware_ids": "PCI\\VEN_10DE&DEV_1AEC&SUBSYS_3FFC17AA&REV_A1|PCI\\VEN_10DE&DEV_1AEC&SUBSYS_3FFC17AA|PCI\\VEN_10DE&DEV_1AEC&CC_0C0330|PCI\\VEN_10DE&DEV_1AEC&CC_0C03",
+              "compatible_ids": "PCI\\VEN_10DE&DEV_1AEC&REV_A1|PCI\\VEN_10DE&DEV_1AEC|PCI\\VEN_10DE&CC_0C0330|PCI\\VEN_10DE&CC_0C03|PCI\\VEN_10DE|PCI\\CC_0C0330&DT_0|PCI\\CC_0C0330|PCI\\CC_0C03&DT_0|PCI\\CC_0C03",
+              "recovery": "Inventory only: device identity is not an approved physical ITE keyboard."
+            },
+            {
+              "index": 20,
+              "status_fields": {
+                "present": "0",
+                "kind": "0",
+                "status": "0x00000000",
+                "problem": "0",
+                "CM": "0x0000000D",
+                "presence_CM": "0x0000000D",
+                "unavailable": "0x00000078",
+                "can_recover": "0",
+                "can_case_recover": "0"
+              },
+              "instance_id": "HID\\VID_0BDA&PID_1203&MI_03&COL02\\7&142192F1&0&0001",
+              "parent_id": "USB\\VID_0BDA&PID_1203&MI_03\\6&F7CB55D&1&0003",
+              "class": "HIDClass",
+              "service": "",
+              "description": "HID-compliant vendor-defined device",
+              "bus_description": "",
+              "location": "",
+              "location_paths": "",
+              "hardware_ids": "HID\\VID_0BDA&PID_1203&REV_0000&MI_03&Col02|HID\\VID_0BDA&PID_1203&MI_03&Col02|HID\\VID_0BDA&UP:FF00_U:0212|HID_DEVICE_UP:FF00_U:0212|HID_DEVICE_UPR:FF00-FFFF|HID_DEVICE",
+              "compatible_ids": "",
+              "recovery": "Inventory only: device identity is not an approved physical ITE keyboard."
+            },
+            {
+              "index": 21,
+              "status_fields": {
+                "present": "0",
+                "kind": "0",
+                "status": "0x00000000",
+                "problem": "0",
+                "CM": "0x0000000D",
+                "presence_CM": "0x0000000D",
+                "unavailable": "0x00000000",
+                "can_recover": "0",
+                "can_case_recover": "0"
+              },
+              "instance_id": "USB\\VID_0BDA&PID_1203&MI_03\\6&F7CB55D&1&0003",
+              "parent_id": "USB\\VID_0BDA&PID_1203\\5&1F456139&0&3",
+              "class": "HIDClass",
+              "service": "HidUsb",
+              "description": "USB Input Device",
+              "bus_description": "H868 Wireless headset",
+              "location": "0000.0014.0000.003.000.000.000.000.000",
+              "location_paths": "PCIROOT(0)#PCI(1400)#USBROOT(0)#USB(3)#USBMI(3)|ACPI(_SB_)#ACPI(PCI0)#ACPI(XHC_)#ACPI(RHUB)#ACPI(HS03)#USBMI(3)",
+              "hardware_ids": "USB\\VID_0BDA&PID_1203&REV_0000&MI_03|USB\\VID_0BDA&PID_1203&MI_03",
+              "compatible_ids": "USB\\COMPAT_VID_0bda&Class_03&SubClass_00&Prot_00|USB\\COMPAT_VID_0bda&Class_03&SubClass_00|USB\\COMPAT_VID_0bda&Class_03|USB\\Class_03&SubClass_00&Prot_00|USB\\Class_03&SubClass_00|USB\\Class_03",
+              "recovery": "Inventory only: device identity is not an approved physical ITE keyboard."
+            },
+            {
+              "index": 22,
+              "status_fields": {
+                "present": "1",
+                "kind": "0",
+                "status": "0x0180200A",
+                "problem": "0",
+                "CM": "0x00000000",
+                "presence_CM": "0x00000000",
+                "unavailable": "0x00000038",
+                "can_recover": "0",
+                "can_case_recover": "0"
+              },
+              "instance_id": "HID\\HIDCLASS&COL01\\1&2D595CA7&0&0000",
+              "parent_id": "ROOT\\HIDCLASS\\0000",
+              "class": "Mouse",
+              "service": "mouhid",
+              "description": "HID-compliant mouse",
+              "bus_description": "",
+              "location": "",
+              "location_paths": "",
+              "hardware_ids": "HID\\InputDirectorVirtualDriver&Col01|HID_DEVICE_SYSTEM_MOUSE|HID_DEVICE_UP:0001_U:0002|HID_DEVICE",
+              "compatible_ids": "",
+              "recovery": "Inventory only: device identity is not an approved physical ITE keyboard."
+            },
+            {
+              "index": 23,
+              "status_fields": {
+                "present": "1",
+                "kind": "0",
+                "status": "0x0180600A",
+                "problem": "0",
+                "CM": "0x00000000",
+                "presence_CM": "0x00000000",
+                "unavailable": "0x00000000",
+                "can_recover": "0",
+                "can_case_recover": "0"
+              },
+              "instance_id": "USB\\VID_30C9&PID_001B&MI_00\\6&2C6AEC8&0&0000",
+              "parent_id": "USB\\VID_30C9&PID_001B\\0001",
+              "class": "Camera",
+              "service": "usbvideo",
+              "description": "Integrated Camera",
+              "bus_description": "Integrated Camera",
+              "location": "0000.0014.0000.006.000.000.000.000.000",
+              "location_paths": "PCIROOT(0)#PCI(1400)#USBROOT(0)#USB(6)#USBMI(0)|PCIROOT(0)#PCI(1400)#USBROOT(0)#USB(6)#USB(6)|ACPI(_SB_)#ACPI(PCI0)#ACPI(XHC_)#ACPI(RHUB)#ACPI(HS06)#ACPI(CAMA)",
+              "hardware_ids": "USB\\VID_30C9&PID_001B&REV_0002&MI_00|USB\\VID_30C9&PID_001B&MI_00",
+              "compatible_ids": "USB\\COMPAT_VID_30c9&Class_0e&SubClass_03&Prot_00|USB\\COMPAT_VID_30c9&Class_0e&SubClass_03|USB\\COMPAT_VID_30c9&Class_0e|USB\\Class_0e&SubClass_03&Prot_00|USB\\Class_0e&SubClass_03|USB\\Class_0e",
+              "recovery": "Inventory only: device identity is not an approved physical ITE keyboard."
+            },
+            {
+              "index": 24,
+              "status_fields": {
+                "present": "1",
+                "kind": "0",
+                "status": "0x0180200A",
+                "problem": "0",
+                "CM": "0x00000000",
+                "presence_CM": "0x00000000",
+                "unavailable": "0x00000038",
+                "can_recover": "0",
+                "can_case_recover": "0"
+              },
+              "instance_id": "HID\\MSFT0001&COL03\\5&2A114D5C&0&0002",
+              "parent_id": "ACPI\\MSFT0001\\4&F3E8D59&0",
+              "class": "HIDClass",
+              "service": "MTConfig",
+              "description": "Microsoft Input Configuration Device",
+              "bus_description": "",
+              "location": "",
+              "location_paths": "",
+              "hardware_ids": "HID\\VEN_MSFT&DEV_0001&SUBSYS_SYNA0001&Col03|HID\\MSFT0001&Col03|HID\\*MSFT0001&Col03|HID\\VID_06CB&UP:000D_U:000E|HID_DEVICE_UP:000D_U:000E|HID_DEVICE",
+              "compatible_ids": "",
+              "recovery": "Inventory only: device identity is not an approved physical ITE keyboard."
+            },
+            {
+              "index": 25,
+              "status_fields": {
+                "present": "0",
+                "kind": "0",
+                "status": "0x00000000",
+                "problem": "0",
+                "CM": "0x0000000D",
+                "presence_CM": "0x0000000D",
+                "unavailable": "0x00000000",
+                "can_recover": "0",
+                "can_case_recover": "0"
+              },
+              "instance_id": "USB\\VID_0BDA&PID_1203\\5&1F456139&0&3",
+              "parent_id": "USB\\ROOT_HUB30\\4&15ED8360&0&0",
+              "class": "USB",
+              "service": "usbccgp",
+              "description": "USB Composite Device",
+              "bus_description": "H868 Wireless headset",
+              "location": "Port_#0003.Hub_#0002",
+              "location_paths": "PCIROOT(0)#PCI(1400)#USBROOT(0)#USB(3)|ACPI(_SB_)#ACPI(PCI0)#ACPI(XHC_)#ACPI(RHUB)#ACPI(HS03)",
+              "hardware_ids": "USB\\VID_0BDA&PID_1203&REV_0000|USB\\VID_0BDA&PID_1203",
+              "compatible_ids": "USB\\COMPAT_VID_0BDA&DevClass_00&SubClass_00&Prot00|USB\\COMPAT_VID_0BDA&DevClass_00&SubClass_00|USB\\COMPAT_VID_0BDA&DevClass_00|USB\\DevClass_00&SubClass_00&Prot_00|USB\\DevClass_00&SubClass_00|USB\\DevClass_00|USB\\COMPOSITE",
+              "recovery": "Inventory only: device identity is not an approved physical ITE keyboard."
+            },
+            {
+              "index": 26,
+              "status_fields": {
+                "present": "0",
+                "kind": "0",
+                "status": "0x00000000",
+                "problem": "0",
+                "CM": "0x0000000D",
+                "presence_CM": "0x0000000D",
+                "unavailable": "0x00000000",
+                "can_recover": "0",
+                "can_case_recover": "0"
+              },
+              "instance_id": "USB\\VID_0BDA&PID_1203&MI_00\\6&F7CB55D&1&0000",
+              "parent_id": "USB\\VID_0BDA&PID_1203\\5&1F456139&0&3",
+              "class": "MEDIA",
+              "service": "usbaudio",
+              "description": "USB Audio Device",
+              "bus_description": "H868 Wireless headset",
+              "location": "0000.0014.0000.003.000.000.000.000.000",
+              "location_paths": "PCIROOT(0)#PCI(1400)#USBROOT(0)#USB(3)#USBMI(0)|PCIROOT(0)#PCI(1400)#USBROOT(0)#USB(3)#USB(3)|ACPI(_SB_)#ACPI(PCI0)#ACPI(XHC_)#ACPI(RHUB)#ACPI(HS03)#USBMI(0)|ACPI(_SB_)#ACPI(PCI0)#ACPI(XHC_)#ACPI(RHUB)#ACPI(HS03)#USB(3)",
+              "hardware_ids": "USB\\VID_0BDA&PID_1203&REV_0000&MI_00|USB\\VID_0BDA&PID_1203&MI_00",
+              "compatible_ids": "USB\\COMPAT_VID_0bda&Class_01&SubClass_01&Prot_00|USB\\COMPAT_VID_0bda&Class_01&SubClass_01|USB\\COMPAT_VID_0bda&Class_01|USB\\Class_01&SubClass_01&Prot_00|USB\\Class_01&SubClass_01|USB\\Class_01",
+              "recovery": "Inventory only: device identity is not an approved physical ITE keyboard."
+            },
+            {
+              "index": 27,
+              "status_fields": {
+                "present": "1",
+                "kind": "0",
+                "status": "0x0180200A",
+                "problem": "0",
+                "CM": "0x00000000",
+                "presence_CM": "0x00000000",
+                "unavailable": "0x00000000",
+                "can_recover": "0",
+                "can_case_recover": "0"
+              },
+              "instance_id": "USB\\VID_30C9&PID_001B\\0001",
+              "parent_id": "USB\\ROOT_HUB30\\4&15ED8360&0&0",
+              "class": "USB",
+              "service": "usbccgp",
+              "description": "USB Composite Device",
+              "bus_description": "Integrated Camera",
+              "location": "Port_#0006.Hub_#0002",
+              "location_paths": "PCIROOT(0)#PCI(1400)#USBROOT(0)#USB(6)|ACPI(_SB_)#ACPI(PCI0)#ACPI(XHC_)#ACPI(RHUB)#ACPI(HS06)",
+              "hardware_ids": "USB\\VID_30C9&PID_001B&REV_0002|USB\\VID_30C9&PID_001B",
+              "compatible_ids": "USB\\COMPAT_VID_30C9&DevClass_00&SubClass_00&Prot00|USB\\COMPAT_VID_30C9&DevClass_00&SubClass_00|USB\\COMPAT_VID_30C9&DevClass_00|USB\\DevClass_00&SubClass_00&Prot_00|USB\\DevClass_00&SubClass_00|USB\\DevClass_00|USB\\COMPOSITE",
+              "recovery": "Inventory only: device identity is not an approved physical ITE keyboard."
+            },
+            {
+              "index": 28,
+              "status_fields": {
+                "present": "0",
+                "kind": "0",
+                "status": "0x00000000",
+                "problem": "0",
+                "CM": "0x0000000D",
+                "presence_CM": "0x0000000D",
+                "unavailable": "0x00000078",
+                "can_recover": "0",
+                "can_case_recover": "0"
+              },
+              "instance_id": "HID\\VID_0BDA&PID_1203&MI_03&COL03\\7&142192F1&0&0002",
+              "parent_id": "USB\\VID_0BDA&PID_1203&MI_03\\6&F7CB55D&1&0003",
+              "class": "HIDClass",
+              "service": "",
+              "description": "HID-compliant vendor-defined device",
+              "bus_description": "",
+              "location": "",
+              "location_paths": "",
+              "hardware_ids": "HID\\VID_0BDA&PID_1203&REV_0000&MI_03&Col03|HID\\VID_0BDA&PID_1203&MI_03&Col03|HID\\VID_0BDA&UP:FF0B_U:0101|HID_DEVICE_UP:FF0B_U:0101|HID_DEVICE_UPR:FF00-FFFF|HID_DEVICE",
+              "compatible_ids": "",
+              "recovery": "Inventory only: device identity is not an approved physical ITE keyboard."
+            },
+            {
+              "index": 29,
+              "status_fields": {
+                "present": "1",
+                "kind": "0",
+                "status": "0x0180200A",
+                "problem": "0",
+                "CM": "0x00000000",
+                "presence_CM": "0x00000000",
+                "unavailable": "0x00000078",
+                "can_recover": "0",
+                "can_case_recover": "0"
+              },
+              "instance_id": "HID\\HIDCLASS&COL02\\1&2D595CA7&0&0001",
+              "parent_id": "ROOT\\HIDCLASS\\0000",
+              "class": "HIDClass",
+              "service": "",
+              "description": "HID-compliant device",
+              "bus_description": "",
+              "location": "",
+              "location_paths": "",
+              "hardware_ids": "HID\\InputDirectorVirtualDriver&Col02|HID_DEVICE_UP:0001_U:0000|HID_DEVICE",
+              "compatible_ids": "",
+              "recovery": "Inventory only: device identity is not an approved physical ITE keyboard."
+            },
+            {
+              "index": 30,
+              "status_fields": {
+                "present": "1",
+                "kind": "0",
+                "status": "0x0180200A",
+                "problem": "0",
+                "CM": "0x00000000",
+                "presence_CM": "0x00000000",
+                "unavailable": "0x00000078",
+                "can_recover": "0",
+                "can_case_recover": "0"
+              },
+              "instance_id": "HID\\MSFT0001&COL04\\5&2A114D5C&0&0003",
+              "parent_id": "ACPI\\MSFT0001\\4&F3E8D59&0",
+              "class": "HIDClass",
+              "service": "",
+              "description": "HID-compliant vendor-defined device",
+              "bus_description": "",
+              "location": "",
+              "location_paths": "",
+              "hardware_ids": "HID\\VEN_MSFT&DEV_0001&SUBSYS_SYNA0001&Col04|HID\\MSFT0001&Col04|HID\\*MSFT0001&Col04|HID\\VID_06CB&UP:FF00_U:0001|HID_DEVICE_UP:FF00_U:0001|HID_DEVICE_UPR:FF00-FFFF|HID_DEVICE",
+              "compatible_ids": "",
+              "recovery": "Inventory only: device identity is not an approved physical ITE keyboard."
+            },
+            {
+              "index": 31,
+              "status_fields": {
+                "present": "0",
+                "kind": "0",
+                "status": "0x00000000",
+                "problem": "0",
+                "CM": "0x0000000D",
+                "presence_CM": "0x0000000D",
+                "unavailable": "0x00000000",
+                "can_recover": "0",
+                "can_case_recover": "0"
+              },
+              "instance_id": "USB\\VID_0781&PID_55AB\\0401ABCA4AAAE072AC68DB2C4B903D94D4BC12D50A6161D3F335D52675E6E39DFC7500000000000000000000026F55C1FF891B18AB558107A13334F9",
+              "parent_id": "USB\\ROOT_HUB30\\4&15ED8360&0&0",
+              "class": "USB",
+              "service": "USBSTOR",
+              "description": "USB Mass Storage Device",
+              "bus_description": " SanDisk 3.2Gen1",
+              "location": "Port_#0020.Hub_#0002",
+              "location_paths": "PCIROOT(0)#PCI(1400)#USBROOT(0)#USB(20)|ACPI(_SB_)#ACPI(PCI0)#ACPI(XHC_)#ACPI(RHUB)#ACPI(SS04)",
+              "hardware_ids": "USB\\VID_0781&PID_55AB&REV_0100|USB\\VID_0781&PID_55AB",
+              "compatible_ids": "USB\\COMPAT_VID_0781&Class_08&SubClass_06&Prot_50|USB\\COMPAT_VID_0781&Class_08&SubClass_06|USB\\COMPAT_VID_0781&Class_08|USB\\Class_08&SubClass_06&Prot_50|USB\\Class_08&SubClass_06|USB\\Class_08",
+              "recovery": "Inventory only: device identity is not an approved physical ITE keyboard."
+            },
+            {
+              "index": 32,
+              "status_fields": {
+                "present": "1",
+                "kind": "0",
+                "status": "0x0180000B",
+                "problem": "0",
+                "CM": "0x00000000",
+                "presence_CM": "0x00000000",
+                "unavailable": "0x00000138",
+                "can_recover": "0",
+                "can_case_recover": "0"
+              },
+              "instance_id": "ROOT\\HIDCLASS\\0000",
+              "parent_id": "HTREE\\ROOT\\0",
+              "class": "HIDClass",
+              "service": "mshidkmdf",
+              "description": "Input Director Virtual Device",
+              "bus_description": "",
+              "location": "",
+              "location_paths": "",
+              "hardware_ids": "root\\InputDirectorVirtualDriver",
+              "compatible_ids": "",
+              "recovery": "Inventory only: device identity is not an approved physical ITE keyboard."
+            },
+            {
+              "index": 33,
+              "status_fields": {
+                "present": "1",
+                "kind": "0",
+                "status": "0x0180200A",
+                "problem": "0",
+                "CM": "0x00000000",
+                "presence_CM": "0x00000000",
+                "unavailable": "0x00000008",
+                "can_recover": "0",
+                "can_case_recover": "0"
+              },
+              "instance_id": "USB\\VID_8087&PID_0AAA\\5&1F456139&0&14",
+              "parent_id": "USB\\ROOT_HUB30\\4&15ED8360&0&0",
+              "class": "Bluetooth",
+              "service": "BTHUSB",
+              "description": "Intel(R) Wireless Bluetooth(R)",
+              "bus_description": "",
+              "location": "Port_#0014.Hub_#0002",
+              "location_paths": "PCIROOT(0)#PCI(1400)#USBROOT(0)#USB(14)|ACPI(_SB_)#ACPI(PCI0)#ACPI(XHC_)#ACPI(RHUB)#ACPI(HS14)",
+              "hardware_ids": "USB\\VID_8087&PID_0AAA&REV_0002|USB\\VID_8087&PID_0AAA",
+              "compatible_ids": "USB\\COMPAT_VID_8087&Class_E0&SubClass_01&Prot_01|USB\\COMPAT_VID_8087&Class_E0&SubClass_01|USB\\COMPAT_VID_8087&Class_E0|USB\\Class_E0&SubClass_01&Prot_01|USB\\Class_E0&SubClass_01|USB\\Class_E0",
+              "recovery": "Inventory only: device identity is not an approved physical ITE keyboard."
+            }
+          ]
+        }
+      ],
+      "events": [
+        {
+          "time": "2026-10-12T14:13:30.903Z",
+          "tick": 107796,
+          "message": "session action=diagnose-read-only version=fix1-0.3.0 utc_timestamps=1"
+        },
+        {
+          "time": "2026-10-12T14:13:30.905Z",
+          "tick": 107796,
+          "message": "Session log: C:\\Users\\AMIRSRAD\\Desktop\\Y540Updater-fix1-portable\\Y540Updater-fix1\\logs\\fix1-20261012T141330902Z-p2832-2.log"
+        },
+        {
+          "time": "2026-10-12T14:13:30.914Z",
+          "tick": 107812,
+          "message": "Diagnose: reading device metadata; no firmware commands."
+        },
+        {
+          "time": "2026-10-12T14:13:31.955Z",
+          "tick": 108859,
+          "message": "user_reported_power_at_last_complete_startup=battery only (owner selected; not measured at boot)"
+        },
+        {
+          "time": "2026-10-12T14:13:31.960Z",
+          "tick": 108859,
+          "message": "AC values: 0=battery, 1=AC, 255=unknown. Metadata only; no HID commands were sent."
+        },
+        {
+          "time": "2026-10-12T14:13:31.960Z",
+          "tick": 108859,
+          "message": "Unavailable-property bits: 0 instance, 1 parent, 2 description, 3 bus description, 4 location, 5 location paths, 6 service, 7 hardware IDs, 8 compatible IDs, 9 class."
+        },
+        {
+          "time": "2026-10-12T14:13:32.709Z",
+          "tick": 109609,
+          "message": "Power now: battery; battery=95% (255 means unknown)."
+        },
+        {
+          "time": "2026-10-12T14:13:32.716Z",
+          "tick": 109609,
+          "message": "USB\\VID_048D&PID_C100\\5&1F456139&0&9 present=1 problem=0 location=Port_#0009.Hub_#0002"
+        },
+        {
+          "time": "2026-10-12T14:13:32.723Z",
+          "tick": 109625,
+          "message": "USB\\VID_0000&PID_0002\\5&1F456139&0&9 present=0 problem=0 location=Port_#0009.Hub_#0002"
+        },
+        {
+          "time": "2026-10-12T14:13:32.731Z",
+          "tick": 109625,
+          "message": "Healthy normal=1; boot=0; exact historical descriptor-failure candidate=0."
+        },
+        {
+          "time": "2026-10-12T14:13:32.737Z",
+          "tick": 109640,
+          "message": "Normal firmware is enumerated. Reflashing 44 is not a proven cure for AC-startup failure."
+        }
+      ]
+    },
+    {
+      "name": "fix1-20261012T141346768Z-p2832-3.log",
+      "bytes": 83365,
+      "sha256": "6e4962b045d7a0ad767086e3e2c934fbd410b1982acfe99f747bece244fffa24",
+      "inventories": [
+        {
+          "time": "2026-10-12T14:13:46.998Z",
+          "header": "PnP metadata inventory UTC=2026-10-12T14:13:46Z count=34 AC=0 battery_percent=95 power_error=0",
+          "devices": [
+            {
+              "index": 0,
+              "status_fields": {
+                "present": "1",
+                "kind": "1",
+                "status": "0x0180000A",
+                "problem": "0",
+                "CM": "0x00000000",
+                "presence_CM": "0x00000000",
+                "unavailable": "0x00000000",
+                "can_recover": "1",
+                "can_case_recover": "0"
+              },
+              "instance_id": "USB\\VID_048D&PID_C100\\5&1F456139&0&9",
+              "parent_id": "USB\\ROOT_HUB30\\4&15ED8360&0&0",
+              "class": "HIDClass",
+              "service": "HidUsb",
+              "description": "USB Input Device",
+              "bus_description": "ITE Device(8910)",
+              "location": "Port_#0009.Hub_#0002",
+              "location_paths": "PCIROOT(0)#PCI(1400)#USBROOT(0)#USB(9)|ACPI(_SB_)#ACPI(PCI0)#ACPI(XHC_)#ACPI(RHUB)#ACPI(HS09)",
+              "hardware_ids": "USB\\VID_048D&PID_C100&REV_0044|USB\\VID_048D&PID_C100",
+              "compatible_ids": "USB\\COMPAT_VID_048D&Class_03&SubClass_01&Prot_01|USB\\COMPAT_VID_048D&Class_03&SubClass_01|USB\\COMPAT_VID_048D&Class_03|USB\\Class_03&SubClass_01&Prot_01|USB\\Class_03&SubClass_01|USB\\Class_03",
+              "recovery": "Eligible only for an explicitly confirmed restart of this exact physical ITE USB devnode; recovery is unproven."
+            },
+            {
+              "index": 1,
+              "status_fields": {
+                "present": "1",
+                "kind": "0",
+                "status": "0x0180000A",
+                "problem": "0",
+                "CM": "0x00000000",
+                "presence_CM": "0x00000000",
+                "unavailable": "0x00000038",
+                "can_recover": "0",
+                "can_case_recover": "0"
+              },
+              "instance_id": "HID\\HIDCLASS&COL03\\1&2D595CA7&0&0002",
+              "parent_id": "ROOT\\HIDCLASS\\0000",
+              "class": "Keyboard",
+              "service": "kbdhid",
+              "description": "HID Keyboard Device",
+              "bus_description": "",
+              "location": "",
+              "location_paths": "",
+              "hardware_ids": "HID\\InputDirectorVirtualDriver&Col03|HID_DEVICE_SYSTEM_KEYBOARD|HID_DEVICE_UP:0001_U:0006|HID_DEVICE",
+              "compatible_ids": "",
+              "recovery": "Inventory only: device identity is not an approved physical ITE keyboard."
+            },
+            {
+              "index": 2,
+              "status_fields": {
+                "present": "1",
+                "kind": "0",
+                "status": "0x0180000A",
+                "problem": "0",
+                "CM": "0x00000000",
+                "presence_CM": "0x00000000",
+                "unavailable": "0x00000018",
+                "can_recover": "0",
+                "can_case_recover": "0"
+              },
+              "instance_id": "ACPI\\MSFT0001\\4&5B7D99F&0",
+              "parent_id": "PCI\\VEN_8086&DEV_A30D&SUBSYS_380E17AA&REV_10\\3&11583659&0&F8",
+              "class": "Keyboard",
+              "service": "i8042prt",
+              "description": "Standard PS/2 Keyboard",
+              "bus_description": "",
+              "location": "",
+              "location_paths": "ACPI(_SB_)#ACPI(PCI0)#ACPI(LPCB)#ACPI(PS2K)",
+              "hardware_ids": "ACPI\\VEN_MSFT&DEV_0001|ACPI\\MSFT0001|*MSFT0001",
+              "compatible_ids": "*PNP0303",
+              "recovery": "Inventory only: device identity is not an approved physical ITE keyboard."
+            },
+            {
+              "index": 3,
+              "status_fields": {
+                "present": "0",
+                "kind": "3",
+                "status": "0x00000000",
+                "problem": "0",
+                "CM": "0x0000000D",
+                "presence_CM": "0x0000000D",
+                "unavailable": "0x00000048",
+                "can_recover": "0",
+                "can_case_recover": "0"
+              },
+              "instance_id": "USB\\VID_0000&PID_0002\\5&1F456139&0&9",
+              "parent_id": "USB\\ROOT_HUB30\\4&15ED8360&0&0",
+              "class": "USB",
+              "service": "",
+              "description": "Unknown USB Device (Device Descriptor Request Failed)",
+              "bus_description": "",
+              "location": "Port_#0009.Hub_#0002",
+              "location_paths": "ACPI(_SB_)#ACPI(PCI0)#ACPI(XHC_)#ACPI(RHUB)#ACPI(HS09)",
+              "hardware_ids": "USB\\DEVICE_DESCRIPTOR_FAILURE",
+              "compatible_ids": "USB\\DEVICE_DESCRIPTOR_FAILURE",
+              "recovery": "Inventory only: failed USB descriptors do not establish keyboard identity, even at a historical keyboard port."
+            },
+            {
+              "index": 4,
+              "status_fields": {
+                "present": "1",
+                "kind": "0",
+                "status": "0x0180200A",
+                "problem": "0",
+                "CM": "0x00000000",
+                "presence_CM": "0x00000000",
+                "unavailable": "0x00000078",
+                "can_recover": "0",
+                "can_case_recover": "0"
+              },
+              "instance_id": "HID\\HIDCLASS&COL04\\1&2D595CA7&0&0003",
+              "parent_id": "ROOT\\HIDCLASS\\0000",
+              "class": "HIDClass",
+              "service": "",
+              "description": "HID-compliant device",
+              "bus_description": "",
+              "location": "",
+              "location_paths": "",
+              "hardware_ids": "HID\\InputDirectorVirtualDriver&Col04|HID_DEVICE_UP:0001_U:0000|HID_DEVICE",
+              "compatible_ids": "",
+              "recovery": "Inventory only: device identity is not an approved physical ITE keyboard."
+            },
+            {
+              "index": 5,
+              "status_fields": {
+                "present": "1",
+                "kind": "0",
+                "status": "0x0180200A",
+                "problem": "0",
+                "CM": "0x00000000",
+                "presence_CM": "0x00000000",
+                "unavailable": "0x00000018",
+                "can_recover": "0",
+                "can_case_recover": "0"
+              },
+              "instance_id": "USB\\ROOT_HUB30\\5&3BF6F19&0&0",
+              "parent_id": "PCI\\VEN_10DE&DEV_1AEC&SUBSYS_3FFC17AA&REV_A1\\4&1F1FFAD1&0&0208",
+              "class": "USB",
+              "service": "USBHUB3",
+              "description": "USB Root Hub (USB 3.0)",
+              "bus_description": "",
+              "location": "",
+              "location_paths": "PCIROOT(0)#PCI(0100)#PCI(0002)#USBROOT(0)|ACPI(_SB_)#ACPI(PCI0)#ACPI(PEG0)#ACPI(PXHC)#ACPI(RHUB)",
+              "hardware_ids": "USB\\ROOT_HUB30&VID10DE&PID1AEC&REV00A1|USB\\ROOT_HUB30&VID10DE&PID1AEC|USB\\ROOT_HUB30",
+              "compatible_ids": "",
+              "recovery": "Inventory only: device identity is not an approved physical ITE keyboard."
+            },
+            {
+              "index": 6,
+              "status_fields": {
+                "present": "1",
+                "kind": "0",
+                "status": "0x0180200A",
+                "problem": "0",
+                "CM": "0x00000000",
+                "presence_CM": "0x00000000",
+                "unavailable": "0x00000038",
+                "can_recover": "0",
+                "can_case_recover": "0"
+              },
+              "instance_id": "HID\\MSFT0001&COL01\\5&2A114D5C&0&0000",
+              "parent_id": "ACPI\\MSFT0001\\4&F3E8D59&0",
+              "class": "Mouse",
+              "service": "mouhid",
+              "description": "HID-compliant mouse",
+              "bus_description": "",
+              "location": "",
+              "location_paths": "",
+              "hardware_ids": "HID\\VEN_MSFT&DEV_0001&SUBSYS_SYNA0001&Col01|HID\\MSFT0001&Col01|HID\\*MSFT0001&Col01|HID\\VID_06CB&UP:0001_U:0002|HID_DEVICE_SYSTEM_MOUSE|HID_DEVICE_UP:0001_U:0002|HID_DEVICE",
+              "compatible_ids": "",
+              "recovery": "Inventory only: device identity is not an approved physical ITE keyboard."
+            },
+            {
+              "index": 7,
+              "status_fields": {
+                "present": "1",
+                "kind": "0",
+                "status": "0x0180200A",
+                "problem": "0",
+                "CM": "0x00000000",
+                "presence_CM": "0x00000000",
+                "unavailable": "0x00000000",
+                "can_recover": "0",
+                "can_case_recover": "0"
+              },
+              "instance_id": "PCI\\VEN_10DE&DEV_1AED&SUBSYS_3FFC17AA&REV_A1\\4&1F1FFAD1&0&0308",
+              "parent_id": "PCI\\VEN_8086&DEV_1901&SUBSYS_381217AA&REV_07\\3&11583659&0&08",
+              "class": "USB",
+              "service": "UcmCxUcsiNvppc",
+              "description": "NVIDIA USB Type-C Port Policy Controller",
+              "bus_description": "PCI Device",
+              "location": "PCI bus 1, device 0, function 3",
+              "location_paths": "PCIROOT(0)#PCI(0100)#PCI(0003)|ACPI(_SB_)#ACPI(PCI0)#ACPI(PEG0)#PCI(0003)",
+              "hardware_ids": "PCI\\VEN_10DE&DEV_1AED&SUBSYS_3FFC17AA&REV_A1|PCI\\VEN_10DE&DEV_1AED&SUBSYS_3FFC17AA|PCI\\VEN_10DE&DEV_1AED&CC_0C8000|PCI\\VEN_10DE&DEV_1AED&CC_0C80",
+              "compatible_ids": "PCI\\VEN_10DE&DEV_1AED&REV_A1|PCI\\VEN_10DE&DEV_1AED|PCI\\VEN_10DE&CC_0C8000|PCI\\VEN_10DE&CC_0C80|PCI\\VEN_10DE|PCI\\CC_0C8000&DT_0|PCI\\CC_0C8000|PCI\\CC_0C80&DT_0|PCI\\CC_0C80",
+              "recovery": "Inventory only: device identity is not an approved physical ITE keyboard."
+            },
+            {
+              "index": 8,
+              "status_fields": {
+                "present": "1",
+                "kind": "0",
+                "status": "0x0180200A",
+                "problem": "0",
+                "CM": "0x00000000",
+                "presence_CM": "0x00000000",
+                "unavailable": "0x00000078",
+                "can_recover": "0",
+                "can_case_recover": "0"
+              },
+              "instance_id": "HID\\VID_048D&PID_C100&COL05\\6&8BB26F5&0&0004",
+              "parent_id": "USB\\VID_048D&PID_C100\\5&1F456139&0&9",
+              "class": "HIDClass",
+              "service": "",
+              "description": "HID-compliant system controller",
+              "bus_description": "",
+              "location": "",
+              "location_paths": "",
+              "hardware_ids": "HID\\VID_048D&PID_C100&REV_0044&Col05|HID\\VID_048D&PID_C100&Col05|HID\\VID_048D&UP:0001_U:0080|HID_DEVICE_SYSTEM_CONTROL|HID_DEVICE_UP:0001_U:0080|HID_DEVICE",
+              "compatible_ids": "",
+              "recovery": "Inventory only: device identity is not an approved physical ITE keyboard."
+            },
+            {
+              "index": 9,
+              "status_fields": {
+                "present": "1",
+                "kind": "0",
+                "status": "0x0180200A",
+                "problem": "0",
+                "CM": "0x00000000",
+                "presence_CM": "0x00000000",
+                "unavailable": "0x00000078",
+                "can_recover": "0",
+                "can_case_recover": "0"
+              },
+              "instance_id": "HID\\VID_048D&PID_C100&COL04\\6&8BB26F5&0&0003",
+              "parent_id": "USB\\VID_048D&PID_C100\\5&1F456139&0&9",
+              "class": "HIDClass",
+              "service": "",
+              "description": "HID-compliant consumer control device",
+              "bus_description": "",
+              "location": "",
+              "location_paths": "",
+              "hardware_ids": "HID\\VID_048D&PID_C100&REV_0044&Col04|HID\\VID_048D&PID_C100&Col04|HID\\VID_048D&UP:000C_U:0001|HID_DEVICE_SYSTEM_CONSUMER|HID_DEVICE_UP:000C_U:0001|HID_DEVICE",
+              "compatible_ids": "",
+              "recovery": "Inventory only: device identity is not an approved physical ITE keyboard."
+            },
+            {
+              "index": 10,
+              "status_fields": {
+                "present": "1",
+                "kind": "0",
+                "status": "0x0180000A",
+                "problem": "0",
+                "CM": "0x00000000",
+                "presence_CM": "0x00000000",
+                "unavailable": "0x00000000",
+                "can_recover": "0",
+                "can_case_recover": "0"
+              },
+              "instance_id": "PCI\\VEN_8086&DEV_A36D&SUBSYS_380617AA&REV_10\\3&11583659&0&A0",
+              "parent_id": "ACPI\\PNP0A08\\0",
+              "class": "USB",
+              "service": "USBXHCI",
+              "description": "USB xHCI Compliant Host Controller",
+              "bus_description": "Universal Serial Bus (USB) Controller",
+              "location": "PCI bus 0, device 20, function 0",
+              "location_paths": "PCIROOT(0)#PCI(1400)|ACPI(_SB_)#ACPI(PCI0)#ACPI(XHC_)",
+              "hardware_ids": "PCI\\VEN_8086&DEV_A36D&SUBSYS_380617AA&REV_10|PCI\\VEN_8086&DEV_A36D&SUBSYS_380617AA|PCI\\VEN_8086&DEV_A36D&CC_0C0330|PCI\\VEN_8086&DEV_A36D&CC_0C03",
+              "compatible_ids": "PCI\\VEN_8086&DEV_A36D&REV_10|PCI\\VEN_8086&DEV_A36D|PCI\\VEN_8086&CC_0C0330|PCI\\VEN_8086&CC_0C03|PCI\\VEN_8086|PCI\\CC_0C0330|PCI\\CC_0C03",
+              "recovery": "Inventory only: device identity is not an approved physical ITE keyboard."
+            },
+            {
+              "index": 11,
+              "status_fields": {
+                "present": "1",
+                "kind": "0",
+                "status": "0x0180000A",
+                "problem": "0",
+                "CM": "0x00000000",
+                "presence_CM": "0x00000000",
+                "unavailable": "0x00000038",
+                "can_recover": "0",
+                "can_case_recover": "0"
+              },
+              "instance_id": "HID\\VID_048D&PID_C100&COL03\\6&8BB26F5&0&0002",
+              "parent_id": "USB\\VID_048D&PID_C100\\5&1F456139&0&9",
+              "class": "Keyboard",
+              "service": "kbdhid",
+              "description": "HID Keyboard Device",
+              "bus_description": "",
+              "location": "",
+              "location_paths": "",
+              "hardware_ids": "HID\\VID_048D&PID_C100&REV_0044&Col03|HID\\VID_048D&PID_C100&Col03|HID\\VID_048D&UP:0001_U:0006|HID_DEVICE_SYSTEM_KEYBOARD|HID_DEVICE_UP:0001_U:0006|HID_DEVICE",
+              "compatible_ids": "",
+              "recovery": "Inventory only: device identity is not an approved physical ITE keyboard."
+            },
+            {
+              "index": 12,
+              "status_fields": {
+                "present": "1",
+                "kind": "0",
+                "status": "0x0180200A",
+                "problem": "0",
+                "CM": "0x00000000",
+                "presence_CM": "0x00000000",
+                "unavailable": "0x00000078",
+                "can_recover": "0",
+                "can_case_recover": "0"
+              },
+              "instance_id": "HID\\VID_048D&PID_C100&COL02\\6&8BB26F5&0&0001",
+              "parent_id": "USB\\VID_048D&PID_C100\\5&1F456139&0&9",
+              "class": "HIDClass",
+              "service": "",
+              "description": "HID-compliant vendor-defined device",
+              "bus_description": "",
+              "location": "",
+              "location_paths": "",
+              "hardware_ids": "HID\\VID_048D&PID_C100&REV_0044&Col02|HID\\VID_048D&PID_C100&Col02|HID\\VID_048D&UP:FF89_U:00CD|HID_DEVICE_UP:FF89_U:00CD|HID_DEVICE_UPR:FF00-FFFF|HID_DEVICE",
+              "compatible_ids": "",
+              "recovery": "Inventory only: device identity is not an approved physical ITE keyboard."
+            },
+            {
+              "index": 13,
+              "status_fields": {
+                "present": "1",
+                "kind": "0",
+                "status": "0x0180200A",
+                "problem": "0",
+                "CM": "0x00000000",
+                "presence_CM": "0x00000000",
+                "unavailable": "0x00000078",
+                "can_recover": "0",
+                "can_case_recover": "0"
+              },
+              "instance_id": "HID\\VID_048D&PID_C100&COL01\\6&8BB26F5&0&0000",
+              "parent_id": "USB\\VID_048D&PID_C100\\5&1F456139&0&9",
+              "class": "HIDClass",
+              "service": "",
+              "description": "HID-compliant vendor-defined device",
+              "bus_description": "",
+              "location": "",
+              "location_paths": "",
+              "hardware_ids": "HID\\VID_048D&PID_C100&REV_0044&Col01|HID\\VID_048D&PID_C100&Col01|HID\\VID_048D&UP:FF89_U:0010|HID_DEVICE_UP:FF89_U:0010|HID_DEVICE_UPR:FF00-FFFF|HID_DEVICE",
+              "compatible_ids": "",
+              "recovery": "Inventory only: device identity is not an approved physical ITE keyboard."
+            },
+            {
+              "index": 14,
+              "status_fields": {
+                "present": "0",
+                "kind": "0",
+                "status": "0x00000000",
+                "problem": "0",
+                "CM": "0x0000000D",
+                "presence_CM": "0x0000000D",
+                "unavailable": "0x00000078",
+                "can_recover": "0",
+                "can_case_recover": "0"
+              },
+              "instance_id": "HID\\VID_0BDA&PID_1203&MI_03&COL01\\7&142192F1&0&0000",
+              "parent_id": "USB\\VID_0BDA&PID_1203&MI_03\\6&F7CB55D&1&0003",
+              "class": "HIDClass",
+              "service": "",
+              "description": "HID-compliant consumer control device",
+              "bus_description": "",
+              "location": "",
+              "location_paths": "",
+              "hardware_ids": "HID\\VID_0BDA&PID_1203&REV_0000&MI_03&Col01|HID\\VID_0BDA&PID_1203&MI_03&Col01|HID\\VID_0BDA&UP:000C_U:0001|HID_DEVICE_SYSTEM_CONSUMER|HID_DEVICE_UP:000C_U:0001|HID_DEVICE",
+              "compatible_ids": "",
+              "recovery": "Inventory only: device identity is not an approved physical ITE keyboard."
+            },
+            {
+              "index": 15,
+              "status_fields": {
+                "present": "1",
+                "kind": "0",
+                "status": "0x0180000A",
+                "problem": "0",
+                "CM": "0x00000000",
+                "presence_CM": "0x00000000",
+                "unavailable": "0x00000018",
+                "can_recover": "0",
+                "can_case_recover": "0"
+              },
+              "instance_id": "USB\\ROOT_HUB30\\4&15ED8360&0&0",
+              "parent_id": "PCI\\VEN_8086&DEV_A36D&SUBSYS_380617AA&REV_10\\3&11583659&0&A0",
+              "class": "USB",
+              "service": "USBHUB3",
+              "description": "USB Root Hub (USB 3.0)",
+              "bus_description": "",
+              "location": "",
+              "location_paths": "PCIROOT(0)#PCI(1400)#USBROOT(0)|ACPI(_SB_)#ACPI(PCI0)#ACPI(XHC_)#ACPI(RHUB)",
+              "hardware_ids": "USB\\ROOT_HUB30&VID8086&PIDA36D&REV0010|USB\\ROOT_HUB30&VID8086&PIDA36D|USB\\ROOT_HUB30",
+              "compatible_ids": "",
+              "recovery": "Inventory only: device identity is not an approved physical ITE keyboard."
+            },
+            {
+              "index": 16,
+              "status_fields": {
+                "present": "0",
+                "kind": "0",
+                "status": "0x00000000",
+                "problem": "0",
+                "CM": "0x0000000D",
+                "presence_CM": "0x0000000D",
+                "unavailable": "0x00000018",
+                "can_recover": "0",
+                "can_case_recover": "0"
+              },
+              "instance_id": "TERMINPUT_BUS\\UMB\\2&2C22BCC9&0&SESSION1KEYBOARD0",
+              "parent_id": "UMB\\UMB\\1&841921D&0&TERMINPUT_BUS",
+              "class": "Keyboard",
+              "service": "terminpt",
+              "description": "Remote Desktop Keyboard Device",
+              "bus_description": "",
+              "location": "",
+              "location_paths": "UMBROOT(0)#UMB(TERMINPUT_BUS)#UMB(Session1Keyboard0)",
+              "hardware_ids": "TS_INPT\\TS_KBD",
+              "compatible_ids": "TI_COMPAT_DEVICE",
+              "recovery": "Inventory only: device identity is not an approved physical ITE keyboard."
+            },
+            {
+              "index": 17,
+              "status_fields": {
+                "present": "1",
+                "kind": "0",
+                "status": "0x0180200A",
+                "problem": "0",
+                "CM": "0x00000000",
+                "presence_CM": "0x00000000",
+                "unavailable": "0x00000018",
+                "can_recover": "0",
+                "can_case_recover": "0"
+              },
+              "instance_id": "ACPI\\MSFT0001\\4&F3E8D59&0",
+              "parent_id": "PCI\\VEN_8086&DEV_A369&SUBSYS_380417AA&REV_10\\3&11583659&0&A9",
+              "class": "HIDClass",
+              "service": "hidi2c",
+              "description": "I2C HID Device",
+              "bus_description": "",
+              "location": "",
+              "location_paths": "ACPI(_SB_)#ACPI(PCI0)#ACPI(I2C1)#ACPI(TPD0)",
+              "hardware_ids": "ACPI\\VEN_MSFT&DEV_0001&SUBSYS_SYNA0001|ACPI\\MSFT0001|*MSFT0001",
+              "compatible_ids": "ACPI\\VEN_MSFT&DEV_0001|ACPI\\PNP0C50|PNP0C50",
+              "recovery": "Inventory only: device identity is not an approved physical ITE keyboard."
+            },
+            {
+              "index": 18,
+              "status_fields": {
+                "present": "1",
+                "kind": "0",
+                "status": "0x0180200A",
+                "problem": "0",
+                "CM": "0x00000000",
+                "presence_CM": "0x00000000",
+                "unavailable": "0x00000078",
+                "can_recover": "0",
+                "can_case_recover": "0"
+              },
+              "instance_id": "HID\\MSFT0001&COL02\\5&2A114D5C&0&0001",
+              "parent_id": "ACPI\\MSFT0001\\4&F3E8D59&0",
+              "class": "HIDClass",
+              "service": "",
+              "description": "HID-compliant touch pad",
+              "bus_description": "",
+              "location": "",
+              "location_paths": "",
+              "hardware_ids": "HID\\VEN_MSFT&DEV_0001&SUBSYS_SYNA0001&Col02|HID\\MSFT0001&Col02|HID\\*MSFT0001&Col02|HID\\VID_06CB&UP:000D_U:0005|HID_DEVICE_UP:000D_U:0005|HID_DEVICE",
+              "compatible_ids": "",
+              "recovery": "Inventory only: device identity is not an approved physical ITE keyboard."
+            },
+            {
+              "index": 19,
+              "status_fields": {
+                "present": "1",
+                "kind": "0",
+                "status": "0x0180200A",
+                "problem": "0",
+                "CM": "0x00000000",
+                "presence_CM": "0x00000000",
+                "unavailable": "0x00000000",
+                "can_recover": "0",
+                "can_case_recover": "0"
+              },
+              "instance_id": "PCI\\VEN_10DE&DEV_1AEC&SUBSYS_3FFC17AA&REV_A1\\4&1F1FFAD1&0&0208",
+              "parent_id": "PCI\\VEN_8086&DEV_1901&SUBSYS_381217AA&REV_07\\3&11583659&0&08",
+              "class": "USB",
+              "service": "USBXHCI",
+              "description": "USB xHCI Compliant Host Controller",
+              "bus_description": "Universal Serial Bus (USB) Controller",
+              "location": "PCI bus 1, device 0, function 2",
+              "location_paths": "PCIROOT(0)#PCI(0100)#PCI(0002)|ACPI(_SB_)#ACPI(PCI0)#ACPI(PEG0)#ACPI(PXHC)",
+              "hardware_ids": "PCI\\VEN_10DE&DEV_1AEC&SUBSYS_3FFC17AA&REV_A1|PCI\\VEN_10DE&DEV_1AEC&SUBSYS_3FFC17AA|PCI\\VEN_10DE&DEV_1AEC&CC_0C0330|PCI\\VEN_10DE&DEV_1AEC&CC_0C03",
+              "compatible_ids": "PCI\\VEN_10DE&DEV_1AEC&REV_A1|PCI\\VEN_10DE&DEV_1AEC|PCI\\VEN_10DE&CC_0C0330|PCI\\VEN_10DE&CC_0C03|PCI\\VEN_10DE|PCI\\CC_0C0330&DT_0|PCI\\CC_0C0330|PCI\\CC_0C03&DT_0|PCI\\CC_0C03",
+              "recovery": "Inventory only: device identity is not an approved physical ITE keyboard."
+            },
+            {
+              "index": 20,
+              "status_fields": {
+                "present": "0",
+                "kind": "0",
+                "status": "0x00000000",
+                "problem": "0",
+                "CM": "0x0000000D",
+                "presence_CM": "0x0000000D",
+                "unavailable": "0x00000078",
+                "can_recover": "0",
+                "can_case_recover": "0"
+              },
+              "instance_id": "HID\\VID_0BDA&PID_1203&MI_03&COL02\\7&142192F1&0&0001",
+              "parent_id": "USB\\VID_0BDA&PID_1203&MI_03\\6&F7CB55D&1&0003",
+              "class": "HIDClass",
+              "service": "",
+              "description": "HID-compliant vendor-defined device",
+              "bus_description": "",
+              "location": "",
+              "location_paths": "",
+              "hardware_ids": "HID\\VID_0BDA&PID_1203&REV_0000&MI_03&Col02|HID\\VID_0BDA&PID_1203&MI_03&Col02|HID\\VID_0BDA&UP:FF00_U:0212|HID_DEVICE_UP:FF00_U:0212|HID_DEVICE_UPR:FF00-FFFF|HID_DEVICE",
+              "compatible_ids": "",
+              "recovery": "Inventory only: device identity is not an approved physical ITE keyboard."
+            },
+            {
+              "index": 21,
+              "status_fields": {
+                "present": "0",
+                "kind": "0",
+                "status": "0x00000000",
+                "problem": "0",
+                "CM": "0x0000000D",
+                "presence_CM": "0x0000000D",
+                "unavailable": "0x00000000",
+                "can_recover": "0",
+                "can_case_recover": "0"
+              },
+              "instance_id": "USB\\VID_0BDA&PID_1203&MI_03\\6&F7CB55D&1&0003",
+              "parent_id": "USB\\VID_0BDA&PID_1203\\5&1F456139&0&3",
+              "class": "HIDClass",
+              "service": "HidUsb",
+              "description": "USB Input Device",
+              "bus_description": "H868 Wireless headset",
+              "location": "0000.0014.0000.003.000.000.000.000.000",
+              "location_paths": "PCIROOT(0)#PCI(1400)#USBROOT(0)#USB(3)#USBMI(3)|ACPI(_SB_)#ACPI(PCI0)#ACPI(XHC_)#ACPI(RHUB)#ACPI(HS03)#USBMI(3)",
+              "hardware_ids": "USB\\VID_0BDA&PID_1203&REV_0000&MI_03|USB\\VID_0BDA&PID_1203&MI_03",
+              "compatible_ids": "USB\\COMPAT_VID_0bda&Class_03&SubClass_00&Prot_00|USB\\COMPAT_VID_0bda&Class_03&SubClass_00|USB\\COMPAT_VID_0bda&Class_03|USB\\Class_03&SubClass_00&Prot_00|USB\\Class_03&SubClass_00|USB\\Class_03",
+              "recovery": "Inventory only: device identity is not an approved physical ITE keyboard."
+            },
+            {
+              "index": 22,
+              "status_fields": {
+                "present": "1",
+                "kind": "0",
+                "status": "0x0180200A",
+                "problem": "0",
+                "CM": "0x00000000",
+                "presence_CM": "0x00000000",
+                "unavailable": "0x00000038",
+                "can_recover": "0",
+                "can_case_recover": "0"
+              },
+              "instance_id": "HID\\HIDCLASS&COL01\\1&2D595CA7&0&0000",
+              "parent_id": "ROOT\\HIDCLASS\\0000",
+              "class": "Mouse",
+              "service": "mouhid",
+              "description": "HID-compliant mouse",
+              "bus_description": "",
+              "location": "",
+              "location_paths": "",
+              "hardware_ids": "HID\\InputDirectorVirtualDriver&Col01|HID_DEVICE_SYSTEM_MOUSE|HID_DEVICE_UP:0001_U:0002|HID_DEVICE",
+              "compatible_ids": "",
+              "recovery": "Inventory only: device identity is not an approved physical ITE keyboard."
+            },
+            {
+              "index": 23,
+              "status_fields": {
+                "present": "1",
+                "kind": "0",
+                "status": "0x0180600A",
+                "problem": "0",
+                "CM": "0x00000000",
+                "presence_CM": "0x00000000",
+                "unavailable": "0x00000000",
+                "can_recover": "0",
+                "can_case_recover": "0"
+              },
+              "instance_id": "USB\\VID_30C9&PID_001B&MI_00\\6&2C6AEC8&0&0000",
+              "parent_id": "USB\\VID_30C9&PID_001B\\0001",
+              "class": "Camera",
+              "service": "usbvideo",
+              "description": "Integrated Camera",
+              "bus_description": "Integrated Camera",
+              "location": "0000.0014.0000.006.000.000.000.000.000",
+              "location_paths": "PCIROOT(0)#PCI(1400)#USBROOT(0)#USB(6)#USBMI(0)|PCIROOT(0)#PCI(1400)#USBROOT(0)#USB(6)#USB(6)|ACPI(_SB_)#ACPI(PCI0)#ACPI(XHC_)#ACPI(RHUB)#ACPI(HS06)#ACPI(CAMA)",
+              "hardware_ids": "USB\\VID_30C9&PID_001B&REV_0002&MI_00|USB\\VID_30C9&PID_001B&MI_00",
+              "compatible_ids": "USB\\COMPAT_VID_30c9&Class_0e&SubClass_03&Prot_00|USB\\COMPAT_VID_30c9&Class_0e&SubClass_03|USB\\COMPAT_VID_30c9&Class_0e|USB\\Class_0e&SubClass_03&Prot_00|USB\\Class_0e&SubClass_03|USB\\Class_0e",
+              "recovery": "Inventory only: device identity is not an approved physical ITE keyboard."
+            },
+            {
+              "index": 24,
+              "status_fields": {
+                "present": "1",
+                "kind": "0",
+                "status": "0x0180200A",
+                "problem": "0",
+                "CM": "0x00000000",
+                "presence_CM": "0x00000000",
+                "unavailable": "0x00000038",
+                "can_recover": "0",
+                "can_case_recover": "0"
+              },
+              "instance_id": "HID\\MSFT0001&COL03\\5&2A114D5C&0&0002",
+              "parent_id": "ACPI\\MSFT0001\\4&F3E8D59&0",
+              "class": "HIDClass",
+              "service": "MTConfig",
+              "description": "Microsoft Input Configuration Device",
+              "bus_description": "",
+              "location": "",
+              "location_paths": "",
+              "hardware_ids": "HID\\VEN_MSFT&DEV_0001&SUBSYS_SYNA0001&Col03|HID\\MSFT0001&Col03|HID\\*MSFT0001&Col03|HID\\VID_06CB&UP:000D_U:000E|HID_DEVICE_UP:000D_U:000E|HID_DEVICE",
+              "compatible_ids": "",
+              "recovery": "Inventory only: device identity is not an approved physical ITE keyboard."
+            },
+            {
+              "index": 25,
+              "status_fields": {
+                "present": "0",
+                "kind": "0",
+                "status": "0x00000000",
+                "problem": "0",
+                "CM": "0x0000000D",
+                "presence_CM": "0x0000000D",
+                "unavailable": "0x00000000",
+                "can_recover": "0",
+                "can_case_recover": "0"
+              },
+              "instance_id": "USB\\VID_0BDA&PID_1203\\5&1F456139&0&3",
+              "parent_id": "USB\\ROOT_HUB30\\4&15ED8360&0&0",
+              "class": "USB",
+              "service": "usbccgp",
+              "description": "USB Composite Device",
+              "bus_description": "H868 Wireless headset",
+              "location": "Port_#0003.Hub_#0002",
+              "location_paths": "PCIROOT(0)#PCI(1400)#USBROOT(0)#USB(3)|ACPI(_SB_)#ACPI(PCI0)#ACPI(XHC_)#ACPI(RHUB)#ACPI(HS03)",
+              "hardware_ids": "USB\\VID_0BDA&PID_1203&REV_0000|USB\\VID_0BDA&PID_1203",
+              "compatible_ids": "USB\\COMPAT_VID_0BDA&DevClass_00&SubClass_00&Prot00|USB\\COMPAT_VID_0BDA&DevClass_00&SubClass_00|USB\\COMPAT_VID_0BDA&DevClass_00|USB\\DevClass_00&SubClass_00&Prot_00|USB\\DevClass_00&SubClass_00|USB\\DevClass_00|USB\\COMPOSITE",
+              "recovery": "Inventory only: device identity is not an approved physical ITE keyboard."
+            },
+            {
+              "index": 26,
+              "status_fields": {
+                "present": "0",
+                "kind": "0",
+                "status": "0x00000000",
+                "problem": "0",
+                "CM": "0x0000000D",
+                "presence_CM": "0x0000000D",
+                "unavailable": "0x00000000",
+                "can_recover": "0",
+                "can_case_recover": "0"
+              },
+              "instance_id": "USB\\VID_0BDA&PID_1203&MI_00\\6&F7CB55D&1&0000",
+              "parent_id": "USB\\VID_0BDA&PID_1203\\5&1F456139&0&3",
+              "class": "MEDIA",
+              "service": "usbaudio",
+              "description": "USB Audio Device",
+              "bus_description": "H868 Wireless headset",
+              "location": "0000.0014.0000.003.000.000.000.000.000",
+              "location_paths": "PCIROOT(0)#PCI(1400)#USBROOT(0)#USB(3)#USBMI(0)|PCIROOT(0)#PCI(1400)#USBROOT(0)#USB(3)#USB(3)|ACPI(_SB_)#ACPI(PCI0)#ACPI(XHC_)#ACPI(RHUB)#ACPI(HS03)#USBMI(0)|ACPI(_SB_)#ACPI(PCI0)#ACPI(XHC_)#ACPI(RHUB)#ACPI(HS03)#USB(3)",
+              "hardware_ids": "USB\\VID_0BDA&PID_1203&REV_0000&MI_00|USB\\VID_0BDA&PID_1203&MI_00",
+              "compatible_ids": "USB\\COMPAT_VID_0bda&Class_01&SubClass_01&Prot_00|USB\\COMPAT_VID_0bda&Class_01&SubClass_01|USB\\COMPAT_VID_0bda&Class_01|USB\\Class_01&SubClass_01&Prot_00|USB\\Class_01&SubClass_01|USB\\Class_01",
+              "recovery": "Inventory only: device identity is not an approved physical ITE keyboard."
+            },
+            {
+              "index": 27,
+              "status_fields": {
+                "present": "1",
+                "kind": "0",
+                "status": "0x0180200A",
+                "problem": "0",
+                "CM": "0x00000000",
+                "presence_CM": "0x00000000",
+                "unavailable": "0x00000000",
+                "can_recover": "0",
+                "can_case_recover": "0"
+              },
+              "instance_id": "USB\\VID_30C9&PID_001B\\0001",
+              "parent_id": "USB\\ROOT_HUB30\\4&15ED8360&0&0",
+              "class": "USB",
+              "service": "usbccgp",
+              "description": "USB Composite Device",
+              "bus_description": "Integrated Camera",
+              "location": "Port_#0006.Hub_#0002",
+              "location_paths": "PCIROOT(0)#PCI(1400)#USBROOT(0)#USB(6)|ACPI(_SB_)#ACPI(PCI0)#ACPI(XHC_)#ACPI(RHUB)#ACPI(HS06)",
+              "hardware_ids": "USB\\VID_30C9&PID_001B&REV_0002|USB\\VID_30C9&PID_001B",
+              "compatible_ids": "USB\\COMPAT_VID_30C9&DevClass_00&SubClass_00&Prot00|USB\\COMPAT_VID_30C9&DevClass_00&SubClass_00|USB\\COMPAT_VID_30C9&DevClass_00|USB\\DevClass_00&SubClass_00&Prot_00|USB\\DevClass_00&SubClass_00|USB\\DevClass_00|USB\\COMPOSITE",
+              "recovery": "Inventory only: device identity is not an approved physical ITE keyboard."
+            },
+            {
+              "index": 28,
+              "status_fields": {
+                "present": "0",
+                "kind": "0",
+                "status": "0x00000000",
+                "problem": "0",
+                "CM": "0x0000000D",
+                "presence_CM": "0x0000000D",
+                "unavailable": "0x00000078",
+                "can_recover": "0",
+                "can_case_recover": "0"
+              },
+              "instance_id": "HID\\VID_0BDA&PID_1203&MI_03&COL03\\7&142192F1&0&0002",
+              "parent_id": "USB\\VID_0BDA&PID_1203&MI_03\\6&F7CB55D&1&0003",
+              "class": "HIDClass",
+              "service": "",
+              "description": "HID-compliant vendor-defined device",
+              "bus_description": "",
+              "location": "",
+              "location_paths": "",
+              "hardware_ids": "HID\\VID_0BDA&PID_1203&REV_0000&MI_03&Col03|HID\\VID_0BDA&PID_1203&MI_03&Col03|HID\\VID_0BDA&UP:FF0B_U:0101|HID_DEVICE_UP:FF0B_U:0101|HID_DEVICE_UPR:FF00-FFFF|HID_DEVICE",
+              "compatible_ids": "",
+              "recovery": "Inventory only: device identity is not an approved physical ITE keyboard."
+            },
+            {
+              "index": 29,
+              "status_fields": {
+                "present": "1",
+                "kind": "0",
+                "status": "0x0180200A",
+                "problem": "0",
+                "CM": "0x00000000",
+                "presence_CM": "0x00000000",
+                "unavailable": "0x00000078",
+                "can_recover": "0",
+                "can_case_recover": "0"
+              },
+              "instance_id": "HID\\HIDCLASS&COL02\\1&2D595CA7&0&0001",
+              "parent_id": "ROOT\\HIDCLASS\\0000",
+              "class": "HIDClass",
+              "service": "",
+              "description": "HID-compliant device",
+              "bus_description": "",
+              "location": "",
+              "location_paths": "",
+              "hardware_ids": "HID\\InputDirectorVirtualDriver&Col02|HID_DEVICE_UP:0001_U:0000|HID_DEVICE",
+              "compatible_ids": "",
+              "recovery": "Inventory only: device identity is not an approved physical ITE keyboard."
+            },
+            {
+              "index": 30,
+              "status_fields": {
+                "present": "1",
+                "kind": "0",
+                "status": "0x0180200A",
+                "problem": "0",
+                "CM": "0x00000000",
+                "presence_CM": "0x00000000",
+                "unavailable": "0x00000078",
+                "can_recover": "0",
+                "can_case_recover": "0"
+              },
+              "instance_id": "HID\\MSFT0001&COL04\\5&2A114D5C&0&0003",
+              "parent_id": "ACPI\\MSFT0001\\4&F3E8D59&0",
+              "class": "HIDClass",
+              "service": "",
+              "description": "HID-compliant vendor-defined device",
+              "bus_description": "",
+              "location": "",
+              "location_paths": "",
+              "hardware_ids": "HID\\VEN_MSFT&DEV_0001&SUBSYS_SYNA0001&Col04|HID\\MSFT0001&Col04|HID\\*MSFT0001&Col04|HID\\VID_06CB&UP:FF00_U:0001|HID_DEVICE_UP:FF00_U:0001|HID_DEVICE_UPR:FF00-FFFF|HID_DEVICE",
+              "compatible_ids": "",
+              "recovery": "Inventory only: device identity is not an approved physical ITE keyboard."
+            },
+            {
+              "index": 31,
+              "status_fields": {
+                "present": "0",
+                "kind": "0",
+                "status": "0x00000000",
+                "problem": "0",
+                "CM": "0x0000000D",
+                "presence_CM": "0x0000000D",
+                "unavailable": "0x00000000",
+                "can_recover": "0",
+                "can_case_recover": "0"
+              },
+              "instance_id": "USB\\VID_0781&PID_55AB\\0401ABCA4AAAE072AC68DB2C4B903D94D4BC12D50A6161D3F335D52675E6E39DFC7500000000000000000000026F55C1FF891B18AB558107A13334F9",
+              "parent_id": "USB\\ROOT_HUB30\\4&15ED8360&0&0",
+              "class": "USB",
+              "service": "USBSTOR",
+              "description": "USB Mass Storage Device",
+              "bus_description": " SanDisk 3.2Gen1",
+              "location": "Port_#0020.Hub_#0002",
+              "location_paths": "PCIROOT(0)#PCI(1400)#USBROOT(0)#USB(20)|ACPI(_SB_)#ACPI(PCI0)#ACPI(XHC_)#ACPI(RHUB)#ACPI(SS04)",
+              "hardware_ids": "USB\\VID_0781&PID_55AB&REV_0100|USB\\VID_0781&PID_55AB",
+              "compatible_ids": "USB\\COMPAT_VID_0781&Class_08&SubClass_06&Prot_50|USB\\COMPAT_VID_0781&Class_08&SubClass_06|USB\\COMPAT_VID_0781&Class_08|USB\\Class_08&SubClass_06&Prot_50|USB\\Class_08&SubClass_06|USB\\Class_08",
+              "recovery": "Inventory only: device identity is not an approved physical ITE keyboard."
+            },
+            {
+              "index": 32,
+              "status_fields": {
+                "present": "1",
+                "kind": "0",
+                "status": "0x0180000B",
+                "problem": "0",
+                "CM": "0x00000000",
+                "presence_CM": "0x00000000",
+                "unavailable": "0x00000138",
+                "can_recover": "0",
+                "can_case_recover": "0"
+              },
+              "instance_id": "ROOT\\HIDCLASS\\0000",
+              "parent_id": "HTREE\\ROOT\\0",
+              "class": "HIDClass",
+              "service": "mshidkmdf",
+              "description": "Input Director Virtual Device",
+              "bus_description": "",
+              "location": "",
+              "location_paths": "",
+              "hardware_ids": "root\\InputDirectorVirtualDriver",
+              "compatible_ids": "",
+              "recovery": "Inventory only: device identity is not an approved physical ITE keyboard."
+            },
+            {
+              "index": 33,
+              "status_fields": {
+                "present": "1",
+                "kind": "0",
+                "status": "0x0180200A",
+                "problem": "0",
+                "CM": "0x00000000",
+                "presence_CM": "0x00000000",
+                "unavailable": "0x00000008",
+                "can_recover": "0",
+                "can_case_recover": "0"
+              },
+              "instance_id": "USB\\VID_8087&PID_0AAA\\5&1F456139&0&14",
+              "parent_id": "USB\\ROOT_HUB30\\4&15ED8360&0&0",
+              "class": "Bluetooth",
+              "service": "BTHUSB",
+              "description": "Intel(R) Wireless Bluetooth(R)",
+              "bus_description": "",
+              "location": "Port_#0014.Hub_#0002",
+              "location_paths": "PCIROOT(0)#PCI(1400)#USBROOT(0)#USB(14)|ACPI(_SB_)#ACPI(PCI0)#ACPI(XHC_)#ACPI(RHUB)#ACPI(HS14)",
+              "hardware_ids": "USB\\VID_8087&PID_0AAA&REV_0002|USB\\VID_8087&PID_0AAA",
+              "compatible_ids": "USB\\COMPAT_VID_8087&Class_E0&SubClass_01&Prot_01|USB\\COMPAT_VID_8087&Class_E0&SubClass_01|USB\\COMPAT_VID_8087&Class_E0|USB\\Class_E0&SubClass_01&Prot_01|USB\\Class_E0&SubClass_01|USB\\Class_E0",
+              "recovery": "Inventory only: device identity is not an approved physical ITE keyboard."
+            }
+          ]
+        },
+        {
+          "time": "2026-10-12T14:13:49.252Z",
+          "header": "PnP metadata inventory UTC=2026-10-12T14:13:49Z count=34 AC=0 battery_percent=95 power_error=0",
+          "devices": [
+            {
+              "index": 0,
+              "status_fields": {
+                "present": "1",
+                "kind": "1",
+                "status": "0x0180000A",
+                "problem": "0",
+                "CM": "0x00000000",
+                "presence_CM": "0x00000000",
+                "unavailable": "0x00000000",
+                "can_recover": "1",
+                "can_case_recover": "0"
+              },
+              "instance_id": "USB\\VID_048D&PID_C100\\5&1F456139&0&9",
+              "parent_id": "USB\\ROOT_HUB30\\4&15ED8360&0&0",
+              "class": "HIDClass",
+              "service": "HidUsb",
+              "description": "USB Input Device",
+              "bus_description": "ITE Device(8910)",
+              "location": "Port_#0009.Hub_#0002",
+              "location_paths": "PCIROOT(0)#PCI(1400)#USBROOT(0)#USB(9)|ACPI(_SB_)#ACPI(PCI0)#ACPI(XHC_)#ACPI(RHUB)#ACPI(HS09)",
+              "hardware_ids": "USB\\VID_048D&PID_C100&REV_0044|USB\\VID_048D&PID_C100",
+              "compatible_ids": "USB\\COMPAT_VID_048D&Class_03&SubClass_01&Prot_01|USB\\COMPAT_VID_048D&Class_03&SubClass_01|USB\\COMPAT_VID_048D&Class_03|USB\\Class_03&SubClass_01&Prot_01|USB\\Class_03&SubClass_01|USB\\Class_03",
+              "recovery": "Eligible only for an explicitly confirmed restart of this exact physical ITE USB devnode; recovery is unproven."
+            },
+            {
+              "index": 1,
+              "status_fields": {
+                "present": "1",
+                "kind": "0",
+                "status": "0x0180000A",
+                "problem": "0",
+                "CM": "0x00000000",
+                "presence_CM": "0x00000000",
+                "unavailable": "0x00000038",
+                "can_recover": "0",
+                "can_case_recover": "0"
+              },
+              "instance_id": "HID\\HIDCLASS&COL03\\1&2D595CA7&0&0002",
+              "parent_id": "ROOT\\HIDCLASS\\0000",
+              "class": "Keyboard",
+              "service": "kbdhid",
+              "description": "HID Keyboard Device",
+              "bus_description": "",
+              "location": "",
+              "location_paths": "",
+              "hardware_ids": "HID\\InputDirectorVirtualDriver&Col03|HID_DEVICE_SYSTEM_KEYBOARD|HID_DEVICE_UP:0001_U:0006|HID_DEVICE",
+              "compatible_ids": "",
+              "recovery": "Inventory only: device identity is not an approved physical ITE keyboard."
+            },
+            {
+              "index": 2,
+              "status_fields": {
+                "present": "1",
+                "kind": "0",
+                "status": "0x0180000A",
+                "problem": "0",
+                "CM": "0x00000000",
+                "presence_CM": "0x00000000",
+                "unavailable": "0x00000018",
+                "can_recover": "0",
+                "can_case_recover": "0"
+              },
+              "instance_id": "ACPI\\MSFT0001\\4&5B7D99F&0",
+              "parent_id": "PCI\\VEN_8086&DEV_A30D&SUBSYS_380E17AA&REV_10\\3&11583659&0&F8",
+              "class": "Keyboard",
+              "service": "i8042prt",
+              "description": "Standard PS/2 Keyboard",
+              "bus_description": "",
+              "location": "",
+              "location_paths": "ACPI(_SB_)#ACPI(PCI0)#ACPI(LPCB)#ACPI(PS2K)",
+              "hardware_ids": "ACPI\\VEN_MSFT&DEV_0001|ACPI\\MSFT0001|*MSFT0001",
+              "compatible_ids": "*PNP0303",
+              "recovery": "Inventory only: device identity is not an approved physical ITE keyboard."
+            },
+            {
+              "index": 3,
+              "status_fields": {
+                "present": "0",
+                "kind": "3",
+                "status": "0x00000000",
+                "problem": "0",
+                "CM": "0x0000000D",
+                "presence_CM": "0x0000000D",
+                "unavailable": "0x00000048",
+                "can_recover": "0",
+                "can_case_recover": "0"
+              },
+              "instance_id": "USB\\VID_0000&PID_0002\\5&1F456139&0&9",
+              "parent_id": "USB\\ROOT_HUB30\\4&15ED8360&0&0",
+              "class": "USB",
+              "service": "",
+              "description": "Unknown USB Device (Device Descriptor Request Failed)",
+              "bus_description": "",
+              "location": "Port_#0009.Hub_#0002",
+              "location_paths": "ACPI(_SB_)#ACPI(PCI0)#ACPI(XHC_)#ACPI(RHUB)#ACPI(HS09)",
+              "hardware_ids": "USB\\DEVICE_DESCRIPTOR_FAILURE",
+              "compatible_ids": "USB\\DEVICE_DESCRIPTOR_FAILURE",
+              "recovery": "Inventory only: failed USB descriptors do not establish keyboard identity, even at a historical keyboard port."
+            },
+            {
+              "index": 4,
+              "status_fields": {
+                "present": "1",
+                "kind": "0",
+                "status": "0x0180200A",
+                "problem": "0",
+                "CM": "0x00000000",
+                "presence_CM": "0x00000000",
+                "unavailable": "0x00000078",
+                "can_recover": "0",
+                "can_case_recover": "0"
+              },
+              "instance_id": "HID\\HIDCLASS&COL04\\1&2D595CA7&0&0003",
+              "parent_id": "ROOT\\HIDCLASS\\0000",
+              "class": "HIDClass",
+              "service": "",
+              "description": "HID-compliant device",
+              "bus_description": "",
+              "location": "",
+              "location_paths": "",
+              "hardware_ids": "HID\\InputDirectorVirtualDriver&Col04|HID_DEVICE_UP:0001_U:0000|HID_DEVICE",
+              "compatible_ids": "",
+              "recovery": "Inventory only: device identity is not an approved physical ITE keyboard."
+            },
+            {
+              "index": 5,
+              "status_fields": {
+                "present": "1",
+                "kind": "0",
+                "status": "0x0180200A",
+                "problem": "0",
+                "CM": "0x00000000",
+                "presence_CM": "0x00000000",
+                "unavailable": "0x00000018",
+                "can_recover": "0",
+                "can_case_recover": "0"
+              },
+              "instance_id": "USB\\ROOT_HUB30\\5&3BF6F19&0&0",
+              "parent_id": "PCI\\VEN_10DE&DEV_1AEC&SUBSYS_3FFC17AA&REV_A1\\4&1F1FFAD1&0&0208",
+              "class": "USB",
+              "service": "USBHUB3",
+              "description": "USB Root Hub (USB 3.0)",
+              "bus_description": "",
+              "location": "",
+              "location_paths": "PCIROOT(0)#PCI(0100)#PCI(0002)#USBROOT(0)|ACPI(_SB_)#ACPI(PCI0)#ACPI(PEG0)#ACPI(PXHC)#ACPI(RHUB)",
+              "hardware_ids": "USB\\ROOT_HUB30&VID10DE&PID1AEC&REV00A1|USB\\ROOT_HUB30&VID10DE&PID1AEC|USB\\ROOT_HUB30",
+              "compatible_ids": "",
+              "recovery": "Inventory only: device identity is not an approved physical ITE keyboard."
+            },
+            {
+              "index": 6,
+              "status_fields": {
+                "present": "1",
+                "kind": "0",
+                "status": "0x0180200A",
+                "problem": "0",
+                "CM": "0x00000000",
+                "presence_CM": "0x00000000",
+                "unavailable": "0x00000038",
+                "can_recover": "0",
+                "can_case_recover": "0"
+              },
+              "instance_id": "HID\\MSFT0001&COL01\\5&2A114D5C&0&0000",
+              "parent_id": "ACPI\\MSFT0001\\4&F3E8D59&0",
+              "class": "Mouse",
+              "service": "mouhid",
+              "description": "HID-compliant mouse",
+              "bus_description": "",
+              "location": "",
+              "location_paths": "",
+              "hardware_ids": "HID\\VEN_MSFT&DEV_0001&SUBSYS_SYNA0001&Col01|HID\\MSFT0001&Col01|HID\\*MSFT0001&Col01|HID\\VID_06CB&UP:0001_U:0002|HID_DEVICE_SYSTEM_MOUSE|HID_DEVICE_UP:0001_U:0002|HID_DEVICE",
+              "compatible_ids": "",
+              "recovery": "Inventory only: device identity is not an approved physical ITE keyboard."
+            },
+            {
+              "index": 7,
+              "status_fields": {
+                "present": "1",
+                "kind": "0",
+                "status": "0x0180200A",
+                "problem": "0",
+                "CM": "0x00000000",
+                "presence_CM": "0x00000000",
+                "unavailable": "0x00000000",
+                "can_recover": "0",
+                "can_case_recover": "0"
+              },
+              "instance_id": "PCI\\VEN_10DE&DEV_1AED&SUBSYS_3FFC17AA&REV_A1\\4&1F1FFAD1&0&0308",
+              "parent_id": "PCI\\VEN_8086&DEV_1901&SUBSYS_381217AA&REV_07\\3&11583659&0&08",
+              "class": "USB",
+              "service": "UcmCxUcsiNvppc",
+              "description": "NVIDIA USB Type-C Port Policy Controller",
+              "bus_description": "PCI Device",
+              "location": "PCI bus 1, device 0, function 3",
+              "location_paths": "PCIROOT(0)#PCI(0100)#PCI(0003)|ACPI(_SB_)#ACPI(PCI0)#ACPI(PEG0)#PCI(0003)",
+              "hardware_ids": "PCI\\VEN_10DE&DEV_1AED&SUBSYS_3FFC17AA&REV_A1|PCI\\VEN_10DE&DEV_1AED&SUBSYS_3FFC17AA|PCI\\VEN_10DE&DEV_1AED&CC_0C8000|PCI\\VEN_10DE&DEV_1AED&CC_0C80",
+              "compatible_ids": "PCI\\VEN_10DE&DEV_1AED&REV_A1|PCI\\VEN_10DE&DEV_1AED|PCI\\VEN_10DE&CC_0C8000|PCI\\VEN_10DE&CC_0C80|PCI\\VEN_10DE|PCI\\CC_0C8000&DT_0|PCI\\CC_0C8000|PCI\\CC_0C80&DT_0|PCI\\CC_0C80",
+              "recovery": "Inventory only: device identity is not an approved physical ITE keyboard."
+            },
+            {
+              "index": 8,
+              "status_fields": {
+                "present": "1",
+                "kind": "0",
+                "status": "0x0180200A",
+                "problem": "0",
+                "CM": "0x00000000",
+                "presence_CM": "0x00000000",
+                "unavailable": "0x00000078",
+                "can_recover": "0",
+                "can_case_recover": "0"
+              },
+              "instance_id": "HID\\VID_048D&PID_C100&COL05\\6&8BB26F5&0&0004",
+              "parent_id": "USB\\VID_048D&PID_C100\\5&1F456139&0&9",
+              "class": "HIDClass",
+              "service": "",
+              "description": "HID-compliant system controller",
+              "bus_description": "",
+              "location": "",
+              "location_paths": "",
+              "hardware_ids": "HID\\VID_048D&PID_C100&REV_0044&Col05|HID\\VID_048D&PID_C100&Col05|HID\\VID_048D&UP:0001_U:0080|HID_DEVICE_SYSTEM_CONTROL|HID_DEVICE_UP:0001_U:0080|HID_DEVICE",
+              "compatible_ids": "",
+              "recovery": "Inventory only: device identity is not an approved physical ITE keyboard."
+            },
+            {
+              "index": 9,
+              "status_fields": {
+                "present": "1",
+                "kind": "0",
+                "status": "0x0180200A",
+                "problem": "0",
+                "CM": "0x00000000",
+                "presence_CM": "0x00000000",
+                "unavailable": "0x00000078",
+                "can_recover": "0",
+                "can_case_recover": "0"
+              },
+              "instance_id": "HID\\VID_048D&PID_C100&COL04\\6&8BB26F5&0&0003",
+              "parent_id": "USB\\VID_048D&PID_C100\\5&1F456139&0&9",
+              "class": "HIDClass",
+              "service": "",
+              "description": "HID-compliant consumer control device",
+              "bus_description": "",
+              "location": "",
+              "location_paths": "",
+              "hardware_ids": "HID\\VID_048D&PID_C100&REV_0044&Col04|HID\\VID_048D&PID_C100&Col04|HID\\VID_048D&UP:000C_U:0001|HID_DEVICE_SYSTEM_CONSUMER|HID_DEVICE_UP:000C_U:0001|HID_DEVICE",
+              "compatible_ids": "",
+              "recovery": "Inventory only: device identity is not an approved physical ITE keyboard."
+            },
+            {
+              "index": 10,
+              "status_fields": {
+                "present": "1",
+                "kind": "0",
+                "status": "0x0180000A",
+                "problem": "0",
+                "CM": "0x00000000",
+                "presence_CM": "0x00000000",
+                "unavailable": "0x00000000",
+                "can_recover": "0",
+                "can_case_recover": "0"
+              },
+              "instance_id": "PCI\\VEN_8086&DEV_A36D&SUBSYS_380617AA&REV_10\\3&11583659&0&A0",
+              "parent_id": "ACPI\\PNP0A08\\0",
+              "class": "USB",
+              "service": "USBXHCI",
+              "description": "USB xHCI Compliant Host Controller",
+              "bus_description": "Universal Serial Bus (USB) Controller",
+              "location": "PCI bus 0, device 20, function 0",
+              "location_paths": "PCIROOT(0)#PCI(1400)|ACPI(_SB_)#ACPI(PCI0)#ACPI(XHC_)",
+              "hardware_ids": "PCI\\VEN_8086&DEV_A36D&SUBSYS_380617AA&REV_10|PCI\\VEN_8086&DEV_A36D&SUBSYS_380617AA|PCI\\VEN_8086&DEV_A36D&CC_0C0330|PCI\\VEN_8086&DEV_A36D&CC_0C03",
+              "compatible_ids": "PCI\\VEN_8086&DEV_A36D&REV_10|PCI\\VEN_8086&DEV_A36D|PCI\\VEN_8086&CC_0C0330|PCI\\VEN_8086&CC_0C03|PCI\\VEN_8086|PCI\\CC_0C0330|PCI\\CC_0C03",
+              "recovery": "Inventory only: device identity is not an approved physical ITE keyboard."
+            },
+            {
+              "index": 11,
+              "status_fields": {
+                "present": "1",
+                "kind": "0",
+                "status": "0x0180000A",
+                "problem": "0",
+                "CM": "0x00000000",
+                "presence_CM": "0x00000000",
+                "unavailable": "0x00000038",
+                "can_recover": "0",
+                "can_case_recover": "0"
+              },
+              "instance_id": "HID\\VID_048D&PID_C100&COL03\\6&8BB26F5&0&0002",
+              "parent_id": "USB\\VID_048D&PID_C100\\5&1F456139&0&9",
+              "class": "Keyboard",
+              "service": "kbdhid",
+              "description": "HID Keyboard Device",
+              "bus_description": "",
+              "location": "",
+              "location_paths": "",
+              "hardware_ids": "HID\\VID_048D&PID_C100&REV_0044&Col03|HID\\VID_048D&PID_C100&Col03|HID\\VID_048D&UP:0001_U:0006|HID_DEVICE_SYSTEM_KEYBOARD|HID_DEVICE_UP:0001_U:0006|HID_DEVICE",
+              "compatible_ids": "",
+              "recovery": "Inventory only: device identity is not an approved physical ITE keyboard."
+            },
+            {
+              "index": 12,
+              "status_fields": {
+                "present": "1",
+                "kind": "0",
+                "status": "0x0180200A",
+                "problem": "0",
+                "CM": "0x00000000",
+                "presence_CM": "0x00000000",
+                "unavailable": "0x00000078",
+                "can_recover": "0",
+                "can_case_recover": "0"
+              },
+              "instance_id": "HID\\VID_048D&PID_C100&COL02\\6&8BB26F5&0&0001",
+              "parent_id": "USB\\VID_048D&PID_C100\\5&1F456139&0&9",
+              "class": "HIDClass",
+              "service": "",
+              "description": "HID-compliant vendor-defined device",
+              "bus_description": "",
+              "location": "",
+              "location_paths": "",
+              "hardware_ids": "HID\\VID_048D&PID_C100&REV_0044&Col02|HID\\VID_048D&PID_C100&Col02|HID\\VID_048D&UP:FF89_U:00CD|HID_DEVICE_UP:FF89_U:00CD|HID_DEVICE_UPR:FF00-FFFF|HID_DEVICE",
+              "compatible_ids": "",
+              "recovery": "Inventory only: device identity is not an approved physical ITE keyboard."
+            },
+            {
+              "index": 13,
+              "status_fields": {
+                "present": "1",
+                "kind": "0",
+                "status": "0x0180200A",
+                "problem": "0",
+                "CM": "0x00000000",
+                "presence_CM": "0x00000000",
+                "unavailable": "0x00000078",
+                "can_recover": "0",
+                "can_case_recover": "0"
+              },
+              "instance_id": "HID\\VID_048D&PID_C100&COL01\\6&8BB26F5&0&0000",
+              "parent_id": "USB\\VID_048D&PID_C100\\5&1F456139&0&9",
+              "class": "HIDClass",
+              "service": "",
+              "description": "HID-compliant vendor-defined device",
+              "bus_description": "",
+              "location": "",
+              "location_paths": "",
+              "hardware_ids": "HID\\VID_048D&PID_C100&REV_0044&Col01|HID\\VID_048D&PID_C100&Col01|HID\\VID_048D&UP:FF89_U:0010|HID_DEVICE_UP:FF89_U:0010|HID_DEVICE_UPR:FF00-FFFF|HID_DEVICE",
+              "compatible_ids": "",
+              "recovery": "Inventory only: device identity is not an approved physical ITE keyboard."
+            },
+            {
+              "index": 14,
+              "status_fields": {
+                "present": "0",
+                "kind": "0",
+                "status": "0x00000000",
+                "problem": "0",
+                "CM": "0x0000000D",
+                "presence_CM": "0x0000000D",
+                "unavailable": "0x00000078",
+                "can_recover": "0",
+                "can_case_recover": "0"
+              },
+              "instance_id": "HID\\VID_0BDA&PID_1203&MI_03&COL01\\7&142192F1&0&0000",
+              "parent_id": "USB\\VID_0BDA&PID_1203&MI_03\\6&F7CB55D&1&0003",
+              "class": "HIDClass",
+              "service": "",
+              "description": "HID-compliant consumer control device",
+              "bus_description": "",
+              "location": "",
+              "location_paths": "",
+              "hardware_ids": "HID\\VID_0BDA&PID_1203&REV_0000&MI_03&Col01|HID\\VID_0BDA&PID_1203&MI_03&Col01|HID\\VID_0BDA&UP:000C_U:0001|HID_DEVICE_SYSTEM_CONSUMER|HID_DEVICE_UP:000C_U:0001|HID_DEVICE",
+              "compatible_ids": "",
+              "recovery": "Inventory only: device identity is not an approved physical ITE keyboard."
+            },
+            {
+              "index": 15,
+              "status_fields": {
+                "present": "1",
+                "kind": "0",
+                "status": "0x0180000A",
+                "problem": "0",
+                "CM": "0x00000000",
+                "presence_CM": "0x00000000",
+                "unavailable": "0x00000018",
+                "can_recover": "0",
+                "can_case_recover": "0"
+              },
+              "instance_id": "USB\\ROOT_HUB30\\4&15ED8360&0&0",
+              "parent_id": "PCI\\VEN_8086&DEV_A36D&SUBSYS_380617AA&REV_10\\3&11583659&0&A0",
+              "class": "USB",
+              "service": "USBHUB3",
+              "description": "USB Root Hub (USB 3.0)",
+              "bus_description": "",
+              "location": "",
+              "location_paths": "PCIROOT(0)#PCI(1400)#USBROOT(0)|ACPI(_SB_)#ACPI(PCI0)#ACPI(XHC_)#ACPI(RHUB)",
+              "hardware_ids": "USB\\ROOT_HUB30&VID8086&PIDA36D&REV0010|USB\\ROOT_HUB30&VID8086&PIDA36D|USB\\ROOT_HUB30",
+              "compatible_ids": "",
+              "recovery": "Inventory only: device identity is not an approved physical ITE keyboard."
+            },
+            {
+              "index": 16,
+              "status_fields": {
+                "present": "0",
+                "kind": "0",
+                "status": "0x00000000",
+                "problem": "0",
+                "CM": "0x0000000D",
+                "presence_CM": "0x0000000D",
+                "unavailable": "0x00000018",
+                "can_recover": "0",
+                "can_case_recover": "0"
+              },
+              "instance_id": "TERMINPUT_BUS\\UMB\\2&2C22BCC9&0&SESSION1KEYBOARD0",
+              "parent_id": "UMB\\UMB\\1&841921D&0&TERMINPUT_BUS",
+              "class": "Keyboard",
+              "service": "terminpt",
+              "description": "Remote Desktop Keyboard Device",
+              "bus_description": "",
+              "location": "",
+              "location_paths": "UMBROOT(0)#UMB(TERMINPUT_BUS)#UMB(Session1Keyboard0)",
+              "hardware_ids": "TS_INPT\\TS_KBD",
+              "compatible_ids": "TI_COMPAT_DEVICE",
+              "recovery": "Inventory only: device identity is not an approved physical ITE keyboard."
+            },
+            {
+              "index": 17,
+              "status_fields": {
+                "present": "1",
+                "kind": "0",
+                "status": "0x0180200A",
+                "problem": "0",
+                "CM": "0x00000000",
+                "presence_CM": "0x00000000",
+                "unavailable": "0x00000018",
+                "can_recover": "0",
+                "can_case_recover": "0"
+              },
+              "instance_id": "ACPI\\MSFT0001\\4&F3E8D59&0",
+              "parent_id": "PCI\\VEN_8086&DEV_A369&SUBSYS_380417AA&REV_10\\3&11583659&0&A9",
+              "class": "HIDClass",
+              "service": "hidi2c",
+              "description": "I2C HID Device",
+              "bus_description": "",
+              "location": "",
+              "location_paths": "ACPI(_SB_)#ACPI(PCI0)#ACPI(I2C1)#ACPI(TPD0)",
+              "hardware_ids": "ACPI\\VEN_MSFT&DEV_0001&SUBSYS_SYNA0001|ACPI\\MSFT0001|*MSFT0001",
+              "compatible_ids": "ACPI\\VEN_MSFT&DEV_0001|ACPI\\PNP0C50|PNP0C50",
+              "recovery": "Inventory only: device identity is not an approved physical ITE keyboard."
+            },
+            {
+              "index": 18,
+              "status_fields": {
+                "present": "1",
+                "kind": "0",
+                "status": "0x0180200A",
+                "problem": "0",
+                "CM": "0x00000000",
+                "presence_CM": "0x00000000",
+                "unavailable": "0x00000078",
+                "can_recover": "0",
+                "can_case_recover": "0"
+              },
+              "instance_id": "HID\\MSFT0001&COL02\\5&2A114D5C&0&0001",
+              "parent_id": "ACPI\\MSFT0001\\4&F3E8D59&0",
+              "class": "HIDClass",
+              "service": "",
+              "description": "HID-compliant touch pad",
+              "bus_description": "",
+              "location": "",
+              "location_paths": "",
+              "hardware_ids": "HID\\VEN_MSFT&DEV_0001&SUBSYS_SYNA0001&Col02|HID\\MSFT0001&Col02|HID\\*MSFT0001&Col02|HID\\VID_06CB&UP:000D_U:0005|HID_DEVICE_UP:000D_U:0005|HID_DEVICE",
+              "compatible_ids": "",
+              "recovery": "Inventory only: device identity is not an approved physical ITE keyboard."
+            },
+            {
+              "index": 19,
+              "status_fields": {
+                "present": "1",
+                "kind": "0",
+                "status": "0x0180200A",
+                "problem": "0",
+                "CM": "0x00000000",
+                "presence_CM": "0x00000000",
+                "unavailable": "0x00000000",
+                "can_recover": "0",
+                "can_case_recover": "0"
+              },
+              "instance_id": "PCI\\VEN_10DE&DEV_1AEC&SUBSYS_3FFC17AA&REV_A1\\4&1F1FFAD1&0&0208",
+              "parent_id": "PCI\\VEN_8086&DEV_1901&SUBSYS_381217AA&REV_07\\3&11583659&0&08",
+              "class": "USB",
+              "service": "USBXHCI",
+              "description": "USB xHCI Compliant Host Controller",
+              "bus_description": "Universal Serial Bus (USB) Controller",
+              "location": "PCI bus 1, device 0, function 2",
+              "location_paths": "PCIROOT(0)#PCI(0100)#PCI(0002)|ACPI(_SB_)#ACPI(PCI0)#ACPI(PEG0)#ACPI(PXHC)",
+              "hardware_ids": "PCI\\VEN_10DE&DEV_1AEC&SUBSYS_3FFC17AA&REV_A1|PCI\\VEN_10DE&DEV_1AEC&SUBSYS_3FFC17AA|PCI\\VEN_10DE&DEV_1AEC&CC_0C0330|PCI\\VEN_10DE&DEV_1AEC&CC_0C03",
+              "compatible_ids": "PCI\\VEN_10DE&DEV_1AEC&REV_A1|PCI\\VEN_10DE&DEV_1AEC|PCI\\VEN_10DE&CC_0C0330|PCI\\VEN_10DE&CC_0C03|PCI\\VEN_10DE|PCI\\CC_0C0330&DT_0|PCI\\CC_0C0330|PCI\\CC_0C03&DT_0|PCI\\CC_0C03",
+              "recovery": "Inventory only: device identity is not an approved physical ITE keyboard."
+            },
+            {
+              "index": 20,
+              "status_fields": {
+                "present": "0",
+                "kind": "0",
+                "status": "0x00000000",
+                "problem": "0",
+                "CM": "0x0000000D",
+                "presence_CM": "0x0000000D",
+                "unavailable": "0x00000078",
+                "can_recover": "0",
+                "can_case_recover": "0"
+              },
+              "instance_id": "HID\\VID_0BDA&PID_1203&MI_03&COL02\\7&142192F1&0&0001",
+              "parent_id": "USB\\VID_0BDA&PID_1203&MI_03\\6&F7CB55D&1&0003",
+              "class": "HIDClass",
+              "service": "",
+              "description": "HID-compliant vendor-defined device",
+              "bus_description": "",
+              "location": "",
+              "location_paths": "",
+              "hardware_ids": "HID\\VID_0BDA&PID_1203&REV_0000&MI_03&Col02|HID\\VID_0BDA&PID_1203&MI_03&Col02|HID\\VID_0BDA&UP:FF00_U:0212|HID_DEVICE_UP:FF00_U:0212|HID_DEVICE_UPR:FF00-FFFF|HID_DEVICE",
+              "compatible_ids": "",
+              "recovery": "Inventory only: device identity is not an approved physical ITE keyboard."
+            },
+            {
+              "index": 21,
+              "status_fields": {
+                "present": "0",
+                "kind": "0",
+                "status": "0x00000000",
+                "problem": "0",
+                "CM": "0x0000000D",
+                "presence_CM": "0x0000000D",
+                "unavailable": "0x00000000",
+                "can_recover": "0",
+                "can_case_recover": "0"
+              },
+              "instance_id": "USB\\VID_0BDA&PID_1203&MI_03\\6&F7CB55D&1&0003",
+              "parent_id": "USB\\VID_0BDA&PID_1203\\5&1F456139&0&3",
+              "class": "HIDClass",
+              "service": "HidUsb",
+              "description": "USB Input Device",
+              "bus_description": "H868 Wireless headset",
+              "location": "0000.0014.0000.003.000.000.000.000.000",
+              "location_paths": "PCIROOT(0)#PCI(1400)#USBROOT(0)#USB(3)#USBMI(3)|ACPI(_SB_)#ACPI(PCI0)#ACPI(XHC_)#ACPI(RHUB)#ACPI(HS03)#USBMI(3)",
+              "hardware_ids": "USB\\VID_0BDA&PID_1203&REV_0000&MI_03|USB\\VID_0BDA&PID_1203&MI_03",
+              "compatible_ids": "USB\\COMPAT_VID_0bda&Class_03&SubClass_00&Prot_00|USB\\COMPAT_VID_0bda&Class_03&SubClass_00|USB\\COMPAT_VID_0bda&Class_03|USB\\Class_03&SubClass_00&Prot_00|USB\\Class_03&SubClass_00|USB\\Class_03",
+              "recovery": "Inventory only: device identity is not an approved physical ITE keyboard."
+            },
+            {
+              "index": 22,
+              "status_fields": {
+                "present": "1",
+                "kind": "0",
+                "status": "0x0180200A",
+                "problem": "0",
+                "CM": "0x00000000",
+                "presence_CM": "0x00000000",
+                "unavailable": "0x00000038",
+                "can_recover": "0",
+                "can_case_recover": "0"
+              },
+              "instance_id": "HID\\HIDCLASS&COL01\\1&2D595CA7&0&0000",
+              "parent_id": "ROOT\\HIDCLASS\\0000",
+              "class": "Mouse",
+              "service": "mouhid",
+              "description": "HID-compliant mouse",
+              "bus_description": "",
+              "location": "",
+              "location_paths": "",
+              "hardware_ids": "HID\\InputDirectorVirtualDriver&Col01|HID_DEVICE_SYSTEM_MOUSE|HID_DEVICE_UP:0001_U:0002|HID_DEVICE",
+              "compatible_ids": "",
+              "recovery": "Inventory only: device identity is not an approved physical ITE keyboard."
+            },
+            {
+              "index": 23,
+              "status_fields": {
+                "present": "1",
+                "kind": "0",
+                "status": "0x0180600A",
+                "problem": "0",
+                "CM": "0x00000000",
+                "presence_CM": "0x00000000",
+                "unavailable": "0x00000000",
+                "can_recover": "0",
+                "can_case_recover": "0"
+              },
+              "instance_id": "USB\\VID_30C9&PID_001B&MI_00\\6&2C6AEC8&0&0000",
+              "parent_id": "USB\\VID_30C9&PID_001B\\0001",
+              "class": "Camera",
+              "service": "usbvideo",
+              "description": "Integrated Camera",
+              "bus_description": "Integrated Camera",
+              "location": "0000.0014.0000.006.000.000.000.000.000",
+              "location_paths": "PCIROOT(0)#PCI(1400)#USBROOT(0)#USB(6)#USBMI(0)|PCIROOT(0)#PCI(1400)#USBROOT(0)#USB(6)#USB(6)|ACPI(_SB_)#ACPI(PCI0)#ACPI(XHC_)#ACPI(RHUB)#ACPI(HS06)#ACPI(CAMA)",
+              "hardware_ids": "USB\\VID_30C9&PID_001B&REV_0002&MI_00|USB\\VID_30C9&PID_001B&MI_00",
+              "compatible_ids": "USB\\COMPAT_VID_30c9&Class_0e&SubClass_03&Prot_00|USB\\COMPAT_VID_30c9&Class_0e&SubClass_03|USB\\COMPAT_VID_30c9&Class_0e|USB\\Class_0e&SubClass_03&Prot_00|USB\\Class_0e&SubClass_03|USB\\Class_0e",
+              "recovery": "Inventory only: device identity is not an approved physical ITE keyboard."
+            },
+            {
+              "index": 24,
+              "status_fields": {
+                "present": "1",
+                "kind": "0",
+                "status": "0x0180200A",
+                "problem": "0",
+                "CM": "0x00000000",
+                "presence_CM": "0x00000000",
+                "unavailable": "0x00000038",
+                "can_recover": "0",
+                "can_case_recover": "0"
+              },
+              "instance_id": "HID\\MSFT0001&COL03\\5&2A114D5C&0&0002",
+              "parent_id": "ACPI\\MSFT0001\\4&F3E8D59&0",
+              "class": "HIDClass",
+              "service": "MTConfig",
+              "description": "Microsoft Input Configuration Device",
+              "bus_description": "",
+              "location": "",
+              "location_paths": "",
+              "hardware_ids": "HID\\VEN_MSFT&DEV_0001&SUBSYS_SYNA0001&Col03|HID\\MSFT0001&Col03|HID\\*MSFT0001&Col03|HID\\VID_06CB&UP:000D_U:000E|HID_DEVICE_UP:000D_U:000E|HID_DEVICE",
+              "compatible_ids": "",
+              "recovery": "Inventory only: device identity is not an approved physical ITE keyboard."
+            },
+            {
+              "index": 25,
+              "status_fields": {
+                "present": "0",
+                "kind": "0",
+                "status": "0x00000000",
+                "problem": "0",
+                "CM": "0x0000000D",
+                "presence_CM": "0x0000000D",
+                "unavailable": "0x00000000",
+                "can_recover": "0",
+                "can_case_recover": "0"
+              },
+              "instance_id": "USB\\VID_0BDA&PID_1203\\5&1F456139&0&3",
+              "parent_id": "USB\\ROOT_HUB30\\4&15ED8360&0&0",
+              "class": "USB",
+              "service": "usbccgp",
+              "description": "USB Composite Device",
+              "bus_description": "H868 Wireless headset",
+              "location": "Port_#0003.Hub_#0002",
+              "location_paths": "PCIROOT(0)#PCI(1400)#USBROOT(0)#USB(3)|ACPI(_SB_)#ACPI(PCI0)#ACPI(XHC_)#ACPI(RHUB)#ACPI(HS03)",
+              "hardware_ids": "USB\\VID_0BDA&PID_1203&REV_0000|USB\\VID_0BDA&PID_1203",
+              "compatible_ids": "USB\\COMPAT_VID_0BDA&DevClass_00&SubClass_00&Prot00|USB\\COMPAT_VID_0BDA&DevClass_00&SubClass_00|USB\\COMPAT_VID_0BDA&DevClass_00|USB\\DevClass_00&SubClass_00&Prot_00|USB\\DevClass_00&SubClass_00|USB\\DevClass_00|USB\\COMPOSITE",
+              "recovery": "Inventory only: device identity is not an approved physical ITE keyboard."
+            },
+            {
+              "index": 26,
+              "status_fields": {
+                "present": "0",
+                "kind": "0",
+                "status": "0x00000000",
+                "problem": "0",
+                "CM": "0x0000000D",
+                "presence_CM": "0x0000000D",
+                "unavailable": "0x00000000",
+                "can_recover": "0",
+                "can_case_recover": "0"
+              },
+              "instance_id": "USB\\VID_0BDA&PID_1203&MI_00\\6&F7CB55D&1&0000",
+              "parent_id": "USB\\VID_0BDA&PID_1203\\5&1F456139&0&3",
+              "class": "MEDIA",
+              "service": "usbaudio",
+              "description": "USB Audio Device",
+              "bus_description": "H868 Wireless headset",
+              "location": "0000.0014.0000.003.000.000.000.000.000",
+              "location_paths": "PCIROOT(0)#PCI(1400)#USBROOT(0)#USB(3)#USBMI(0)|PCIROOT(0)#PCI(1400)#USBROOT(0)#USB(3)#USB(3)|ACPI(_SB_)#ACPI(PCI0)#ACPI(XHC_)#ACPI(RHUB)#ACPI(HS03)#USBMI(0)|ACPI(_SB_)#ACPI(PCI0)#ACPI(XHC_)#ACPI(RHUB)#ACPI(HS03)#USB(3)",
+              "hardware_ids": "USB\\VID_0BDA&PID_1203&REV_0000&MI_00|USB\\VID_0BDA&PID_1203&MI_00",
+              "compatible_ids": "USB\\COMPAT_VID_0bda&Class_01&SubClass_01&Prot_00|USB\\COMPAT_VID_0bda&Class_01&SubClass_01|USB\\COMPAT_VID_0bda&Class_01|USB\\Class_01&SubClass_01&Prot_00|USB\\Class_01&SubClass_01|USB\\Class_01",
+              "recovery": "Inventory only: device identity is not an approved physical ITE keyboard."
+            },
+            {
+              "index": 27,
+              "status_fields": {
+                "present": "1",
+                "kind": "0",
+                "status": "0x0180200A",
+                "problem": "0",
+                "CM": "0x00000000",
+                "presence_CM": "0x00000000",
+                "unavailable": "0x00000000",
+                "can_recover": "0",
+                "can_case_recover": "0"
+              },
+              "instance_id": "USB\\VID_30C9&PID_001B\\0001",
+              "parent_id": "USB\\ROOT_HUB30\\4&15ED8360&0&0",
+              "class": "USB",
+              "service": "usbccgp",
+              "description": "USB Composite Device",
+              "bus_description": "Integrated Camera",
+              "location": "Port_#0006.Hub_#0002",
+              "location_paths": "PCIROOT(0)#PCI(1400)#USBROOT(0)#USB(6)|ACPI(_SB_)#ACPI(PCI0)#ACPI(XHC_)#ACPI(RHUB)#ACPI(HS06)",
+              "hardware_ids": "USB\\VID_30C9&PID_001B&REV_0002|USB\\VID_30C9&PID_001B",
+              "compatible_ids": "USB\\COMPAT_VID_30C9&DevClass_00&SubClass_00&Prot00|USB\\COMPAT_VID_30C9&DevClass_00&SubClass_00|USB\\COMPAT_VID_30C9&DevClass_00|USB\\DevClass_00&SubClass_00&Prot_00|USB\\DevClass_00&SubClass_00|USB\\DevClass_00|USB\\COMPOSITE",
+              "recovery": "Inventory only: device identity is not an approved physical ITE keyboard."
+            },
+            {
+              "index": 28,
+              "status_fields": {
+                "present": "0",
+                "kind": "0",
+                "status": "0x00000000",
+                "problem": "0",
+                "CM": "0x0000000D",
+                "presence_CM": "0x0000000D",
+                "unavailable": "0x00000078",
+                "can_recover": "0",
+                "can_case_recover": "0"
+              },
+              "instance_id": "HID\\VID_0BDA&PID_1203&MI_03&COL03\\7&142192F1&0&0002",
+              "parent_id": "USB\\VID_0BDA&PID_1203&MI_03\\6&F7CB55D&1&0003",
+              "class": "HIDClass",
+              "service": "",
+              "description": "HID-compliant vendor-defined device",
+              "bus_description": "",
+              "location": "",
+              "location_paths": "",
+              "hardware_ids": "HID\\VID_0BDA&PID_1203&REV_0000&MI_03&Col03|HID\\VID_0BDA&PID_1203&MI_03&Col03|HID\\VID_0BDA&UP:FF0B_U:0101|HID_DEVICE_UP:FF0B_U:0101|HID_DEVICE_UPR:FF00-FFFF|HID_DEVICE",
+              "compatible_ids": "",
+              "recovery": "Inventory only: device identity is not an approved physical ITE keyboard."
+            },
+            {
+              "index": 29,
+              "status_fields": {
+                "present": "1",
+                "kind": "0",
+                "status": "0x0180200A",
+                "problem": "0",
+                "CM": "0x00000000",
+                "presence_CM": "0x00000000",
+                "unavailable": "0x00000078",
+                "can_recover": "0",
+                "can_case_recover": "0"
+              },
+              "instance_id": "HID\\HIDCLASS&COL02\\1&2D595CA7&0&0001",
+              "parent_id": "ROOT\\HIDCLASS\\0000",
+              "class": "HIDClass",
+              "service": "",
+              "description": "HID-compliant device",
+              "bus_description": "",
+              "location": "",
+              "location_paths": "",
+              "hardware_ids": "HID\\InputDirectorVirtualDriver&Col02|HID_DEVICE_UP:0001_U:0000|HID_DEVICE",
+              "compatible_ids": "",
+              "recovery": "Inventory only: device identity is not an approved physical ITE keyboard."
+            },
+            {
+              "index": 30,
+              "status_fields": {
+                "present": "1",
+                "kind": "0",
+                "status": "0x0180200A",
+                "problem": "0",
+                "CM": "0x00000000",
+                "presence_CM": "0x00000000",
+                "unavailable": "0x00000078",
+                "can_recover": "0",
+                "can_case_recover": "0"
+              },
+              "instance_id": "HID\\MSFT0001&COL04\\5&2A114D5C&0&0003",
+              "parent_id": "ACPI\\MSFT0001\\4&F3E8D59&0",
+              "class": "HIDClass",
+              "service": "",
+              "description": "HID-compliant vendor-defined device",
+              "bus_description": "",
+              "location": "",
+              "location_paths": "",
+              "hardware_ids": "HID\\VEN_MSFT&DEV_0001&SUBSYS_SYNA0001&Col04|HID\\MSFT0001&Col04|HID\\*MSFT0001&Col04|HID\\VID_06CB&UP:FF00_U:0001|HID_DEVICE_UP:FF00_U:0001|HID_DEVICE_UPR:FF00-FFFF|HID_DEVICE",
+              "compatible_ids": "",
+              "recovery": "Inventory only: device identity is not an approved physical ITE keyboard."
+            },
+            {
+              "index": 31,
+              "status_fields": {
+                "present": "0",
+                "kind": "0",
+                "status": "0x00000000",
+                "problem": "0",
+                "CM": "0x0000000D",
+                "presence_CM": "0x0000000D",
+                "unavailable": "0x00000000",
+                "can_recover": "0",
+                "can_case_recover": "0"
+              },
+              "instance_id": "USB\\VID_0781&PID_55AB\\0401ABCA4AAAE072AC68DB2C4B903D94D4BC12D50A6161D3F335D52675E6E39DFC7500000000000000000000026F55C1FF891B18AB558107A13334F9",
+              "parent_id": "USB\\ROOT_HUB30\\4&15ED8360&0&0",
+              "class": "USB",
+              "service": "USBSTOR",
+              "description": "USB Mass Storage Device",
+              "bus_description": " SanDisk 3.2Gen1",
+              "location": "Port_#0020.Hub_#0002",
+              "location_paths": "PCIROOT(0)#PCI(1400)#USBROOT(0)#USB(20)|ACPI(_SB_)#ACPI(PCI0)#ACPI(XHC_)#ACPI(RHUB)#ACPI(SS04)",
+              "hardware_ids": "USB\\VID_0781&PID_55AB&REV_0100|USB\\VID_0781&PID_55AB",
+              "compatible_ids": "USB\\COMPAT_VID_0781&Class_08&SubClass_06&Prot_50|USB\\COMPAT_VID_0781&Class_08&SubClass_06|USB\\COMPAT_VID_0781&Class_08|USB\\Class_08&SubClass_06&Prot_50|USB\\Class_08&SubClass_06|USB\\Class_08",
+              "recovery": "Inventory only: device identity is not an approved physical ITE keyboard."
+            },
+            {
+              "index": 32,
+              "status_fields": {
+                "present": "1",
+                "kind": "0",
+                "status": "0x0180000B",
+                "problem": "0",
+                "CM": "0x00000000",
+                "presence_CM": "0x00000000",
+                "unavailable": "0x00000138",
+                "can_recover": "0",
+                "can_case_recover": "0"
+              },
+              "instance_id": "ROOT\\HIDCLASS\\0000",
+              "parent_id": "HTREE\\ROOT\\0",
+              "class": "HIDClass",
+              "service": "mshidkmdf",
+              "description": "Input Director Virtual Device",
+              "bus_description": "",
+              "location": "",
+              "location_paths": "",
+              "hardware_ids": "root\\InputDirectorVirtualDriver",
+              "compatible_ids": "",
+              "recovery": "Inventory only: device identity is not an approved physical ITE keyboard."
+            },
+            {
+              "index": 33,
+              "status_fields": {
+                "present": "1",
+                "kind": "0",
+                "status": "0x0180200A",
+                "problem": "0",
+                "CM": "0x00000000",
+                "presence_CM": "0x00000000",
+                "unavailable": "0x00000008",
+                "can_recover": "0",
+                "can_case_recover": "0"
+              },
+              "instance_id": "USB\\VID_8087&PID_0AAA\\5&1F456139&0&14",
+              "parent_id": "USB\\ROOT_HUB30\\4&15ED8360&0&0",
+              "class": "Bluetooth",
+              "service": "BTHUSB",
+              "description": "Intel(R) Wireless Bluetooth(R)",
+              "bus_description": "",
+              "location": "Port_#0014.Hub_#0002",
+              "location_paths": "PCIROOT(0)#PCI(1400)#USBROOT(0)#USB(14)|ACPI(_SB_)#ACPI(PCI0)#ACPI(XHC_)#ACPI(RHUB)#ACPI(HS14)",
+              "hardware_ids": "USB\\VID_8087&PID_0AAA&REV_0002|USB\\VID_8087&PID_0AAA",
+              "compatible_ids": "USB\\COMPAT_VID_8087&Class_E0&SubClass_01&Prot_01|USB\\COMPAT_VID_8087&Class_E0&SubClass_01|USB\\COMPAT_VID_8087&Class_E0|USB\\Class_E0&SubClass_01&Prot_01|USB\\Class_E0&SubClass_01|USB\\Class_E0",
+              "recovery": "Inventory only: device identity is not an approved physical ITE keyboard."
+            }
+          ]
+        }
+      ],
+      "events": [
+        {
+          "time": "2026-10-12T14:13:46.768Z",
+          "tick": 123671,
+          "message": "session action=usb-restart-no-flash version=fix1-0.3.0 utc_timestamps=1"
+        },
+        {
+          "time": "2026-10-12T14:13:46.771Z",
+          "tick": 123671,
+          "message": "Session log: C:\\Users\\AMIRSRAD\\Desktop\\Y540Updater-fix1-portable\\Y540Updater-fix1\\logs\\fix1-20261012T141346768Z-p2832-3.log"
+        },
+        {
+          "time": "2026-10-12T14:13:46.780Z",
+          "tick": 123687,
+          "message": "Before USB restart: reading device metadata; no firmware commands."
+        },
+        {
+          "time": "2026-10-12T14:13:46.989Z",
+          "tick": 123890,
+          "message": "user_reported_power_at_last_complete_startup=battery only (owner selected; not measured at boot)"
+        },
+        {
+          "time": "2026-10-12T14:13:47.000Z",
+          "tick": 123906,
+          "message": "AC values: 0=battery, 1=AC, 255=unknown. Metadata only; no HID commands were sent."
+        },
+        {
+          "time": "2026-10-12T14:13:47.002Z",
+          "tick": 123906,
+          "message": "Unavailable-property bits: 0 instance, 1 parent, 2 description, 3 bus description, 4 location, 5 location paths, 6 service, 7 hardware IDs, 8 compatible IDs, 9 class."
+        },
+        {
+          "time": "2026-10-12T14:13:47.758Z",
+          "tick": 124656,
+          "message": "Power now: battery; battery=95% (255 means unknown)."
+        },
+        {
+          "time": "2026-10-12T14:13:47.765Z",
+          "tick": 124671,
+          "message": "USB\\VID_048D&PID_C100\\5&1F456139&0&9 present=1 problem=0 location=Port_#0009.Hub_#0002"
+        },
+        {
+          "time": "2026-10-12T14:13:47.775Z",
+          "tick": 124671,
+          "message": "USB\\VID_0000&PID_0002\\5&1F456139&0&9 present=0 problem=0 location=Port_#0009.Hub_#0002"
+        },
+        {
+          "time": "2026-10-12T14:13:47.784Z",
+          "tick": 124687,
+          "message": "Healthy normal=1; boot=0; exact historical descriptor-failure candidate=0."
+        },
+        {
+          "time": "2026-10-12T14:13:47.792Z",
+          "tick": 124687,
+          "message": "Normal firmware is enumerated. Reflashing 44 is not a proven cure for AC-startup failure."
+        },
+        {
+          "time": "2026-10-12T14:13:49.046Z",
+          "tick": 125953,
+          "message": "Attempting one nonpersistent USB devnode restart. No firmware writes."
+        },
+        {
+          "time": "2026-10-12T14:13:49.074Z",
+          "tick": 125968,
+          "message": "USB restart failed: Windows refused the per-device disable; run elevated if authorized. No firmware command was sent. (CM/Win32 code 40)."
+        },
+        {
+          "time": "2026-10-12T14:13:49.085Z",
+          "tick": 125984,
+          "message": "After USB restart: reading device metadata; no firmware commands."
+        },
+        {
+          "time": "2026-10-12T14:13:49.242Z",
+          "tick": 126140,
+          "message": "user_reported_power_at_last_complete_startup=battery only (owner selected; not measured at boot)"
+        },
+        {
+          "time": "2026-10-12T14:13:49.253Z",
+          "tick": 126156,
+          "message": "AC values: 0=battery, 1=AC, 255=unknown. Metadata only; no HID commands were sent."
+        },
+        {
+          "time": "2026-10-12T14:13:49.255Z",
+          "tick": 126156,
+          "message": "Unavailable-property bits: 0 instance, 1 parent, 2 description, 3 bus description, 4 location, 5 location paths, 6 service, 7 hardware IDs, 8 compatible IDs, 9 class."
+        },
+        {
+          "time": "2026-10-12T14:13:49.726Z",
+          "tick": 126625,
+          "message": "Power now: battery; battery=95% (255 means unknown)."
+        },
+        {
+          "time": "2026-10-12T14:13:49.735Z",
+          "tick": 126640,
+          "message": "USB\\VID_048D&PID_C100\\5&1F456139&0&9 present=1 problem=0 location=Port_#0009.Hub_#0002"
+        },
+        {
+          "time": "2026-10-12T14:13:49.739Z",
+          "tick": 126640,
+          "message": "USB\\VID_0000&PID_0002\\5&1F456139&0&9 present=0 problem=0 location=Port_#0009.Hub_#0002"
+        },
+        {
+          "time": "2026-10-12T14:13:49.743Z",
+          "tick": 126640,
+          "message": "Healthy normal=1; boot=0; exact historical descriptor-failure candidate=0."
+        },
+        {
+          "time": "2026-10-12T14:13:49.747Z",
+          "tick": 126640,
+          "message": "Normal firmware is enumerated. Reflashing 44 is not a proven cure for AC-startup failure."
+        }
+      ]
+    },
+    {
+      "name": "fix1-20261012T141429438Z-p2832-4.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "inventories": [],
+      "events": []
+    }
+  ],
+  "inventory_count": 3,
+  "device_record_count": 102,
+  "within_capture_differences": [
+    {
+      "name": "fix1-20261012T141346768Z-p2832-3.log",
+      "time": "2026-10-12T14:13:46.998Z",
+      "differences": []
+    },
+    {
+      "name": "fix1-20261012T141346768Z-p2832-3.log",
+      "time": "2026-10-12T14:13:49.252Z",
+      "differences": []
+    }
+  ],
+  "failed_to_working_differences": [
+    {
+      "instance_id": "HID\\VID_048D&PID_C100&COL01\\6&8BB26F5&0&0000",
+      "changed_fields": {
+        "status_fields": {
+          "failed": {
+            "present": "0",
+            "kind": "0",
+            "status": "0x00000000",
+            "problem": "0",
+            "CM": "0x0000000D",
+            "presence_CM": "0x0000000D",
+            "unavailable": "0x00000078",
+            "can_recover": "0",
+            "can_case_recover": "0"
+          },
+          "working": {
+            "present": "1",
+            "kind": "0",
+            "status": "0x0180200A",
+            "problem": "0",
+            "CM": "0x00000000",
+            "presence_CM": "0x00000000",
+            "unavailable": "0x00000078",
+            "can_recover": "0",
+            "can_case_recover": "0"
+          }
+        }
+      }
+    },
+    {
+      "instance_id": "HID\\VID_048D&PID_C100&COL02\\6&8BB26F5&0&0001",
+      "changed_fields": {
+        "status_fields": {
+          "failed": {
+            "present": "0",
+            "kind": "0",
+            "status": "0x00000000",
+            "problem": "0",
+            "CM": "0x0000000D",
+            "presence_CM": "0x0000000D",
+            "unavailable": "0x00000078",
+            "can_recover": "0",
+            "can_case_recover": "0"
+          },
+          "working": {
+            "present": "1",
+            "kind": "0",
+            "status": "0x0180200A",
+            "problem": "0",
+            "CM": "0x00000000",
+            "presence_CM": "0x00000000",
+            "unavailable": "0x00000078",
+            "can_recover": "0",
+            "can_case_recover": "0"
+          }
+        }
+      }
+    },
+    {
+      "instance_id": "HID\\VID_048D&PID_C100&COL03\\6&8BB26F5&0&0002",
+      "changed_fields": {
+        "status_fields": {
+          "failed": {
+            "present": "0",
+            "kind": "0",
+            "status": "0x00000000",
+            "problem": "0",
+            "CM": "0x0000000D",
+            "presence_CM": "0x0000000D",
+            "unavailable": "0x00000038",
+            "can_recover": "0",
+            "can_case_recover": "0"
+          },
+          "working": {
+            "present": "1",
+            "kind": "0",
+            "status": "0x0180000A",
+            "problem": "0",
+            "CM": "0x00000000",
+            "presence_CM": "0x00000000",
+            "unavailable": "0x00000038",
+            "can_recover": "0",
+            "can_case_recover": "0"
+          }
+        }
+      }
+    },
+    {
+      "instance_id": "HID\\VID_048D&PID_C100&COL04\\6&8BB26F5&0&0003",
+      "changed_fields": {
+        "status_fields": {
+          "failed": {
+            "present": "0",
+            "kind": "0",
+            "status": "0x00000000",
+            "problem": "0",
+            "CM": "0x0000000D",
+            "presence_CM": "0x0000000D",
+            "unavailable": "0x00000078",
+            "can_recover": "0",
+            "can_case_recover": "0"
+          },
+          "working": {
+            "present": "1",
+            "kind": "0",
+            "status": "0x0180200A",
+            "problem": "0",
+            "CM": "0x00000000",
+            "presence_CM": "0x00000000",
+            "unavailable": "0x00000078",
+            "can_recover": "0",
+            "can_case_recover": "0"
+          }
+        }
+      }
+    },
+    {
+      "instance_id": "HID\\VID_048D&PID_C100&COL05\\6&8BB26F5&0&0004",
+      "changed_fields": {
+        "status_fields": {
+          "failed": {
+            "present": "0",
+            "kind": "0",
+            "status": "0x00000000",
+            "problem": "0",
+            "CM": "0x0000000D",
+            "presence_CM": "0x0000000D",
+            "unavailable": "0x00000078",
+            "can_recover": "0",
+            "can_case_recover": "0"
+          },
+          "working": {
+            "present": "1",
+            "kind": "0",
+            "status": "0x0180200A",
+            "problem": "0",
+            "CM": "0x00000000",
+            "presence_CM": "0x00000000",
+            "unavailable": "0x00000078",
+            "can_recover": "0",
+            "can_case_recover": "0"
+          }
+        }
+      }
+    },
+    {
+      "instance_id": "PCI\\VEN_8086&DEV_A36D&SUBSYS_380617AA&REV_10\\3&11583659&0&A0",
+      "changed_fields": {
+        "status_fields": {
+          "failed": {
+            "present": "1",
+            "kind": "0",
+            "status": "0x0180200A",
+            "problem": "0",
+            "CM": "0x00000000",
+            "presence_CM": "0x00000000",
+            "unavailable": "0x00000000",
+            "can_recover": "0",
+            "can_case_recover": "0"
+          },
+          "working": {
+            "present": "1",
+            "kind": "0",
+            "status": "0x0180000A",
+            "problem": "0",
+            "CM": "0x00000000",
+            "presence_CM": "0x00000000",
+            "unavailable": "0x00000000",
+            "can_recover": "0",
+            "can_case_recover": "0"
+          }
+        }
+      }
+    },
+    {
+      "instance_id": "USB\\ROOT_HUB30\\4&15ED8360&0&0",
+      "changed_fields": {
+        "status_fields": {
+          "failed": {
+            "present": "1",
+            "kind": "0",
+            "status": "0x0180200A",
+            "problem": "0",
+            "CM": "0x00000000",
+            "presence_CM": "0x00000000",
+            "unavailable": "0x00000018",
+            "can_recover": "0",
+            "can_case_recover": "0"
+          },
+          "working": {
+            "present": "1",
+            "kind": "0",
+            "status": "0x0180000A",
+            "problem": "0",
+            "CM": "0x00000000",
+            "presence_CM": "0x00000000",
+            "unavailable": "0x00000018",
+            "can_recover": "0",
+            "can_case_recover": "0"
+          }
+        }
+      }
+    },
+    {
+      "instance_id": "USB\\VID_0000&PID_0002\\5&1F456139&0&9",
+      "changed_fields": {
+        "recovery": {
+          "failed": "Case-specific opt-in restart candidate: exact recorded problem-43 instance, parent and location match. Keyboard identity and recovery remain unproven.",
+          "working": "Inventory only: failed USB descriptors do not establish keyboard identity, even at a historical keyboard port."
+        },
+        "status_fields": {
+          "failed": {
+            "present": "1",
+            "kind": "3",
+            "status": "0x01802400",
+            "problem": "43",
+            "CM": "0x00000000",
+            "presence_CM": "0x00000000",
+            "unavailable": "0x00000048",
+            "can_recover": "0",
+            "can_case_recover": "1"
+          },
+          "working": {
+            "present": "0",
+            "kind": "3",
+            "status": "0x00000000",
+            "problem": "0",
+            "CM": "0x0000000D",
+            "presence_CM": "0x0000000D",
+            "unavailable": "0x00000048",
+            "can_recover": "0",
+            "can_case_recover": "0"
+          }
+        }
+      }
+    },
+    {
+      "instance_id": "USB\\VID_048D&PID_C100\\5&1F456139&0&9",
+      "changed_fields": {
+        "recovery": {
+          "failed": "Inventory only: this is a historical or unavailable devnode.",
+          "working": "Eligible only for an explicitly confirmed restart of this exact physical ITE USB devnode; recovery is unproven."
+        },
+        "status_fields": {
+          "failed": {
+            "present": "0",
+            "kind": "1",
+            "status": "0x00000000",
+            "problem": "0",
+            "CM": "0x0000000D",
+            "presence_CM": "0x0000000D",
+            "unavailable": "0x00000000",
+            "can_recover": "0",
+            "can_case_recover": "0"
+          },
+          "working": {
+            "present": "1",
+            "kind": "1",
+            "status": "0x0180000A",
+            "problem": "0",
+            "CM": "0x00000000",
+            "presence_CM": "0x00000000",
+            "unavailable": "0x00000000",
+            "can_recover": "1",
+            "can_case_recover": "0"
+          }
+        }
+      }
+    }
+  ],
+  "owner_report": "Built-in keyboard kept typing normally after USB retry.",
+  "etw_recording_supplied_in_folder": false,
+  "status_mapping": {
+    "CM_Disable_DevNode_return_decimal_40": "CR_NOT_DISABLEABLE (0x28)",
+    "CR_ACCESS_DENIED": "0x33 (51), not observed here"
+  }
+}

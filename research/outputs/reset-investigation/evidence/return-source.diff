@@ -1,0 +1,162 @@
+--- upstream/src/app.c
++++ return-to-exp1/src/app.c
+@@ -111,7 +111,7 @@
+                policy.ac_enabled?"ENABLED":"disabled",policy.dc_enabled?"ENABLED":"disabled");
+     }
+     if(y540_usb_suspend_may_idle_device(&policy))
+-        output("NOTE: fix8 contacts the boot-mode keyboard immediately, so Windows has no time to idle it.\r\n"
++        output("NOTE: return-exp1 contacts the boot-mode keyboard immediately, so Windows has no time to idle it.\r\n"
+                "Optional extra margin: run DISABLE-USB-SELECTIVE-SUSPEND.cmd (reversible) before updating.\r\n");
+ }
+ static int ready_for_flash(void)
+@@ -381,8 +381,8 @@
+     if (!verify_or_plan(firmware_path, ini_path, NULL)) return;
+     if (MessageBoxA(owner,
+         "Write selected keyboard firmware (048D:C100 / boot 048D:89DB)?\n\n"
+-        "This writes firmware. The self-recovery image (44-selfheal-exp2.bin) has never run on real hardware: it adds a watchdog that can restart or detach the keyboard, and recovery is not guaranteed. Keep 44-nosleep-exp1.bin ready as the way back. "
+-        "Two matching reads must be saved before anything is erased. "
++        "This writes firmware. This package defaults to 44-nosleep-exp1.bin (checksum 5642) to withdraw exp2. Exp1 improved some reported restart tests but is not a proven repair. Only proceed on the affected Lenovo with external input available. "
++        "A complete backup is saved before erase; exact known-image hashes need one read, other images need two matching reads. "
+         "Keep AC power connected, do not touch the keyboard or close the window, and do not interrupt erase/write.",
+         "Update keyboard firmware", MB_YESNO | MB_ICONQUESTION | MB_DEFBUTTON2) != IDYES) return;
+     job = calloc(1, sizeof(*job));
+@@ -520,7 +520,7 @@
+                 14, 170, 752, 315, ID_LOG);
+         log_window = GetDlgItem(window, ID_LOG);
+         SendMessageA(log_window, EM_SETLIMITTEXT, 1024 * 1024, 0);
+-        output("Y540 fix8 - boot-mode contact fix (no 6 s idle before the bootloader is queried)\r\n"
++        output("Y540 return-exp1 - boot-mode contact fix (no 6 s idle before the bootloader is queried)\r\n"
+                "Start with Diagnose + save log. Retry USB is separate and never flashes firmware.\r\n"
+                "A failed device descriptor has no usable keyboard HID interface.\r\n"
+                "Advanced firmware writing requires healthy identity and a saved full backup.\r\n\r\n");
+@@ -575,10 +575,7 @@
+     slash = strrchr(executable, '\\');
+     if (slash) *slash = 0;
+     if (strlen(executable) > PATH_CAP - 32) return;
+-    strcpy(firmware_path, executable); strcat(firmware_path, "/44-selfheal-exp2.bin");
+-    if (GetFileAttributesA(firmware_path) == INVALID_FILE_ATTRIBUTES) {
+-        strcpy(firmware_path, executable); strcat(firmware_path, "/44-nosleep-exp1.bin");
+-    }
++    strcpy(firmware_path, executable); strcat(firmware_path, "/44-nosleep-exp1.bin");
+     strcpy(ini_path, executable); strcat(ini_path, "/SHFU.ini");
+     if (GetFileAttributesA(firmware_path) == INVALID_FILE_ATTRIBUTES) {
+         strcpy(firmware_path, executable); strcat(firmware_path, "/../experiment/44-nosleep-exp1.bin");
+@@ -599,7 +596,7 @@
+     cls.hCursor = LoadCursor(NULL, IDC_ARROW); cls.hbrBackground = (HBRUSH)(COLOR_BTNFACE + 1);
+     cls.lpszClassName = "Y540ResearchUpdater";
+     if (!RegisterClassA(&cls)) return 1;
+-    window = CreateWindowA(cls.lpszClassName, "Y540 fix8 - Y540 keyboard firmware updater",
++    window = CreateWindowA(cls.lpszClassName, "Y540 - Return to exp1 (5642)",
+                            WS_OVERLAPPED | WS_CAPTION | WS_SYSMENU | WS_MINIMIZEBOX,
+                            CW_USEDEFAULT, CW_USEDEFAULT, 798, 540, NULL, NULL, cls.hInstance, NULL);
+     if (!window) return 1;
+@@ -625,7 +622,7 @@
+ int main(int argc, char **argv)
+ {
+     if (argc == 1) {
+-        begin_session("gui-fix8");
++        begin_session("gui-return-exp1");
+         HWND console = GetConsoleWindow();
+         DWORD processes[2];
+         if (console && GetConsoleProcessList(processes, 2) == 1) ShowWindow(console, SW_HIDE);
+@@ -656,7 +653,7 @@
+         return begin_session("cli-read-only-flash-dump") && dump_firmware(argv[2], end) ? 0 : 1;
+     }
+     if (!strcmp(argv[1], "--list") && argc == 2) return begin_session("cli-hid-metadata") && list_devices() ? 0 : 1;
+-    output("Y540 fix8 - USB recovery and source updater\r\n\r\n"
++    output("Y540 return-exp1 - USB recovery and source updater\r\n\r\n"
+            "  Y540Updater.exe                          Open GUI\r\n"
+            "  Y540Updater.exe --verify FIRMWARE INI     Validate size and checksum\r\n"
+            "  Y540Updater.exe --plan FIRMWARE INI JSON  Export staging-only packet plan\r\n"
+--- upstream/src/protocol.c
++++ return-to-exp1/src/protocol.c
+@@ -33,13 +33,15 @@
+                 y540_hid_error *e) {
+   return y540_hid_send(t, p, n, e);
+ }
+-/* Known-good images (all from this package): original 44, and the no-sleep experiment 1.
++/* Known-byte images: stock 44, exp1 and withdrawn exp2. A known hash
++ * establishes backup content, not firmware correctness; exp2 is never selected by default.
+  * A complete bootloader read that equals one of them exactly needs no second confirming
+  * read: a corrupted read cannot hash to a known image. */
+-#define KNOWN_IMAGES 2
++#define KNOWN_IMAGES 3
+ static const uint8_t KNOWN_IMAGE_SHA256[KNOWN_IMAGES][32] = {
+     {0x3a, 0xfe, 0xc1, 0x31, 0xc6, 0xed, 0x70, 0xef, 0xa0, 0xa3, 0xf4, 0xb6, 0x01, 0xcb, 0x79, 0x90, 0x11, 0xa5, 0x82, 0x83, 0x5d, 0x37, 0x1c, 0x57, 0xfe, 0xf6, 0x8a, 0xf4, 0x85, 0x19, 0xe3, 0x59},
+-    {0x2b, 0x34, 0xb6, 0xd5, 0x9d, 0xb8, 0x44, 0x38, 0x31, 0xa7, 0xe0, 0x38, 0x7a, 0xe6, 0x59, 0x70, 0x30, 0x7f, 0x51, 0x6e, 0x81, 0x6d, 0xd4, 0x81, 0xf1, 0xba, 0x51, 0x3d, 0x3f, 0x9d, 0xe7, 0x73}};
++    {0x2b, 0x34, 0xb6, 0xd5, 0x9d, 0xb8, 0x44, 0x38, 0x31, 0xa7, 0xe0, 0x38, 0x7a, 0xe6, 0x59, 0x70, 0x30, 0x7f, 0x51, 0x6e, 0x81, 0x6d, 0xd4, 0x81, 0xf1, 0xba, 0x51, 0x3d, 0x3f, 0x9d, 0xe7, 0x73},
++      {0x82, 0xc9, 0x4f, 0xd5, 0x01, 0x91, 0xa3, 0xad, 0x8b, 0x4f, 0x97, 0x60, 0xeb, 0xf5, 0x88, 0xb9, 0x11, 0xb1, 0x93, 0x45, 0x0d, 0xd7, 0xed, 0xee, 0xec, 0x06, 0xba, 0xcb, 0xa3, 0x38, 0xe1, 0xb8}};
+ static int read_flash(y540_hid_transport *t, uint32_t addr, uint8_t *out,
+                       size_t size, y540_progress_fn progress, void *ctx,
+                       y540_hid_error *e) {
+@@ -407,7 +409,7 @@
+       /* fix6: shorter exposure. The device still holds the exact original
+        * firmware 44 (SHA-256 matches a packaged image), so the saved backup is that known
+        * file; a second read would only add ~30 s of bootloader traffic. */
+-      note(progress, ctx, "Read equals a known image (original 44 or no-sleep exp1) exactly; second read not needed", size, size);
++      note(progress, ctx, "Read equals known stock/exp1/exp2 bytes exactly; backup hash confirmed, second read not needed", size, size);
+     } else {
+       note(progress, ctx, "Confirm backup with second independent read", 0, size);
+       if (!read_flash(t, 0, second, size, progress, ctx, e))
+--- upstream/src/session_log.c
++++ return-to-exp1/src/session_log.c
+@@ -45,7 +45,7 @@
+       snprintf(error, cap, "Cannot create log folder");
+       return 0;
+     }
+-    swprintf(directory, 2048, L"%ls\\Y540Updater-fix8", base);
++    swprintf(directory, 2048, L"%ls\\Y540Updater-return-exp1", base);
+     if (!mkdir_one(directory)) {
+       snprintf(error, cap, "Cannot create user log folder");
+       return 0;
+@@ -59,7 +59,7 @@
+   GetSystemTime(&now);
+   for (i = 0; i < 100; i++) {
+     swprintf(
+-        path, 2048, L"%ls\\fix8-%04u%02u%02uT%02u%02u%02u%03uZ-p%lu-%lu.log",
++        path, 2048, L"%ls\\return-exp1-%04u%02u%02uT%02u%02u%02u%03uZ-p%lu-%lu.log",
+         directory, now.wYear, now.wMonth, now.wDay, now.wHour, now.wMinute,
+         now.wSecond, now.wMilliseconds, (unsigned long)GetCurrentProcessId(),
+         (unsigned long)InterlockedIncrement(&sequence));
+@@ -75,7 +75,7 @@
+              (unsigned long)GetLastError());
+     return 0;
+   }
+-  y540_logf("session action=%s version=fix8-0.8.0 utc_timestamps=1", action);
++  y540_logf("session action=%s version=return-exp1-0.8.1 utc_timestamps=1", action);
+   return 1;
+ }
+ void y540_logf(const char *format, ...) {
+--- upstream/tests/test_protocol.c
++++ return-to-exp1/tests/test_protocol.c
+@@ -528,6 +528,30 @@
+     CHECK(e->reads > 0 && !e->erases && !e->commits && !e->resets);
+     CHECK(strstr(error.message, "interrupt-vector") != NULL);
+     delete_backup();
++    /* Regression: returning FROM exact exp2 must use one durable backup read,
++     * followed by target verification. It does not qualify exp2 as a good image. */
++    snprintf(path, sizeof(path), "%s/exp2-backup-test.bin", directory);
++    file = fopen(path, "rb");
++    CHECK(file != NULL);
++    if (file) {
++        setup(e, &t);
++        CHECK(fread(e->flash, 1, IMAGE_SIZE, file) == IMAGE_SIZE);
++        fclose(file);
++        CHECK(program(&t, firmware, IMAGE_SIZE, cfg, &error));
++        CHECK(e->reads == 2u * ((IMAGE_SIZE + 55u) / 56u));
++        CHECK(e->resets == 1 && !memcmp(e->flash, firmware, IMAGE_SIZE));
++        { FILE *saved = _wfopen(last_backup, L"rb");
++          uint8_t *original = malloc(IMAGE_SIZE);
++          CHECK(saved && original);
++          if (saved && original) {
++              CHECK(fread(original, 1, IMAGE_SIZE, saved) == IMAGE_SIZE);
++              uint8_t hash[32]; y540_sha256(original, IMAGE_SIZE, hash);
++              CHECK(hash[0] == 0x82 && hash[1] == 0xc9 && hash[31] == 0xb8);
++          }
++          if (saved) fclose(saved);
++          free(original); }
++        delete_backup();
++    }
+     known_image_tests(firmware, cfg);
+     boot_discovery_tests();
+     readiness_tests();

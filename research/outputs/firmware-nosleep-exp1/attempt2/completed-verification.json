@@ -1,0 +1,8 @@
+{
+  "log_bytes": 100441,
+  "log_sha256": "1842d8dc44b92d5990852092ac1bed85fe6eb57ba62d433d2e3a6928b97a23cb",
+  "readiness_rounds": 12,
+  "failed_chip_query_tx": 120,
+  "completed": true,
+  "backup_bytes": 0
+}

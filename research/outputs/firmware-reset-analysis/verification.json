@@ -1,0 +1,7 @@
+{
+  "firmware_sha256": "3afec131c6ed70efa0a3f4b601cb799011a582835d371c57fef68af48519e359",
+  "export_sha256": "346d064ddd8d5e71d31e78a7134404b7eaceb5f1f84bcc274b845ca4e2ed6726",
+  "selected_instruction_count": 1528,
+  "byte_mismatches": 0,
+  "method": "Byte verification of saved direct-Ghidra export; not execution or proof of hardware register semantics. Raw file offsets assumed CODE addresses."
+}

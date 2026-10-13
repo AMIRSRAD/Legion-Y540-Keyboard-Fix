@@ -1,0 +1,91 @@
+{
+  "source": "C:\\Users\\a.saberi\\Documents\\Codex\\2026-10-12\\https-github-com-morluto-rea-https\\outputs\\y540-research\\samples\\44.bin",
+  "source_size": 55296,
+  "source_sha256": "3afec131c6ed70efa0a3f4b601cb799011a582835d371c57fef68af48519e359",
+  "disassembler": "Ghidra12.1.4,8051:BE:16:default,raw CODE base0",
+  "export": "C:\\Users\\a.saberi\\Documents\\Codex\\2026-10-12\\https-github-com-morluto-rea-https\\outputs\\firmware44-analysis\\ghidra-static-inline-aware.json",
+  "instructions_verified": 11703,
+  "instruction_byte_mismatches": [],
+  "unique_bytes_decoded_as_instructions": 19326,
+  "functions_in_export": 281,
+  "caveat": "Byte equality verifies provenance, not correct hardware mapping or exhaustive reachable control flow. Function counts are recovery results, not actual function totals.",
+  "constant_initializer_records": 36,
+  "device_descriptor_model_xdata": "0x0975",
+  "device_descriptor_model_size": 18,
+  "standard_get_device_descriptor": {
+    "file_cases": [
+      "0x468c",
+      "0x405d",
+      "0x40e8",
+      "0x421e"
+    ],
+    "response_pointer": "XDATA0x0975",
+    "declared_size": 18,
+    "length_clamp": "min(descriptor length,host wLength)",
+    "observed_failed_host_length": 64,
+    "expected_count_under_model": 18,
+    "limit": "Control-flow/table interpretation under classic8051; this is not observed device execution."
+  },
+  "startup": {
+    "vectors": "0x0000 LJMP0x0100",
+    "initial_clear_loops": [
+      "0x0100..0x0112",
+      "0x0400..0x0412"
+    ],
+    "xdata_clear_interval": "[0x0000,0x1000)",
+    "checksum_mode_read": "XDATA0x1080 &0x05",
+    "checksum_end_selection": {
+      "masked_value_5": "0xd800 exclusive",
+      "other_masked_values": "0x8000 exclusive"
+    },
+    "checksum_cases": {
+      "0x8000": {
+        "candidate_sum_with_checksum_slots_ff": "0x3857"
+      },
+      "0xd800": {
+        "candidate_sum_with_checksum_slots_ff": "0x5622"
+      }
+    },
+    "stored_big_endian_checksum": "0x5622",
+    "checksum_failure_branch": "0x01ff..0x0205 ->0x0130 ->CODE0xe000",
+    "missing_code_targets": [
+      "CODE0xe000",
+      "CODE0xfe00"
+    ],
+    "register_semantics": "Unverified; do not infer flash-size, warm-reset cause, or chip revision from this bit test."
+  },
+  "low_power_candidate_writes": [
+    {
+      "file": "0x225b",
+      "bytes": "75 87 01"
+    },
+    {
+      "file": "0x263f",
+      "bytes": "75 87 02"
+    },
+    {
+      "file": "0x2659",
+      "bytes": "75 87 02"
+    },
+    {
+      "file": "0x2672",
+      "bytes": "75 87 02"
+    }
+  ],
+  "review_scope": [
+    "USB/HID/OS descriptors",
+    "constant RAM initialization",
+    "reset/checksum gate",
+    "standard and Microsoft vendor descriptor count paths",
+    "bounded low-power candidates"
+  ],
+  "open_questions": [
+    "Chip-specific USB reset/suspend MMIO meanings",
+    "Runtime state before/after Windows shutdown",
+    "ROM/banked code absent from supplied image",
+    "Interrupt/indirect callback state-machine completeness",
+    "Any causal relation from candidate vendor count flaw to keyboard startup failure"
+  ],
+  "original_firmware_modified": false,
+  "hardware_access_performed": false
+}

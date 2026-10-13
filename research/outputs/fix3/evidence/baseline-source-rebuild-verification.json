@@ -1,0 +1,18 @@
+{
+  "source_archive_rebuild": "passed",
+  "method": "Extracted source ZIP into work/rebuild-check, ran its build.ps1 and fixture manifest verification",
+  "original_vendor_exe_in_archive": false,
+  "compiled_app_verify": "passed",
+  "compiled_app_hidden_gui": "passed",
+  "core_tests": "passed",
+  "transport_memory_tests": "passed",
+  "protocol_emulator_tests": "passed",
+  "exported_plan": {
+    "staged_blocks": 35,
+    "ff_skipped_blocks": 19
+  },
+  "hardware_access": "none",
+  "cmake_ctest": "5/5 passed separately in full local project",
+  "compilation_inputs_sha256": "3a67908f7a5e652a8db77a718b61da9b48ae7f71ed5ed4f9635f2435cd9bab09",
+  "release_compilation_inputs_equal_independently_rebuilt_inputs": true
+}

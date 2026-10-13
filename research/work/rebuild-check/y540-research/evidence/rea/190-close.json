@@ -1,0 +1,30 @@
+{
+  "request": {
+    "arguments": {
+      "snapshot_path": "C:\\Users\\a.saberi\\Documents\\Codex\\2026-10-12\\https-github-com-morluto-rea-https\\outputs\\y540-research\\evidence\\reconstruction-snapshot.json",
+      "overwrite": false
+    },
+    "name": "close_binary"
+  },
+  "response": {
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"result\":{\"path\":\"C:\\\\Users\\\\a.saberi\\\\Documents\\\\Codex\\\\2026-10-12\\\\https-github-com-morluto-rea-https\\\\outputs\\\\y540-research\\\\evidence\\\\reconstruction-snapshot.json\",\"bytes\":7767056,\"primitive_entries\":0,\"workflow_entries\":0,\"evidence_records\":20}}"
+        }
+      ],
+      "structuredContent": {
+        "result": {
+          "path": "C:\\Users\\a.saberi\\Documents\\Codex\\2026-10-12\\https-github-com-morluto-rea-https\\outputs\\y540-research\\evidence\\reconstruction-snapshot.json",
+          "bytes": 7767056,
+          "primitive_entries": 0,
+          "workflow_entries": 0,
+          "evidence_records": 20
+        }
+      }
+    },
+    "jsonrpc": "2.0",
+    "id": 24
+  }
+}

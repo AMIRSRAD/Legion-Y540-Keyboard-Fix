@@ -1,0 +1,445 @@
+{
+  "board_file": "Lenovo Legion Y540-15IRH - NM-C221 REV0.1 Boardview .tvw",
+  "board_bytes": 19566013,
+  "board_sha256": "2e5bc9804c6757315d3691db5a90012264dc05096a0b2ad6bca7766db03d7b51",
+  "parser_repository": "https://github.com/nitrocaster/eagleview",
+  "parser_commit": "37bb831c8db04fe408632d92434971bf9b7eaa30",
+  "adaptation": "Explicit target header boundary0x4e and22layers; diagnostic printing. Preserves parser format assertions; direct layer pad handles, no coordinate matching.",
+  "pin_rows": 16521,
+  "switch_pin_mapping_checks": 5,
+  "topology_assertions": 6,
+  "datasheet": "https://www.silergy.com/zh/download/downloadFile?ftype=note&id=4371&type=product",
+  "nets": {
+    "AG_WRST#": [
+      {
+        "ref": "U22",
+        "pin": "48",
+        "net": "AG_WRST#",
+        "desc": "IT8176FN-56A-BX_QFN48_6X6",
+        "value": "*",
+        "layer": "2",
+        "pad": "2211"
+      },
+      {
+        "ref": "D44",
+        "pin": "2",
+        "net": "AG_WRST#",
+        "desc": "RB751V-40_SOD323-2",
+        "value": "*",
+        "layer": "2",
+        "pad": "4251"
+      },
+      {
+        "ref": "R376",
+        "pin": "1",
+        "net": "AG_WRST#",
+        "desc": "R_0402",
+        "value": "10K",
+        "layer": "2",
+        "pad": "5068"
+      },
+      {
+        "ref": "C276",
+        "pin": "1",
+        "net": "AG_WRST#",
+        "desc": "C_0402",
+        "value": "1U",
+        "layer": "2",
+        "pad": "5296"
+      }
+    ],
+    "AGKB_PWR_EN#": [
+      {
+        "ref": "U23",
+        "pin": "4",
+        "net": "AGKB_PWR_EN#",
+        "desc": "SY6288D20AAC_SOT23-5",
+        "value": "*",
+        "layer": "2",
+        "pad": "2216"
+      },
+      {
+        "ref": "C281",
+        "pin": "1",
+        "net": "AGKB_PWR_EN#",
+        "desc": "C_0402",
+        "value": "0.1U",
+        "layer": "2",
+        "pad": "4029"
+      },
+      {
+        "ref": "RE102",
+        "pin": "1",
+        "net": "AGKB_PWR_EN#",
+        "desc": "R_0402",
+        "value": "0",
+        "layer": "2",
+        "pad": "5516"
+      },
+      {
+        "ref": "TB_TP262",
+        "pin": "",
+        "net": "AGKB_PWR_EN#",
+        "desc": "",
+        "value": "",
+        "layer": "2",
+        "pad": "6927"
+      }
+    ],
+    "AGKB_PWR_OCB": [
+      {
+        "ref": "U23",
+        "pin": "3",
+        "net": "AGKB_PWR_OCB",
+        "desc": "SY6288D20AAC_SOT23-5",
+        "value": "*",
+        "layer": "2",
+        "pad": "2215"
+      },
+      {
+        "ref": "R383",
+        "pin": "1",
+        "net": "AGKB_PWR_OCB",
+        "desc": "R_0402",
+        "value": "",
+        "layer": "2",
+        "pad": "5200"
+      }
+    ],
+    "PCH_PWR_EN": [
+      {
+        "ref": "Q30",
+        "pin": "2",
+        "net": "PCH_PWR_EN",
+        "desc": "L2N7002KWT1G_SOT323-3",
+        "value": "",
+        "layer": "2",
+        "pad": "3422"
+      },
+      {
+        "ref": "UE1",
+        "pin": "126",
+        "net": "PCH_PWR_EN",
+        "desc": "IT8226E-128-BX_LQFP128_14X14",
+        "value": "*",
+        "layer": "2",
+        "pad": "3860"
+      },
+      {
+        "ref": "R162",
+        "pin": "1",
+        "net": "PCH_PWR_EN",
+        "desc": "R_0402",
+        "value": "",
+        "layer": "13",
+        "pad": "9023"
+      },
+      {
+        "ref": "RE102",
+        "pin": "2",
+        "net": "PCH_PWR_EN",
+        "desc": "R_0402",
+        "value": "0",
+        "layer": "2",
+        "pad": "5517"
+      },
+      {
+        "ref": "RE99",
+        "pin": "2",
+        "net": "PCH_PWR_EN",
+        "desc": "R_0402",
+        "value": "",
+        "layer": "13",
+        "pad": "9116"
+      },
+      {
+        "ref": "TB_TP518",
+        "pin": "",
+        "net": "PCH_PWR_EN",
+        "desc": "",
+        "value": "",
+        "layer": "2",
+        "pad": "7708"
+      }
+    ],
+    "+3VALW_AG": [
+      {
+        "ref": "C280",
+        "pin": "1",
+        "net": "+3VALW_AG",
+        "desc": "C0603_39P370_DC",
+        "value": "10U",
+        "layer": "2",
+        "pad": "1387"
+      },
+      {
+        "ref": "L24",
+        "pin": "1",
+        "net": "+3VALW_AG",
+        "desc": "MURAT_BLM18PG181SN1D_L0603_2P",
+        "value": "*",
+        "layer": "2",
+        "pad": "2158"
+      },
+      {
+        "ref": "R374",
+        "pin": "1",
+        "net": "+3VALW_AG",
+        "desc": "R_0402",
+        "value": "",
+        "layer": "2",
+        "pad": "2162"
+      },
+      {
+        "ref": "U22",
+        "pin": "8",
+        "net": "+3VALW_AG",
+        "desc": "IT8176FN-56A-BX_QFN48_6X6",
+        "value": "*",
+        "layer": "2",
+        "pad": "2171"
+      },
+      {
+        "ref": "U22",
+        "pin": "18",
+        "net": "+3VALW_AG",
+        "desc": "IT8176FN-56A-BX_QFN48_6X6",
+        "value": "*",
+        "layer": "2",
+        "pad": "2181"
+      },
+      {
+        "ref": "U23",
+        "pin": "1",
+        "net": "+3VALW_AG",
+        "desc": "SY6288D20AAC_SOT23-5",
+        "value": "*",
+        "layer": "2",
+        "pad": "2213"
+      },
+      {
+        "ref": "Q5820",
+        "pin": "2",
+        "net": "+3VALW_AG",
+        "desc": "2N7002KDWH_SOT363-6",
+        "value": "*",
+        "layer": "2",
+        "pad": "2955"
+      },
+      {
+        "ref": "Q5820",
+        "pin": "5",
+        "net": "+3VALW_AG",
+        "desc": "2N7002KDWH_SOT363-6",
+        "value": "*",
+        "layer": "2",
+        "pad": "2958"
+      },
+      {
+        "ref": "C277",
+        "pin": "1",
+        "net": "+3VALW_AG",
+        "desc": "C_0402",
+        "value": "0.1U",
+        "layer": "2",
+        "pad": "4025"
+      },
+      {
+        "ref": "C278",
+        "pin": "1",
+        "net": "+3VALW_AG",
+        "desc": "C_0402",
+        "value": "0.1U",
+        "layer": "2",
+        "pad": "4027"
+      },
+      {
+        "ref": "D44",
+        "pin": "1",
+        "net": "+3VALW_AG",
+        "desc": "RB751V-40_SOD323-2",
+        "value": "*",
+        "layer": "2",
+        "pad": "4250"
+      },
+      {
+        "ref": "R382",
+        "pin": "2",
+        "net": "+3VALW_AG",
+        "desc": "R_0603",
+        "value": "",
+        "layer": "2",
+        "pad": "4333"
+      },
+      {
+        "ref": "R376",
+        "pin": "2",
+        "net": "+3VALW_AG",
+        "desc": "R_0402",
+        "value": "10K",
+        "layer": "2",
+        "pad": "5069"
+      },
+      {
+        "ref": "R384",
+        "pin": "2",
+        "net": "+3VALW_AG",
+        "desc": "R_0402",
+        "value": "",
+        "layer": "2",
+        "pad": "5097"
+      },
+      {
+        "ref": "R383",
+        "pin": "2",
+        "net": "+3VALW_AG",
+        "desc": "R_0402",
+        "value": "",
+        "layer": "2",
+        "pad": "5201"
+      },
+      {
+        "ref": "R10677",
+        "pin": "1",
+        "net": "+3VALW_AG",
+        "desc": "R_0402",
+        "value": "2.2K",
+        "layer": "2",
+        "pad": "5666"
+      },
+      {
+        "ref": "R10678",
+        "pin": "1",
+        "net": "+3VALW_AG",
+        "desc": "R_0402",
+        "value": "2.2K",
+        "layer": "2",
+        "pad": "5668"
+      },
+      {
+        "ref": "R10679",
+        "pin": "1",
+        "net": "+3VALW_AG",
+        "desc": "R_0402",
+        "value": "2.2K",
+        "layer": "2",
+        "pad": "5670"
+      },
+      {
+        "ref": "TB_TP264",
+        "pin": "",
+        "net": "+3VALW_AG",
+        "desc": "",
+        "value": "",
+        "layer": "2",
+        "pad": "6932"
+      }
+    ],
+    "AVCC3.3V_AG": [
+      {
+        "ref": "L24",
+        "pin": "2",
+        "net": "AVCC3.3V_AG",
+        "desc": "MURAT_BLM18PG181SN1D_L0603_2P",
+        "value": "*",
+        "layer": "2",
+        "pad": "2159"
+      },
+      {
+        "ref": "U22",
+        "pin": "32",
+        "net": "AVCC3.3V_AG",
+        "desc": "IT8176FN-56A-BX_QFN48_6X6",
+        "value": "*",
+        "layer": "2",
+        "pad": "2195"
+      },
+      {
+        "ref": "C275",
+        "pin": "1",
+        "net": "AVCC3.3V_AG",
+        "desc": "C_0402",
+        "value": "1000P",
+        "layer": "2",
+        "pad": "3965"
+      },
+      {
+        "ref": "C274",
+        "pin": "1",
+        "net": "AVCC3.3V_AG",
+        "desc": "C_0402",
+        "value": "0.1U",
+        "layer": "2",
+        "pad": "4023"
+      }
+    ],
+    "USB20_N9_AGKB": [
+      {
+        "ref": "L23",
+        "pin": "2",
+        "net": "USB20_N9_AGKB",
+        "desc": "PANAS_EXC24CH900U_4P",
+        "value": "*",
+        "layer": "2",
+        "pad": "2143"
+      },
+      {
+        "ref": "U22",
+        "pin": "19",
+        "net": "USB20_N9_AGKB",
+        "desc": "IT8176FN-56A-BX_QFN48_6X6",
+        "value": "*",
+        "layer": "2",
+        "pad": "2182"
+      },
+      {
+        "ref": "R379",
+        "pin": "2",
+        "net": "USB20_N9_AGKB",
+        "desc": "R_0402",
+        "value": "",
+        "layer": "2",
+        "pad": "5533"
+      }
+    ],
+    "USB20_P9_AGKB": [
+      {
+        "ref": "L23",
+        "pin": "3",
+        "net": "USB20_P9_AGKB",
+        "desc": "PANAS_EXC24CH900U_4P",
+        "value": "*",
+        "layer": "2",
+        "pad": "2144"
+      },
+      {
+        "ref": "R374",
+        "pin": "2",
+        "net": "USB20_P9_AGKB",
+        "desc": "R_0402",
+        "value": "",
+        "layer": "2",
+        "pad": "2163"
+      },
+      {
+        "ref": "U22",
+        "pin": "20",
+        "net": "USB20_P9_AGKB",
+        "desc": "IT8176FN-56A-BX_QFN48_6X6",
+        "value": "*",
+        "layer": "2",
+        "pad": "2183"
+      },
+      {
+        "ref": "R380",
+        "pin": "2",
+        "net": "USB20_P9_AGKB",
+        "desc": "R_0402",
+        "value": "",
+        "layer": "2",
+        "pad": "5535"
+      }
+    ]
+  },
+  "status": "Parsed reference-board connectivity; actual laptop board revision and physical waveforms not verified. Reject prior coordinate-derived pin assignments."
+}

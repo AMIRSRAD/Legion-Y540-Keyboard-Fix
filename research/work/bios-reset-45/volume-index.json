@@ -1,0 +1,47 @@
+[
+  {
+    "offset": "0x7fba10",
+    "length": 3616768,
+    "processed": true
+  },
+  {
+    "offset": "0xb6ea10",
+    "length": 229376,
+    "processed": true
+  },
+  {
+    "offset": "0xbcea10",
+    "length": 217088,
+    "processed": true
+  },
+  {
+    "offset": "0xc8ea10",
+    "length": 655360,
+    "processed": true
+  },
+  {
+    "offset": "0xf2ea10",
+    "length": 393216,
+    "processed": true
+  },
+  {
+    "offset": "0xf8ea10",
+    "length": 851968,
+    "processed": true
+  },
+  {
+    "offset": "0x105ea10",
+    "length": 20480,
+    "processed": true
+  },
+  {
+    "offset": "0x1063a10",
+    "length": 557056,
+    "processed": true
+  },
+  {
+    "offset": "0x10eea10",
+    "length": 262144,
+    "processed": true
+  }
+]

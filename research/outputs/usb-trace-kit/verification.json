@@ -1,0 +1,17 @@
+{
+  "purpose": "USB ETW diagnostic capture on affected Lenovo",
+  "checks": [
+    "PowerShell syntax accepted by Windows PowerShell launcher runtime",
+    "Fake-tool argument forwarding preserved all tokens and spaces",
+    "Nonzero fake-tool exit detected; calling error policy restored",
+    "No live trace, device enumeration, device restart, or firmware command executed on development machine"
+  ],
+  "capture_filters": [
+    "Default",
+    "StateMachine",
+    "HeadersBusTrace"
+  ],
+  "capture_limit_seconds_default": 180,
+  "etl_cap_MB": 128,
+  "hardware_validation": "pending owner run"
+}

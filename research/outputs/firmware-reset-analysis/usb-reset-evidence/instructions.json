@@ -1,0 +1,10056 @@
+[
+  {
+    "address": "CODE:34df",
+    "length": 1,
+    "text": "MOVX @DPTR,A",
+    "bytes": "f0",
+    "flow_type": "FALL_THROUGH",
+    "references": []
+  },
+  {
+    "address": "CODE:34e0",
+    "length": 3,
+    "text": "MOV DPTR,#0x2f54",
+    "bytes": "902f54",
+    "flow_type": "FALL_THROUGH",
+    "references": []
+  },
+  {
+    "address": "CODE:34e3",
+    "length": 1,
+    "text": "CLR A",
+    "bytes": "e4",
+    "flow_type": "FALL_THROUGH",
+    "references": []
+  },
+  {
+    "address": "CODE:34e4",
+    "length": 1,
+    "text": "MOVX @DPTR,A",
+    "bytes": "f0",
+    "flow_type": "FALL_THROUGH",
+    "references": [
+      {
+        "to": "EXTMEM:2f54",
+        "type": "WRITE"
+      }
+    ]
+  },
+  {
+    "address": "CODE:34e5",
+    "length": 3,
+    "text": "LCALL 0x32d3",
+    "bytes": "1232d3",
+    "flow_type": "UNCONDITIONAL_CALL",
+    "references": [
+      {
+        "to": "CODE:32d3",
+        "type": "UNCONDITIONAL_CALL"
+      }
+    ]
+  },
+  {
+    "address": "CODE:34e8",
+    "length": 3,
+    "text": "MOV DPTR,#0x2f44",
+    "bytes": "902f44",
+    "flow_type": "FALL_THROUGH",
+    "references": []
+  },
+  {
+    "address": "CODE:34eb",
+    "length": 2,
+    "text": "MOV A,#0x21",
+    "bytes": "7421",
+    "flow_type": "FALL_THROUGH",
+    "references": []
+  },
+  {
+    "address": "CODE:34ed",
+    "length": 1,
+    "text": "MOVX @DPTR,A",
+    "bytes": "f0",
+    "flow_type": "FALL_THROUGH",
+    "references": [
+      {
+        "to": "EXTMEM:2f44",
+        "type": "WRITE"
+      }
+    ]
+  },
+  {
+    "address": "CODE:34ee",
+    "length": 1,
+    "text": "CLR A",
+    "bytes": "e4",
+    "flow_type": "FALL_THROUGH",
+    "references": []
+  },
+  {
+    "address": "CODE:34ef",
+    "length": 3,
+    "text": "MOV DPTR,#0xdd4",
+    "bytes": "900dd4",
+    "flow_type": "FALL_THROUGH",
+    "references": []
+  },
+  {
+    "address": "CODE:34f2",
+    "length": 1,
+    "text": "MOVX @DPTR,A",
+    "bytes": "f0",
+    "flow_type": "FALL_THROUGH",
+    "references": [
+      {
+        "to": "EXTMEM:0dd4",
+        "type": "WRITE"
+      }
+    ]
+  },
+  {
+    "address": "CODE:34f3",
+    "length": 1,
+    "text": "RET",
+    "bytes": "22",
+    "flow_type": "TERMINATOR",
+    "references": []
+  },
+  {
+    "address": "CODE:35dd",
+    "length": 1,
+    "text": "CLR A",
+    "bytes": "e4",
+    "flow_type": "FALL_THROUGH",
+    "references": []
+  },
+  {
+    "address": "CODE:35de",
+    "length": 1,
+    "text": "MOV R7,A",
+    "bytes": "ff",
+    "flow_type": "FALL_THROUGH",
+    "references": []
+  },
+  {
+    "address": "CODE:35df",
+    "length": 3,
+    "text": "MOV DPTR,#0x2f52",
+    "bytes": "902f52",
+    "flow_type": "FALL_THROUGH",
+    "references": []
+  },
+  {
+    "address": "CODE:35e2",
+    "length": 1,
+    "text": "MOVX A,@DPTR",
+    "bytes": "e0",
+    "flow_type": "FALL_THROUGH",
+    "references": [
+      {
+        "to": "EXTMEM:2f52",
+        "type": "READ"
+      }
+    ]
+  },
+  {
+    "address": "CODE:35e3",
+    "length": 3,
+    "text": "JNB 0xe2,0x35ef",
+    "bytes": "30e209",
+    "flow_type": "CONDITIONAL_JUMP",
+    "references": [
+      {
+        "to": "BITS:e2",
+        "type": "DATA"
+      },
+      {
+        "to": "CODE:35ef",
+        "type": "CONDITIONAL_JUMP"
+      }
+    ]
+  },
+  {
+    "address": "CODE:35e6",
+    "length": 3,
+    "text": "LCALL 0x39da",
+    "bytes": "1239da",
+    "flow_type": "UNCONDITIONAL_CALL",
+    "references": [
+      {
+        "to": "CODE:39da",
+        "type": "UNCONDITIONAL_CALL"
+      }
+    ]
+  },
+  {
+    "address": "CODE:35e9",
+    "length": 3,
+    "text": "MOV DPTR,#0x2f52",
+    "bytes": "902f52",
+    "flow_type": "FALL_THROUGH",
+    "references": []
+  },
+  {
+    "address": "CODE:35ec",
+    "length": 2,
+    "text": "MOV A,#0x4",
+    "bytes": "7404",
+    "flow_type": "FALL_THROUGH",
+    "references": []
+  },
+  {
+    "address": "CODE:35ee",
+    "length": 1,
+    "text": "MOVX @DPTR,A",
+    "bytes": "f0",
+    "flow_type": "FALL_THROUGH",
+    "references": [
+      {
+        "to": "EXTMEM:2f52",
+        "type": "WRITE"
+      }
+    ]
+  },
+  {
+    "address": "CODE:35ef",
+    "length": 1,
+    "text": "RET",
+    "bytes": "22",
+    "flow_type": "TERMINATOR",
+    "references": []
+  },
+  {
+    "address": "CODE:36eb",
+    "length": 3,
+    "text": "MOV DPTR,#0xdd2",
+    "bytes": "900dd2",
+    "flow_type": "FALL_THROUGH",
+    "references": []
+  },
+  {
+    "address": "CODE:36ee",
+    "length": 1,
+    "text": "MOVX A,@DPTR",
+    "bytes": "e0",
+    "flow_type": "FALL_THROUGH",
+    "references": [
+      {
+        "to": "EXTMEM:0dd2",
+        "type": "READ"
+      }
+    ]
+  },
+  {
+    "address": "CODE:36ef",
+    "length": 2,
+    "text": "JZ 0x36f9",
+    "bytes": "6008",
+    "flow_type": "CONDITIONAL_JUMP",
+    "references": [
+      {
+        "to": "CODE:36f9",
+        "type": "CONDITIONAL_JUMP"
+      }
+    ]
+  },
+  {
+    "address": "CODE:36f1",
+    "length": 1,
+    "text": "INC DPTR",
+    "bytes": "a3",
+    "flow_type": "FALL_THROUGH",
+    "references": []
+  },
+  {
+    "address": "CODE:36f2",
+    "length": 1,
+    "text": "MOVX A,@DPTR",
+    "bytes": "e0",
+    "flow_type": "FALL_THROUGH",
+    "references": [
+      {
+        "to": "EXTMEM:0dd3",
+        "type": "READ"
+      }
+    ]
+  },
+  {
+    "address": "CODE:36f3",
+    "length": 2,
+    "text": "JZ 0x36f9",
+    "bytes": "6004",
+    "flow_type": "CONDITIONAL_JUMP",
+    "references": [
+      {
+        "to": "CODE:36f9",
+        "type": "CONDITIONAL_JUMP"
+      }
+    ]
+  },
+  {
+    "address": "CODE:36f5",
+    "length": 2,
+    "text": "MOV R7,#0x1",
+    "bytes": "7f01",
+    "flow_type": "FALL_THROUGH",
+    "references": []
+  },
+  {
+    "address": "CODE:36f7",
+    "length": 2,
+    "text": "SJMP 0x36fb",
+    "bytes": "8002",
+    "flow_type": "UNCONDITIONAL_JUMP",
+    "references": [
+      {
+        "to": "CODE:36fb",
+        "type": "UNCONDITIONAL_JUMP"
+      }
+    ]
+  },
+  {
+    "address": "CODE:36f9",
+    "length": 2,
+    "text": "MOV R7,#0x0",
+    "bytes": "7f00",
+    "flow_type": "FALL_THROUGH",
+    "references": []
+  },
+  {
+    "address": "CODE:36fb",
+    "length": 1,
+    "text": "RET",
+    "bytes": "22",
+    "flow_type": "TERMINATOR",
+    "references": []
+  },
+  {
+    "address": "CODE:39da",
+    "length": 3,
+    "text": "MOV DPTR,#0xde8",
+    "bytes": "900de8",
+    "flow_type": "FALL_THROUGH",
+    "references": []
+  },
+  {
+    "address": "CODE:39dd",
+    "length": 1,
+    "text": "MOVX A,@DPTR",
+    "bytes": "e0",
+    "flow_type": "FALL_THROUGH",
+    "references": [
+      {
+        "to": "EXTMEM:0de8",
+        "type": "READ"
+      }
+    ]
+  },
+  {
+    "address": "CODE:39de",
+    "length": 1,
+    "text": "MOV R3,A",
+    "bytes": "fb",
+    "flow_type": "FALL_THROUGH",
+    "references": []
+  },
+  {
+    "address": "CODE:39df",
+    "length": 1,
+    "text": "INC DPTR",
+    "bytes": "a3",
+    "flow_type": "FALL_THROUGH",
+    "references": []
+  },
+  {
+    "address": "CODE:39e0",
+    "length": 1,
+    "text": "MOVX A,@DPTR",
+    "bytes": "e0",
+    "flow_type": "FALL_THROUGH",
+    "references": [
+      {
+        "to": "EXTMEM:0de9",
+        "type": "READ"
+      }
+    ]
+  },
+  {
+    "address": "CODE:39e1",
+    "length": 1,
+    "text": "MOV R2,A",
+    "bytes": "fa",
+    "flow_type": "FALL_THROUGH",
+    "references": []
+  },
+  {
+    "address": "CODE:39e2",
+    "length": 1,
+    "text": "INC DPTR",
+    "bytes": "a3",
+    "flow_type": "FALL_THROUGH",
+    "references": []
+  },
+  {
+    "address": "CODE:39e3",
+    "length": 1,
+    "text": "MOVX A,@DPTR",
+    "bytes": "e0",
+    "flow_type": "FALL_THROUGH",
+    "references": [
+      {
+        "to": "EXTMEM:0dea",
+        "type": "READ"
+      }
+    ]
+  },
+  {
+    "address": "CODE:39e4",
+    "length": 1,
+    "text": "MOV R1,A",
+    "bytes": "f9",
+    "flow_type": "FALL_THROUGH",
+    "references": []
+  },
+  {
+    "address": "CODE:39e5",
+    "length": 3,
+    "text": "MOV DPTR,#0x3",
+    "bytes": "900003",
+    "flow_type": "FALL_THROUGH",
+    "references": []
+  },
+  {
+    "address": "CODE:39e8",
+    "length": 3,
+    "text": "LCALL 0x857a",
+    "bytes": "12857a",
+    "flow_type": "UNCONDITIONAL_CALL",
+    "references": [
+      {
+        "to": "CODE:857a",
+        "type": "UNCONDITIONAL_CALL"
+      }
+    ]
+  },
+  {
+    "address": "CODE:39eb",
+    "length": 2,
+    "text": "JNZ 0x3a21",
+    "bytes": "7034",
+    "flow_type": "CONDITIONAL_JUMP",
+    "references": [
+      {
+        "to": "CODE:3a21",
+        "type": "CONDITIONAL_JUMP"
+      }
+    ]
+  },
+  {
+    "address": "CODE:39ed",
+    "length": 1,
+    "text": "MOV R7,A",
+    "bytes": "ff",
+    "flow_type": "FALL_THROUGH",
+    "references": []
+  },
+  {
+    "address": "CODE:39ee",
+    "length": 3,
+    "text": "LCALL 0x4b29",
+    "bytes": "124b29",
+    "flow_type": "UNCONDITIONAL_CALL",
+    "references": [
+      {
+        "to": "CODE:4b29",
+        "type": "UNCONDITIONAL_CALL"
+      }
+    ]
+  },
+  {
+    "address": "CODE:39f1",
+    "length": 3,
+    "text": "MOV DPTR,#0x2f64",
+    "bytes": "902f64",
+    "flow_type": "FALL_THROUGH",
+    "references": []
+  },
+  {
+    "address": "CODE:39f4",
+    "length": 2,
+    "text": "MOV A,#0x1",
+    "bytes": "7401",
+    "flow_type": "FALL_THROUGH",
+    "references": []
+  },
+  {
+    "address": "CODE:39f6",
+    "length": 1,
+    "text": "MOVX @DPTR,A",
+    "bytes": "f0",
+    "flow_type": "FALL_THROUGH",
+    "references": [
+      {
+        "to": "EXTMEM:2f64",
+        "type": "WRITE"
+      }
+    ]
+  },
+  {
+    "address": "CODE:39f7",
+    "length": 3,
+    "text": "MOV DPTR,#0x2f74",
+    "bytes": "902f74",
+    "flow_type": "FALL_THROUGH",
+    "references": []
+  },
+  {
+    "address": "CODE:39fa",
+    "length": 1,
+    "text": "MOVX @DPTR,A",
+    "bytes": "f0",
+    "flow_type": "FALL_THROUGH",
+    "references": [
+      {
+        "to": "EXTMEM:2f74",
+        "type": "WRITE"
+      }
+    ]
+  },
+  {
+    "address": "CODE:39fb",
+    "length": 3,
+    "text": "MOV DPTR,#0x2f84",
+    "bytes": "902f84",
+    "flow_type": "FALL_THROUGH",
+    "references": []
+  },
+  {
+    "address": "CODE:39fe",
+    "length": 1,
+    "text": "MOVX @DPTR,A",
+    "bytes": "f0",
+    "flow_type": "FALL_THROUGH",
+    "references": [
+      {
+        "to": "EXTMEM:2f84",
+        "type": "WRITE"
+      }
+    ]
+  },
+  {
+    "address": "CODE:39ff",
+    "length": 3,
+    "text": "MOV DPTR,#0x2f94",
+    "bytes": "902f94",
+    "flow_type": "FALL_THROUGH",
+    "references": []
+  },
+  {
+    "address": "CODE:3a02",
+    "length": 3,
+    "text": "LCALL 0x34df",
+    "bytes": "1234df",
+    "flow_type": "UNCONDITIONAL_CALL",
+    "references": [
+      {
+        "to": "CODE:34df",
+        "type": "UNCONDITIONAL_CALL"
+      }
+    ]
+  },
+  {
+    "address": "CODE:3a05",
+    "length": 3,
+    "text": "MOV DPTR,#0x2f52",
+    "bytes": "902f52",
+    "flow_type": "FALL_THROUGH",
+    "references": []
+  },
+  {
+    "address": "CODE:3a08",
+    "length": 2,
+    "text": "MOV A,#0x18",
+    "bytes": "7418",
+    "flow_type": "FALL_THROUGH",
+    "references": []
+  },
+  {
+    "address": "CODE:3a0a",
+    "length": 1,
+    "text": "MOVX @DPTR,A",
+    "bytes": "f0",
+    "flow_type": "FALL_THROUGH",
+    "references": [
+      {
+        "to": "EXTMEM:2f52",
+        "type": "WRITE"
+      }
+    ]
+  },
+  {
+    "address": "CODE:3a0b",
+    "length": 3,
+    "text": "MOV DPTR,#0xde8",
+    "bytes": "900de8",
+    "flow_type": "FALL_THROUGH",
+    "references": []
+  },
+  {
+    "address": "CODE:3a0e",
+    "length": 1,
+    "text": "MOVX A,@DPTR",
+    "bytes": "e0",
+    "flow_type": "FALL_THROUGH",
+    "references": [
+      {
+        "to": "EXTMEM:0de8",
+        "type": "READ"
+      }
+    ]
+  },
+  {
+    "address": "CODE:3a0f",
+    "length": 1,
+    "text": "MOV R3,A",
+    "bytes": "fb",
+    "flow_type": "FALL_THROUGH",
+    "references": []
+  },
+  {
+    "address": "CODE:3a10",
+    "length": 1,
+    "text": "INC DPTR",
+    "bytes": "a3",
+    "flow_type": "FALL_THROUGH",
+    "references": []
+  },
+  {
+    "address": "CODE:3a11",
+    "length": 1,
+    "text": "MOVX A,@DPTR",
+    "bytes": "e0",
+    "flow_type": "FALL_THROUGH",
+    "references": [
+      {
+        "to": "EXTMEM:0de9",
+        "type": "READ"
+      }
+    ]
+  },
+  {
+    "address": "CODE:3a12",
+    "length": 1,
+    "text": "MOV R2,A",
+    "bytes": "fa",
+    "flow_type": "FALL_THROUGH",
+    "references": []
+  },
+  {
+    "address": "CODE:3a13",
+    "length": 1,
+    "text": "INC DPTR",
+    "bytes": "a3",
+    "flow_type": "FALL_THROUGH",
+    "references": []
+  },
+  {
+    "address": "CODE:3a14",
+    "length": 1,
+    "text": "MOVX A,@DPTR",
+    "bytes": "e0",
+    "flow_type": "FALL_THROUGH",
+    "references": [
+      {
+        "to": "EXTMEM:0dea",
+        "type": "READ"
+      }
+    ]
+  },
+  {
+    "address": "CODE:3a15",
+    "length": 1,
+    "text": "MOV R1,A",
+    "bytes": "f9",
+    "flow_type": "FALL_THROUGH",
+    "references": []
+  },
+  {
+    "address": "CODE:3a16",
+    "length": 3,
+    "text": "MOV DPTR,#0x3",
+    "bytes": "900003",
+    "flow_type": "FALL_THROUGH",
+    "references": []
+  },
+  {
+    "address": "CODE:3a19",
+    "length": 2,
+    "text": "MOV A,#0x1",
+    "bytes": "7401",
+    "flow_type": "FALL_THROUGH",
+    "references": []
+  },
+  {
+    "address": "CODE:3a1b",
+    "length": 3,
+    "text": "LCALL 0x85b9",
+    "bytes": "1285b9",
+    "flow_type": "UNCONDITIONAL_CALL",
+    "references": [
+      {
+        "to": "CODE:85b9",
+        "type": "UNCONDITIONAL_CALL"
+      }
+    ]
+  },
+  {
+    "address": "CODE:3a1e",
+    "length": 2,
+    "text": "MOV R7,#0x1",
+    "bytes": "7f01",
+    "flow_type": "FALL_THROUGH",
+    "references": []
+  },
+  {
+    "address": "CODE:3a20",
+    "length": 1,
+    "text": "RET",
+    "bytes": "22",
+    "flow_type": "TERMINATOR",
+    "references": []
+  },
+  {
+    "address": "CODE:3a21",
+    "length": 2,
+    "text": "MOV R7,#0x0",
+    "bytes": "7f00",
+    "flow_type": "FALL_THROUGH",
+    "references": []
+  },
+  {
+    "address": "CODE:3a23",
+    "length": 1,
+    "text": "RET",
+    "bytes": "22",
+    "flow_type": "TERMINATOR",
+    "references": []
+  },
+  {
+    "address": "CODE:4034",
+    "length": 3,
+    "text": "MOV DPTR,#0x2",
+    "bytes": "900002",
+    "flow_type": "FALL_THROUGH",
+    "references": []
+  },
+  {
+    "address": "CODE:4037",
+    "length": 3,
+    "text": "LCALL 0x857a",
+    "bytes": "12857a",
+    "flow_type": "UNCONDITIONAL_CALL",
+    "references": [
+      {
+        "to": "CODE:857a",
+        "type": "UNCONDITIONAL_CALL"
+      }
+    ]
+  },
+  {
+    "address": "CODE:403a",
+    "length": 1,
+    "text": "MOV R7,A",
+    "bytes": "ff",
+    "flow_type": "FALL_THROUGH",
+    "references": []
+  },
+  {
+    "address": "CODE:403b",
+    "length": 3,
+    "text": "MOV DPTR,#0x3",
+    "bytes": "900003",
+    "flow_type": "FALL_THROUGH",
+    "references": []
+  },
+  {
+    "address": "CODE:403e",
+    "length": 3,
+    "text": "LCALL 0x857a",
+    "bytes": "12857a",
+    "flow_type": "UNCONDITIONAL_CALL",
+    "references": [
+      {
+        "to": "CODE:857a",
+        "type": "UNCONDITIONAL_CALL"
+      }
+    ]
+  },
+  {
+    "address": "CODE:4041",
+    "length": 3,
+    "text": "MOV DPTR,#0x756",
+    "bytes": "900756",
+    "flow_type": "FALL_THROUGH",
+    "references": []
+  },
+  {
+    "address": "CODE:4044",
+    "length": 1,
+    "text": "MOVX @DPTR,A",
+    "bytes": "f0",
+    "flow_type": "FALL_THROUGH",
+    "references": [
+      {
+        "to": "EXTMEM:0756",
+        "type": "WRITE"
+      }
+    ]
+  },
+  {
+    "address": "CODE:4045",
+    "length": 3,
+    "text": "MOV DPTR,#0xde8",
+    "bytes": "900de8",
+    "flow_type": "FALL_THROUGH",
+    "references": []
+  },
+  {
+    "address": "CODE:4048",
+    "length": 1,
+    "text": "MOVX A,@DPTR",
+    "bytes": "e0",
+    "flow_type": "FALL_THROUGH",
+    "references": [
+      {
+        "to": "EXTMEM:0de8",
+        "type": "READ"
+      }
+    ]
+  },
+  {
+    "address": "CODE:4049",
+    "length": 1,
+    "text": "MOV R3,A",
+    "bytes": "fb",
+    "flow_type": "FALL_THROUGH",
+    "references": []
+  },
+  {
+    "address": "CODE:404a",
+    "length": 1,
+    "text": "INC DPTR",
+    "bytes": "a3",
+    "flow_type": "FALL_THROUGH",
+    "references": []
+  },
+  {
+    "address": "CODE:404b",
+    "length": 1,
+    "text": "MOVX A,@DPTR",
+    "bytes": "e0",
+    "flow_type": "FALL_THROUGH",
+    "references": [
+      {
+        "to": "EXTMEM:0de9",
+        "type": "READ"
+      }
+    ]
+  },
+  {
+    "address": "CODE:404c",
+    "length": 1,
+    "text": "MOV R2,A",
+    "bytes": "fa",
+    "flow_type": "FALL_THROUGH",
+    "references": []
+  },
+  {
+    "address": "CODE:404d",
+    "length": 1,
+    "text": "INC DPTR",
+    "bytes": "a3",
+    "flow_type": "FALL_THROUGH",
+    "references": []
+  },
+  {
+    "address": "CODE:404e",
+    "length": 1,
+    "text": "MOVX A,@DPTR",
+    "bytes": "e0",
+    "flow_type": "FALL_THROUGH",
+    "references": [
+      {
+        "to": "EXTMEM:0dea",
+        "type": "READ"
+      }
+    ]
+  },
+  {
+    "address": "CODE:404f",
+    "length": 1,
+    "text": "MOV R1,A",
+    "bytes": "f9",
+    "flow_type": "FALL_THROUGH",
+    "references": []
+  },
+  {
+    "address": "CODE:4050",
+    "length": 1,
+    "text": "MOV A,R7",
+    "bytes": "ef",
+    "flow_type": "FALL_THROUGH",
+    "references": []
+  },
+  {
+    "address": "CODE:4051",
+    "length": 3,
+    "text": "LCALL 0x85a7",
+    "bytes": "1285a7",
+    "flow_type": "UNCONDITIONAL_CALL",
+    "references": [
+      {
+        "to": "CODE:85a7",
+        "type": "UNCONDITIONAL_CALL"
+      }
+    ]
+  },
+  {
+    "address": "CODE:4054",
+    "length": 3,
+    "text": "LCALL 0x3b7f",
+    "bytes": "123b7f",
+    "flow_type": "UNCONDITIONAL_CALL",
+    "references": [
+      {
+        "to": "CODE:3b7f",
+        "type": "UNCONDITIONAL_CALL"
+      }
+    ]
+  },
+  {
+    "address": "CODE:4057",
+    "length": 1,
+    "text": "CLR A",
+    "bytes": "e4",
+    "flow_type": "FALL_THROUGH",
+    "references": []
+  },
+  {
+    "address": "CODE:4058",
+    "length": 1,
+    "text": "MOV R7,A",
+    "bytes": "ff",
+    "flow_type": "FALL_THROUGH",
+    "references": []
+  },
+  {
+    "address": "CODE:4059",
+    "length": 1,
+    "text": "MOV R6,A",
+    "bytes": "fe",
+    "flow_type": "FALL_THROUGH",
+    "references": []
+  },
+  {
+    "address": "CODE:405a",
+    "length": 1,
+    "text": "MOV R5,A",
+    "bytes": "fd",
+    "flow_type": "FALL_THROUGH",
+    "references": []
+  },
+  {
+    "address": "CODE:405b",
+    "length": 1,
+    "text": "MOV R4,A",
+    "bytes": "fc",
+    "flow_type": "FALL_THROUGH",
+    "references": []
+  },
+  {
+    "address": "CODE:405c",
+    "length": 1,
+    "text": "RET",
+    "bytes": "22",
+    "flow_type": "TERMINATOR",
+    "references": []
+  },
+  {
+    "address": "CODE:4256",
+    "length": 3,
+    "text": "MOV DPTR,#0xde8",
+    "bytes": "900de8",
+    "flow_type": "FALL_THROUGH",
+    "references": []
+  },
+  {
+    "address": "CODE:4259",
+    "length": 1,
+    "text": "MOVX A,@DPTR",
+    "bytes": "e0",
+    "flow_type": "FALL_THROUGH",
+    "references": [
+      {
+        "to": "EXTMEM:0de8",
+        "type": "READ"
+      }
+    ]
+  },
+  {
+    "address": "CODE:425a",
+    "length": 1,
+    "text": "MOV R3,A",
+    "bytes": "fb",
+    "flow_type": "FALL_THROUGH",
+    "references": []
+  },
+  {
+    "address": "CODE:425b",
+    "length": 1,
+    "text": "INC DPTR",
+    "bytes": "a3",
+    "flow_type": "FALL_THROUGH",
+    "references": []
+  },
+  {
+    "address": "CODE:425c",
+    "length": 1,
+    "text": "MOVX A,@DPTR",
+    "bytes": "e0",
+    "flow_type": "FALL_THROUGH",
+    "references": [
+      {
+        "to": "EXTMEM:0de9",
+        "type": "READ"
+      }
+    ]
+  },
+  {
+    "address": "CODE:425d",
+    "length": 1,
+    "text": "MOV R2,A",
+    "bytes": "fa",
+    "flow_type": "FALL_THROUGH",
+    "references": []
+  },
+  {
+    "address": "CODE:425e",
+    "length": 1,
+    "text": "INC DPTR",
+    "bytes": "a3",
+    "flow_type": "FALL_THROUGH",
+    "references": []
+  },
+  {
+    "address": "CODE:425f",
+    "length": 1,
+    "text": "MOVX A,@DPTR",
+    "bytes": "e0",
+    "flow_type": "FALL_THROUGH",
+    "references": [
+      {
+        "to": "EXTMEM:0dea",
+        "type": "READ"
+      }
+    ]
+  },
+  {
+    "address": "CODE:4260",
+    "length": 1,
+    "text": "MOV R1,A",
+    "bytes": "f9",
+    "flow_type": "FALL_THROUGH",
+    "references": []
+  },
+  {
+    "address": "CODE:4261",
+    "length": 3,
+    "text": "MOV DPTR,#0xe",
+    "bytes": "90000e",
+    "flow_type": "FALL_THROUGH",
+    "references": []
+  },
+  {
+    "address": "CODE:4264",
+    "length": 3,
+    "text": "LCALL 0x857a",
+    "bytes": "12857a",
+    "flow_type": "UNCONDITIONAL_CALL",
+    "references": [
+      {
+        "to": "CODE:857a",
+        "type": "UNCONDITIONAL_CALL"
+      }
+    ]
+  },
+  {
+    "address": "CODE:4267",
+    "length": 3,
+    "text": "MOV DPTR,#0xc3f",
+    "bytes": "900c3f",
+    "flow_type": "FALL_THROUGH",
+    "references": []
+  },
+  {
+    "address": "CODE:426a",
+    "length": 1,
+    "text": "MOVX @DPTR,A",
+    "bytes": "f0",
+    "flow_type": "FALL_THROUGH",
+    "references": [
+      {
+        "to": "EXTMEM:0c3f",
+        "type": "WRITE"
+      }
+    ]
+  },
+  {
+    "address": "CODE:426b",
+    "length": 2,
+    "text": "MOV R3,#0x1",
+    "bytes": "7b01",
+    "flow_type": "FALL_THROUGH",
+    "references": []
+  },
+  {
+    "address": "CODE:426d",
+    "length": 2,
+    "text": "MOV R2,#0xc",
+    "bytes": "7a0c",
+    "flow_type": "FALL_THROUGH",
+    "references": []
+  },
+  {
+    "address": "CODE:426f",
+    "length": 2,
+    "text": "MOV R1,#0x3f",
+    "bytes": "793f",
+    "flow_type": "FALL_THROUGH",
+    "references": []
+  },
+  {
+    "address": "CODE:4271",
+    "length": 3,
+    "text": "MOV DPTR,#0x76a",
+    "bytes": "90076a",
+    "flow_type": "FALL_THROUGH",
+    "references": []
+  },
+  {
+    "address": "CODE:4274",
+    "length": 2,
+    "text": "MOV A,#0x1",
+    "bytes": "7401",
+    "flow_type": "FALL_THROUGH",
+    "references": []
+  },
+  {
+    "address": "CODE:4276",
+    "length": 1,
+    "text": "MOVX @DPTR,A",
+    "bytes": "f0",
+    "flow_type": "FALL_THROUGH",
+    "references": [
+      {
+        "to": "EXTMEM:076a",
+        "type": "WRITE"
+      }
+    ]
+  },
+  {
+    "address": "CODE:4277",
+    "length": 1,
+    "text": "MOV R5,A",
+    "bytes": "fd",
+    "flow_type": "FALL_THROUGH",
+    "references": []
+  },
+  {
+    "address": "CODE:4278",
+    "length": 2,
+    "text": "MOV R4,#0x0",
+    "bytes": "7c00",
+    "flow_type": "FALL_THROUGH",
+    "references": []
+  },
+  {
+    "address": "CODE:427a",
+    "length": 3,
+    "text": "LCALL 0x3d04",
+    "bytes": "123d04",
+    "flow_type": "UNCONDITIONAL_CALL",
+    "references": [
+      {
+        "to": "CODE:3d04",
+        "type": "UNCONDITIONAL_CALL"
+      }
+    ]
+  },
+  {
+    "address": "CODE:427d",
+    "length": 1,
+    "text": "CLR A",
+    "bytes": "e4",
+    "flow_type": "FALL_THROUGH",
+    "references": []
+  },
+  {
+    "address": "CODE:427e",
+    "length": 1,
+    "text": "MOV R7,A",
+    "bytes": "ff",
+    "flow_type": "FALL_THROUGH",
+    "references": []
+  },
+  {
+    "address": "CODE:427f",
+    "length": 1,
+    "text": "MOV R6,A",
+    "bytes": "fe",
+    "flow_type": "FALL_THROUGH",
+    "references": []
+  },
+  {
+    "address": "CODE:4280",
+    "length": 1,
+    "text": "MOV R5,A",
+    "bytes": "fd",
+    "flow_type": "FALL_THROUGH",
+    "references": []
+  },
+  {
+    "address": "CODE:4281",
+    "length": 1,
+    "text": "MOV R4,A",
+    "bytes": "fc",
+    "flow_type": "FALL_THROUGH",
+    "references": []
+  },
+  {
+    "address": "CODE:4282",
+    "length": 1,
+    "text": "RET",
+    "bytes": "22",
+    "flow_type": "TERMINATOR",
+    "references": []
+  },
+  {
+    "address": "CODE:4283",
+    "length": 3,
+    "text": "MOV DPTR,#0x2",
+    "bytes": "900002",
+    "flow_type": "FALL_THROUGH",
+    "references": []
+  },
+  {
+    "address": "CODE:4286",
+    "length": 3,
+    "text": "LCALL 0x857a",
+    "bytes": "12857a",
+    "flow_type": "UNCONDITIONAL_CALL",
+    "references": [
+      {
+        "to": "CODE:857a",
+        "type": "UNCONDITIONAL_CALL"
+      }
+    ]
+  },
+  {
+    "address": "CODE:4289",
+    "length": 1,
+    "text": "MOV R7,A",
+    "bytes": "ff",
+    "flow_type": "FALL_THROUGH",
+    "references": []
+  },
+  {
+    "address": "CODE:428a",
+    "length": 3,
+    "text": "MOV DPTR,#0x3",
+    "bytes": "900003",
+    "flow_type": "FALL_THROUGH",
+    "references": []
+  },
+  {
+    "address": "CODE:428d",
+    "length": 3,
+    "text": "LCALL 0x857a",
+    "bytes": "12857a",
+    "flow_type": "UNCONDITIONAL_CALL",
+    "references": [
+      {
+        "to": "CODE:857a",
+        "type": "UNCONDITIONAL_CALL"
+      }
+    ]
+  },
+  {
+    "address": "CODE:4290",
+    "length": 3,
+    "text": "MOV DPTR,#0x756",
+    "bytes": "900756",
+    "flow_type": "FALL_THROUGH",
+    "references": []
+  },
+  {
+    "address": "CODE:4293",
+    "length": 1,
+    "text": "MOVX @DPTR,A",
+    "bytes": "f0",
+    "flow_type": "FALL_THROUGH",
+    "references": [
+      {
+        "to": "EXTMEM:0756",
+        "type": "WRITE"
+      }
+    ]
+  },
+  {
+    "address": "CODE:4294",
+    "length": 3,
+    "text": "MOV DPTR,#0xde8",
+    "bytes": "900de8",
+    "flow_type": "FALL_THROUGH",
+    "references": []
+  },
+  {
+    "address": "CODE:4297",
+    "length": 1,
+    "text": "MOVX A,@DPTR",
+    "bytes": "e0",
+    "flow_type": "FALL_THROUGH",
+    "references": [
+      {
+        "to": "EXTMEM:0de8",
+        "type": "READ"
+      }
+    ]
+  },
+  {
+    "address": "CODE:4298",
+    "length": 1,
+    "text": "MOV R3,A",
+    "bytes": "fb",
+    "flow_type": "FALL_THROUGH",
+    "references": []
+  },
+  {
+    "address": "CODE:4299",
+    "length": 1,
+    "text": "INC DPTR",
+    "bytes": "a3",
+    "flow_type": "FALL_THROUGH",
+    "references": []
+  },
+  {
+    "address": "CODE:429a",
+    "length": 1,
+    "text": "MOVX A,@DPTR",
+    "bytes": "e0",
+    "flow_type": "FALL_THROUGH",
+    "references": [
+      {
+        "to": "EXTMEM:0de9",
+        "type": "READ"
+      }
+    ]
+  },
+  {
+    "address": "CODE:429b",
+    "length": 1,
+    "text": "MOV R2,A",
+    "bytes": "fa",
+    "flow_type": "FALL_THROUGH",
+    "references": []
+  },
+  {
+    "address": "CODE:429c",
+    "length": 1,
+    "text": "INC DPTR",
+    "bytes": "a3",
+    "flow_type": "FALL_THROUGH",
+    "references": []
+  },
+  {
+    "address": "CODE:429d",
+    "length": 1,
+    "text": "MOVX A,@DPTR",
+    "bytes": "e0",
+    "flow_type": "FALL_THROUGH",
+    "references": [
+      {
+        "to": "EXTMEM:0dea",
+        "type": "READ"
+      }
+    ]
+  },
+  {
+    "address": "CODE:429e",
+    "length": 1,
+    "text": "MOV R1,A",
+    "bytes": "f9",
+    "flow_type": "FALL_THROUGH",
+    "references": []
+  },
+  {
+    "address": "CODE:429f",
+    "length": 3,
+    "text": "MOV DPTR,#0xe",
+    "bytes": "90000e",
+    "flow_type": "FALL_THROUGH",
+    "references": []
+  },
+  {
+    "address": "CODE:42a2",
+    "length": 1,
+    "text": "MOV A,R7",
+    "bytes": "ef",
+    "flow_type": "FALL_THROUGH",
+    "references": []
+  },
+  {
+    "address": "CODE:42a3",
+    "length": 3,
+    "text": "LCALL 0x85b9",
+    "bytes": "1285b9",
+    "flow_type": "UNCONDITIONAL_CALL",
+    "references": [
+      {
+        "to": "CODE:85b9",
+        "type": "UNCONDITIONAL_CALL"
+      }
+    ]
+  },
+  {
+    "address": "CODE:42a6",
+    "length": 3,
+    "text": "LCALL 0x3b7f",
+    "bytes": "123b7f",
+    "flow_type": "UNCONDITIONAL_CALL",
+    "references": [
+      {
+        "to": "CODE:3b7f",
+        "type": "UNCONDITIONAL_CALL"
+      }
+    ]
+  },
+  {
+    "address": "CODE:42a9",
+    "length": 1,
+    "text": "CLR A",
+    "bytes": "e4",
+    "flow_type": "FALL_THROUGH",
+    "references": []
+  },
+  {
+    "address": "CODE:42aa",
+    "length": 1,
+    "text": "MOV R7,A",
+    "bytes": "ff",
+    "flow_type": "FALL_THROUGH",
+    "references": []
+  },
+  {
+    "address": "CODE:42ab",
+    "length": 1,
+    "text": "MOV R6,A",
+    "bytes": "fe",
+    "flow_type": "FALL_THROUGH",
+    "references": []
+  },
+  {
+    "address": "CODE:42ac",
+    "length": 1,
+    "text": "MOV R5,A",
+    "bytes": "fd",
+    "flow_type": "FALL_THROUGH",
+    "references": []
+  },
+  {
+    "address": "CODE:42ad",
+    "length": 1,
+    "text": "MOV R4,A",
+    "bytes": "fc",
+    "flow_type": "FALL_THROUGH",
+    "references": []
+  },
+  {
+    "address": "CODE:42ae",
+    "length": 1,
+    "text": "RET",
+    "bytes": "22",
+    "flow_type": "TERMINATOR",
+    "references": []
+  },
+  {
+    "address": "CODE:4614",
+    "length": 3,
+    "text": "MOV DPTR,#0x74f",
+    "bytes": "90074f",
+    "flow_type": "FALL_THROUGH",
+    "references": []
+  },
+  {
+    "address": "CODE:4617",
+    "length": 1,
+    "text": "MOV A,R3",
+    "bytes": "eb",
+    "flow_type": "FALL_THROUGH",
+    "references": []
+  },
+  {
+    "address": "CODE:4618",
+    "length": 1,
+    "text": "MOVX @DPTR,A",
+    "bytes": "f0",
+    "flow_type": "FALL_THROUGH",
+    "references": [
+      {
+        "to": "EXTMEM:074f",
+        "type": "WRITE"
+      }
+    ]
+  },
+  {
+    "address": "CODE:4619",
+    "length": 1,
+    "text": "INC DPTR",
+    "bytes": "a3",
+    "flow_type": "FALL_THROUGH",
+    "references": []
+  },
+  {
+    "address": "CODE:461a",
+    "length": 1,
+    "text": "MOV A,R2",
+    "bytes": "ea",
+    "flow_type": "FALL_THROUGH",
+    "references": []
+  },
+  {
+    "address": "CODE:461b",
+    "length": 1,
+    "text": "MOVX @DPTR,A",
+    "bytes": "f0",
+    "flow_type": "FALL_THROUGH",
+    "references": [
+      {
+        "to": "EXTMEM:0750",
+        "type": "WRITE"
+      }
+    ]
+  },
+  {
+    "address": "CODE:461c",
+    "length": 1,
+    "text": "INC DPTR",
+    "bytes": "a3",
+    "flow_type": "FALL_THROUGH",
+    "references": []
+  },
+  {
+    "address": "CODE:461d",
+    "length": 1,
+    "text": "MOV A,R1",
+    "bytes": "e9",
+    "flow_type": "FALL_THROUGH",
+    "references": []
+  },
+  {
+    "address": "CODE:461e",
+    "length": 1,
+    "text": "MOVX @DPTR,A",
+    "bytes": "f0",
+    "flow_type": "FALL_THROUGH",
+    "references": [
+      {
+        "to": "EXTMEM:0751",
+        "type": "WRITE"
+      }
+    ]
+  },
+  {
+    "address": "CODE:461f",
+    "length": 1,
+    "text": "INC DPTR",
+    "bytes": "a3",
+    "flow_type": "FALL_THROUGH",
+    "references": []
+  },
+  {
+    "address": "CODE:4620",
+    "length": 3,
+    "text": "LCALL 0x8850",
+    "bytes": "128850",
+    "flow_type": "CALL_TERMINATOR",
+    "references": [
+      {
+        "to": "CODE:8850",
+        "type": "UNCONDITIONAL_CALL"
+      },
+      {
+        "to": "CODE:4627",
+        "type": "FALL_THROUGH"
+      }
+    ]
+  },
+  {
+    "address": "CODE:4627",
+    "length": 3,
+    "text": "MOV DPTR,#0x74f",
+    "bytes": "90074f",
+    "flow_type": "FALL_THROUGH",
+    "references": []
+  },
+  {
+    "address": "CODE:462a",
+    "length": 1,
+    "text": "MOVX A,@DPTR",
+    "bytes": "e0",
+    "flow_type": "FALL_THROUGH",
+    "references": [
+      {
+        "to": "EXTMEM:074f",
+        "type": "READ"
+      }
+    ]
+  },
+  {
+    "address": "CODE:462b",
+    "length": 1,
+    "text": "MOV R3,A",
+    "bytes": "fb",
+    "flow_type": "FALL_THROUGH",
+    "references": []
+  },
+  {
+    "address": "CODE:462c",
+    "length": 1,
+    "text": "INC DPTR",
+    "bytes": "a3",
+    "flow_type": "FALL_THROUGH",
+    "references": []
+  },
+  {
+    "address": "CODE:462d",
+    "length": 1,
+    "text": "MOVX A,@DPTR",
+    "bytes": "e0",
+    "flow_type": "FALL_THROUGH",
+    "references": [
+      {
+        "to": "EXTMEM:0750",
+        "type": "READ"
+      }
+    ]
+  },
+  {
+    "address": "CODE:462e",
+    "length": 1,
+    "text": "MOV R2,A",
+    "bytes": "fa",
+    "flow_type": "FALL_THROUGH",
+    "references": []
+  },
+  {
+    "address": "CODE:462f",
+    "length": 1,
+    "text": "INC DPTR",
+    "bytes": "a3",
+    "flow_type": "FALL_THROUGH",
+    "references": []
+  },
+  {
+    "address": "CODE:4630",
+    "length": 1,
+    "text": "MOVX A,@DPTR",
+    "bytes": "e0",
+    "flow_type": "FALL_THROUGH",
+    "references": [
+      {
+        "to": "EXTMEM:0751",
+        "type": "READ"
+      }
+    ]
+  },
+  {
+    "address": "CODE:4631",
+    "length": 1,
+    "text": "MOV R1,A",
+    "bytes": "f9",
+    "flow_type": "FALL_THROUGH",
+    "references": []
+  },
+  {
+    "address": "CODE:4632",
+    "length": 3,
+    "text": "MOV DPTR,#0x1",
+    "bytes": "900001",
+    "flow_type": "FALL_THROUGH",
+    "references": []
+  },
+  {
+    "address": "CODE:4635",
+    "length": 3,
+    "text": "LCALL 0x857a",
+    "bytes": "12857a",
+    "flow_type": "UNCONDITIONAL_CALL",
+    "references": [
+      {
+        "to": "CODE:857a",
+        "type": "UNCONDITIONAL_CALL"
+      }
+    ]
+  },
+  {
+    "address": "CODE:4638",
+    "length": 3,
+    "text": "CJNE A,#0xa,0x463b",
+    "bytes": "b40a00",
+    "flow_type": "CONDITIONAL_JUMP",
+    "references": [
+      {
+        "to": "CODE:463b",
+        "type": "CONDITIONAL_JUMP"
+      }
+    ]
+  },
+  {
+    "address": "CODE:463b",
+    "length": 2,
+    "text": "JC 0x4640",
+    "bytes": "4003",
+    "flow_type": "CONDITIONAL_JUMP",
+    "references": [
+      {
+        "to": "CODE:4640",
+        "type": "CONDITIONAL_JUMP"
+      }
+    ]
+  },
+  {
+    "address": "CODE:463d",
+    "length": 3,
+    "text": "LJMP 0x4726",
+    "bytes": "024726",
+    "flow_type": "CALL_TERMINATOR",
+    "references": [
+      {
+        "to": "CODE:4726",
+        "type": "UNCONDITIONAL_CALL"
+      }
+    ]
+  },
+  {
+    "address": "CODE:4640",
+    "length": 3,
+    "text": "MOV DPTR,#0x4647",
+    "bytes": "904647",
+    "flow_type": "FALL_THROUGH",
+    "references": []
+  },
+  {
+    "address": "CODE:4643",
+    "length": 1,
+    "text": "MOV R0,A",
+    "bytes": "f8",
+    "flow_type": "FALL_THROUGH",
+    "references": []
+  },
+  {
+    "address": "CODE:4644",
+    "length": 1,
+    "text": "ADD A,R0",
+    "bytes": "28",
+    "flow_type": "FALL_THROUGH",
+    "references": []
+  },
+  {
+    "address": "CODE:4645",
+    "length": 1,
+    "text": "ADD A,R0",
+    "bytes": "28",
+    "flow_type": "FALL_THROUGH",
+    "references": []
+  },
+  {
+    "address": "CODE:4646",
+    "length": 1,
+    "text": "JMP @A+DPTR",
+    "bytes": "73",
+    "flow_type": "COMPUTED_JUMP",
+    "references": []
+  },
+  {
+    "address": "CODE:4665",
+    "length": 3,
+    "text": "MOV DPTR,#0xde8",
+    "bytes": "900de8",
+    "flow_type": "FALL_THROUGH",
+    "references": []
+  },
+  {
+    "address": "CODE:4668",
+    "length": 1,
+    "text": "MOVX A,@DPTR",
+    "bytes": "e0",
+    "flow_type": "FALL_THROUGH",
+    "references": [
+      {
+        "to": "EXTMEM:0de8",
+        "type": "READ"
+      }
+    ]
+  },
+  {
+    "address": "CODE:4669",
+    "length": 1,
+    "text": "MOV R3,A",
+    "bytes": "fb",
+    "flow_type": "FALL_THROUGH",
+    "references": []
+  },
+  {
+    "address": "CODE:466a",
+    "length": 1,
+    "text": "INC DPTR",
+    "bytes": "a3",
+    "flow_type": "FALL_THROUGH",
+    "references": []
+  },
+  {
+    "address": "CODE:466b",
+    "length": 1,
+    "text": "MOVX A,@DPTR",
+    "bytes": "e0",
+    "flow_type": "FALL_THROUGH",
+    "references": [
+      {
+        "to": "EXTMEM:0de9",
+        "type": "READ"
+      }
+    ]
+  },
+  {
+    "address": "CODE:466c",
+    "length": 1,
+    "text": "MOV R2,A",
+    "bytes": "fa",
+    "flow_type": "FALL_THROUGH",
+    "references": []
+  },
+  {
+    "address": "CODE:466d",
+    "length": 1,
+    "text": "INC DPTR",
+    "bytes": "a3",
+    "flow_type": "FALL_THROUGH",
+    "references": []
+  },
+  {
+    "address": "CODE:466e",
+    "length": 1,
+    "text": "MOVX A,@DPTR",
+    "bytes": "e0",
+    "flow_type": "FALL_THROUGH",
+    "references": [
+      {
+        "to": "EXTMEM:0dea",
+        "type": "READ"
+      }
+    ]
+  },
+  {
+    "address": "CODE:466f",
+    "length": 1,
+    "text": "MOV R1,A",
+    "bytes": "f9",
+    "flow_type": "FALL_THROUGH",
+    "references": []
+  },
+  {
+    "address": "CODE:4670",
+    "length": 3,
+    "text": "MOV DPTR,#0x2",
+    "bytes": "900002",
+    "flow_type": "FALL_THROUGH",
+    "references": []
+  },
+  {
+    "address": "CODE:4673",
+    "length": 3,
+    "text": "LCALL 0x857a",
+    "bytes": "12857a",
+    "flow_type": "UNCONDITIONAL_CALL",
+    "references": [
+      {
+        "to": "CODE:857a",
+        "type": "UNCONDITIONAL_CALL"
+      }
+    ]
+  },
+  {
+    "address": "CODE:4676",
+    "length": 2,
+    "text": "JZ 0x467b",
+    "bytes": "6003",
+    "flow_type": "CONDITIONAL_JUMP",
+    "references": [
+      {
+        "to": "CODE:467b",
+        "type": "CONDITIONAL_JUMP"
+      }
+    ]
+  },
+  {
+    "address": "CODE:4678",
+    "length": 3,
+    "text": "LJMP 0x4730",
+    "bytes": "024730",
+    "flow_type": "CALL_TERMINATOR",
+    "references": [
+      {
+        "to": "CODE:4730",
+        "type": "UNCONDITIONAL_CALL"
+      }
+    ]
+  },
+  {
+    "address": "CODE:467b",
+    "length": 3,
+    "text": "MOV DPTR,#0x74f",
+    "bytes": "90074f",
+    "flow_type": "FALL_THROUGH",
+    "references": []
+  },
+  {
+    "address": "CODE:467e",
+    "length": 1,
+    "text": "MOVX A,@DPTR",
+    "bytes": "e0",
+    "flow_type": "FALL_THROUGH",
+    "references": [
+      {
+        "to": "EXTMEM:074f",
+        "type": "READ"
+      }
+    ]
+  },
+  {
+    "address": "CODE:467f",
+    "length": 1,
+    "text": "MOV R3,A",
+    "bytes": "fb",
+    "flow_type": "FALL_THROUGH",
+    "references": []
+  },
+  {
+    "address": "CODE:4680",
+    "length": 1,
+    "text": "INC DPTR",
+    "bytes": "a3",
+    "flow_type": "FALL_THROUGH",
+    "references": []
+  },
+  {
+    "address": "CODE:4681",
+    "length": 1,
+    "text": "MOVX A,@DPTR",
+    "bytes": "e0",
+    "flow_type": "FALL_THROUGH",
+    "references": [
+      {
+        "to": "EXTMEM:0750",
+        "type": "READ"
+      }
+    ]
+  },
+  {
+    "address": "CODE:4682",
+    "length": 1,
+    "text": "MOV R2,A",
+    "bytes": "fa",
+    "flow_type": "FALL_THROUGH",
+    "references": []
+  },
+  {
+    "address": "CODE:4683",
+    "length": 1,
+    "text": "INC DPTR",
+    "bytes": "a3",
+    "flow_type": "FALL_THROUGH",
+    "references": []
+  },
+  {
+    "address": "CODE:4684",
+    "length": 1,
+    "text": "MOVX A,@DPTR",
+    "bytes": "e0",
+    "flow_type": "FALL_THROUGH",
+    "references": [
+      {
+        "to": "EXTMEM:0751",
+        "type": "READ"
+      }
+    ]
+  },
+  {
+    "address": "CODE:4685",
+    "length": 1,
+    "text": "MOV R1,A",
+    "bytes": "f9",
+    "flow_type": "FALL_THROUGH",
+    "references": []
+  },
+  {
+    "address": "CODE:4686",
+    "length": 3,
+    "text": "LCALL 0x4034",
+    "bytes": "124034",
+    "flow_type": "UNCONDITIONAL_CALL",
+    "references": [
+      {
+        "to": "CODE:4034",
+        "type": "UNCONDITIONAL_CALL"
+      }
+    ]
+  },
+  {
+    "address": "CODE:4689",
+    "length": 3,
+    "text": "LJMP 0x471e",
+    "bytes": "02471e",
+    "flow_type": "UNCONDITIONAL_JUMP",
+    "references": [
+      {
+        "to": "CODE:471e",
+        "type": "UNCONDITIONAL_JUMP"
+      }
+    ]
+  },
+  {
+    "address": "CODE:468c",
+    "length": 3,
+    "text": "MOV DPTR,#0xde8",
+    "bytes": "900de8",
+    "flow_type": "FALL_THROUGH",
+    "references": []
+  },
+  {
+    "address": "CODE:468f",
+    "length": 1,
+    "text": "MOVX A,@DPTR",
+    "bytes": "e0",
+    "flow_type": "FALL_THROUGH",
+    "references": [
+      {
+        "to": "EXTMEM:0de8",
+        "type": "READ"
+      }
+    ]
+  },
+  {
+    "address": "CODE:4690",
+    "length": 1,
+    "text": "MOV R3,A",
+    "bytes": "fb",
+    "flow_type": "FALL_THROUGH",
+    "references": []
+  },
+  {
+    "address": "CODE:4691",
+    "length": 1,
+    "text": "INC DPTR",
+    "bytes": "a3",
+    "flow_type": "FALL_THROUGH",
+    "references": []
+  },
+  {
+    "address": "CODE:4692",
+    "length": 1,
+    "text": "MOVX A,@DPTR",
+    "bytes": "e0",
+    "flow_type": "FALL_THROUGH",
+    "references": [
+      {
+        "to": "EXTMEM:0de9",
+        "type": "READ"
+      }
+    ]
+  },
+  {
+    "address": "CODE:4693",
+    "length": 1,
+    "text": "MOV R2,A",
+    "bytes": "fa",
+    "flow_type": "FALL_THROUGH",
+    "references": []
+  },
+  {
+    "address": "CODE:4694",
+    "length": 1,
+    "text": "INC DPTR",
+    "bytes": "a3",
+    "flow_type": "FALL_THROUGH",
+    "references": []
+  },
+  {
+    "address": "CODE:4695",
+    "length": 1,
+    "text": "MOVX A,@DPTR",
+    "bytes": "e0",
+    "flow_type": "FALL_THROUGH",
+    "references": [
+      {
+        "to": "EXTMEM:0dea",
+        "type": "READ"
+      }
+    ]
+  },
+  {
+    "address": "CODE:4696",
+    "length": 1,
+    "text": "MOV R1,A",
+    "bytes": "f9",
+    "flow_type": "FALL_THROUGH",
+    "references": []
+  },
+  {
+    "address": "CODE:4697",
+    "length": 3,
+    "text": "MOV DPTR,#0x2",
+    "bytes": "900002",
+    "flow_type": "FALL_THROUGH",
+    "references": []
+  },
+  {
+    "address": "CODE:469a",
+    "length": 3,
+    "text": "LCALL 0x857a",
+    "bytes": "12857a",
+    "flow_type": "UNCONDITIONAL_CALL",
+    "references": [
+      {
+        "to": "CODE:857a",
+        "type": "UNCONDITIONAL_CALL"
+      }
+    ]
+  },
+  {
+    "address": "CODE:469d",
+    "length": 2,
+    "text": "JZ 0x46a2",
+    "bytes": "6003",
+    "flow_type": "CONDITIONAL_JUMP",
+    "references": [
+      {
+        "to": "CODE:46a2",
+        "type": "CONDITIONAL_JUMP"
+      }
+    ]
+  },
+  {
+    "address": "CODE:469f",
+    "length": 3,
+    "text": "LJMP 0x4730",
+    "bytes": "024730",
+    "flow_type": "CALL_TERMINATOR",
+    "references": [
+      {
+        "to": "CODE:4730",
+        "type": "UNCONDITIONAL_CALL"
+      }
+    ]
+  },
+  {
+    "address": "CODE:46a2",
+    "length": 3,
+    "text": "MOV DPTR,#0x74f",
+    "bytes": "90074f",
+    "flow_type": "FALL_THROUGH",
+    "references": []
+  },
+  {
+    "address": "CODE:46a5",
+    "length": 1,
+    "text": "MOVX A,@DPTR",
+    "bytes": "e0",
+    "flow_type": "FALL_THROUGH",
+    "references": [
+      {
+        "to": "EXTMEM:074f",
+        "type": "READ"
+      }
+    ]
+  },
+  {
+    "address": "CODE:46a6",
+    "length": 1,
+    "text": "MOV R3,A",
+    "bytes": "fb",
+    "flow_type": "FALL_THROUGH",
+    "references": []
+  },
+  {
+    "address": "CODE:46a7",
+    "length": 1,
+    "text": "INC DPTR",
+    "bytes": "a3",
+    "flow_type": "FALL_THROUGH",
+    "references": []
+  },
+  {
+    "address": "CODE:46a8",
+    "length": 1,
+    "text": "MOVX A,@DPTR",
+    "bytes": "e0",
+    "flow_type": "FALL_THROUGH",
+    "references": [
+      {
+        "to": "EXTMEM:0750",
+        "type": "READ"
+      }
+    ]
+  },
+  {
+    "address": "CODE:46a9",
+    "length": 1,
+    "text": "MOV R2,A",
+    "bytes": "fa",
+    "flow_type": "FALL_THROUGH",
+    "references": []
+  },
+  {
+    "address": "CODE:46aa",
+    "length": 1,
+    "text": "INC DPTR",
+    "bytes": "a3",
+    "flow_type": "FALL_THROUGH",
+    "references": []
+  },
+  {
+    "address": "CODE:46ab",
+    "length": 1,
+    "text": "MOVX A,@DPTR",
+    "bytes": "e0",
+    "flow_type": "FALL_THROUGH",
+    "references": [
+      {
+        "to": "EXTMEM:0751",
+        "type": "READ"
+      }
+    ]
+  },
+  {
+    "address": "CODE:46ac",
+    "length": 1,
+    "text": "MOV R1,A",
+    "bytes": "f9",
+    "flow_type": "FALL_THROUGH",
+    "references": []
+  },
+  {
+    "address": "CODE:46ad",
+    "length": 3,
+    "text": "LCALL 0x405d",
+    "bytes": "12405d",
+    "flow_type": "UNCONDITIONAL_CALL",
+    "references": [
+      {
+        "to": "CODE:405d",
+        "type": "UNCONDITIONAL_CALL"
+      }
+    ]
+  },
+  {
+    "address": "CODE:46b0",
+    "length": 2,
+    "text": "SJMP 0x471e",
+    "bytes": "806c",
+    "flow_type": "UNCONDITIONAL_JUMP",
+    "references": [
+      {
+        "to": "CODE:471e",
+        "type": "UNCONDITIONAL_JUMP"
+      }
+    ]
+  },
+  {
+    "address": "CODE:46b2",
+    "length": 3,
+    "text": "MOV DPTR,#0x74f",
+    "bytes": "90074f",
+    "flow_type": "FALL_THROUGH",
+    "references": []
+  },
+  {
+    "address": "CODE:46b5",
+    "length": 1,
+    "text": "MOVX A,@DPTR",
+    "bytes": "e0",
+    "flow_type": "FALL_THROUGH",
+    "references": [
+      {
+        "to": "EXTMEM:074f",
+        "type": "READ"
+      }
+    ]
+  },
+  {
+    "address": "CODE:46b6",
+    "length": 1,
+    "text": "MOV R3,A",
+    "bytes": "fb",
+    "flow_type": "FALL_THROUGH",
+    "references": []
+  },
+  {
+    "address": "CODE:46b7",
+    "length": 1,
+    "text": "INC DPTR",
+    "bytes": "a3",
+    "flow_type": "FALL_THROUGH",
+    "references": []
+  },
+  {
+    "address": "CODE:46b8",
+    "length": 1,
+    "text": "MOVX A,@DPTR",
+    "bytes": "e0",
+    "flow_type": "FALL_THROUGH",
+    "references": [
+      {
+        "to": "EXTMEM:0750",
+        "type": "READ"
+      }
+    ]
+  },
+  {
+    "address": "CODE:46b9",
+    "length": 1,
+    "text": "MOV R2,A",
+    "bytes": "fa",
+    "flow_type": "FALL_THROUGH",
+    "references": []
+  },
+  {
+    "address": "CODE:46ba",
+    "length": 1,
+    "text": "INC DPTR",
+    "bytes": "a3",
+    "flow_type": "FALL_THROUGH",
+    "references": []
+  },
+  {
+    "address": "CODE:46bb",
+    "length": 1,
+    "text": "MOVX A,@DPTR",
+    "bytes": "e0",
+    "flow_type": "FALL_THROUGH",
+    "references": [
+      {
+        "to": "EXTMEM:0751",
+        "type": "READ"
+      }
+    ]
+  },
+  {
+    "address": "CODE:46bc",
+    "length": 1,
+    "text": "MOV R1,A",
+    "bytes": "f9",
+    "flow_type": "FALL_THROUGH",
+    "references": []
+  },
+  {
+    "address": "CODE:46bd",
+    "length": 3,
+    "text": "LCALL 0x4416",
+    "bytes": "124416",
+    "flow_type": "UNCONDITIONAL_CALL",
+    "references": [
+      {
+        "to": "CODE:4416",
+        "type": "UNCONDITIONAL_CALL"
+      }
+    ]
+  },
+  {
+    "address": "CODE:46c0",
+    "length": 2,
+    "text": "SJMP 0x46e0",
+    "bytes": "801e",
+    "flow_type": "UNCONDITIONAL_JUMP",
+    "references": [
+      {
+        "to": "CODE:46e0",
+        "type": "UNCONDITIONAL_JUMP"
+      }
+    ]
+  },
+  {
+    "address": "CODE:46c2",
+    "length": 3,
+    "text": "MOV DPTR,#0x74f",
+    "bytes": "90074f",
+    "flow_type": "FALL_THROUGH",
+    "references": []
+  },
+  {
+    "address": "CODE:46c5",
+    "length": 1,
+    "text": "MOVX A,@DPTR",
+    "bytes": "e0",
+    "flow_type": "FALL_THROUGH",
+    "references": [
+      {
+        "to": "EXTMEM:074f",
+        "type": "READ"
+      }
+    ]
+  },
+  {
+    "address": "CODE:46c6",
+    "length": 1,
+    "text": "MOV R3,A",
+    "bytes": "fb",
+    "flow_type": "FALL_THROUGH",
+    "references": []
+  },
+  {
+    "address": "CODE:46c7",
+    "length": 1,
+    "text": "INC DPTR",
+    "bytes": "a3",
+    "flow_type": "FALL_THROUGH",
+    "references": []
+  },
+  {
+    "address": "CODE:46c8",
+    "length": 1,
+    "text": "MOVX A,@DPTR",
+    "bytes": "e0",
+    "flow_type": "FALL_THROUGH",
+    "references": [
+      {
+        "to": "EXTMEM:0750",
+        "type": "READ"
+      }
+    ]
+  },
+  {
+    "address": "CODE:46c9",
+    "length": 1,
+    "text": "MOV R2,A",
+    "bytes": "fa",
+    "flow_type": "FALL_THROUGH",
+    "references": []
+  },
+  {
+    "address": "CODE:46ca",
+    "length": 1,
+    "text": "INC DPTR",
+    "bytes": "a3",
+    "flow_type": "FALL_THROUGH",
+    "references": []
+  },
+  {
+    "address": "CODE:46cb",
+    "length": 1,
+    "text": "MOVX A,@DPTR",
+    "bytes": "e0",
+    "flow_type": "FALL_THROUGH",
+    "references": [
+      {
+        "to": "EXTMEM:0751",
+        "type": "READ"
+      }
+    ]
+  },
+  {
+    "address": "CODE:46cc",
+    "length": 1,
+    "text": "MOV R1,A",
+    "bytes": "f9",
+    "flow_type": "FALL_THROUGH",
+    "references": []
+  },
+  {
+    "address": "CODE:46cd",
+    "length": 3,
+    "text": "LCALL 0x42af",
+    "bytes": "1242af",
+    "flow_type": "UNCONDITIONAL_CALL",
+    "references": [
+      {
+        "to": "CODE:42af",
+        "type": "UNCONDITIONAL_CALL"
+      }
+    ]
+  },
+  {
+    "address": "CODE:46d0",
+    "length": 2,
+    "text": "SJMP 0x4730",
+    "bytes": "805e",
+    "flow_type": "CALL_TERMINATOR",
+    "references": [
+      {
+        "to": "CODE:4730",
+        "type": "UNCONDITIONAL_CALL"
+      }
+    ]
+  },
+  {
+    "address": "CODE:46d2",
+    "length": 3,
+    "text": "MOV DPTR,#0x74f",
+    "bytes": "90074f",
+    "flow_type": "FALL_THROUGH",
+    "references": []
+  },
+  {
+    "address": "CODE:46d5",
+    "length": 1,
+    "text": "MOVX A,@DPTR",
+    "bytes": "e0",
+    "flow_type": "FALL_THROUGH",
+    "references": [
+      {
+        "to": "EXTMEM:074f",
+        "type": "READ"
+      }
+    ]
+  },
+  {
+    "address": "CODE:46d6",
+    "length": 1,
+    "text": "MOV R3,A",
+    "bytes": "fb",
+    "flow_type": "FALL_THROUGH",
+    "references": []
+  },
+  {
+    "address": "CODE:46d7",
+    "length": 1,
+    "text": "INC DPTR",
+    "bytes": "a3",
+    "flow_type": "FALL_THROUGH",
+    "references": []
+  },
+  {
+    "address": "CODE:46d8",
+    "length": 1,
+    "text": "MOVX A,@DPTR",
+    "bytes": "e0",
+    "flow_type": "FALL_THROUGH",
+    "references": [
+      {
+        "to": "EXTMEM:0750",
+        "type": "READ"
+      }
+    ]
+  },
+  {
+    "address": "CODE:46d9",
+    "length": 1,
+    "text": "MOV R2,A",
+    "bytes": "fa",
+    "flow_type": "FALL_THROUGH",
+    "references": []
+  },
+  {
+    "address": "CODE:46da",
+    "length": 1,
+    "text": "INC DPTR",
+    "bytes": "a3",
+    "flow_type": "FALL_THROUGH",
+    "references": []
+  },
+  {
+    "address": "CODE:46db",
+    "length": 1,
+    "text": "MOVX A,@DPTR",
+    "bytes": "e0",
+    "flow_type": "FALL_THROUGH",
+    "references": [
+      {
+        "to": "EXTMEM:0751",
+        "type": "READ"
+      }
+    ]
+  },
+  {
+    "address": "CODE:46dc",
+    "length": 1,
+    "text": "MOV R1,A",
+    "bytes": "f9",
+    "flow_type": "FALL_THROUGH",
+    "references": []
+  },
+  {
+    "address": "CODE:46dd",
+    "length": 3,
+    "text": "LCALL 0x450c",
+    "bytes": "12450c",
+    "flow_type": "UNCONDITIONAL_CALL",
+    "references": [
+      {
+        "to": "CODE:450c",
+        "type": "UNCONDITIONAL_CALL"
+      }
+    ]
+  },
+  {
+    "address": "CODE:46e0",
+    "length": 3,
+    "text": "LCALL 0x3b7f",
+    "bytes": "123b7f",
+    "flow_type": "UNCONDITIONAL_CALL",
+    "references": [
+      {
+        "to": "CODE:3b7f",
+        "type": "UNCONDITIONAL_CALL"
+      }
+    ]
+  },
+  {
+    "address": "CODE:46e3",
+    "length": 2,
+    "text": "SJMP 0x4730",
+    "bytes": "804b",
+    "flow_type": "CALL_TERMINATOR",
+    "references": [
+      {
+        "to": "CODE:4730",
+        "type": "UNCONDITIONAL_CALL"
+      }
+    ]
+  },
+  {
+    "address": "CODE:46e5",
+    "length": 3,
+    "text": "MOV DPTR,#0xde8",
+    "bytes": "900de8",
+    "flow_type": "FALL_THROUGH",
+    "references": []
+  },
+  {
+    "address": "CODE:46e8",
+    "length": 1,
+    "text": "MOVX A,@DPTR",
+    "bytes": "e0",
+    "flow_type": "FALL_THROUGH",
+    "references": [
+      {
+        "to": "EXTMEM:0de8",
+        "type": "READ"
+      }
+    ]
+  },
+  {
+    "address": "CODE:46e9",
+    "length": 1,
+    "text": "MOV R3,A",
+    "bytes": "fb",
+    "flow_type": "FALL_THROUGH",
+    "references": []
+  },
+  {
+    "address": "CODE:46ea",
+    "length": 1,
+    "text": "INC DPTR",
+    "bytes": "a3",
+    "flow_type": "FALL_THROUGH",
+    "references": []
+  },
+  {
+    "address": "CODE:46eb",
+    "length": 1,
+    "text": "MOVX A,@DPTR",
+    "bytes": "e0",
+    "flow_type": "FALL_THROUGH",
+    "references": [
+      {
+        "to": "EXTMEM:0de9",
+        "type": "READ"
+      }
+    ]
+  },
+  {
+    "address": "CODE:46ec",
+    "length": 1,
+    "text": "MOV R2,A",
+    "bytes": "fa",
+    "flow_type": "FALL_THROUGH",
+    "references": []
+  },
+  {
+    "address": "CODE:46ed",
+    "length": 1,
+    "text": "INC DPTR",
+    "bytes": "a3",
+    "flow_type": "FALL_THROUGH",
+    "references": []
+  },
+  {
+    "address": "CODE:46ee",
+    "length": 1,
+    "text": "MOVX A,@DPTR",
+    "bytes": "e0",
+    "flow_type": "FALL_THROUGH",
+    "references": [
+      {
+        "to": "EXTMEM:0dea",
+        "type": "READ"
+      }
+    ]
+  },
+  {
+    "address": "CODE:46ef",
+    "length": 1,
+    "text": "MOV R1,A",
+    "bytes": "f9",
+    "flow_type": "FALL_THROUGH",
+    "references": []
+  },
+  {
+    "address": "CODE:46f0",
+    "length": 3,
+    "text": "MOV DPTR,#0x2",
+    "bytes": "900002",
+    "flow_type": "FALL_THROUGH",
+    "references": []
+  },
+  {
+    "address": "CODE:46f3",
+    "length": 3,
+    "text": "LCALL 0x857a",
+    "bytes": "12857a",
+    "flow_type": "UNCONDITIONAL_CALL",
+    "references": [
+      {
+        "to": "CODE:857a",
+        "type": "UNCONDITIONAL_CALL"
+      }
+    ]
+  },
+  {
+    "address": "CODE:46f6",
+    "length": 2,
+    "text": "JNZ 0x4730",
+    "bytes": "7038",
+    "flow_type": "CONDITIONAL_JUMP",
+    "references": [
+      {
+        "to": "CODE:4730",
+        "type": "CONDITIONAL_JUMP"
+      }
+    ]
+  },
+  {
+    "address": "CODE:46f8",
+    "length": 3,
+    "text": "LCALL 0x4256",
+    "bytes": "124256",
+    "flow_type": "UNCONDITIONAL_CALL",
+    "references": [
+      {
+        "to": "CODE:4256",
+        "type": "UNCONDITIONAL_CALL"
+      }
+    ]
+  },
+  {
+    "address": "CODE:46fb",
+    "length": 2,
+    "text": "SJMP 0x471e",
+    "bytes": "8021",
+    "flow_type": "UNCONDITIONAL_JUMP",
+    "references": [
+      {
+        "to": "CODE:471e",
+        "type": "UNCONDITIONAL_JUMP"
+      }
+    ]
+  },
+  {
+    "address": "CODE:46fd",
+    "length": 3,
+    "text": "MOV DPTR,#0xde8",
+    "bytes": "900de8",
+    "flow_type": "FALL_THROUGH",
+    "references": []
+  },
+  {
+    "address": "CODE:4700",
+    "length": 1,
+    "text": "MOVX A,@DPTR",
+    "bytes": "e0",
+    "flow_type": "FALL_THROUGH",
+    "references": [
+      {
+        "to": "EXTMEM:0de8",
+        "type": "READ"
+      }
+    ]
+  },
+  {
+    "address": "CODE:4701",
+    "length": 1,
+    "text": "MOV R3,A",
+    "bytes": "fb",
+    "flow_type": "FALL_THROUGH",
+    "references": []
+  },
+  {
+    "address": "CODE:4702",
+    "length": 1,
+    "text": "INC DPTR",
+    "bytes": "a3",
+    "flow_type": "FALL_THROUGH",
+    "references": []
+  },
+  {
+    "address": "CODE:4703",
+    "length": 1,
+    "text": "MOVX A,@DPTR",
+    "bytes": "e0",
+    "flow_type": "FALL_THROUGH",
+    "references": [
+      {
+        "to": "EXTMEM:0de9",
+        "type": "READ"
+      }
+    ]
+  },
+  {
+    "address": "CODE:4704",
+    "length": 1,
+    "text": "MOV R2,A",
+    "bytes": "fa",
+    "flow_type": "FALL_THROUGH",
+    "references": []
+  },
+  {
+    "address": "CODE:4705",
+    "length": 1,
+    "text": "INC DPTR",
+    "bytes": "a3",
+    "flow_type": "FALL_THROUGH",
+    "references": []
+  },
+  {
+    "address": "CODE:4706",
+    "length": 1,
+    "text": "MOVX A,@DPTR",
+    "bytes": "e0",
+    "flow_type": "FALL_THROUGH",
+    "references": [
+      {
+        "to": "EXTMEM:0dea",
+        "type": "READ"
+      }
+    ]
+  },
+  {
+    "address": "CODE:4707",
+    "length": 1,
+    "text": "MOV R1,A",
+    "bytes": "f9",
+    "flow_type": "FALL_THROUGH",
+    "references": []
+  },
+  {
+    "address": "CODE:4708",
+    "length": 3,
+    "text": "MOV DPTR,#0x2",
+    "bytes": "900002",
+    "flow_type": "FALL_THROUGH",
+    "references": []
+  },
+  {
+    "address": "CODE:470b",
+    "length": 3,
+    "text": "LCALL 0x857a",
+    "bytes": "12857a",
+    "flow_type": "UNCONDITIONAL_CALL",
+    "references": [
+      {
+        "to": "CODE:857a",
+        "type": "UNCONDITIONAL_CALL"
+      }
+    ]
+  },
+  {
+    "address": "CODE:470e",
+    "length": 2,
+    "text": "JNZ 0x4730",
+    "bytes": "7020",
+    "flow_type": "CONDITIONAL_JUMP",
+    "references": [
+      {
+        "to": "CODE:4730",
+        "type": "CONDITIONAL_JUMP"
+      }
+    ]
+  },
+  {
+    "address": "CODE:4710",
+    "length": 3,
+    "text": "MOV DPTR,#0x74f",
+    "bytes": "90074f",
+    "flow_type": "FALL_THROUGH",
+    "references": []
+  },
+  {
+    "address": "CODE:4713",
+    "length": 1,
+    "text": "MOVX A,@DPTR",
+    "bytes": "e0",
+    "flow_type": "FALL_THROUGH",
+    "references": [
+      {
+        "to": "EXTMEM:074f",
+        "type": "READ"
+      }
+    ]
+  },
+  {
+    "address": "CODE:4714",
+    "length": 1,
+    "text": "MOV R3,A",
+    "bytes": "fb",
+    "flow_type": "FALL_THROUGH",
+    "references": []
+  },
+  {
+    "address": "CODE:4715",
+    "length": 1,
+    "text": "INC DPTR",
+    "bytes": "a3",
+    "flow_type": "FALL_THROUGH",
+    "references": []
+  },
+  {
+    "address": "CODE:4716",
+    "length": 1,
+    "text": "MOVX A,@DPTR",
+    "bytes": "e0",
+    "flow_type": "FALL_THROUGH",
+    "references": [
+      {
+        "to": "EXTMEM:0750",
+        "type": "READ"
+      }
+    ]
+  },
+  {
+    "address": "CODE:4717",
+    "length": 1,
+    "text": "MOV R2,A",
+    "bytes": "fa",
+    "flow_type": "FALL_THROUGH",
+    "references": []
+  },
+  {
+    "address": "CODE:4718",
+    "length": 1,
+    "text": "INC DPTR",
+    "bytes": "a3",
+    "flow_type": "FALL_THROUGH",
+    "references": []
+  },
+  {
+    "address": "CODE:4719",
+    "length": 1,
+    "text": "MOVX A,@DPTR",
+    "bytes": "e0",
+    "flow_type": "FALL_THROUGH",
+    "references": [
+      {
+        "to": "EXTMEM:0751",
+        "type": "READ"
+      }
+    ]
+  },
+  {
+    "address": "CODE:471a",
+    "length": 1,
+    "text": "MOV R1,A",
+    "bytes": "f9",
+    "flow_type": "FALL_THROUGH",
+    "references": []
+  },
+  {
+    "address": "CODE:471b",
+    "length": 3,
+    "text": "LCALL 0x4283",
+    "bytes": "124283",
+    "flow_type": "UNCONDITIONAL_CALL",
+    "references": [
+      {
+        "to": "CODE:4283",
+        "type": "UNCONDITIONAL_CALL"
+      }
+    ]
+  },
+  {
+    "address": "CODE:471e",
+    "length": 3,
+    "text": "MOV DPTR,#0x752",
+    "bytes": "900752",
+    "flow_type": "FALL_THROUGH",
+    "references": []
+  },
+  {
+    "address": "CODE:4721",
+    "length": 3,
+    "text": "LCALL 0x8844",
+    "bytes": "128844",
+    "flow_type": "UNCONDITIONAL_CALL",
+    "references": [
+      {
+        "to": "CODE:8844",
+        "type": "UNCONDITIONAL_CALL"
+      }
+    ]
+  },
+  {
+    "address": "CODE:4724",
+    "length": 2,
+    "text": "SJMP 0x4730",
+    "bytes": "800a",
+    "flow_type": "CALL_TERMINATOR",
+    "references": [
+      {
+        "to": "CODE:4730",
+        "type": "UNCONDITIONAL_CALL"
+      }
+    ]
+  },
+  {
+    "address": "CODE:4726",
+    "length": 3,
+    "text": "MOV DPTR,#0x752",
+    "bytes": "900752",
+    "flow_type": "FALL_THROUGH",
+    "references": []
+  },
+  {
+    "address": "CODE:4729",
+    "length": 3,
+    "text": "LCALL 0x8850",
+    "bytes": "128850",
+    "flow_type": "CALL_TERMINATOR",
+    "references": [
+      {
+        "to": "CODE:8850",
+        "type": "UNCONDITIONAL_CALL"
+      },
+      {
+        "to": "CODE:4730",
+        "type": "FALL_THROUGH"
+      }
+    ]
+  },
+  {
+    "address": "CODE:4730",
+    "length": 3,
+    "text": "MOV DPTR,#0x752",
+    "bytes": "900752",
+    "flow_type": "FALL_THROUGH",
+    "references": []
+  },
+  {
+    "address": "CODE:4733",
+    "length": 1,
+    "text": "MOVX A,@DPTR",
+    "bytes": "e0",
+    "flow_type": "FALL_THROUGH",
+    "references": [
+      {
+        "to": "EXTMEM:0752",
+        "type": "READ"
+      }
+    ]
+  },
+  {
+    "address": "CODE:4734",
+    "length": 1,
+    "text": "MOV R4,A",
+    "bytes": "fc",
+    "flow_type": "FALL_THROUGH",
+    "references": []
+  },
+  {
+    "address": "CODE:4735",
+    "length": 1,
+    "text": "INC DPTR",
+    "bytes": "a3",
+    "flow_type": "FALL_THROUGH",
+    "references": []
+  },
+  {
+    "address": "CODE:4736",
+    "length": 1,
+    "text": "MOVX A,@DPTR",
+    "bytes": "e0",
+    "flow_type": "FALL_THROUGH",
+    "references": [
+      {
+        "to": "EXTMEM:0753",
+        "type": "READ"
+      }
+    ]
+  },
+  {
+    "address": "CODE:4737",
+    "length": 1,
+    "text": "MOV R5,A",
+    "bytes": "fd",
+    "flow_type": "FALL_THROUGH",
+    "references": []
+  },
+  {
+    "address": "CODE:4738",
+    "length": 1,
+    "text": "INC DPTR",
+    "bytes": "a3",
+    "flow_type": "FALL_THROUGH",
+    "references": []
+  },
+  {
+    "address": "CODE:4739",
+    "length": 1,
+    "text": "MOVX A,@DPTR",
+    "bytes": "e0",
+    "flow_type": "FALL_THROUGH",
+    "references": [
+      {
+        "to": "EXTMEM:0754",
+        "type": "READ"
+      }
+    ]
+  },
+  {
+    "address": "CODE:473a",
+    "length": 1,
+    "text": "MOV R6,A",
+    "bytes": "fe",
+    "flow_type": "FALL_THROUGH",
+    "references": []
+  },
+  {
+    "address": "CODE:473b",
+    "length": 1,
+    "text": "INC DPTR",
+    "bytes": "a3",
+    "flow_type": "FALL_THROUGH",
+    "references": []
+  },
+  {
+    "address": "CODE:473c",
+    "length": 1,
+    "text": "MOVX A,@DPTR",
+    "bytes": "e0",
+    "flow_type": "FALL_THROUGH",
+    "references": [
+      {
+        "to": "EXTMEM:0755",
+        "type": "READ"
+      }
+    ]
+  },
+  {
+    "address": "CODE:473d",
+    "length": 1,
+    "text": "MOV R7,A",
+    "bytes": "ff",
+    "flow_type": "FALL_THROUGH",
+    "references": []
+  },
+  {
+    "address": "CODE:473e",
+    "length": 1,
+    "text": "RET",
+    "bytes": "22",
+    "flow_type": "TERMINATOR",
+    "references": []
+  },
+  {
+    "address": "CODE:4b29",
+    "length": 3,
+    "text": "MOV DPTR,#0xde8",
+    "bytes": "900de8",
+    "flow_type": "FALL_THROUGH",
+    "references": []
+  },
+  {
+    "address": "CODE:4b2c",
+    "length": 1,
+    "text": "MOVX A,@DPTR",
+    "bytes": "e0",
+    "flow_type": "FALL_THROUGH",
+    "references": [
+      {
+        "to": "EXTMEM:0de8",
+        "type": "READ"
+      }
+    ]
+  },
+  {
+    "address": "CODE:4b2d",
+    "length": 1,
+    "text": "MOV R3,A",
+    "bytes": "fb",
+    "flow_type": "FALL_THROUGH",
+    "references": []
+  },
+  {
+    "address": "CODE:4b2e",
+    "length": 1,
+    "text": "INC DPTR",
+    "bytes": "a3",
+    "flow_type": "FALL_THROUGH",
+    "references": []
+  },
+  {
+    "address": "CODE:4b2f",
+    "length": 1,
+    "text": "MOVX A,@DPTR",
+    "bytes": "e0",
+    "flow_type": "FALL_THROUGH",
+    "references": [
+      {
+        "to": "EXTMEM:0de9",
+        "type": "READ"
+      }
+    ]
+  },
+  {
+    "address": "CODE:4b30",
+    "length": 1,
+    "text": "MOV R2,A",
+    "bytes": "fa",
+    "flow_type": "FALL_THROUGH",
+    "references": []
+  },
+  {
+    "address": "CODE:4b31",
+    "length": 1,
+    "text": "INC DPTR",
+    "bytes": "a3",
+    "flow_type": "FALL_THROUGH",
+    "references": []
+  },
+  {
+    "address": "CODE:4b32",
+    "length": 1,
+    "text": "MOVX A,@DPTR",
+    "bytes": "e0",
+    "flow_type": "FALL_THROUGH",
+    "references": [
+      {
+        "to": "EXTMEM:0dea",
+        "type": "READ"
+      }
+    ]
+  },
+  {
+    "address": "CODE:4b33",
+    "length": 1,
+    "text": "MOV R1,A",
+    "bytes": "f9",
+    "flow_type": "FALL_THROUGH",
+    "references": []
+  },
+  {
+    "address": "CODE:4b34",
+    "length": 3,
+    "text": "MOV DPTR,#0x3",
+    "bytes": "900003",
+    "flow_type": "FALL_THROUGH",
+    "references": []
+  },
+  {
+    "address": "CODE:4b37",
+    "length": 1,
+    "text": "CLR A",
+    "bytes": "e4",
+    "flow_type": "FALL_THROUGH",
+    "references": []
+  },
+  {
+    "address": "CODE:4b38",
+    "length": 3,
+    "text": "LCALL 0x85b9",
+    "bytes": "1285b9",
+    "flow_type": "UNCONDITIONAL_CALL",
+    "references": [
+      {
+        "to": "CODE:85b9",
+        "type": "UNCONDITIONAL_CALL"
+      }
+    ]
+  },
+  {
+    "address": "CODE:4b3b",
+    "length": 3,
+    "text": "MOV DPTR,#0x2",
+    "bytes": "900002",
+    "flow_type": "FALL_THROUGH",
+    "references": []
+  },
+  {
+    "address": "CODE:4b3e",
+    "length": 1,
+    "text": "CLR A",
+    "bytes": "e4",
+    "flow_type": "FALL_THROUGH",
+    "references": []
+  },
+  {
+    "address": "CODE:4b3f",
+    "length": 3,
+    "text": "LCALL 0x85b9",
+    "bytes": "1285b9",
+    "flow_type": "UNCONDITIONAL_CALL",
+    "references": [
+      {
+        "to": "CODE:85b9",
+        "type": "UNCONDITIONAL_CALL"
+      }
+    ]
+  },
+  {
+    "address": "CODE:4b42",
+    "length": 3,
+    "text": "MOV DPTR,#0x4",
+    "bytes": "900004",
+    "flow_type": "FALL_THROUGH",
+    "references": []
+  },
+  {
+    "address": "CODE:4b45",
+    "length": 1,
+    "text": "CLR A",
+    "bytes": "e4",
+    "flow_type": "FALL_THROUGH",
+    "references": []
+  },
+  {
+    "address": "CODE:4b46",
+    "length": 3,
+    "text": "LCALL 0x85b9",
+    "bytes": "1285b9",
+    "flow_type": "UNCONDITIONAL_CALL",
+    "references": [
+      {
+        "to": "CODE:85b9",
+        "type": "UNCONDITIONAL_CALL"
+      }
+    ]
+  },
+  {
+    "address": "CODE:4b49",
+    "length": 3,
+    "text": "MOV DPTR,#0x2",
+    "bytes": "900002",
+    "flow_type": "FALL_THROUGH",
+    "references": []
+  },
+  {
+    "address": "CODE:4b4c",
+    "length": 1,
+    "text": "CLR A",
+    "bytes": "e4",
+    "flow_type": "FALL_THROUGH",
+    "references": []
+  },
+  {
+    "address": "CODE:4b4d",
+    "length": 3,
+    "text": "LCALL 0x85b9",
+    "bytes": "1285b9",
+    "flow_type": "UNCONDITIONAL_CALL",
+    "references": [
+      {
+        "to": "CODE:85b9",
+        "type": "UNCONDITIONAL_CALL"
+      }
+    ]
+  },
+  {
+    "address": "CODE:4b50",
+    "length": 3,
+    "text": "MOV DPTR,#0x1",
+    "bytes": "900001",
+    "flow_type": "FALL_THROUGH",
+    "references": []
+  },
+  {
+    "address": "CODE:4b53",
+    "length": 1,
+    "text": "CLR A",
+    "bytes": "e4",
+    "flow_type": "FALL_THROUGH",
+    "references": []
+  },
+  {
+    "address": "CODE:4b54",
+    "length": 3,
+    "text": "LCALL 0x85b9",
+    "bytes": "1285b9",
+    "flow_type": "UNCONDITIONAL_CALL",
+    "references": [
+      {
+        "to": "CODE:85b9",
+        "type": "UNCONDITIONAL_CALL"
+      }
+    ]
+  },
+  {
+    "address": "CODE:4b57",
+    "length": 3,
+    "text": "MOV DPTR,#0x5",
+    "bytes": "900005",
+    "flow_type": "FALL_THROUGH",
+    "references": []
+  },
+  {
+    "address": "CODE:4b5a",
+    "length": 1,
+    "text": "CLR A",
+    "bytes": "e4",
+    "flow_type": "FALL_THROUGH",
+    "references": []
+  },
+  {
+    "address": "CODE:4b5b",
+    "length": 3,
+    "text": "LCALL 0x85b9",
+    "bytes": "1285b9",
+    "flow_type": "UNCONDITIONAL_CALL",
+    "references": [
+      {
+        "to": "CODE:85b9",
+        "type": "UNCONDITIONAL_CALL"
+      }
+    ]
+  },
+  {
+    "address": "CODE:4b5e",
+    "length": 3,
+    "text": "MOV DPTR,#0xf",
+    "bytes": "90000f",
+    "flow_type": "FALL_THROUGH",
+    "references": []
+  },
+  {
+    "address": "CODE:4b61",
+    "length": 1,
+    "text": "CLR A",
+    "bytes": "e4",
+    "flow_type": "FALL_THROUGH",
+    "references": []
+  },
+  {
+    "address": "CODE:4b62",
+    "length": 2,
+    "text": "MOV B,A",
+    "bytes": "f5f0",
+    "flow_type": "FALL_THROUGH",
+    "references": []
+  },
+  {
+    "address": "CODE:4b64",
+    "length": 3,
+    "text": "LCALL 0x86d6",
+    "bytes": "1286d6",
+    "flow_type": "UNCONDITIONAL_CALL",
+    "references": [
+      {
+        "to": "CODE:86d6",
+        "type": "UNCONDITIONAL_CALL"
+      }
+    ]
+  },
+  {
+    "address": "CODE:4b67",
+    "length": 3,
+    "text": "MOV DPTR,#0x11",
+    "bytes": "900011",
+    "flow_type": "FALL_THROUGH",
+    "references": []
+  },
+  {
+    "address": "CODE:4b6a",
+    "length": 1,
+    "text": "CLR A",
+    "bytes": "e4",
+    "flow_type": "FALL_THROUGH",
+    "references": []
+  },
+  {
+    "address": "CODE:4b6b",
+    "length": 3,
+    "text": "LCALL 0x85b9",
+    "bytes": "1285b9",
+    "flow_type": "UNCONDITIONAL_CALL",
+    "references": [
+      {
+        "to": "CODE:85b9",
+        "type": "UNCONDITIONAL_CALL"
+      }
+    ]
+  },
+  {
+    "address": "CODE:4b6e",
+    "length": 1,
+    "text": "MOV A,R7",
+    "bytes": "ef",
+    "flow_type": "FALL_THROUGH",
+    "references": []
+  },
+  {
+    "address": "CODE:4b6f",
+    "length": 2,
+    "text": "JNZ 0x4b83",
+    "bytes": "7012",
+    "flow_type": "CONDITIONAL_JUMP",
+    "references": [
+      {
+        "to": "CODE:4b83",
+        "type": "CONDITIONAL_JUMP"
+      }
+    ]
+  },
+  {
+    "address": "CODE:4b71",
+    "length": 3,
+    "text": "MOV DPTR,#0xde8",
+    "bytes": "900de8",
+    "flow_type": "FALL_THROUGH",
+    "references": []
+  },
+  {
+    "address": "CODE:4b74",
+    "length": 1,
+    "text": "MOVX A,@DPTR",
+    "bytes": "e0",
+    "flow_type": "FALL_THROUGH",
+    "references": [
+      {
+        "to": "EXTMEM:0de8",
+        "type": "READ"
+      }
+    ]
+  },
+  {
+    "address": "CODE:4b75",
+    "length": 1,
+    "text": "MOV R3,A",
+    "bytes": "fb",
+    "flow_type": "FALL_THROUGH",
+    "references": []
+  },
+  {
+    "address": "CODE:4b76",
+    "length": 1,
+    "text": "INC DPTR",
+    "bytes": "a3",
+    "flow_type": "FALL_THROUGH",
+    "references": []
+  },
+  {
+    "address": "CODE:4b77",
+    "length": 1,
+    "text": "MOVX A,@DPTR",
+    "bytes": "e0",
+    "flow_type": "FALL_THROUGH",
+    "references": [
+      {
+        "to": "EXTMEM:0de9",
+        "type": "READ"
+      }
+    ]
+  },
+  {
+    "address": "CODE:4b78",
+    "length": 1,
+    "text": "MOV R2,A",
+    "bytes": "fa",
+    "flow_type": "FALL_THROUGH",
+    "references": []
+  },
+  {
+    "address": "CODE:4b79",
+    "length": 1,
+    "text": "INC DPTR",
+    "bytes": "a3",
+    "flow_type": "FALL_THROUGH",
+    "references": []
+  },
+  {
+    "address": "CODE:4b7a",
+    "length": 1,
+    "text": "MOVX A,@DPTR",
+    "bytes": "e0",
+    "flow_type": "FALL_THROUGH",
+    "references": [
+      {
+        "to": "EXTMEM:0dea",
+        "type": "READ"
+      }
+    ]
+  },
+  {
+    "address": "CODE:4b7b",
+    "length": 1,
+    "text": "MOV R1,A",
+    "bytes": "f9",
+    "flow_type": "FALL_THROUGH",
+    "references": []
+  },
+  {
+    "address": "CODE:4b7c",
+    "length": 3,
+    "text": "MOV DPTR,#0x12",
+    "bytes": "900012",
+    "flow_type": "FALL_THROUGH",
+    "references": []
+  },
+  {
+    "address": "CODE:4b7f",
+    "length": 1,
+    "text": "CLR A",
+    "bytes": "e4",
+    "flow_type": "FALL_THROUGH",
+    "references": []
+  },
+  {
+    "address": "CODE:4b80",
+    "length": 3,
+    "text": "LCALL 0x85b9",
+    "bytes": "1285b9",
+    "flow_type": "UNCONDITIONAL_CALL",
+    "references": [
+      {
+        "to": "CODE:85b9",
+        "type": "UNCONDITIONAL_CALL"
+      }
+    ]
+  },
+  {
+    "address": "CODE:4b83",
+    "length": 2,
+    "text": "MOV R7,#0x1",
+    "bytes": "7f01",
+    "flow_type": "FALL_THROUGH",
+    "references": []
+  },
+  {
+    "address": "CODE:4b85",
+    "length": 3,
+    "text": "LJMP 0x2d36",
+    "bytes": "022d36",
+    "flow_type": "CALL_TERMINATOR",
+    "references": [
+      {
+        "to": "CODE:2d36",
+        "type": "UNCONDITIONAL_CALL"
+      }
+    ]
+  },
+  {
+    "address": "CODE:4b88",
+    "length": 3,
+    "text": "MOV DPTR,#0x2fe0",
+    "bytes": "902fe0",
+    "flow_type": "FALL_THROUGH",
+    "references": []
+  },
+  {
+    "address": "CODE:4b8b",
+    "length": 2,
+    "text": "MOV A,#0x2",
+    "bytes": "7402",
+    "flow_type": "FALL_THROUGH",
+    "references": []
+  },
+  {
+    "address": "CODE:4b8d",
+    "length": 1,
+    "text": "MOVX @DPTR,A",
+    "bytes": "f0",
+    "flow_type": "FALL_THROUGH",
+    "references": [
+      {
+        "to": "EXTMEM:2fe0",
+        "type": "WRITE"
+      }
+    ]
+  },
+  {
+    "address": "CODE:4b8e",
+    "length": 2,
+    "text": "MOV R7,#0x1",
+    "bytes": "7f01",
+    "flow_type": "FALL_THROUGH",
+    "references": []
+  },
+  {
+    "address": "CODE:4b90",
+    "length": 3,
+    "text": "LCALL 0x0c96",
+    "bytes": "120c96",
+    "flow_type": "UNCONDITIONAL_CALL",
+    "references": [
+      {
+        "to": "CODE:0c96",
+        "type": "UNCONDITIONAL_CALL"
+      }
+    ]
+  },
+  {
+    "address": "CODE:4b93",
+    "length": 3,
+    "text": "MOV DPTR,#0x2fe4",
+    "bytes": "902fe4",
+    "flow_type": "FALL_THROUGH",
+    "references": []
+  },
+  {
+    "address": "CODE:4b96",
+    "length": 1,
+    "text": "MOVX A,@DPTR",
+    "bytes": "e0",
+    "flow_type": "FALL_THROUGH",
+    "references": [
+      {
+        "to": "EXTMEM:2fe4",
+        "type": "READ"
+      }
+    ]
+  },
+  {
+    "address": "CODE:4b97",
+    "length": 2,
+    "text": "ANL A,#0xef",
+    "bytes": "54ef",
+    "flow_type": "FALL_THROUGH",
+    "references": []
+  },
+  {
+    "address": "CODE:4b99",
+    "length": 1,
+    "text": "MOVX @DPTR,A",
+    "bytes": "f0",
+    "flow_type": "FALL_THROUGH",
+    "references": [
+      {
+        "to": "EXTMEM:2fe4",
+        "type": "WRITE"
+      }
+    ]
+  },
+  {
+    "address": "CODE:4b9a",
+    "length": 3,
+    "text": "MOV DPTR,#0x2fe8",
+    "bytes": "902fe8",
+    "flow_type": "FALL_THROUGH",
+    "references": []
+  },
+  {
+    "address": "CODE:4b9d",
+    "length": 1,
+    "text": "MOVX A,@DPTR",
+    "bytes": "e0",
+    "flow_type": "FALL_THROUGH",
+    "references": [
+      {
+        "to": "EXTMEM:2fe8",
+        "type": "READ"
+      }
+    ]
+  },
+  {
+    "address": "CODE:4b9e",
+    "length": 2,
+    "text": "ANL A,#0xef",
+    "bytes": "54ef",
+    "flow_type": "FALL_THROUGH",
+    "references": []
+  },
+  {
+    "address": "CODE:4ba0",
+    "length": 1,
+    "text": "MOVX @DPTR,A",
+    "bytes": "f0",
+    "flow_type": "FALL_THROUGH",
+    "references": [
+      {
+        "to": "EXTMEM:2fe8",
+        "type": "WRITE"
+      }
+    ]
+  },
+  {
+    "address": "CODE:4ba1",
+    "length": 3,
+    "text": "MOV DPTR,#0x2fe0",
+    "bytes": "902fe0",
+    "flow_type": "FALL_THROUGH",
+    "references": []
+  },
+  {
+    "address": "CODE:4ba4",
+    "length": 1,
+    "text": "CLR A",
+    "bytes": "e4",
+    "flow_type": "FALL_THROUGH",
+    "references": []
+  },
+  {
+    "address": "CODE:4ba5",
+    "length": 1,
+    "text": "MOVX @DPTR,A",
+    "bytes": "f0",
+    "flow_type": "FALL_THROUGH",
+    "references": [
+      {
+        "to": "EXTMEM:2fe0",
+        "type": "WRITE"
+      }
+    ]
+  },
+  {
+    "address": "CODE:4ba6",
+    "length": 3,
+    "text": "MOV DPTR,#0x2f50",
+    "bytes": "902f50",
+    "flow_type": "FALL_THROUGH",
+    "references": []
+  },
+  {
+    "address": "CODE:4ba9",
+    "length": 2,
+    "text": "MOV A,#0x71",
+    "bytes": "7471",
+    "flow_type": "FALL_THROUGH",
+    "references": []
+  },
+  {
+    "address": "CODE:4bab",
+    "length": 1,
+    "text": "MOVX @DPTR,A",
+    "bytes": "f0",
+    "flow_type": "FALL_THROUGH",
+    "references": [
+      {
+        "to": "EXTMEM:2f50",
+        "type": "WRITE"
+      }
+    ]
+  },
+  {
+    "address": "CODE:4bac",
+    "length": 3,
+    "text": "MOV DPTR,#0x2f52",
+    "bytes": "902f52",
+    "flow_type": "FALL_THROUGH",
+    "references": []
+  },
+  {
+    "address": "CODE:4baf",
+    "length": 2,
+    "text": "MOV A,#0xd",
+    "bytes": "740d",
+    "flow_type": "FALL_THROUGH",
+    "references": []
+  },
+  {
+    "address": "CODE:4bb1",
+    "length": 1,
+    "text": "MOVX @DPTR,A",
+    "bytes": "f0",
+    "flow_type": "FALL_THROUGH",
+    "references": [
+      {
+        "to": "EXTMEM:2f52",
+        "type": "WRITE"
+      }
+    ]
+  },
+  {
+    "address": "CODE:4bb2",
+    "length": 1,
+    "text": "INC DPTR",
+    "bytes": "a3",
+    "flow_type": "FALL_THROUGH",
+    "references": []
+  },
+  {
+    "address": "CODE:4bb3",
+    "length": 1,
+    "text": "MOVX @DPTR,A",
+    "bytes": "f0",
+    "flow_type": "FALL_THROUGH",
+    "references": [
+      {
+        "to": "EXTMEM:2f53",
+        "type": "WRITE"
+      }
+    ]
+  },
+  {
+    "address": "CODE:4bb4",
+    "length": 3,
+    "text": "MOV DPTR,#0x1106",
+    "bytes": "901106",
+    "flow_type": "FALL_THROUGH",
+    "references": []
+  },
+  {
+    "address": "CODE:4bb7",
+    "length": 1,
+    "text": "MOVX A,@DPTR",
+    "bytes": "e0",
+    "flow_type": "FALL_THROUGH",
+    "references": [
+      {
+        "to": "EXTMEM:1106",
+        "type": "READ"
+      }
+    ]
+  },
+  {
+    "address": "CODE:4bb8",
+    "length": 2,
+    "text": "ORL A,#0x40",
+    "bytes": "4440",
+    "flow_type": "FALL_THROUGH",
+    "references": []
+  },
+  {
+    "address": "CODE:4bba",
+    "length": 3,
+    "text": "LCALL 0x34df",
+    "bytes": "1234df",
+    "flow_type": "UNCONDITIONAL_CALL",
+    "references": [
+      {
+        "to": "CODE:34df",
+        "type": "UNCONDITIONAL_CALL"
+      }
+    ]
+  },
+  {
+    "address": "CODE:4bbd",
+    "length": 3,
+    "text": "MOV DPTR,#0xdd2",
+    "bytes": "900dd2",
+    "flow_type": "FALL_THROUGH",
+    "references": []
+  },
+  {
+    "address": "CODE:4bc0",
+    "length": 2,
+    "text": "MOV A,#0x1",
+    "bytes": "7401",
+    "flow_type": "FALL_THROUGH",
+    "references": []
+  },
+  {
+    "address": "CODE:4bc2",
+    "length": 1,
+    "text": "MOVX @DPTR,A",
+    "bytes": "f0",
+    "flow_type": "FALL_THROUGH",
+    "references": [
+      {
+        "to": "EXTMEM:0dd2",
+        "type": "WRITE"
+      }
+    ]
+  },
+  {
+    "address": "CODE:4bc3",
+    "length": 1,
+    "text": "RET",
+    "bytes": "22",
+    "flow_type": "TERMINATOR",
+    "references": []
+  },
+  {
+    "address": "CODE:4ce2",
+    "length": 3,
+    "text": "LCALL 0x36eb",
+    "bytes": "1236eb",
+    "flow_type": "UNCONDITIONAL_CALL",
+    "references": [
+      {
+        "to": "CODE:36eb",
+        "type": "UNCONDITIONAL_CALL"
+      }
+    ]
+  },
+  {
+    "address": "CODE:4ce5",
+    "length": 1,
+    "text": "MOV A,R7",
+    "bytes": "ef",
+    "flow_type": "FALL_THROUGH",
+    "references": []
+  },
+  {
+    "address": "CODE:4ce6",
+    "length": 2,
+    "text": "JNZ 0x4ceb",
+    "bytes": "7003",
+    "flow_type": "CONDITIONAL_JUMP",
+    "references": [
+      {
+        "to": "CODE:4ceb",
+        "type": "CONDITIONAL_JUMP"
+      }
+    ]
+  },
+  {
+    "address": "CODE:4ce8",
+    "length": 3,
+    "text": "LJMP 0x4db9",
+    "bytes": "024db9",
+    "flow_type": "UNCONDITIONAL_JUMP",
+    "references": [
+      {
+        "to": "CODE:4db9",
+        "type": "UNCONDITIONAL_JUMP"
+      }
+    ]
+  },
+  {
+    "address": "CODE:4ceb",
+    "length": 3,
+    "text": "MOV DPTR,#0xdd0",
+    "bytes": "900dd0",
+    "flow_type": "FALL_THROUGH",
+    "references": []
+  },
+  {
+    "address": "CODE:4cee",
+    "length": 1,
+    "text": "MOVX A,@DPTR",
+    "bytes": "e0",
+    "flow_type": "FALL_THROUGH",
+    "references": [
+      {
+        "to": "EXTMEM:0dd0",
+        "type": "READ"
+      }
+    ]
+  },
+  {
+    "address": "CODE:4cef",
+    "length": 3,
+    "text": "CJNE A,#0x2,0x4d15",
+    "bytes": "b40223",
+    "flow_type": "CONDITIONAL_JUMP",
+    "references": [
+      {
+        "to": "CODE:4d15",
+        "type": "CONDITIONAL_JUMP"
+      }
+    ]
+  },
+  {
+    "address": "CODE:4cf2",
+    "length": 3,
+    "text": "MOV DPTR,#0xde8",
+    "bytes": "900de8",
+    "flow_type": "FALL_THROUGH",
+    "references": []
+  },
+  {
+    "address": "CODE:4cf5",
+    "length": 1,
+    "text": "MOVX A,@DPTR",
+    "bytes": "e0",
+    "flow_type": "FALL_THROUGH",
+    "references": [
+      {
+        "to": "EXTMEM:0de8",
+        "type": "READ"
+      }
+    ]
+  },
+  {
+    "address": "CODE:4cf6",
+    "length": 1,
+    "text": "MOV R3,A",
+    "bytes": "fb",
+    "flow_type": "FALL_THROUGH",
+    "references": []
+  },
+  {
+    "address": "CODE:4cf7",
+    "length": 1,
+    "text": "INC DPTR",
+    "bytes": "a3",
+    "flow_type": "FALL_THROUGH",
+    "references": []
+  },
+  {
+    "address": "CODE:4cf8",
+    "length": 1,
+    "text": "MOVX A,@DPTR",
+    "bytes": "e0",
+    "flow_type": "FALL_THROUGH",
+    "references": [
+      {
+        "to": "EXTMEM:0de9",
+        "type": "READ"
+      }
+    ]
+  },
+  {
+    "address": "CODE:4cf9",
+    "length": 1,
+    "text": "MOV R2,A",
+    "bytes": "fa",
+    "flow_type": "FALL_THROUGH",
+    "references": []
+  },
+  {
+    "address": "CODE:4cfa",
+    "length": 1,
+    "text": "INC DPTR",
+    "bytes": "a3",
+    "flow_type": "FALL_THROUGH",
+    "references": []
+  },
+  {
+    "address": "CODE:4cfb",
+    "length": 1,
+    "text": "MOVX A,@DPTR",
+    "bytes": "e0",
+    "flow_type": "FALL_THROUGH",
+    "references": [
+      {
+        "to": "EXTMEM:0dea",
+        "type": "READ"
+      }
+    ]
+  },
+  {
+    "address": "CODE:4cfc",
+    "length": 1,
+    "text": "MOV R1,A",
+    "bytes": "f9",
+    "flow_type": "FALL_THROUGH",
+    "references": []
+  },
+  {
+    "address": "CODE:4cfd",
+    "length": 3,
+    "text": "MOV DPTR,#0x12",
+    "bytes": "900012",
+    "flow_type": "FALL_THROUGH",
+    "references": []
+  },
+  {
+    "address": "CODE:4d00",
+    "length": 3,
+    "text": "LCALL 0x857a",
+    "bytes": "12857a",
+    "flow_type": "UNCONDITIONAL_CALL",
+    "references": [
+      {
+        "to": "CODE:857a",
+        "type": "UNCONDITIONAL_CALL"
+      }
+    ]
+  },
+  {
+    "address": "CODE:4d03",
+    "length": 2,
+    "text": "JNZ 0x4d07",
+    "bytes": "7002",
+    "flow_type": "CONDITIONAL_JUMP",
+    "references": [
+      {
+        "to": "CODE:4d07",
+        "type": "CONDITIONAL_JUMP"
+      }
+    ]
+  },
+  {
+    "address": "CODE:4d05",
+    "length": 2,
+    "text": "SJMP 0x4d10",
+    "bytes": "8009",
+    "flow_type": "UNCONDITIONAL_JUMP",
+    "references": [
+      {
+        "to": "CODE:4d10",
+        "type": "UNCONDITIONAL_JUMP"
+      }
+    ]
+  },
+  {
+    "address": "CODE:4d07",
+    "length": 2,
+    "text": "MOV R7,#0x2",
+    "bytes": "7f02",
+    "flow_type": "FALL_THROUGH",
+    "references": []
+  },
+  {
+    "address": "CODE:4d09",
+    "length": 3,
+    "text": "LCALL 0x3185",
+    "bytes": "123185",
+    "flow_type": "UNCONDITIONAL_CALL",
+    "references": [
+      {
+        "to": "CODE:3185",
+        "type": "UNCONDITIONAL_CALL"
+      }
+    ]
+  },
+  {
+    "address": "CODE:4d0c",
+    "length": 3,
+    "text": "CJNE R7,#0x1,0x4d15",
+    "bytes": "bf0106",
+    "flow_type": "CONDITIONAL_JUMP",
+    "references": [
+      {
+        "to": "CODE:4d15",
+        "type": "CONDITIONAL_JUMP"
+      }
+    ]
+  },
+  {
+    "address": "CODE:4d0f",
+    "length": 1,
+    "text": "CLR A",
+    "bytes": "e4",
+    "flow_type": "FALL_THROUGH",
+    "references": []
+  },
+  {
+    "address": "CODE:4d10",
+    "length": 3,
+    "text": "MOV DPTR,#0xdd1",
+    "bytes": "900dd1",
+    "flow_type": "FALL_THROUGH",
+    "references": []
+  },
+  {
+    "address": "CODE:4d13",
+    "length": 1,
+    "text": "MOVX @DPTR,A",
+    "bytes": "f0",
+    "flow_type": "FALL_THROUGH",
+    "references": [
+      {
+        "to": "EXTMEM:0dd1",
+        "type": "WRITE"
+      }
+    ]
+  },
+  {
+    "address": "CODE:4d14",
+    "length": 1,
+    "text": "RET",
+    "bytes": "22",
+    "flow_type": "TERMINATOR",
+    "references": []
+  },
+  {
+    "address": "CODE:4d15",
+    "length": 3,
+    "text": "MOV DPTR,#0xdd0",
+    "bytes": "900dd0",
+    "flow_type": "FALL_THROUGH",
+    "references": []
+  },
+  {
+    "address": "CODE:4d18",
+    "length": 1,
+    "text": "MOVX A,@DPTR",
+    "bytes": "e0",
+    "flow_type": "FALL_THROUGH",
+    "references": [
+      {
+        "to": "EXTMEM:0dd0",
+        "type": "READ"
+      }
+    ]
+  },
+  {
+    "address": "CODE:4d19",
+    "length": 2,
+    "text": "JZ 0x4d1f",
+    "bytes": "6004",
+    "flow_type": "CONDITIONAL_JUMP",
+    "references": [
+      {
+        "to": "CODE:4d1f",
+        "type": "CONDITIONAL_JUMP"
+      }
+    ]
+  },
+  {
+    "address": "CODE:4d1b",
+    "length": 2,
+    "text": "MOV R7,#0x1",
+    "bytes": "7f01",
+    "flow_type": "FALL_THROUGH",
+    "references": []
+  },
+  {
+    "address": "CODE:4d1d",
+    "length": 2,
+    "text": "SJMP 0x4d21",
+    "bytes": "8002",
+    "flow_type": "UNCONDITIONAL_JUMP",
+    "references": [
+      {
+        "to": "CODE:4d21",
+        "type": "UNCONDITIONAL_JUMP"
+      }
+    ]
+  },
+  {
+    "address": "CODE:4d1f",
+    "length": 2,
+    "text": "MOV R7,#0x0",
+    "bytes": "7f00",
+    "flow_type": "FALL_THROUGH",
+    "references": []
+  },
+  {
+    "address": "CODE:4d21",
+    "length": 3,
+    "text": "LCALL 0x4b29",
+    "bytes": "124b29",
+    "flow_type": "UNCONDITIONAL_CALL",
+    "references": [
+      {
+        "to": "CODE:4b29",
+        "type": "UNCONDITIONAL_CALL"
+      }
+    ]
+  },
+  {
+    "address": "CODE:4d24",
+    "length": 1,
+    "text": "CLR A",
+    "bytes": "e4",
+    "flow_type": "FALL_THROUGH",
+    "references": []
+  },
+  {
+    "address": "CODE:4d25",
+    "length": 3,
+    "text": "MOV DPTR,#0xdd3",
+    "bytes": "900dd3",
+    "flow_type": "FALL_THROUGH",
+    "references": []
+  },
+  {
+    "address": "CODE:4d28",
+    "length": 1,
+    "text": "MOVX @DPTR,A",
+    "bytes": "f0",
+    "flow_type": "FALL_THROUGH",
+    "references": [
+      {
+        "to": "EXTMEM:0dd3",
+        "type": "WRITE"
+      }
+    ]
+  },
+  {
+    "address": "CODE:4d29",
+    "length": 3,
+    "text": "MOV DPTR,#0x8ad",
+    "bytes": "9008ad",
+    "flow_type": "FALL_THROUGH",
+    "references": []
+  },
+  {
+    "address": "CODE:4d2c",
+    "length": 1,
+    "text": "MOVX @DPTR,A",
+    "bytes": "f0",
+    "flow_type": "FALL_THROUGH",
+    "references": [
+      {
+        "to": "EXTMEM:08ad",
+        "type": "WRITE"
+      }
+    ]
+  },
+  {
+    "address": "CODE:4d2d",
+    "length": 3,
+    "text": "MOV DPTR,#0xdd0",
+    "bytes": "900dd0",
+    "flow_type": "FALL_THROUGH",
+    "references": []
+  },
+  {
+    "address": "CODE:4d30",
+    "length": 1,
+    "text": "MOVX A,@DPTR",
+    "bytes": "e0",
+    "flow_type": "FALL_THROUGH",
+    "references": [
+      {
+        "to": "EXTMEM:0dd0",
+        "type": "READ"
+      }
+    ]
+  },
+  {
+    "address": "CODE:4d31",
+    "length": 2,
+    "text": "XRL A,#0x2",
+    "bytes": "6402",
+    "flow_type": "FALL_THROUGH",
+    "references": []
+  },
+  {
+    "address": "CODE:4d33",
+    "length": 2,
+    "text": "JNZ 0x4da5",
+    "bytes": "7070",
+    "flow_type": "CONDITIONAL_JUMP",
+    "references": [
+      {
+        "to": "CODE:4da5",
+        "type": "CONDITIONAL_JUMP"
+      }
+    ]
+  },
+  {
+    "address": "CODE:4d35",
+    "length": 3,
+    "text": "MOV DPTR,#0x2f52",
+    "bytes": "902f52",
+    "flow_type": "FALL_THROUGH",
+    "references": []
+  },
+  {
+    "address": "CODE:4d38",
+    "length": 1,
+    "text": "MOVX A,@DPTR",
+    "bytes": "e0",
+    "flow_type": "FALL_THROUGH",
+    "references": [
+      {
+        "to": "EXTMEM:2f52",
+        "type": "READ"
+      }
+    ]
+  },
+  {
+    "address": "CODE:4d39",
+    "length": 2,
+    "text": "ANL A,#0xf",
+    "bytes": "540f",
+    "flow_type": "FALL_THROUGH",
+    "references": []
+  },
+  {
+    "address": "CODE:4d3b",
+    "length": 2,
+    "text": "JNZ 0x4da5",
+    "bytes": "7068",
+    "flow_type": "CONDITIONAL_JUMP",
+    "references": [
+      {
+        "to": "CODE:4da5",
+        "type": "CONDITIONAL_JUMP"
+      }
+    ]
+  },
+  {
+    "address": "CODE:4d3d",
+    "length": 3,
+    "text": "LCALL 0x059d",
+    "bytes": "12059d",
+    "flow_type": "UNCONDITIONAL_CALL",
+    "references": [
+      {
+        "to": "CODE:059d",
+        "type": "UNCONDITIONAL_CALL"
+      }
+    ]
+  },
+  {
+    "address": "CODE:4d40",
+    "length": 3,
+    "text": "MOV DPTR,#0x2f50",
+    "bytes": "902f50",
+    "flow_type": "FALL_THROUGH",
+    "references": []
+  },
+  {
+    "address": "CODE:4d43",
+    "length": 2,
+    "text": "MOV A,#0x4a",
+    "bytes": "744a",
+    "flow_type": "FALL_THROUGH",
+    "references": []
+  },
+  {
+    "address": "CODE:4d45",
+    "length": 1,
+    "text": "MOVX @DPTR,A",
+    "bytes": "f0",
+    "flow_type": "FALL_THROUGH",
+    "references": [
+      {
+        "to": "EXTMEM:2f50",
+        "type": "WRITE"
+      }
+    ]
+  },
+  {
+    "address": "CODE:4d46",
+    "length": 2,
+    "text": "MOV R7,#0x2",
+    "bytes": "7f02",
+    "flow_type": "FALL_THROUGH",
+    "references": []
+  },
+  {
+    "address": "CODE:4d48",
+    "length": 3,
+    "text": "LCALL 0x0c96",
+    "bytes": "120c96",
+    "flow_type": "UNCONDITIONAL_CALL",
+    "references": [
+      {
+        "to": "CODE:0c96",
+        "type": "UNCONDITIONAL_CALL"
+      }
+    ]
+  },
+  {
+    "address": "CODE:4d4b",
+    "length": 3,
+    "text": "MOV DPTR,#0x2f50",
+    "bytes": "902f50",
+    "flow_type": "FALL_THROUGH",
+    "references": []
+  },
+  {
+    "address": "CODE:4d4e",
+    "length": 2,
+    "text": "MOV A,#0x71",
+    "bytes": "7471",
+    "flow_type": "FALL_THROUGH",
+    "references": []
+  },
+  {
+    "address": "CODE:4d50",
+    "length": 1,
+    "text": "MOVX @DPTR,A",
+    "bytes": "f0",
+    "flow_type": "FALL_THROUGH",
+    "references": [
+      {
+        "to": "EXTMEM:2f50",
+        "type": "WRITE"
+      }
+    ]
+  },
+  {
+    "address": "CODE:4d51",
+    "length": 3,
+    "text": "LCALL 0x05a4",
+    "bytes": "1205a4",
+    "flow_type": "UNCONDITIONAL_CALL",
+    "references": [
+      {
+        "to": "CODE:05a4",
+        "type": "UNCONDITIONAL_CALL"
+      }
+    ]
+  },
+  {
+    "address": "CODE:4d54",
+    "length": 2,
+    "text": "MOV R7,#0xf",
+    "bytes": "7f0f",
+    "flow_type": "FALL_THROUGH",
+    "references": []
+  },
+  {
+    "address": "CODE:4d56",
+    "length": 3,
+    "text": "LCALL 0x0c96",
+    "bytes": "120c96",
+    "flow_type": "UNCONDITIONAL_CALL",
+    "references": [
+      {
+        "to": "CODE:0c96",
+        "type": "UNCONDITIONAL_CALL"
+      }
+    ]
+  },
+  {
+    "address": "CODE:4d59",
+    "length": 2,
+    "text": "CLR 0x8e",
+    "bytes": "c28e",
+    "flow_type": "FALL_THROUGH",
+    "references": [
+      {
+        "to": "BITS:8e",
+        "type": "WRITE"
+      }
+    ]
+  },
+  {
+    "address": "CODE:4d5b",
+    "length": 2,
+    "text": "CLR 0xab",
+    "bytes": "c2ab",
+    "flow_type": "FALL_THROUGH",
+    "references": [
+      {
+        "to": "BITS:ab",
+        "type": "WRITE"
+      }
+    ]
+  },
+  {
+    "address": "CODE:4d5d",
+    "length": 1,
+    "text": "NOP",
+    "bytes": "00",
+    "flow_type": "FALL_THROUGH",
+    "references": []
+  },
+  {
+    "address": "CODE:4d5e",
+    "length": 1,
+    "text": "NOP",
+    "bytes": "00",
+    "flow_type": "FALL_THROUGH",
+    "references": []
+  },
+  {
+    "address": "CODE:4d5f",
+    "length": 1,
+    "text": "NOP",
+    "bytes": "00",
+    "flow_type": "FALL_THROUGH",
+    "references": []
+  },
+  {
+    "address": "CODE:4d60",
+    "length": 1,
+    "text": "NOP",
+    "bytes": "00",
+    "flow_type": "FALL_THROUGH",
+    "references": []
+  },
+  {
+    "address": "CODE:4d61",
+    "length": 1,
+    "text": "CLR A",
+    "bytes": "e4",
+    "flow_type": "FALL_THROUGH",
+    "references": []
+  },
+  {
+    "address": "CODE:4d62",
+    "length": 2,
+    "text": "MOV 0x8d,A",
+    "bytes": "f58d",
+    "flow_type": "FALL_THROUGH",
+    "references": [
+      {
+        "to": "SFR:8d",
+        "type": "WRITE"
+      }
+    ]
+  },
+  {
+    "address": "CODE:4d64",
+    "length": 3,
+    "text": "MOV 0x8b,#0x1",
+    "bytes": "758b01",
+    "flow_type": "FALL_THROUGH",
+    "references": [
+      {
+        "to": "SFR:8b",
+        "type": "WRITE"
+      }
+    ]
+  },
+  {
+    "address": "CODE:4d67",
+    "length": 2,
+    "text": "CLR 0x8f",
+    "bytes": "c28f",
+    "flow_type": "FALL_THROUGH",
+    "references": [
+      {
+        "to": "BITS:8f",
+        "type": "WRITE"
+      }
+    ]
+  },
+  {
+    "address": "CODE:4d69",
+    "length": 2,
+    "text": "SETB 0x8e",
+    "bytes": "d28e",
+    "flow_type": "FALL_THROUGH",
+    "references": [
+      {
+        "to": "BITS:8e",
+        "type": "WRITE"
+      }
+    ]
+  },
+  {
+    "address": "CODE:4d6b",
+    "length": 3,
+    "text": "JB 0x8f,0x4d9f",
+    "bytes": "208f31",
+    "flow_type": "CONDITIONAL_JUMP",
+    "references": [
+      {
+        "to": "BITS:8f",
+        "type": "READ"
+      },
+      {
+        "to": "CODE:4d9f",
+        "type": "CONDITIONAL_JUMP"
+      }
+    ]
+  },
+  {
+    "address": "CODE:4d6e",
+    "length": 3,
+    "text": "MOV DPTR,#0x2f52",
+    "bytes": "902f52",
+    "flow_type": "FALL_THROUGH",
+    "references": []
+  },
+  {
+    "address": "CODE:4d71",
+    "length": 1,
+    "text": "MOVX A,@DPTR",
+    "bytes": "e0",
+    "flow_type": "FALL_THROUGH",
+    "references": [
+      {
+        "to": "EXTMEM:2f52",
+        "type": "READ"
+      }
+    ]
+  },
+  {
+    "address": "CODE:4d72",
+    "length": 3,
+    "text": "JNB 0xe1,0x4d91",
+    "bytes": "30e11c",
+    "flow_type": "CONDITIONAL_JUMP",
+    "references": [
+      {
+        "to": "BITS:e1",
+        "type": "DATA"
+      },
+      {
+        "to": "CODE:4d91",
+        "type": "CONDITIONAL_JUMP"
+      }
+    ]
+  },
+  {
+    "address": "CODE:4d75",
+    "length": 3,
+    "text": "MOV DPTR,#0x16e0",
+    "bytes": "9016e0",
+    "flow_type": "FALL_THROUGH",
+    "references": []
+  },
+  {
+    "address": "CODE:4d78",
+    "length": 1,
+    "text": "MOVX A,@DPTR",
+    "bytes": "e0",
+    "flow_type": "FALL_THROUGH",
+    "references": [
+      {
+        "to": "EXTMEM:16e0",
+        "type": "READ"
+      }
+    ]
+  },
+  {
+    "address": "CODE:4d79",
+    "length": 3,
+    "text": "JB 0xe4,0x4d85",
+    "bytes": "20e409",
+    "flow_type": "CONDITIONAL_JUMP",
+    "references": [
+      {
+        "to": "BITS:e4",
+        "type": "DATA"
+      },
+      {
+        "to": "CODE:4d85",
+        "type": "CONDITIONAL_JUMP"
+      }
+    ]
+  },
+  {
+    "address": "CODE:4d7c",
+    "length": 1,
+    "text": "MOVX A,@DPTR",
+    "bytes": "e0",
+    "flow_type": "FALL_THROUGH",
+    "references": [
+      {
+        "to": "EXTMEM:16e0",
+        "type": "READ"
+      }
+    ]
+  },
+  {
+    "address": "CODE:4d7d",
+    "length": 3,
+    "text": "JNB 0xe5,0x4d85",
+    "bytes": "30e505",
+    "flow_type": "CONDITIONAL_JUMP",
+    "references": [
+      {
+        "to": "BITS:e5",
+        "type": "DATA"
+      },
+      {
+        "to": "CODE:4d85",
+        "type": "CONDITIONAL_JUMP"
+      }
+    ]
+  },
+  {
+    "address": "CODE:4d80",
+    "length": 3,
+    "text": "MOV DPTR,#0xf2",
+    "bytes": "9000f2",
+    "flow_type": "FALL_THROUGH",
+    "references": []
+  },
+  {
+    "address": "CODE:4d83",
+    "length": 2,
+    "text": "SJMP 0x4d9c",
+    "bytes": "8017",
+    "flow_type": "UNCONDITIONAL_JUMP",
+    "references": [
+      {
+        "to": "CODE:4d9c",
+        "type": "UNCONDITIONAL_JUMP"
+      }
+    ]
+  },
+  {
+    "address": "CODE:4d85",
+    "length": 3,
+    "text": "MOV DPTR,#0x2f52",
+    "bytes": "902f52",
+    "flow_type": "FALL_THROUGH",
+    "references": []
+  },
+  {
+    "address": "CODE:4d88",
+    "length": 1,
+    "text": "MOVX A,@DPTR",
+    "bytes": "e0",
+    "flow_type": "FALL_THROUGH",
+    "references": [
+      {
+        "to": "EXTMEM:2f52",
+        "type": "READ"
+      }
+    ]
+  },
+  {
+    "address": "CODE:4d89",
+    "length": 3,
+    "text": "JNB 0xe3,0x4d6b",
+    "bytes": "30e3df",
+    "flow_type": "CONDITIONAL_JUMP",
+    "references": [
+      {
+        "to": "BITS:e3",
+        "type": "DATA"
+      },
+      {
+        "to": "CODE:4d6b",
+        "type": "CONDITIONAL_JUMP"
+      }
+    ]
+  },
+  {
+    "address": "CODE:4d8c",
+    "length": 3,
+    "text": "MOV DPTR,#0xa2",
+    "bytes": "9000a2",
+    "flow_type": "FALL_THROUGH",
+    "references": []
+  },
+  {
+    "address": "CODE:4d8f",
+    "length": 2,
+    "text": "SJMP 0x4d9c",
+    "bytes": "800b",
+    "flow_type": "UNCONDITIONAL_JUMP",
+    "references": [
+      {
+        "to": "CODE:4d9c",
+        "type": "UNCONDITIONAL_JUMP"
+      }
+    ]
+  },
+  {
+    "address": "CODE:4d91",
+    "length": 3,
+    "text": "MOV DPTR,#0x2f52",
+    "bytes": "902f52",
+    "flow_type": "FALL_THROUGH",
+    "references": []
+  },
+  {
+    "address": "CODE:4d94",
+    "length": 1,
+    "text": "MOVX A,@DPTR",
+    "bytes": "e0",
+    "flow_type": "FALL_THROUGH",
+    "references": [
+      {
+        "to": "EXTMEM:2f52",
+        "type": "READ"
+      }
+    ]
+  },
+  {
+    "address": "CODE:4d95",
+    "length": 2,
+    "text": "ANL A,#0xd",
+    "bytes": "540d",
+    "flow_type": "FALL_THROUGH",
+    "references": []
+  },
+  {
+    "address": "CODE:4d97",
+    "length": 2,
+    "text": "JZ 0x4d6b",
+    "bytes": "60d2",
+    "flow_type": "CONDITIONAL_JUMP",
+    "references": [
+      {
+        "to": "CODE:4d6b",
+        "type": "CONDITIONAL_JUMP"
+      }
+    ]
+  },
+  {
+    "address": "CODE:4d99",
+    "length": 3,
+    "text": "MOV DPTR,#0xa3",
+    "bytes": "9000a3",
+    "flow_type": "FALL_THROUGH",
+    "references": []
+  },
+  {
+    "address": "CODE:4d9c",
+    "length": 1,
+    "text": "MOVX A,@DPTR",
+    "bytes": "e0",
+    "flow_type": "FALL_THROUGH",
+    "references": [
+      {
+        "to": "EXTMEM:00f2",
+        "type": "READ"
+      },
+      {
+        "to": "EXTMEM:00a2",
+        "type": "READ"
+      },
+      {
+        "to": "EXTMEM:00a3",
+        "type": "READ"
+      }
+    ]
+  },
+  {
+    "address": "CODE:4d9d",
+    "length": 1,
+    "text": "INC A",
+    "bytes": "04",
+    "flow_type": "FALL_THROUGH",
+    "references": []
+  },
+  {
+    "address": "CODE:4d9e",
+    "length": 1,
+    "text": "MOVX @DPTR,A",
+    "bytes": "f0",
+    "flow_type": "FALL_THROUGH",
+    "references": [
+      {
+        "to": "EXTMEM:00f2",
+        "type": "WRITE"
+      },
+      {
+        "to": "EXTMEM:00a2",
+        "type": "WRITE"
+      },
+      {
+        "to": "EXTMEM:00a3",
+        "type": "WRITE"
+      }
+    ]
+  },
+  {
+    "address": "CODE:4d9f",
+    "length": 2,
+    "text": "CLR 0x8e",
+    "bytes": "c28e",
+    "flow_type": "FALL_THROUGH",
+    "references": [
+      {
+        "to": "BITS:8e",
+        "type": "WRITE"
+      }
+    ]
+  },
+  {
+    "address": "CODE:4da1",
+    "length": 2,
+    "text": "CLR 0x8f",
+    "bytes": "c28f",
+    "flow_type": "FALL_THROUGH",
+    "references": [
+      {
+        "to": "BITS:8f",
+        "type": "WRITE"
+      }
+    ]
+  },
+  {
+    "address": "CODE:4da3",
+    "length": 2,
+    "text": "SETB 0xab",
+    "bytes": "d2ab",
+    "flow_type": "FALL_THROUGH",
+    "references": [
+      {
+        "to": "BITS:ab",
+        "type": "WRITE"
+      }
+    ]
+  },
+  {
+    "address": "CODE:4da5",
+    "length": 1,
+    "text": "CLR A",
+    "bytes": "e4",
+    "flow_type": "FALL_THROUGH",
+    "references": []
+  },
+  {
+    "address": "CODE:4da6",
+    "length": 3,
+    "text": "MOV DPTR,#0xdd1",
+    "bytes": "900dd1",
+    "flow_type": "FALL_THROUGH",
+    "references": []
+  },
+  {
+    "address": "CODE:4da9",
+    "length": 1,
+    "text": "MOVX @DPTR,A",
+    "bytes": "f0",
+    "flow_type": "FALL_THROUGH",
+    "references": [
+      {
+        "to": "EXTMEM:0dd1",
+        "type": "WRITE"
+      }
+    ]
+  },
+  {
+    "address": "CODE:4daa",
+    "length": 3,
+    "text": "MOV DPTR,#0x2f52",
+    "bytes": "902f52",
+    "flow_type": "FALL_THROUGH",
+    "references": []
+  },
+  {
+    "address": "CODE:4dad",
+    "length": 2,
+    "text": "MOV A,#0xa",
+    "bytes": "740a",
+    "flow_type": "FALL_THROUGH",
+    "references": []
+  },
+  {
+    "address": "CODE:4daf",
+    "length": 1,
+    "text": "MOVX @DPTR,A",
+    "bytes": "f0",
+    "flow_type": "FALL_THROUGH",
+    "references": [
+      {
+        "to": "EXTMEM:2f52",
+        "type": "WRITE"
+      }
+    ]
+  },
+  {
+    "address": "CODE:4db0",
+    "length": 3,
+    "text": "MOV DPTR,#0xdd0",
+    "bytes": "900dd0",
+    "flow_type": "FALL_THROUGH",
+    "references": []
+  },
+  {
+    "address": "CODE:4db3",
+    "length": 1,
+    "text": "MOVX A,@DPTR",
+    "bytes": "e0",
+    "flow_type": "FALL_THROUGH",
+    "references": [
+      {
+        "to": "EXTMEM:0dd0",
+        "type": "READ"
+      }
+    ]
+  },
+  {
+    "address": "CODE:4db4",
+    "length": 2,
+    "text": "JZ 0x4db9",
+    "bytes": "6003",
+    "flow_type": "CONDITIONAL_JUMP",
+    "references": [
+      {
+        "to": "CODE:4db9",
+        "type": "CONDITIONAL_JUMP"
+      }
+    ]
+  },
+  {
+    "address": "CODE:4db6",
+    "length": 3,
+    "text": "LCALL 0x7feb",
+    "bytes": "127feb",
+    "flow_type": "UNCONDITIONAL_CALL",
+    "references": [
+      {
+        "to": "CODE:7feb",
+        "type": "UNCONDITIONAL_CALL"
+      }
+    ]
+  },
+  {
+    "address": "CODE:4db9",
+    "length": 1,
+    "text": "RET",
+    "bytes": "22",
+    "flow_type": "TERMINATOR",
+    "references": []
+  },
+  {
+    "address": "CODE:4dba",
+    "length": 3,
+    "text": "LCALL 0x36eb",
+    "bytes": "1236eb",
+    "flow_type": "UNCONDITIONAL_CALL",
+    "references": [
+      {
+        "to": "CODE:36eb",
+        "type": "UNCONDITIONAL_CALL"
+      }
+    ]
+  },
+  {
+    "address": "CODE:4dbd",
+    "length": 1,
+    "text": "MOV A,R7",
+    "bytes": "ef",
+    "flow_type": "FALL_THROUGH",
+    "references": []
+  },
+  {
+    "address": "CODE:4dbe",
+    "length": 2,
+    "text": "JZ 0x4dcc",
+    "bytes": "600c",
+    "flow_type": "CONDITIONAL_JUMP",
+    "references": [
+      {
+        "to": "CODE:4dcc",
+        "type": "CONDITIONAL_JUMP"
+      }
+    ]
+  },
+  {
+    "address": "CODE:4dc0",
+    "length": 3,
+    "text": "MOV DPTR,#0xdd1",
+    "bytes": "900dd1",
+    "flow_type": "FALL_THROUGH",
+    "references": []
+  },
+  {
+    "address": "CODE:4dc3",
+    "length": 1,
+    "text": "MOVX A,@DPTR",
+    "bytes": "e0",
+    "flow_type": "FALL_THROUGH",
+    "references": [
+      {
+        "to": "EXTMEM:0dd1",
+        "type": "READ"
+      }
+    ]
+  },
+  {
+    "address": "CODE:4dc4",
+    "length": 2,
+    "text": "JNZ 0x4dc9",
+    "bytes": "7003",
+    "flow_type": "CONDITIONAL_JUMP",
+    "references": [
+      {
+        "to": "CODE:4dc9",
+        "type": "CONDITIONAL_JUMP"
+      }
+    ]
+  },
+  {
+    "address": "CODE:4dc6",
+    "length": 3,
+    "text": "LJMP 0x4f65",
+    "bytes": "024f65",
+    "flow_type": "UNCONDITIONAL_JUMP",
+    "references": [
+      {
+        "to": "CODE:4f65",
+        "type": "UNCONDITIONAL_JUMP"
+      }
+    ]
+  },
+  {
+    "address": "CODE:4dc9",
+    "length": 3,
+    "text": "LJMP 0x4ce2",
+    "bytes": "024ce2",
+    "flow_type": "UNCONDITIONAL_JUMP",
+    "references": [
+      {
+        "to": "CODE:4ce2",
+        "type": "UNCONDITIONAL_JUMP"
+      }
+    ]
+  },
+  {
+    "address": "CODE:4dcc",
+    "length": 3,
+    "text": "MOV DPTR,#0x2f52",
+    "bytes": "902f52",
+    "flow_type": "FALL_THROUGH",
+    "references": []
+  },
+  {
+    "address": "CODE:4dcf",
+    "length": 1,
+    "text": "MOVX A,@DPTR",
+    "bytes": "e0",
+    "flow_type": "FALL_THROUGH",
+    "references": [
+      {
+        "to": "EXTMEM:2f52",
+        "type": "READ"
+      }
+    ]
+  },
+  {
+    "address": "CODE:4dd0",
+    "length": 3,
+    "text": "JNB 0xe2,0x4dd6",
+    "bytes": "30e203",
+    "flow_type": "CONDITIONAL_JUMP",
+    "references": [
+      {
+        "to": "BITS:e2",
+        "type": "DATA"
+      },
+      {
+        "to": "CODE:4dd6",
+        "type": "CONDITIONAL_JUMP"
+      }
+    ]
+  },
+  {
+    "address": "CODE:4dd3",
+    "length": 3,
+    "text": "LJMP 0x35dd",
+    "bytes": "0235dd",
+    "flow_type": "CALL_TERMINATOR",
+    "references": [
+      {
+        "to": "CODE:35dd",
+        "type": "UNCONDITIONAL_CALL"
+      }
+    ]
+  },
+  {
+    "address": "CODE:4dd6",
+    "length": 3,
+    "text": "MOV DPTR,#0xde8",
+    "bytes": "900de8",
+    "flow_type": "FALL_THROUGH",
+    "references": []
+  },
+  {
+    "address": "CODE:4dd9",
+    "length": 1,
+    "text": "MOVX A,@DPTR",
+    "bytes": "e0",
+    "flow_type": "FALL_THROUGH",
+    "references": [
+      {
+        "to": "EXTMEM:0de8",
+        "type": "READ"
+      }
+    ]
+  },
+  {
+    "address": "CODE:4dda",
+    "length": 1,
+    "text": "MOV R3,A",
+    "bytes": "fb",
+    "flow_type": "FALL_THROUGH",
+    "references": []
+  },
+  {
+    "address": "CODE:4ddb",
+    "length": 1,
+    "text": "INC DPTR",
+    "bytes": "a3",
+    "flow_type": "FALL_THROUGH",
+    "references": []
+  },
+  {
+    "address": "CODE:4ddc",
+    "length": 1,
+    "text": "MOVX A,@DPTR",
+    "bytes": "e0",
+    "flow_type": "FALL_THROUGH",
+    "references": [
+      {
+        "to": "EXTMEM:0de9",
+        "type": "READ"
+      }
+    ]
+  },
+  {
+    "address": "CODE:4ddd",
+    "length": 1,
+    "text": "MOV R2,A",
+    "bytes": "fa",
+    "flow_type": "FALL_THROUGH",
+    "references": []
+  },
+  {
+    "address": "CODE:4dde",
+    "length": 1,
+    "text": "INC DPTR",
+    "bytes": "a3",
+    "flow_type": "FALL_THROUGH",
+    "references": []
+  },
+  {
+    "address": "CODE:4ddf",
+    "length": 1,
+    "text": "MOVX A,@DPTR",
+    "bytes": "e0",
+    "flow_type": "FALL_THROUGH",
+    "references": [
+      {
+        "to": "EXTMEM:0dea",
+        "type": "READ"
+      }
+    ]
+  },
+  {
+    "address": "CODE:4de0",
+    "length": 1,
+    "text": "MOV R1,A",
+    "bytes": "f9",
+    "flow_type": "FALL_THROUGH",
+    "references": []
+  },
+  {
+    "address": "CODE:4de1",
+    "length": 3,
+    "text": "MOV DPTR,#0x3",
+    "bytes": "900003",
+    "flow_type": "FALL_THROUGH",
+    "references": []
+  },
+  {
+    "address": "CODE:4de4",
+    "length": 1,
+    "text": "CLR A",
+    "bytes": "e4",
+    "flow_type": "FALL_THROUGH",
+    "references": []
+  },
+  {
+    "address": "CODE:4de5",
+    "length": 3,
+    "text": "LCALL 0x85b9",
+    "bytes": "1285b9",
+    "flow_type": "UNCONDITIONAL_CALL",
+    "references": [
+      {
+        "to": "CODE:85b9",
+        "type": "UNCONDITIONAL_CALL"
+      }
+    ]
+  },
+  {
+    "address": "CODE:4de8",
+    "length": 3,
+    "text": "MOV DPTR,#0x2f53",
+    "bytes": "902f53",
+    "flow_type": "FALL_THROUGH",
+    "references": []
+  },
+  {
+    "address": "CODE:4deb",
+    "length": 2,
+    "text": "MOV A,#0x5",
+    "bytes": "7405",
+    "flow_type": "FALL_THROUGH",
+    "references": []
+  },
+  {
+    "address": "CODE:4ded",
+    "length": 1,
+    "text": "MOVX @DPTR,A",
+    "bytes": "f0",
+    "flow_type": "FALL_THROUGH",
+    "references": [
+      {
+        "to": "EXTMEM:2f53",
+        "type": "WRITE"
+      }
+    ]
+  },
+  {
+    "address": "CODE:4dee",
+    "length": 3,
+    "text": "MOV DPTR,#0x1",
+    "bytes": "900001",
+    "flow_type": "FALL_THROUGH",
+    "references": []
+  },
+  {
+    "address": "CODE:4df1",
+    "length": 3,
+    "text": "LCALL 0x857a",
+    "bytes": "12857a",
+    "flow_type": "UNCONDITIONAL_CALL",
+    "references": [
+      {
+        "to": "CODE:857a",
+        "type": "UNCONDITIONAL_CALL"
+      }
+    ]
+  },
+  {
+    "address": "CODE:4df4",
+    "length": 2,
+    "text": "JNZ 0x4df9",
+    "bytes": "7003",
+    "flow_type": "CONDITIONAL_JUMP",
+    "references": [
+      {
+        "to": "CODE:4df9",
+        "type": "CONDITIONAL_JUMP"
+      }
+    ]
+  },
+  {
+    "address": "CODE:4df6",
+    "length": 3,
+    "text": "LCALL 0x3a24",
+    "bytes": "123a24",
+    "flow_type": "UNCONDITIONAL_CALL",
+    "references": [
+      {
+        "to": "CODE:3a24",
+        "type": "UNCONDITIONAL_CALL"
+      }
+    ]
+  },
+  {
+    "address": "CODE:4df9",
+    "length": 3,
+    "text": "MOV DPTR,#0x2f40",
+    "bytes": "902f40",
+    "flow_type": "FALL_THROUGH",
+    "references": []
+  },
+  {
+    "address": "CODE:4dfc",
+    "length": 1,
+    "text": "MOVX A,@DPTR",
+    "bytes": "e0",
+    "flow_type": "FALL_THROUGH",
+    "references": [
+      {
+        "to": "EXTMEM:2f40",
+        "type": "READ"
+      }
+    ]
+  },
+  {
+    "address": "CODE:4dfd",
+    "length": 3,
+    "text": "JNB 0xe1,0x4e03",
+    "bytes": "30e103",
+    "flow_type": "CONDITIONAL_JUMP",
+    "references": [
+      {
+        "to": "BITS:e1",
+        "type": "DATA"
+      },
+      {
+        "to": "CODE:4e03",
+        "type": "CONDITIONAL_JUMP"
+      }
+    ]
+  },
+  {
+    "address": "CODE:4e00",
+    "length": 3,
+    "text": "LJMP 0x4f65",
+    "bytes": "024f65",
+    "flow_type": "UNCONDITIONAL_JUMP",
+    "references": [
+      {
+        "to": "CODE:4f65",
+        "type": "UNCONDITIONAL_JUMP"
+      }
+    ]
+  },
+  {
+    "address": "CODE:4e03",
+    "length": 3,
+    "text": "MOV DPTR,#0x2f42",
+    "bytes": "902f42",
+    "flow_type": "FALL_THROUGH",
+    "references": []
+  },
+  {
+    "address": "CODE:4e06",
+    "length": 1,
+    "text": "MOVX A,@DPTR",
+    "bytes": "e0",
+    "flow_type": "FALL_THROUGH",
+    "references": [
+      {
+        "to": "EXTMEM:2f42",
+        "type": "READ"
+      }
+    ]
+  },
+  {
+    "address": "CODE:4e07",
+    "length": 1,
+    "text": "MOV R7,A",
+    "bytes": "ff",
+    "flow_type": "FALL_THROUGH",
+    "references": []
+  },
+  {
+    "address": "CODE:4e08",
+    "length": 3,
+    "text": "MOV DPTR,#0xde8",
+    "bytes": "900de8",
+    "flow_type": "FALL_THROUGH",
+    "references": []
+  },
+  {
+    "address": "CODE:4e0b",
+    "length": 1,
+    "text": "MOVX A,@DPTR",
+    "bytes": "e0",
+    "flow_type": "FALL_THROUGH",
+    "references": [
+      {
+        "to": "EXTMEM:0de8",
+        "type": "READ"
+      }
+    ]
+  },
+  {
+    "address": "CODE:4e0c",
+    "length": 1,
+    "text": "MOV R3,A",
+    "bytes": "fb",
+    "flow_type": "FALL_THROUGH",
+    "references": []
+  },
+  {
+    "address": "CODE:4e0d",
+    "length": 1,
+    "text": "INC DPTR",
+    "bytes": "a3",
+    "flow_type": "FALL_THROUGH",
+    "references": []
+  },
+  {
+    "address": "CODE:4e0e",
+    "length": 1,
+    "text": "MOVX A,@DPTR",
+    "bytes": "e0",
+    "flow_type": "FALL_THROUGH",
+    "references": [
+      {
+        "to": "EXTMEM:0de9",
+        "type": "READ"
+      }
+    ]
+  },
+  {
+    "address": "CODE:4e0f",
+    "length": 1,
+    "text": "MOV R2,A",
+    "bytes": "fa",
+    "flow_type": "FALL_THROUGH",
+    "references": []
+  },
+  {
+    "address": "CODE:4e10",
+    "length": 1,
+    "text": "INC DPTR",
+    "bytes": "a3",
+    "flow_type": "FALL_THROUGH",
+    "references": []
+  },
+  {
+    "address": "CODE:4e11",
+    "length": 1,
+    "text": "MOVX A,@DPTR",
+    "bytes": "e0",
+    "flow_type": "FALL_THROUGH",
+    "references": [
+      {
+        "to": "EXTMEM:0dea",
+        "type": "READ"
+      }
+    ]
+  },
+  {
+    "address": "CODE:4e12",
+    "length": 1,
+    "text": "MOV R1,A",
+    "bytes": "f9",
+    "flow_type": "FALL_THROUGH",
+    "references": []
+  },
+  {
+    "address": "CODE:4e13",
+    "length": 3,
+    "text": "MOV DPTR,#0x5",
+    "bytes": "900005",
+    "flow_type": "FALL_THROUGH",
+    "references": []
+  },
+  {
+    "address": "CODE:4e16",
+    "length": 1,
+    "text": "MOV A,R7",
+    "bytes": "ef",
+    "flow_type": "FALL_THROUGH",
+    "references": []
+  },
+  {
+    "address": "CODE:4e17",
+    "length": 3,
+    "text": "LCALL 0x85b9",
+    "bytes": "1285b9",
+    "flow_type": "UNCONDITIONAL_CALL",
+    "references": [
+      {
+        "to": "CODE:85b9",
+        "type": "UNCONDITIONAL_CALL"
+      }
+    ]
+  },
+  {
+    "address": "CODE:4e1a",
+    "length": 3,
+    "text": "MOV DPTR,#0x2f41",
+    "bytes": "902f41",
+    "flow_type": "FALL_THROUGH",
+    "references": []
+  },
+  {
+    "address": "CODE:4e1d",
+    "length": 1,
+    "text": "MOVX A,@DPTR",
+    "bytes": "e0",
+    "flow_type": "FALL_THROUGH",
+    "references": [
+      {
+        "to": "EXTMEM:2f41",
+        "type": "READ"
+      }
+    ]
+  },
+  {
+    "address": "CODE:4e1e",
+    "length": 3,
+    "text": "JNB 0xe5,0x4e32",
+    "bytes": "30e511",
+    "flow_type": "CONDITIONAL_JUMP",
+    "references": [
+      {
+        "to": "BITS:e5",
+        "type": "DATA"
+      },
+      {
+        "to": "CODE:4e32",
+        "type": "CONDITIONAL_JUMP"
+      }
+    ]
+  },
+  {
+    "address": "CODE:4e21",
+    "length": 3,
+    "text": "MOV DPTR,#0x4",
+    "bytes": "900004",
+    "flow_type": "FALL_THROUGH",
+    "references": []
+  },
+  {
+    "address": "CODE:4e24",
+    "length": 1,
+    "text": "CLR A",
+    "bytes": "e4",
+    "flow_type": "FALL_THROUGH",
+    "references": []
+  },
+  {
+    "address": "CODE:4e25",
+    "length": 3,
+    "text": "LCALL 0x85b9",
+    "bytes": "1285b9",
+    "flow_type": "UNCONDITIONAL_CALL",
+    "references": [
+      {
+        "to": "CODE:85b9",
+        "type": "UNCONDITIONAL_CALL"
+      }
+    ]
+  },
+  {
+    "address": "CODE:4e28",
+    "length": 3,
+    "text": "MOV DPTR,#0x1",
+    "bytes": "900001",
+    "flow_type": "FALL_THROUGH",
+    "references": []
+  },
+  {
+    "address": "CODE:4e2b",
+    "length": 1,
+    "text": "CLR A",
+    "bytes": "e4",
+    "flow_type": "FALL_THROUGH",
+    "references": []
+  },
+  {
+    "address": "CODE:4e2c",
+    "length": 3,
+    "text": "LCALL 0x85b9",
+    "bytes": "1285b9",
+    "flow_type": "UNCONDITIONAL_CALL",
+    "references": [
+      {
+        "to": "CODE:85b9",
+        "type": "UNCONDITIONAL_CALL"
+      }
+    ]
+  },
+  {
+    "address": "CODE:4e2f",
+    "length": 3,
+    "text": "LJMP 0x32d3",
+    "bytes": "0232d3",
+    "flow_type": "CALL_TERMINATOR",
+    "references": [
+      {
+        "to": "CODE:32d3",
+        "type": "UNCONDITIONAL_CALL"
+      }
+    ]
+  },
+  {
+    "address": "CODE:4e32",
+    "length": 3,
+    "text": "MOV DPTR,#0x5",
+    "bytes": "900005",
+    "flow_type": "FALL_THROUGH",
+    "references": []
+  },
+  {
+    "address": "CODE:4e35",
+    "length": 3,
+    "text": "LCALL 0x857a",
+    "bytes": "12857a",
+    "flow_type": "UNCONDITIONAL_CALL",
+    "references": [
+      {
+        "to": "CODE:857a",
+        "type": "UNCONDITIONAL_CALL"
+      }
+    ]
+  },
+  {
+    "address": "CODE:4e38",
+    "length": 1,
+    "text": "DEC A",
+    "bytes": "14",
+    "flow_type": "FALL_THROUGH",
+    "references": []
+  },
+  {
+    "address": "CODE:4e39",
+    "length": 2,
+    "text": "JNZ 0x4e3e",
+    "bytes": "7003",
+    "flow_type": "CONDITIONAL_JUMP",
+    "references": [
+      {
+        "to": "CODE:4e3e",
+        "type": "CONDITIONAL_JUMP"
+      }
+    ]
+  },
+  {
+    "address": "CODE:4e3b",
+    "length": 3,
+    "text": "LJMP 0x4ee1",
+    "bytes": "024ee1",
+    "flow_type": "UNCONDITIONAL_JUMP",
+    "references": [
+      {
+        "to": "CODE:4ee1",
+        "type": "UNCONDITIONAL_JUMP"
+      }
+    ]
+  },
+  {
+    "address": "CODE:4e3e",
+    "length": 1,
+    "text": "DEC A",
+    "bytes": "14",
+    "flow_type": "FALL_THROUGH",
+    "references": []
+  },
+  {
+    "address": "CODE:4e3f",
+    "length": 2,
+    "text": "JZ 0x4e70",
+    "bytes": "602f",
+    "flow_type": "CONDITIONAL_JUMP",
+    "references": [
+      {
+        "to": "CODE:4e70",
+        "type": "CONDITIONAL_JUMP"
+      }
+    ]
+  },
+  {
+    "address": "CODE:4e41",
+    "length": 2,
+    "text": "ADD A,#0x2",
+    "bytes": "2402",
+    "flow_type": "FALL_THROUGH",
+    "references": []
+  },
+  {
+    "address": "CODE:4e43",
+    "length": 2,
+    "text": "JZ 0x4e48",
+    "bytes": "6003",
+    "flow_type": "CONDITIONAL_JUMP",
+    "references": [
+      {
+        "to": "CODE:4e48",
+        "type": "CONDITIONAL_JUMP"
+      }
+    ]
+  },
+  {
+    "address": "CODE:4e45",
+    "length": 3,
+    "text": "LJMP 0x4f4b",
+    "bytes": "024f4b",
+    "flow_type": "UNCONDITIONAL_JUMP",
+    "references": [
+      {
+        "to": "CODE:4f4b",
+        "type": "UNCONDITIONAL_JUMP"
+      }
+    ]
+  },
+  {
+    "address": "CODE:4e48",
+    "length": 3,
+    "text": "MOV DPTR,#0x2f62",
+    "bytes": "902f62",
+    "flow_type": "FALL_THROUGH",
+    "references": []
+  },
+  {
+    "address": "CODE:4e4b",
+    "length": 1,
+    "text": "MOVX A,@DPTR",
+    "bytes": "e0",
+    "flow_type": "FALL_THROUGH",
+    "references": [
+      {
+        "to": "EXTMEM:2f62",
+        "type": "READ"
+      }
+    ]
+  },
+  {
+    "address": "CODE:4e4c",
+    "length": 2,
+    "text": "JNZ 0x4e55",
+    "bytes": "7007",
+    "flow_type": "CONDITIONAL_JUMP",
+    "references": [
+      {
+        "to": "CODE:4e55",
+        "type": "CONDITIONAL_JUMP"
+      }
+    ]
+  },
+  {
+    "address": "CODE:4e4e",
+    "length": 1,
+    "text": "INC DPTR",
+    "bytes": "a3",
+    "flow_type": "FALL_THROUGH",
+    "references": []
+  },
+  {
+    "address": "CODE:4e4f",
+    "length": 1,
+    "text": "MOVX A,@DPTR",
+    "bytes": "e0",
+    "flow_type": "FALL_THROUGH",
+    "references": [
+      {
+        "to": "EXTMEM:2f63",
+        "type": "READ"
+      }
+    ]
+  },
+  {
+    "address": "CODE:4e50",
+    "length": 2,
+    "text": "JNZ 0x4e55",
+    "bytes": "7003",
+    "flow_type": "CONDITIONAL_JUMP",
+    "references": [
+      {
+        "to": "CODE:4e55",
+        "type": "CONDITIONAL_JUMP"
+      }
+    ]
+  },
+  {
+    "address": "CODE:4e52",
+    "length": 3,
+    "text": "LJMP 0x4f4b",
+    "bytes": "024f4b",
+    "flow_type": "UNCONDITIONAL_JUMP",
+    "references": [
+      {
+        "to": "CODE:4f4b",
+        "type": "UNCONDITIONAL_JUMP"
+      }
+    ]
+  },
+  {
+    "address": "CODE:4e55",
+    "length": 3,
+    "text": "MOV DPTR,#0x1",
+    "bytes": "900001",
+    "flow_type": "FALL_THROUGH",
+    "references": []
+  },
+  {
+    "address": "CODE:4e58",
+    "length": 1,
+    "text": "CLR A",
+    "bytes": "e4",
+    "flow_type": "FALL_THROUGH",
+    "references": []
+  },
+  {
+    "address": "CODE:4e59",
+    "length": 3,
+    "text": "LCALL 0x85b9",
+    "bytes": "1285b9",
+    "flow_type": "UNCONDITIONAL_CALL",
+    "references": [
+      {
+        "to": "CODE:85b9",
+        "type": "UNCONDITIONAL_CALL"
+      }
+    ]
+  },
+  {
+    "address": "CODE:4e5c",
+    "length": 3,
+    "text": "LCALL 0x3cc8",
+    "bytes": "123cc8",
+    "flow_type": "UNCONDITIONAL_CALL",
+    "references": [
+      {
+        "to": "CODE:3cc8",
+        "type": "UNCONDITIONAL_CALL"
+      }
+    ]
+  },
+  {
+    "address": "CODE:4e5f",
+    "length": 1,
+    "text": "MOV A,R7",
+    "bytes": "ef",
+    "flow_type": "FALL_THROUGH",
+    "references": []
+  },
+  {
+    "address": "CODE:4e60",
+    "length": 2,
+    "text": "JZ 0x4e6a",
+    "bytes": "6008",
+    "flow_type": "CONDITIONAL_JUMP",
+    "references": [
+      {
+        "to": "CODE:4e6a",
+        "type": "CONDITIONAL_JUMP"
+      }
+    ]
+  },
+  {
+    "address": "CODE:4e62",
+    "length": 1,
+    "text": "CLR A",
+    "bytes": "e4",
+    "flow_type": "FALL_THROUGH",
+    "references": []
+  },
+  {
+    "address": "CODE:4e63",
+    "length": 1,
+    "text": "MOV R7,A",
+    "bytes": "ff",
+    "flow_type": "FALL_THROUGH",
+    "references": []
+  },
+  {
+    "address": "CODE:4e64",
+    "length": 3,
+    "text": "LCALL 0x4a35",
+    "bytes": "124a35",
+    "flow_type": "UNCONDITIONAL_CALL",
+    "references": [
+      {
+        "to": "CODE:4a35",
+        "type": "UNCONDITIONAL_CALL"
+      }
+    ]
+  },
+  {
+    "address": "CODE:4e67",
+    "length": 3,
+    "text": "LJMP 0x4f4b",
+    "bytes": "024f4b",
+    "flow_type": "UNCONDITIONAL_JUMP",
+    "references": [
+      {
+        "to": "CODE:4f4b",
+        "type": "UNCONDITIONAL_JUMP"
+      }
+    ]
+  },
+  {
+    "address": "CODE:4e6a",
+    "length": 3,
+    "text": "LCALL 0x32d3",
+    "bytes": "1232d3",
+    "flow_type": "UNCONDITIONAL_CALL",
+    "references": [
+      {
+        "to": "CODE:32d3",
+        "type": "UNCONDITIONAL_CALL"
+      }
+    ]
+  },
+  {
+    "address": "CODE:4e6d",
+    "length": 3,
+    "text": "LJMP 0x4f4b",
+    "bytes": "024f4b",
+    "flow_type": "UNCONDITIONAL_JUMP",
+    "references": [
+      {
+        "to": "CODE:4f4b",
+        "type": "UNCONDITIONAL_JUMP"
+      }
+    ]
+  },
+  {
+    "address": "CODE:4e70",
+    "length": 3,
+    "text": "MOV DPTR,#0xde8",
+    "bytes": "900de8",
+    "flow_type": "FALL_THROUGH",
+    "references": []
+  },
+  {
+    "address": "CODE:4e73",
+    "length": 1,
+    "text": "MOVX A,@DPTR",
+    "bytes": "e0",
+    "flow_type": "FALL_THROUGH",
+    "references": [
+      {
+        "to": "EXTMEM:0de8",
+        "type": "READ"
+      }
+    ]
+  },
+  {
+    "address": "CODE:4e74",
+    "length": 1,
+    "text": "MOV R3,A",
+    "bytes": "fb",
+    "flow_type": "FALL_THROUGH",
+    "references": []
+  },
+  {
+    "address": "CODE:4e75",
+    "length": 1,
+    "text": "INC DPTR",
+    "bytes": "a3",
+    "flow_type": "FALL_THROUGH",
+    "references": []
+  },
+  {
+    "address": "CODE:4e76",
+    "length": 1,
+    "text": "MOVX A,@DPTR",
+    "bytes": "e0",
+    "flow_type": "FALL_THROUGH",
+    "references": [
+      {
+        "to": "EXTMEM:0de9",
+        "type": "READ"
+      }
+    ]
+  },
+  {
+    "address": "CODE:4e77",
+    "length": 1,
+    "text": "MOV R2,A",
+    "bytes": "fa",
+    "flow_type": "FALL_THROUGH",
+    "references": []
+  },
+  {
+    "address": "CODE:4e78",
+    "length": 1,
+    "text": "INC DPTR",
+    "bytes": "a3",
+    "flow_type": "FALL_THROUGH",
+    "references": []
+  },
+  {
+    "address": "CODE:4e79",
+    "length": 1,
+    "text": "MOVX A,@DPTR",
+    "bytes": "e0",
+    "flow_type": "FALL_THROUGH",
+    "references": [
+      {
+        "to": "EXTMEM:0dea",
+        "type": "READ"
+      }
+    ]
+  },
+  {
+    "address": "CODE:4e7a",
+    "length": 1,
+    "text": "MOV R1,A",
+    "bytes": "f9",
+    "flow_type": "FALL_THROUGH",
+    "references": []
+  },
+  {
+    "address": "CODE:4e7b",
+    "length": 3,
+    "text": "MOV DPTR,#0x1",
+    "bytes": "900001",
+    "flow_type": "FALL_THROUGH",
+    "references": []
+  },
+  {
+    "address": "CODE:4e7e",
+    "length": 3,
+    "text": "LCALL 0x857a",
+    "bytes": "12857a",
+    "flow_type": "UNCONDITIONAL_CALL",
+    "references": [
+      {
+        "to": "CODE:857a",
+        "type": "UNCONDITIONAL_CALL"
+      }
+    ]
+  },
+  {
+    "address": "CODE:4e81",
+    "length": 1,
+    "text": "MOV R7,A",
+    "bytes": "ff",
+    "flow_type": "FALL_THROUGH",
+    "references": []
+  },
+  {
+    "address": "CODE:4e82",
+    "length": 2,
+    "text": "XRL A,#0x3",
+    "bytes": "6403",
+    "flow_type": "FALL_THROUGH",
+    "references": []
+  },
+  {
+    "address": "CODE:4e84",
+    "length": 2,
+    "text": "JNZ 0x4e89",
+    "bytes": "7003",
+    "flow_type": "CONDITIONAL_JUMP",
+    "references": [
+      {
+        "to": "CODE:4e89",
+        "type": "CONDITIONAL_JUMP"
+      }
+    ]
+  },
+  {
+    "address": "CODE:4e86",
+    "length": 3,
+    "text": "LJMP 0x4f4b",
+    "bytes": "024f4b",
+    "flow_type": "UNCONDITIONAL_JUMP",
+    "references": [
+      {
+        "to": "CODE:4f4b",
+        "type": "UNCONDITIONAL_JUMP"
+      }
+    ]
+  },
+  {
+    "address": "CODE:4e89",
+    "length": 1,
+    "text": "MOV A,R7",
+    "bytes": "ef",
+    "flow_type": "FALL_THROUGH",
+    "references": []
+  },
+  {
+    "address": "CODE:4e8a",
+    "length": 2,
+    "text": "JNZ 0x4e8d",
+    "bytes": "7001",
+    "flow_type": "CONDITIONAL_JUMP",
+    "references": [
+      {
+        "to": "CODE:4e8d",
+        "type": "CONDITIONAL_JUMP"
+      }
+    ]
+  },
+  {
+    "address": "CODE:4e8c",
+    "length": 1,
+    "text": "RET",
+    "bytes": "22",
+    "flow_type": "TERMINATOR",
+    "references": []
+  },
+  {
+    "address": "CODE:4e8d",
+    "length": 1,
+    "text": "MOV A,R7",
+    "bytes": "ef",
+    "flow_type": "FALL_THROUGH",
+    "references": []
+  },
+  {
+    "address": "CODE:4e8e",
+    "length": 3,
+    "text": "CJNE A,#0x1,0x4e98",
+    "bytes": "b40107",
+    "flow_type": "CONDITIONAL_JUMP",
+    "references": [
+      {
+        "to": "CODE:4e98",
+        "type": "CONDITIONAL_JUMP"
+      }
+    ]
+  },
+  {
+    "address": "CODE:4e91",
+    "length": 3,
+    "text": "MOV DPTR,#0x1",
+    "bytes": "900001",
+    "flow_type": "FALL_THROUGH",
+    "references": []
+  },
+  {
+    "address": "CODE:4e94",
+    "length": 1,
+    "text": "CLR A",
+    "bytes": "e4",
+    "flow_type": "FALL_THROUGH",
+    "references": []
+  },
+  {
+    "address": "CODE:4e95",
+    "length": 3,
+    "text": "LJMP 0x85b9",
+    "bytes": "0285b9",
+    "flow_type": "CALL_TERMINATOR",
+    "references": [
+      {
+        "to": "CODE:85b9",
+        "type": "UNCONDITIONAL_CALL"
+      }
+    ]
+  },
+  {
+    "address": "CODE:4e98",
+    "length": 3,
+    "text": "MOV DPTR,#0x6",
+    "bytes": "900006",
+    "flow_type": "FALL_THROUGH",
+    "references": []
+  },
+  {
+    "address": "CODE:4e9b",
+    "length": 3,
+    "text": "LCALL 0x8881",
+    "bytes": "128881",
+    "flow_type": "UNCONDITIONAL_CALL",
+    "references": [
+      {
+        "to": "CODE:8881",
+        "type": "UNCONDITIONAL_CALL"
+      }
+    ]
+  },
+  {
+    "address": "CODE:4e9e",
+    "length": 1,
+    "text": "MOV A,R3",
+    "bytes": "eb",
+    "flow_type": "FALL_THROUGH",
+    "references": []
+  },
+  {
+    "address": "CODE:4e9f",
+    "length": 2,
+    "text": "PUSH A",
+    "bytes": "c0e0",
+    "flow_type": "FALL_THROUGH",
+    "references": []
+  },
+  {
+    "address": "CODE:4ea1",
+    "length": 1,
+    "text": "MOV A,R2",
+    "bytes": "ea",
+    "flow_type": "FALL_THROUGH",
+    "references": []
+  },
+  {
+    "address": "CODE:4ea2",
+    "length": 2,
+    "text": "PUSH A",
+    "bytes": "c0e0",
+    "flow_type": "FALL_THROUGH",
+    "references": []
+  },
+  {
+    "address": "CODE:4ea4",
+    "length": 1,
+    "text": "MOV A,R1",
+    "bytes": "e9",
+    "flow_type": "FALL_THROUGH",
+    "references": []
+  },
+  {
+    "address": "CODE:4ea5",
+    "length": 2,
+    "text": "PUSH A",
+    "bytes": "c0e0",
+    "flow_type": "FALL_THROUGH",
+    "references": []
+  },
+  {
+    "address": "CODE:4ea7",
+    "length": 3,
+    "text": "MOV DPTR,#0xde8",
+    "bytes": "900de8",
+    "flow_type": "FALL_THROUGH",
+    "references": []
+  },
+  {
+    "address": "CODE:4eaa",
+    "length": 1,
+    "text": "MOVX A,@DPTR",
+    "bytes": "e0",
+    "flow_type": "FALL_THROUGH",
+    "references": [
+      {
+        "to": "EXTMEM:0de8",
+        "type": "READ"
+      }
+    ]
+  },
+  {
+    "address": "CODE:4eab",
+    "length": 1,
+    "text": "MOV R3,A",
+    "bytes": "fb",
+    "flow_type": "FALL_THROUGH",
+    "references": []
+  },
+  {
+    "address": "CODE:4eac",
+    "length": 1,
+    "text": "INC DPTR",
+    "bytes": "a3",
+    "flow_type": "FALL_THROUGH",
+    "references": []
+  },
+  {
+    "address": "CODE:4ead",
+    "length": 1,
+    "text": "MOVX A,@DPTR",
+    "bytes": "e0",
+    "flow_type": "FALL_THROUGH",
+    "references": [
+      {
+        "to": "EXTMEM:0de9",
+        "type": "READ"
+      }
+    ]
+  },
+  {
+    "address": "CODE:4eae",
+    "length": 1,
+    "text": "MOV R2,A",
+    "bytes": "fa",
+    "flow_type": "FALL_THROUGH",
+    "references": []
+  },
+  {
+    "address": "CODE:4eaf",
+    "length": 1,
+    "text": "INC DPTR",
+    "bytes": "a3",
+    "flow_type": "FALL_THROUGH",
+    "references": []
+  },
+  {
+    "address": "CODE:4eb0",
+    "length": 1,
+    "text": "MOVX A,@DPTR",
+    "bytes": "e0",
+    "flow_type": "FALL_THROUGH",
+    "references": [
+      {
+        "to": "EXTMEM:0dea",
+        "type": "READ"
+      }
+    ]
+  },
+  {
+    "address": "CODE:4eb1",
+    "length": 1,
+    "text": "MOV R1,A",
+    "bytes": "f9",
+    "flow_type": "FALL_THROUGH",
+    "references": []
+  },
+  {
+    "address": "CODE:4eb2",
+    "length": 3,
+    "text": "MOV DPTR,#0x9",
+    "bytes": "900009",
+    "flow_type": "FALL_THROUGH",
+    "references": []
+  },
+  {
+    "address": "CODE:4eb5",
+    "length": 3,
+    "text": "LCALL 0x8632",
+    "bytes": "128632",
+    "flow_type": "UNCONDITIONAL_CALL",
+    "references": [
+      {
+        "to": "CODE:8632",
+        "type": "UNCONDITIONAL_CALL"
+      }
+    ]
+  },
+  {
+    "address": "CODE:4eb8",
+    "length": 1,
+    "text": "MOV R5,A",
+    "bytes": "fd",
+    "flow_type": "FALL_THROUGH",
+    "references": []
+  },
+  {
+    "address": "CODE:4eb9",
+    "length": 2,
+    "text": "MOV R4,B",
+    "bytes": "acf0",
+    "flow_type": "FALL_THROUGH",
+    "references": []
+  },
+  {
+    "address": "CODE:4ebb",
+    "length": 1,
+    "text": "CLR A",
+    "bytes": "e4",
+    "flow_type": "FALL_THROUGH",
+    "references": []
+  },
+  {
+    "address": "CODE:4ebc",
+    "length": 3,
+    "text": "MOV DPTR,#0x75e",
+    "bytes": "90075e",
+    "flow_type": "FALL_THROUGH",
+    "references": []
+  },
+  {
+    "address": "CODE:4ebf",
+    "length": 1,
+    "text": "MOVX @DPTR,A",
+    "bytes": "f0",
+    "flow_type": "FALL_THROUGH",
+    "references": [
+      {
+        "to": "EXTMEM:075e",
+        "type": "WRITE"
+      }
+    ]
+  },
+  {
+    "address": "CODE:4ec0",
+    "length": 2,
+    "text": "POP A",
+    "bytes": "d0e0",
+    "flow_type": "FALL_THROUGH",
+    "references": []
+  },
+  {
+    "address": "CODE:4ec2",
+    "length": 1,
+    "text": "MOV R1,A",
+    "bytes": "f9",
+    "flow_type": "FALL_THROUGH",
+    "references": []
+  },
+  {
+    "address": "CODE:4ec3",
+    "length": 2,
+    "text": "POP A",
+    "bytes": "d0e0",
+    "flow_type": "FALL_THROUGH",
+    "references": []
+  },
+  {
+    "address": "CODE:4ec5",
+    "length": 1,
+    "text": "MOV R2,A",
+    "bytes": "fa",
+    "flow_type": "FALL_THROUGH",
+    "references": []
+  },
+  {
+    "address": "CODE:4ec6",
+    "length": 2,
+    "text": "POP A",
+    "bytes": "d0e0",
+    "flow_type": "FALL_THROUGH",
+    "references": []
+  },
+  {
+    "address": "CODE:4ec8",
+    "length": 1,
+    "text": "MOV R3,A",
+    "bytes": "fb",
+    "flow_type": "FALL_THROUGH",
+    "references": []
+  },
+  {
+    "address": "CODE:4ec9",
+    "length": 3,
+    "text": "LCALL 0x3e32",
+    "bytes": "123e32",
+    "flow_type": "UNCONDITIONAL_CALL",
+    "references": [
+      {
+        "to": "CODE:3e32",
+        "type": "UNCONDITIONAL_CALL"
+      }
+    ]
+  },
+  {
+    "address": "CODE:4ecc",
+    "length": 1,
+    "text": "CLR A",
+    "bytes": "e4",
+    "flow_type": "FALL_THROUGH",
+    "references": []
+  },
+  {
+    "address": "CODE:4ecd",
+    "length": 1,
+    "text": "MOV R4,A",
+    "bytes": "fc",
+    "flow_type": "FALL_THROUGH",
+    "references": []
+  },
+  {
+    "address": "CODE:4ece",
+    "length": 1,
+    "text": "MOV R5,A",
+    "bytes": "fd",
+    "flow_type": "FALL_THROUGH",
+    "references": []
+  },
+  {
+    "address": "CODE:4ecf",
+    "length": 1,
+    "text": "MOV R6,A",
+    "bytes": "fe",
+    "flow_type": "FALL_THROUGH",
+    "references": []
+  },
+  {
+    "address": "CODE:4ed0",
+    "length": 3,
+    "text": "MOV DPTR,#0x747",
+    "bytes": "900747",
+    "flow_type": "FALL_THROUGH",
+    "references": []
+  },
+  {
+    "address": "CODE:4ed3",
+    "length": 3,
+    "text": "LCALL 0x8844",
+    "bytes": "128844",
+    "flow_type": "UNCONDITIONAL_CALL",
+    "references": [
+      {
+        "to": "CODE:8844",
+        "type": "UNCONDITIONAL_CALL"
+      }
+    ]
+  },
+  {
+    "address": "CODE:4ed6",
+    "length": 1,
+    "text": "CLR A",
+    "bytes": "e4",
+    "flow_type": "FALL_THROUGH",
+    "references": []
+  },
+  {
+    "address": "CODE:4ed7",
+    "length": 1,
+    "text": "MOV R3,A",
+    "bytes": "fb",
+    "flow_type": "FALL_THROUGH",
+    "references": []
+  },
+  {
+    "address": "CODE:4ed8",
+    "length": 1,
+    "text": "MOV R2,A",
+    "bytes": "fa",
+    "flow_type": "FALL_THROUGH",
+    "references": []
+  },
+  {
+    "address": "CODE:4ed9",
+    "length": 1,
+    "text": "MOV R1,A",
+    "bytes": "f9",
+    "flow_type": "FALL_THROUGH",
+    "references": []
+  },
+  {
+    "address": "CODE:4eda",
+    "length": 1,
+    "text": "MOV R0,A",
+    "bytes": "f8",
+    "flow_type": "FALL_THROUGH",
+    "references": []
+  },
+  {
+    "address": "CODE:4edb",
+    "length": 1,
+    "text": "CLR CY",
+    "bytes": "c3",
+    "flow_type": "FALL_THROUGH",
+    "references": []
+  },
+  {
+    "address": "CODE:4edc",
+    "length": 3,
+    "text": "LCALL 0x8820",
+    "bytes": "128820",
+    "flow_type": "UNCONDITIONAL_CALL",
+    "references": [
+      {
+        "to": "CODE:8820",
+        "type": "UNCONDITIONAL_CALL"
+      }
+    ]
+  },
+  {
+    "address": "CODE:4edf",
+    "length": 2,
+    "text": "SJMP 0x4f4b",
+    "bytes": "806a",
+    "flow_type": "UNCONDITIONAL_JUMP",
+    "references": [
+      {
+        "to": "CODE:4f4b",
+        "type": "UNCONDITIONAL_JUMP"
+      }
+    ]
+  },
+  {
+    "address": "CODE:4ee1",
+    "length": 3,
+    "text": "MOV DPTR,#0xde8",
+    "bytes": "900de8",
+    "flow_type": "FALL_THROUGH",
+    "references": []
+  },
+  {
+    "address": "CODE:4ee4",
+    "length": 1,
+    "text": "MOVX A,@DPTR",
+    "bytes": "e0",
+    "flow_type": "FALL_THROUGH",
+    "references": [
+      {
+        "to": "EXTMEM:0de8",
+        "type": "READ"
+      }
+    ]
+  },
+  {
+    "address": "CODE:4ee5",
+    "length": 1,
+    "text": "MOV R3,A",
+    "bytes": "fb",
+    "flow_type": "FALL_THROUGH",
+    "references": []
+  },
+  {
+    "address": "CODE:4ee6",
+    "length": 1,
+    "text": "INC DPTR",
+    "bytes": "a3",
+    "flow_type": "FALL_THROUGH",
+    "references": []
+  },
+  {
+    "address": "CODE:4ee7",
+    "length": 1,
+    "text": "MOVX A,@DPTR",
+    "bytes": "e0",
+    "flow_type": "FALL_THROUGH",
+    "references": [
+      {
+        "to": "EXTMEM:0de9",
+        "type": "READ"
+      }
+    ]
+  },
+  {
+    "address": "CODE:4ee8",
+    "length": 1,
+    "text": "MOV R2,A",
+    "bytes": "fa",
+    "flow_type": "FALL_THROUGH",
+    "references": []
+  },
+  {
+    "address": "CODE:4ee9",
+    "length": 1,
+    "text": "INC DPTR",
+    "bytes": "a3",
+    "flow_type": "FALL_THROUGH",
+    "references": []
+  },
+  {
+    "address": "CODE:4eea",
+    "length": 1,
+    "text": "MOVX A,@DPTR",
+    "bytes": "e0",
+    "flow_type": "FALL_THROUGH",
+    "references": [
+      {
+        "to": "EXTMEM:0dea",
+        "type": "READ"
+      }
+    ]
+  },
+  {
+    "address": "CODE:4eeb",
+    "length": 1,
+    "text": "MOV R1,A",
+    "bytes": "f9",
+    "flow_type": "FALL_THROUGH",
+    "references": []
+  },
+  {
+    "address": "CODE:4eec",
+    "length": 3,
+    "text": "MOV DPTR,#0x1",
+    "bytes": "900001",
+    "flow_type": "FALL_THROUGH",
+    "references": []
+  },
+  {
+    "address": "CODE:4eef",
+    "length": 3,
+    "text": "LCALL 0x857a",
+    "bytes": "12857a",
+    "flow_type": "UNCONDITIONAL_CALL",
+    "references": [
+      {
+        "to": "CODE:857a",
+        "type": "UNCONDITIONAL_CALL"
+      }
+    ]
+  },
+  {
+    "address": "CODE:4ef2",
+    "length": 1,
+    "text": "MOV R7,A",
+    "bytes": "ff",
+    "flow_type": "FALL_THROUGH",
+    "references": []
+  },
+  {
+    "address": "CODE:4ef3",
+    "length": 3,
+    "text": "CJNE A,#0x4,0x4f03",
+    "bytes": "b4040d",
+    "flow_type": "CONDITIONAL_JUMP",
+    "references": [
+      {
+        "to": "CODE:4f03",
+        "type": "CONDITIONAL_JUMP"
+      }
+    ]
+  },
+  {
+    "address": "CODE:4ef6",
+    "length": 3,
+    "text": "LCALL 0x8561",
+    "bytes": "128561",
+    "flow_type": "UNCONDITIONAL_CALL",
+    "references": [
+      {
+        "to": "CODE:8561",
+        "type": "UNCONDITIONAL_CALL"
+      }
+    ]
+  },
+  {
+    "address": "CODE:4ef9",
+    "length": 2,
+    "text": "JZ 0x4f65",
+    "bytes": "606a",
+    "flow_type": "CONDITIONAL_JUMP",
+    "references": [
+      {
+        "to": "CODE:4f65",
+        "type": "CONDITIONAL_JUMP"
+      }
+    ]
+  },
+  {
+    "address": "CODE:4efb",
+    "length": 3,
+    "text": "MOV DPTR,#0x2f54",
+    "bytes": "902f54",
+    "flow_type": "FALL_THROUGH",
+    "references": []
+  },
+  {
+    "address": "CODE:4efe",
+    "length": 1,
+    "text": "MOVX @DPTR,A",
+    "bytes": "f0",
+    "flow_type": "FALL_THROUGH",
+    "references": [
+      {
+        "to": "EXTMEM:2f54",
+        "type": "WRITE"
+      }
+    ]
+  },
+  {
+    "address": "CODE:4eff",
+    "length": 1,
+    "text": "CLR A",
+    "bytes": "e4",
+    "flow_type": "FALL_THROUGH",
+    "references": []
+  },
+  {
+    "address": "CODE:4f00",
+    "length": 3,
+    "text": "LJMP 0x85a7",
+    "bytes": "0285a7",
+    "flow_type": "CALL_TERMINATOR",
+    "references": [
+      {
+        "to": "CODE:85a7",
+        "type": "UNCONDITIONAL_CALL"
+      }
+    ]
+  },
+  {
+    "address": "CODE:4f03",
+    "length": 1,
+    "text": "MOV A,R7",
+    "bytes": "ef",
+    "flow_type": "FALL_THROUGH",
+    "references": []
+  },
+  {
+    "address": "CODE:4f04",
+    "length": 2,
+    "text": "JNZ 0x4f07",
+    "bytes": "7001",
+    "flow_type": "CONDITIONAL_JUMP",
+    "references": [
+      {
+        "to": "CODE:4f07",
+        "type": "CONDITIONAL_JUMP"
+      }
+    ]
+  },
+  {
+    "address": "CODE:4f06",
+    "length": 1,
+    "text": "RET",
+    "bytes": "22",
+    "flow_type": "TERMINATOR",
+    "references": []
+  },
+  {
+    "address": "CODE:4f07",
+    "length": 3,
+    "text": "MOV DPTR,#0x1",
+    "bytes": "900001",
+    "flow_type": "FALL_THROUGH",
+    "references": []
+  },
+  {
+    "address": "CODE:4f0a",
+    "length": 3,
+    "text": "LCALL 0x857a",
+    "bytes": "12857a",
+    "flow_type": "UNCONDITIONAL_CALL",
+    "references": [
+      {
+        "to": "CODE:857a",
+        "type": "UNCONDITIONAL_CALL"
+      }
+    ]
+  },
+  {
+    "address": "CODE:4f0d",
+    "length": 2,
+    "text": "XRL A,#0x2",
+    "bytes": "6402",
+    "flow_type": "FALL_THROUGH",
+    "references": []
+  },
+  {
+    "address": "CODE:4f0f",
+    "length": 2,
+    "text": "JZ 0x4f65",
+    "bytes": "6054",
+    "flow_type": "CONDITIONAL_JUMP",
+    "references": [
+      {
+        "to": "CODE:4f65",
+        "type": "CONDITIONAL_JUMP"
+      }
+    ]
+  },
+  {
+    "address": "CODE:4f11",
+    "length": 3,
+    "text": "MOV DPTR,#0x6",
+    "bytes": "900006",
+    "flow_type": "FALL_THROUGH",
+    "references": []
+  },
+  {
+    "address": "CODE:4f14",
+    "length": 3,
+    "text": "LCALL 0x8881",
+    "bytes": "128881",
+    "flow_type": "UNCONDITIONAL_CALL",
+    "references": [
+      {
+        "to": "CODE:8881",
+        "type": "UNCONDITIONAL_CALL"
+      }
+    ]
+  },
+  {
+    "address": "CODE:4f17",
+    "length": 1,
+    "text": "MOV A,R3",
+    "bytes": "eb",
+    "flow_type": "FALL_THROUGH",
+    "references": []
+  },
+  {
+    "address": "CODE:4f18",
+    "length": 2,
+    "text": "PUSH A",
+    "bytes": "c0e0",
+    "flow_type": "FALL_THROUGH",
+    "references": []
+  },
+  {
+    "address": "CODE:4f1a",
+    "length": 1,
+    "text": "MOV A,R2",
+    "bytes": "ea",
+    "flow_type": "FALL_THROUGH",
+    "references": []
+  },
+  {
+    "address": "CODE:4f1b",
+    "length": 2,
+    "text": "PUSH A",
+    "bytes": "c0e0",
+    "flow_type": "FALL_THROUGH",
+    "references": []
+  },
+  {
+    "address": "CODE:4f1d",
+    "length": 1,
+    "text": "MOV A,R1",
+    "bytes": "e9",
+    "flow_type": "FALL_THROUGH",
+    "references": []
+  },
+  {
+    "address": "CODE:4f1e",
+    "length": 2,
+    "text": "PUSH A",
+    "bytes": "c0e0",
+    "flow_type": "FALL_THROUGH",
+    "references": []
+  },
+  {
+    "address": "CODE:4f20",
+    "length": 3,
+    "text": "MOV DPTR,#0xde8",
+    "bytes": "900de8",
+    "flow_type": "FALL_THROUGH",
+    "references": []
+  },
+  {
+    "address": "CODE:4f23",
+    "length": 1,
+    "text": "MOVX A,@DPTR",
+    "bytes": "e0",
+    "flow_type": "FALL_THROUGH",
+    "references": [
+      {
+        "to": "EXTMEM:0de8",
+        "type": "READ"
+      }
+    ]
+  },
+  {
+    "address": "CODE:4f24",
+    "length": 1,
+    "text": "MOV R3,A",
+    "bytes": "fb",
+    "flow_type": "FALL_THROUGH",
+    "references": []
+  },
+  {
+    "address": "CODE:4f25",
+    "length": 1,
+    "text": "INC DPTR",
+    "bytes": "a3",
+    "flow_type": "FALL_THROUGH",
+    "references": []
+  },
+  {
+    "address": "CODE:4f26",
+    "length": 1,
+    "text": "MOVX A,@DPTR",
+    "bytes": "e0",
+    "flow_type": "FALL_THROUGH",
+    "references": [
+      {
+        "to": "EXTMEM:0de9",
+        "type": "READ"
+      }
+    ]
+  },
+  {
+    "address": "CODE:4f27",
+    "length": 1,
+    "text": "MOV R2,A",
+    "bytes": "fa",
+    "flow_type": "FALL_THROUGH",
+    "references": []
+  },
+  {
+    "address": "CODE:4f28",
+    "length": 1,
+    "text": "INC DPTR",
+    "bytes": "a3",
+    "flow_type": "FALL_THROUGH",
+    "references": []
+  },
+  {
+    "address": "CODE:4f29",
+    "length": 1,
+    "text": "MOVX A,@DPTR",
+    "bytes": "e0",
+    "flow_type": "FALL_THROUGH",
+    "references": [
+      {
+        "to": "EXTMEM:0dea",
+        "type": "READ"
+      }
+    ]
+  },
+  {
+    "address": "CODE:4f2a",
+    "length": 1,
+    "text": "MOV R1,A",
+    "bytes": "f9",
+    "flow_type": "FALL_THROUGH",
+    "references": []
+  },
+  {
+    "address": "CODE:4f2b",
+    "length": 3,
+    "text": "MOV DPTR,#0x9",
+    "bytes": "900009",
+    "flow_type": "FALL_THROUGH",
+    "references": []
+  },
+  {
+    "address": "CODE:4f2e",
+    "length": 3,
+    "text": "LCALL 0x8632",
+    "bytes": "128632",
+    "flow_type": "UNCONDITIONAL_CALL",
+    "references": [
+      {
+        "to": "CODE:8632",
+        "type": "UNCONDITIONAL_CALL"
+      }
+    ]
+  },
+  {
+    "address": "CODE:4f31",
+    "length": 1,
+    "text": "MOV R5,A",
+    "bytes": "fd",
+    "flow_type": "FALL_THROUGH",
+    "references": []
+  },
+  {
+    "address": "CODE:4f32",
+    "length": 2,
+    "text": "MOV R4,B",
+    "bytes": "acf0",
+    "flow_type": "FALL_THROUGH",
+    "references": []
+  },
+  {
+    "address": "CODE:4f34",
+    "length": 1,
+    "text": "CLR A",
+    "bytes": "e4",
+    "flow_type": "FALL_THROUGH",
+    "references": []
+  },
+  {
+    "address": "CODE:4f35",
+    "length": 3,
+    "text": "MOV DPTR,#0x76a",
+    "bytes": "90076a",
+    "flow_type": "FALL_THROUGH",
+    "references": []
+  },
+  {
+    "address": "CODE:4f38",
+    "length": 1,
+    "text": "MOVX @DPTR,A",
+    "bytes": "f0",
+    "flow_type": "FALL_THROUGH",
+    "references": [
+      {
+        "to": "EXTMEM:076a",
+        "type": "WRITE"
+      }
+    ]
+  },
+  {
+    "address": "CODE:4f39",
+    "length": 2,
+    "text": "POP A",
+    "bytes": "d0e0",
+    "flow_type": "FALL_THROUGH",
+    "references": []
+  },
+  {
+    "address": "CODE:4f3b",
+    "length": 1,
+    "text": "MOV R1,A",
+    "bytes": "f9",
+    "flow_type": "FALL_THROUGH",
+    "references": []
+  },
+  {
+    "address": "CODE:4f3c",
+    "length": 2,
+    "text": "POP A",
+    "bytes": "d0e0",
+    "flow_type": "FALL_THROUGH",
+    "references": []
+  },
+  {
+    "address": "CODE:4f3e",
+    "length": 1,
+    "text": "MOV R2,A",
+    "bytes": "fa",
+    "flow_type": "FALL_THROUGH",
+    "references": []
+  },
+  {
+    "address": "CODE:4f3f",
+    "length": 2,
+    "text": "POP A",
+    "bytes": "d0e0",
+    "flow_type": "FALL_THROUGH",
+    "references": []
+  },
+  {
+    "address": "CODE:4f41",
+    "length": 1,
+    "text": "MOV R3,A",
+    "bytes": "fb",
+    "flow_type": "FALL_THROUGH",
+    "references": []
+  },
+  {
+    "address": "CODE:4f42",
+    "length": 3,
+    "text": "LCALL 0x3d04",
+    "bytes": "123d04",
+    "flow_type": "UNCONDITIONAL_CALL",
+    "references": [
+      {
+        "to": "CODE:3d04",
+        "type": "UNCONDITIONAL_CALL"
+      }
+    ]
+  },
+  {
+    "address": "CODE:4f45",
+    "length": 3,
+    "text": "MOV DPTR,#0x747",
+    "bytes": "900747",
+    "flow_type": "FALL_THROUGH",
+    "references": []
+  },
+  {
+    "address": "CODE:4f48",
+    "length": 3,
+    "text": "LCALL 0x8844",
+    "bytes": "128844",
+    "flow_type": "UNCONDITIONAL_CALL",
+    "references": [
+      {
+        "to": "CODE:8844",
+        "type": "UNCONDITIONAL_CALL"
+      }
+    ]
+  },
+  {
+    "address": "CODE:4f4b",
+    "length": 3,
+    "text": "MOV DPTR,#0xde8",
+    "bytes": "900de8",
+    "flow_type": "FALL_THROUGH",
+    "references": []
+  },
+  {
+    "address": "CODE:4f4e",
+    "length": 1,
+    "text": "MOVX A,@DPTR",
+    "bytes": "e0",
+    "flow_type": "FALL_THROUGH",
+    "references": [
+      {
+        "to": "EXTMEM:0de8",
+        "type": "READ"
+      }
+    ]
+  },
+  {
+    "address": "CODE:4f4f",
+    "length": 1,
+    "text": "MOV R3,A",
+    "bytes": "fb",
+    "flow_type": "FALL_THROUGH",
+    "references": []
+  },
+  {
+    "address": "CODE:4f50",
+    "length": 1,
+    "text": "INC DPTR",
+    "bytes": "a3",
+    "flow_type": "FALL_THROUGH",
+    "references": []
+  },
+  {
+    "address": "CODE:4f51",
+    "length": 1,
+    "text": "MOVX A,@DPTR",
+    "bytes": "e0",
+    "flow_type": "FALL_THROUGH",
+    "references": [
+      {
+        "to": "EXTMEM:0de9",
+        "type": "READ"
+      }
+    ]
+  },
+  {
+    "address": "CODE:4f52",
+    "length": 1,
+    "text": "MOV R2,A",
+    "bytes": "fa",
+    "flow_type": "FALL_THROUGH",
+    "references": []
+  },
+  {
+    "address": "CODE:4f53",
+    "length": 1,
+    "text": "INC DPTR",
+    "bytes": "a3",
+    "flow_type": "FALL_THROUGH",
+    "references": []
+  },
+  {
+    "address": "CODE:4f54",
+    "length": 1,
+    "text": "MOVX A,@DPTR",
+    "bytes": "e0",
+    "flow_type": "FALL_THROUGH",
+    "references": [
+      {
+        "to": "EXTMEM:0dea",
+        "type": "READ"
+      }
+    ]
+  },
+  {
+    "address": "CODE:4f55",
+    "length": 1,
+    "text": "MOV R1,A",
+    "bytes": "f9",
+    "flow_type": "FALL_THROUGH",
+    "references": []
+  },
+  {
+    "address": "CODE:4f56",
+    "length": 3,
+    "text": "MOV DPTR,#0x4",
+    "bytes": "900004",
+    "flow_type": "FALL_THROUGH",
+    "references": []
+  },
+  {
+    "address": "CODE:4f59",
+    "length": 3,
+    "text": "LCALL 0x857a",
+    "bytes": "12857a",
+    "flow_type": "UNCONDITIONAL_CALL",
+    "references": [
+      {
+        "to": "CODE:857a",
+        "type": "UNCONDITIONAL_CALL"
+      }
+    ]
+  },
+  {
+    "address": "CODE:4f5c",
+    "length": 3,
+    "text": "CJNE A,#0x2,0x4f65",
+    "bytes": "b40206",
+    "flow_type": "CONDITIONAL_JUMP",
+    "references": [
+      {
+        "to": "CODE:4f65",
+        "type": "CONDITIONAL_JUMP"
+      }
+    ]
+  },
+  {
+    "address": "CODE:4f5f",
+    "length": 3,
+    "text": "MOV DPTR,#0x2f40",
+    "bytes": "902f40",
+    "flow_type": "FALL_THROUGH",
+    "references": []
+  },
+  {
+    "address": "CODE:4f62",
+    "length": 2,
+    "text": "MOV A,#0xb",
+    "bytes": "740b",
+    "flow_type": "FALL_THROUGH",
+    "references": []
+  },
+  {
+    "address": "CODE:4f64",
+    "length": 1,
+    "text": "MOVX @DPTR,A",
+    "bytes": "f0",
+    "flow_type": "FALL_THROUGH",
+    "references": [
+      {
+        "to": "EXTMEM:2f40",
+        "type": "WRITE"
+      }
+    ]
+  },
+  {
+    "address": "CODE:4f65",
+    "length": 1,
+    "text": "RET",
+    "bytes": "22",
+    "flow_type": "TERMINATOR",
+    "references": []
+  },
+  {
+    "address": "CODE:4f66",
+    "length": 3,
+    "text": "LCALL 0x4dba",
+    "bytes": "124dba",
+    "flow_type": "UNCONDITIONAL_CALL",
+    "references": [
+      {
+        "to": "CODE:4dba",
+        "type": "UNCONDITIONAL_CALL"
+      }
+    ]
+  },
+  {
+    "address": "CODE:4f69",
+    "length": 3,
+    "text": "MOV DPTR,#0xdcf",
+    "bytes": "900dcf",
+    "flow_type": "FALL_THROUGH",
+    "references": []
+  },
+  {
+    "address": "CODE:4f6c",
+    "length": 1,
+    "text": "MOVX A,@DPTR",
+    "bytes": "e0",
+    "flow_type": "FALL_THROUGH",
+    "references": [
+      {
+        "to": "EXTMEM:0dcf",
+        "type": "READ"
+      }
+    ]
+  },
+  {
+    "address": "CODE:4f6d",
+    "length": 2,
+    "text": "JZ 0x4f74",
+    "bytes": "6005",
+    "flow_type": "CONDITIONAL_JUMP",
+    "references": [
+      {
+        "to": "CODE:4f74",
+        "type": "CONDITIONAL_JUMP"
+      }
+    ]
+  },
+  {
+    "address": "CODE:4f6f",
+    "length": 1,
+    "text": "CLR A",
+    "bytes": "e4",
+    "flow_type": "FALL_THROUGH",
+    "references": []
+  },
+  {
+    "address": "CODE:4f70",
+    "length": 3,
+    "text": "MOV DPTR,#0xdcf",
+    "bytes": "900dcf",
+    "flow_type": "FALL_THROUGH",
+    "references": []
+  },
+  {
+    "address": "CODE:4f73",
+    "length": 1,
+    "text": "MOVX @DPTR,A",
+    "bytes": "f0",
+    "flow_type": "FALL_THROUGH",
+    "references": [
+      {
+        "to": "EXTMEM:0dcf",
+        "type": "WRITE"
+      }
+    ]
+  },
+  {
+    "address": "CODE:4f74",
+    "length": 1,
+    "text": "RET",
+    "bytes": "22",
+    "flow_type": "TERMINATOR",
+    "references": []
+  },
+  {
+    "address": "CODE:4f75",
+    "length": 1,
+    "text": "CLR A",
+    "bytes": "e4",
+    "flow_type": "FALL_THROUGH",
+    "references": []
+  },
+  {
+    "address": "CODE:4f76",
+    "length": 3,
+    "text": "MOV DPTR,#0x795",
+    "bytes": "900795",
+    "flow_type": "FALL_THROUGH",
+    "references": []
+  },
+  {
+    "address": "CODE:4f79",
+    "length": 1,
+    "text": "MOVX @DPTR,A",
+    "bytes": "f0",
+    "flow_type": "FALL_THROUGH",
+    "references": [
+      {
+        "to": "EXTMEM:0795",
+        "type": "WRITE"
+      }
+    ]
+  },
+  {
+    "address": "CODE:4f7a",
+    "length": 3,
+    "text": "MOV DPTR,#0x1102",
+    "bytes": "901102",
+    "flow_type": "FALL_THROUGH",
+    "references": []
+  },
+  {
+    "address": "CODE:4f7d",
+    "length": 2,
+    "text": "MOV A,#0x40",
+    "bytes": "7440",
+    "flow_type": "FALL_THROUGH",
+    "references": []
+  },
+  {
+    "address": "CODE:4f7f",
+    "length": 1,
+    "text": "MOVX @DPTR,A",
+    "bytes": "f0",
+    "flow_type": "FALL_THROUGH",
+    "references": [
+      {
+        "to": "EXTMEM:1102",
+        "type": "WRITE"
+      }
+    ]
+  },
+  {
+    "address": "CODE:4f80",
+    "length": 3,
+    "text": "LCALL 0x36eb",
+    "bytes": "1236eb",
+    "flow_type": "UNCONDITIONAL_CALL",
+    "references": [
+      {
+        "to": "CODE:36eb",
+        "type": "UNCONDITIONAL_CALL"
+      }
+    ]
+  },
+  {
+    "address": "CODE:4f83",
+    "length": 1,
+    "text": "MOV A,R7",
+    "bytes": "ef",
+    "flow_type": "FALL_THROUGH",
+    "references": []
+  },
+  {
+    "address": "CODE:4f84",
+    "length": 2,
+    "text": "JZ 0x4f8f",
+    "bytes": "6009",
+    "flow_type": "CONDITIONAL_JUMP",
+    "references": [
+      {
+        "to": "CODE:4f8f",
+        "type": "CONDITIONAL_JUMP"
+      }
+    ]
+  },
+  {
+    "address": "CODE:4f86",
+    "length": 1,
+    "text": "CLR A",
+    "bytes": "e4",
+    "flow_type": "FALL_THROUGH",
+    "references": []
+  },
+  {
+    "address": "CODE:4f87",
+    "length": 3,
+    "text": "MOV DPTR,#0xdd3",
+    "bytes": "900dd3",
+    "flow_type": "FALL_THROUGH",
+    "references": []
+  },
+  {
+    "address": "CODE:4f8a",
+    "length": 1,
+    "text": "MOVX @DPTR,A",
+    "bytes": "f0",
+    "flow_type": "FALL_THROUGH",
+    "references": [
+      {
+        "to": "EXTMEM:0dd3",
+        "type": "WRITE"
+      }
+    ]
+  },
+  {
+    "address": "CODE:4f8b",
+    "length": 3,
+    "text": "MOV DPTR,#0x8ad",
+    "bytes": "9008ad",
+    "flow_type": "FALL_THROUGH",
+    "references": []
+  },
+  {
+    "address": "CODE:4f8e",
+    "length": 1,
+    "text": "MOVX @DPTR,A",
+    "bytes": "f0",
+    "flow_type": "FALL_THROUGH",
+    "references": [
+      {
+        "to": "EXTMEM:08ad",
+        "type": "WRITE"
+      }
+    ]
+  },
+  {
+    "address": "CODE:4f8f",
+    "length": 3,
+    "text": "MOV DPTR,#0x2f52",
+    "bytes": "902f52",
+    "flow_type": "FALL_THROUGH",
+    "references": []
+  },
+  {
+    "address": "CODE:4f92",
+    "length": 1,
+    "text": "MOVX A,@DPTR",
+    "bytes": "e0",
+    "flow_type": "FALL_THROUGH",
+    "references": [
+      {
+        "to": "EXTMEM:2f52",
+        "type": "READ"
+      }
+    ]
+  },
+  {
+    "address": "CODE:4f93",
+    "length": 3,
+    "text": "JNB 0xe2,0x4fa0",
+    "bytes": "30e20a",
+    "flow_type": "CONDITIONAL_JUMP",
+    "references": [
+      {
+        "to": "BITS:e2",
+        "type": "DATA"
+      },
+      {
+        "to": "CODE:4fa0",
+        "type": "CONDITIONAL_JUMP"
+      }
+    ]
+  },
+  {
+    "address": "CODE:4f96",
+    "length": 1,
+    "text": "INC DPTR",
+    "bytes": "a3",
+    "flow_type": "FALL_THROUGH",
+    "references": []
+  },
+  {
+    "address": "CODE:4f97",
+    "length": 2,
+    "text": "MOV A,#0x1",
+    "bytes": "7401",
+    "flow_type": "FALL_THROUGH",
+    "references": []
+  },
+  {
+    "address": "CODE:4f99",
+    "length": 1,
+    "text": "MOVX @DPTR,A",
+    "bytes": "f0",
+    "flow_type": "FALL_THROUGH",
+    "references": [
+      {
+        "to": "EXTMEM:2f53",
+        "type": "WRITE"
+      }
+    ]
+  },
+  {
+    "address": "CODE:4f9a",
+    "length": 3,
+    "text": "LCALL 0x35dd",
+    "bytes": "1235dd",
+    "flow_type": "UNCONDITIONAL_CALL",
+    "references": [
+      {
+        "to": "CODE:35dd",
+        "type": "UNCONDITIONAL_CALL"
+      }
+    ]
+  },
+  {
+    "address": "CODE:4f9d",
+    "length": 3,
+    "text": "LJMP 0x5093",
+    "bytes": "025093",
+    "flow_type": "UNCONDITIONAL_JUMP",
+    "references": [
+      {
+        "to": "CODE:5093",
+        "type": "UNCONDITIONAL_JUMP"
+      }
+    ]
+  },
+  {
+    "address": "CODE:4fa0",
+    "length": 3,
+    "text": "MOV DPTR,#0x2f52",
+    "bytes": "902f52",
+    "flow_type": "FALL_THROUGH",
+    "references": []
+  },
+  {
+    "address": "CODE:4fa3",
+    "length": 1,
+    "text": "MOVX A,@DPTR",
+    "bytes": "e0",
+    "flow_type": "FALL_THROUGH",
+    "references": [
+      {
+        "to": "EXTMEM:2f52",
+        "type": "READ"
+      }
+    ]
+  },
+  {
+    "address": "CODE:4fa4",
+    "length": 3,
+    "text": "JB 0xe0,0x4faa",
+    "bytes": "20e003",
+    "flow_type": "CONDITIONAL_JUMP",
+    "references": [
+      {
+        "to": "BITS:e0",
+        "type": "DATA"
+      },
+      {
+        "to": "CODE:4faa",
+        "type": "CONDITIONAL_JUMP"
+      }
+    ]
+  },
+  {
+    "address": "CODE:4fa7",
+    "length": 3,
+    "text": "LJMP 0x50ab",
+    "bytes": "0250ab",
+    "flow_type": "UNCONDITIONAL_JUMP",
+    "references": [
+      {
+        "to": "CODE:50ab",
+        "type": "UNCONDITIONAL_JUMP"
+      }
+    ]
+  },
+  {
+    "address": "CODE:4faa",
+    "length": 3,
+    "text": "MOV DPTR,#0xde8",
+    "bytes": "900de8",
+    "flow_type": "FALL_THROUGH",
+    "references": []
+  },
+  {
+    "address": "CODE:4fad",
+    "length": 1,
+    "text": "MOVX A,@DPTR",
+    "bytes": "e0",
+    "flow_type": "FALL_THROUGH",
+    "references": [
+      {
+        "to": "EXTMEM:0de8",
+        "type": "READ"
+      }
+    ]
+  },
+  {
+    "address": "CODE:4fae",
+    "length": 1,
+    "text": "MOV R3,A",
+    "bytes": "fb",
+    "flow_type": "FALL_THROUGH",
+    "references": []
+  },
+  {
+    "address": "CODE:4faf",
+    "length": 1,
+    "text": "INC DPTR",
+    "bytes": "a3",
+    "flow_type": "FALL_THROUGH",
+    "references": []
+  },
+  {
+    "address": "CODE:4fb0",
+    "length": 1,
+    "text": "MOVX A,@DPTR",
+    "bytes": "e0",
+    "flow_type": "FALL_THROUGH",
+    "references": [
+      {
+        "to": "EXTMEM:0de9",
+        "type": "READ"
+      }
+    ]
+  },
+  {
+    "address": "CODE:4fb1",
+    "length": 1,
+    "text": "MOV R2,A",
+    "bytes": "fa",
+    "flow_type": "FALL_THROUGH",
+    "references": []
+  },
+  {
+    "address": "CODE:4fb2",
+    "length": 1,
+    "text": "INC DPTR",
+    "bytes": "a3",
+    "flow_type": "FALL_THROUGH",
+    "references": []
+  },
+  {
+    "address": "CODE:4fb3",
+    "length": 1,
+    "text": "MOVX A,@DPTR",
+    "bytes": "e0",
+    "flow_type": "FALL_THROUGH",
+    "references": [
+      {
+        "to": "EXTMEM:0dea",
+        "type": "READ"
+      }
+    ]
+  },
+  {
+    "address": "CODE:4fb4",
+    "length": 1,
+    "text": "MOV R1,A",
+    "bytes": "f9",
+    "flow_type": "FALL_THROUGH",
+    "references": []
+  },
+  {
+    "address": "CODE:4fb5",
+    "length": 3,
+    "text": "MOV DPTR,#0xf",
+    "bytes": "90000f",
+    "flow_type": "FALL_THROUGH",
+    "references": []
+  },
+  {
+    "address": "CODE:4fb8",
+    "length": 1,
+    "text": "CLR A",
+    "bytes": "e4",
+    "flow_type": "FALL_THROUGH",
+    "references": []
+  },
+  {
+    "address": "CODE:4fb9",
+    "length": 2,
+    "text": "MOV B,A",
+    "bytes": "f5f0",
+    "flow_type": "FALL_THROUGH",
+    "references": []
+  },
+  {
+    "address": "CODE:4fbb",
+    "length": 3,
+    "text": "LCALL 0x86d6",
+    "bytes": "1286d6",
+    "flow_type": "UNCONDITIONAL_CALL",
+    "references": [
+      {
+        "to": "CODE:86d6",
+        "type": "UNCONDITIONAL_CALL"
+      }
+    ]
+  },
+  {
+    "address": "CODE:4fbe",
+    "length": 3,
+    "text": "MOV DPTR,#0x2f40",
+    "bytes": "902f40",
+    "flow_type": "FALL_THROUGH",
+    "references": []
+  },
+  {
+    "address": "CODE:4fc1",
+    "length": 1,
+    "text": "MOVX A,@DPTR",
+    "bytes": "e0",
+    "flow_type": "FALL_THROUGH",
+    "references": [
+      {
+        "to": "EXTMEM:2f40",
+        "type": "READ"
+      }
+    ]
+  },
+  {
+    "address": "CODE:4fc2",
+    "length": 3,
+    "text": "JNB 0xe3,0x4fc9",
+    "bytes": "30e304",
+    "flow_type": "CONDITIONAL_JUMP",
+    "references": [
+      {
+        "to": "BITS:e3",
+        "type": "DATA"
+      },
+      {
+        "to": "CODE:4fc9",
+        "type": "CONDITIONAL_JUMP"
+      }
+    ]
+  },
+  {
+    "address": "CODE:4fc5",
+    "length": 1,
+    "text": "MOVX A,@DPTR",
+    "bytes": "e0",
+    "flow_type": "FALL_THROUGH",
+    "references": [
+      {
+        "to": "EXTMEM:2f40",
+        "type": "READ"
+      }
+    ]
+  },
+  {
+    "address": "CODE:4fc6",
+    "length": 2,
+    "text": "ANL A,#0xf7",
+    "bytes": "54f7",
+    "flow_type": "FALL_THROUGH",
+    "references": []
+  },
+  {
+    "address": "CODE:4fc8",
+    "length": 1,
+    "text": "MOVX @DPTR,A",
+    "bytes": "f0",
+    "flow_type": "FALL_THROUGH",
+    "references": [
+      {
+        "to": "EXTMEM:2f40",
+        "type": "WRITE"
+      }
+    ]
+  },
+  {
+    "address": "CODE:4fc9",
+    "length": 3,
+    "text": "MOV DPTR,#0x2f52",
+    "bytes": "902f52",
+    "flow_type": "FALL_THROUGH",
+    "references": []
+  },
+  {
+    "address": "CODE:4fcc",
+    "length": 2,
+    "text": "MOV A,#0x1",
+    "bytes": "7401",
+    "flow_type": "FALL_THROUGH",
+    "references": []
+  },
+  {
+    "address": "CODE:4fce",
+    "length": 1,
+    "text": "MOVX @DPTR,A",
+    "bytes": "f0",
+    "flow_type": "FALL_THROUGH",
+    "references": [
+      {
+        "to": "EXTMEM:2f52",
+        "type": "WRITE"
+      }
+    ]
+  },
+  {
+    "address": "CODE:4fcf",
+    "length": 3,
+    "text": "MOV DPTR,#0x2f40",
+    "bytes": "902f40",
+    "flow_type": "FALL_THROUGH",
+    "references": []
+  },
+  {
+    "address": "CODE:4fd2",
+    "length": 1,
+    "text": "MOVX A,@DPTR",
+    "bytes": "e0",
+    "flow_type": "FALL_THROUGH",
+    "references": [
+      {
+        "to": "EXTMEM:2f40",
+        "type": "READ"
+      }
+    ]
+  },
+  {
+    "address": "CODE:4fd3",
+    "length": 3,
+    "text": "JNB 0xe1,0x4fd9",
+    "bytes": "30e103",
+    "flow_type": "CONDITIONAL_JUMP",
+    "references": [
+      {
+        "to": "BITS:e1",
+        "type": "DATA"
+      },
+      {
+        "to": "CODE:4fd9",
+        "type": "CONDITIONAL_JUMP"
+      }
+    ]
+  },
+  {
+    "address": "CODE:4fd6",
+    "length": 3,
+    "text": "LJMP 0x50ab",
+    "bytes": "0250ab",
+    "flow_type": "UNCONDITIONAL_JUMP",
+    "references": [
+      {
+        "to": "CODE:50ab",
+        "type": "UNCONDITIONAL_JUMP"
+      }
+    ]
+  },
+  {
+    "address": "CODE:4fd9",
+    "length": 3,
+    "text": "MOV DPTR,#0x1",
+    "bytes": "900001",
+    "flow_type": "FALL_THROUGH",
+    "references": []
+  },
+  {
+    "address": "CODE:4fdc",
+    "length": 3,
+    "text": "LCALL 0x857a",
+    "bytes": "12857a",
+    "flow_type": "UNCONDITIONAL_CALL",
+    "references": [
+      {
+        "to": "CODE:857a",
+        "type": "UNCONDITIONAL_CALL"
+      }
+    ]
+  },
+  {
+    "address": "CODE:4fdf",
+    "length": 2,
+    "text": "XRL A,#0x3",
+    "bytes": "6403",
+    "flow_type": "FALL_THROUGH",
+    "references": []
+  },
+  {
+    "address": "CODE:4fe1",
+    "length": 2,
+    "text": "JNZ 0x500f",
+    "bytes": "702c",
+    "flow_type": "CONDITIONAL_JUMP",
+    "references": [
+      {
+        "to": "CODE:500f",
+        "type": "CONDITIONAL_JUMP"
+      }
+    ]
+  },
+  {
+    "address": "CODE:4fe3",
+    "length": 2,
+    "text": "MOV R3,#0x1",
+    "bytes": "7b01",
+    "flow_type": "FALL_THROUGH",
+    "references": []
+  },
+  {
+    "address": "CODE:4fe5",
+    "length": 2,
+    "text": "MOV R2,#0x7",
+    "bytes": "7a07",
+    "flow_type": "FALL_THROUGH",
+    "references": []
+  },
+  {
+    "address": "CODE:4fe7",
+    "length": 2,
+    "text": "MOV R1,#0x95",
+    "bytes": "7995",
+    "flow_type": "FALL_THROUGH",
+    "references": []
+  },
+  {
+    "address": "CODE:4fe9",
+    "length": 2,
+    "text": "MOV R7,#0x2",
+    "bytes": "7f02",
+    "flow_type": "FALL_THROUGH",
+    "references": []
+  },
+  {
+    "address": "CODE:4feb",
+    "length": 3,
+    "text": "LCALL 0x3a8e",
+    "bytes": "123a8e",
+    "flow_type": "UNCONDITIONAL_CALL",
+    "references": [
+      {
+        "to": "CODE:3a8e",
+        "type": "UNCONDITIONAL_CALL"
+      }
+    ]
+  },
+  {
+    "address": "CODE:4fee",
+    "length": 1,
+    "text": "MOV A,R7",
+    "bytes": "ef",
+    "flow_type": "FALL_THROUGH",
+    "references": []
+  },
+  {
+    "address": "CODE:4fef",
+    "length": 2,
+    "text": "JZ 0x4ff4",
+    "bytes": "6003",
+    "flow_type": "CONDITIONAL_JUMP",
+    "references": [
+      {
+        "to": "CODE:4ff4",
+        "type": "CONDITIONAL_JUMP"
+      }
+    ]
+  },
+  {
+    "address": "CODE:4ff1",
+    "length": 3,
+    "text": "LJMP 0x5096",
+    "bytes": "025096",
+    "flow_type": "UNCONDITIONAL_JUMP",
+    "references": [
+      {
+        "to": "CODE:5096",
+        "type": "UNCONDITIONAL_JUMP"
+      }
+    ]
+  },
+  {
+    "address": "CODE:4ff4",
+    "length": 3,
+    "text": "MOV DPTR,#0x795",
+    "bytes": "900795",
+    "flow_type": "FALL_THROUGH",
+    "references": []
+  },
+  {
+    "address": "CODE:4ff7",
+    "length": 1,
+    "text": "MOVX A,@DPTR",
+    "bytes": "e0",
+    "flow_type": "FALL_THROUGH",
+    "references": [
+      {
+        "to": "EXTMEM:0795",
+        "type": "READ"
+      }
+    ]
+  },
+  {
+    "address": "CODE:4ff8",
+    "length": 2,
+    "text": "JZ 0x500c",
+    "bytes": "6012",
+    "flow_type": "CONDITIONAL_JUMP",
+    "references": [
+      {
+        "to": "CODE:500c",
+        "type": "CONDITIONAL_JUMP"
+      }
+    ]
+  },
+  {
+    "address": "CODE:4ffa",
+    "length": 3,
+    "text": "MOV DPTR,#0xde8",
+    "bytes": "900de8",
+    "flow_type": "FALL_THROUGH",
+    "references": []
+  },
+  {
+    "address": "CODE:4ffd",
+    "length": 1,
+    "text": "MOVX A,@DPTR",
+    "bytes": "e0",
+    "flow_type": "FALL_THROUGH",
+    "references": [
+      {
+        "to": "EXTMEM:0de8",
+        "type": "READ"
+      }
+    ]
+  },
+  {
+    "address": "CODE:4ffe",
+    "length": 1,
+    "text": "MOV R3,A",
+    "bytes": "fb",
+    "flow_type": "FALL_THROUGH",
+    "references": []
+  },
+  {
+    "address": "CODE:4fff",
+    "length": 1,
+    "text": "INC DPTR",
+    "bytes": "a3",
+    "flow_type": "FALL_THROUGH",
+    "references": []
+  },
+  {
+    "address": "CODE:5000",
+    "length": 1,
+    "text": "MOVX A,@DPTR",
+    "bytes": "e0",
+    "flow_type": "FALL_THROUGH",
+    "references": [
+      {
+        "to": "EXTMEM:0de9",
+        "type": "READ"
+      }
+    ]
+  },
+  {
+    "address": "CODE:5001",
+    "length": 1,
+    "text": "MOV R2,A",
+    "bytes": "fa",
+    "flow_type": "FALL_THROUGH",
+    "references": []
+  },
+  {
+    "address": "CODE:5002",
+    "length": 1,
+    "text": "INC DPTR",
+    "bytes": "a3",
+    "flow_type": "FALL_THROUGH",
+    "references": []
+  },
+  {
+    "address": "CODE:5003",
+    "length": 1,
+    "text": "MOVX A,@DPTR",
+    "bytes": "e0",
+    "flow_type": "FALL_THROUGH",
+    "references": [
+      {
+        "to": "EXTMEM:0dea",
+        "type": "READ"
+      }
+    ]
+  },
+  {
+    "address": "CODE:5004",
+    "length": 1,
+    "text": "MOV R1,A",
+    "bytes": "f9",
+    "flow_type": "FALL_THROUGH",
+    "references": []
+  },
+  {
+    "address": "CODE:5005",
+    "length": 3,
+    "text": "MOV DPTR,#0x1",
+    "bytes": "900001",
+    "flow_type": "FALL_THROUGH",
+    "references": []
+  },
+  {
+    "address": "CODE:5008",
+    "length": 1,
+    "text": "CLR A",
+    "bytes": "e4",
+    "flow_type": "FALL_THROUGH",
+    "references": []
+  },
+  {
+    "address": "CODE:5009",
+    "length": 3,
+    "text": "LCALL 0x85b9",
+    "bytes": "1285b9",
+    "flow_type": "UNCONDITIONAL_CALL",
+    "references": [
+      {
+        "to": "CODE:85b9",
+        "type": "UNCONDITIONAL_CALL"
+      }
+    ]
+  },
+  {
+    "address": "CODE:500c",
+    "length": 3,
+    "text": "LJMP 0x5093",
+    "bytes": "025093",
+    "flow_type": "UNCONDITIONAL_JUMP",
+    "references": [
+      {
+        "to": "CODE:5093",
+        "type": "UNCONDITIONAL_JUMP"
+      }
+    ]
+  },
+  {
+    "address": "CODE:500f",
+    "length": 3,
+    "text": "MOV DPTR,#0xde8",
+    "bytes": "900de8",
+    "flow_type": "FALL_THROUGH",
+    "references": []
+  },
+  {
+    "address": "CODE:5012",
+    "length": 1,
+    "text": "MOVX A,@DPTR",
+    "bytes": "e0",
+    "flow_type": "FALL_THROUGH",
+    "references": [
+      {
+        "to": "EXTMEM:0de8",
+        "type": "READ"
+      }
+    ]
+  },
+  {
+    "address": "CODE:5013",
+    "length": 1,
+    "text": "MOV R3,A",
+    "bytes": "fb",
+    "flow_type": "FALL_THROUGH",
+    "references": []
+  },
+  {
+    "address": "CODE:5014",
+    "length": 1,
+    "text": "INC DPTR",
+    "bytes": "a3",
+    "flow_type": "FALL_THROUGH",
+    "references": []
+  },
+  {
+    "address": "CODE:5015",
+    "length": 1,
+    "text": "MOVX A,@DPTR",
+    "bytes": "e0",
+    "flow_type": "FALL_THROUGH",
+    "references": [
+      {
+        "to": "EXTMEM:0de9",
+        "type": "READ"
+      }
+    ]
+  },
+  {
+    "address": "CODE:5016",
+    "length": 1,
+    "text": "MOV R2,A",
+    "bytes": "fa",
+    "flow_type": "FALL_THROUGH",
+    "references": []
+  },
+  {
+    "address": "CODE:5017",
+    "length": 1,
+    "text": "INC DPTR",
+    "bytes": "a3",
+    "flow_type": "FALL_THROUGH",
+    "references": []
+  },
+  {
+    "address": "CODE:5018",
+    "length": 1,
+    "text": "MOVX A,@DPTR",
+    "bytes": "e0",
+    "flow_type": "FALL_THROUGH",
+    "references": [
+      {
+        "to": "EXTMEM:0dea",
+        "type": "READ"
+      }
+    ]
+  },
+  {
+    "address": "CODE:5019",
+    "length": 1,
+    "text": "MOV R1,A",
+    "bytes": "f9",
+    "flow_type": "FALL_THROUGH",
+    "references": []
+  },
+  {
+    "address": "CODE:501a",
+    "length": 3,
+    "text": "MOV DPTR,#0x1",
+    "bytes": "900001",
+    "flow_type": "FALL_THROUGH",
+    "references": []
+  },
+  {
+    "address": "CODE:501d",
+    "length": 3,
+    "text": "LCALL 0x857a",
+    "bytes": "12857a",
+    "flow_type": "UNCONDITIONAL_CALL",
+    "references": [
+      {
+        "to": "CODE:857a",
+        "type": "UNCONDITIONAL_CALL"
+      }
+    ]
+  },
+  {
+    "address": "CODE:5020",
+    "length": 2,
+    "text": "XRL A,#0x4",
+    "bytes": "6404",
+    "flow_type": "FALL_THROUGH",
+    "references": []
+  },
+  {
+    "address": "CODE:5022",
+    "length": 2,
+    "text": "JNZ 0x5067",
+    "bytes": "7043",
+    "flow_type": "CONDITIONAL_JUMP",
+    "references": [
+      {
+        "to": "CODE:5067",
+        "type": "CONDITIONAL_JUMP"
+      }
+    ]
+  },
+  {
+    "address": "CODE:5024",
+    "length": 2,
+    "text": "MOV R3,#0x1",
+    "bytes": "7b01",
+    "flow_type": "FALL_THROUGH",
+    "references": []
+  },
+  {
+    "address": "CODE:5026",
+    "length": 2,
+    "text": "MOV R2,#0x7",
+    "bytes": "7a07",
+    "flow_type": "FALL_THROUGH",
+    "references": []
+  },
+  {
+    "address": "CODE:5028",
+    "length": 2,
+    "text": "MOV R1,#0x95",
+    "bytes": "7995",
+    "flow_type": "FALL_THROUGH",
+    "references": []
+  },
+  {
+    "address": "CODE:502a",
+    "length": 2,
+    "text": "MOV R7,#0x1",
+    "bytes": "7f01",
+    "flow_type": "FALL_THROUGH",
+    "references": []
+  },
+  {
+    "address": "CODE:502c",
+    "length": 3,
+    "text": "LCALL 0x3a8e",
+    "bytes": "123a8e",
+    "flow_type": "UNCONDITIONAL_CALL",
+    "references": [
+      {
+        "to": "CODE:3a8e",
+        "type": "UNCONDITIONAL_CALL"
+      }
+    ]
+  },
+  {
+    "address": "CODE:502f",
+    "length": 1,
+    "text": "MOV A,R7",
+    "bytes": "ef",
+    "flow_type": "FALL_THROUGH",
+    "references": []
+  },
+  {
+    "address": "CODE:5030",
+    "length": 2,
+    "text": "JNZ 0x504c",
+    "bytes": "701a",
+    "flow_type": "CONDITIONAL_JUMP",
+    "references": [
+      {
+        "to": "CODE:504c",
+        "type": "CONDITIONAL_JUMP"
+      }
+    ]
+  },
+  {
+    "address": "CODE:5032",
+    "length": 3,
+    "text": "MOV DPTR,#0x795",
+    "bytes": "900795",
+    "flow_type": "FALL_THROUGH",
+    "references": []
+  },
+  {
+    "address": "CODE:5035",
+    "length": 1,
+    "text": "MOVX A,@DPTR",
+    "bytes": "e0",
+    "flow_type": "FALL_THROUGH",
+    "references": [
+      {
+        "to": "EXTMEM:0795",
+        "type": "READ"
+      }
+    ]
+  },
+  {
+    "address": "CODE:5036",
+    "length": 2,
+    "text": "JZ 0x504a",
+    "bytes": "6012",
+    "flow_type": "CONDITIONAL_JUMP",
+    "references": [
+      {
+        "to": "CODE:504a",
+        "type": "CONDITIONAL_JUMP"
+      }
+    ]
+  },
+  {
+    "address": "CODE:5038",
+    "length": 3,
+    "text": "MOV DPTR,#0xde8",
+    "bytes": "900de8",
+    "flow_type": "FALL_THROUGH",
+    "references": []
+  },
+  {
+    "address": "CODE:503b",
+    "length": 1,
+    "text": "MOVX A,@DPTR",
+    "bytes": "e0",
+    "flow_type": "FALL_THROUGH",
+    "references": [
+      {
+        "to": "EXTMEM:0de8",
+        "type": "READ"
+      }
+    ]
+  },
+  {
+    "address": "CODE:503c",
+    "length": 1,
+    "text": "MOV R3,A",
+    "bytes": "fb",
+    "flow_type": "FALL_THROUGH",
+    "references": []
+  },
+  {
+    "address": "CODE:503d",
+    "length": 1,
+    "text": "INC DPTR",
+    "bytes": "a3",
+    "flow_type": "FALL_THROUGH",
+    "references": []
+  },
+  {
+    "address": "CODE:503e",
+    "length": 1,
+    "text": "MOVX A,@DPTR",
+    "bytes": "e0",
+    "flow_type": "FALL_THROUGH",
+    "references": [
+      {
+        "to": "EXTMEM:0de9",
+        "type": "READ"
+      }
+    ]
+  },
+  {
+    "address": "CODE:503f",
+    "length": 1,
+    "text": "MOV R2,A",
+    "bytes": "fa",
+    "flow_type": "FALL_THROUGH",
+    "references": []
+  },
+  {
+    "address": "CODE:5040",
+    "length": 1,
+    "text": "INC DPTR",
+    "bytes": "a3",
+    "flow_type": "FALL_THROUGH",
+    "references": []
+  },
+  {
+    "address": "CODE:5041",
+    "length": 1,
+    "text": "MOVX A,@DPTR",
+    "bytes": "e0",
+    "flow_type": "FALL_THROUGH",
+    "references": [
+      {
+        "to": "EXTMEM:0dea",
+        "type": "READ"
+      }
+    ]
+  },
+  {
+    "address": "CODE:5042",
+    "length": 1,
+    "text": "MOV R1,A",
+    "bytes": "f9",
+    "flow_type": "FALL_THROUGH",
+    "references": []
+  },
+  {
+    "address": "CODE:5043",
+    "length": 3,
+    "text": "MOV DPTR,#0x1",
+    "bytes": "900001",
+    "flow_type": "FALL_THROUGH",
+    "references": []
+  },
+  {
+    "address": "CODE:5046",
+    "length": 1,
+    "text": "CLR A",
+    "bytes": "e4",
+    "flow_type": "FALL_THROUGH",
+    "references": []
+  },
+  {
+    "address": "CODE:5047",
+    "length": 3,
+    "text": "LCALL 0x85b9",
+    "bytes": "1285b9",
+    "flow_type": "UNCONDITIONAL_CALL",
+    "references": [
+      {
+        "to": "CODE:85b9",
+        "type": "UNCONDITIONAL_CALL"
+      }
+    ]
+  },
+  {
+    "address": "CODE:504a",
+    "length": 2,
+    "text": "SJMP 0x5093",
+    "bytes": "8047",
+    "flow_type": "UNCONDITIONAL_JUMP",
+    "references": [
+      {
+        "to": "CODE:5093",
+        "type": "UNCONDITIONAL_JUMP"
+      }
+    ]
+  },
+  {
+    "address": "CODE:504c",
+    "length": 3,
+    "text": "MOV DPTR,#0xde8",
+    "bytes": "900de8",
+    "flow_type": "FALL_THROUGH",
+    "references": []
+  },
+  {
+    "address": "CODE:504f",
+    "length": 1,
+    "text": "MOVX A,@DPTR",
+    "bytes": "e0",
+    "flow_type": "FALL_THROUGH",
+    "references": [
+      {
+        "to": "EXTMEM:0de8",
+        "type": "READ"
+      }
+    ]
+  },
+  {
+    "address": "CODE:5050",
+    "length": 1,
+    "text": "MOV R3,A",
+    "bytes": "fb",
+    "flow_type": "FALL_THROUGH",
+    "references": []
+  },
+  {
+    "address": "CODE:5051",
+    "length": 1,
+    "text": "INC DPTR",
+    "bytes": "a3",
+    "flow_type": "FALL_THROUGH",
+    "references": []
+  },
+  {
+    "address": "CODE:5052",
+    "length": 1,
+    "text": "MOVX A,@DPTR",
+    "bytes": "e0",
+    "flow_type": "FALL_THROUGH",
+    "references": [
+      {
+        "to": "EXTMEM:0de9",
+        "type": "READ"
+      }
+    ]
+  },
+  {
+    "address": "CODE:5053",
+    "length": 1,
+    "text": "MOV R2,A",
+    "bytes": "fa",
+    "flow_type": "FALL_THROUGH",
+    "references": []
+  },
+  {
+    "address": "CODE:5054",
+    "length": 1,
+    "text": "INC DPTR",
+    "bytes": "a3",
+    "flow_type": "FALL_THROUGH",
+    "references": []
+  },
+  {
+    "address": "CODE:5055",
+    "length": 1,
+    "text": "MOVX A,@DPTR",
+    "bytes": "e0",
+    "flow_type": "FALL_THROUGH",
+    "references": [
+      {
+        "to": "EXTMEM:0dea",
+        "type": "READ"
+      }
+    ]
+  },
+  {
+    "address": "CODE:5056",
+    "length": 1,
+    "text": "MOV R1,A",
+    "bytes": "f9",
+    "flow_type": "FALL_THROUGH",
+    "references": []
+  },
+  {
+    "address": "CODE:5057",
+    "length": 3,
+    "text": "LCALL 0x8561",
+    "bytes": "128561",
+    "flow_type": "UNCONDITIONAL_CALL",
+    "references": [
+      {
+        "to": "CODE:8561",
+        "type": "UNCONDITIONAL_CALL"
+      }
+    ]
+  },
+  {
+    "address": "CODE:505a",
+    "length": 1,
+    "text": "MOV R7,A",
+    "bytes": "ff",
+    "flow_type": "FALL_THROUGH",
+    "references": []
+  },
+  {
+    "address": "CODE:505b",
+    "length": 2,
+    "text": "JZ 0x5096",
+    "bytes": "6039",
+    "flow_type": "CONDITIONAL_JUMP",
+    "references": [
+      {
+        "to": "CODE:5096",
+        "type": "CONDITIONAL_JUMP"
+      }
+    ]
+  },
+  {
+    "address": "CODE:505d",
+    "length": 3,
+    "text": "MOV DPTR,#0x2f54",
+    "bytes": "902f54",
+    "flow_type": "FALL_THROUGH",
+    "references": []
+  },
+  {
+    "address": "CODE:5060",
+    "length": 1,
+    "text": "MOVX @DPTR,A",
+    "bytes": "f0",
+    "flow_type": "FALL_THROUGH",
+    "references": [
+      {
+        "to": "EXTMEM:2f54",
+        "type": "WRITE"
+      }
+    ]
+  },
+  {
+    "address": "CODE:5061",
+    "length": 1,
+    "text": "CLR A",
+    "bytes": "e4",
+    "flow_type": "FALL_THROUGH",
+    "references": []
+  },
+  {
+    "address": "CODE:5062",
+    "length": 3,
+    "text": "LCALL 0x85a7",
+    "bytes": "1285a7",
+    "flow_type": "UNCONDITIONAL_CALL",
+    "references": [
+      {
+        "to": "CODE:85a7",
+        "type": "UNCONDITIONAL_CALL"
+      }
+    ]
+  },
+  {
+    "address": "CODE:5065",
+    "length": 2,
+    "text": "SJMP 0x5096",
+    "bytes": "802f",
+    "flow_type": "UNCONDITIONAL_JUMP",
+    "references": [
+      {
+        "to": "CODE:5096",
+        "type": "UNCONDITIONAL_JUMP"
+      }
+    ]
+  },
+  {
+    "address": "CODE:5067",
+    "length": 3,
+    "text": "MOV DPTR,#0xde8",
+    "bytes": "900de8",
+    "flow_type": "FALL_THROUGH",
+    "references": []
+  },
+  {
+    "address": "CODE:506a",
+    "length": 1,
+    "text": "MOVX A,@DPTR",
+    "bytes": "e0",
+    "flow_type": "FALL_THROUGH",
+    "references": [
+      {
+        "to": "EXTMEM:0de8",
+        "type": "READ"
+      }
+    ]
+  },
+  {
+    "address": "CODE:506b",
+    "length": 1,
+    "text": "MOV R3,A",
+    "bytes": "fb",
+    "flow_type": "FALL_THROUGH",
+    "references": []
+  },
+  {
+    "address": "CODE:506c",
+    "length": 1,
+    "text": "INC DPTR",
+    "bytes": "a3",
+    "flow_type": "FALL_THROUGH",
+    "references": []
+  },
+  {
+    "address": "CODE:506d",
+    "length": 1,
+    "text": "MOVX A,@DPTR",
+    "bytes": "e0",
+    "flow_type": "FALL_THROUGH",
+    "references": [
+      {
+        "to": "EXTMEM:0de9",
+        "type": "READ"
+      }
+    ]
+  },
+  {
+    "address": "CODE:506e",
+    "length": 1,
+    "text": "MOV R2,A",
+    "bytes": "fa",
+    "flow_type": "FALL_THROUGH",
+    "references": []
+  },
+  {
+    "address": "CODE:506f",
+    "length": 1,
+    "text": "INC DPTR",
+    "bytes": "a3",
+    "flow_type": "FALL_THROUGH",
+    "references": []
+  },
+  {
+    "address": "CODE:5070",
+    "length": 1,
+    "text": "MOVX A,@DPTR",
+    "bytes": "e0",
+    "flow_type": "FALL_THROUGH",
+    "references": [
+      {
+        "to": "EXTMEM:0dea",
+        "type": "READ"
+      }
+    ]
+  },
+  {
+    "address": "CODE:5071",
+    "length": 1,
+    "text": "MOV R1,A",
+    "bytes": "f9",
+    "flow_type": "FALL_THROUGH",
+    "references": []
+  },
+  {
+    "address": "CODE:5072",
+    "length": 3,
+    "text": "MOV DPTR,#0x1",
+    "bytes": "900001",
+    "flow_type": "FALL_THROUGH",
+    "references": []
+  },
+  {
+    "address": "CODE:5075",
+    "length": 3,
+    "text": "LCALL 0x857a",
+    "bytes": "12857a",
+    "flow_type": "UNCONDITIONAL_CALL",
+    "references": [
+      {
+        "to": "CODE:857a",
+        "type": "UNCONDITIONAL_CALL"
+      }
+    ]
+  },
+  {
+    "address": "CODE:5078",
+    "length": 2,
+    "text": "JNZ 0x5080",
+    "bytes": "7006",
+    "flow_type": "CONDITIONAL_JUMP",
+    "references": [
+      {
+        "to": "CODE:5080",
+        "type": "CONDITIONAL_JUMP"
+      }
+    ]
+  },
+  {
+    "address": "CODE:507a",
+    "length": 3,
+    "text": "LCALL 0x3cc8",
+    "bytes": "123cc8",
+    "flow_type": "UNCONDITIONAL_CALL",
+    "references": [
+      {
+        "to": "CODE:3cc8",
+        "type": "UNCONDITIONAL_CALL"
+      }
+    ]
+  },
+  {
+    "address": "CODE:507d",
+    "length": 1,
+    "text": "MOV A,R7",
+    "bytes": "ef",
+    "flow_type": "FALL_THROUGH",
+    "references": []
+  },
+  {
+    "address": "CODE:507e",
+    "length": 2,
+    "text": "JNZ 0x5093",
+    "bytes": "7013",
+    "flow_type": "CONDITIONAL_JUMP",
+    "references": [
+      {
+        "to": "CODE:5093",
+        "type": "CONDITIONAL_JUMP"
+      }
+    ]
+  },
+  {
+    "address": "CODE:5080",
+    "length": 3,
+    "text": "MOV DPTR,#0xde8",
+    "bytes": "900de8",
+    "flow_type": "FALL_THROUGH",
+    "references": []
+  },
+  {
+    "address": "CODE:5083",
+    "length": 1,
+    "text": "MOVX A,@DPTR",
+    "bytes": "e0",
+    "flow_type": "FALL_THROUGH",
+    "references": [
+      {
+        "to": "EXTMEM:0de8",
+        "type": "READ"
+      }
+    ]
+  },
+  {
+    "address": "CODE:5084",
+    "length": 1,
+    "text": "MOV R3,A",
+    "bytes": "fb",
+    "flow_type": "FALL_THROUGH",
+    "references": []
+  },
+  {
+    "address": "CODE:5085",
+    "length": 1,
+    "text": "INC DPTR",
+    "bytes": "a3",
+    "flow_type": "FALL_THROUGH",
+    "references": []
+  },
+  {
+    "address": "CODE:5086",
+    "length": 1,
+    "text": "MOVX A,@DPTR",
+    "bytes": "e0",
+    "flow_type": "FALL_THROUGH",
+    "references": [
+      {
+        "to": "EXTMEM:0de9",
+        "type": "READ"
+      }
+    ]
+  },
+  {
+    "address": "CODE:5087",
+    "length": 1,
+    "text": "MOV R2,A",
+    "bytes": "fa",
+    "flow_type": "FALL_THROUGH",
+    "references": []
+  },
+  {
+    "address": "CODE:5088",
+    "length": 1,
+    "text": "INC DPTR",
+    "bytes": "a3",
+    "flow_type": "FALL_THROUGH",
+    "references": []
+  },
+  {
+    "address": "CODE:5089",
+    "length": 1,
+    "text": "MOVX A,@DPTR",
+    "bytes": "e0",
+    "flow_type": "FALL_THROUGH",
+    "references": [
+      {
+        "to": "EXTMEM:0dea",
+        "type": "READ"
+      }
+    ]
+  },
+  {
+    "address": "CODE:508a",
+    "length": 1,
+    "text": "MOV R1,A",
+    "bytes": "f9",
+    "flow_type": "FALL_THROUGH",
+    "references": []
+  },
+  {
+    "address": "CODE:508b",
+    "length": 3,
+    "text": "MOV DPTR,#0x1",
+    "bytes": "900001",
+    "flow_type": "FALL_THROUGH",
+    "references": []
+  },
+  {
+    "address": "CODE:508e",
+    "length": 3,
+    "text": "LCALL 0x857a",
+    "bytes": "12857a",
+    "flow_type": "UNCONDITIONAL_CALL",
+    "references": [
+      {
+        "to": "CODE:857a",
+        "type": "UNCONDITIONAL_CALL"
+      }
+    ]
+  },
+  {
+    "address": "CODE:5091",
+    "length": 2,
+    "text": "JZ 0x5096",
+    "bytes": "6003",
+    "flow_type": "CONDITIONAL_JUMP",
+    "references": [
+      {
+        "to": "CODE:5096",
+        "type": "CONDITIONAL_JUMP"
+      }
+    ]
+  },
+  {
+    "address": "CODE:5093",
+    "length": 3,
+    "text": "LJMP 0x2715",
+    "bytes": "022715",
+    "flow_type": "CALL_TERMINATOR",
+    "references": [
+      {
+        "to": "CODE:2715",
+        "type": "UNCONDITIONAL_CALL"
+      }
+    ]
+  },
+  {
+    "address": "CODE:5096",
+    "length": 3,
+    "text": "LCALL 0x32d3",
+    "bytes": "1232d3",
+    "flow_type": "UNCONDITIONAL_CALL",
+    "references": [
+      {
+        "to": "CODE:32d3",
+        "type": "UNCONDITIONAL_CALL"
+      }
+    ]
+  },
+  {
+    "address": "CODE:5099",
+    "length": 3,
+    "text": "MOV DPTR,#0xde8",
+    "bytes": "900de8",
+    "flow_type": "FALL_THROUGH",
+    "references": []
+  },
+  {
+    "address": "CODE:509c",
+    "length": 1,
+    "text": "MOVX A,@DPTR",
+    "bytes": "e0",
+    "flow_type": "FALL_THROUGH",
+    "references": [
+      {
+        "to": "EXTMEM:0de8",
+        "type": "READ"
+      }
+    ]
+  },
+  {
+    "address": "CODE:509d",
+    "length": 1,
+    "text": "MOV R3,A",
+    "bytes": "fb",
+    "flow_type": "FALL_THROUGH",
+    "references": []
+  },
+  {
+    "address": "CODE:509e",
+    "length": 1,
+    "text": "INC DPTR",
+    "bytes": "a3",
+    "flow_type": "FALL_THROUGH",
+    "references": []
+  },
+  {
+    "address": "CODE:509f",
+    "length": 1,
+    "text": "MOVX A,@DPTR",
+    "bytes": "e0",
+    "flow_type": "FALL_THROUGH",
+    "references": [
+      {
+        "to": "EXTMEM:0de9",
+        "type": "READ"
+      }
+    ]
+  },
+  {
+    "address": "CODE:50a0",
+    "length": 1,
+    "text": "MOV R2,A",
+    "bytes": "fa",
+    "flow_type": "FALL_THROUGH",
+    "references": []
+  },
+  {
+    "address": "CODE:50a1",
+    "length": 1,
+    "text": "INC DPTR",
+    "bytes": "a3",
+    "flow_type": "FALL_THROUGH",
+    "references": []
+  },
+  {
+    "address": "CODE:50a2",
+    "length": 1,
+    "text": "MOVX A,@DPTR",
+    "bytes": "e0",
+    "flow_type": "FALL_THROUGH",
+    "references": [
+      {
+        "to": "EXTMEM:0dea",
+        "type": "READ"
+      }
+    ]
+  },
+  {
+    "address": "CODE:50a3",
+    "length": 1,
+    "text": "MOV R1,A",
+    "bytes": "f9",
+    "flow_type": "FALL_THROUGH",
+    "references": []
+  },
+  {
+    "address": "CODE:50a4",
+    "length": 3,
+    "text": "MOV DPTR,#0x1",
+    "bytes": "900001",
+    "flow_type": "FALL_THROUGH",
+    "references": []
+  },
+  {
+    "address": "CODE:50a7",
+    "length": 1,
+    "text": "CLR A",
+    "bytes": "e4",
+    "flow_type": "FALL_THROUGH",
+    "references": []
+  },
+  {
+    "address": "CODE:50a8",
+    "length": 3,
+    "text": "LCALL 0x85b9",
+    "bytes": "1285b9",
+    "flow_type": "UNCONDITIONAL_CALL",
+    "references": [
+      {
+        "to": "CODE:85b9",
+        "type": "UNCONDITIONAL_CALL"
+      }
+    ]
+  },
+  {
+    "address": "CODE:50ab",
+    "length": 1,
+    "text": "RET",
+    "bytes": "22",
+    "flow_type": "TERMINATOR",
+    "references": []
+  },
+  {
+    "address": "CODE:50ac",
+    "length": 3,
+    "text": "MOV DPTR,#0x2033",
+    "bytes": "902033",
+    "flow_type": "FALL_THROUGH",
+    "references": []
+  },
+  {
+    "address": "CODE:50af",
+    "length": 1,
+    "text": "MOVX A,@DPTR",
+    "bytes": "e0",
+    "flow_type": "FALL_THROUGH",
+    "references": [
+      {
+        "to": "EXTMEM:2033",
+        "type": "READ"
+      }
+    ]
+  },
+  {
+    "address": "CODE:50b0",
+    "length": 2,
+    "text": "ORL A,#0x80",
+    "bytes": "4480",
+    "flow_type": "FALL_THROUGH",
+    "references": []
+  },
+  {
+    "address": "CODE:50b2",
+    "length": 1,
+    "text": "MOVX @DPTR,A",
+    "bytes": "f0",
+    "flow_type": "FALL_THROUGH",
+    "references": [
+      {
+        "to": "EXTMEM:2033",
+        "type": "WRITE"
+      }
+    ]
+  },
+  {
+    "address": "CODE:50b3",
+    "length": 3,
+    "text": "MOV DPTR,#0x1b02",
+    "bytes": "901b02",
+    "flow_type": "FALL_THROUGH",
+    "references": []
+  },
+  {
+    "address": "CODE:50b6",
+    "length": 1,
+    "text": "MOVX A,@DPTR",
+    "bytes": "e0",
+    "flow_type": "FALL_THROUGH",
+    "references": [
+      {
+        "to": "EXTMEM:1b02",
+        "type": "READ"
+      }
+    ]
+  },
+  {
+    "address": "CODE:50b7",
+    "length": 2,
+    "text": "ANL A,#0xbf",
+    "bytes": "54bf",
+    "flow_type": "FALL_THROUGH",
+    "references": []
+  },
+  {
+    "address": "CODE:50b9",
+    "length": 1,
+    "text": "MOVX @DPTR,A",
+    "bytes": "f0",
+    "flow_type": "FALL_THROUGH",
+    "references": [
+      {
+        "to": "EXTMEM:1b02",
+        "type": "WRITE"
+      }
+    ]
+  },
+  {
+    "address": "CODE:50ba",
+    "length": 3,
+    "text": "MOV DPTR,#0x1b06",
+    "bytes": "901b06",
+    "flow_type": "FALL_THROUGH",
+    "references": []
+  },
+  {
+    "address": "CODE:50bd",
+    "length": 2,
+    "text": "MOV A,#0x40",
+    "bytes": "7440",
+    "flow_type": "FALL_THROUGH",
+    "references": []
+  },
+  {
+    "address": "CODE:50bf",
+    "length": 1,
+    "text": "MOVX @DPTR,A",
+    "bytes": "f0",
+    "flow_type": "FALL_THROUGH",
+    "references": [
+      {
+        "to": "EXTMEM:1b06",
+        "type": "WRITE"
+      }
+    ]
+  },
+  {
+    "address": "CODE:50c0",
+    "length": 3,
+    "text": "MOV DPTR,#0x111c",
+    "bytes": "90111c",
+    "flow_type": "FALL_THROUGH",
+    "references": []
+  },
+  {
+    "address": "CODE:50c3",
+    "length": 1,
+    "text": "MOVX @DPTR,A",
+    "bytes": "f0",
+    "flow_type": "FALL_THROUGH",
+    "references": [
+      {
+        "to": "EXTMEM:111c",
+        "type": "WRITE"
+      }
+    ]
+  },
+  {
+    "address": "CODE:50c4",
+    "length": 3,
+    "text": "MOV DPTR,#0x1b0a",
+    "bytes": "901b0a",
+    "flow_type": "FALL_THROUGH",
+    "references": []
+  },
+  {
+    "address": "CODE:50c7",
+    "length": 1,
+    "text": "MOVX A,@DPTR",
+    "bytes": "e0",
+    "flow_type": "FALL_THROUGH",
+    "references": [
+      {
+        "to": "EXTMEM:1b0a",
+        "type": "READ"
+      }
+    ]
+  },
+  {
+    "address": "CODE:50c8",
+    "length": 2,
+    "text": "ORL A,#0x40",
+    "bytes": "4440",
+    "flow_type": "FALL_THROUGH",
+    "references": []
+  },
+  {
+    "address": "CODE:50ca",
+    "length": 1,
+    "text": "MOVX @DPTR,A",
+    "bytes": "f0",
+    "flow_type": "FALL_THROUGH",
+    "references": [
+      {
+        "to": "EXTMEM:1b0a",
+        "type": "WRITE"
+      }
+    ]
+  },
+  {
+    "address": "CODE:50cb",
+    "length": 3,
+    "text": "MOV DPTR,#0x1b02",
+    "bytes": "901b02",
+    "flow_type": "FALL_THROUGH",
+    "references": []
+  },
+  {
+    "address": "CODE:50ce",
+    "length": 1,
+    "text": "MOVX A,@DPTR",
+    "bytes": "e0",
+    "flow_type": "FALL_THROUGH",
+    "references": [
+      {
+        "to": "EXTMEM:1b02",
+        "type": "READ"
+      }
+    ]
+  },
+  {
+    "address": "CODE:50cf",
+    "length": 2,
+    "text": "ORL A,#0x80",
+    "bytes": "4480",
+    "flow_type": "FALL_THROUGH",
+    "references": []
+  },
+  {
+    "address": "CODE:50d1",
+    "length": 1,
+    "text": "MOVX @DPTR,A",
+    "bytes": "f0",
+    "flow_type": "FALL_THROUGH",
+    "references": [
+      {
+        "to": "EXTMEM:1b02",
+        "type": "WRITE"
+      }
+    ]
+  },
+  {
+    "address": "CODE:50d2",
+    "length": 3,
+    "text": "MOV DPTR,#0x1b06",
+    "bytes": "901b06",
+    "flow_type": "FALL_THROUGH",
+    "references": []
+  },
+  {
+    "address": "CODE:50d5",
+    "length": 2,
+    "text": "MOV A,#0x80",
+    "bytes": "7480",
+    "flow_type": "FALL_THROUGH",
+    "references": []
+  },
+  {
+    "address": "CODE:50d7",
+    "length": 1,
+    "text": "MOVX @DPTR,A",
+    "bytes": "f0",
+    "flow_type": "FALL_THROUGH",
+    "references": [
+      {
+        "to": "EXTMEM:1b06",
+        "type": "WRITE"
+      }
+    ]
+  },
+  {
+    "address": "CODE:50d8",
+    "length": 3,
+    "text": "MOV DPTR,#0x111c",
+    "bytes": "90111c",
+    "flow_type": "FALL_THROUGH",
+    "references": []
+  },
+  {
+    "address": "CODE:50db",
+    "length": 1,
+    "text": "MOVX @DPTR,A",
+    "bytes": "f0",
+    "flow_type": "FALL_THROUGH",
+    "references": [
+      {
+        "to": "EXTMEM:111c",
+        "type": "WRITE"
+      }
+    ]
+  },
+  {
+    "address": "CODE:50dc",
+    "length": 3,
+    "text": "MOV DPTR,#0x1b0a",
+    "bytes": "901b0a",
+    "flow_type": "FALL_THROUGH",
+    "references": []
+  },
+  {
+    "address": "CODE:50df",
+    "length": 1,
+    "text": "MOVX A,@DPTR",
+    "bytes": "e0",
+    "flow_type": "FALL_THROUGH",
+    "references": [
+      {
+        "to": "EXTMEM:1b0a",
+        "type": "READ"
+      }
+    ]
+  },
+  {
+    "address": "CODE:50e0",
+    "length": 2,
+    "text": "ORL A,#0x80",
+    "bytes": "4480",
+    "flow_type": "FALL_THROUGH",
+    "references": []
+  },
+  {
+    "address": "CODE:50e2",
+    "length": 1,
+    "text": "MOVX @DPTR,A",
+    "bytes": "f0",
+    "flow_type": "FALL_THROUGH",
+    "references": [
+      {
+        "to": "EXTMEM:1b0a",
+        "type": "WRITE"
+      }
+    ]
+  },
+  {
+    "address": "CODE:50e3",
+    "length": 3,
+    "text": "MOV DPTR,#0xde8",
+    "bytes": "900de8",
+    "flow_type": "FALL_THROUGH",
+    "references": []
+  },
+  {
+    "address": "CODE:50e6",
+    "length": 2,
+    "text": "MOV A,#0x1",
+    "bytes": "7401",
+    "flow_type": "FALL_THROUGH",
+    "references": []
+  },
+  {
+    "address": "CODE:50e8",
+    "length": 1,
+    "text": "MOVX @DPTR,A",
+    "bytes": "f0",
+    "flow_type": "FALL_THROUGH",
+    "references": [
+      {
+        "to": "EXTMEM:0de8",
+        "type": "WRITE"
+      }
+    ]
+  },
+  {
+    "address": "CODE:50e9",
+    "length": 1,
+    "text": "INC DPTR",
+    "bytes": "a3",
+    "flow_type": "FALL_THROUGH",
+    "references": []
+  },
+  {
+    "address": "CODE:50ea",
+    "length": 2,
+    "text": "MOV A,#0xd",
+    "bytes": "740d",
+    "flow_type": "FALL_THROUGH",
+    "references": []
+  },
+  {
+    "address": "CODE:50ec",
+    "length": 1,
+    "text": "MOVX @DPTR,A",
+    "bytes": "f0",
+    "flow_type": "FALL_THROUGH",
+    "references": [
+      {
+        "to": "EXTMEM:0de9",
+        "type": "WRITE"
+      }
+    ]
+  },
+  {
+    "address": "CODE:50ed",
+    "length": 1,
+    "text": "INC DPTR",
+    "bytes": "a3",
+    "flow_type": "FALL_THROUGH",
+    "references": []
+  },
+  {
+    "address": "CODE:50ee",
+    "length": 2,
+    "text": "MOV A,#0xd5",
+    "bytes": "74d5",
+    "flow_type": "FALL_THROUGH",
+    "references": []
+  },
+  {
+    "address": "CODE:50f0",
+    "length": 1,
+    "text": "MOVX @DPTR,A",
+    "bytes": "f0",
+    "flow_type": "FALL_THROUGH",
+    "references": [
+      {
+        "to": "EXTMEM:0dea",
+        "type": "WRITE"
+      }
+    ]
+  },
+  {
+    "address": "CODE:50f1",
+    "length": 1,
+    "text": "CLR A",
+    "bytes": "e4",
+    "flow_type": "FALL_THROUGH",
+    "references": []
+  },
+  {
+    "address": "CODE:50f2",
+    "length": 1,
+    "text": "MOV R7,A",
+    "bytes": "ff",
+    "flow_type": "FALL_THROUGH",
+    "references": []
+  },
+  {
+    "address": "CODE:50f3",
+    "length": 3,
+    "text": "LCALL 0x4b29",
+    "bytes": "124b29",
+    "flow_type": "UNCONDITIONAL_CALL",
+    "references": [
+      {
+        "to": "CODE:4b29",
+        "type": "UNCONDITIONAL_CALL"
+      }
+    ]
+  },
+  {
+    "address": "CODE:50f6",
+    "length": 3,
+    "text": "LCALL 0x4b88",
+    "bytes": "124b88",
+    "flow_type": "UNCONDITIONAL_CALL",
+    "references": [
+      {
+        "to": "CODE:4b88",
+        "type": "UNCONDITIONAL_CALL"
+      }
+    ]
+  },
+  {
+    "address": "CODE:50f9",
+    "length": 3,
+    "text": "LJMP 0x21ff",
+    "bytes": "0221ff",
+    "flow_type": "UNCONDITIONAL_JUMP",
+    "references": [
+      {
+        "to": "CODE:21ff",
+        "type": "UNCONDITIONAL_JUMP"
+      }
+    ]
+  },
+  {
+    "address": "CODE:85b9",
+    "length": 1,
+    "text": "MOV R0,A",
+    "bytes": "f8",
+    "flow_type": "FALL_THROUGH",
+    "references": []
+  },
+  {
+    "address": "CODE:85ba",
+    "length": 3,
+    "text": "CJNE R3,#0x1,0x85ca",
+    "bytes": "bb010d",
+    "flow_type": "CONDITIONAL_JUMP",
+    "references": [
+      {
+        "to": "CODE:85ca",
+        "type": "CONDITIONAL_JUMP"
+      }
+    ]
+  },
+  {
+    "address": "CODE:85bd",
+    "length": 2,
+    "text": "MOV A,DPL",
+    "bytes": "e582",
+    "flow_type": "FALL_THROUGH",
+    "references": []
+  },
+  {
+    "address": "CODE:85bf",
+    "length": 1,
+    "text": "ADD A,R1",
+    "bytes": "29",
+    "flow_type": "FALL_THROUGH",
+    "references": []
+  },
+  {
+    "address": "CODE:85c0",
+    "length": 2,
+    "text": "MOV DPL,A",
+    "bytes": "f582",
+    "flow_type": "FALL_THROUGH",
+    "references": []
+  },
+  {
+    "address": "CODE:85c2",
+    "length": 2,
+    "text": "MOV A,DPH",
+    "bytes": "e583",
+    "flow_type": "FALL_THROUGH",
+    "references": []
+  },
+  {
+    "address": "CODE:85c4",
+    "length": 1,
+    "text": "ADDC A,R2",
+    "bytes": "3a",
+    "flow_type": "FALL_THROUGH",
+    "references": []
+  },
+  {
+    "address": "CODE:85c5",
+    "length": 2,
+    "text": "MOV DPH,A",
+    "bytes": "f583",
+    "flow_type": "FALL_THROUGH",
+    "references": []
+  },
+  {
+    "address": "CODE:85c7",
+    "length": 1,
+    "text": "MOV A,R0",
+    "bytes": "e8",
+    "flow_type": "FALL_THROUGH",
+    "references": []
+  },
+  {
+    "address": "CODE:85c8",
+    "length": 1,
+    "text": "MOVX @DPTR,A",
+    "bytes": "f0",
+    "flow_type": "FALL_THROUGH",
+    "references": []
+  },
+  {
+    "address": "CODE:85c9",
+    "length": 1,
+    "text": "RET",
+    "bytes": "22",
+    "flow_type": "TERMINATOR",
+    "references": []
+  },
+  {
+    "address": "CODE:85ca",
+    "length": 2,
+    "text": "JNC 0x85d2",
+    "bytes": "5006",
+    "flow_type": "CONDITIONAL_JUMP",
+    "references": [
+      {
+        "to": "CODE:85d2",
+        "type": "CONDITIONAL_JUMP"
+      }
+    ]
+  },
+  {
+    "address": "CODE:85cc",
+    "length": 1,
+    "text": "MOV A,R1",
+    "bytes": "e9",
+    "flow_type": "FALL_THROUGH",
+    "references": []
+  },
+  {
+    "address": "CODE:85cd",
+    "length": 2,
+    "text": "ADD A,DPL",
+    "bytes": "2582",
+    "flow_type": "FALL_THROUGH",
+    "references": []
+  },
+  {
+    "address": "CODE:85cf",
+    "length": 1,
+    "text": "XCH A,R0",
+    "bytes": "c8",
+    "flow_type": "FALL_THROUGH",
+    "references": []
+  },
+  {
+    "address": "CODE:85d0",
+    "length": 1,
+    "text": "MOV @R0,A",
+    "bytes": "f6",
+    "flow_type": "FALL_THROUGH",
+    "references": []
+  },
+  {
+    "address": "CODE:85d1",
+    "length": 1,
+    "text": "RET",
+    "bytes": "22",
+    "flow_type": "TERMINATOR",
+    "references": []
+  },
+  {
+    "address": "CODE:85d2",
+    "length": 3,
+    "text": "CJNE R3,#0xfe,0x85da",
+    "bytes": "bbfe05",
+    "flow_type": "CONDITIONAL_JUMP",
+    "references": [
+      {
+        "to": "CODE:85da",
+        "type": "CONDITIONAL_JUMP"
+      }
+    ]
+  },
+  {
+    "address": "CODE:85d5",
+    "length": 1,
+    "text": "MOV A,R1",
+    "bytes": "e9",
+    "flow_type": "FALL_THROUGH",
+    "references": []
+  },
+  {
+    "address": "CODE:85d6",
+    "length": 2,
+    "text": "ADD A,DPL",
+    "bytes": "2582",
+    "flow_type": "FALL_THROUGH",
+    "references": []
+  },
+  {
+    "address": "CODE:85d8",
+    "length": 1,
+    "text": "XCH A,R0",
+    "bytes": "c8",
+    "flow_type": "FALL_THROUGH",
+    "references": []
+  },
+  {
+    "address": "CODE:85d9",
+    "length": 1,
+    "text": "MOVX @R0,A",
+    "bytes": "f2",
+    "flow_type": "FALL_THROUGH",
+    "references": []
+  },
+  {
+    "address": "CODE:85da",
+    "length": 1,
+    "text": "RET",
+    "bytes": "22",
+    "flow_type": "TERMINATOR",
+    "references": []
+  }
+]

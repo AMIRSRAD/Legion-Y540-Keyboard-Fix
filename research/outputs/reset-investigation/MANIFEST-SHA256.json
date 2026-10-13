@@ -1,0 +1,293 @@
+{
+  "files": {
+    "Compare-UsbPower.ps1": {
+      "bytes": 7513,
+      "sha256": "29562e915632cccb74d17e355d151cef777cd1fd032861dd0fd298af74886e87"
+    },
+    "FINDINGS.md": {
+      "bytes": 8352,
+      "sha256": "9e1a9a25981cd90028270feaee454d9d10fa7d0beaa51afcb335936c39c6a2c3"
+    },
+    "START-HERE.md": {
+      "bytes": 4422,
+      "sha256": "58aaa06a03c84ac69f6db20254f1b70b2ace19e001ca876d8e33cd46ceae5136"
+    },
+    "Y540-Power-Comparison.zip": {
+      "bytes": 4102,
+      "sha256": "62c25d8b341d6e78431223daea4acfe276791b4a42cf0e257ea9565d053ef6fe"
+    },
+    "Y540-Return-to-exp1.zip": {
+      "bytes": 91757,
+      "sha256": "4b2e280b8d453a1a79d0c00594d452180995fd837e8127f3d0d9e33e0db3c4c1"
+    },
+    "evidence/comparison-mock-tests.txt": {
+      "bytes": 2150,
+      "sha256": "578fedd3390db3176fd569c4001a29e03daf032442e7fafc26a8fc97f5b4cce3"
+    },
+    "evidence/exp1-verify.txt": {
+      "bytes": 341,
+      "sha256": "9ba1a55734275558201c67540ee03f315d81a1fd000b8d7cb36f50fda1a08d65"
+    },
+    "evidence/exp2-review-tests.txt": {
+      "bytes": 577,
+      "sha256": "dc7060a4d40c16d3ca6f7ace558d8533225b3e6ae69bcd770c870bfe9ea174c2"
+    },
+    "evidence/exp2-startup-bank-model.json": {
+      "bytes": 526,
+      "sha256": "51a9d42d3d2ed7ae342fdf3b40544c26f762dc5c5bd35323bda647e954a11751"
+    },
+    "evidence/flash-dump-D800-20261013T084901150Z-p3460-3.bin": {
+      "bytes": 10240,
+      "sha256": "6160ed916d5356c631a5e7939a55d3dae0b863199e0f33ba7e6680fe6f684d2a"
+    },
+    "evidence/ghidra-boot-reset.json": {
+      "bytes": 360165,
+      "sha256": "b057e9b2a528415faaa40eb9a7ec004f39f471724105d9c1cb7b87162841d2ce"
+    },
+    "evidence/ghidra-byte-verification.json": {
+      "bytes": 289,
+      "sha256": "efd6299bd7adef3a9657f6f03e03678e14d284b126ad5d9ac787a8165bc98a17"
+    },
+    "evidence/ghidra-script.log": {
+      "bytes": 100,
+      "sha256": "5a8ab48b990cad880e1989bfc6850460ff775a9fc18b9d7c0088e461753554ac"
+    },
+    "evidence/ghidra.log": {
+      "bytes": 12321,
+      "sha256": "24b48b783db5394743cc154c51c9d63b082b3df0d1933aa50f9d8d0ab10d4e71"
+    },
+    "evidence/reset-path-verification.json": {
+      "bytes": 1138,
+      "sha256": "4d7483f9c54684d74e9c94b6e7c8af54c9f1509da4bdb8c92532c73310c3518c"
+    },
+    "evidence/return-build-tests.txt": {
+      "bytes": 992,
+      "sha256": "783a9c6d19d7a17119ecc31b1aed2e4275cdf5c6d5c3319a9a94c88c8271010d"
+    },
+    "evidence/return-source.diff": {
+      "bytes": 9944,
+      "sha256": "7bfe643bf5f492129ffdee7f395d191d89b60e39bcbc978bcd0a465542e86aa2"
+    },
+    "evidence/stock-plus-upper-dump-analysis-only.bin": {
+      "bytes": 65536,
+      "sha256": "ca10546707f79d14365f31f4191c6483fb64e28fe1f4d49ce5c12c452c17a11e"
+    },
+    "evidence/upstream-build_exp2.py": {
+      "bytes": 8565,
+      "sha256": "517b0f00d00d23b024b98d665482d68288af7c2f68bcb3d0a4fa4edf5d871b1f"
+    },
+    "evidence/upstream-test_exp2.py": {
+      "bytes": 8673,
+      "sha256": "c440371b427c559989ac4baf54ae42ff6b8ed331637aee264fa089c05538d2d4"
+    },
+    "return-to-exp1/build.ps1": {
+      "bytes": 3953,
+      "sha256": "fa5801eb6480226de1bc0188108a2b3a89c4ea9e6e3e206d4d57fd2bb1bf1335"
+    },
+    "return-to-exp1/CMakeLists.txt": {
+      "bytes": 2627,
+      "sha256": "70157043f8900ac392072837c6a53ae9ada4488fd9a0a4d5640049040f1b5235"
+    },
+    "source-review/build_exp2_review.py": {
+      "bytes": 8969,
+      "sha256": "95e7087b38c0d0132c5c3e6a5cd57c283f042f709d5dd8f8d757e63f6eead483"
+    },
+    "source-review/test_review.py": {
+      "bytes": 6522,
+      "sha256": "29e7e17b319df25be28a3342c1e0e7cf11f339eb173be415c448d8707f3c1082"
+    },
+    "tools/ExportBootReset.java": {
+      "bytes": 3062,
+      "sha256": "ef45cf0c20a97f5f152e76aee2769171bffd2e5bee811a67dcb4f843880dea34"
+    },
+    "tools/Test-Comparison.ps1": {
+      "bytes": 4583,
+      "sha256": "be5f5a8a40681958a061d601d25394feb26c38a2ee04e25fc7193f228c8fd9c8"
+    },
+    "tools/verify_reset_path.py": {
+      "bytes": 3328,
+      "sha256": "b9c67c76619b6c2c66ee949de76b78b43d4b2ea0ec67d4c2d8b76a41065fc396"
+    },
+    "return-to-exp1/build/app-res.o": {
+      "bytes": 876,
+      "sha256": "543833d68fa72953d1f26574c34c0b639f66a34a744abdc64bc756bb3e312556"
+    },
+    "return-to-exp1/build/core-tests.exe": {
+      "bytes": 83506,
+      "sha256": "70715cc25172ab352b3a96501ec6eeb1f7e4e864586e2809ee6a299040e6abf1"
+    },
+    "return-to-exp1/build/device-state-tests.exe": {
+      "bytes": 116554,
+      "sha256": "54b5eb45c067cf37ef88180c9b1da3448cf347e6d4b84429a7eb99f5099a4b43"
+    },
+    "return-to-exp1/build/hid-transport-tests.exe": {
+      "bytes": 91309,
+      "sha256": "b8a8bb639c7c2a555c8654ba1300f2746de6226d7252f73c8eb294ffac3b8cc4"
+    },
+    "return-to-exp1/build/protocol-tests.exe": {
+      "bytes": 143974,
+      "sha256": "52e5e22a1f18868fd34ab0012c0441f3365932432ca603db5884e51624e14d29"
+    },
+    "return-to-exp1/build/session-log-tests.exe": {
+      "bytes": 74851,
+      "sha256": "6b725c5f2d4bd8e30e1569ede6d9275954e6541f46576dc1fd68cd32c6cc8adb"
+    },
+    "return-to-exp1/build/Y540Updater.exe": {
+      "bytes": 205125,
+      "sha256": "e7f24d2a4bae97213d248090d3058e0463dbb891424c18481f044c3ff384d24b"
+    },
+    "return-to-exp1/samples/44-nosleep-exp1.bin": {
+      "bytes": 55296,
+      "sha256": "2b34b6d59db8443831a7e0387ae65970307f516e816dd481f1ba513d3f9de773"
+    },
+    "return-to-exp1/samples/44.bin": {
+      "bytes": 55296,
+      "sha256": "3afec131c6ed70efa0a3f4b601cb799011a582835d371c57fef68af48519e359"
+    },
+    "return-to-exp1/samples/exp2-backup-test.bin": {
+      "bytes": 55296,
+      "sha256": "82c94fd50191a3ad8b4f9760ebf588b911b193450dd7edeeec06bacba338e1b8"
+    },
+    "return-to-exp1/samples/SHFU.ini": {
+      "bytes": 890,
+      "sha256": "87d8a39d9cb1a107c0d24b5a929d46051c54a089c8042e6b044c02d2ffefb64a"
+    },
+    "return-to-exp1/src/app.c": {
+      "bytes": 33609,
+      "sha256": "e79cd02e28761f479e0bb411c52b11062c47e0d408d44797968a6cc65b2de4ff"
+    },
+    "return-to-exp1/src/app.rc": {
+      "bytes": 627,
+      "sha256": "9f850a07dddab04c3f68b24e7e8e3b3bc67f4d9d86ced8b9704b290c695073b8"
+    },
+    "return-to-exp1/src/core.c": {
+      "bytes": 9187,
+      "sha256": "f1e30575a6a7a2b7d4434e22a59d4631d306337c0ebcd1bdc28d72d55294cd8f"
+    },
+    "return-to-exp1/src/core.h": {
+      "bytes": 2777,
+      "sha256": "4ead0cff76943daaaa45d88aefa1cacd791765de72851a74be247813817c0f13"
+    },
+    "return-to-exp1/src/core_tests.c": {
+      "bytes": 6905,
+      "sha256": "5ec83fe0e07518c930ca0edf5ae2bf940d3169b73e4cfda22d9772d2eaa6dc95"
+    },
+    "return-to-exp1/src/device_state.c": {
+      "bytes": 17712,
+      "sha256": "96eaf64c51c2268c0081b993904a4136ce105c20eb8a818462ffdef407439bf4"
+    },
+    "return-to-exp1/src/device_state.h": {
+      "bytes": 3539,
+      "sha256": "e13a8fcca3551707d565773d216854f1d7fe4b82df55b75364763b2295b0710c"
+    },
+    "return-to-exp1/src/hid_transport.c": {
+      "bytes": 21026,
+      "sha256": "59185a8f9a2f54992e0e41b5f8af0e76756ecb959c68ae841b2e7dec0e8c6e49"
+    },
+    "return-to-exp1/src/hid_transport.h": {
+      "bytes": 3984,
+      "sha256": "910185feb0dd09cc70fce888162bb743a5232e7c1581e6275081679075d8c69d"
+    },
+    "return-to-exp1/src/power_policy.c": {
+      "bytes": 1343,
+      "sha256": "7de5057e6fcda7311abf3cf8b72c58569d0330e907d7871f49c33b06ca96cbb1"
+    },
+    "return-to-exp1/src/power_policy.h": {
+      "bytes": 750,
+      "sha256": "8979414c5676fe9c39352b6cd62cbdb2b9dbb71939a57cd1dc931bb1af769145"
+    },
+    "return-to-exp1/src/protocol.c": {
+      "bytes": 33174,
+      "sha256": "8922c88717e4886ff128a01ca9cb23a4bbc6daf8cc30ea537d19d3a7d280c9d2"
+    },
+    "return-to-exp1/src/protocol.h": {
+      "bytes": 4517,
+      "sha256": "4a1f20f39b3505aca5ee5dbb0e3b6f2dd219a931dfd974f3b177b79c3ec9aee2"
+    },
+    "return-to-exp1/src/session_log.c": {
+      "bytes": 4108,
+      "sha256": "497172a079a6749de5b8554fb5ffdc62dc7fa18fd418c22f9d9c649b6c7f9222"
+    },
+    "return-to-exp1/src/session_log.h": {
+      "bytes": 452,
+      "sha256": "2d27be1452e2e5f3608cf7a0bf029cbf15c08892935c4f75e0dc46e0d7e3ffb0"
+    },
+    "return-to-exp1/src/sha256.c": {
+      "bytes": 2815,
+      "sha256": "50738b4d381a3ce11a218eac5bd2e425fe62665c25b66742b91fbdd89f709dbe"
+    },
+    "return-to-exp1/src/sha256.h": {
+      "bytes": 290,
+      "sha256": "519252b8bdf013123c7c7c98dcf2b713bd71d46ef5e9aa06e724a984e91ef134"
+    },
+    "return-to-exp1/tests/test_device_state.c": {
+      "bytes": 5441,
+      "sha256": "7718865a88f165f1d2bea42233357b5bdb6b4a772d8bbaf59045ed39e8b1c3df"
+    },
+    "return-to-exp1/tests/test_hid_transport.c": {
+      "bytes": 7322,
+      "sha256": "bdbafe0348c09547fcd51617ad19ceecd6fd85669a726a3b9db252a3a1b62756"
+    },
+    "return-to-exp1/tests/test_protocol.c": {
+      "bytes": 26079,
+      "sha256": "29598d95f8fb65c90dfe5e21959fd744613d9f01affb2e5f00dca78d3c54d608"
+    },
+    "return-to-exp1/tests/test_session_log.c": {
+      "bytes": 1580,
+      "sha256": "7d5a07933337fddc96dc65544840a62e5777eff368e285f46f474af7946fb13a"
+    },
+    "return-to-exp1/build/logs/return-exp1-20261013T094505381Z-p17936-1.log": {
+      "bytes": 563,
+      "sha256": "d489b3eed2b44933c763fe51c38afed0f1db55055509a685f2b56fcc8649c5a4"
+    },
+    "return-to-exp1/build/logs/return-exp1-20261013T094634070Z-p12164-1.log": {
+      "bytes": 563,
+      "sha256": "9c0727a88b94cd1d2a84e90fbb7c655811f50c508469eee714e848adf05a61a5"
+    },
+    "portable/Y540-Power-Comparison/Compare-UsbPower.ps1": {
+      "bytes": 7513,
+      "sha256": "29562e915632cccb74d17e355d151cef777cd1fd032861dd0fd298af74886e87"
+    },
+    "portable/Y540-Power-Comparison/START-HERE.md": {
+      "bytes": 2525,
+      "sha256": "d74a235cff764e2c12981037f0c2b5c1335068a9b0fb894d33fa4788b25f58cc"
+    },
+    "portable/Y540-Return-to-exp1/44-nosleep-exp1.bin": {
+      "bytes": 55296,
+      "sha256": "2b34b6d59db8443831a7e0387ae65970307f516e816dd481f1ba513d3f9de773"
+    },
+    "portable/Y540-Return-to-exp1/FILE-HASHES.json": {
+      "bytes": 926,
+      "sha256": "9b07839d930f11052500f4eef70f18042c623eaa71918063a2af10eef6f404c3"
+    },
+    "portable/Y540-Return-to-exp1/patch-manifest.json": {
+      "bytes": 1344,
+      "sha256": "8da5c9fde6cbf449fb9443de9648478f839394de54acddbf01c0eb607c1aa956"
+    },
+    "portable/Y540-Return-to-exp1/RETURN-EXP1.ps1": {
+      "bytes": 5583,
+      "sha256": "9f42bcea4250162ec5575a7500281568f131b7f928b45b9329799b902ed72c40"
+    },
+    "portable/Y540-Return-to-exp1/RUN-RETURN.cmd": {
+      "bytes": 113,
+      "sha256": "06ea0455bd65643ce0a9810c8afb2e80459dcfda4a8e22de41525f97136e2405"
+    },
+    "portable/Y540-Return-to-exp1/SHFU.ini": {
+      "bytes": 890,
+      "sha256": "87d8a39d9cb1a107c0d24b5a929d46051c54a089c8042e6b044c02d2ffefb64a"
+    },
+    "portable/Y540-Return-to-exp1/START-HERE.md": {
+      "bytes": 1490,
+      "sha256": "7d4ea71e05b37aea67374cdad35804efd616e9a0a8ff7a74930e3b33ad1d4c5d"
+    },
+    "portable/Y540-Return-to-exp1/Y540Updater.exe": {
+      "bytes": 205125,
+      "sha256": "e7f24d2a4bae97213d248090d3058e0463dbb891424c18481f044c3ff384d24b"
+    },
+    "portable/Y540-Return-to-exp1/logs/return-exp1-20261013T094959148Z-p25732-1.log": {
+      "bytes": 571,
+      "sha256": "1a05c994942fc0b127334e0871b802773a9a39ccea18e07005a590cafb6f51b5"
+    }
+  },
+  "file_count": 72
+}

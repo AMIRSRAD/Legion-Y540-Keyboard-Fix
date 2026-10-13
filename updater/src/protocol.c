@@ -33,13 +33,23 @@ static int send(y540_hid_transport *t, const uint8_t *p, size_t n,
                 y540_hid_error *e) {
   return y540_hid_send(t, p, n, e);
 }
-/* Known-good images (all from this package): original 44, and the no-sleep experiment 1.
+/* Known-byte images: stock 44, exp1 and withdrawn exp2. A known hash
+ * establishes backup content, not firmware correctness; exp2 is never selected by default.
  * A complete bootloader read that equals one of them exactly needs no second confirming
  * read: a corrupted read cannot hash to a known image. */
-#define KNOWN_IMAGES 2
+#define KNOWN_IMAGES 4
 static const uint8_t KNOWN_IMAGE_SHA256[KNOWN_IMAGES][32] = {
     {0x3a, 0xfe, 0xc1, 0x31, 0xc6, 0xed, 0x70, 0xef, 0xa0, 0xa3, 0xf4, 0xb6, 0x01, 0xcb, 0x79, 0x90, 0x11, 0xa5, 0x82, 0x83, 0x5d, 0x37, 0x1c, 0x57, 0xfe, 0xf6, 0x8a, 0xf4, 0x85, 0x19, 0xe3, 0x59},
-    {0x2b, 0x34, 0xb6, 0xd5, 0x9d, 0xb8, 0x44, 0x38, 0x31, 0xa7, 0xe0, 0x38, 0x7a, 0xe6, 0x59, 0x70, 0x30, 0x7f, 0x51, 0x6e, 0x81, 0x6d, 0xd4, 0x81, 0xf1, 0xba, 0x51, 0x3d, 0x3f, 0x9d, 0xe7, 0x73}};
+    {0x2b, 0x34, 0xb6, 0xd5, 0x9d, 0xb8, 0x44, 0x38, 0x31, 0xa7, 0xe0, 0x38, 0x7a, 0xe6, 0x59, 0x70, 0x30, 0x7f, 0x51, 0x6e, 0x81, 0x6d, 0xd4, 0x81, 0xf1, 0xba, 0x51, 0x3d, 0x3f, 0x9d, 0xe7, 0x73},
+      {0x82, 0xc9, 0x4f, 0xd5, 0x01, 0x91, 0xa3, 0xad, 0x8b, 0x4f, 0x97, 0x60, 0xeb, 0xf5, 0x88, 0xb9, 0x11, 0xb1, 0x93, 0x45, 0x0d, 0xd7, 0xed, 0xee, 0xec, 0x06, 0xba, 0xcb, 0xa3, 0x38, 0xe1, 0xb8},
+    {0xe0, 0xa9, 0x59, 0xa6, 0x3d, 0xce, 0xad, 0xa1, 0xf5, 0xfa, 0xd6, 0x84, 0x64, 0x51, 0x37, 0x22, 0x71, 0xe2, 0x66, 0xec, 0x17, 0x6c, 0xfd, 0x25, 0xbb, 0x32, 0x2a, 0x69, 0x19, 0x9b, 0x54, 0x57}};
+static int image_index(const uint8_t *data, size_t size) {
+  uint8_t digest[32];
+  y540_sha256(data, size, digest);
+  for (int i = 0; i < KNOWN_IMAGES; ++i)
+    if (!memcmp(digest, KNOWN_IMAGE_SHA256[i], 32)) return i;
+  return -1;
+}
 static int read_flash(y540_hid_transport *t, uint32_t addr, uint8_t *out,
                       size_t size, y540_progress_fn progress, void *ctx,
                       y540_hid_error *e) {
@@ -73,6 +83,24 @@ static int read_flash(y540_hid_transport *t, uint32_t addr, uint8_t *out,
       next_note += 0x2000;
     }
   }
+  return 1;
+}
+/* Exact dependency bytes from the owner's hash-checked upper-flash dump.
+ * Read-only comparison on the currently bound controller before any erase.
+ * It does not write the bootloader or infer its hardware reset scope. */
+static const uint8_t reset_dep_0[] = {0xe4,0xfd,0xfc,0xc3,0xed,0x9f,0xec,0x9e,0x50,0x13,0xe4,0xfb,0xe4,0x90,0x20,0x0b,0xf0,0x0b,0xeb,0xb4,0x42,0xf6,0x0d,0xbd,0x00,0x01,0x0c,0x80,0xe6,0x22};
+static const uint8_t reset_dep_1[] = {0x7f,0x05,0x7e,0x00,0x12,0xf1,0x2c,0x90,0x2f,0x50,0x74,0x08,0xf0,0x7f,0xe8,0x7e,0x03,0x12,0xf1,0x2c,0x90,0x10,0x58,0xe0,0x44,0x40,0xf0,0x53,0x8e,0x3f,0x75,0xd8,0x02,0x80,0xfe};
+static int validate_reset_dependencies(y540_hid_transport *t, y540_progress_fn progress,
+                                       void *ctx, y540_hid_error *e) {
+  uint8_t observed[56];
+  note(progress, ctx, "Verify existing bootloader reset dependency (read only, no erase)", 1u, 2u);
+  if (!read_flash(t, 0xF12Cu, observed, sizeof(reset_dep_0), NULL, NULL, e)) return 0;
+  if (memcmp(observed, reset_dep_0, sizeof(reset_dep_0)))
+    return fail(e, "Bootloader reset dependency differs; exp3 not installed, no erase performed");
+  note(progress, ctx, "Verify existing bootloader reset dependency (read only, no erase)", 2u, 2u);
+  if (!read_flash(t, 0xF455u, observed, sizeof(reset_dep_1), NULL, NULL, e)) return 0;
+  if (memcmp(observed, reset_dep_1, sizeof(reset_dep_1)))
+    return fail(e, "Bootloader reset dependency differs; exp3 not installed, no erase performed");
   return 1;
 }
 static int erase(y540_hid_transport *t, uint32_t addr, uint16_t blocks,
@@ -313,6 +341,9 @@ static int preflight(const uint8_t *fw, size_t size, const y540_config *c,
   if (!y540_validate_firmware(fw, size, c, &r, msg, sizeof(msg))) {
     return fail(e, msg);
   }
+  int target = image_index(fw, size);
+  if (target != 0 && target != 1 && target != 3)
+    return fail(e, "fix9 permits only exact stock44, exp1 return, or exp3; withdrawn/unknown images are rejected before device I/O");
   if (!number(c, "NEWVERSION", "UPDATESTARTADDRESS", 16, 0, &start, e) ||
       !number(c, "NEWVERSION", "UPDATEONLYPARAMETER", 10, 0, &mode, e) ||
       !number(c, "DEVICE", "DOCKINGBURN", 10, 0, &docking, e)) {
@@ -394,6 +425,8 @@ static int boot_program(y540_hid_transport *t, const uint8_t *fw, size_t size,
     return fail(e, "Cannot allocate readback buffer");
   }
   second = readback + size;
+  if (image_index(fw, size) == 3 &&
+      !validate_reset_dependencies(t, progress, ctx, e)) goto done;
   note(progress, ctx, "Read complete update region for backup", 0, size);
   if (!read_flash(t, 0, readback, size, progress, ctx, e))
     goto done;
@@ -407,7 +440,7 @@ static int boot_program(y540_hid_transport *t, const uint8_t *fw, size_t size,
       /* fix6: shorter exposure. The device still holds the exact original
        * firmware 44 (SHA-256 matches a packaged image), so the saved backup is that known
        * file; a second read would only add ~30 s of bootloader traffic. */
-      note(progress, ctx, "Read equals a known image (original 44 or no-sleep exp1) exactly; second read not needed", size, size);
+      note(progress, ctx, "Read equals known stock/exp1/exp2/exp3 bytes exactly; backup hash confirmed, second read not needed", size, size);
     } else {
       note(progress, ctx, "Confirm backup with second independent read", 0, size);
       if (!read_flash(t, 0, second, size, progress, ctx, e))

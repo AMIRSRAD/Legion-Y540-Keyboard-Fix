@@ -1,0 +1,115 @@
+﻿{
+    "model":  "81SX",
+    "action":  "Record",
+    "devices":  [
+                    {
+                        "Status":  "Unknown",
+                        "Class":  "HIDClass",
+                        "FriendlyName":  "USB Input Device",
+                        "InstanceId":  "USB\\VID_048D\u0026PID_C100\\5\u00261F456139\u00260\u00269",
+                        "Problem":  45
+                    },
+                    {
+                        "Status":  "OK",
+                        "Class":  "Keyboard",
+                        "FriendlyName":  "HID Keyboard Device",
+                        "InstanceId":  "HID\\HIDCLASS\u0026COL03\\1\u00262D595CA7\u00260\u00260002",
+                        "Problem":  0
+                    },
+                    {
+                        "Status":  "OK",
+                        "Class":  "Keyboard",
+                        "FriendlyName":  "Standard PS/2 Keyboard",
+                        "InstanceId":  "ACPI\\MSFT0001\\4\u00265B7D99F\u00260",
+                        "Problem":  0
+                    },
+                    {
+                        "Status":  "Unknown",
+                        "Class":  "HIDClass",
+                        "FriendlyName":  "HID-compliant system controller",
+                        "InstanceId":  "HID\\VID_048D\u0026PID_C100\u0026COL05\\6\u00268BB26F5\u00260\u00260004",
+                        "Problem":  45
+                    },
+                    {
+                        "Status":  "Unknown",
+                        "Class":  "HIDClass",
+                        "FriendlyName":  "HID-compliant consumer control device",
+                        "InstanceId":  "HID\\VID_048D\u0026PID_C100\u0026COL04\\6\u00268BB26F5\u00260\u00260003",
+                        "Problem":  45
+                    },
+                    {
+                        "Status":  "Unknown",
+                        "Class":  "Keyboard",
+                        "FriendlyName":  "HID Keyboard Device",
+                        "InstanceId":  "HID\\VID_048D\u0026PID_C100\u0026COL03\\6\u00268BB26F5\u00260\u00260002",
+                        "Problem":  45
+                    },
+                    {
+                        "Status":  "Unknown",
+                        "Class":  "HIDClass",
+                        "FriendlyName":  "HID-compliant vendor-defined device",
+                        "InstanceId":  "HID\\VID_048D\u0026PID_C100\u0026COL02\\6\u00268BB26F5\u00260\u00260001",
+                        "Problem":  45
+                    },
+                    {
+                        "Status":  "Unknown",
+                        "Class":  "HIDClass",
+                        "FriendlyName":  "HID-compliant vendor-defined device",
+                        "InstanceId":  "HID\\VID_048D\u0026PID_C100\u0026COL01\\6\u00268BB26F5\u00260\u00260000",
+                        "Problem":  45
+                    },
+                    {
+                        "Status":  "Unknown",
+                        "Class":  "Keyboard",
+                        "FriendlyName":  "Remote Desktop Keyboard Device",
+                        "InstanceId":  "TERMINPUT_BUS\\UMB\\2\u00262C22BCC9\u00260\u0026SESSION1KEYBOARD0",
+                        "Problem":  45
+                    },
+                    {
+                        "Status":  "Unknown",
+                        "Class":  "Keyboard",
+                        "FriendlyName":  "HID Keyboard Device",
+                        "InstanceId":  "HID\\VID_3554\u0026PID_FA09\u0026MI_01\u0026COL04\\7\u00261FD88E46\u00260\u00260003",
+                        "Problem":  45
+                    },
+                    {
+                        "Status":  "Unknown",
+                        "Class":  "Keyboard",
+                        "FriendlyName":  "HID Keyboard Device",
+                        "InstanceId":  "HID\\VID_3554\u0026PID_FA09\u0026MI_00\\7\u00263FEAF7C\u00260\u00260000",
+                        "Problem":  45
+                    },
+                    {
+                        "Status":  "Unknown",
+                        "Class":  "HIDClass",
+                        "FriendlyName":  "USB Input Device",
+                        "InstanceId":  "USB\\VID_048D\u0026PID_89DB\\5\u00261F456139\u00260\u00269",
+                        "Problem":  45
+                    },
+                    {
+                        "Status":  "Unknown",
+                        "Class":  "HIDClass",
+                        "FriendlyName":  "HID-compliant vendor-defined device",
+                        "InstanceId":  "HID\\VID_048D\u0026PID_89DB\\6\u0026328BC9ED\u00260\u00260000",
+                        "Problem":  45
+                    }
+                ],
+    "last_boot_utc":  "2026-10-13T11:03:40.5000000Z",
+    "policy_after":  {
+                         "scheme":  "381b4222-f694-41f0-9685-ff5bb260df2e",
+                         "dc":  0,
+                         "ac":  0
+                     },
+    "utc":  "2026-10-13T11:05:33.9819916Z",
+    "policy_before":  {
+                          "scheme":  "381b4222-f694-41f0-9685-ff5bb260df2e",
+                          "dc":  0,
+                          "ac":  0
+                      },
+    "owner_note":  "exp1 5642; suspend off; normal restart 1",
+    "active_scheme":  "381b4222-f694-41f0-9685-ff5bb260df2e",
+    "windows_build":  "26200",
+    "product":  "Legion Y540-15IRH",
+    "owner_reported_keyboard":  "working",
+    "limits":  "PnP inventory is not a USB transfer trace. Owner typing result is self-reported; this script does not test the built-in keyboard or measure USB suspend."
+}

@@ -1,0 +1,105 @@
+{
+  "request": {
+    "name": "procedure_pseudo_code",
+    "arguments": {
+      "procedure": "0x40a280"
+    }
+  },
+  "response": {
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"evidence_id\":\"ev_fd5cef455511f38958e586f0c63ecf627ff68d3d1ca88e0a045f3270e297dd99\",\"subject\":{\"name\":\"C:\\\\Users\\\\a.saberi\\\\Desktop\\\\Y540-keyboard-firmware-00000044\\\\extracted-IT\\\\ITESHFU.exe\",\"digest\":{\"sha256\":\"afcca3de209ccfab256aff48b8f7f59dfb6cd6a27b22fc58a41b50f0bd8bb8fa\"},\"format\":\"pe\",\"architecture\":\"x86_64\",\"local_path\":\"C:\\\\Users\\\\a.saberi\\\\Desktop\\\\Y540-keyboard-firmware-00000044\\\\extracted-IT\\\\ITESHFU.exe\"},\"provider\":{\"id\":\"ghidra\",\"name\":\"Ghidra\",\"version\":\"12.1.4\"},\"analysis_profile\":{\"provider\":{\"id\":\"ghidra\",\"name\":\"Ghidra\",\"version\":\"12.1.4\"},\"parameters\":{\"target_kind\":\"executable\",\"target_format\":\"pe\",\"executable_role\":\"application\",\"managed\":false,\"native_aot_metadata\":{\"contract_revision\":\"rtr-9.1-x64-pe-read-only-v3\",\"source_bytes\":134217728,\"work_units\":67108864,\"working_memory_bytes\":67108864,\"report_bytes\":4194304},\"architecture\":\"x86_64\",\"available_architectures\":[\"x86_64\"],\"import_mode\":\"ephemeral-source-immutable\",\"annotation_policy\":\"atomic-function-entry-metadata-v1\",\"load_image_observations\":\"source-mappings-entry-context-v2\",\"function_body_evidence\":\"complete-inclusive-ranges-v1\",\"function_references\":\"complete-body-and-entry-reference-manager-v2\",\"string_inventory_evidence\":\"defined-data-coverage-v1\",\"location_resolution\":\"explicit-address-exact-entry-symbol-first-v3\",\"instruction_flow_evidence\":\"decoded-return-pcode-v1\",\"function_boundary_observations\":\"ghidra-terminal-call-limitations-v1\",\"no_return_repair\":\"disabled-windows-p0\",\"process_launch\":\"official-headless-script-v1\",\"jump_table_evidence\":\"typed-case-default-blocks-v1\",\"decompiler_jump_loads\":true,\"loader\":\"auto-from-header\",\"language_id\":\"auto-from-header\",\"compiler_spec_id\":\"auto-default\",\"analyzer_preset\":\"ghidra-default\"},\"digest\":\"249564812a8d83b9b3f461098fc485ccde60c516d4497547a124081c91d654bf\"},\"predicate_type\":\"rea.analysis\",\"operation\":\"procedure_pseudo_code\",\"parameters\":{\"procedure\":\"0x40a280\"},\"raw_result\":{\"value\":\"\\r\\nbool HidCustomCmdInit(UCHAR IsEnable)\\r\\n\\r\\n{\\r\\n  TStrings *pTVar1;\\r\\n  _func_int *p_Var2;\\r\\n  UCHAR UVar3;\\r\\n  int iVar4;\\r\\n  undefined8 local_50;\\r\\n  undefined8 local_48;\\r\\n  BYTE ReceiveKey [15];\\r\\n  BYTE gpHidCustomCmdInitKey [15];\\r\\n  UCHAR IsEnable_local;\\r\\n  \\r\\n  gpHidCustomCmdInitKey._0_8_ = s_ITE_Tech__Inc__006e0398._0_8_;\\r\\n  gpHidCustomCmdInitKey._8_4_ = s_ITE_Tech__Inc__006e0398._8_4_;\\r\\n  gpHidCustomCmdInitKey._12_2_ = s_ITE_Tech__Inc__006e0398._12_2_;\\r\\n  gpHidCustomCmdInitKey[0xe] = s_ITE_Tech__Inc__006e0398[0xe];\\r\\n  memset(ReceiveKey,0,0xf);\\r\\n  UVar3 = ITEReportID;\\r\\n  if (hFile[MainIndex] == (HANDLE)0x0) {\\r\\n    return false;\\r\\n  }\\r\\n  pTVar1 = (Form1->Memo2->super_TCustomMemo).FLines;\\r\\n  p_Var2 = (pTVar1->super_TPersistent).super_TObject._vptr_TObject[0xf];\\r\\n  memset(&local_50,0,8);\\r\\n  local_50 = 0;\\r\\n  _ZN6System8Sysutils8IntToStrEi(&local_50,UVar3);\\r\\n  memset(&local_48,0,8);\\r\\n  local_48 = 0;\\r\\n  _ZN6SystemplEPKcRKNS_13UnicodeStringE(&local_48,s_ITEReportID__006e03a7,&local_50);\\r\\n  (*p_Var2)(pTVar1,local_48);\\r\\n  _ZN6System13UnicodeStringD1Ev(&local_48);\\r\\n  _ZN6System13UnicodeStringD1Ev(&local_50);\\r\\n  HidRequests(hFile[MainIndex],true,ITEReportID,gpHidCustomCmdInitKey,'\\\\x0f');\\r\\n  Sleep(100);\\r\\n  HidRequests(hFile[MainIndex],false,ITEReportID,ReceiveKey,'\\\\x0f');\\r\\n  Sleep(100);\\r\\n  iVar4 = memcmp(gpHidCustomCmdInitKey,ReceiveKey,0xf);\\r\\n  if (((iVar4 != 0) && (IsEnable == '\\\\x01')) ||\\r\\n     ((iVar4 = memcmp(gpHidCustomCmdInitKey,ReceiveKey,0xf), iVar4 == 0 && (IsEnable == '\\\\0')))) {\\r\\n    HidRequests(hFile[MainIndex],true,ITEReportID,gpHidCustomCmdInitKey,'\\\\x0f');\\r\\n    Sleep(100);\\r\\n    HidRequests(hFile[MainIndex],false,ITEReportID,ReceiveKey,'\\\\x0f');\\r\\n  }\\r\\n  Sleep(100);\\r\\n  iVar4 = memcmp(gpHidCustomCmdInitKey,ReceiveKey,0xf);\\r\\n  if (((iVar4 != 0) || (IsEnable != '\\\\x01')) &&\\r\\n     ((iVar4 = memcmp(gpHidCustomCmdInitKey,ReceiveKey,0xf), iVar4 == 0 || (IsEnable != '\\\\0')))) {\\r\\n    return false;\\r\\n  }\\r\\n  return true;\\r\\n}\\r\\n\\r\\n\",\"limitations\":[]},\"normalized_result\":\"\\r\\nbool HidCustomCmdInit(UCHAR IsEnable)\\r\\n\\r\\n{\\r\\n  TStrings *pTVar1;\\r\\n  _func_int *p_Var2;\\r\\n  UCHAR UVar3;\\r\\n  int iVar4;\\r\\n  undefined8 local_50;\\r\\n  undefined8 local_48;\\r\\n  BYTE ReceiveKey [15];\\r\\n  BYTE gpHidCustomCmdInitKey [15];\\r\\n  UCHAR IsEnable_local;\\r\\n  \\r\\n  gpHidCustomCmdInitKey._0_8_ = s_ITE_Tech__Inc__006e0398._0_8_;\\r\\n  gpHidCustomCmdInitKey._8_4_ = s_ITE_Tech__Inc__006e0398._8_4_;\\r\\n  gpHidCustomCmdInitKey._12_2_ = s_ITE_Tech__Inc__006e0398._12_2_;\\r\\n  gpHidCustomCmdInitKey[0xe] = s_ITE_Tech__Inc__006e0398[0xe];\\r\\n  memset(ReceiveKey,0,0xf);\\r\\n  UVar3 = ITEReportID;\\r\\n  if (hFile[MainIndex] == (HANDLE)0x0) {\\r\\n    return false;\\r\\n  }\\r\\n  pTVar1 = (Form1->Memo2->super_TCustomMemo).FLines;\\r\\n  p_Var2 = (pTVar1->super_TPersistent).super_TObject._vptr_TObject[0xf];\\r\\n  memset(&local_50,0,8);\\r\\n  local_50 = 0;\\r\\n  _ZN6System8Sysutils8IntToStrEi(&local_50,UVar3);\\r\\n  memset(&local_48,0,8);\\r\\n  local_48 = 0;\\r\\n  _ZN6SystemplEPKcRKNS_13UnicodeStringE(&local_48,s_ITEReportID__006e03a7,&local_50);\\r\\n  (*p_Var2)(pTVar1,local_48);\\r\\n  _ZN6System13UnicodeStringD1Ev(&local_48);\\r\\n  _ZN6System13UnicodeStringD1Ev(&local_50);\\r\\n  HidRequests(hFile[MainIndex],true,ITEReportID,gpHidCustomCmdInitKey,'\\\\x0f');\\r\\n  Sleep(100);\\r\\n  HidRequests(hFile[MainIndex],false,ITEReportID,ReceiveKey,'\\\\x0f');\\r\\n  Sleep(100);\\r\\n  iVar4 = memcmp(gpHidCustomCmdInitKey,ReceiveKey,0xf);\\r\\n  if (((iVar4 != 0) && (IsEnable == '\\\\x01')) ||\\r\\n     ((iVar4 = memcmp(gpHidCustomCmdInitKey,ReceiveKey,0xf), iVar4 == 0 && (IsEnable == '\\\\0')))) {\\r\\n    HidRequests(hFile[MainIndex],true,ITEReportID,gpHidCustomCmdInitKey,'\\\\x0f');\\r\\n    Sleep(100);\\r\\n    HidRequests(hFile[MainIndex],false,ITEReportID,ReceiveKey,'\\\\x0f');\\r\\n  }\\r\\n  Sleep(100);\\r\\n  iVar4 = memcmp(gpHidCustomCmdInitKey,ReceiveKey,0xf);\\r\\n  if (((iVar4 != 0) || (IsEnable != '\\\\x01')) &&\\r\\n     ((iVar4 = memcmp(gpHidCustomCmdInitKey,ReceiveKey,0xf), iVar4 == 0 || (IsEnable != '\\\\0')))) {\\r\\n    return false;\\r\\n  }\\r\\n  return true;\\r\\n}\\r\\n\\r\\n\",\"confidence\":\"observed\",\"authority\":\"shipped-artifact\",\"environment\":null,\"limitations\":[\"The session serves operations only after Ghidra reports default auto-analysis complete; incomplete analysis does not expose partial results.\",\"The imported Program and temporary project are ephemeral and deleted on close. Annotation operations edit session database metadata; original executable bytes are never written.\",\"Cancelling an active Ghidra request terminates its ephemeral database and discards session annotations. The selected target remains open; the next provider query imports the original artifact again.\",\"Default-space addresses use lowercase 0x-prefixed hexadecimal; other address spaces use <percent-encoded-space>:0x<hex>.\",\"Pseudocode is Ghidra decompiler output, not original source and not text-equivalent to Hopper output.\",\"External functions and functions without an analyzable body return null; other decompiler failures remain explicit.\",\"Windows Ghidra P0 accepts approved native x86 and x86-64 PE applications and DLLs; managed, hostile, sensitive, and mutable-path targets are unsupported.\",\"The Windows bridge uses authenticated IPv4 loopback because Node path-based IPC does not expose Java AF_UNIX sockets; the endpoint file contains no bearer token.\",\"Windows sessions require the matching packaged Windows x64 native addon, local NTFS targets and runtimes, and Windows 10 or later. Native handles enforce path admission, private DACLs, and Job Object ownership automatically.\"],\"locations\":[],\"evidence_links\":[]}"
+        }
+      ],
+      "structuredContent": {
+        "evidence_id": "ev_fd5cef455511f38958e586f0c63ecf627ff68d3d1ca88e0a045f3270e297dd99",
+        "subject": {
+          "name": "C:\\Users\\a.saberi\\Desktop\\Y540-keyboard-firmware-00000044\\extracted-IT\\ITESHFU.exe",
+          "digest": {
+            "sha256": "afcca3de209ccfab256aff48b8f7f59dfb6cd6a27b22fc58a41b50f0bd8bb8fa"
+          },
+          "format": "pe",
+          "architecture": "x86_64",
+          "local_path": "C:\\Users\\a.saberi\\Desktop\\Y540-keyboard-firmware-00000044\\extracted-IT\\ITESHFU.exe"
+        },
+        "provider": {
+          "id": "ghidra",
+          "name": "Ghidra",
+          "version": "12.1.4"
+        },
+        "analysis_profile": {
+          "provider": {
+            "id": "ghidra",
+            "name": "Ghidra",
+            "version": "12.1.4"
+          },
+          "parameters": {
+            "target_kind": "executable",
+            "target_format": "pe",
+            "executable_role": "application",
+            "managed": false,
+            "native_aot_metadata": {
+              "contract_revision": "rtr-9.1-x64-pe-read-only-v3",
+              "source_bytes": 134217728,
+              "work_units": 67108864,
+              "working_memory_bytes": 67108864,
+              "report_bytes": 4194304
+            },
+            "architecture": "x86_64",
+            "available_architectures": [
+              "x86_64"
+            ],
+            "import_mode": "ephemeral-source-immutable",
+            "annotation_policy": "atomic-function-entry-metadata-v1",
+            "load_image_observations": "source-mappings-entry-context-v2",
+            "function_body_evidence": "complete-inclusive-ranges-v1",
+            "function_references": "complete-body-and-entry-reference-manager-v2",
+            "string_inventory_evidence": "defined-data-coverage-v1",
+            "location_resolution": "explicit-address-exact-entry-symbol-first-v3",
+            "instruction_flow_evidence": "decoded-return-pcode-v1",
+            "function_boundary_observations": "ghidra-terminal-call-limitations-v1",
+            "no_return_repair": "disabled-windows-p0",
+            "process_launch": "official-headless-script-v1",
+            "jump_table_evidence": "typed-case-default-blocks-v1",
+            "decompiler_jump_loads": true,
+            "loader": "auto-from-header",
+            "language_id": "auto-from-header",
+            "compiler_spec_id": "auto-default",
+            "analyzer_preset": "ghidra-default"
+          },
+          "digest": "249564812a8d83b9b3f461098fc485ccde60c516d4497547a124081c91d654bf"
+        },
+        "predicate_type": "rea.analysis",
+        "operation": "procedure_pseudo_code",
+        "parameters": {
+          "procedure": "0x40a280"
+        },
+        "raw_result": {
+          "value": "\r\nbool HidCustomCmdInit(UCHAR IsEnable)\r\n\r\n{\r\n  TStrings *pTVar1;\r\n  _func_int *p_Var2;\r\n  UCHAR UVar3;\r\n  int iVar4;\r\n  undefined8 local_50;\r\n  undefined8 local_48;\r\n  BYTE ReceiveKey [15];\r\n  BYTE gpHidCustomCmdInitKey [15];\r\n  UCHAR IsEnable_local;\r\n  \r\n  gpHidCustomCmdInitKey._0_8_ = s_ITE_Tech__Inc__006e0398._0_8_;\r\n  gpHidCustomCmdInitKey._8_4_ = s_ITE_Tech__Inc__006e0398._8_4_;\r\n  gpHidCustomCmdInitKey._12_2_ = s_ITE_Tech__Inc__006e0398._12_2_;\r\n  gpHidCustomCmdInitKey[0xe] = s_ITE_Tech__Inc__006e0398[0xe];\r\n  memset(ReceiveKey,0,0xf);\r\n  UVar3 = ITEReportID;\r\n  if (hFile[MainIndex] == (HANDLE)0x0) {\r\n    return false;\r\n  }\r\n  pTVar1 = (Form1->Memo2->super_TCustomMemo).FLines;\r\n  p_Var2 = (pTVar1->super_TPersistent).super_TObject._vptr_TObject[0xf];\r\n  memset(&local_50,0,8);\r\n  local_50 = 0;\r\n  _ZN6System8Sysutils8IntToStrEi(&local_50,UVar3);\r\n  memset(&local_48,0,8);\r\n  local_48 = 0;\r\n  _ZN6SystemplEPKcRKNS_13UnicodeStringE(&local_48,s_ITEReportID__006e03a7,&local_50);\r\n  (*p_Var2)(pTVar1,local_48);\r\n  _ZN6System13UnicodeStringD1Ev(&local_48);\r\n  _ZN6System13UnicodeStringD1Ev(&local_50);\r\n  HidRequests(hFile[MainIndex],true,ITEReportID,gpHidCustomCmdInitKey,'\\x0f');\r\n  Sleep(100);\r\n  HidRequests(hFile[MainIndex],false,ITEReportID,ReceiveKey,'\\x0f');\r\n  Sleep(100);\r\n  iVar4 = memcmp(gpHidCustomCmdInitKey,ReceiveKey,0xf);\r\n  if (((iVar4 != 0) && (IsEnable == '\\x01')) ||\r\n     ((iVar4 = memcmp(gpHidCustomCmdInitKey,ReceiveKey,0xf), iVar4 == 0 && (IsEnable == '\\0')))) {\r\n    HidRequests(hFile[MainIndex],true,ITEReportID,gpHidCustomCmdInitKey,'\\x0f');\r\n    Sleep(100);\r\n    HidRequests(hFile[MainIndex],false,ITEReportID,ReceiveKey,'\\x0f');\r\n  }\r\n  Sleep(100);\r\n  iVar4 = memcmp(gpHidCustomCmdInitKey,ReceiveKey,0xf);\r\n  if (((iVar4 != 0) || (IsEnable != '\\x01')) &&\r\n     ((iVar4 = memcmp(gpHidCustomCmdInitKey,ReceiveKey,0xf), iVar4 == 0 || (IsEnable != '\\0')))) {\r\n    return false;\r\n  }\r\n  return true;\r\n}\r\n\r\n",
+          "limitations": []
+        },
+        "normalized_result": "\r\nbool HidCustomCmdInit(UCHAR IsEnable)\r\n\r\n{\r\n  TStrings *pTVar1;\r\n  _func_int *p_Var2;\r\n  UCHAR UVar3;\r\n  int iVar4;\r\n  undefined8 local_50;\r\n  undefined8 local_48;\r\n  BYTE ReceiveKey [15];\r\n  BYTE gpHidCustomCmdInitKey [15];\r\n  UCHAR IsEnable_local;\r\n  \r\n  gpHidCustomCmdInitKey._0_8_ = s_ITE_Tech__Inc__006e0398._0_8_;\r\n  gpHidCustomCmdInitKey._8_4_ = s_ITE_Tech__Inc__006e0398._8_4_;\r\n  gpHidCustomCmdInitKey._12_2_ = s_ITE_Tech__Inc__006e0398._12_2_;\r\n  gpHidCustomCmdInitKey[0xe] = s_ITE_Tech__Inc__006e0398[0xe];\r\n  memset(ReceiveKey,0,0xf);\r\n  UVar3 = ITEReportID;\r\n  if (hFile[MainIndex] == (HANDLE)0x0) {\r\n    return false;\r\n  }\r\n  pTVar1 = (Form1->Memo2->super_TCustomMemo).FLines;\r\n  p_Var2 = (pTVar1->super_TPersistent).super_TObject._vptr_TObject[0xf];\r\n  memset(&local_50,0,8);\r\n  local_50 = 0;\r\n  _ZN6System8Sysutils8IntToStrEi(&local_50,UVar3);\r\n  memset(&local_48,0,8);\r\n  local_48 = 0;\r\n  _ZN6SystemplEPKcRKNS_13UnicodeStringE(&local_48,s_ITEReportID__006e03a7,&local_50);\r\n  (*p_Var2)(pTVar1,local_48);\r\n  _ZN6System13UnicodeStringD1Ev(&local_48);\r\n  _ZN6System13UnicodeStringD1Ev(&local_50);\r\n  HidRequests(hFile[MainIndex],true,ITEReportID,gpHidCustomCmdInitKey,'\\x0f');\r\n  Sleep(100);\r\n  HidRequests(hFile[MainIndex],false,ITEReportID,ReceiveKey,'\\x0f');\r\n  Sleep(100);\r\n  iVar4 = memcmp(gpHidCustomCmdInitKey,ReceiveKey,0xf);\r\n  if (((iVar4 != 0) && (IsEnable == '\\x01')) ||\r\n     ((iVar4 = memcmp(gpHidCustomCmdInitKey,ReceiveKey,0xf), iVar4 == 0 && (IsEnable == '\\0')))) {\r\n    HidRequests(hFile[MainIndex],true,ITEReportID,gpHidCustomCmdInitKey,'\\x0f');\r\n    Sleep(100);\r\n    HidRequests(hFile[MainIndex],false,ITEReportID,ReceiveKey,'\\x0f');\r\n  }\r\n  Sleep(100);\r\n  iVar4 = memcmp(gpHidCustomCmdInitKey,ReceiveKey,0xf);\r\n  if (((iVar4 != 0) || (IsEnable != '\\x01')) &&\r\n     ((iVar4 = memcmp(gpHidCustomCmdInitKey,ReceiveKey,0xf), iVar4 == 0 || (IsEnable != '\\0')))) {\r\n    return false;\r\n  }\r\n  return true;\r\n}\r\n\r\n",
+        "confidence": "observed",
+        "authority": "shipped-artifact",
+        "environment": null,
+        "limitations": [
+          "The session serves operations only after Ghidra reports default auto-analysis complete; incomplete analysis does not expose partial results.",
+          "The imported Program and temporary project are ephemeral and deleted on close. Annotation operations edit session database metadata; original executable bytes are never written.",
+          "Cancelling an active Ghidra request terminates its ephemeral database and discards session annotations. The selected target remains open; the next provider query imports the original artifact again.",
+          "Default-space addresses use lowercase 0x-prefixed hexadecimal; other address spaces use <percent-encoded-space>:0x<hex>.",
+          "Pseudocode is Ghidra decompiler output, not original source and not text-equivalent to Hopper output.",
+          "External functions and functions without an analyzable body return null; other decompiler failures remain explicit.",
+          "Windows Ghidra P0 accepts approved native x86 and x86-64 PE applications and DLLs; managed, hostile, sensitive, and mutable-path targets are unsupported.",
+          "The Windows bridge uses authenticated IPv4 loopback because Node path-based IPC does not expose Java AF_UNIX sockets; the endpoint file contains no bearer token.",
+          "Windows sessions require the matching packaged Windows x64 native addon, local NTFS targets and runtimes, and Windows 10 or later. Native handles enforce path admission, private DACLs, and Job Object ownership automatically."
+        ],
+        "locations": [],
+        "evidence_links": []
+      }
+    },
+    "jsonrpc": "2.0",
+    "id": 8
+  }
+}

@@ -1,0 +1,632 @@
+{
+  "35": {
+    "tables": [
+      {
+        "source": "C:\\Users\\a.saberi\\Documents\\Codex\\2026-10-12\\https-github-com-morluto-rea-https\\work\\bios-reset-35-36\\35\\volumes\\7fba10\\volume-0\\file-20bc8ac9-94d1-4208-ab28-5d673fd73486\\section0\\section1.fv",
+        "offset": 1081792,
+        "length": 930,
+        "oem_table_id": "TcgTable",
+        "file": "C:\\Users\\a.saberi\\Documents\\Codex\\2026-10-12\\https-github-com-morluto-rea-https\\work\\bios-reset-35-36\\35\\acpi\\SSDT-fedb23168afc.aml",
+        "sha256": "fedb23168afcecce9a48c373bbda2f89e485727af8e688edc3ef6e82409988ac"
+      },
+      {
+        "source": "C:\\Users\\a.saberi\\Documents\\Codex\\2026-10-12\\https-github-com-morluto-rea-https\\work\\bios-reset-35-36\\35\\volumes\\7fba10\\volume-0\\file-20bc8ac9-94d1-4208-ab28-5d673fd73486\\section0\\section1.fv",
+        "offset": 1182372,
+        "length": 1921,
+        "oem_table_id": "Tpm2Tabl",
+        "file": "C:\\Users\\a.saberi\\Documents\\Codex\\2026-10-12\\https-github-com-morluto-rea-https\\work\\bios-reset-35-36\\35\\acpi\\SSDT-1d5d95b09898.aml",
+        "sha256": "1d5d95b0989874a543d67622c5e805b34257db656e54963deded31984ff183ed"
+      },
+      {
+        "source": "C:\\Users\\a.saberi\\Documents\\Codex\\2026-10-12\\https-github-com-morluto-rea-https\\work\\bios-reset-35-36\\35\\volumes\\7fba10\\volume-0\\file-20bc8ac9-94d1-4208-ab28-5d673fd73486\\section0\\section1.fv",
+        "offset": 2167708,
+        "length": 76,
+        "oem_table_id": "AhciTabl",
+        "file": "C:\\Users\\a.saberi\\Documents\\Codex\\2026-10-12\\https-github-com-morluto-rea-https\\work\\bios-reset-35-36\\35\\acpi\\SSDT-296b661fe952.aml",
+        "sha256": "296b661fe952a13db19100f00e63334ee491d3bb478b3ca5bdf52826f3696a42"
+      },
+      {
+        "source": "C:\\Users\\a.saberi\\Documents\\Codex\\2026-10-12\\https-github-com-morluto-rea-https\\work\\bios-reset-35-36\\35\\volumes\\7fba10\\volume-0\\file-20bc8ac9-94d1-4208-ab28-5d673fd73486\\section0\\section1.fv",
+        "offset": 8158748,
+        "length": 3119,
+        "oem_table_id": "PtidDevc",
+        "file": "C:\\Users\\a.saberi\\Documents\\Codex\\2026-10-12\\https-github-com-morluto-rea-https\\work\\bios-reset-35-36\\35\\acpi\\SSDT-0412823ab15f.aml",
+        "sha256": "0412823ab15f33d9b2fdf0a3c7e944bfe6117833b7529ab12cf02167bb9502b1"
+      },
+      {
+        "source": "C:\\Users\\a.saberi\\Documents\\Codex\\2026-10-12\\https-github-com-morluto-rea-https\\work\\bios-reset-35-36\\35\\volumes\\7fba10\\volume-0\\file-20bc8ac9-94d1-4208-ab28-5d673fd73486\\section0\\section1.fv",
+        "offset": 8324932,
+        "length": 2198,
+        "oem_table_id": "UsbCTabl",
+        "file": "C:\\Users\\a.saberi\\Documents\\Codex\\2026-10-12\\https-github-com-morluto-rea-https\\work\\bios-reset-35-36\\35\\acpi\\SSDT-a8f5b6761f9c.aml",
+        "sha256": "a8f5b6761f9c71885d5d87cef3a45cf9894ca562a4c8b10de294270327ba7f07"
+      },
+      {
+        "source": "C:\\Users\\a.saberi\\Documents\\Codex\\2026-10-12\\https-github-com-morluto-rea-https\\work\\bios-reset-35-36\\35\\volumes\\7fba10\\volume-0\\file-20bc8ac9-94d1-4208-ab28-5d673fd73486\\section0\\section1.fv",
+        "offset": 8581292,
+        "length": 10909,
+        "oem_table_id": "NvdPegTb",
+        "file": "C:\\Users\\a.saberi\\Documents\\Codex\\2026-10-12\\https-github-com-morluto-rea-https\\work\\bios-reset-35-36\\35\\acpi\\SSDT-5fcee58a18f0.aml",
+        "sha256": "5fcee58a18f0962d9f254fe4447f1e3366789faa324fe9ba3e7bb5f797dc7204"
+      },
+      {
+        "source": "C:\\Users\\a.saberi\\Documents\\Codex\\2026-10-12\\https-github-com-morluto-rea-https\\work\\bios-reset-35-36\\35\\volumes\\7fba10\\volume-0\\file-20bc8ac9-94d1-4208-ab28-5d673fd73486\\section0\\section1.fv",
+        "offset": 8592236,
+        "length": 20856,
+        "oem_table_id": "NvdTable",
+        "file": "C:\\Users\\a.saberi\\Documents\\Codex\\2026-10-12\\https-github-com-morluto-rea-https\\work\\bios-reset-35-36\\35\\acpi\\SSDT-0a533e47888b.aml",
+        "sha256": "0a533e47888b1e7bc7f90c55ad77ae97399cfea079b755087f70b6df494b29a4"
+      },
+      {
+        "source": "C:\\Users\\a.saberi\\Documents\\Codex\\2026-10-12\\https-github-com-morluto-rea-https\\work\\bios-reset-35-36\\35\\volumes\\7fba10\\volume-0\\file-20bc8ac9-94d1-4208-ab28-5d673fd73486\\section0\\section1.fv",
+        "offset": 8907396,
+        "length": 196198,
+        "oem_table_id": "SKL     ",
+        "file": "C:\\Users\\a.saberi\\Documents\\Codex\\2026-10-12\\https-github-com-morluto-rea-https\\work\\bios-reset-35-36\\35\\acpi\\DSDT-1b97557dfc45.aml",
+        "sha256": "1b97557dfc458b4872cedf0d2103f7d0e6cd43c34b556e379ff5d7ee65d9ccbd"
+      },
+      {
+        "source": "C:\\Users\\a.saberi\\Documents\\Codex\\2026-10-12\\https-github-com-morluto-rea-https\\work\\bios-reset-35-36\\35\\volumes\\7fba10\\volume-0\\file-20bc8ac9-94d1-4208-ab28-5d673fd73486\\section0\\section1.fv",
+        "offset": 9103600,
+        "length": 11199,
+        "oem_table_id": "CflH_Rvp",
+        "file": "C:\\Users\\a.saberi\\Documents\\Codex\\2026-10-12\\https-github-com-morluto-rea-https\\work\\bios-reset-35-36\\35\\acpi\\SSDT-69daf1e611e7.aml",
+        "sha256": "69daf1e611e7d12874c6fedc118b062c8b5450f7065d45bf432a3af5e7d745f0"
+      },
+      {
+        "source": "C:\\Users\\a.saberi\\Documents\\Codex\\2026-10-12\\https-github-com-morluto-rea-https\\work\\bios-reset-35-36\\35\\volumes\\7fba10\\volume-0\\file-20bc8ac9-94d1-4208-ab28-5d673fd73486\\section0\\section1.fv",
+        "offset": 9114804,
+        "length": 12563,
+        "oem_table_id": "CflH_Tbt",
+        "file": "C:\\Users\\a.saberi\\Documents\\Codex\\2026-10-12\\https-github-com-morluto-rea-https\\work\\bios-reset-35-36\\35\\acpi\\SSDT-3550884370dc.aml",
+        "sha256": "3550884370dcdf118c4cff3a9c7eb3986411b1cc64c2b6be8be566c72d87619e"
+      },
+      {
+        "source": "C:\\Users\\a.saberi\\Documents\\Codex\\2026-10-12\\https-github-com-morluto-rea-https\\work\\bios-reset-35-36\\35\\volumes\\7fba10\\volume-0\\file-20bc8ac9-94d1-4208-ab28-5d673fd73486\\section0\\section1.fv",
+        "offset": 9127372,
+        "length": 10541,
+        "oem_table_id": "CnlH_Rvp",
+        "file": "C:\\Users\\a.saberi\\Documents\\Codex\\2026-10-12\\https-github-com-morluto-rea-https\\work\\bios-reset-35-36\\35\\acpi\\SSDT-6952b96bf4fa.aml",
+        "sha256": "6952b96bf4fadcd10886c7b14bda5e2a185641d0e54ab680eb73e459edfd3630"
+      },
+      {
+        "source": "C:\\Users\\a.saberi\\Documents\\Codex\\2026-10-12\\https-github-com-morluto-rea-https\\work\\bios-reset-35-36\\35\\volumes\\7fba10\\volume-0\\file-20bc8ac9-94d1-4208-ab28-5d673fd73486\\section0\\section1.fv",
+        "offset": 9137920,
+        "length": 12169,
+        "oem_table_id": "xh_cfhd4",
+        "file": "C:\\Users\\a.saberi\\Documents\\Codex\\2026-10-12\\https-github-com-morluto-rea-https\\work\\bios-reset-35-36\\35\\acpi\\SSDT-0dd8880119fa.aml",
+        "sha256": "0dd8880119facd668f31e9770f95e43782901610ca587862a4f602683f242df0"
+      },
+      {
+        "source": "C:\\Users\\a.saberi\\Documents\\Codex\\2026-10-12\\https-github-com-morluto-rea-https\\work\\bios-reset-35-36\\35\\volumes\\7fba10\\volume-0\\file-20bc8ac9-94d1-4208-ab28-5d673fd73486\\section0\\section1.fv",
+        "offset": 9150096,
+        "length": 12168,
+        "oem_table_id": "xh_cfht4",
+        "file": "C:\\Users\\a.saberi\\Documents\\Codex\\2026-10-12\\https-github-com-morluto-rea-https\\work\\bios-reset-35-36\\35\\acpi\\SSDT-f6ebbfa33426.aml",
+        "sha256": "f6ebbfa334268e5e139b579ae9c7c4dba835619f5216185f9d35df895e3bbbbf"
+      },
+      {
+        "source": "C:\\Users\\a.saberi\\Documents\\Codex\\2026-10-12\\https-github-com-morluto-rea-https\\work\\bios-reset-35-36\\35\\volumes\\7fba10\\volume-0\\file-20bc8ac9-94d1-4208-ab28-5d673fd73486\\section0\\section1.fv",
+        "offset": 9162268,
+        "length": 12291,
+        "oem_table_id": "xh_cnhd4",
+        "file": "C:\\Users\\a.saberi\\Documents\\Codex\\2026-10-12\\https-github-com-morluto-rea-https\\work\\bios-reset-35-36\\35\\acpi\\SSDT-8212d4f4c295.aml",
+        "sha256": "8212d4f4c29560ecd0b279da3e38711da0b51445859c012977a59af208558640"
+      },
+      {
+        "source": "C:\\Users\\a.saberi\\Documents\\Codex\\2026-10-12\\https-github-com-morluto-rea-https\\work\\bios-reset-35-36\\35\\volumes\\7fba10\\volume-0\\file-20bc8ac9-94d1-4208-ab28-5d673fd73486\\section0\\section1.fv",
+        "offset": 9174564,
+        "length": 12163,
+        "oem_table_id": "xh_sds00",
+        "file": "C:\\Users\\a.saberi\\Documents\\Codex\\2026-10-12\\https-github-com-morluto-rea-https\\work\\bios-reset-35-36\\35\\acpi\\SSDT-dd4caa4c9a59.aml",
+        "sha256": "dd4caa4c9a595fc7f06787ed2a0c4764b1809c937ee818a35371cf05a76de44f"
+      },
+      {
+        "source": "C:\\Users\\a.saberi\\Documents\\Codex\\2026-10-12\\https-github-com-morluto-rea-https\\work\\bios-reset-35-36\\35\\volumes\\7fba10\\volume-0\\file-20bc8ac9-94d1-4208-ab28-5d673fd73486\\section0\\section1.fv",
+        "offset": 9186756,
+        "length": 17590,
+        "oem_table_id": "DptfTabl",
+        "file": "C:\\Users\\a.saberi\\Documents\\Codex\\2026-10-12\\https-github-com-morluto-rea-https\\work\\bios-reset-35-36\\35\\acpi\\SSDT-867c198b2b86.aml",
+        "sha256": "867c198b2b8606b8635e82e5ce882ad1ba0ffe1022ebc660126a4cf235544672"
+      },
+      {
+        "source": "C:\\Users\\a.saberi\\Documents\\Codex\\2026-10-12\\https-github-com-morluto-rea-https\\work\\bios-reset-35-36\\35\\volumes\\7fba10\\volume-0\\file-20bc8ac9-94d1-4208-ab28-5d673fd73486\\section0\\section1.fv",
+        "offset": 9204380,
+        "length": 28291,
+        "oem_table_id": "DptfSds_",
+        "file": "C:\\Users\\a.saberi\\Documents\\Codex\\2026-10-12\\https-github-com-morluto-rea-https\\work\\bios-reset-35-36\\35\\acpi\\SSDT-c62c2720123b.aml",
+        "sha256": "c62c2720123b22084d437339e6f0523fa569b5ee718c704d4f894dd0107b0b09"
+      },
+      {
+        "source": "C:\\Users\\a.saberi\\Documents\\Codex\\2026-10-12\\https-github-com-morluto-rea-https\\work\\bios-reset-35-36\\35\\volumes\\7fba10\\volume-0\\file-20bc8ac9-94d1-4208-ab28-5d673fd73486\\section0\\section1.fv",
+        "offset": 9237652,
+        "length": 175,
+        "oem_table_id": "IrmtTabl",
+        "file": "C:\\Users\\a.saberi\\Documents\\Codex\\2026-10-12\\https-github-com-morluto-rea-https\\work\\bios-reset-35-36\\35\\acpi\\SSDT-ef76237c4ebf.aml",
+        "sha256": "ef76237c4ebf6948a950631d34db7a51158bbd99a116c061e9bdcd74beab1d15"
+      },
+      {
+        "source": "C:\\Users\\a.saberi\\Documents\\Codex\\2026-10-12\\https-github-com-morluto-rea-https\\work\\bios-reset-35-36\\35\\volumes\\7fba10\\volume-0\\file-20bc8ac9-94d1-4208-ab28-5d673fd73486\\section0\\section1.fv",
+        "offset": 9583924,
+        "length": 291,
+        "oem_table_id": "SgPeg\u0000\u0000\u0000",
+        "file": "C:\\Users\\a.saberi\\Documents\\Codex\\2026-10-12\\https-github-com-morluto-rea-https\\work\\bios-reset-35-36\\35\\acpi\\SSDT-62deb28d4df5.aml",
+        "sha256": "62deb28d4df5b9a44edc54846255aa8f5a7b0f6b755d5dcd00ba410679ee54d4"
+      },
+      {
+        "source": "C:\\Users\\a.saberi\\Documents\\Codex\\2026-10-12\\https-github-com-morluto-rea-https\\work\\bios-reset-35-36\\35\\volumes\\7fba10\\volume-0\\file-20bc8ac9-94d1-4208-ab28-5d673fd73486\\section0\\section1.fv",
+        "offset": 9584244,
+        "length": 1827,
+        "oem_table_id": "SgRpSsdt",
+        "file": "C:\\Users\\a.saberi\\Documents\\Codex\\2026-10-12\\https-github-com-morluto-rea-https\\work\\bios-reset-35-36\\35\\acpi\\SSDT-4e6ba3412240.aml",
+        "sha256": "4e6ba34122408630c5903ecdb4d58e4991d39834009348a58208cc145d64a190"
+      },
+      {
+        "source": "C:\\Users\\a.saberi\\Documents\\Codex\\2026-10-12\\https-github-com-morluto-rea-https\\work\\bios-reset-35-36\\35\\volumes\\7fba10\\volume-0\\file-20bc8ac9-94d1-4208-ab28-5d673fd73486\\section0\\section1.fv",
+        "offset": 9586340,
+        "length": 12752,
+        "oem_table_id": "SaSsdt \u0000",
+        "file": "C:\\Users\\a.saberi\\Documents\\Codex\\2026-10-12\\https-github-com-morluto-rea-https\\work\\bios-reset-35-36\\35\\acpi\\SSDT-c10a81be9b61.aml",
+        "sha256": "c10a81be9b61e2416ff53619629f70e4a44612556d823a0be5537f753abb0db1"
+      },
+      {
+        "source": "C:\\Users\\a.saberi\\Documents\\Codex\\2026-10-12\\https-github-com-morluto-rea-https\\work\\bios-reset-35-36\\35\\volumes\\7fba10\\volume-0\\file-20bc8ac9-94d1-4208-ab28-5d673fd73486\\section0\\section1.fv",
+        "offset": 9718596,
+        "length": 778,
+        "oem_table_id": "ApCst\u0000\u0000\u0000",
+        "file": "C:\\Users\\a.saberi\\Documents\\Codex\\2026-10-12\\https-github-com-morluto-rea-https\\work\\bios-reset-35-36\\35\\acpi\\SSDT-625a0dfcbbf1.aml",
+        "sha256": "625a0dfcbbf155b8e8fa17d01c78144f7d7a59c8286aa69508f836a9ee811c52"
+      },
+      {
+        "source": "C:\\Users\\a.saberi\\Documents\\Codex\\2026-10-12\\https-github-com-morluto-rea-https\\work\\bios-reset-35-36\\35\\volumes\\7fba10\\volume-0\\file-20bc8ac9-94d1-4208-ab28-5d673fd73486\\section0\\section1.fv",
+        "offset": 9719380,
+        "length": 791,
+        "oem_table_id": "ApHwp\u0000\u0000\u0000",
+        "file": "C:\\Users\\a.saberi\\Documents\\Codex\\2026-10-12\\https-github-com-morluto-rea-https\\work\\bios-reset-35-36\\35\\acpi\\SSDT-8b6e08fb9bd2.aml",
+        "sha256": "8b6e08fb9bd243d242d38adc0549947a210a9601fce25683a299b247e3fcc89d"
+      },
+      {
+        "source": "C:\\Users\\a.saberi\\Documents\\Codex\\2026-10-12\\https-github-com-morluto-rea-https\\work\\bios-reset-35-36\\35\\volumes\\7fba10\\volume-0\\file-20bc8ac9-94d1-4208-ab28-5d673fd73486\\section0\\section1.fv",
+        "offset": 9720176,
+        "length": 1532,
+        "oem_table_id": "ApIst\u0000\u0000\u0000",
+        "file": "C:\\Users\\a.saberi\\Documents\\Codex\\2026-10-12\\https-github-com-morluto-rea-https\\work\\bios-reset-35-36\\35\\acpi\\SSDT-63401291c83c.aml",
+        "sha256": "63401291c83c782031df5ebce6b6bc30e938a0f5924e40f8ea66817053c4a464"
+      },
+      {
+        "source": "C:\\Users\\a.saberi\\Documents\\Codex\\2026-10-12\\https-github-com-morluto-rea-https\\work\\bios-reset-35-36\\35\\volumes\\7fba10\\volume-0\\file-20bc8ac9-94d1-4208-ab28-5d673fd73486\\section0\\section1.fv",
+        "offset": 9721712,
+        "length": 2736,
+        "oem_table_id": "ApPsd\u0000\u0000\u0000",
+        "file": "C:\\Users\\a.saberi\\Documents\\Codex\\2026-10-12\\https-github-com-morluto-rea-https\\work\\bios-reset-35-36\\35\\acpi\\SSDT-87cf61cbec57.aml",
+        "sha256": "87cf61cbec57bfa996e58542e1a35348ab585afddac64199b18e3b5668030019"
+      },
+      {
+        "source": "C:\\Users\\a.saberi\\Documents\\Codex\\2026-10-12\\https-github-com-morluto-rea-https\\work\\bios-reset-35-36\\35\\volumes\\7fba10\\volume-0\\file-20bc8ac9-94d1-4208-ab28-5d673fd73486\\section0\\section1.fv",
+        "offset": 9724452,
+        "length": 2297,
+        "oem_table_id": "ApTst\u0000\u0000\u0000",
+        "file": "C:\\Users\\a.saberi\\Documents\\Codex\\2026-10-12\\https-github-com-morluto-rea-https\\work\\bios-reset-35-36\\35\\acpi\\SSDT-478abeb4584a.aml",
+        "sha256": "478abeb4584ab3dd69b15507187815407d1db80865b1e4a03edb7013d76a2510"
+      },
+      {
+        "source": "C:\\Users\\a.saberi\\Documents\\Codex\\2026-10-12\\https-github-com-morluto-rea-https\\work\\bios-reset-35-36\\35\\volumes\\7fba10\\volume-0\\file-20bc8ac9-94d1-4208-ab28-5d673fd73486\\section0\\section1.fv",
+        "offset": 9726756,
+        "length": 1024,
+        "oem_table_id": "Cpu0Cst\u0000",
+        "file": "C:\\Users\\a.saberi\\Documents\\Codex\\2026-10-12\\https-github-com-morluto-rea-https\\work\\bios-reset-35-36\\35\\acpi\\SSDT-4f6e5d559df1.aml",
+        "sha256": "4f6e5d559df1896afe62e4e02f7c04ca2a656ddb6167bab29be98cf89343e4c9"
+      },
+      {
+        "source": "C:\\Users\\a.saberi\\Documents\\Codex\\2026-10-12\\https-github-com-morluto-rea-https\\work\\bios-reset-35-36\\35\\volumes\\7fba10\\volume-0\\file-20bc8ac9-94d1-4208-ab28-5d673fd73486\\section0\\section1.fv",
+        "offset": 9727784,
+        "length": 283,
+        "oem_table_id": "Cpu0Hwp\u0000",
+        "file": "C:\\Users\\a.saberi\\Documents\\Codex\\2026-10-12\\https-github-com-morluto-rea-https\\work\\bios-reset-35-36\\35\\acpi\\SSDT-66e54be448d3.aml",
+        "sha256": "66e54be448d363e82b10f30e379d0442ce191b85bdfac57c09e22510a629e62c"
+      },
+      {
+        "source": "C:\\Users\\a.saberi\\Documents\\Codex\\2026-10-12\\https-github-com-morluto-rea-https\\work\\bios-reset-35-36\\35\\volumes\\7fba10\\volume-0\\file-20bc8ac9-94d1-4208-ab28-5d673fd73486\\section0\\section1.fv",
+        "offset": 9728072,
+        "length": 2069,
+        "oem_table_id": "Cpu0Ist\u0000",
+        "file": "C:\\Users\\a.saberi\\Documents\\Codex\\2026-10-12\\https-github-com-morluto-rea-https\\work\\bios-reset-35-36\\35\\acpi\\SSDT-b595ff81a8b1.aml",
+        "sha256": "b595ff81a8b1feb4ef99f8045b468e1036c65812c8226cf105edf49b72d8fe0c"
+      },
+      {
+        "source": "C:\\Users\\a.saberi\\Documents\\Codex\\2026-10-12\\https-github-com-morluto-rea-https\\work\\bios-reset-35-36\\35\\volumes\\7fba10\\volume-0\\file-20bc8ac9-94d1-4208-ab28-5d673fd73486\\section0\\section1.fv",
+        "offset": 9730148,
+        "length": 244,
+        "oem_table_id": "Cpu0Psd\u0000",
+        "file": "C:\\Users\\a.saberi\\Documents\\Codex\\2026-10-12\\https-github-com-morluto-rea-https\\work\\bios-reset-35-36\\35\\acpi\\SSDT-561b82855767.aml",
+        "sha256": "561b8285576700cade94af12e118a33a502e7cda68970571c7ee9f7015a53541"
+      },
+      {
+        "source": "C:\\Users\\a.saberi\\Documents\\Codex\\2026-10-12\\https-github-com-morluto-rea-https\\work\\bios-reset-35-36\\35\\volumes\\7fba10\\volume-0\\file-20bc8ac9-94d1-4208-ab28-5d673fd73486\\section0\\section1.fv",
+        "offset": 9730396,
+        "length": 955,
+        "oem_table_id": "Cpu0Tst\u0000",
+        "file": "C:\\Users\\a.saberi\\Documents\\Codex\\2026-10-12\\https-github-com-morluto-rea-https\\work\\bios-reset-35-36\\35\\acpi\\SSDT-7b74ea965669.aml",
+        "sha256": "7b74ea9656698a8aa9fc012b3d029cddc4fcc2795e1af3ec6de7f1d44ec296b2"
+      },
+      {
+        "source": "C:\\Users\\a.saberi\\Documents\\Codex\\2026-10-12\\https-github-com-morluto-rea-https\\work\\bios-reset-35-36\\35\\volumes\\7fba10\\volume-0\\file-20bc8ac9-94d1-4208-ab28-5d673fd73486\\section0\\section1.fv",
+        "offset": 9731356,
+        "length": 6940,
+        "oem_table_id": "CpuSsdt\u0000",
+        "file": "C:\\Users\\a.saberi\\Documents\\Codex\\2026-10-12\\https-github-com-morluto-rea-https\\work\\bios-reset-35-36\\35\\acpi\\SSDT-c78bcea49e98.aml",
+        "sha256": "c78bcea49e98c33a18ef7b5056cc0076e570cc3ffb6d4db9d350b9dfa244da31"
+      },
+      {
+        "source": "C:\\Users\\a.saberi\\Documents\\Codex\\2026-10-12\\https-github-com-morluto-rea-https\\work\\bios-reset-35-36\\35\\volumes\\7fba10\\volume-0\\file-20bc8ac9-94d1-4208-ab28-5d673fd73486\\section0\\section1.fv",
+        "offset": 9738300,
+        "length": 2511,
+        "oem_table_id": "CtdpB\u0000\u0000\u0000",
+        "file": "C:\\Users\\a.saberi\\Documents\\Codex\\2026-10-12\\https-github-com-morluto-rea-https\\work\\bios-reset-35-36\\35\\acpi\\SSDT-55a8c3c07dbc.aml",
+        "sha256": "55a8c3c07dbcf058d108d8bb1e9805e8238266d70fe8f00ca0e829f4177a7726"
+      },
+      {
+        "source": "C:\\Users\\a.saberi\\Documents\\Codex\\2026-10-12\\https-github-com-morluto-rea-https\\work\\bios-reset-35-36\\35\\volumes\\7fba10\\volume-0\\file-20bc8ac9-94d1-4208-ab28-5d673fd73486\\section0\\section1.fv",
+        "offset": 9740816,
+        "length": 1828,
+        "oem_table_id": "HwpLvt\u0000\u0000",
+        "file": "C:\\Users\\a.saberi\\Documents\\Codex\\2026-10-12\\https-github-com-morluto-rea-https\\work\\bios-reset-35-36\\35\\acpi\\SSDT-be480c1b86a6.aml",
+        "sha256": "be480c1b86a6d78734f3297ca7f85a39e94c605e0a8370d9b8da10094ed48442"
+      },
+      {
+        "source": "C:\\Users\\a.saberi\\Documents\\Codex\\2026-10-12\\https-github-com-morluto-rea-https\\work\\bios-reset-35-36\\35\\volumes\\7fba10\\volume-0\\file-20bc8ac9-94d1-4208-ab28-5d673fd73486\\section0\\section1.fv",
+        "offset": 9742648,
+        "length": 141,
+        "oem_table_id": "Itbm\u0000\u0000\u0000\u0000",
+        "file": "C:\\Users\\a.saberi\\Documents\\Codex\\2026-10-12\\https-github-com-morluto-rea-https\\work\\bios-reset-35-36\\35\\acpi\\SSDT-a278159be644.aml",
+        "sha256": "a278159be644fc2d336af1e4b8ad34c6ee9dd58e46cf813a0ce795344b8b14b5"
+      },
+      {
+        "source": "C:\\Users\\a.saberi\\Documents\\Codex\\2026-10-12\\https-github-com-morluto-rea-https\\work\\bios-reset-35-36\\35\\volumes\\7fba10\\volume-0\\file-20bc8ac9-94d1-4208-ab28-5d673fd73486\\section0\\section1.fv",
+        "offset": 9742796,
+        "length": 1576,
+        "oem_table_id": "ItbmSci\u0000",
+        "file": "C:\\Users\\a.saberi\\Documents\\Codex\\2026-10-12\\https-github-com-morluto-rea-https\\work\\bios-reset-35-36\\35\\acpi\\SSDT-399cbc0eba34.aml",
+        "sha256": "399cbc0eba344f981b96845b5ecc263af3ca827cc8e5404a049b8a036b2c5149"
+      },
+      {
+        "source": "C:\\Users\\a.saberi\\Documents\\Codex\\2026-10-12\\https-github-com-morluto-rea-https\\work\\bios-reset-35-36\\35\\volumes\\7fba10\\volume-0\\file-20bc8ac9-94d1-4208-ab28-5d673fd73486\\section0\\section1.fv",
+        "offset": 9824036,
+        "length": 70,
+        "oem_table_id": "MeSsdt \u0000",
+        "file": "C:\\Users\\a.saberi\\Documents\\Codex\\2026-10-12\\https-github-com-morluto-rea-https\\work\\bios-reset-35-36\\35\\acpi\\SSDT-dd8351562c59.aml",
+        "sha256": "dd8351562c59d3a0635586391003b289ccc0d9d9a6a086a9c48d1f6e0aa7a805"
+      },
+      {
+        "source": "C:\\Users\\a.saberi\\Documents\\Codex\\2026-10-12\\https-github-com-morluto-rea-https\\work\\bios-reset-35-36\\35\\volumes\\7fba10\\volume-0\\file-20bc8ac9-94d1-4208-ab28-5d673fd73486\\section0\\section1.fv",
+        "offset": 9824140,
+        "length": 1114,
+        "oem_table_id": "Tpm2Tabl",
+        "file": "C:\\Users\\a.saberi\\Documents\\Codex\\2026-10-12\\https-github-com-morluto-rea-https\\work\\bios-reset-35-36\\35\\acpi\\SSDT-94b0ae83e7c7.aml",
+        "sha256": "94b0ae83e7c7ba36f33fee8888a07f6d741c98ce808de612970c2d1f298701da"
+      }
+    ],
+    "ec_candidates": [
+      {
+        "file": "C:\\Users\\a.saberi\\Documents\\Codex\\2026-10-12\\https-github-com-morluto-rea-https\\work\\bios-reset-35-36\\35\\volumes\\7fba10\\volume-0\\file-20bc8ac9-94d1-4208-ab28-5d673fd73486\\section0.guid",
+        "length": 2539519,
+        "sha256": "54bed4ba9f1fdae9c0ea4ed2b70e2a7e1a1bfc60ae7a6807b4f3c5a67a87451b",
+        "hits": [
+          {
+            "offset": 1882028,
+            "text": "/=aGkb"
+          }
+        ]
+      }
+    ]
+  },
+  "36": {
+    "tables": [
+      {
+        "source": "C:\\Users\\a.saberi\\Documents\\Codex\\2026-10-12\\https-github-com-morluto-rea-https\\work\\bios-reset-35-36\\36\\volumes\\7fba10\\volume-0\\file-20bc8ac9-94d1-4208-ab28-5d673fd73486\\section0\\section1.fv",
+        "offset": 1081792,
+        "length": 930,
+        "oem_table_id": "TcgTable",
+        "file": "C:\\Users\\a.saberi\\Documents\\Codex\\2026-10-12\\https-github-com-morluto-rea-https\\work\\bios-reset-35-36\\36\\acpi\\SSDT-fedb23168afc.aml",
+        "sha256": "fedb23168afcecce9a48c373bbda2f89e485727af8e688edc3ef6e82409988ac"
+      },
+      {
+        "source": "C:\\Users\\a.saberi\\Documents\\Codex\\2026-10-12\\https-github-com-morluto-rea-https\\work\\bios-reset-35-36\\36\\volumes\\7fba10\\volume-0\\file-20bc8ac9-94d1-4208-ab28-5d673fd73486\\section0\\section1.fv",
+        "offset": 1182372,
+        "length": 1921,
+        "oem_table_id": "Tpm2Tabl",
+        "file": "C:\\Users\\a.saberi\\Documents\\Codex\\2026-10-12\\https-github-com-morluto-rea-https\\work\\bios-reset-35-36\\36\\acpi\\SSDT-1d5d95b09898.aml",
+        "sha256": "1d5d95b0989874a543d67622c5e805b34257db656e54963deded31984ff183ed"
+      },
+      {
+        "source": "C:\\Users\\a.saberi\\Documents\\Codex\\2026-10-12\\https-github-com-morluto-rea-https\\work\\bios-reset-35-36\\36\\volumes\\7fba10\\volume-0\\file-20bc8ac9-94d1-4208-ab28-5d673fd73486\\section0\\section1.fv",
+        "offset": 2167708,
+        "length": 76,
+        "oem_table_id": "AhciTabl",
+        "file": "C:\\Users\\a.saberi\\Documents\\Codex\\2026-10-12\\https-github-com-morluto-rea-https\\work\\bios-reset-35-36\\36\\acpi\\SSDT-296b661fe952.aml",
+        "sha256": "296b661fe952a13db19100f00e63334ee491d3bb478b3ca5bdf52826f3696a42"
+      },
+      {
+        "source": "C:\\Users\\a.saberi\\Documents\\Codex\\2026-10-12\\https-github-com-morluto-rea-https\\work\\bios-reset-35-36\\36\\volumes\\7fba10\\volume-0\\file-20bc8ac9-94d1-4208-ab28-5d673fd73486\\section0\\section1.fv",
+        "offset": 8158620,
+        "length": 3119,
+        "oem_table_id": "PtidDevc",
+        "file": "C:\\Users\\a.saberi\\Documents\\Codex\\2026-10-12\\https-github-com-morluto-rea-https\\work\\bios-reset-35-36\\36\\acpi\\SSDT-0412823ab15f.aml",
+        "sha256": "0412823ab15f33d9b2fdf0a3c7e944bfe6117833b7529ab12cf02167bb9502b1"
+      },
+      {
+        "source": "C:\\Users\\a.saberi\\Documents\\Codex\\2026-10-12\\https-github-com-morluto-rea-https\\work\\bios-reset-35-36\\36\\volumes\\7fba10\\volume-0\\file-20bc8ac9-94d1-4208-ab28-5d673fd73486\\section0\\section1.fv",
+        "offset": 8324836,
+        "length": 2198,
+        "oem_table_id": "UsbCTabl",
+        "file": "C:\\Users\\a.saberi\\Documents\\Codex\\2026-10-12\\https-github-com-morluto-rea-https\\work\\bios-reset-35-36\\36\\acpi\\SSDT-a8f5b6761f9c.aml",
+        "sha256": "a8f5b6761f9c71885d5d87cef3a45cf9894ca562a4c8b10de294270327ba7f07"
+      },
+      {
+        "source": "C:\\Users\\a.saberi\\Documents\\Codex\\2026-10-12\\https-github-com-morluto-rea-https\\work\\bios-reset-35-36\\36\\volumes\\7fba10\\volume-0\\file-20bc8ac9-94d1-4208-ab28-5d673fd73486\\section0\\section1.fv",
+        "offset": 8581228,
+        "length": 11112,
+        "oem_table_id": "NvdPegTb",
+        "file": "C:\\Users\\a.saberi\\Documents\\Codex\\2026-10-12\\https-github-com-morluto-rea-https\\work\\bios-reset-35-36\\36\\acpi\\SSDT-cb8159e0e877.aml",
+        "sha256": "cb8159e0e877d8862c801e8c2d4233536bb485b3cca4f24f641428eb89205552"
+      },
+      {
+        "source": "C:\\Users\\a.saberi\\Documents\\Codex\\2026-10-12\\https-github-com-morluto-rea-https\\work\\bios-reset-35-36\\36\\volumes\\7fba10\\volume-0\\file-20bc8ac9-94d1-4208-ab28-5d673fd73486\\section0\\section1.fv",
+        "offset": 8592372,
+        "length": 20856,
+        "oem_table_id": "NvdTable",
+        "file": "C:\\Users\\a.saberi\\Documents\\Codex\\2026-10-12\\https-github-com-morluto-rea-https\\work\\bios-reset-35-36\\36\\acpi\\SSDT-0a533e47888b.aml",
+        "sha256": "0a533e47888b1e7bc7f90c55ad77ae97399cfea079b755087f70b6df494b29a4"
+      },
+      {
+        "source": "C:\\Users\\a.saberi\\Documents\\Codex\\2026-10-12\\https-github-com-morluto-rea-https\\work\\bios-reset-35-36\\36\\volumes\\7fba10\\volume-0\\file-20bc8ac9-94d1-4208-ab28-5d673fd73486\\section0\\section1.fv",
+        "offset": 8907532,
+        "length": 196198,
+        "oem_table_id": "SKL     ",
+        "file": "C:\\Users\\a.saberi\\Documents\\Codex\\2026-10-12\\https-github-com-morluto-rea-https\\work\\bios-reset-35-36\\36\\acpi\\DSDT-1b97557dfc45.aml",
+        "sha256": "1b97557dfc458b4872cedf0d2103f7d0e6cd43c34b556e379ff5d7ee65d9ccbd"
+      },
+      {
+        "source": "C:\\Users\\a.saberi\\Documents\\Codex\\2026-10-12\\https-github-com-morluto-rea-https\\work\\bios-reset-35-36\\36\\volumes\\7fba10\\volume-0\\file-20bc8ac9-94d1-4208-ab28-5d673fd73486\\section0\\section1.fv",
+        "offset": 9103736,
+        "length": 11199,
+        "oem_table_id": "CflH_Rvp",
+        "file": "C:\\Users\\a.saberi\\Documents\\Codex\\2026-10-12\\https-github-com-morluto-rea-https\\work\\bios-reset-35-36\\36\\acpi\\SSDT-69daf1e611e7.aml",
+        "sha256": "69daf1e611e7d12874c6fedc118b062c8b5450f7065d45bf432a3af5e7d745f0"
+      },
+      {
+        "source": "C:\\Users\\a.saberi\\Documents\\Codex\\2026-10-12\\https-github-com-morluto-rea-https\\work\\bios-reset-35-36\\36\\volumes\\7fba10\\volume-0\\file-20bc8ac9-94d1-4208-ab28-5d673fd73486\\section0\\section1.fv",
+        "offset": 9114940,
+        "length": 12563,
+        "oem_table_id": "CflH_Tbt",
+        "file": "C:\\Users\\a.saberi\\Documents\\Codex\\2026-10-12\\https-github-com-morluto-rea-https\\work\\bios-reset-35-36\\36\\acpi\\SSDT-3550884370dc.aml",
+        "sha256": "3550884370dcdf118c4cff3a9c7eb3986411b1cc64c2b6be8be566c72d87619e"
+      },
+      {
+        "source": "C:\\Users\\a.saberi\\Documents\\Codex\\2026-10-12\\https-github-com-morluto-rea-https\\work\\bios-reset-35-36\\36\\volumes\\7fba10\\volume-0\\file-20bc8ac9-94d1-4208-ab28-5d673fd73486\\section0\\section1.fv",
+        "offset": 9127508,
+        "length": 10541,
+        "oem_table_id": "CnlH_Rvp",
+        "file": "C:\\Users\\a.saberi\\Documents\\Codex\\2026-10-12\\https-github-com-morluto-rea-https\\work\\bios-reset-35-36\\36\\acpi\\SSDT-6952b96bf4fa.aml",
+        "sha256": "6952b96bf4fadcd10886c7b14bda5e2a185641d0e54ab680eb73e459edfd3630"
+      },
+      {
+        "source": "C:\\Users\\a.saberi\\Documents\\Codex\\2026-10-12\\https-github-com-morluto-rea-https\\work\\bios-reset-35-36\\36\\volumes\\7fba10\\volume-0\\file-20bc8ac9-94d1-4208-ab28-5d673fd73486\\section0\\section1.fv",
+        "offset": 9138056,
+        "length": 12169,
+        "oem_table_id": "xh_cfhd4",
+        "file": "C:\\Users\\a.saberi\\Documents\\Codex\\2026-10-12\\https-github-com-morluto-rea-https\\work\\bios-reset-35-36\\36\\acpi\\SSDT-0dd8880119fa.aml",
+        "sha256": "0dd8880119facd668f31e9770f95e43782901610ca587862a4f602683f242df0"
+      },
+      {
+        "source": "C:\\Users\\a.saberi\\Documents\\Codex\\2026-10-12\\https-github-com-morluto-rea-https\\work\\bios-reset-35-36\\36\\volumes\\7fba10\\volume-0\\file-20bc8ac9-94d1-4208-ab28-5d673fd73486\\section0\\section1.fv",
+        "offset": 9150232,
+        "length": 12168,
+        "oem_table_id": "xh_cfht4",
+        "file": "C:\\Users\\a.saberi\\Documents\\Codex\\2026-10-12\\https-github-com-morluto-rea-https\\work\\bios-reset-35-36\\36\\acpi\\SSDT-f6ebbfa33426.aml",
+        "sha256": "f6ebbfa334268e5e139b579ae9c7c4dba835619f5216185f9d35df895e3bbbbf"
+      },
+      {
+        "source": "C:\\Users\\a.saberi\\Documents\\Codex\\2026-10-12\\https-github-com-morluto-rea-https\\work\\bios-reset-35-36\\36\\volumes\\7fba10\\volume-0\\file-20bc8ac9-94d1-4208-ab28-5d673fd73486\\section0\\section1.fv",
+        "offset": 9162404,
+        "length": 12291,
+        "oem_table_id": "xh_cnhd4",
+        "file": "C:\\Users\\a.saberi\\Documents\\Codex\\2026-10-12\\https-github-com-morluto-rea-https\\work\\bios-reset-35-36\\36\\acpi\\SSDT-8212d4f4c295.aml",
+        "sha256": "8212d4f4c29560ecd0b279da3e38711da0b51445859c012977a59af208558640"
+      },
+      {
+        "source": "C:\\Users\\a.saberi\\Documents\\Codex\\2026-10-12\\https-github-com-morluto-rea-https\\work\\bios-reset-35-36\\36\\volumes\\7fba10\\volume-0\\file-20bc8ac9-94d1-4208-ab28-5d673fd73486\\section0\\section1.fv",
+        "offset": 9174700,
+        "length": 12163,
+        "oem_table_id": "xh_sds00",
+        "file": "C:\\Users\\a.saberi\\Documents\\Codex\\2026-10-12\\https-github-com-morluto-rea-https\\work\\bios-reset-35-36\\36\\acpi\\SSDT-dd4caa4c9a59.aml",
+        "sha256": "dd4caa4c9a595fc7f06787ed2a0c4764b1809c937ee818a35371cf05a76de44f"
+      },
+      {
+        "source": "C:\\Users\\a.saberi\\Documents\\Codex\\2026-10-12\\https-github-com-morluto-rea-https\\work\\bios-reset-35-36\\36\\volumes\\7fba10\\volume-0\\file-20bc8ac9-94d1-4208-ab28-5d673fd73486\\section0\\section1.fv",
+        "offset": 9186892,
+        "length": 17590,
+        "oem_table_id": "DptfTabl",
+        "file": "C:\\Users\\a.saberi\\Documents\\Codex\\2026-10-12\\https-github-com-morluto-rea-https\\work\\bios-reset-35-36\\36\\acpi\\SSDT-867c198b2b86.aml",
+        "sha256": "867c198b2b8606b8635e82e5ce882ad1ba0ffe1022ebc660126a4cf235544672"
+      },
+      {
+        "source": "C:\\Users\\a.saberi\\Documents\\Codex\\2026-10-12\\https-github-com-morluto-rea-https\\work\\bios-reset-35-36\\36\\volumes\\7fba10\\volume-0\\file-20bc8ac9-94d1-4208-ab28-5d673fd73486\\section0\\section1.fv",
+        "offset": 9204516,
+        "length": 28291,
+        "oem_table_id": "DptfSds_",
+        "file": "C:\\Users\\a.saberi\\Documents\\Codex\\2026-10-12\\https-github-com-morluto-rea-https\\work\\bios-reset-35-36\\36\\acpi\\SSDT-c62c2720123b.aml",
+        "sha256": "c62c2720123b22084d437339e6f0523fa569b5ee718c704d4f894dd0107b0b09"
+      },
+      {
+        "source": "C:\\Users\\a.saberi\\Documents\\Codex\\2026-10-12\\https-github-com-morluto-rea-https\\work\\bios-reset-35-36\\36\\volumes\\7fba10\\volume-0\\file-20bc8ac9-94d1-4208-ab28-5d673fd73486\\section0\\section1.fv",
+        "offset": 9237788,
+        "length": 175,
+        "oem_table_id": "IrmtTabl",
+        "file": "C:\\Users\\a.saberi\\Documents\\Codex\\2026-10-12\\https-github-com-morluto-rea-https\\work\\bios-reset-35-36\\36\\acpi\\SSDT-ef76237c4ebf.aml",
+        "sha256": "ef76237c4ebf6948a950631d34db7a51158bbd99a116c061e9bdcd74beab1d15"
+      },
+      {
+        "source": "C:\\Users\\a.saberi\\Documents\\Codex\\2026-10-12\\https-github-com-morluto-rea-https\\work\\bios-reset-35-36\\36\\volumes\\7fba10\\volume-0\\file-20bc8ac9-94d1-4208-ab28-5d673fd73486\\section0\\section1.fv",
+        "offset": 9584060,
+        "length": 291,
+        "oem_table_id": "SgPeg\u0000\u0000\u0000",
+        "file": "C:\\Users\\a.saberi\\Documents\\Codex\\2026-10-12\\https-github-com-morluto-rea-https\\work\\bios-reset-35-36\\36\\acpi\\SSDT-62deb28d4df5.aml",
+        "sha256": "62deb28d4df5b9a44edc54846255aa8f5a7b0f6b755d5dcd00ba410679ee54d4"
+      },
+      {
+        "source": "C:\\Users\\a.saberi\\Documents\\Codex\\2026-10-12\\https-github-com-morluto-rea-https\\work\\bios-reset-35-36\\36\\volumes\\7fba10\\volume-0\\file-20bc8ac9-94d1-4208-ab28-5d673fd73486\\section0\\section1.fv",
+        "offset": 9584380,
+        "length": 1827,
+        "oem_table_id": "SgRpSsdt",
+        "file": "C:\\Users\\a.saberi\\Documents\\Codex\\2026-10-12\\https-github-com-morluto-rea-https\\work\\bios-reset-35-36\\36\\acpi\\SSDT-4e6ba3412240.aml",
+        "sha256": "4e6ba34122408630c5903ecdb4d58e4991d39834009348a58208cc145d64a190"
+      },
+      {
+        "source": "C:\\Users\\a.saberi\\Documents\\Codex\\2026-10-12\\https-github-com-morluto-rea-https\\work\\bios-reset-35-36\\36\\volumes\\7fba10\\volume-0\\file-20bc8ac9-94d1-4208-ab28-5d673fd73486\\section0\\section1.fv",
+        "offset": 9586476,
+        "length": 12752,
+        "oem_table_id": "SaSsdt \u0000",
+        "file": "C:\\Users\\a.saberi\\Documents\\Codex\\2026-10-12\\https-github-com-morluto-rea-https\\work\\bios-reset-35-36\\36\\acpi\\SSDT-c10a81be9b61.aml",
+        "sha256": "c10a81be9b61e2416ff53619629f70e4a44612556d823a0be5537f753abb0db1"
+      },
+      {
+        "source": "C:\\Users\\a.saberi\\Documents\\Codex\\2026-10-12\\https-github-com-morluto-rea-https\\work\\bios-reset-35-36\\36\\volumes\\7fba10\\volume-0\\file-20bc8ac9-94d1-4208-ab28-5d673fd73486\\section0\\section1.fv",
+        "offset": 9718732,
+        "length": 778,
+        "oem_table_id": "ApCst\u0000\u0000\u0000",
+        "file": "C:\\Users\\a.saberi\\Documents\\Codex\\2026-10-12\\https-github-com-morluto-rea-https\\work\\bios-reset-35-36\\36\\acpi\\SSDT-625a0dfcbbf1.aml",
+        "sha256": "625a0dfcbbf155b8e8fa17d01c78144f7d7a59c8286aa69508f836a9ee811c52"
+      },
+      {
+        "source": "C:\\Users\\a.saberi\\Documents\\Codex\\2026-10-12\\https-github-com-morluto-rea-https\\work\\bios-reset-35-36\\36\\volumes\\7fba10\\volume-0\\file-20bc8ac9-94d1-4208-ab28-5d673fd73486\\section0\\section1.fv",
+        "offset": 9719516,
+        "length": 791,
+        "oem_table_id": "ApHwp\u0000\u0000\u0000",
+        "file": "C:\\Users\\a.saberi\\Documents\\Codex\\2026-10-12\\https-github-com-morluto-rea-https\\work\\bios-reset-35-36\\36\\acpi\\SSDT-8b6e08fb9bd2.aml",
+        "sha256": "8b6e08fb9bd243d242d38adc0549947a210a9601fce25683a299b247e3fcc89d"
+      },
+      {
+        "source": "C:\\Users\\a.saberi\\Documents\\Codex\\2026-10-12\\https-github-com-morluto-rea-https\\work\\bios-reset-35-36\\36\\volumes\\7fba10\\volume-0\\file-20bc8ac9-94d1-4208-ab28-5d673fd73486\\section0\\section1.fv",
+        "offset": 9720312,
+        "length": 1532,
+        "oem_table_id": "ApIst\u0000\u0000\u0000",
+        "file": "C:\\Users\\a.saberi\\Documents\\Codex\\2026-10-12\\https-github-com-morluto-rea-https\\work\\bios-reset-35-36\\36\\acpi\\SSDT-63401291c83c.aml",
+        "sha256": "63401291c83c782031df5ebce6b6bc30e938a0f5924e40f8ea66817053c4a464"
+      },
+      {
+        "source": "C:\\Users\\a.saberi\\Documents\\Codex\\2026-10-12\\https-github-com-morluto-rea-https\\work\\bios-reset-35-36\\36\\volumes\\7fba10\\volume-0\\file-20bc8ac9-94d1-4208-ab28-5d673fd73486\\section0\\section1.fv",
+        "offset": 9721848,
+        "length": 2736,
+        "oem_table_id": "ApPsd\u0000\u0000\u0000",
+        "file": "C:\\Users\\a.saberi\\Documents\\Codex\\2026-10-12\\https-github-com-morluto-rea-https\\work\\bios-reset-35-36\\36\\acpi\\SSDT-87cf61cbec57.aml",
+        "sha256": "87cf61cbec57bfa996e58542e1a35348ab585afddac64199b18e3b5668030019"
+      },
+      {
+        "source": "C:\\Users\\a.saberi\\Documents\\Codex\\2026-10-12\\https-github-com-morluto-rea-https\\work\\bios-reset-35-36\\36\\volumes\\7fba10\\volume-0\\file-20bc8ac9-94d1-4208-ab28-5d673fd73486\\section0\\section1.fv",
+        "offset": 9724588,
+        "length": 2297,
+        "oem_table_id": "ApTst\u0000\u0000\u0000",
+        "file": "C:\\Users\\a.saberi\\Documents\\Codex\\2026-10-12\\https-github-com-morluto-rea-https\\work\\bios-reset-35-36\\36\\acpi\\SSDT-478abeb4584a.aml",
+        "sha256": "478abeb4584ab3dd69b15507187815407d1db80865b1e4a03edb7013d76a2510"
+      },
+      {
+        "source": "C:\\Users\\a.saberi\\Documents\\Codex\\2026-10-12\\https-github-com-morluto-rea-https\\work\\bios-reset-35-36\\36\\volumes\\7fba10\\volume-0\\file-20bc8ac9-94d1-4208-ab28-5d673fd73486\\section0\\section1.fv",
+        "offset": 9726892,
+        "length": 1024,
+        "oem_table_id": "Cpu0Cst\u0000",
+        "file": "C:\\Users\\a.saberi\\Documents\\Codex\\2026-10-12\\https-github-com-morluto-rea-https\\work\\bios-reset-35-36\\36\\acpi\\SSDT-4f6e5d559df1.aml",
+        "sha256": "4f6e5d559df1896afe62e4e02f7c04ca2a656ddb6167bab29be98cf89343e4c9"
+      },
+      {
+        "source": "C:\\Users\\a.saberi\\Documents\\Codex\\2026-10-12\\https-github-com-morluto-rea-https\\work\\bios-reset-35-36\\36\\volumes\\7fba10\\volume-0\\file-20bc8ac9-94d1-4208-ab28-5d673fd73486\\section0\\section1.fv",
+        "offset": 9727920,
+        "length": 283,
+        "oem_table_id": "Cpu0Hwp\u0000",
+        "file": "C:\\Users\\a.saberi\\Documents\\Codex\\2026-10-12\\https-github-com-morluto-rea-https\\work\\bios-reset-35-36\\36\\acpi\\SSDT-66e54be448d3.aml",
+        "sha256": "66e54be448d363e82b10f30e379d0442ce191b85bdfac57c09e22510a629e62c"
+      },
+      {
+        "source": "C:\\Users\\a.saberi\\Documents\\Codex\\2026-10-12\\https-github-com-morluto-rea-https\\work\\bios-reset-35-36\\36\\volumes\\7fba10\\volume-0\\file-20bc8ac9-94d1-4208-ab28-5d673fd73486\\section0\\section1.fv",
+        "offset": 9728208,
+        "length": 2069,
+        "oem_table_id": "Cpu0Ist\u0000",
+        "file": "C:\\Users\\a.saberi\\Documents\\Codex\\2026-10-12\\https-github-com-morluto-rea-https\\work\\bios-reset-35-36\\36\\acpi\\SSDT-b595ff81a8b1.aml",
+        "sha256": "b595ff81a8b1feb4ef99f8045b468e1036c65812c8226cf105edf49b72d8fe0c"
+      },
+      {
+        "source": "C:\\Users\\a.saberi\\Documents\\Codex\\2026-10-12\\https-github-com-morluto-rea-https\\work\\bios-reset-35-36\\36\\volumes\\7fba10\\volume-0\\file-20bc8ac9-94d1-4208-ab28-5d673fd73486\\section0\\section1.fv",
+        "offset": 9730284,
+        "length": 244,
+        "oem_table_id": "Cpu0Psd\u0000",
+        "file": "C:\\Users\\a.saberi\\Documents\\Codex\\2026-10-12\\https-github-com-morluto-rea-https\\work\\bios-reset-35-36\\36\\acpi\\SSDT-561b82855767.aml",
+        "sha256": "561b8285576700cade94af12e118a33a502e7cda68970571c7ee9f7015a53541"
+      },
+      {
+        "source": "C:\\Users\\a.saberi\\Documents\\Codex\\2026-10-12\\https-github-com-morluto-rea-https\\work\\bios-reset-35-36\\36\\volumes\\7fba10\\volume-0\\file-20bc8ac9-94d1-4208-ab28-5d673fd73486\\section0\\section1.fv",
+        "offset": 9730532,
+        "length": 955,
+        "oem_table_id": "Cpu0Tst\u0000",
+        "file": "C:\\Users\\a.saberi\\Documents\\Codex\\2026-10-12\\https-github-com-morluto-rea-https\\work\\bios-reset-35-36\\36\\acpi\\SSDT-7b74ea965669.aml",
+        "sha256": "7b74ea9656698a8aa9fc012b3d029cddc4fcc2795e1af3ec6de7f1d44ec296b2"
+      },
+      {
+        "source": "C:\\Users\\a.saberi\\Documents\\Codex\\2026-10-12\\https-github-com-morluto-rea-https\\work\\bios-reset-35-36\\36\\volumes\\7fba10\\volume-0\\file-20bc8ac9-94d1-4208-ab28-5d673fd73486\\section0\\section1.fv",
+        "offset": 9731492,
+        "length": 6940,
+        "oem_table_id": "CpuSsdt\u0000",
+        "file": "C:\\Users\\a.saberi\\Documents\\Codex\\2026-10-12\\https-github-com-morluto-rea-https\\work\\bios-reset-35-36\\36\\acpi\\SSDT-c78bcea49e98.aml",
+        "sha256": "c78bcea49e98c33a18ef7b5056cc0076e570cc3ffb6d4db9d350b9dfa244da31"
+      },
+      {
+        "source": "C:\\Users\\a.saberi\\Documents\\Codex\\2026-10-12\\https-github-com-morluto-rea-https\\work\\bios-reset-35-36\\36\\volumes\\7fba10\\volume-0\\file-20bc8ac9-94d1-4208-ab28-5d673fd73486\\section0\\section1.fv",
+        "offset": 9738436,
+        "length": 2511,
+        "oem_table_id": "CtdpB\u0000\u0000\u0000",
+        "file": "C:\\Users\\a.saberi\\Documents\\Codex\\2026-10-12\\https-github-com-morluto-rea-https\\work\\bios-reset-35-36\\36\\acpi\\SSDT-55a8c3c07dbc.aml",
+        "sha256": "55a8c3c07dbcf058d108d8bb1e9805e8238266d70fe8f00ca0e829f4177a7726"
+      },
+      {
+        "source": "C:\\Users\\a.saberi\\Documents\\Codex\\2026-10-12\\https-github-com-morluto-rea-https\\work\\bios-reset-35-36\\36\\volumes\\7fba10\\volume-0\\file-20bc8ac9-94d1-4208-ab28-5d673fd73486\\section0\\section1.fv",
+        "offset": 9740952,
+        "length": 1828,
+        "oem_table_id": "HwpLvt\u0000\u0000",
+        "file": "C:\\Users\\a.saberi\\Documents\\Codex\\2026-10-12\\https-github-com-morluto-rea-https\\work\\bios-reset-35-36\\36\\acpi\\SSDT-be480c1b86a6.aml",
+        "sha256": "be480c1b86a6d78734f3297ca7f85a39e94c605e0a8370d9b8da10094ed48442"
+      },
+      {
+        "source": "C:\\Users\\a.saberi\\Documents\\Codex\\2026-10-12\\https-github-com-morluto-rea-https\\work\\bios-reset-35-36\\36\\volumes\\7fba10\\volume-0\\file-20bc8ac9-94d1-4208-ab28-5d673fd73486\\section0\\section1.fv",
+        "offset": 9742784,
+        "length": 141,
+        "oem_table_id": "Itbm\u0000\u0000\u0000\u0000",
+        "file": "C:\\Users\\a.saberi\\Documents\\Codex\\2026-10-12\\https-github-com-morluto-rea-https\\work\\bios-reset-35-36\\36\\acpi\\SSDT-a278159be644.aml",
+        "sha256": "a278159be644fc2d336af1e4b8ad34c6ee9dd58e46cf813a0ce795344b8b14b5"
+      },
+      {
+        "source": "C:\\Users\\a.saberi\\Documents\\Codex\\2026-10-12\\https-github-com-morluto-rea-https\\work\\bios-reset-35-36\\36\\volumes\\7fba10\\volume-0\\file-20bc8ac9-94d1-4208-ab28-5d673fd73486\\section0\\section1.fv",
+        "offset": 9742932,
+        "length": 1576,
+        "oem_table_id": "ItbmSci\u0000",
+        "file": "C:\\Users\\a.saberi\\Documents\\Codex\\2026-10-12\\https-github-com-morluto-rea-https\\work\\bios-reset-35-36\\36\\acpi\\SSDT-399cbc0eba34.aml",
+        "sha256": "399cbc0eba344f981b96845b5ecc263af3ca827cc8e5404a049b8a036b2c5149"
+      },
+      {
+        "source": "C:\\Users\\a.saberi\\Documents\\Codex\\2026-10-12\\https-github-com-morluto-rea-https\\work\\bios-reset-35-36\\36\\volumes\\7fba10\\volume-0\\file-20bc8ac9-94d1-4208-ab28-5d673fd73486\\section0\\section1.fv",
+        "offset": 9824172,
+        "length": 70,
+        "oem_table_id": "MeSsdt \u0000",
+        "file": "C:\\Users\\a.saberi\\Documents\\Codex\\2026-10-12\\https-github-com-morluto-rea-https\\work\\bios-reset-35-36\\36\\acpi\\SSDT-dd8351562c59.aml",
+        "sha256": "dd8351562c59d3a0635586391003b289ccc0d9d9a6a086a9c48d1f6e0aa7a805"
+      },
+      {
+        "source": "C:\\Users\\a.saberi\\Documents\\Codex\\2026-10-12\\https-github-com-morluto-rea-https\\work\\bios-reset-35-36\\36\\volumes\\7fba10\\volume-0\\file-20bc8ac9-94d1-4208-ab28-5d673fd73486\\section0\\section1.fv",
+        "offset": 9824276,
+        "length": 1114,
+        "oem_table_id": "Tpm2Tabl",
+        "file": "C:\\Users\\a.saberi\\Documents\\Codex\\2026-10-12\\https-github-com-morluto-rea-https\\work\\bios-reset-35-36\\36\\acpi\\SSDT-94b0ae83e7c7.aml",
+        "sha256": "94b0ae83e7c7ba36f33fee8888a07f6d741c98ce808de612970c2d1f298701da"
+      }
+    ],
+    "ec_candidates": []
+  }
+}

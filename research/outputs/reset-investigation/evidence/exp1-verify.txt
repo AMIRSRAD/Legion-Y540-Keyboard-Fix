@@ -1,0 +1,6 @@
+Session log: C:\Users\a.saberi\Documents\Codex\2026-10-12\https-github-com-morluto-rea-https\outputs\reset-investigation\portable\Y540-Return-to-exp1\logs\return-exp1-20261013T094959148Z-p25732-1.log
+
+Validated 55296 bytes. Sum=5642 stored=5642 residual=0000.
+
+Absent CHECKSUMLASTBYTESBEFF uses recovered zero initialization/default.
+

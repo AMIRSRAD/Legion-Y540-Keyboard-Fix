@@ -1,0 +1,8 @@
+{
+  "instruction_count": 2135,
+  "function_count": 48,
+  "byte_mismatches": [],
+  "carrier_sha256": "ca10546707f79d14365f31f4191c6483fb64e28fe1f4d49ce5c12c452c17a11e",
+  "source_repo_commit": "5f8ac56fcdbb2763222ba038bc6ecbe88c008dd9",
+  "direct_ghidra_not_rea_raw_firmware": true
+}

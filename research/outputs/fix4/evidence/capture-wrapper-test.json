@@ -1,0 +1,15 @@
+{
+  "status": "passed",
+  "mode": "offline mocks only",
+  "real_updater_launches": 0,
+  "real_logman_calls": 0,
+  "verified": [
+    "package hash check",
+    "single GUI launch requested",
+    "trace start/stop/definition cleanup requested",
+    "completed log copied",
+    "ZIP readable"
+  ],
+  "fixture": "C:\\Users\\a.saberi\\Documents\\Codex\\2026-10-12\\https-github-com-morluto-rea-https\\work\\fix4-wrapper-test-b8raot12",
+  "stdout": "USB recording started. In fix4: Validate firmware (5642), then Advanced firmware write ONCE.\nWait for the final result. Close the fix4 window AFTER the operation settles so logs can be packaged.\nDo not close or power off while it reports erasing/writing.\nSEND THIS FILE: C:\\Users\\a.saberi\\Documents\\Codex\\2026-10-12\\https-github-com-morluto-rea-https\\work\\fix4-wrapper-test-b8raot12\\final-recording-20261013T044657188Z.zip\n"
+}

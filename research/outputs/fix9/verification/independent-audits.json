@@ -1,0 +1,25 @@
+{
+  "firmware_review": {
+    "result": "No concrete instruction or stack blocker found",
+    "cases": 1260,
+    "threshold_cases": 16,
+    "limits": [
+      "scratch RAM ownership",
+      "hardware reset scope",
+      "timer continuity/rate",
+      "recovery during intentional host inactivity",
+      "SET_CONFIGURATION entry includes deconfiguration0"
+    ]
+  },
+  "host_review": {
+    "result": "No concrete blocker found",
+    "checked": [
+      "target allowlist",
+      "preerase dependency failures",
+      "exp1 rollback",
+      "physical topology/report/chip gates",
+      "upper flash preservation"
+    ],
+    "followup": "Explicit exp2 target rejection regression was added after review and passed"
+  }
+}

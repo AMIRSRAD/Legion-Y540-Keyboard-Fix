@@ -1,0 +1,34 @@
+{
+  "in_memory_image_sha256": "e0a959a63dceada1f5fad6846451372271e266ec176cfd25bb322a69199b5457",
+  "new_code_bytes": 171,
+  "checksum": "0699",
+  "reset_trampoline_hex": "c2af75d00002f455",
+  "trigger_models": [
+    {
+      "trigger": "main",
+      "bank_at_reset_entry": 0,
+      "terminal_pc": "0xf476",
+      "delay_inner_writes": 66330,
+      "physical_reset_modeled": false
+    },
+    {
+      "trigger": "enumeration",
+      "bank_at_reset_entry": 0,
+      "terminal_pc": "0xf476",
+      "delay_inner_writes": 66330,
+      "physical_reset_modeled": false
+    }
+  ],
+  "normal_scratch_values_tested": 256,
+  "wrong_bootloader_rejected": true,
+  "interrupt_boundary_cases": 1260,
+  "threshold_edge_cases": 16,
+  "firmware_image_written": false,
+  "unresolved": [
+    "timeout trigger correctness",
+    "XRAM ownership",
+    "hardware reset scope",
+    "USB-core recovery",
+    "clock failure"
+  ]
+}

@@ -111,7 +111,7 @@ static void report_usb_suspend_policy(void)
                policy.ac_enabled?"ENABLED":"disabled",policy.dc_enabled?"ENABLED":"disabled");
     }
     if(y540_usb_suspend_may_idle_device(&policy))
-        output("NOTE: fix8 contacts the boot-mode keyboard immediately, so Windows has no time to idle it.\r\n"
+        output("NOTE: fix9 contacts the boot-mode keyboard immediately, so Windows has no time to idle it.\r\n"
                "Optional extra margin: run DISABLE-USB-SELECTIVE-SUSPEND.cmd (reversible) before updating.\r\n");
 }
 static int ready_for_flash(void)
@@ -381,8 +381,8 @@ static void start_update(HWND owner)
     if (!verify_or_plan(firmware_path, ini_path, NULL)) return;
     if (MessageBoxA(owner,
         "Write selected keyboard firmware (048D:C100 / boot 048D:89DB)?\n\n"
-        "This writes firmware. The self-recovery image (44-selfheal-exp2.bin) has never run on real hardware: it adds a watchdog that can restart or detach the keyboard, and recovery is not guaranteed. Keep 44-nosleep-exp1.bin ready as the way back. "
-        "Two matching reads must be saved before anything is erased. "
+        "This writes the selected firmware. Default exp3 (0699) uses the existing bootloader reset sequence after a recovery timeout. It has not been tested on hardware and may reset during host inactivity. Exp3 requires matching reset code on this device before erase. Select 44-nosleep-exp1.bin (5642) only to return to exp1. Keep external input available. "
+        "A complete backup is saved before erase; exact known-image hashes need one read, other images need two matching reads. "
         "Keep AC power connected, do not touch the keyboard or close the window, and do not interrupt erase/write.",
         "Update keyboard firmware", MB_YESNO | MB_ICONQUESTION | MB_DEFBUTTON2) != IDYES) return;
     job = calloc(1, sizeof(*job));
@@ -520,7 +520,7 @@ static LRESULT CALLBACK window_proc(HWND window, UINT message, WPARAM wparam, LP
                 14, 170, 752, 315, ID_LOG);
         log_window = GetDlgItem(window, ID_LOG);
         SendMessageA(log_window, EM_SETLIMITTEXT, 1024 * 1024, 0);
-        output("Y540 fix8 - boot-mode contact fix (no 6 s idle before the bootloader is queried)\r\n"
+        output("Y540 fix9 - boot-mode contact fix (no 6 s idle before the bootloader is queried)\r\n"
                "Start with Diagnose + save log. Retry USB is separate and never flashes firmware.\r\n"
                "A failed device descriptor has no usable keyboard HID interface.\r\n"
                "Advanced firmware writing requires healthy identity and a saved full backup.\r\n\r\n");
@@ -575,13 +575,10 @@ static void default_paths(void)
     slash = strrchr(executable, '\\');
     if (slash) *slash = 0;
     if (strlen(executable) > PATH_CAP - 32) return;
-    strcpy(firmware_path, executable); strcat(firmware_path, "/44-selfheal-exp2.bin");
-    if (GetFileAttributesA(firmware_path) == INVALID_FILE_ATTRIBUTES) {
-        strcpy(firmware_path, executable); strcat(firmware_path, "/44-nosleep-exp1.bin");
-    }
+    strcpy(firmware_path, executable); strcat(firmware_path, "/44-recovery-exp3.bin");
     strcpy(ini_path, executable); strcat(ini_path, "/SHFU.ini");
     if (GetFileAttributesA(firmware_path) == INVALID_FILE_ATTRIBUTES) {
-        strcpy(firmware_path, executable); strcat(firmware_path, "/../experiment/44-nosleep-exp1.bin");
+        strcpy(firmware_path, executable); strcat(firmware_path, "/../experiment/44-recovery-exp3.bin");
     }
     if (GetFileAttributesA(ini_path) == INVALID_FILE_ATTRIBUTES) {
         strcpy(ini_path, executable); strcat(ini_path, "/../samples/SHFU.ini");
@@ -599,7 +596,7 @@ static int gui(int smoke)
     cls.hCursor = LoadCursor(NULL, IDC_ARROW); cls.hbrBackground = (HBRUSH)(COLOR_BTNFACE + 1);
     cls.lpszClassName = "Y540ResearchUpdater";
     if (!RegisterClassA(&cls)) return 1;
-    window = CreateWindowA(cls.lpszClassName, "Y540 fix8 - Y540 keyboard firmware updater",
+    window = CreateWindowA(cls.lpszClassName, "Y540 fix9 - Recovery exp3 (0699)",
                            WS_OVERLAPPED | WS_CAPTION | WS_SYSMENU | WS_MINIMIZEBOX,
                            CW_USEDEFAULT, CW_USEDEFAULT, 798, 540, NULL, NULL, cls.hInstance, NULL);
     if (!window) return 1;
@@ -625,7 +622,7 @@ static int gui(int smoke)
 int main(int argc, char **argv)
 {
     if (argc == 1) {
-        begin_session("gui-fix8");
+        begin_session("gui-fix9");
         HWND console = GetConsoleWindow();
         DWORD processes[2];
         if (console && GetConsoleProcessList(processes, 2) == 1) ShowWindow(console, SW_HIDE);
@@ -656,7 +653,7 @@ int main(int argc, char **argv)
         return begin_session("cli-read-only-flash-dump") && dump_firmware(argv[2], end) ? 0 : 1;
     }
     if (!strcmp(argv[1], "--list") && argc == 2) return begin_session("cli-hid-metadata") && list_devices() ? 0 : 1;
-    output("Y540 fix8 - USB recovery and source updater\r\n\r\n"
+    output("Y540 fix9 - USB recovery and source updater\r\n\r\n"
            "  Y540Updater.exe                          Open GUI\r\n"
            "  Y540Updater.exe --verify FIRMWARE INI     Validate size and checksum\r\n"
            "  Y540Updater.exe --plan FIRMWARE INI JSON  Export staging-only packet plan\r\n"

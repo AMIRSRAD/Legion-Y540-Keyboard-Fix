@@ -1,0 +1,17 @@
+﻿2026-10-13T11:47:58.8657182Z fix9 session. Wrapper records USB events and launches the GUI; it never clicks Write, resets a device, or flashes automatically.
+2026-10-13T11:47:58.8737402Z logman create trace -n Y540Fix9-cd473e9d2eb14947a1e0508900eb92d7 -o C:\Users\a.saberi\Documents\Codex\2026-10-12\https-github-com-morluto-rea-https\work\fix9-wrapper-d8df10d0e79245ebbffa0c2583965182\fix9-recording-20261013T114758857Z\usb.etl -f bincirc -max 128 -nb 16 64 -bs 64
+2026-10-13T11:47:58.8829533Z MOCK; no native trace API
+2026-10-13T11:47:58.8974669Z logman update trace -n Y540Fix9-cd473e9d2eb14947a1e0508900eb92d7 -p Microsoft-Windows-USB-USBXHCI (Default,StateMachine,HeadersBusTrace)
+2026-10-13T11:47:58.9049815Z MOCK; no native trace API
+2026-10-13T11:47:58.9169788Z logman update trace -n Y540Fix9-cd473e9d2eb14947a1e0508900eb92d7 -p Microsoft-Windows-USB-UCX (Default,StateMachine,HeadersBusTrace)
+2026-10-13T11:47:58.9259774Z MOCK; no native trace API
+2026-10-13T11:47:58.9375078Z logman update trace -n Y540Fix9-cd473e9d2eb14947a1e0508900eb92d7 -p Microsoft-Windows-USB-USBHUB3 (Default,StateMachine,HeadersBusTrace)
+2026-10-13T11:47:58.9485876Z MOCK; no native trace API
+2026-10-13T11:47:58.9591074Z logman start -n Y540Fix9-cd473e9d2eb14947a1e0508900eb92d7
+2026-10-13T11:47:58.9706744Z MOCK; no native trace API
+2026-10-13T11:47:58.9844829Z TRACE STARTED; launching interactive fix9 GUI.
+2026-10-13T11:47:59.0120098Z Updater exited; preparing completed logs.
+2026-10-13T11:47:59.0139711Z logman stop -n Y540Fix9-cd473e9d2eb14947a1e0508900eb92d7
+2026-10-13T11:47:59.0311760Z MOCK; no native trace API
+2026-10-13T11:47:59.0481239Z logman delete -n Y540Fix9-cd473e9d2eb14947a1e0508900eb92d7
+2026-10-13T11:47:59.0642566Z MOCK; no native trace API

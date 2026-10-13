@@ -1,0 +1,16 @@
+{
+  "experiment": "fix9 / exp3",
+  "firmware_bytes": 55296,
+  "firmware_sha256": "e0a959a63dceada1f5fad6846451372271e266ec176cfd25bb322a69199b5457",
+  "firmware_checksum": "0699",
+  "updater_sha256": "ad55ea79961d9beb6b10ca87842ef537723e6b8a319c34d6c8914d4b9d3b49c9",
+  "portable_zip_sha256": "7dfbba5063ce2f6de2ec901cb269dcf20c9002111cef1184bb5462bc359e1c41",
+  "source_zip_sha256": "6261ce56220f0e1b0c5fea97cc69473fb9096ebf37c9b4f9d6677fb683ecce80",
+  "firmware_reproduced_exactly": true,
+  "portable_file_hashes_verified": true,
+  "zip_integrity_passed": true,
+  "updater_offline_suites_passed": 7,
+  "firmware_interrupt_cases": 1260,
+  "hardware_tested": false,
+  "no_hardware_actions_on_development_pc": true
+}

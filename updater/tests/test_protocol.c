@@ -12,7 +12,8 @@ static unsigned failures;
 #define IMAGE_SIZE 55296u
 
 typedef struct {
-    uint8_t flash[IMAGE_SIZE], staging[1024], request[64];
+    uint8_t flash[IMAGE_SIZE], upper[0x2800], staging[1024], request[64];
+    int upper_valid, fail_upper;
     uint32_t commit_address[256];
     unsigned commits, c0, chunks, erases, resets, reads, sleeps, commands;
     unsigned bad_packets, stage_corrupt, read_corrupt, fail_c1, failed_calls;
@@ -108,7 +109,14 @@ static int feature(void *context, int write, uint8_t report[64], size_t report_b
         case 0xd0: return 1;
         case 0xd1:
             addr = address(report + 2); len = report[5];
-            if (!len || len > 56 || addr + len > IMAGE_SIZE) return emu_fail(e, error, "invalid D1 range");
+            if (!len || len > 56 || addr + len > 0x10000u ||
+                (addr < IMAGE_SIZE && addr + len > IMAGE_SIZE))
+                return emu_fail(e, error, "invalid D1 range");
+            if (addr >= IMAGE_SIZE && (!e->upper_valid || e->fail_upper)) {
+                error->code = 459;
+                strcpy(error->message, "injected upper-flash read failure");
+                return 0;
+            }
             ++e->reads;
             if (e->fail_backup_read && !e->commits) {
                 error->code = 459;
@@ -137,7 +145,8 @@ static int feature(void *context, int write, uint8_t report[64], size_t report_b
         report[2] = (uint8_t)sum; report[3] = (uint8_t)(sum >> 8); return 1;
     case 0xd1:
         addr = address(report + 2); len = report[5];
-        memcpy(report + 6, e->flash + addr, len);
+        if (addr >= IMAGE_SIZE) memcpy(report + 6, e->upper + addr - IMAGE_SIZE, len);
+        else memcpy(report + 6, e->flash + addr, len);
         if (e->backup_change && !e->commits && e->reads > (IMAGE_SIZE + 55) / 56)
             report[6] ^= 1;
         if (e->read_corrupt && e->commits && addr == 0) {
@@ -411,6 +420,90 @@ static void known_image_tests(const uint8_t *stock, const y540_config *cfg)
     free(e);
 }
 
+static void reset_dependency_tests(const char *directory, const uint8_t *stock, y540_config *cfg)
+{
+    emulator *e = malloc(sizeof(*e));
+    uint8_t *candidate = malloc(IMAGE_SIZE), *upper = malloc(0x2800);
+    y540_hid_transport t;
+    y540_hid_error error;
+    char path[2048];
+    FILE *f;
+    CHECK(e && candidate && upper);
+    if (!e || !candidate || !upper) { free(e); free(candidate); free(upper); return; }
+    snprintf(path, sizeof(path), "%s/44-recovery-exp3.bin", directory);
+    f = fopen(path, "rb"); CHECK(f != NULL);
+    if (!f) { free(e); free(candidate); free(upper); return; }
+    CHECK(fread(candidate, 1, IMAGE_SIZE, f) == IMAGE_SIZE); fclose(f);
+    snprintf(path, sizeof(path), "%s/upper-flash-dump.bin", directory);
+    f = fopen(path, "rb"); CHECK(f != NULL);
+    if (!f) { free(e); free(candidate); free(upper); return; }
+    CHECK(fread(upper, 1, 0x2800, f) == 0x2800); fclose(f);
+    int old_skip_ivt = 1;
+    for (unsigned i = 0; i < cfg->count; ++i)
+        if (!strcmp(cfg->entries[i].key, "NOCHECKIVT")) {
+            old_skip_ivt = atoi(cfg->entries[i].value);
+            strcpy(cfg->entries[i].value, "1");
+        }
+
+    /* Matching on-device dependency: two short reads, one known backup, verify. */
+    setup(e, &t); memcpy(e->flash, stock, IMAGE_SIZE);
+    memcpy(e->upper, upper, 0x2800); e->upper_valid = 1;
+    CHECK(program(&t, candidate, IMAGE_SIZE, cfg, &error));
+    CHECK(e->reads == 2u + 2u * ((IMAGE_SIZE + 55u) / 56u));
+    CHECK(e->resets == 1 && e->erases == 1 && !memcmp(e->flash, candidate, IMAGE_SIZE));
+    CHECK(!memcmp(e->upper, upper, 0x2800));
+    for (unsigned i = 0; i < e->commits; ++i) CHECK(e->commit_address[i] + 1024 <= IMAGE_SIZE);
+    delete_backup();
+
+    /* A mismatch in either dependency must stop before backup or erase. */
+    for (unsigned which = 0; which < 2; ++which) {
+        setup(e, &t); memcpy(e->flash, stock, IMAGE_SIZE);
+        memcpy(e->upper, upper, 0x2800); e->upper_valid = 1;
+        e->upper[(which ? 0xf455 : 0xf12c) - IMAGE_SIZE] ^= 1;
+        CHECK(!program(&t, candidate, IMAGE_SIZE, cfg, &error));
+        CHECK(!e->erases && !e->commits && !e->resets);
+        CHECK(e->reads == which + 1);
+        CHECK(strstr(error.message, "dependency differs") != NULL);
+        CHECK(!memcmp(e->flash, stock, IMAGE_SIZE));
+        delete_backup();
+    }
+    setup(e, &t); memcpy(e->flash, stock, IMAGE_SIZE);
+    e->fail_upper = 1;
+    CHECK(!program(&t, candidate, IMAGE_SIZE, cfg, &error));
+    CHECK(!e->erases && !e->commits && !e->resets && !e->reads);
+    delete_backup();
+
+    /* exp1 rollback does not depend on the external reset routine. */
+    uint8_t *return_image = malloc(IMAGE_SIZE);
+    snprintf(path, sizeof(path), "%s/exp2-backup-test.bin", directory);
+    f = fopen(path, "rb"); CHECK(f && return_image);
+    if (f && return_image) {
+        CHECK(fread(return_image, 1, IMAGE_SIZE, f) == IMAGE_SIZE);
+        setup(e, &t);
+        CHECK(!program(&t, return_image, IMAGE_SIZE, cfg, &error));
+        CHECK(!e->commands && !e->erases && !e->commits && !e->resets);
+        CHECK(strstr(error.message, "withdrawn/unknown") != NULL);
+        delete_backup();
+    }
+    if (f) fclose(f);
+    snprintf(path, sizeof(path), "%s/44-nosleep-exp1.bin", directory);
+    f = fopen(path, "rb"); CHECK(f && return_image);
+    if (f && return_image) {
+        CHECK(fread(return_image, 1, IMAGE_SIZE, f) == IMAGE_SIZE);
+        setup(e, &t); memcpy(e->flash, candidate, IMAGE_SIZE);
+        CHECK(program(&t, return_image, IMAGE_SIZE, cfg, &error));
+        CHECK(e->reads == 2u * ((IMAGE_SIZE + 55u) / 56u));
+        CHECK(e->resets == 1 && !memcmp(e->flash, return_image, IMAGE_SIZE));
+        delete_backup();
+    }
+    if (f) fclose(f);
+    free(return_image);
+    for (unsigned i = 0; i < cfg->count; ++i)
+        if (!strcmp(cfg->entries[i].key, "NOCHECKIVT"))
+            strcpy(cfg->entries[i].value, old_skip_ivt ? "1" : "0");
+    free(e); free(candidate); free(upper);
+}
+
 int main(int argc, char **argv)
 {
     const char *directory = argc > 1 ? argv[1] : "samples";
@@ -528,6 +621,31 @@ int main(int argc, char **argv)
     CHECK(e->reads > 0 && !e->erases && !e->commits && !e->resets);
     CHECK(strstr(error.message, "interrupt-vector") != NULL);
     delete_backup();
+    /* Regression: returning FROM exact exp2 must use one durable backup read,
+     * followed by target verification. It does not qualify exp2 as a good image. */
+    snprintf(path, sizeof(path), "%s/exp2-backup-test.bin", directory);
+    file = fopen(path, "rb");
+    CHECK(file != NULL);
+    if (file) {
+        setup(e, &t);
+        CHECK(fread(e->flash, 1, IMAGE_SIZE, file) == IMAGE_SIZE);
+        fclose(file);
+        CHECK(program(&t, firmware, IMAGE_SIZE, cfg, &error));
+        CHECK(e->reads == 2u * ((IMAGE_SIZE + 55u) / 56u));
+        CHECK(e->resets == 1 && !memcmp(e->flash, firmware, IMAGE_SIZE));
+        { FILE *saved = _wfopen(last_backup, L"rb");
+          uint8_t *original = malloc(IMAGE_SIZE);
+          CHECK(saved && original);
+          if (saved && original) {
+              CHECK(fread(original, 1, IMAGE_SIZE, saved) == IMAGE_SIZE);
+              uint8_t hash[32]; y540_sha256(original, IMAGE_SIZE, hash);
+              CHECK(hash[0] == 0x82 && hash[1] == 0xc9 && hash[31] == 0xb8);
+          }
+          if (saved) fclose(saved);
+          free(original); }
+        delete_backup();
+    }
+    reset_dependency_tests(directory, firmware, cfg);
     known_image_tests(firmware, cfg);
     boot_discovery_tests();
     readiness_tests();

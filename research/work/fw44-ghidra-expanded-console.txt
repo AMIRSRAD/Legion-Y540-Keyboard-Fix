@@ -1,0 +1,110 @@
+INFO  Using log config file: jar:file:/C:/Users/a.saberi/Documents/Codex/tools/ghidra_12.1.4_PUBLIC/Ghidra/Framework/Generic/lib/Generic.jar!/generic.log4j.xml (LoggingInitialization)  
+INFO  Using log file: C:\Users\a.saberi\Documents\Codex\2026-10-12\https-github-com-morluto-rea-https\outputs\firmware44-analysis\ghidra-expanded.log (LoggingInitialization)  
+INFO  Loading user preferences: C:\Users\a.saberi\AppData\Roaming\ghidra\ghidra_12.1.4_PUBLIC\preferences (Preferences)  
+INFO  Loading previous preferences: C:\Users\a.saberi\AppData\Roaming\ghidra\ghidra_12.0.3_PUBLIC\preferences (Preferences)  
+INFO  Searching for classes... (ClassSearcher)  
+INFO  Class search complete (901 ms) (ClassSearcher)  
+INFO  Initializing SSL Context (DefaultSSLContextInitializer)  
+INFO  Initializing Random Number Generator... (SecureRandomFactory)  
+INFO  Random Number Generator initialization complete: SHA1PRNG (SecureRandomFactory)  
+INFO  Trust manager disabled, cacerts have not been set (DefaultTrustManagerFactory)  
+INFO  Headless startup complete (3536 ms) (AnalyzeHeadless)  
+INFO  Class searcher loaded 59 extension points (20 false positives) (ClassSearcher)  
+INFO  HEADLESS Script Paths:
+    C:\Users\a.saberi\Documents\Codex\tools\ghidra_12.1.4_PUBLIC\Ghidra\Features\PDB\ghidra_scripts
+    C:\Users\a.saberi\Documents\Codex\tools\ghidra_12.1.4_PUBLIC\Ghidra\Features\BSim\ghidra_scripts
+    C:\Users\a.saberi\Documents\Codex\tools\ghidra_12.1.4_PUBLIC\Ghidra\Features\SystemEmulation\ghidra_scripts
+    C:\Users\a.saberi\ghidra_scripts
+    C:\Users\a.saberi\Documents\Codex\tools\ghidra_12.1.4_PUBLIC\Ghidra\Features\BytePatterns\ghidra_scripts
+    C:\Users\a.saberi\Documents\Codex\tools\ghidra_12.1.4_PUBLIC\Ghidra\Features\FunctionID\ghidra_scripts
+    C:\Users\a.saberi\Documents\Codex\tools\ghidra_12.1.4_PUBLIC\Ghidra\Processors\JVM\ghidra_scripts
+    C:\Users\a.saberi\Documents\Codex\tools\ghidra_12.1.4_PUBLIC\Ghidra\Debug\Debugger-rmi-trace\ghidra_scripts
+    C:\Users\a.saberi\Documents\Codex\tools\ghidra_12.1.4_PUBLIC\Ghidra\Features\DecompilerDependent\ghidra_scripts
+    C:\Users\a.saberi\Documents\Codex\tools\ghidra_12.1.4_PUBLIC\Ghidra\Features\VersionTracking\ghidra_scripts
+    C:\Users\a.saberi\Documents\Codex\tools\ghidra_12.1.4_PUBLIC\Ghidra\Features\WildcardAssembler\ghidra_scripts
+    C:\Users\a.saberi\Documents\Codex\tools\ghidra_12.1.4_PUBLIC\Ghidra\Processors\Atmel\ghidra_scripts
+    C:\Users\a.saberi\Documents\Codex\tools\ghidra_12.1.4_PUBLIC\Ghidra\Features\Base\ghidra_scripts
+    C:\Users\a.saberi\Documents\Codex\tools\ghidra_12.1.4_PUBLIC\Ghidra\Processors\8051\ghidra_scripts
+    C:\Users\a.saberi\Documents\Codex\tools\ghidra_12.1.4_PUBLIC\Ghidra\Features\MicrosoftCodeAnalyzer\ghidra_scripts
+    C:\Users\a.saberi\Documents\Codex\2026-10-12\https-github-com-morluto-rea-https\work\fw44-ghidra
+    C:\Users\a.saberi\Documents\Codex\tools\ghidra_12.1.4_PUBLIC\Ghidra\Features\Decompiler\ghidra_scripts
+    C:\Users\a.saberi\Documents\Codex\tools\ghidra_12.1.4_PUBLIC\Ghidra\Features\SwiftDemangler\ghidra_scripts
+    C:\Users\a.saberi\Documents\Codex\tools\ghidra_12.1.4_PUBLIC\Ghidra\Features\FileFormats\ghidra_scripts
+    C:\Users\a.saberi\Documents\Codex\tools\ghidra_12.1.4_PUBLIC\Ghidra\Features\GnuDemangler\ghidra_scripts
+    C:\Users\a.saberi\Documents\Codex\tools\ghidra_12.1.4_PUBLIC\Ghidra\Debug\Debugger\ghidra_scripts
+    C:\Users\a.saberi\Documents\Codex\tools\ghidra_12.1.4_PUBLIC\Ghidra\Features\PyGhidra\ghidra_scripts
+    C:\Users\a.saberi\Documents\Codex\tools\ghidra_12.1.4_PUBLIC\Ghidra\Processors\PIC\ghidra_scripts
+    C:\Users\a.saberi\Documents\Codex\tools\ghidra_12.1.4_PUBLIC\Ghidra\Processors\DATA\ghidra_scripts (HeadlessAnalyzer)  
+INFO  HEADLESS: execution starts (HeadlessAnalyzer)  
+INFO  Opening existing project: C:\Users\a.saberi\Documents\Codex\2026-10-12\https-github-com-morluto-rea-https\work\fw44-ghidra-project\fw44 (HeadlessAnalyzer)  
+INFO  Opening project: C:\Users\a.saberi\Documents\Codex\2026-10-12\https-github-com-morluto-rea-https\work\fw44-ghidra-project\fw44 (HeadlessProject)  
+INFO  REPORT: Processing project file: /44.bin (HeadlessAnalyzer)  
+INFO  ANALYZING all memory and code: /44.bin (HeadlessAnalyzer)  
+INFO  Packed database cache: C:\Users\a.saberi\AppData\Local\ghidra\packed-db-cache (PackedDatabaseCache)  
+INFO  Applied data type archive: generic_clib (ApplyDataArchiveAnalyzer)  
+INFO  -----------------------------------------------------
+    ASCII Strings                              0.332 secs
+    Apply Data Archives                        0.777 secs
+    Basic Constant Reference Analyzer          0.513 secs
+    Call Convention ID                         0.005 secs
+    Call-Fixup Installer                       0.007 secs
+    Create Function                            0.001 secs
+    Decompiler Switch Analysis                 1.380 secs
+    Demangler GNU                              0.089 secs
+    Disassemble Entry Points                   0.058 secs
+    Embedded Media                             0.017 secs
+    External Entry References                  0.000 secs
+    Function ID                                0.115 secs
+    Non-Returning Functions - Discovered       0.069 secs
+    Shared Return Calls                        0.051 secs
+    Stack                                      0.434 secs
+    Subroutine References                      0.040 secs
+-----------------------------------------------------
+     Total Time   3 secs
+-----------------------------------------------------
+ (AutoAnalysisManager)  
+INFO  REPORT: Analysis succeeded for file: /44.bin (HeadlessAnalyzer)  
+INFO  REPORT: Execute script: ExportFirmware.java 'C:\Users\a.saberi\Documents\Codex\2026-10-12\https-github-com-morluto-rea-https\outputs\firmware44-analysis\ghidra-static-expanded.json'  (HeadlessAnalyzer)  
+INFO  SCRIPT: C:\Users\a.saberi\Documents\Codex\2026-10-12\https-github-com-morluto-rea-https\work\fw44-ghidra\ExportFirmware.java (HeadlessAnalyzer)  
+WARN  WARNING! Repairing body of function at CODE:4665 (ClearFlowAndRepairCmd)  
+ERROR ... function body repair failed due to overlap with another function: CODE:4665 (ClearFlowAndRepairCmd)  
+WARN  WARNING! Repairing body of function at CODE:468c (ClearFlowAndRepairCmd)  
+ERROR ... function body repair failed due to overlap with another function: CODE:468c (ClearFlowAndRepairCmd)  
+WARN  WARNING! Repairing body of function at CODE:46b2 (ClearFlowAndRepairCmd)  
+ERROR ... function body repair failed due to overlap with another function: CODE:46b2 (ClearFlowAndRepairCmd)  
+WARN  WARNING! Repairing body of function at CODE:46c2 (ClearFlowAndRepairCmd)  
+WARN  WARNING! Repairing body of function at CODE:46d2 (ClearFlowAndRepairCmd)  
+ERROR ... function body repair failed due to overlap with another function: CODE:46d2 (ClearFlowAndRepairCmd)  
+WARN  WARNING! Repairing body of function at CODE:46e5 (ClearFlowAndRepairCmd)  
+ERROR ... function body repair failed due to overlap with another function: CODE:46e5 (ClearFlowAndRepairCmd)  
+WARN  WARNING! Repairing body of function at CODE:46fd (ClearFlowAndRepairCmd)  
+ERROR ... function body repair failed due to overlap with another function: CODE:46fd (ClearFlowAndRepairCmd)  
+INFO  Applied data type archive: generic_clib (ApplyDataArchiveAnalyzer)  
+INFO  -----------------------------------------------------
+    ASCII Strings                              0.007 secs
+    Apply Data Archives                        0.013 secs
+    Basic Constant Reference Analyzer          0.307 secs
+    Call Convention ID                         0.003 secs
+    Call-Fixup Installer                       0.009 secs
+    Create Function                            0.004 secs
+    Decompiler Switch Analysis                 1.086 secs
+    Demangler GNU                              0.055 secs
+    Disassemble Entry Points                   0.005 secs
+    Embedded Media                             0.004 secs
+    External Entry References                  0.000 secs
+    Function ID                                0.000 secs
+    Non-Returning Functions - Discovered       0.163 secs
+    Shared Return Calls                        0.036 secs
+    Stack                                      0.282 secs
+    Subroutine References                      0.016 secs
+-----------------------------------------------------
+     Total Time   1 secs
+-----------------------------------------------------
+ (AutoAnalysisManager)  
+WARN  Decompiling CODE:0130, pcode error at CODE:e000: Could not follow disassembly flow into non-existing memory at CODE:e000 (DecompileCallback)  
+WARN  Decompiling CODE:0f7b, pcode error at CODE:e000: Could not follow disassembly flow into non-existing memory at CODE:e000 (DecompileCallback)  
+WARN  Decompiling CODE:0f7f, pcode error at CODE:fe00: Could not follow disassembly flow into non-existing memory at CODE:fe00 (DecompileCallback)  
+INFO  ExportFirmware.java> FIRMWARE_EXPORT instructions=10818 functions=270 output=C:\Users\a.saberi\Documents\Codex\2026-10-12\https-github-com-morluto-rea-https\outputs\firmware44-analysis\ghidra-static-expanded.json (GhidraScript)  
+INFO  ANALYZING changes made by post scripts: /44.bin (HeadlessAnalyzer)  
+INFO  REPORT: Post-analysis succeeded for file: /44.bin (HeadlessAnalyzer)  
+INFO  REPORT: Save succeeded for processed file: /44.bin (HeadlessAnalyzer)  

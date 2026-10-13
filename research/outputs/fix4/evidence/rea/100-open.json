@@ -1,0 +1,30 @@
+{
+  "request": {
+    "name": "open_binary",
+    "arguments": {
+      "path": "C:/Users/a.saberi/Desktop/Y540-keyboard-firmware-00000044/extracted-IT/ITESHFU.exe",
+      "provider_id": "ghidra"
+    }
+  },
+  "response": {
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"result\":{\"path\":\"C:\\\\Users\\\\a.saberi\\\\Desktop\\\\Y540-keyboard-firmware-00000044\\\\extracted-IT\\\\ITESHFU.exe\",\"format\":\"pe\",\"kind\":\"executable\",\"sha256\":\"afcca3de209ccfab256aff48b8f7f59dfb6cd6a27b22fc58a41b50f0bd8bb8fa\",\"architecture\":\"x86_64\"}}"
+        }
+      ],
+      "structuredContent": {
+        "result": {
+          "path": "C:\\Users\\a.saberi\\Desktop\\Y540-keyboard-firmware-00000044\\extracted-IT\\ITESHFU.exe",
+          "format": "pe",
+          "kind": "executable",
+          "sha256": "afcca3de209ccfab256aff48b8f7f59dfb6cd6a27b22fc58a41b50f0bd8bb8fa",
+          "architecture": "x86_64"
+        }
+      }
+    },
+    "jsonrpc": "2.0",
+    "id": 3
+  }
+}

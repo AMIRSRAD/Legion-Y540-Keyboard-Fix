@@ -1,0 +1,28 @@
+Y540 updater fix3 (0.3.2) — bounded bootloader readiness
+
+The previous experiment attempt did NOT flash any firmware. It stopped on the
+first boot chip-ID command with error31. Forced-off recovery restored typing.
+This build retries that specific generic error with freshly reopened handles
+bound to the same physical keyboard port, up to12 readiness checks. It still
+stops on invalid chip replies, access errors, identity mismatch, or exhaustion.
+The cause of error31 is unresolved; this is not a proven timing fix.
+
+This package's 44.bin is ORIGINAL STOCK firmware, checksum5622.
+To test the previously supplied no-sleep experiment, explicitly Browse to
+44-nosleep-exp1.bin from the separate experiment package. Validate must show
+55296bytes, sum/stored5642, residual0000. Do not accidentally select stock44.
+
+Start with typing working in Windows, close other updater copies, keep AC
+connected, run fix3 as administrator, select experiment image and its SHFU.ini,
+Validate, then choose Advanced firmware write once. A real erase/write is
+performed only after chip qualification and two matching durable backup reads.
+Do not interrupt erase/write. If it fails, stop and save the entire logs folder.
+
+The experimental firmware remains hardware-untested. It can affect power/sleep
+behavior or enumeration. Stock recovery requires a usable update interface;
+rollback is not guaranteed. Only after a completed matching readback should
+restart/shutdown results be treated as an experimental firmware test.
+
+Source/release fix1 and fix2 are preserved. No hardware operations were run
+while building fix3. Offline regression tests cover recovery after error31,
+permanent failure bounds, wrong chip, access denial, and transient disappearance.

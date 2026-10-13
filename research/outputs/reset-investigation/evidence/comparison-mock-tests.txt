@@ -1,0 +1,18 @@
+Saved: C:\Users\a.saberi\AppData\Local\Temp\y540-policy-test-dfc0a1b922564b01a06578918c95b4fa\comparison-records\record-20261013T095001771Z-7d66ab83cb684c059709b7db91e83b96.json
+No firmware operation, device reset, shutdown or restart was performed.
+USB selective suspend is disabled for AC and battery in this power plan. Original values are saved.
+Saved: C:\Users\a.saberi\AppData\Local\Temp\y540-policy-test-dfc0a1b922564b01a06578918c95b4fa\comparison-records\record-20261013T095001921Z-4e765277525848cfb3a297f99a1d8e5c.json
+No firmware operation, device reset, shutdown or restart was performed.
+Original values restored. A different active power plan, if selected, was left active.
+Saved: C:\Users\a.saberi\AppData\Local\Temp\y540-policy-test-dfc0a1b922564b01a06578918c95b4fa\comparison-records\record-20261013T095001991Z-ab99bba5fa844303950b1dc1d7f5c764.json
+No firmware operation, device reset, shutdown or restart was performed.
+Original values restored. A different active power plan, if selected, was left active.
+Saved: C:\Users\a.saberi\AppData\Local\Temp\y540-policy-test-dfc0a1b922564b01a06578918c95b4fa\comparison-records\record-20261013T095002054Z-bc5a1cc45b2b47409b56b2453726205a.json
+No firmware operation, device reset, shutdown or restart was performed.
+USB selective suspend is disabled for AC and battery in this power plan. Original values are saved.
+Saved: C:\Users\a.saberi\AppData\Local\Temp\y540-policy-test-dfc0a1b922564b01a06578918c95b4fa\comparison-records\record-20261013T095002079Z-aba5c48177c24589a18877342026a70a.json
+No firmware operation, device reset, shutdown or restart was performed.
+Original values restored. A different active power plan, if selected, was left active.
+Saved: C:\Users\a.saberi\AppData\Local\Temp\y540-policy-test-dfc0a1b922564b01a06578918c95b4fa\comparison-records\record-20261013T095002118Z-36ddd780ed0d4fb08c37488f277817ef.json
+No firmware operation, device reset, shutdown or restart was performed.
+PASS: 9 mocked power-policy checks; no native power/device APIs called. Test files: C:\Users\a.saberi\AppData\Local\Temp\y540-policy-test-dfc0a1b922564b01a06578918c95b4fa

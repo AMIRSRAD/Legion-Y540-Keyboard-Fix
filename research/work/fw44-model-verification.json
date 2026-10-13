@@ -1,0 +1,83 @@
+[
+  {
+    "wLength": 0,
+    "staged_response_length": 1,
+    "descriptor_length": 76,
+    "bytes_beyond_descriptor_if_all_callbacks_complete": 0,
+    "chunks": [
+      {
+        "source_start": "0x0A1F",
+        "source_end": "0x0A1F",
+        "count": 1
+      }
+    ],
+    "zero_length_caveat": "Host need not fetch staged byte for wLength zero"
+  },
+  {
+    "wLength": 76,
+    "staged_response_length": 76,
+    "descriptor_length": 76,
+    "bytes_beyond_descriptor_if_all_callbacks_complete": 0,
+    "chunks": [
+      {
+        "source_start": "0x0A1F",
+        "source_end": "0x0A5E",
+        "count": 64
+      },
+      {
+        "source_start": "0x0A5F",
+        "source_end": "0x0A6A",
+        "count": 12
+      }
+    ],
+    "zero_length_caveat": null
+  },
+  {
+    "wLength": 77,
+    "staged_response_length": 77,
+    "descriptor_length": 76,
+    "bytes_beyond_descriptor_if_all_callbacks_complete": 1,
+    "chunks": [
+      {
+        "source_start": "0x0A1F",
+        "source_end": "0x0A5E",
+        "count": 64
+      },
+      {
+        "source_start": "0x0A5F",
+        "source_end": "0x0A6B",
+        "count": 13
+      }
+    ],
+    "zero_length_caveat": null
+  },
+  {
+    "wLength": 255,
+    "staged_response_length": 255,
+    "descriptor_length": 76,
+    "bytes_beyond_descriptor_if_all_callbacks_complete": 179,
+    "chunks": [
+      {
+        "source_start": "0x0A1F",
+        "source_end": "0x0A5E",
+        "count": 64
+      },
+      {
+        "source_start": "0x0A5F",
+        "source_end": "0x0A9E",
+        "count": 64
+      },
+      {
+        "source_start": "0x0A9F",
+        "source_end": "0x0ADE",
+        "count": 64
+      },
+      {
+        "source_start": "0x0ADF",
+        "source_end": "0x0B1D",
+        "count": 63
+      }
+    ],
+    "zero_length_caveat": null
+  }
+]

@@ -1,0 +1,22 @@
+[
+  {
+    "label": "setfeature-error",
+    "file_offset": "0x2def64",
+    "mapped_va": "0x6e0364"
+  },
+  {
+    "label": "getfeature-error",
+    "file_offset": "0x2def7e",
+    "mapped_va": "0x6e037e"
+  },
+  {
+    "label": "checksum-error",
+    "file_offset": "0x2df19b",
+    "mapped_va": "0x6e059b"
+  },
+  {
+    "label": "enter-flash",
+    "file_offset": "0x2df1c7",
+    "mapped_va": "0x6e05c7"
+  }
+]

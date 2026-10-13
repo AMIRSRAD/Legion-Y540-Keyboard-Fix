@@ -1,0 +1,480 @@
+{
+  "method": "Python byte reads and XML parsing; no vendor execution or signature verification",
+  "manifest_validated": true,
+  "samples": {
+    "44.bin": {
+      "size": 55296,
+      "sha256": "3afec131c6ed70efa0a3f4b601cb799011a582835d371c57fef68af48519e359"
+    },
+    "ite1fw11s.exe": {
+      "size": 2835096,
+      "sha256": "e5863dcd12c40afb98bd5577c3c9631f8f5f78868bc1b1125355f34637f31834",
+      "pe": {
+        "machine": "0x14c",
+        "optional_magic": "0x10b",
+        "coff_symbol_offset": 0,
+        "coff_symbol_count": 0,
+        "coff_string_table_offset": null,
+        "coff_string_table_size": null,
+        "sections": [
+          {
+            "name": ".text",
+            "offset": 1024,
+            "size": 146432,
+            "end": 147456
+          },
+          {
+            "name": ".itext",
+            "offset": 147456,
+            "size": 5120,
+            "end": 152576
+          },
+          {
+            "name": ".data",
+            "offset": 152576,
+            "size": 6144,
+            "end": 158720
+          },
+          {
+            "name": ".bss",
+            "offset": 0,
+            "size": 0,
+            "end": 0
+          },
+          {
+            "name": ".idata",
+            "offset": 158720,
+            "size": 2048,
+            "end": 160768
+          },
+          {
+            "name": ".didata",
+            "offset": 160768,
+            "size": 4096,
+            "end": 164864
+          },
+          {
+            "name": ".edata",
+            "offset": 164864,
+            "size": 512,
+            "end": 165376
+          },
+          {
+            "name": ".tls",
+            "offset": 0,
+            "size": 0,
+            "end": 0
+          },
+          {
+            "name": ".rdata",
+            "offset": 165376,
+            "size": 512,
+            "end": 165888
+          },
+          {
+            "name": ".rsrc",
+            "offset": 165888,
+            "size": 14336,
+            "end": 180224
+          }
+        ],
+        "last_section_end": 180224,
+        "overlay_size": 2654872,
+        "overlay_sha256": "2e02a51bf1729fa0b491c4fb533c1e19ec437969909f85502a2558c64a4ca720",
+        "overlay_prefix_hex": "7a6c621a1ae329d3e0195d0026968e700017f7ec05bbeaf4ff94012f44ef7ce6f50919440229ff53cdd6d114fe9e619c8215f6097aac6bb4ed54109e26ca71cf",
+        "security_directory_offset": 2827984,
+        "security_directory_size": 7112,
+        "certificate_range_within_file": true,
+        "checksum_offset": 344,
+        "checksum_field": 2863474
+      }
+    },
+    "ITESHFU.exe": {
+      "size": 11485623,
+      "sha256": "afcca3de209ccfab256aff48b8f7f59dfb6cd6a27b22fc58a41b50f0bd8bb8fa",
+      "pe": {
+        "machine": "0x8664",
+        "optional_magic": "0x20b",
+        "coff_symbol_offset": 9721856,
+        "coff_symbol_count": 20262,
+        "coff_string_table_offset": 10086572,
+        "coff_string_table_size": 1399051,
+        "sections": [
+          {
+            "name": ".text",
+            "offset": 2048,
+            "size": 3007488,
+            "end": 3009536
+          },
+          {
+            "name": ".rodata",
+            "offset": 3009536,
+            "size": 1886720,
+            "end": 4896256
+          },
+          {
+            "name": ".data",
+            "offset": 4896256,
+            "size": 122368,
+            "end": 5018624
+          },
+          {
+            "name": ".tls",
+            "offset": 5018624,
+            "size": 1024,
+            "end": 5019648
+          },
+          {
+            "name": ".pdata",
+            "offset": 5019648,
+            "size": 1280512,
+            "end": 6300160
+          },
+          {
+            "name": ".xdata",
+            "offset": 6300160,
+            "size": 439296,
+            "end": 6739456
+          },
+          {
+            "name": "/35",
+            "offset": 6739456,
+            "size": 39424,
+            "end": 6778880
+          },
+          {
+            "name": "/51",
+            "offset": 6778880,
+            "size": 819712,
+            "end": 7598592
+          },
+          {
+            "name": "/63",
+            "offset": 7598592,
+            "size": 8704,
+            "end": 7607296
+          },
+          {
+            "name": "/77",
+            "offset": 7607296,
+            "size": 21504,
+            "end": 7628800
+          },
+          {
+            "name": "/89",
+            "offset": 7628800,
+            "size": 967680,
+            "end": 8596480
+          },
+          {
+            "name": "/111",
+            "offset": 8596480,
+            "size": 11264,
+            "end": 8607744
+          },
+          {
+            "name": ".rdata",
+            "offset": 8607744,
+            "size": 512,
+            "end": 8608256
+          },
+          {
+            "name": ".idata",
+            "offset": 8608256,
+            "size": 20992,
+            "end": 8629248
+          },
+          {
+            "name": ".didata",
+            "offset": 8629248,
+            "size": 3072,
+            "end": 8632320
+          },
+          {
+            "name": ".edata",
+            "offset": 8632320,
+            "size": 512,
+            "end": 8632832
+          },
+          {
+            "name": ".rsrc",
+            "offset": 8632832,
+            "size": 867840,
+            "end": 9500672
+          },
+          {
+            "name": ".reloc",
+            "offset": 9500672,
+            "size": 221184,
+            "end": 9721856
+          }
+        ],
+        "last_section_end": 9721856,
+        "overlay_size": 1763767,
+        "overlay_sha256": "b04bcd7d8d311ec44dd3f50730455b217882ca38f411e48d1254ad4d4915cb3a",
+        "overlay_prefix_hex": "000000007d000000e0220000010000000200000000008800000088230000010000000200000000009e0000008823000001000000020000000000b0000000b023",
+        "security_directory_offset": 0,
+        "security_directory_size": 0,
+        "certificate_range_within_file": false,
+        "checksum_offset": 600,
+        "checksum_field": 0
+      }
+    },
+    "Lenovo-package-metadata.xml": {
+      "size": 5780,
+      "sha256": "41ed1c5e66456b9d7e5931a143b31f7c6db9107b5e115f0e28fa861ccaedd2be"
+    },
+    "SHFU.ini": {
+      "size": 890,
+      "sha256": "87d8a39d9cb1a107c0d24b5a929d46051c54a089c8042e6b044c02d2ffefb64a"
+    }
+  },
+  "metadata": {
+    "ite1fw11s.exe": {
+      "size": 2835096,
+      "sha256": "e5863dcd12c40afb98bd5577c3c9631f8f5f78868bc1b1125355f34637f31834"
+    },
+    "shfu.ini": {
+      "size": 890,
+      "sha256": "87d8a39d9cb1a107c0d24b5a929d46051c54a089c8042e6b044c02d2ffefb64a"
+    },
+    "tvsu_check.exe": {
+      "size": 27592,
+      "sha256": "850dc21594e5213bbc8371283a13ad27e8b1bf716a9d91f510c5592c12878bff"
+    },
+    "iteshfu.exe": {
+      "size": 11492728,
+      "sha256": "96b2a9aa3f71bcd94995c337a12a389c8f3fd6b36e9d7219413b0d6bff34b8e5"
+    },
+    "fw_version.ini": {
+      "size": 41,
+      "sha256": "fd7883db025b4f25cb7a370833642cc67c42e5e2fab5ba936e516b7443716965"
+    }
+  },
+  "metadata_comparisons": {
+    "ite1fw11s.exe": {
+      "expected": {
+        "size": 2835096,
+        "sha256": "e5863dcd12c40afb98bd5577c3c9631f8f5f78868bc1b1125355f34637f31834"
+      },
+      "size_difference": 0,
+      "sha256_matches": true
+    },
+    "ITESHFU.exe": {
+      "expected": {
+        "size": 11492728,
+        "sha256": "96b2a9aa3f71bcd94995c337a12a389c8f3fd6b36e9d7219413b0d6bff34b8e5"
+      },
+      "size_difference": -7105,
+      "sha256_matches": false
+    },
+    "SHFU.ini": {
+      "expected": {
+        "size": 890,
+        "sha256": "87d8a39d9cb1a107c0d24b5a929d46051c54a089c8042e6b044c02d2ffefb64a"
+      },
+      "size_difference": 0,
+      "sha256_matches": true
+    }
+  },
+  "extracted_dir": "C:\\Users\\a.saberi\\Documents\\Codex\\2026-10-12\\https-github-com-morluto-rea-https\\work\\package-identity\\extracted",
+  "extracted_files": {
+    "code$GetExtractPath$/IT/44.bin": {
+      "size": 55296,
+      "sha256": "3afec131c6ed70efa0a3f4b601cb799011a582835d371c57fef68af48519e359",
+      "preserved_sample_matches": [
+        "44.bin"
+      ]
+    },
+    "code$GetExtractPath$/IT/ITESHFU.exe": {
+      "size": 11485623,
+      "sha256": "afcca3de209ccfab256aff48b8f7f59dfb6cd6a27b22fc58a41b50f0bd8bb8fa",
+      "pe": {
+        "machine": "0x8664",
+        "optional_magic": "0x20b",
+        "coff_symbol_offset": 9721856,
+        "coff_symbol_count": 20262,
+        "coff_string_table_offset": 10086572,
+        "coff_string_table_size": 1399051,
+        "sections": [
+          {
+            "name": ".text",
+            "offset": 2048,
+            "size": 3007488,
+            "end": 3009536
+          },
+          {
+            "name": ".rodata",
+            "offset": 3009536,
+            "size": 1886720,
+            "end": 4896256
+          },
+          {
+            "name": ".data",
+            "offset": 4896256,
+            "size": 122368,
+            "end": 5018624
+          },
+          {
+            "name": ".tls",
+            "offset": 5018624,
+            "size": 1024,
+            "end": 5019648
+          },
+          {
+            "name": ".pdata",
+            "offset": 5019648,
+            "size": 1280512,
+            "end": 6300160
+          },
+          {
+            "name": ".xdata",
+            "offset": 6300160,
+            "size": 439296,
+            "end": 6739456
+          },
+          {
+            "name": "/35",
+            "offset": 6739456,
+            "size": 39424,
+            "end": 6778880
+          },
+          {
+            "name": "/51",
+            "offset": 6778880,
+            "size": 819712,
+            "end": 7598592
+          },
+          {
+            "name": "/63",
+            "offset": 7598592,
+            "size": 8704,
+            "end": 7607296
+          },
+          {
+            "name": "/77",
+            "offset": 7607296,
+            "size": 21504,
+            "end": 7628800
+          },
+          {
+            "name": "/89",
+            "offset": 7628800,
+            "size": 967680,
+            "end": 8596480
+          },
+          {
+            "name": "/111",
+            "offset": 8596480,
+            "size": 11264,
+            "end": 8607744
+          },
+          {
+            "name": ".rdata",
+            "offset": 8607744,
+            "size": 512,
+            "end": 8608256
+          },
+          {
+            "name": ".idata",
+            "offset": 8608256,
+            "size": 20992,
+            "end": 8629248
+          },
+          {
+            "name": ".didata",
+            "offset": 8629248,
+            "size": 3072,
+            "end": 8632320
+          },
+          {
+            "name": ".edata",
+            "offset": 8632320,
+            "size": 512,
+            "end": 8632832
+          },
+          {
+            "name": ".rsrc",
+            "offset": 8632832,
+            "size": 867840,
+            "end": 9500672
+          },
+          {
+            "name": ".reloc",
+            "offset": 9500672,
+            "size": 221184,
+            "end": 9721856
+          }
+        ],
+        "last_section_end": 9721856,
+        "overlay_size": 1763767,
+        "overlay_sha256": "b04bcd7d8d311ec44dd3f50730455b217882ca38f411e48d1254ad4d4915cb3a",
+        "overlay_prefix_hex": "000000007d000000e0220000010000000200000000008800000088230000010000000200000000009e0000008823000001000000020000000000b0000000b023",
+        "security_directory_offset": 0,
+        "security_directory_size": 0,
+        "certificate_range_within_file": false,
+        "checksum_offset": 600,
+        "checksum_field": 0
+      },
+      "preserved_sample_matches": [
+        "ITESHFU.exe"
+      ]
+    },
+    "code$GetExtractPath$/IT/SHFU.ini": {
+      "size": 890,
+      "sha256": "87d8a39d9cb1a107c0d24b5a929d46051c54a089c8042e6b044c02d2ffefb64a",
+      "preserved_sample_matches": [
+        "SHFU.ini"
+      ],
+      "text_utf8_replacement": "[MAIN]\r\nHWID=USB\\VID_048D&PID_C100\r\n[BOOT]\r\nHWID=USB\\VID_048D&PID_89DB\r\n[DELAY]\r\nMSEC=6000\r\n[MESSAGE]\r\nENABLE=1\r\n[DEVICE]\r\nMAININDEX=0\r\nREMOVERESCAN=1\r\nCHECKSUMMODE=1\r\nNEEDERASE=1\r\nDOCKINGBURN=0\r\nPROGRAMFAILRETRY=1\r\n[CLOSEAPP]\r\nPASS=1\r\nFAIL=0\r\n[NEWVERSION]\r\nMAINDEVICEUPID=FF89\r\nMAINDEVICEUID=0010\r\nBOOTDEVICECHIPID=8171\r\nBOOTDEVICEUPID=FF89\r\nBOOTDEVICEUID=00DB\r\nUPDATESTARTADDRESS=0\r\nUPDATEFILESIZEKB=54\r\nUPDATEONLYPARAMETER=0\r\nCHECKSUMSTARTADDRESS=0400\r\nCHECKSUMENDADDRESS=D800\r\nCHECKSUMVALUEHIGHADDRESS=7FFE\r\nCHECKSUMVALUELOWADDRESS=7FFF\r\nCHECKSUMINVERT=1\r\n[CHECKVERSION]\r\nDONOTUPDATETHESAMEVERSION=0\r\n[OPTION]\r\nPROGRAMFAILERASESKIPFIRST1K=1\r\nPROGRAMFAILERASETHENRESET=1\r\nNOCHECKIVT=1\r\nWRITEFLASHDATADELAY=0\r\nALLHIDCOMMANDDELAY=5\r\nMAXSTATECUNT=15\r\nMAXSCANDEVICE=100\r\nNOCHECKPID=0\r\nOEMVEROFFSET=3100\r\nPOPUPSFORNOTIFICATIONS=\ufffd\ufffd\ufffd\u03f5\ufffd\u0534\ufffd\u053c\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\u03e3\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\u00b9\ufffd\ufffd\ufffd\ufffd\u0439\u063b\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffdKB\ufffd\ufffd\ufffd\ufffd\u02b9\ufffd\u00e1\ufffd"
+    },
+    "code$GetExtractPath$/TVSU.exe": {
+      "size": 20480,
+      "sha256": "ae3c35a2a468273b67f9ee673d7a54cd4d13f3d3427ce5ae3c7f62115ab50c50",
+      "pe": {
+        "machine": "0x14c",
+        "optional_magic": "0x10b",
+        "coff_symbol_offset": 0,
+        "coff_symbol_count": 0,
+        "coff_string_table_offset": null,
+        "coff_string_table_size": null,
+        "sections": [
+          {
+            "name": ".text",
+            "offset": 512,
+            "size": 14848,
+            "end": 15360
+          },
+          {
+            "name": ".rsrc",
+            "offset": 15360,
+            "size": 4608,
+            "end": 19968
+          },
+          {
+            "name": ".reloc",
+            "offset": 19968,
+            "size": 512,
+            "end": 20480
+          }
+        ],
+        "last_section_end": 20480,
+        "overlay_size": 0,
+        "overlay_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "overlay_prefix_hex": "",
+        "security_directory_offset": 0,
+        "security_directory_size": 0,
+        "certificate_range_within_file": false,
+        "checksum_offset": 216,
+        "checksum_field": 0
+      },
+      "preserved_sample_matches": []
+    },
+    "code$GetExtractPath$/Update_FW.bat": {
+      "size": 539,
+      "sha256": "3a76b435f9cafdf9b43430f710ae0e925cde13fbb13bbd5f67fded42c099078e",
+      "preserved_sample_matches": [],
+      "text_utf8_replacement": "@Echo off\r\nrem if not \"%~1\"==\"p\" start /min cmd.exe /c %0 p&exit\r\nrem ========================================\r\nrem   Utillize the script for update ITE keyboard fireware\r\nrem   Build date:2020-05-13\uff0cPublish ver:1.0.0.0\r\nrem ========================================\r\nsetlocal enabledelayedexpansion\r\n\r\npushd \"%~dp0\"\r\nTVSU.exe\r\nif  \"%errorlevel%\" == \"0\" goto FW_OK\r\n\r\n:UpdateNG\r\n::Update FW Fail to set return value for \"1\"\r\nset errorlevel=1\r\ngoto end\r\n\r\n:FW_OK\r\necho *** Update FW Finished ***\r\nshutdown -s -t 0\r\nshutdown -s -t 0\r\n:END\r\n"
+    }
+  }
+}

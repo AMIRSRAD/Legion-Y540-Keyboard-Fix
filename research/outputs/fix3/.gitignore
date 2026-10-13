@@ -1,0 +1,9 @@
+samples/*.exe
+evidence/case-inputs/
+work/
+__pycache__/
+*.pyc
+
+build/
+dist/
+*.o

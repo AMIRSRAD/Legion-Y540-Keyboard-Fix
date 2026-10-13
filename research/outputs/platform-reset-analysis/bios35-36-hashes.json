@@ -1,0 +1,22 @@
+[
+  {
+    "Algorithm": "SHA256",
+    "Hash": "B3F8D741EFFA997D4D94F4F96D014F5473550E9B7A96DBBB2B9C835FA135D305",
+    "Path": "C:\\Users\\a.saberi\\Desktop\\KeyboardFirmware-Issue\\Files\\bhcn35ww.exe"
+  },
+  {
+    "Algorithm": "SHA256",
+    "Hash": "EF207E9A8E2507A05B8FC7B47DC9B4B7E0DA6BD25D9C211C8B44B24E161DBAC7",
+    "Path": "C:\\Users\\a.saberi\\Desktop\\KeyboardFirmware-Issue\\Files\\bhcn36ww.exe"
+  },
+  {
+    "Algorithm": "SHA256",
+    "Hash": "490123E6B8629EC5616638A4DFBB1BCFAC1094A74B732B3D4046D2244134467A",
+    "Path": "C:\\Users\\a.saberi\\Documents\\Codex\\2026-10-12\\https-github-com-morluto-rea-https\\work\\bios-reset-35-36\\35\\app\\BHCN35WW.exe"
+  },
+  {
+    "Algorithm": "SHA256",
+    "Hash": "3477084AF1BC0CB7272818405C63D31793922EB159B976F9FFD5A4531E695369",
+    "Path": "C:\\Users\\a.saberi\\Documents\\Codex\\2026-10-12\\https-github-com-morluto-rea-https\\work\\bios-reset-35-36\\36\\app\\BHCN36WW.exe"
+  }
+]

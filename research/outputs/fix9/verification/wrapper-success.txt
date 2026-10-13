@@ -1,0 +1,8 @@
+fix9 launcher: checking administrator rights...
+fix9 launcher: folder C:\Users\a.saberi\Documents\Codex\2026-10-12\https-github-com-morluto-rea-https\work\fix9-wrapper-d8df10d0e79245ebbffa0c2583965182
+fix9 launcher: package hashes OK
+USB recording started. In fix9: Validate firmware (0699), then Advanced firmware write ONCE.
+Wait for the final result. Close the fix9 window AFTER the operation settles so logs can be packaged.
+Do not close or power off while it reports erasing/writing.
+SEND THIS FILE: C:\Users\a.saberi\Documents\Codex\2026-10-12\https-github-com-morluto-rea-https\work\fix9-wrapper-d8df10d0e79245ebbffa0c2583965182\fix9-recording-20261013T114758857Z.zip
+MOCK WRAPPER PASS

@@ -1,0 +1,160 @@
+Files Processed:
+	work\return-exp1-recording\usb_000001.etl
+Total Buffers Processed 65
+Total Events  Processed 14453
+Total Events  Lost      0
+Start Time              Tuesday, October 13, 2026
+End Time                Tuesday, October 13, 2026
+Elapsed Time            128 sec
++-------------------------------------------------------------------------------------------------------------------------+
+|Event Count   Event Name           Task            Opcode          Version         Guid                                  |
++-------------------------------------------------------------------------------------------------------------------------+
+|          1   EventTrace           0               PartitionInfoExtension 2               {68fdd900-4a3e-11d1-84f4-0000f80464e3}|
+|          1   EventTrace           0               Header          2               {68fdd900-4a3e-11d1-84f4-0000f80464e3}|
+|          5   Microsoft-Windows-USB-USBXHCI 8               Information     3               {30e1d284-5d88-459c-83fd-6345b39b19ec}|
+|          5   Microsoft-Windows-USB-USBXHCI 11              Information     0               {30e1d284-5d88-459c-83fd-6345b39b19ec}|
+|         10   Microsoft-Windows-USB-USBXHCI 10              Information     0               {30e1d284-5d88-459c-83fd-6345b39b19ec}|
+|          5   Microsoft-Windows-USB-USBXHCI 7               Information     3               {30e1d284-5d88-459c-83fd-6345b39b19ec}|
+|          5   Microsoft-Windows-USB-USBXHCI 9               Information     3               {30e1d284-5d88-459c-83fd-6345b39b19ec}|
+|         10   Microsoft-Windows-USB-USBXHCI 12              Information     0               {30e1d284-5d88-459c-83fd-6345b39b19ec}|
+|         10   Microsoft-Windows-USB-USBXHCI 28              Information     0               {30e1d284-5d88-459c-83fd-6345b39b19ec}|
+|        166   Microsoft-Windows-USB-USBXHCI 22              Information     0               {30e1d284-5d88-459c-83fd-6345b39b19ec}|
+|          1   Microsoft-Windows-USB-USBXHCI 1               Stop            0               {30e1d284-5d88-459c-83fd-6345b39b19ec}|
+|         20   Microsoft-Windows-USB-USBXHCI 4               Information     0               {30e1d284-5d88-459c-83fd-6345b39b19ec}|
+|          4   Microsoft-Windows-USB-USBXHCI 3               Information     3               {30e1d284-5d88-459c-83fd-6345b39b19ec}|
+|          2   Microsoft-Windows-USB-USBXHCI 34              Information     0               {30e1d284-5d88-459c-83fd-6345b39b19ec}|
+|          2   Microsoft-Windows-USB-USBXHCI 2               Information     7               {30e1d284-5d88-459c-83fd-6345b39b19ec}|
+|          1   Microsoft-Windows-USB-USBXHCI 1               Start           0               {30e1d284-5d88-459c-83fd-6345b39b19ec}|
+|          2   Microsoft-Windows-USB-UCX 24              Start           0               {36da592d-e43a-4e28-af6f-4bc57c5a11e8}|
+|         12   Microsoft-Windows-USB-UCX 23              Start           0               {36da592d-e43a-4e28-af6f-4bc57c5a11e8}|
+|         10   Microsoft-Windows-USB-UCX 15              Information     0               {36da592d-e43a-4e28-af6f-4bc57c5a11e8}|
+|          5   Microsoft-Windows-USB-UCX 13              Information     0               {36da592d-e43a-4e28-af6f-4bc57c5a11e8}|
+|          5   Microsoft-Windows-USB-UCX 14              Information     0               {36da592d-e43a-4e28-af6f-4bc57c5a11e8}|
+|         10   Microsoft-Windows-USB-UCX 16              Information     0               {36da592d-e43a-4e28-af6f-4bc57c5a11e8}|
+|        185   Microsoft-Windows-USB-UCX 52              Information     0               {36da592d-e43a-4e28-af6f-4bc57c5a11e8}|
+|         90   Microsoft-Windows-USB-UCX 53              Information     0               {36da592d-e43a-4e28-af6f-4bc57c5a11e8}|
+|         50   Microsoft-Windows-USB-UCX 21              Start           0               {36da592d-e43a-4e28-af6f-4bc57c5a11e8}|
+|        140   Microsoft-Windows-USB-UCX 20              Stop            1               {36da592d-e43a-4e28-af6f-4bc57c5a11e8}|
+|        140   Microsoft-Windows-USB-UCX 20              Start           0               {36da592d-e43a-4e28-af6f-4bc57c5a11e8}|
+|         50   Microsoft-Windows-USB-UCX 21              Stop            1               {36da592d-e43a-4e28-af6f-4bc57c5a11e8}|
+|       5437   Microsoft-Windows-USB-UCX 19              Stop            1               {36da592d-e43a-4e28-af6f-4bc57c5a11e8}|
+|       5423   Microsoft-Windows-USB-UCX 42              Start           0               {36da592d-e43a-4e28-af6f-4bc57c5a11e8}|
+|          1   Microsoft-Windows-USB-UCX 1               Stop            0               {36da592d-e43a-4e28-af6f-4bc57c5a11e8}|
+|          4   Microsoft-Windows-USB-UCX 4               Information     0               {36da592d-e43a-4e28-af6f-4bc57c5a11e8}|
+|        561   Microsoft-Windows-USB-UCX 5               Information     0               {36da592d-e43a-4e28-af6f-4bc57c5a11e8}|
+|          2   Microsoft-Windows-USB-UCX 3               Information     0               {36da592d-e43a-4e28-af6f-4bc57c5a11e8}|
+|         66   Microsoft-Windows-USB-UCX 2               Information     0               {36da592d-e43a-4e28-af6f-4bc57c5a11e8}|
+|          1   Microsoft-Windows-USB-UCX 1               Start           0               {36da592d-e43a-4e28-af6f-4bc57c5a11e8}|
+|          1   Microsoft-Windows-USB-USBHUB3 15              Error           0               {ac52ad17-cc01-4f85-8df5-4dce4333c99b}|
+|          1   Microsoft-Windows-USB-USBHUB3 9               Error           0               {ac52ad17-cc01-4f85-8df5-4dce4333c99b}|
+|         64   Microsoft-Windows-USB-USBHUB3 16              Start           0               {ac52ad17-cc01-4f85-8df5-4dce4333c99b}|
+|        105   Microsoft-Windows-USB-USBHUB3 16              Stop            0               {ac52ad17-cc01-4f85-8df5-4dce4333c99b}|
+|         68   Microsoft-Windows-USB-USBHUB3 11              Stop            0               {ac52ad17-cc01-4f85-8df5-4dce4333c99b}|
+|         15   Microsoft-Windows-USB-USBHUB3 11              Information     0               {ac52ad17-cc01-4f85-8df5-4dce4333c99b}|
+|         68   Microsoft-Windows-USB-USBHUB3 11              Start           0               {ac52ad17-cc01-4f85-8df5-4dce4333c99b}|
+|          5   Microsoft-Windows-USB-USBHUB3 2               Stop            0               {ac52ad17-cc01-4f85-8df5-4dce4333c99b}|
+|          5   Microsoft-Windows-USB-USBHUB3 2               Information     2               {ac52ad17-cc01-4f85-8df5-4dce4333c99b}|
+|          5   Microsoft-Windows-USB-USBHUB3 2               Start           0               {ac52ad17-cc01-4f85-8df5-4dce4333c99b}|
+|          5   Microsoft-Windows-USB-USBHUB3 9               Stop            0               {ac52ad17-cc01-4f85-8df5-4dce4333c99b}|
+|          5   Microsoft-Windows-USB-USBHUB3 9               Start           0               {ac52ad17-cc01-4f85-8df5-4dce4333c99b}|
+|          5   Microsoft-Windows-USB-USBHUB3 8               Stop            0               {ac52ad17-cc01-4f85-8df5-4dce4333c99b}|
+|          5   Microsoft-Windows-USB-USBHUB3 8               Start           0               {ac52ad17-cc01-4f85-8df5-4dce4333c99b}|
+|          8   Microsoft-Windows-USB-USBHUB3 5               Stop            0               {ac52ad17-cc01-4f85-8df5-4dce4333c99b}|
+|          8   Microsoft-Windows-USB-USBHUB3 5               Start           0               {ac52ad17-cc01-4f85-8df5-4dce4333c99b}|
+|          5   Microsoft-Windows-USB-USBHUB3 4               Stop            0               {ac52ad17-cc01-4f85-8df5-4dce4333c99b}|
+|          5   Microsoft-Windows-USB-USBHUB3 4               Start           0               {ac52ad17-cc01-4f85-8df5-4dce4333c99b}|
+|          8   Microsoft-Windows-USB-USBHUB3 6               Stop            0               {ac52ad17-cc01-4f85-8df5-4dce4333c99b}|
+|          8   Microsoft-Windows-USB-USBHUB3 6               Start           0               {ac52ad17-cc01-4f85-8df5-4dce4333c99b}|
+|          5   Microsoft-Windows-USB-USBHUB3 7               Stop            0               {ac52ad17-cc01-4f85-8df5-4dce4333c99b}|
+|          5   Microsoft-Windows-USB-USBHUB3 7               Start           0               {ac52ad17-cc01-4f85-8df5-4dce4333c99b}|
+|          6   Microsoft-Windows-USB-USBHUB3 12              Stop            1               {ac52ad17-cc01-4f85-8df5-4dce4333c99b}|
+|         40   Microsoft-Windows-USB-USBHUB3 12              Information     0               {ac52ad17-cc01-4f85-8df5-4dce4333c99b}|
+|       1471   Microsoft-Windows-USB-USBHUB3 13              Information     0               {ac52ad17-cc01-4f85-8df5-4dce4333c99b}|
+|          1   Microsoft-Windows-USB-USBHUB3 1               Stop            0               {ac52ad17-cc01-4f85-8df5-4dce4333c99b}|
+|         30   Microsoft-Windows-USB-USBHUB3 1               Information     1               {ac52ad17-cc01-4f85-8df5-4dce4333c99b}|
+|         34   Microsoft-Windows-USB-USBHUB3 1               Information     2               {ac52ad17-cc01-4f85-8df5-4dce4333c99b}|
+|         19   Microsoft-Windows-USB-USBHUB3 1               Information     0               {ac52ad17-cc01-4f85-8df5-4dce4333c99b}|
+|          1   Microsoft-Windows-USB-USBHUB3 1               Start           0               {ac52ad17-cc01-4f85-8df5-4dce4333c99b}|
++-------------------------------------------------------------------------------------------------------------------------+
++---------------------------------------------------------------------------------------------------------+
+|Event Count   Event Name           Event ID        Version         Guid                                  |
++---------------------------------------------------------------------------------------------------------+
+|          2   EventTrace           0               2               {68fdd900-4a3e-11d1-84f4-0000f80464e3}|
+|          1   Microsoft-Windows-USB-USBXHCI 1               0               {30e1d284-5d88-459c-83fd-6345b39b19ec}|
+|          1   Microsoft-Windows-USB-USBXHCI 2               0               {30e1d284-5d88-459c-83fd-6345b39b19ec}|
+|          2   Microsoft-Windows-USB-USBXHCI 3               7               {30e1d284-5d88-459c-83fd-6345b39b19ec}|
+|          4   Microsoft-Windows-USB-USBXHCI 4               3               {30e1d284-5d88-459c-83fd-6345b39b19ec}|
+|         20   Microsoft-Windows-USB-USBXHCI 5               0               {30e1d284-5d88-459c-83fd-6345b39b19ec}|
+|          5   Microsoft-Windows-USB-USBXHCI 8               3               {30e1d284-5d88-459c-83fd-6345b39b19ec}|
+|          5   Microsoft-Windows-USB-USBXHCI 9               3               {30e1d284-5d88-459c-83fd-6345b39b19ec}|
+|          5   Microsoft-Windows-USB-USBXHCI 10              3               {30e1d284-5d88-459c-83fd-6345b39b19ec}|
+|         10   Microsoft-Windows-USB-USBXHCI 11              0               {30e1d284-5d88-459c-83fd-6345b39b19ec}|
+|          5   Microsoft-Windows-USB-USBXHCI 12              0               {30e1d284-5d88-459c-83fd-6345b39b19ec}|
+|         10   Microsoft-Windows-USB-USBXHCI 13              0               {30e1d284-5d88-459c-83fd-6345b39b19ec}|
+|         80   Microsoft-Windows-USB-USBXHCI 31              0               {30e1d284-5d88-459c-83fd-6345b39b19ec}|
+|         80   Microsoft-Windows-USB-USBXHCI 33              0               {30e1d284-5d88-459c-83fd-6345b39b19ec}|
+|          6   Microsoft-Windows-USB-USBXHCI 35              0               {30e1d284-5d88-459c-83fd-6345b39b19ec}|
+|         10   Microsoft-Windows-USB-USBXHCI 48              0               {30e1d284-5d88-459c-83fd-6345b39b19ec}|
+|          2   Microsoft-Windows-USB-USBXHCI 70              0               {30e1d284-5d88-459c-83fd-6345b39b19ec}|
+|          1   Microsoft-Windows-USB-UCX 1               0               {36da592d-e43a-4e28-af6f-4bc57c5a11e8}|
+|          1   Microsoft-Windows-USB-UCX 2               0               {36da592d-e43a-4e28-af6f-4bc57c5a11e8}|
+|          2   Microsoft-Windows-USB-UCX 3               0               {36da592d-e43a-4e28-af6f-4bc57c5a11e8}|
+|          2   Microsoft-Windows-USB-UCX 4               0               {36da592d-e43a-4e28-af6f-4bc57c5a11e8}|
+|          4   Microsoft-Windows-USB-UCX 5               0               {36da592d-e43a-4e28-af6f-4bc57c5a11e8}|
+|         17   Microsoft-Windows-USB-UCX 6               0               {36da592d-e43a-4e28-af6f-4bc57c5a11e8}|
+|          5   Microsoft-Windows-USB-UCX 14              0               {36da592d-e43a-4e28-af6f-4bc57c5a11e8}|
+|          5   Microsoft-Windows-USB-UCX 15              0               {36da592d-e43a-4e28-af6f-4bc57c5a11e8}|
+|         10   Microsoft-Windows-USB-UCX 16              0               {36da592d-e43a-4e28-af6f-4bc57c5a11e8}|
+|         10   Microsoft-Windows-USB-UCX 17              0               {36da592d-e43a-4e28-af6f-4bc57c5a11e8}|
+|       5437   Microsoft-Windows-USB-UCX 21              1               {36da592d-e43a-4e28-af6f-4bc57c5a11e8}|
+|        140   Microsoft-Windows-USB-UCX 23              0               {36da592d-e43a-4e28-af6f-4bc57c5a11e8}|
+|        140   Microsoft-Windows-USB-UCX 24              1               {36da592d-e43a-4e28-af6f-4bc57c5a11e8}|
+|         50   Microsoft-Windows-USB-UCX 26              0               {36da592d-e43a-4e28-af6f-4bc57c5a11e8}|
+|         50   Microsoft-Windows-USB-UCX 27              1               {36da592d-e43a-4e28-af6f-4bc57c5a11e8}|
+|         12   Microsoft-Windows-USB-UCX 34              0               {36da592d-e43a-4e28-af6f-4bc57c5a11e8}|
+|          2   Microsoft-Windows-USB-UCX 35              0               {36da592d-e43a-4e28-af6f-4bc57c5a11e8}|
+|       5423   Microsoft-Windows-USB-UCX 53              0               {36da592d-e43a-4e28-af6f-4bc57c5a11e8}|
+|        185   Microsoft-Windows-USB-UCX 63              0               {36da592d-e43a-4e28-af6f-4bc57c5a11e8}|
+|         90   Microsoft-Windows-USB-UCX 64              0               {36da592d-e43a-4e28-af6f-4bc57c5a11e8}|
+|        272   Microsoft-Windows-USB-UCX 65              0               {36da592d-e43a-4e28-af6f-4bc57c5a11e8}|
+|        272   Microsoft-Windows-USB-UCX 66              0               {36da592d-e43a-4e28-af6f-4bc57c5a11e8}|
+|         32   Microsoft-Windows-USB-UCX 69              0               {36da592d-e43a-4e28-af6f-4bc57c5a11e8}|
+|         32   Microsoft-Windows-USB-UCX 70              0               {36da592d-e43a-4e28-af6f-4bc57c5a11e8}|
+|          1   Microsoft-Windows-USB-USBHUB3 1               0               {ac52ad17-cc01-4f85-8df5-4dce4333c99b}|
+|          1   Microsoft-Windows-USB-USBHUB3 2               0               {ac52ad17-cc01-4f85-8df5-4dce4333c99b}|
+|          2   Microsoft-Windows-USB-USBHUB3 5               0               {ac52ad17-cc01-4f85-8df5-4dce4333c99b}|
+|          4   Microsoft-Windows-USB-USBHUB3 6               2               {ac52ad17-cc01-4f85-8df5-4dce4333c99b}|
+|         18   Microsoft-Windows-USB-USBHUB3 7               2               {ac52ad17-cc01-4f85-8df5-4dce4333c99b}|
+|         12   Microsoft-Windows-USB-USBHUB3 8               2               {ac52ad17-cc01-4f85-8df5-4dce4333c99b}|
+|         30   Microsoft-Windows-USB-USBHUB3 9               1               {ac52ad17-cc01-4f85-8df5-4dce4333c99b}|
+|         17   Microsoft-Windows-USB-USBHUB3 10              0               {ac52ad17-cc01-4f85-8df5-4dce4333c99b}|
+|          5   Microsoft-Windows-USB-USBHUB3 41              0               {ac52ad17-cc01-4f85-8df5-4dce4333c99b}|
+|          5   Microsoft-Windows-USB-USBHUB3 42              0               {ac52ad17-cc01-4f85-8df5-4dce4333c99b}|
+|          5   Microsoft-Windows-USB-USBHUB3 43              2               {ac52ad17-cc01-4f85-8df5-4dce4333c99b}|
+|          5   Microsoft-Windows-USB-USBHUB3 49              0               {ac52ad17-cc01-4f85-8df5-4dce4333c99b}|
+|          5   Microsoft-Windows-USB-USBHUB3 50              0               {ac52ad17-cc01-4f85-8df5-4dce4333c99b}|
+|          8   Microsoft-Windows-USB-USBHUB3 51              0               {ac52ad17-cc01-4f85-8df5-4dce4333c99b}|
+|          8   Microsoft-Windows-USB-USBHUB3 52              0               {ac52ad17-cc01-4f85-8df5-4dce4333c99b}|
+|          8   Microsoft-Windows-USB-USBHUB3 53              0               {ac52ad17-cc01-4f85-8df5-4dce4333c99b}|
+|          8   Microsoft-Windows-USB-USBHUB3 54              0               {ac52ad17-cc01-4f85-8df5-4dce4333c99b}|
+|          5   Microsoft-Windows-USB-USBHUB3 55              0               {ac52ad17-cc01-4f85-8df5-4dce4333c99b}|
+|          5   Microsoft-Windows-USB-USBHUB3 56              0               {ac52ad17-cc01-4f85-8df5-4dce4333c99b}|
+|          5   Microsoft-Windows-USB-USBHUB3 57              0               {ac52ad17-cc01-4f85-8df5-4dce4333c99b}|
+|          5   Microsoft-Windows-USB-USBHUB3 58              0               {ac52ad17-cc01-4f85-8df5-4dce4333c99b}|
+|          5   Microsoft-Windows-USB-USBHUB3 60              0               {ac52ad17-cc01-4f85-8df5-4dce4333c99b}|
+|          5   Microsoft-Windows-USB-USBHUB3 61              0               {ac52ad17-cc01-4f85-8df5-4dce4333c99b}|
+|         43   Microsoft-Windows-USB-USBHUB3 90              0               {ac52ad17-cc01-4f85-8df5-4dce4333c99b}|
+|         43   Microsoft-Windows-USB-USBHUB3 91              0               {ac52ad17-cc01-4f85-8df5-4dce4333c99b}|
+|         25   Microsoft-Windows-USB-USBHUB3 92              0               {ac52ad17-cc01-4f85-8df5-4dce4333c99b}|
+|         25   Microsoft-Windows-USB-USBHUB3 93              0               {ac52ad17-cc01-4f85-8df5-4dce4333c99b}|
+|         40   Microsoft-Windows-USB-USBHUB3 100             0               {ac52ad17-cc01-4f85-8df5-4dce4333c99b}|
+|       1471   Microsoft-Windows-USB-USBHUB3 110             0               {ac52ad17-cc01-4f85-8df5-4dce4333c99b}|
+|          6   Microsoft-Windows-USB-USBHUB3 123             1               {ac52ad17-cc01-4f85-8df5-4dce4333c99b}|
+|          1   Microsoft-Windows-USB-USBHUB3 132             0               {ac52ad17-cc01-4f85-8df5-4dce4333c99b}|
+|         36   Microsoft-Windows-USB-USBHUB3 142             0               {ac52ad17-cc01-4f85-8df5-4dce4333c99b}|
+|          5   Microsoft-Windows-USB-USBHUB3 143             0               {ac52ad17-cc01-4f85-8df5-4dce4333c99b}|
+|         64   Microsoft-Windows-USB-USBHUB3 146             0               {ac52ad17-cc01-4f85-8df5-4dce4333c99b}|
+|         64   Microsoft-Windows-USB-USBHUB3 147             0               {ac52ad17-cc01-4f85-8df5-4dce4333c99b}|
+|          1   Microsoft-Windows-USB-USBHUB3 165             0               {ac52ad17-cc01-4f85-8df5-4dce4333c99b}|
+|         15   Microsoft-Windows-USB-USBHUB3 180             0               {ac52ad17-cc01-4f85-8df5-4dce4333c99b}|
++---------------------------------------------------------------------------------------------------------+

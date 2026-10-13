@@ -1,0 +1,83 @@
+{
+  "firmware_sha256": "e0a959a63dceada1f5fad6846451372271e266ec176cfd25bb322a69199b5457",
+  "checksum": "0699",
+  "payload_bytes": 55296,
+  "exported_instructions": 13059,
+  "exported_functions": 316,
+  "instruction_byte_mismatches": [],
+  "changed_bytes": 186,
+  "all_differences_in_declared_regions": true,
+  "hooks": [
+    {
+      "address": "CODE:07c4",
+      "length": 3,
+      "text": "LJMP 0x8a00",
+      "bytes": "028a00",
+      "flow_type": "UNCONDITIONAL_JUMP",
+      "references": [
+        {
+          "to": "CODE:8a00",
+          "type": "UNCONDITIONAL_JUMP"
+        }
+      ]
+    },
+    {
+      "address": "CODE:35e6",
+      "length": 3,
+      "text": "LCALL 0x8a23",
+      "bytes": "128a23",
+      "flow_type": "UNCONDITIONAL_CALL",
+      "references": [
+        {
+          "to": "CODE:8a23",
+          "type": "UNCONDITIONAL_CALL"
+        }
+      ]
+    },
+    {
+      "address": "CODE:4283",
+      "length": 3,
+      "text": "LCALL 0x8a46",
+      "bytes": "128a46",
+      "flow_type": "UNCONDITIONAL_CALL",
+      "references": [
+        {
+          "to": "CODE:8a46",
+          "type": "UNCONDITIONAL_CALL"
+        }
+      ]
+    },
+    {
+      "address": "CODE:330a",
+      "length": 3,
+      "text": "LCALL 0x8a55",
+      "bytes": "128a55",
+      "flow_type": "UNCONDITIONAL_CALL",
+      "references": [
+        {
+          "to": "CODE:8a55",
+          "type": "UNCONDITIONAL_CALL"
+        }
+      ]
+    },
+    {
+      "address": "CODE:8aa3",
+      "length": 3,
+      "text": "LJMP 0xf455",
+      "bytes": "02f455",
+      "flow_type": "CALL_TERMINATOR",
+      "references": [
+        {
+          "to": "CODE:f455",
+          "type": "UNCONDITIONAL_CALL"
+        }
+      ]
+    }
+  ],
+  "method": "direct Ghidra 8051 static export and exact byte comparison; no target execution or physical reset model",
+  "limits": [
+    "raw CODE mapping assumed",
+    "autoanalysis may have code/data and control-flow coverage limits",
+    "no hardware validation"
+  ]
+}

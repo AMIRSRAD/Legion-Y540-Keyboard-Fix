@@ -1,0 +1,41 @@
+{
+  "baseline_git_commit": "9904e54eb613679c96de074f3b4abb0b6c4e34ae",
+  "files": [
+    {
+      "path": "src/app.c",
+      "sha256": "ebd62241510dcd7259619ba51a9b2b6659ca878436ece3e0ccc1b5f38b4259c2"
+    },
+    {
+      "path": "src/app.rc",
+      "sha256": "457fae2f5a338a590ea8f2691a63e6b0f4446baa97b545e836506533febecad7"
+    },
+    {
+      "path": "src/core.c",
+      "sha256": "793fc0ccb0f8311b0e14f1de29b0ee2142b8c950e683a097d59a3442526670d7"
+    },
+    {
+      "path": "src/core.h",
+      "sha256": "aa5a7f56248a4fd5cf56cfc3d014f0ba03d0345640f91e06acfa9509c6ffbbfd"
+    },
+    {
+      "path": "src/core_tests.c",
+      "sha256": "2a5fb9418fbf387da218b9d6d0151219e7a689cf1d21a1d0e64452d76291ea03"
+    },
+    {
+      "path": "src/hid_transport.c",
+      "sha256": "b62572455f407bbe4ad5dd4d5bc0a08dff7d8460f8e875d88467fe432e194258"
+    },
+    {
+      "path": "src/hid_transport.h",
+      "sha256": "d13c684bdafd6655ea0ddbfb11a797ab3bcc86bd66ebff359667eaf0034b0b6d"
+    },
+    {
+      "path": "src/protocol.c",
+      "sha256": "944ad2241353c32ac909ba33d307ab0381da77222fcb85787746dcda2bbf1fb8"
+    },
+    {
+      "path": "src/protocol.h",
+      "sha256": "e3385c665db71a6abe22d548462614032cc32420702c3bfdcb390aaaafd6bf57"
+    }
+  ]
+}

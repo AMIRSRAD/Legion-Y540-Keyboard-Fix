@@ -1,0 +1,17 @@
+{
+  "35-to-45": {
+    "bios45_table_count": 38,
+    "byte_identical_count": 36,
+    "different_bios45_tables": [
+      "SSDT-NvdPegTb-cb8159e0.aml",
+      "DSDT-SKL_____-63ad8207.aml"
+    ]
+  },
+  "36-to-45": {
+    "bios45_table_count": 38,
+    "byte_identical_count": 37,
+    "different_bios45_tables": [
+      "DSDT-SKL_____-63ad8207.aml"
+    ]
+  }
+}

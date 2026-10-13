@@ -1,0 +1,964 @@
+{
+  "ite1fw11s.exe": {
+    "size": 2835096,
+    "sha256": "e5863dcd12c40afb98bd5577c3c9631f8f5f78868bc1b1125355f34637f31834",
+    "header_hex": "4d5a50000200000004000f00ffff0000b80000000000000040001a00000000000000000000000000000000000000000000000000000000000000000000010000",
+    "machine": "0x14c",
+    "sections": [
+      {
+        "name": ".text",
+        "virtual_size": 146080,
+        "raw_size": 146432,
+        "offset": 1024
+      },
+      {
+        "name": ".itext",
+        "virtual_size": 4968,
+        "raw_size": 5120,
+        "offset": 147456
+      },
+      {
+        "name": ".data",
+        "virtual_size": 5672,
+        "raw_size": 6144,
+        "offset": 152576
+      },
+      {
+        "name": ".bss",
+        "virtual_size": 24920,
+        "raw_size": 0,
+        "offset": 0
+      },
+      {
+        "name": ".idata",
+        "virtual_size": 1608,
+        "raw_size": 2048,
+        "offset": 158720
+      },
+      {
+        "name": ".didata",
+        "virtual_size": 3646,
+        "raw_size": 4096,
+        "offset": 160768
+      },
+      {
+        "name": ".edata",
+        "virtual_size": 113,
+        "raw_size": 512,
+        "offset": 164864
+      },
+      {
+        "name": ".tls",
+        "virtual_size": 20,
+        "raw_size": 0,
+        "offset": 0
+      },
+      {
+        "name": ".rdata",
+        "virtual_size": 93,
+        "raw_size": 512,
+        "offset": 165376
+      },
+      {
+        "name": ".rsrc",
+        "virtual_size": 14336,
+        "raw_size": 14336,
+        "offset": 165888
+      }
+    ],
+    "overlay_size": 2654872,
+    "relevant_strings": [
+      {
+        "offset": "0x1e73e",
+        "text": "TSetupVersionData"
+      },
+      {
+        "offset": "0x1e766",
+        "text": "WinVersion"
+      },
+      {
+        "offset": "0x1e77c",
+        "text": "NTVersion"
+      },
+      {
+        "offset": "0x1ec9b",
+        "text": "AppVersion"
+      },
+      {
+        "offset": "0x1f0e3",
+        "text": "MinVersion"
+      },
+      {
+        "offset": "0x1f0f9",
+        "text": "OnlyBelowVersion"
+      },
+      {
+        "offset": "0x26f4c",
+        "text": "GetVersion"
+      },
+      {
+        "offset": "0x27c98",
+        "text": "version.dll"
+      },
+      {
+        "offset": "0x27cb8",
+        "text": "GetFileVersionInfoSizeW"
+      },
+      {
+        "offset": "0x27cd2",
+        "text": "GetFileVersionInfoW"
+      },
+      {
+        "offset": "0x27d72",
+        "text": "VerifyVersionInfoW"
+      },
+      {
+        "offset": "0x27e6e",
+        "text": "GetVersionExW"
+      },
+      {
+        "offset": "0x27e7e",
+        "text": "GetVersion"
+      },
+      {
+        "offset": "0x28618",
+        "text": "Embarcadero Delphi for Win32 compiler version 33.0 (26.0.33219.4899)"
+      },
+      {
+        "offset": "0x2b470",
+        "text": "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?>"
+      },
+      {
+        "offset": "0x2b4a9",
+        "text": "<assembly xmlns=\"urn:schemas-microsoft-com:asm.v1\" manifestVersion=\"1.0\">"
+      },
+      {
+        "offset": "0x2b542",
+        "text": "    version=\"1.0.0.0\""
+      },
+      {
+        "offset": "0x2b5b4",
+        "text": "<file name=\"version.dll\"  loadFrom=\"%SystemRoot%\\System32\\\" />"
+      },
+      {
+        "offset": "0x32f8e",
+        "text": "s9zHID<"
+      }
+    ]
+  },
+  "extracted-IT\\44.bin": {
+    "size": 55296,
+    "sha256": "3afec131c6ed70efa0a3f4b601cb799011a582835d371c57fef68af48519e359",
+    "header_hex": "020100023200ffffffffff023300ffffffffff023400ffffffffff023500ffffffffff023600ffffffffff023700ffffffffffffffffffffffffffffffffffff",
+    "entropy": 5.053761995060756,
+    "strings": [
+      {
+        "offset": "0x4e",
+        "text": "UUIT817x-Dock-v1.0"
+      },
+      {
+        "offset": "0x2e0",
+        "text": "IT891x-BBK-56-32-v1.01.01"
+      },
+      {
+        "offset": "0x4c7",
+        "text": "7\"\"\"\"\"\"\"\"\"\"\"\""
+      },
+      {
+        "offset": "0x4e5",
+        "text": "\"\"\"\"\"\"\"\"\"\""
+      },
+      {
+        "offset": "0x510",
+        "text": "\"\"\"\"\"\"\"\"\"\"\"\"\"\""
+      },
+      {
+        "offset": "0x57b",
+        "text": "\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\""
+      },
+      {
+        "offset": "0x1c0a",
+        "text": " Ib J_"
+      },
+      {
+        "offset": "0x1ca7",
+        "text": " Ia J^"
+      },
+      {
+        "offset": "0x1dd2",
+        "text": "V L1 I.0J"
+      },
+      {
+        "offset": "0x2375",
+        "text": "]N`GxL|"
+      },
+      {
+        "offset": "0x24cf",
+        "text": "]NpxxL|"
+      },
+      {
+        "offset": "0x2737",
+        "text": "/'iJ'lZ'oi'rk'ul'xp'{q'~r'"
+      },
+      {
+        "offset": "0x3100",
+        "text": "Firmware Version : 00000044"
+      },
+      {
+        "offset": "0x36fb",
+        "text": "\"\"\"\"\"2"
+      },
+      {
+        "offset": "0x3f66",
+        "text": "aT`d `"
+      },
+      {
+        "offset": "0x5282",
+        "text": "><:;EhCA?=+5gi"
+      },
+      {
+        "offset": "0x52ef",
+        "text": "bcZ]^`)SDW[VUaG"
+      },
+      {
+        "offset": "0x5419",
+        "text": "ITE Tech. Inc."
+      },
+      {
+        "offset": "0x55b3",
+        "text": "/@/A/t/p/D/E/"
+      },
+      {
+        "offset": "0x7d8c",
+        "text": "0}!0}%0})0}-0}10}50}90}=0}A0}E0}I0}M0}Q0}U0}Y }] }_ }a }c }e }g }i }k }m }o }q }s }u }w }y }{ }} }"
+      },
+      {
+        "offset": "0x826e",
+        "text": "`V$Epr"
+      }
+    ],
+    "version_bytes_at_3100": "4669726d776172652056657273696f6e203a2030303030303034340000000000",
+    "sum16_0400_d800_exclusive": "0x549c",
+    "zero_bytes": 1954,
+    "ff_bytes": 20793
+  },
+  "extracted-IT\\ITESHFU.exe": {
+    "size": 11485623,
+    "sha256": "afcca3de209ccfab256aff48b8f7f59dfb6cd6a27b22fc58a41b50f0bd8bb8fa",
+    "header_hex": "4d5a50000200000004000f00ffff0000b80000000000000040001a00000000000000000000000000000000000000000000000000000000000000000000020000",
+    "machine": "0x8664",
+    "sections": [
+      {
+        "name": ".text",
+        "virtual_size": 3007472,
+        "raw_size": 3007488,
+        "offset": 2048
+      },
+      {
+        "name": ".rodata",
+        "virtual_size": 1886496,
+        "raw_size": 1886720,
+        "offset": 3009536
+      },
+      {
+        "name": ".data",
+        "virtual_size": 335428,
+        "raw_size": 122368,
+        "offset": 4896256
+      },
+      {
+        "name": ".tls",
+        "virtual_size": 912,
+        "raw_size": 1024,
+        "offset": 5018624
+      },
+      {
+        "name": ".pdata",
+        "virtual_size": 1280508,
+        "raw_size": 1280512,
+        "offset": 5019648
+      },
+      {
+        "name": ".xdata",
+        "virtual_size": 438960,
+        "raw_size": 439296,
+        "offset": 6300160
+      },
+      {
+        "name": "/35",
+        "virtual_size": 39370,
+        "raw_size": 39424,
+        "offset": 6739456
+      },
+      {
+        "name": "/51",
+        "virtual_size": 819641,
+        "raw_size": 819712,
+        "offset": 6778880
+      },
+      {
+        "name": "/63",
+        "virtual_size": 8497,
+        "raw_size": 8704,
+        "offset": 7598592
+      },
+      {
+        "name": "/77",
+        "virtual_size": 21439,
+        "raw_size": 21504,
+        "offset": 7607296
+      },
+      {
+        "name": "/89",
+        "virtual_size": 967578,
+        "raw_size": 967680,
+        "offset": 7628800
+      },
+      {
+        "name": "/111",
+        "virtual_size": 11184,
+        "raw_size": 11264,
+        "offset": 8596480
+      },
+      {
+        "name": ".rdata",
+        "virtual_size": 40,
+        "raw_size": 512,
+        "offset": 8607744
+      },
+      {
+        "name": ".idata",
+        "virtual_size": 20820,
+        "raw_size": 20992,
+        "offset": 8608256
+      },
+      {
+        "name": ".didata",
+        "virtual_size": 2923,
+        "raw_size": 3072,
+        "offset": 8629248
+      },
+      {
+        "name": ".edata",
+        "virtual_size": 118,
+        "raw_size": 512,
+        "offset": 8632320
+      },
+      {
+        "name": ".rsrc",
+        "virtual_size": 867840,
+        "raw_size": 867840,
+        "offset": 8632832
+      },
+      {
+        "name": ".reloc",
+        "virtual_size": 220680,
+        "raw_size": 221184,
+        "offset": 9500672
+      }
+    ],
+    "overlay_size": 1763767,
+    "relevant_strings": [
+      {
+        "offset": "0x2dee60",
+        "text": "USBVID_048D&PID_8350"
+      },
+      {
+        "offset": "0x2dee75",
+        "text": "USBVID_048D&PID_83DB"
+      },
+      {
+        "offset": "0x2dee8a",
+        "text": "ITE SHFU"
+      },
+      {
+        "offset": "0x2dee94",
+        "text": "ITESHFUlog"
+      },
+      {
+        "offset": "0x2deeb3",
+        "text": "ITESHFUlog.txt"
+      },
+      {
+        "offset": "0x2def53",
+        "text": " ITE HID Device."
+      },
+      {
+        "offset": "0x2def64",
+        "text": "failed HidD_SetFeature - "
+      },
+      {
+        "offset": "0x2def7e",
+        "text": "failed HidD_GetFeature - "
+      },
+      {
+        "offset": "0x2def98",
+        "text": "ITE Tech. Inc."
+      },
+      {
+        "offset": "0x2defb4",
+        "text": "Checksum0: %d(%Xh)"
+      },
+      {
+        "offset": "0x2defc7",
+        "text": "Checksum1: %d(%Xh)"
+      },
+      {
+        "offset": "0x2defdb",
+        "text": "CheckSum:"
+      },
+      {
+        "offset": "0x2deff2",
+        "text": "SOFTWARE\\ITE\\SHFU"
+      },
+      {
+        "offset": "0x2df016",
+        "text": "Old Version: %s"
+      },
+      {
+        "offset": "0x2df026",
+        "text": "New Version: %s"
+      },
+      {
+        "offset": "0x2df08f",
+        "text": "flashbin.000"
+      },
+      {
+        "offset": "0x2df0b9",
+        "text": "Compare Fail. => erase flash"
+      },
+      {
+        "offset": "0x2df0f0",
+        "text": "New OEM Version: %s"
+      },
+      {
+        "offset": "0x2df105",
+        "text": "Old OEM Version: %s"
+      },
+      {
+        "offset": "0x2df11a",
+        "text": "Old OEM Version: "
+      },
+      {
+        "offset": "0x2df15e",
+        "text": "Current firmware version: "
+      },
+      {
+        "offset": "0x2df181",
+        "text": "New Firmware Version: %s"
+      },
+      {
+        "offset": "0x2df19b",
+        "text": "Checksum Error."
+      },
+      {
+        "offset": "0x2df1c7",
+        "text": "Enter Flash Mode."
+      },
+      {
+        "offset": "0x2df1f5",
+        "text": "Exit Flash Mode."
+      },
+      {
+        "offset": "0x2df27f",
+        "text": "Firmware update is completed and reinsert a new device."
+      },
+      {
+        "offset": "0x2df2b7",
+        "text": "Firmware update is completed and soon close menu."
+      },
+      {
+        "offset": "0x2df2e9",
+        "text": "SHFU.ini"
+      },
+      {
+        "offset": "0x2df314",
+        "text": "Write Data to eFlash"
+      },
+      {
+        "offset": "0x2df39d",
+        "text": "Save Data to eFlash"
+      },
+      {
+        "offset": "0x2df3b1",
+        "text": "Read Data from eFlash"
+      },
+      {
+        "offset": "0x2df3c7",
+        "text": "Firmware update completed!"
+      },
+      {
+        "offset": "0x2df3e2",
+        "text": "Firmware update is completed and soon close menu. Thanks!"
+      },
+      {
+        "offset": "0x2df449",
+        "text": "CHECKSUMMODE"
+      },
+      {
+        "offset": "0x2df4a0",
+        "text": "/READFWVERSION"
+      },
+      {
+        "offset": "0x2df4b4",
+        "text": "CHECKVERSION"
+      },
+      {
+        "offset": "0x2df4cd",
+        "text": "DONOTUPDATETHESAMEVERSION"
+      },
+      {
+        "offset": "0x2df551",
+        "text": "WRITEFLASHDATADELAY"
+      },
+      {
+        "offset": "0x2df589",
+        "text": "ALLHIDCOMMANDDELAY"
+      },
+      {
+        "offset": "0x2df5a5",
+        "text": "NEWVERSION"
+      },
+      {
+        "offset": "0x2df5cf",
+        "text": "BOOTDEVICEUPID"
+      },
+      {
+        "offset": "0x2df5de",
+        "text": "BOOTDEVICEUID"
+      },
+      {
+        "offset": "0x2df5ec",
+        "text": "BOOTDEVICECHIPID"
+      },
+      {
+        "offset": "0x2df635",
+        "text": "CHECKSUMSTARTADDRESS"
+      },
+      {
+        "offset": "0x2df64a",
+        "text": "CHECKSUMENDADDRESS"
+      },
+      {
+        "offset": "0x2df65d",
+        "text": "CHECKSUMVALUEHIGHADDRESS"
+      },
+      {
+        "offset": "0x2df676",
+        "text": "CHECKSUMVALUELOWADDRESS"
+      },
+      {
+        "offset": "0x2df68e",
+        "text": "CHECKSUMINVERT"
+      },
+      {
+        "offset": "0x2df69d",
+        "text": "CHECKSUMLASTBYTESBEFF"
+      },
+      {
+        "offset": "0x2df7d6",
+        "text": "-CHECKSUMMODE:"
+      },
+      {
+        "offset": "0x2df80a",
+        "text": "Only Read FW version and exit.(not get bin file)"
+      },
+      {
+        "offset": "0x2df871",
+        "text": "##Checksum Error##"
+      },
+      {
+        "offset": "0x2e139e",
+        "text": "tfHidePrefix"
+      },
+      {
+        "offset": "0x2ed7d8",
+        "text": "HideTimeout"
+      },
+      {
+        "offset": "0x2edbc3",
+        "text": "HideDragImage"
+      },
+      {
+        "offset": "0x2ee55c",
+        "text": "HideDragImage"
+      },
+      {
+        "offset": "0x2f00ff",
+        "text": "csDesignerHide"
+      },
+      {
+        "offset": "0x2fa5fe",
+        "text": "ShouldHideHint"
+      },
+      {
+        "offset": "0x2fad5b",
+        "text": "HideDragImage"
+      },
+      {
+        "offset": "0x2fbe88",
+        "text": "FVersion"
+      },
+      {
+        "offset": "0x2fe005",
+        "text": "FHideHint"
+      },
+      {
+        "offset": "0x2fe0a0",
+        "text": "TCustomHintShowHideThread\\"
+      },
+      {
+        "offset": "0x2fe1bc",
+        "text": "HideHint"
+      },
+      {
+        "offset": "0x2fe1fa",
+        "text": "TCustomHintShowHideThread"
+      },
+      {
+        "offset": "0x2fe4b3",
+        "text": "FHideAfter"
+      },
+      {
+        "offset": "0x2fe722",
+        "text": "HideHint"
+      },
+      {
+        "offset": "0x2fe756",
+        "text": "HideHint"
+      },
+      {
+        "offset": "0x2fe789",
+        "text": "HidingControl"
+      },
+      {
+        "offset": "0x2fe992",
+        "text": "HideAfter"
+      },
+      {
+        "offset": "0x301bd6",
+        "text": "FHideSelection"
+      },
+      {
+        "offset": "0x302cd8",
+        "text": "HideSelection@"
+      },
+      {
+        "offset": "0x30460b",
+        "text": "HideSelection@"
+      },
+      {
+        "offset": "0x326aaf",
+        "text": "FHideSelection"
+      },
+      {
+        "offset": "0x32857e",
+        "text": "HideSelection"
+      },
+      {
+        "offset": "0x32cc2b",
+        "text": "TConversion2"
+      },
+      {
+        "offset": "0x32cd6a",
+        "text": "TConversion"
+      },
+      {
+        "offset": "0x32cdaa",
+        "text": "TConversionClass`"
+      },
+      {
+        "offset": "0x32cdda",
+        "text": "TConversionFormat"
+      },
+      {
+        "offset": "0x32ce1a",
+        "text": "ConversionClass"
+      },
+      {
+        "offset": "0x32d1e2",
+        "text": "FHideScrollBars"
+      },
+      {
+        "offset": "0x32d2ee",
+        "text": "FHideSelection"
+      },
+      {
+        "offset": "0x32d676",
+        "text": "RegisterConversionFormat"
+      },
+      {
+        "offset": "0x32d6d1",
+        "text": "AConversionClass"
+      },
+      {
+        "offset": "0x32e0e8",
+        "text": "HideSelection"
+      },
+      {
+        "offset": "0x32e120",
+        "text": "HideScrollBars@"
+      },
+      {
+        "offset": "0x3314d5",
+        "text": "lgsHidden"
+      },
+      {
+        "offset": "0x33664e",
+        "text": "FHideSelection"
+      },
+      {
+        "offset": "0x338764",
+        "text": "HideSelection"
+      },
+      {
+        "offset": "0x33c7a8",
+        "text": "FHideClippedButtons"
+      },
+      {
+        "offset": "0x33d153",
+        "text": "HideClippedButtons"
+      },
+      {
+        "offset": "0x34bf6f",
+        "text": "EPlatformVersionException"
+      },
+      {
+        "offset": "0x34bf9a",
+        "text": "EPlatformVersionExceptionX"
+      },
+      {
+        "offset": "0x34c104",
+        "text": "fdoHideMRUPlaces"
+      },
+      {
+        "offset": "0x34c115",
+        "text": "fdoHidePinnedPlaces"
+      },
+      {
+        "offset": "0x34c152",
+        "text": "fdoForceShowHidden"
+      },
+      {
+        "offset": "0x361f1d",
+        "text": "ttbFlashButton"
+      },
+      {
+        "offset": "0x361f2c",
+        "text": "ttpFlashButtonGroupMenu"
+      },
+      {
+        "offset": "0x364de1",
+        "text": "Version"
+      },
+      {
+        "offset": "0x3b030d",
+        "text": "FOnHide"
+      },
+      {
+        "offset": "0x3b2f3c",
+        "text": "OnHide"
+      },
+      {
+        "offset": "0x3b576d",
+        "text": "tmHide"
+      },
+      {
+        "offset": "0x3b6236",
+        "text": "FHintHidePause"
+      },
+      {
+        "offset": "0x3b70b6",
+        "text": "HideHint"
+      },
+      {
+        "offset": "0x3b7d1b",
+        "text": "HintHidePause"
+      },
+      {
+        "offset": "0x3ccf95",
+        "text": "FHiddenItems"
+      },
+      {
+        "offset": "0x3d34ed",
+        "text": "bsHidden"
+      },
+      {
+        "offset": "0x3e0dd3",
+        "text": "FVersion"
+      },
+      {
+        "offset": "0x3e14e1",
+        "text": "Version"
+      },
+      {
+        "offset": "0x405794",
+        "text": "ofHideReadOnly"
+      },
+      {
+        "offset": "0x4058d0",
+        "text": "ofForceShowHidden"
+      },
+      {
+        "offset": "0x405dff",
+        "text": "caHide"
+      },
+      {
+        "offset": "0x406f15",
+        "text": "dmSpecVersion"
+      },
+      {
+        "offset": "0x406f36",
+        "text": "dmDriverVersion"
+      },
+      {
+        "offset": "0x44400c",
+        "text": "Version"
+      },
+      {
+        "offset": "0x4a0af0",
+        "text": "incompatible version"
+      },
+      {
+        "offset": "0x4a61a1",
+        "text": "uVersion"
+      },
+      {
+        "offset": "0x4bcd60",
+        "text": "incompatible version"
+      },
+      {
+        "offset": "0x66fb34",
+        "text": "TCustomHintShowHideThread"
+      },
+      {
+        "offset": "0x672cf3",
+        "text": "TCustomHintShowHideThread"
+      },
+      {
+        "offset": "0x674cf4",
+        "text": "_HIDP_CAPS"
+      },
+      {
+        "offset": "0x675400",
+        "text": "_HIDD_ATTRIBUTES"
+      },
+      {
+        "offset": "0x675425",
+        "text": "_HIDMINI_CONTROL_INFO3"
+      },
+      {
+        "offset": "0x67653d",
+        "text": "TCustomHintShowHideThread"
+      },
+      {
+        "offset": "0x74141b",
+        "text": "E:\\ITESensorHubFirmwareUpdate_new_v3.1.6_x64_NewBCB"
+      },
+      {
+        "offset": "0x742309",
+        "text": "E:\\ITESensorHubFirmwareUpdate_new_v3.1.6_x64_NewBCB"
+      },
+      {
+        "offset": "0x74248f",
+        "text": "ITESensorHubFirmwareUpdate.cpp"
+      },
+      {
+        "offset": "0x742e39",
+        "text": "E:\\ITESensorHubFirmwareUpdate_new_v3.1.6_x64_NewBCB"
+      },
+      {
+        "offset": "0x74348c",
+        "text": "hidsdi.h"
+      },
+      {
+        "offset": "0x7434ad",
+        "text": "hidpi.h"
+      },
+      {
+        "offset": "0x746800",
+        "text": "Embarcadero Technologies Inc. clang version 3.3.1 (36355.e71d049.f8c4cf9) (based on LLVM 3.3.1)"
+      },
+      {
+        "offset": "0x746872",
+        "text": "E:\\ITESensorHubFirmwareUpdate_new_v3.1.6_x64_NewBCB"
+      },
+      {
+        "offset": "0x7683e7",
+        "text": "tfHidePrefix"
+      },
+      {
+        "offset": "0x76f1cd",
+        "text": "_ZN3Vcl8Controls14TDragImageList13HideDragImageEv"
+      },
+      {
+        "offset": "0x76f1ff",
+        "text": "HideDragImage"
+      },
+      {
+        "offset": "0x76f55a",
+        "text": "_ZN3Vcl8Controls11TDragObject13HideDragImageEv"
+      },
+      {
+        "offset": "0x77668e",
+        "text": "csDesignerHide"
+      },
+      {
+        "offset": "0x77fe20",
+        "text": "FHideHint"
+      },
+      {
+        "offset": "0x780b37",
+        "text": "_ZN3Vcl8Controls25TCustomHintShowHideThread13QueHintWindowEPNS0_17TCustomHintWindowE"
+      },
+      {
+        "offset": "0x7810d8",
+        "text": "TCustomHintShowHideThread"
+      },
+      {
+        "offset": "0x7810f2",
+        "text": "~TCustomHintShowHideThread"
+      },
+      {
+        "offset": "0x78110d",
+        "text": "_ZN3Vcl8Controls25TCustomHintShowHideThread10ResumeWorkEv"
+      },
+      {
+        "offset": "0x781152",
+        "text": "_ZN3Vcl8Controls25TCustomHintShowHideThread7ExecuteEv"
+      },
+      {
+        "offset": "0x781188",
+        "text": "_ZN3Vcl8Controls25TCustomHintShowHideThread8HideHintEv"
+      },
+      {
+        "offset": "0x7811bf",
+        "text": "HideHint"
+      },
+      {
+        "offset": "0x7811c8",
+        "text": "_ZN3Vcl8Controls25TCustomHintShowHideThreadaSERKS1_"
+      },
+      {
+        "offset": "0x78120d",
+        "text": "FHideAfter"
+      },
+      {
+        "offset": "0x781410",
+        "text": "_ZN3Vcl8Controls11TCustomHint8HideHintEv"
+      },
+      {
+        "offset": "0x781439",
+        "text": "_ZN3Vcl8Controls11TCustomHint8HideHintEPNS0_8TControlE"
+      },
+      {
+        "offset": "0x7815aa",
+        "text": "HideAfter"
+      },
+      {
+        "offset": "0x7838a7",
+        "text": "HideTimeout"
+      }
+    ]
+  }
+}

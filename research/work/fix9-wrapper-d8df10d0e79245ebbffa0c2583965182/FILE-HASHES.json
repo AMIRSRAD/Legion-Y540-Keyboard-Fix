@@ -1,0 +1,42 @@
+{
+  "44-nosleep-exp1.bin": {
+    "bytes": 55296,
+    "sha256": "2b34b6d59db8443831a7e0387ae65970307f516e816dd481f1ba513d3f9de773"
+  },
+  "44-recovery-exp3.bin": {
+    "bytes": 55296,
+    "sha256": "e0a959a63dceada1f5fad6846451372271e266ec176cfd25bb322a69199b5457"
+  },
+  "CAPTURE-STATE.cmd": {
+    "bytes": 115,
+    "sha256": "9878ce50bdd8e591434ae1c84b4742f32a3dde1260b85202f7016515fd4ec64a"
+  },
+  "CAPTURE-STATE.ps1": {
+    "bytes": 1563,
+    "sha256": "baa6934567b90d9771c4f84a94c7ee27b73505eecef946276ade3c106085b699"
+  },
+  "FIX9.ps1": {
+    "bytes": 5545,
+    "sha256": "7b846408cf4bbbedfa9357b60cb6c34df4aab014da9145dab5c33dd4e5e438c6"
+  },
+  "patch-manifest.json": {
+    "bytes": 16564,
+    "sha256": "9ff1b9519fbdf9510d715e1061180aab8b54277d48c7942e92b4540a952b422c"
+  },
+  "RUN-FIX9.cmd": {
+    "bytes": 106,
+    "sha256": "cb75030d6a2c0765da5c81bb465b98813c9acf90480ea59619eb044cb4c82bcc"
+  },
+  "SHFU.ini": {
+    "bytes": 890,
+    "sha256": "87d8a39d9cb1a107c0d24b5a929d46051c54a089c8042e6b044c02d2ffefb64a"
+  },
+  "START-HERE.md": {
+    "bytes": 3740,
+    "sha256": "134181c5bc5a5de6205c43d7e145c73b0785bc8611bb7aa6c80c41d69c46085f"
+  },
+  "Y540Updater.exe": {
+    "bytes": 205697,
+    "sha256": "ad55ea79961d9beb6b10ca87842ef537723e6b8a319c34d6c8914d4b9d3b49c9"
+  }
+}

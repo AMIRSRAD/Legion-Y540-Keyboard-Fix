@@ -1,0 +1,2347 @@
+{
+  "schema": "y540-case-comparison-v1",
+  "scope": "Offline JSON and file inventory only; no hardware or installer execution",
+  "sources": {
+    "failed": {
+      "filename": "Y540-keyboard-failed-20260801-172338.json",
+      "sha256": "798252D8E2272A4AADC0175997A626407D6C70B15CA78FB599A2E35619AF99BF",
+      "capture": {
+        "State": "failed",
+        "CapturedAt": "2026-08-01T17:26:18.3523991+03:30",
+        "ComputerName": "SALAR-LEGION"
+      },
+      "device_count": 112,
+      "all_devices_parsed": true
+    },
+    "working": {
+      "filename": "Y540-keyboard-working-20260801-172838.json",
+      "sha256": "74B575954E1B884A273F641CB8DF226122591A3484803FBBC93166E04B04F744",
+      "capture": {
+        "State": "working",
+        "CapturedAt": "2026-08-01T17:31:36.1803385+03:30",
+        "ComputerName": "SALAR-LEGION"
+      },
+      "device_count": 122,
+      "all_devices_parsed": true
+    }
+  },
+  "system_sections": {
+    "Computer": {
+      "equal": true,
+      "working": {
+        "Manufacturer": "LENOVO",
+        "Model": "81SX",
+        "SystemFamily": "Legion Y540-15IRH",
+        "SystemSKUNumber": "LENOVO_MT_81SX_BU_idea_FM_Legion Y540-15IRH",
+        "SystemType": "x64-based PC"
+      },
+      "failed": {
+        "Manufacturer": "LENOVO",
+        "Model": "81SX",
+        "SystemFamily": "Legion Y540-15IRH",
+        "SystemSKUNumber": "LENOVO_MT_81SX_BU_idea_FM_Legion Y540-15IRH",
+        "SystemType": "x64-based PC"
+      }
+    },
+    "BIOS": {
+      "equal": true,
+      "working": {
+        "Manufacturer": "LENOVO",
+        "SMBIOSBIOSVersion": "BHCN35WW",
+        "ReleaseDate": "/Date(1574467200000)/",
+        "SerialNumber": "PF1B8A0Y"
+      },
+      "failed": {
+        "Manufacturer": "LENOVO",
+        "SMBIOSBIOSVersion": "BHCN35WW",
+        "ReleaseDate": "/Date(1574467200000)/",
+        "SerialNumber": "PF1B8A0Y"
+      }
+    },
+    "OperatingSystem": {
+      "equal": false,
+      "working": {
+        "Caption": "Microsoft Windows 11 Enterprise",
+        "Version": "10.0.26200",
+        "BuildNumber": "26200",
+        "OSArchitecture": "64-bit",
+        "LastBootUpTime": "/Date(1785592633500)/"
+      },
+      "failed": {
+        "Caption": "Microsoft Windows 11 Enterprise",
+        "Version": "10.0.26200",
+        "BuildNumber": "26200",
+        "OSArchitecture": "64-bit",
+        "LastBootUpTime": "/Date(1785557820500)/"
+      }
+    },
+    "Battery": {
+      "equal": true,
+      "working": [
+        {
+          "Name": "L17C3PG2",
+          "DeviceID": " 3909CelxpertL17C3PG2",
+          "BatteryStatus": 2,
+          "EstimatedChargeRemaining": 100,
+          "Status": "OK"
+        }
+      ],
+      "failed": [
+        {
+          "Name": "L17C3PG2",
+          "DeviceID": " 3909CelxpertL17C3PG2",
+          "BatteryStatus": 2,
+          "EstimatedChargeRemaining": 100,
+          "Status": "OK"
+        }
+      ]
+    },
+    "FastStartup": {
+      "equal": true,
+      "working": {
+        "HiberbootEnabled": 1
+      },
+      "failed": {
+        "HiberbootEnabled": 1
+      }
+    },
+    "Power": {
+      "equal": true,
+      "working": {
+        "AvailableSleepStates": [
+          "The following sleep states are available on this system:",
+          "    Standby (S3)",
+          "    Hibernate",
+          "    Fast Startup",
+          "",
+          "The following sleep states are not available on this system:",
+          "    Standby (S1)",
+          "\tThe system firmware does not support this standby state.",
+          "",
+          "    Standby (S2)",
+          "\tThe system firmware does not support this standby state.",
+          "",
+          "    Standby (S0 Low Power Idle)",
+          "\tThe system firmware does not support this standby state.",
+          "",
+          "    Hybrid Sleep",
+          "\tThe hypervisor does not support this standby state.",
+          ""
+        ],
+        "ActiveScheme": [
+          "Power Scheme GUID: 381b4222-f694-41f0-9685-ff5bb260df2e  (Balanced)"
+        ],
+        "UsbSettings": []
+      },
+      "failed": {
+        "AvailableSleepStates": [
+          "The following sleep states are available on this system:",
+          "    Standby (S3)",
+          "    Hibernate",
+          "    Fast Startup",
+          "",
+          "The following sleep states are not available on this system:",
+          "    Standby (S1)",
+          "\tThe system firmware does not support this standby state.",
+          "",
+          "    Standby (S2)",
+          "\tThe system firmware does not support this standby state.",
+          "",
+          "    Standby (S0 Low Power Idle)",
+          "\tThe system firmware does not support this standby state.",
+          "",
+          "    Hybrid Sleep",
+          "\tThe hypervisor does not support this standby state.",
+          ""
+        ],
+        "ActiveScheme": [
+          "Power Scheme GUID: 381b4222-f694-41f0-9685-ff5bb260df2e  (Balanced)"
+        ],
+        "UsbSettings": []
+      }
+    }
+  },
+  "relevant_devices": {
+    "failed": [
+      {
+        "instance_id": "USB\\VID_048D&PID_C100\\5&1F456139&0&9",
+        "name": "USB Input Device",
+        "class": "HIDClass",
+        "present": false,
+        "status": "Unknown",
+        "problem": 45,
+        "parent": "USB\\ROOT_HUB30\\4&15ed8360&0&0",
+        "location_info": "Port_#0009.Hub_#0002",
+        "location_paths": null,
+        "hardware_ids": [
+          "USB\\VID_048D&PID_C100&REV_0044",
+          "USB\\VID_048D&PID_C100"
+        ],
+        "compatible_ids": [
+          "USB\\COMPAT_VID_048D&Class_03&SubClass_01&Prot_01",
+          "USB\\COMPAT_VID_048D&Class_03&SubClass_01",
+          "USB\\COMPAT_VID_048D&Class_03",
+          "USB\\Class_03&SubClass_01&Prot_01",
+          "USB\\Class_03&SubClass_01",
+          "USB\\Class_03"
+        ],
+        "bus_description": "ITE Device(8910)",
+        "driver_provider": "Microsoft",
+        "driver_version": "10.0.26100.8875"
+      },
+      {
+        "instance_id": "USB\\VID_0000&PID_0002\\5&1F456139&0&9",
+        "name": "Unknown USB Device (Device Descriptor Request Failed)",
+        "class": "USB",
+        "present": true,
+        "status": "Error",
+        "problem": 43,
+        "parent": "USB\\ROOT_HUB30\\4&15ed8360&0&0",
+        "location_info": "Port_#0009.Hub_#0002",
+        "location_paths": null,
+        "hardware_ids": [
+          "USB\\DEVICE_DESCRIPTOR_FAILURE"
+        ],
+        "compatible_ids": [
+          "USB\\DEVICE_DESCRIPTOR_FAILURE"
+        ],
+        "bus_description": null,
+        "driver_provider": "Microsoft",
+        "driver_version": "10.0.26100.8737"
+      },
+      {
+        "instance_id": "HID\\VID_048D&PID_C100&COL05\\6&8BB26F5&0&0004",
+        "name": "HID-compliant system controller",
+        "class": "HIDClass",
+        "present": false,
+        "status": "Unknown",
+        "problem": 45,
+        "parent": "USB\\VID_048D&PID_C100\\5&1f456139&0&9",
+        "location_info": null,
+        "location_paths": null,
+        "hardware_ids": [
+          "HID\\VID_048D&PID_C100&REV_0044&Col05",
+          "HID\\VID_048D&PID_C100&Col05",
+          "HID\\VID_048D&UP:0001_U:0080",
+          "HID_DEVICE_SYSTEM_CONTROL",
+          "HID_DEVICE_UP:0001_U:0080",
+          "HID_DEVICE"
+        ],
+        "compatible_ids": [],
+        "bus_description": null,
+        "driver_provider": "Microsoft",
+        "driver_version": "10.0.26100.8875"
+      },
+      {
+        "instance_id": "HID\\VID_048D&PID_C100&COL04\\6&8BB26F5&0&0003",
+        "name": "HID-compliant consumer control device",
+        "class": "HIDClass",
+        "present": false,
+        "status": "Unknown",
+        "problem": 45,
+        "parent": "USB\\VID_048D&PID_C100\\5&1f456139&0&9",
+        "location_info": null,
+        "location_paths": null,
+        "hardware_ids": [
+          "HID\\VID_048D&PID_C100&REV_0044&Col04",
+          "HID\\VID_048D&PID_C100&Col04",
+          "HID\\VID_048D&UP:000C_U:0001",
+          "HID_DEVICE_SYSTEM_CONSUMER",
+          "HID_DEVICE_UP:000C_U:0001",
+          "HID_DEVICE"
+        ],
+        "compatible_ids": [],
+        "bus_description": null,
+        "driver_provider": "Microsoft",
+        "driver_version": "10.0.26100.1"
+      },
+      {
+        "instance_id": "HID\\VID_048D&PID_C100&COL03\\6&8BB26F5&0&0002",
+        "name": "HID Keyboard Device",
+        "class": "Keyboard",
+        "present": false,
+        "status": "Unknown",
+        "problem": 45,
+        "parent": "USB\\VID_048D&PID_C100\\5&1f456139&0&9",
+        "location_info": null,
+        "location_paths": null,
+        "hardware_ids": [
+          "HID\\VID_048D&PID_C100&REV_0044&Col03",
+          "HID\\VID_048D&PID_C100&Col03",
+          "HID\\VID_048D&UP:0001_U:0006",
+          "HID_DEVICE_SYSTEM_KEYBOARD",
+          "HID_DEVICE_UP:0001_U:0006",
+          "HID_DEVICE"
+        ],
+        "compatible_ids": [],
+        "bus_description": null,
+        "driver_provider": "Microsoft",
+        "driver_version": "10.0.26100.8521"
+      },
+      {
+        "instance_id": "HID\\VID_048D&PID_C100&COL02\\6&8BB26F5&0&0001",
+        "name": "HID-compliant vendor-defined device",
+        "class": "HIDClass",
+        "present": false,
+        "status": "Unknown",
+        "problem": 45,
+        "parent": "USB\\VID_048D&PID_C100\\5&1f456139&0&9",
+        "location_info": null,
+        "location_paths": null,
+        "hardware_ids": [
+          "HID\\VID_048D&PID_C100&REV_0044&Col02",
+          "HID\\VID_048D&PID_C100&Col02",
+          "HID\\VID_048D&UP:FF89_U:00CD",
+          "HID_DEVICE_UP:FF89_U:00CD",
+          "HID_DEVICE_UPR:FF00-FFFF",
+          "HID_DEVICE"
+        ],
+        "compatible_ids": [],
+        "bus_description": null,
+        "driver_provider": "Microsoft",
+        "driver_version": "10.0.26100.8875"
+      },
+      {
+        "instance_id": "HID\\VID_048D&PID_C100&COL01\\6&8BB26F5&0&0000",
+        "name": "HID-compliant vendor-defined device",
+        "class": "HIDClass",
+        "present": false,
+        "status": "Unknown",
+        "problem": 45,
+        "parent": "USB\\VID_048D&PID_C100\\5&1f456139&0&9",
+        "location_info": null,
+        "location_paths": null,
+        "hardware_ids": [
+          "HID\\VID_048D&PID_C100&REV_0044&Col01",
+          "HID\\VID_048D&PID_C100&Col01",
+          "HID\\VID_048D&UP:FF89_U:0010",
+          "HID_DEVICE_UP:FF89_U:0010",
+          "HID_DEVICE_UPR:FF00-FFFF",
+          "HID_DEVICE"
+        ],
+        "compatible_ids": [],
+        "bus_description": null,
+        "driver_provider": "Microsoft",
+        "driver_version": "10.0.26100.8875"
+      }
+    ],
+    "working": [
+      {
+        "instance_id": "USB\\VID_048D&PID_C100\\5&1F456139&0&9",
+        "name": "USB Input Device",
+        "class": "HIDClass",
+        "present": true,
+        "status": "OK",
+        "problem": 0,
+        "parent": "USB\\ROOT_HUB30\\4&15ed8360&0&0",
+        "location_info": "Port_#0009.Hub_#0002",
+        "location_paths": null,
+        "hardware_ids": [
+          "USB\\VID_048D&PID_C100&REV_0044",
+          "USB\\VID_048D&PID_C100"
+        ],
+        "compatible_ids": [
+          "USB\\COMPAT_VID_048D&Class_03&SubClass_01&Prot_01",
+          "USB\\COMPAT_VID_048D&Class_03&SubClass_01",
+          "USB\\COMPAT_VID_048D&Class_03",
+          "USB\\Class_03&SubClass_01&Prot_01",
+          "USB\\Class_03&SubClass_01",
+          "USB\\Class_03"
+        ],
+        "bus_description": "ITE Device(8910)",
+        "driver_provider": "Microsoft",
+        "driver_version": "10.0.26100.8875"
+      },
+      {
+        "instance_id": "USB\\VID_0000&PID_0002\\5&1F456139&0&9",
+        "name": "Unknown USB Device (Device Descriptor Request Failed)",
+        "class": "USB",
+        "present": false,
+        "status": "Unknown",
+        "problem": 45,
+        "parent": "USB\\ROOT_HUB30\\4&15ed8360&0&0",
+        "location_info": "Port_#0009.Hub_#0002",
+        "location_paths": null,
+        "hardware_ids": [
+          "USB\\DEVICE_DESCRIPTOR_FAILURE"
+        ],
+        "compatible_ids": [
+          "USB\\DEVICE_DESCRIPTOR_FAILURE"
+        ],
+        "bus_description": null,
+        "driver_provider": "Microsoft",
+        "driver_version": "10.0.26100.8737"
+      },
+      {
+        "instance_id": "HID\\VID_048D&PID_C100&COL05\\6&8BB26F5&0&0004",
+        "name": "HID-compliant system controller",
+        "class": "HIDClass",
+        "present": true,
+        "status": "OK",
+        "problem": 0,
+        "parent": "USB\\VID_048D&PID_C100\\5&1f456139&0&9",
+        "location_info": null,
+        "location_paths": null,
+        "hardware_ids": [
+          "HID\\VID_048D&PID_C100&REV_0044&Col05",
+          "HID\\VID_048D&PID_C100&Col05",
+          "HID\\VID_048D&UP:0001_U:0080",
+          "HID_DEVICE_SYSTEM_CONTROL",
+          "HID_DEVICE_UP:0001_U:0080",
+          "HID_DEVICE"
+        ],
+        "compatible_ids": [],
+        "bus_description": null,
+        "driver_provider": "Microsoft",
+        "driver_version": "10.0.26100.8875"
+      },
+      {
+        "instance_id": "HID\\VID_048D&PID_C100&COL04\\6&8BB26F5&0&0003",
+        "name": "HID-compliant consumer control device",
+        "class": "HIDClass",
+        "present": true,
+        "status": "OK",
+        "problem": 0,
+        "parent": "USB\\VID_048D&PID_C100\\5&1f456139&0&9",
+        "location_info": null,
+        "location_paths": null,
+        "hardware_ids": [
+          "HID\\VID_048D&PID_C100&REV_0044&Col04",
+          "HID\\VID_048D&PID_C100&Col04",
+          "HID\\VID_048D&UP:000C_U:0001",
+          "HID_DEVICE_SYSTEM_CONSUMER",
+          "HID_DEVICE_UP:000C_U:0001",
+          "HID_DEVICE"
+        ],
+        "compatible_ids": [],
+        "bus_description": null,
+        "driver_provider": "Microsoft",
+        "driver_version": "10.0.26100.1"
+      },
+      {
+        "instance_id": "HID\\VID_048D&PID_C100&COL03\\6&8BB26F5&0&0002",
+        "name": "HID Keyboard Device",
+        "class": "Keyboard",
+        "present": true,
+        "status": "OK",
+        "problem": 0,
+        "parent": "USB\\VID_048D&PID_C100\\5&1f456139&0&9",
+        "location_info": null,
+        "location_paths": null,
+        "hardware_ids": [
+          "HID\\VID_048D&PID_C100&REV_0044&Col03",
+          "HID\\VID_048D&PID_C100&Col03",
+          "HID\\VID_048D&UP:0001_U:0006",
+          "HID_DEVICE_SYSTEM_KEYBOARD",
+          "HID_DEVICE_UP:0001_U:0006",
+          "HID_DEVICE"
+        ],
+        "compatible_ids": [],
+        "bus_description": null,
+        "driver_provider": "Microsoft",
+        "driver_version": "10.0.26100.8521"
+      },
+      {
+        "instance_id": "HID\\VID_048D&PID_C100&COL02\\6&8BB26F5&0&0001",
+        "name": "HID-compliant vendor-defined device",
+        "class": "HIDClass",
+        "present": true,
+        "status": "OK",
+        "problem": 0,
+        "parent": "USB\\VID_048D&PID_C100\\5&1f456139&0&9",
+        "location_info": null,
+        "location_paths": null,
+        "hardware_ids": [
+          "HID\\VID_048D&PID_C100&REV_0044&Col02",
+          "HID\\VID_048D&PID_C100&Col02",
+          "HID\\VID_048D&UP:FF89_U:00CD",
+          "HID_DEVICE_UP:FF89_U:00CD",
+          "HID_DEVICE_UPR:FF00-FFFF",
+          "HID_DEVICE"
+        ],
+        "compatible_ids": [],
+        "bus_description": null,
+        "driver_provider": "Microsoft",
+        "driver_version": "10.0.26100.8875"
+      },
+      {
+        "instance_id": "HID\\VID_048D&PID_C100&COL01\\6&8BB26F5&0&0000",
+        "name": "HID-compliant vendor-defined device",
+        "class": "HIDClass",
+        "present": true,
+        "status": "OK",
+        "problem": 0,
+        "parent": "USB\\VID_048D&PID_C100\\5&1f456139&0&9",
+        "location_info": null,
+        "location_paths": null,
+        "hardware_ids": [
+          "HID\\VID_048D&PID_C100&REV_0044&Col01",
+          "HID\\VID_048D&PID_C100&Col01",
+          "HID\\VID_048D&UP:FF89_U:0010",
+          "HID_DEVICE_UP:FF89_U:0010",
+          "HID_DEVICE_UPR:FF00-FFFF",
+          "HID_DEVICE"
+        ],
+        "compatible_ids": [],
+        "bus_description": null,
+        "driver_provider": "Microsoft",
+        "driver_version": "10.0.26100.8875"
+      }
+    ]
+  },
+  "working_keyboard_parent_chain": [
+    {
+      "instance_id": "USB\\VID_048D&PID_C100\\5&1F456139&0&9",
+      "name": "USB Input Device",
+      "class": "HIDClass",
+      "present": true,
+      "status": "OK",
+      "problem": 0,
+      "parent": "USB\\ROOT_HUB30\\4&15ed8360&0&0",
+      "location_info": "Port_#0009.Hub_#0002",
+      "location_paths": null,
+      "hardware_ids": [
+        "USB\\VID_048D&PID_C100&REV_0044",
+        "USB\\VID_048D&PID_C100"
+      ],
+      "compatible_ids": [
+        "USB\\COMPAT_VID_048D&Class_03&SubClass_01&Prot_01",
+        "USB\\COMPAT_VID_048D&Class_03&SubClass_01",
+        "USB\\COMPAT_VID_048D&Class_03",
+        "USB\\Class_03&SubClass_01&Prot_01",
+        "USB\\Class_03&SubClass_01",
+        "USB\\Class_03"
+      ],
+      "bus_description": "ITE Device(8910)",
+      "driver_provider": "Microsoft",
+      "driver_version": "10.0.26100.8875"
+    },
+    {
+      "instance_id": "USB\\ROOT_HUB30\\4&15ED8360&0&0",
+      "name": "USB Root Hub (USB 3.0)",
+      "class": "USB",
+      "present": true,
+      "status": "OK",
+      "problem": 0,
+      "parent": "PCI\\VEN_8086&DEV_A36D&SUBSYS_380617AA&REV_10\\3&11583659&0&A0",
+      "location_info": null,
+      "location_paths": null,
+      "hardware_ids": [
+        "USB\\ROOT_HUB30&VID8086&PIDA36D&REV0010",
+        "USB\\ROOT_HUB30&VID8086&PIDA36D",
+        "USB\\ROOT_HUB30"
+      ],
+      "compatible_ids": [],
+      "bus_description": null,
+      "driver_provider": "Microsoft",
+      "driver_version": "10.0.26100.8737"
+    },
+    {
+      "instance_id": "PCI\\VEN_8086&DEV_A36D&SUBSYS_380617AA&REV_10\\3&11583659&0&A0",
+      "name": "Intel(R) USB 3.1 eXtensible Host Controller - 1.10 (Microsoft)",
+      "class": "USB",
+      "present": true,
+      "status": "OK",
+      "problem": 0,
+      "parent": "ACPI\\PNP0A08\\0",
+      "location_info": "PCI bus 0, device 20, function 0",
+      "location_paths": null,
+      "hardware_ids": [
+        "PCI\\VEN_8086&DEV_A36D&SUBSYS_380617AA&REV_10",
+        "PCI\\VEN_8086&DEV_A36D&SUBSYS_380617AA",
+        "PCI\\VEN_8086&DEV_A36D&CC_0C0330",
+        "PCI\\VEN_8086&DEV_A36D&CC_0C03"
+      ],
+      "compatible_ids": [
+        "PCI\\VEN_8086&DEV_A36D&REV_10",
+        "PCI\\VEN_8086&DEV_A36D",
+        "PCI\\VEN_8086&CC_0C0330",
+        "PCI\\VEN_8086&CC_0C03",
+        "PCI\\VEN_8086",
+        "PCI\\CC_0C0330",
+        "PCI\\CC_0C03"
+      ],
+      "bus_description": "Universal Serial Bus (USB) Controller",
+      "driver_provider": "Microsoft",
+      "driver_version": "10.0.26100.8875"
+    },
+    {
+      "instance_id": "ACPI\\PNP0A08\\0",
+      "name": "PCI Express Root Complex",
+      "class": "System",
+      "present": true,
+      "status": "OK",
+      "problem": 0,
+      "parent": "ACPI_HAL\\PNP0C08\\0",
+      "location_info": null,
+      "location_paths": null,
+      "hardware_ids": [
+        "ACPI\\VEN_PNP&DEV_0A08",
+        "ACPI\\PNP0A08",
+        "*PNP0A08"
+      ],
+      "compatible_ids": [
+        "*PNP0A03"
+      ],
+      "bus_description": null,
+      "driver_provider": "Microsoft",
+      "driver_version": "10.0.26100.8737"
+    },
+    {
+      "instance_id": "ACPI_HAL\\PNP0C08\\0",
+      "name": "Microsoft ACPI-Compliant System",
+      "class": "System",
+      "present": true,
+      "status": "OK",
+      "problem": 0,
+      "parent": "ROOT\\ACPI_HAL\\0000",
+      "location_info": null,
+      "location_paths": null,
+      "hardware_ids": [
+        "ACPI_HAL\\PNP0C08",
+        "*PNP0C08"
+      ],
+      "compatible_ids": null,
+      "bus_description": null,
+      "driver_provider": "Microsoft",
+      "driver_version": "10.0.26100.8521"
+    },
+    {
+      "instance_id": "ROOT\\ACPI_HAL\\0000",
+      "name": "ACPI x64-based PC",
+      "class": "Computer",
+      "present": true,
+      "status": "OK",
+      "problem": 0,
+      "parent": "HTREE\\ROOT\\0",
+      "location_info": null,
+      "location_paths": null,
+      "hardware_ids": [
+        "acpiapic"
+      ],
+      "compatible_ids": [
+        "DETECTEDInternal\\ACPI_HAL",
+        "DETECTED\\ACPI_HAL"
+      ],
+      "bus_description": null,
+      "driver_provider": "Microsoft",
+      "driver_version": "10.0.26100.1"
+    }
+  ],
+  "historical_failed_candidate_selection": {
+    "known_present_c100_count": 1,
+    "candidate_count": 1,
+    "unambiguous": true,
+    "candidates": [
+      {
+        "instance_id": "USB\\VID_0000&PID_0002\\5&1F456139&0&9",
+        "name": "Unknown USB Device (Device Descriptor Request Failed)",
+        "class": "USB",
+        "present": true,
+        "status": "Error",
+        "problem": 43,
+        "parent": "USB\\ROOT_HUB30\\4&15ed8360&0&0",
+        "location_info": "Port_#0009.Hub_#0002",
+        "location_paths": null,
+        "hardware_ids": [
+          "USB\\DEVICE_DESCRIPTOR_FAILURE"
+        ],
+        "compatible_ids": [
+          "USB\\DEVICE_DESCRIPTOR_FAILURE"
+        ],
+        "bus_description": null,
+        "driver_provider": "Microsoft",
+        "driver_version": "10.0.26100.8737"
+      }
+    ],
+    "criteria": [
+      "historically present USB VID048D/PIDC100 normal devnode with problem0",
+      "present USB VID0000/PID0002 devnode with problem43 and USB DEVICE_DESCRIPTOR_FAILURE hardware id",
+      "same exact parent (case insensitive), same nonempty LocationInfo, same instance suffix",
+      "exactly one known normal device and exactly one matching failed devnode"
+    ],
+    "limitations": [
+      "LocationPaths were not captured; never invented from port strings",
+      "Placeholder VID/PID has no authenticated ITE device identity",
+      "Historical candidate is not permission or sufficient evidence to mutate a live device",
+      "Live implementation must read fresh properties, retain parent/location match, and fail closed on ambiguity",
+      "Port_#0009 or error43 alone must never select a device"
+    ]
+  },
+  "all_device_differences": [
+    {
+      "instance_id": "HID\\VID_048D&PID_C100&COL01\\6&8BB26F5&0&0000",
+      "working": {
+        "instance_id": "HID\\VID_048D&PID_C100&COL01\\6&8BB26F5&0&0000",
+        "name": "HID-compliant vendor-defined device",
+        "class": "HIDClass",
+        "present": true,
+        "status": "OK",
+        "problem": 0,
+        "parent": "USB\\VID_048D&PID_C100\\5&1f456139&0&9",
+        "location_info": null,
+        "location_paths": null,
+        "hardware_ids": [
+          "HID\\VID_048D&PID_C100&REV_0044&Col01",
+          "HID\\VID_048D&PID_C100&Col01",
+          "HID\\VID_048D&UP:FF89_U:0010",
+          "HID_DEVICE_UP:FF89_U:0010",
+          "HID_DEVICE_UPR:FF00-FFFF",
+          "HID_DEVICE"
+        ],
+        "compatible_ids": [],
+        "bus_description": null,
+        "driver_provider": "Microsoft",
+        "driver_version": "10.0.26100.8875"
+      },
+      "failed": {
+        "instance_id": "HID\\VID_048D&PID_C100&COL01\\6&8BB26F5&0&0000",
+        "name": "HID-compliant vendor-defined device",
+        "class": "HIDClass",
+        "present": false,
+        "status": "Unknown",
+        "problem": 45,
+        "parent": "USB\\VID_048D&PID_C100\\5&1f456139&0&9",
+        "location_info": null,
+        "location_paths": null,
+        "hardware_ids": [
+          "HID\\VID_048D&PID_C100&REV_0044&Col01",
+          "HID\\VID_048D&PID_C100&Col01",
+          "HID\\VID_048D&UP:FF89_U:0010",
+          "HID_DEVICE_UP:FF89_U:0010",
+          "HID_DEVICE_UPR:FF00-FFFF",
+          "HID_DEVICE"
+        ],
+        "compatible_ids": [],
+        "bus_description": null,
+        "driver_provider": "Microsoft",
+        "driver_version": "10.0.26100.8875"
+      },
+      "changed_fields": {
+        "Present": {
+          "working": true,
+          "failed": false
+        },
+        "Problem": {
+          "working": 0,
+          "failed": 45
+        },
+        "Properties": {
+          "working": {
+            "DEVPKEY_Device_DriverVersion": "10.0.26100.8875",
+            "DEVPKEY_Device_HardwareIds": [
+              "HID\\VID_048D&PID_C100&REV_0044&Col01",
+              "HID\\VID_048D&PID_C100&Col01",
+              "HID\\VID_048D&UP:FF89_U:0010",
+              "HID_DEVICE_UP:FF89_U:0010",
+              "HID_DEVICE_UPR:FF00-FFFF",
+              "HID_DEVICE"
+            ],
+            "DEVPKEY_Device_DriverProvider": "Microsoft",
+            "DEVPKEY_Device_CompatibleIds": [],
+            "DEVPKEY_Device_ProblemCode": 0,
+            "DEVPKEY_Device_Parent": "USB\\VID_048D&PID_C100\\5&1f456139&0&9"
+          },
+          "failed": {
+            "DEVPKEY_Device_HardwareIds": [
+              "HID\\VID_048D&PID_C100&REV_0044&Col01",
+              "HID\\VID_048D&PID_C100&Col01",
+              "HID\\VID_048D&UP:FF89_U:0010",
+              "HID_DEVICE_UP:FF89_U:0010",
+              "HID_DEVICE_UPR:FF00-FFFF",
+              "HID_DEVICE"
+            ],
+            "DEVPKEY_Device_DriverVersion": "10.0.26100.8875",
+            "DEVPKEY_Device_DriverProvider": "Microsoft",
+            "DEVPKEY_Device_CompatibleIds": [],
+            "DEVPKEY_Device_Parent": "USB\\VID_048D&PID_C100\\5&1f456139&0&9"
+          }
+        },
+        "Status": {
+          "working": "OK",
+          "failed": "Unknown"
+        }
+      }
+    },
+    {
+      "instance_id": "HID\\VID_048D&PID_C100&COL02\\6&8BB26F5&0&0001",
+      "working": {
+        "instance_id": "HID\\VID_048D&PID_C100&COL02\\6&8BB26F5&0&0001",
+        "name": "HID-compliant vendor-defined device",
+        "class": "HIDClass",
+        "present": true,
+        "status": "OK",
+        "problem": 0,
+        "parent": "USB\\VID_048D&PID_C100\\5&1f456139&0&9",
+        "location_info": null,
+        "location_paths": null,
+        "hardware_ids": [
+          "HID\\VID_048D&PID_C100&REV_0044&Col02",
+          "HID\\VID_048D&PID_C100&Col02",
+          "HID\\VID_048D&UP:FF89_U:00CD",
+          "HID_DEVICE_UP:FF89_U:00CD",
+          "HID_DEVICE_UPR:FF00-FFFF",
+          "HID_DEVICE"
+        ],
+        "compatible_ids": [],
+        "bus_description": null,
+        "driver_provider": "Microsoft",
+        "driver_version": "10.0.26100.8875"
+      },
+      "failed": {
+        "instance_id": "HID\\VID_048D&PID_C100&COL02\\6&8BB26F5&0&0001",
+        "name": "HID-compliant vendor-defined device",
+        "class": "HIDClass",
+        "present": false,
+        "status": "Unknown",
+        "problem": 45,
+        "parent": "USB\\VID_048D&PID_C100\\5&1f456139&0&9",
+        "location_info": null,
+        "location_paths": null,
+        "hardware_ids": [
+          "HID\\VID_048D&PID_C100&REV_0044&Col02",
+          "HID\\VID_048D&PID_C100&Col02",
+          "HID\\VID_048D&UP:FF89_U:00CD",
+          "HID_DEVICE_UP:FF89_U:00CD",
+          "HID_DEVICE_UPR:FF00-FFFF",
+          "HID_DEVICE"
+        ],
+        "compatible_ids": [],
+        "bus_description": null,
+        "driver_provider": "Microsoft",
+        "driver_version": "10.0.26100.8875"
+      },
+      "changed_fields": {
+        "Present": {
+          "working": true,
+          "failed": false
+        },
+        "Problem": {
+          "working": 0,
+          "failed": 45
+        },
+        "Properties": {
+          "working": {
+            "DEVPKEY_Device_DriverVersion": "10.0.26100.8875",
+            "DEVPKEY_Device_HardwareIds": [
+              "HID\\VID_048D&PID_C100&REV_0044&Col02",
+              "HID\\VID_048D&PID_C100&Col02",
+              "HID\\VID_048D&UP:FF89_U:00CD",
+              "HID_DEVICE_UP:FF89_U:00CD",
+              "HID_DEVICE_UPR:FF00-FFFF",
+              "HID_DEVICE"
+            ],
+            "DEVPKEY_Device_DriverProvider": "Microsoft",
+            "DEVPKEY_Device_CompatibleIds": [],
+            "DEVPKEY_Device_ProblemCode": 0,
+            "DEVPKEY_Device_Parent": "USB\\VID_048D&PID_C100\\5&1f456139&0&9"
+          },
+          "failed": {
+            "DEVPKEY_Device_HardwareIds": [
+              "HID\\VID_048D&PID_C100&REV_0044&Col02",
+              "HID\\VID_048D&PID_C100&Col02",
+              "HID\\VID_048D&UP:FF89_U:00CD",
+              "HID_DEVICE_UP:FF89_U:00CD",
+              "HID_DEVICE_UPR:FF00-FFFF",
+              "HID_DEVICE"
+            ],
+            "DEVPKEY_Device_DriverVersion": "10.0.26100.8875",
+            "DEVPKEY_Device_DriverProvider": "Microsoft",
+            "DEVPKEY_Device_CompatibleIds": [],
+            "DEVPKEY_Device_Parent": "USB\\VID_048D&PID_C100\\5&1f456139&0&9"
+          }
+        },
+        "Status": {
+          "working": "OK",
+          "failed": "Unknown"
+        }
+      }
+    },
+    {
+      "instance_id": "HID\\VID_048D&PID_C100&COL03\\6&8BB26F5&0&0002",
+      "working": {
+        "instance_id": "HID\\VID_048D&PID_C100&COL03\\6&8BB26F5&0&0002",
+        "name": "HID Keyboard Device",
+        "class": "Keyboard",
+        "present": true,
+        "status": "OK",
+        "problem": 0,
+        "parent": "USB\\VID_048D&PID_C100\\5&1f456139&0&9",
+        "location_info": null,
+        "location_paths": null,
+        "hardware_ids": [
+          "HID\\VID_048D&PID_C100&REV_0044&Col03",
+          "HID\\VID_048D&PID_C100&Col03",
+          "HID\\VID_048D&UP:0001_U:0006",
+          "HID_DEVICE_SYSTEM_KEYBOARD",
+          "HID_DEVICE_UP:0001_U:0006",
+          "HID_DEVICE"
+        ],
+        "compatible_ids": [],
+        "bus_description": null,
+        "driver_provider": "Microsoft",
+        "driver_version": "10.0.26100.8521"
+      },
+      "failed": {
+        "instance_id": "HID\\VID_048D&PID_C100&COL03\\6&8BB26F5&0&0002",
+        "name": "HID Keyboard Device",
+        "class": "Keyboard",
+        "present": false,
+        "status": "Unknown",
+        "problem": 45,
+        "parent": "USB\\VID_048D&PID_C100\\5&1f456139&0&9",
+        "location_info": null,
+        "location_paths": null,
+        "hardware_ids": [
+          "HID\\VID_048D&PID_C100&REV_0044&Col03",
+          "HID\\VID_048D&PID_C100&Col03",
+          "HID\\VID_048D&UP:0001_U:0006",
+          "HID_DEVICE_SYSTEM_KEYBOARD",
+          "HID_DEVICE_UP:0001_U:0006",
+          "HID_DEVICE"
+        ],
+        "compatible_ids": [],
+        "bus_description": null,
+        "driver_provider": "Microsoft",
+        "driver_version": "10.0.26100.8521"
+      },
+      "changed_fields": {
+        "Present": {
+          "working": true,
+          "failed": false
+        },
+        "Problem": {
+          "working": 0,
+          "failed": 45
+        },
+        "Properties": {
+          "working": {
+            "DEVPKEY_Device_DriverVersion": "10.0.26100.8521",
+            "DEVPKEY_Device_HardwareIds": [
+              "HID\\VID_048D&PID_C100&REV_0044&Col03",
+              "HID\\VID_048D&PID_C100&Col03",
+              "HID\\VID_048D&UP:0001_U:0006",
+              "HID_DEVICE_SYSTEM_KEYBOARD",
+              "HID_DEVICE_UP:0001_U:0006",
+              "HID_DEVICE"
+            ],
+            "DEVPKEY_Device_DriverProvider": "Microsoft",
+            "DEVPKEY_Device_CompatibleIds": [],
+            "DEVPKEY_Device_ProblemCode": 0,
+            "DEVPKEY_Device_Parent": "USB\\VID_048D&PID_C100\\5&1f456139&0&9"
+          },
+          "failed": {
+            "DEVPKEY_Device_HardwareIds": [
+              "HID\\VID_048D&PID_C100&REV_0044&Col03",
+              "HID\\VID_048D&PID_C100&Col03",
+              "HID\\VID_048D&UP:0001_U:0006",
+              "HID_DEVICE_SYSTEM_KEYBOARD",
+              "HID_DEVICE_UP:0001_U:0006",
+              "HID_DEVICE"
+            ],
+            "DEVPKEY_Device_DriverVersion": "10.0.26100.8521",
+            "DEVPKEY_Device_DriverProvider": "Microsoft",
+            "DEVPKEY_Device_CompatibleIds": [],
+            "DEVPKEY_Device_Parent": "USB\\VID_048D&PID_C100\\5&1f456139&0&9"
+          }
+        },
+        "Status": {
+          "working": "OK",
+          "failed": "Unknown"
+        }
+      }
+    },
+    {
+      "instance_id": "HID\\VID_048D&PID_C100&COL04\\6&8BB26F5&0&0003",
+      "working": {
+        "instance_id": "HID\\VID_048D&PID_C100&COL04\\6&8BB26F5&0&0003",
+        "name": "HID-compliant consumer control device",
+        "class": "HIDClass",
+        "present": true,
+        "status": "OK",
+        "problem": 0,
+        "parent": "USB\\VID_048D&PID_C100\\5&1f456139&0&9",
+        "location_info": null,
+        "location_paths": null,
+        "hardware_ids": [
+          "HID\\VID_048D&PID_C100&REV_0044&Col04",
+          "HID\\VID_048D&PID_C100&Col04",
+          "HID\\VID_048D&UP:000C_U:0001",
+          "HID_DEVICE_SYSTEM_CONSUMER",
+          "HID_DEVICE_UP:000C_U:0001",
+          "HID_DEVICE"
+        ],
+        "compatible_ids": [],
+        "bus_description": null,
+        "driver_provider": "Microsoft",
+        "driver_version": "10.0.26100.1"
+      },
+      "failed": {
+        "instance_id": "HID\\VID_048D&PID_C100&COL04\\6&8BB26F5&0&0003",
+        "name": "HID-compliant consumer control device",
+        "class": "HIDClass",
+        "present": false,
+        "status": "Unknown",
+        "problem": 45,
+        "parent": "USB\\VID_048D&PID_C100\\5&1f456139&0&9",
+        "location_info": null,
+        "location_paths": null,
+        "hardware_ids": [
+          "HID\\VID_048D&PID_C100&REV_0044&Col04",
+          "HID\\VID_048D&PID_C100&Col04",
+          "HID\\VID_048D&UP:000C_U:0001",
+          "HID_DEVICE_SYSTEM_CONSUMER",
+          "HID_DEVICE_UP:000C_U:0001",
+          "HID_DEVICE"
+        ],
+        "compatible_ids": [],
+        "bus_description": null,
+        "driver_provider": "Microsoft",
+        "driver_version": "10.0.26100.1"
+      },
+      "changed_fields": {
+        "Present": {
+          "working": true,
+          "failed": false
+        },
+        "Problem": {
+          "working": 0,
+          "failed": 45
+        },
+        "Properties": {
+          "working": {
+            "DEVPKEY_Device_DriverVersion": "10.0.26100.1",
+            "DEVPKEY_Device_HardwareIds": [
+              "HID\\VID_048D&PID_C100&REV_0044&Col04",
+              "HID\\VID_048D&PID_C100&Col04",
+              "HID\\VID_048D&UP:000C_U:0001",
+              "HID_DEVICE_SYSTEM_CONSUMER",
+              "HID_DEVICE_UP:000C_U:0001",
+              "HID_DEVICE"
+            ],
+            "DEVPKEY_Device_DriverProvider": "Microsoft",
+            "DEVPKEY_Device_CompatibleIds": [],
+            "DEVPKEY_Device_ProblemCode": 0,
+            "DEVPKEY_Device_Parent": "USB\\VID_048D&PID_C100\\5&1f456139&0&9"
+          },
+          "failed": {
+            "DEVPKEY_Device_HardwareIds": [
+              "HID\\VID_048D&PID_C100&REV_0044&Col04",
+              "HID\\VID_048D&PID_C100&Col04",
+              "HID\\VID_048D&UP:000C_U:0001",
+              "HID_DEVICE_SYSTEM_CONSUMER",
+              "HID_DEVICE_UP:000C_U:0001",
+              "HID_DEVICE"
+            ],
+            "DEVPKEY_Device_DriverVersion": "10.0.26100.1",
+            "DEVPKEY_Device_DriverProvider": "Microsoft",
+            "DEVPKEY_Device_CompatibleIds": [],
+            "DEVPKEY_Device_Parent": "USB\\VID_048D&PID_C100\\5&1f456139&0&9"
+          }
+        },
+        "Status": {
+          "working": "OK",
+          "failed": "Unknown"
+        }
+      }
+    },
+    {
+      "instance_id": "HID\\VID_048D&PID_C100&COL05\\6&8BB26F5&0&0004",
+      "working": {
+        "instance_id": "HID\\VID_048D&PID_C100&COL05\\6&8BB26F5&0&0004",
+        "name": "HID-compliant system controller",
+        "class": "HIDClass",
+        "present": true,
+        "status": "OK",
+        "problem": 0,
+        "parent": "USB\\VID_048D&PID_C100\\5&1f456139&0&9",
+        "location_info": null,
+        "location_paths": null,
+        "hardware_ids": [
+          "HID\\VID_048D&PID_C100&REV_0044&Col05",
+          "HID\\VID_048D&PID_C100&Col05",
+          "HID\\VID_048D&UP:0001_U:0080",
+          "HID_DEVICE_SYSTEM_CONTROL",
+          "HID_DEVICE_UP:0001_U:0080",
+          "HID_DEVICE"
+        ],
+        "compatible_ids": [],
+        "bus_description": null,
+        "driver_provider": "Microsoft",
+        "driver_version": "10.0.26100.8875"
+      },
+      "failed": {
+        "instance_id": "HID\\VID_048D&PID_C100&COL05\\6&8BB26F5&0&0004",
+        "name": "HID-compliant system controller",
+        "class": "HIDClass",
+        "present": false,
+        "status": "Unknown",
+        "problem": 45,
+        "parent": "USB\\VID_048D&PID_C100\\5&1f456139&0&9",
+        "location_info": null,
+        "location_paths": null,
+        "hardware_ids": [
+          "HID\\VID_048D&PID_C100&REV_0044&Col05",
+          "HID\\VID_048D&PID_C100&Col05",
+          "HID\\VID_048D&UP:0001_U:0080",
+          "HID_DEVICE_SYSTEM_CONTROL",
+          "HID_DEVICE_UP:0001_U:0080",
+          "HID_DEVICE"
+        ],
+        "compatible_ids": [],
+        "bus_description": null,
+        "driver_provider": "Microsoft",
+        "driver_version": "10.0.26100.8875"
+      },
+      "changed_fields": {
+        "Present": {
+          "working": true,
+          "failed": false
+        },
+        "Problem": {
+          "working": 0,
+          "failed": 45
+        },
+        "Properties": {
+          "working": {
+            "DEVPKEY_Device_DriverVersion": "10.0.26100.8875",
+            "DEVPKEY_Device_HardwareIds": [
+              "HID\\VID_048D&PID_C100&REV_0044&Col05",
+              "HID\\VID_048D&PID_C100&Col05",
+              "HID\\VID_048D&UP:0001_U:0080",
+              "HID_DEVICE_SYSTEM_CONTROL",
+              "HID_DEVICE_UP:0001_U:0080",
+              "HID_DEVICE"
+            ],
+            "DEVPKEY_Device_DriverProvider": "Microsoft",
+            "DEVPKEY_Device_CompatibleIds": [],
+            "DEVPKEY_Device_ProblemCode": 0,
+            "DEVPKEY_Device_Parent": "USB\\VID_048D&PID_C100\\5&1f456139&0&9"
+          },
+          "failed": {
+            "DEVPKEY_Device_HardwareIds": [
+              "HID\\VID_048D&PID_C100&REV_0044&Col05",
+              "HID\\VID_048D&PID_C100&Col05",
+              "HID\\VID_048D&UP:0001_U:0080",
+              "HID_DEVICE_SYSTEM_CONTROL",
+              "HID_DEVICE_UP:0001_U:0080",
+              "HID_DEVICE"
+            ],
+            "DEVPKEY_Device_DriverVersion": "10.0.26100.8875",
+            "DEVPKEY_Device_DriverProvider": "Microsoft",
+            "DEVPKEY_Device_CompatibleIds": [],
+            "DEVPKEY_Device_Parent": "USB\\VID_048D&PID_C100\\5&1f456139&0&9"
+          }
+        },
+        "Status": {
+          "working": "OK",
+          "failed": "Unknown"
+        }
+      }
+    },
+    {
+      "instance_id": "STORAGE\\VOLUMESNAPSHOT\\HARDDISKVOLUMESNAPSHOT1",
+      "working": null,
+      "failed": {
+        "instance_id": "STORAGE\\VOLUMESNAPSHOT\\HARDDISKVOLUMESNAPSHOT1",
+        "name": "Generic volume shadow copy",
+        "class": "VolumeSnapshot",
+        "present": false,
+        "status": "Unknown",
+        "problem": 45,
+        "parent": "STORAGE\\Volume\\{0f468b47-8a7c-11f0-af41-806e6f6e6963}#0000000026800000",
+        "location_info": null,
+        "location_paths": null,
+        "hardware_ids": [
+          "STORAGE\\VolumeSnapshot"
+        ],
+        "compatible_ids": null,
+        "bus_description": null,
+        "driver_provider": "Microsoft",
+        "driver_version": "10.0.26100.1"
+      },
+      "changed_fields": {
+        "Class": {
+          "working": null,
+          "failed": "VolumeSnapshot"
+        },
+        "FriendlyName": {
+          "working": null,
+          "failed": "Generic volume shadow copy"
+        },
+        "InstanceId": {
+          "working": null,
+          "failed": "STORAGE\\VOLUMESNAPSHOT\\HARDDISKVOLUMESNAPSHOT1"
+        },
+        "Present": {
+          "working": null,
+          "failed": false
+        },
+        "Problem": {
+          "working": null,
+          "failed": 45
+        },
+        "Properties": {
+          "working": null,
+          "failed": {
+            "DEVPKEY_Device_HardwareIds": [
+              "STORAGE\\VolumeSnapshot"
+            ],
+            "DEVPKEY_Device_DriverVersion": "10.0.26100.1",
+            "DEVPKEY_Device_DriverProvider": "Microsoft",
+            "DEVPKEY_Device_Parent": "STORAGE\\Volume\\{0f468b47-8a7c-11f0-af41-806e6f6e6963}#0000000026800000"
+          }
+        },
+        "Status": {
+          "working": null,
+          "failed": "Unknown"
+        }
+      }
+    },
+    {
+      "instance_id": "STORAGE\\VOLUMESNAPSHOT\\HARDDISKVOLUMESNAPSHOT3",
+      "working": {
+        "instance_id": "STORAGE\\VOLUMESNAPSHOT\\HARDDISKVOLUMESNAPSHOT3",
+        "name": "Generic volume shadow copy",
+        "class": "VolumeSnapshot",
+        "present": false,
+        "status": "Unknown",
+        "problem": 45,
+        "parent": "STORAGE\\Volume\\{0f468b47-8a7c-11f0-af41-806e6f6e6963}#0000000026800000",
+        "location_info": null,
+        "location_paths": null,
+        "hardware_ids": [
+          "STORAGE\\VolumeSnapshot"
+        ],
+        "compatible_ids": null,
+        "bus_description": null,
+        "driver_provider": "Microsoft",
+        "driver_version": "10.0.26100.1"
+      },
+      "failed": null,
+      "changed_fields": {
+        "Class": {
+          "working": "VolumeSnapshot",
+          "failed": null
+        },
+        "FriendlyName": {
+          "working": "Generic volume shadow copy",
+          "failed": null
+        },
+        "InstanceId": {
+          "working": "STORAGE\\VOLUMESNAPSHOT\\HARDDISKVOLUMESNAPSHOT3",
+          "failed": null
+        },
+        "Present": {
+          "working": false,
+          "failed": null
+        },
+        "Problem": {
+          "working": 45,
+          "failed": null
+        },
+        "Properties": {
+          "working": {
+            "DEVPKEY_Device_HardwareIds": [
+              "STORAGE\\VolumeSnapshot"
+            ],
+            "DEVPKEY_Device_DriverVersion": "10.0.26100.1",
+            "DEVPKEY_Device_DriverProvider": "Microsoft",
+            "DEVPKEY_Device_Parent": "STORAGE\\Volume\\{0f468b47-8a7c-11f0-af41-806e6f6e6963}#0000000026800000"
+          },
+          "failed": null
+        },
+        "Status": {
+          "working": "Unknown",
+          "failed": null
+        }
+      }
+    },
+    {
+      "instance_id": "SWD\\MSRRAS\\MS_AGILEVPNMINIPORT",
+      "working": {
+        "instance_id": "SWD\\MSRRAS\\MS_AGILEVPNMINIPORT",
+        "name": "WAN Miniport (IKEv2)",
+        "class": "Net",
+        "present": false,
+        "status": "Unknown",
+        "problem": 45,
+        "parent": "SWD\\MSRRAS\\{5e259276-bc7e-40e3-b93b-8f89b5f3abc0}",
+        "location_info": null,
+        "location_paths": null,
+        "hardware_ids": [
+          "ms_agilevpnminiport"
+        ],
+        "compatible_ids": [
+          "SWD\\Generic"
+        ],
+        "bus_description": null,
+        "driver_provider": "Microsoft",
+        "driver_version": "10.0.26100.1"
+      },
+      "failed": null,
+      "changed_fields": {
+        "Class": {
+          "working": "Net",
+          "failed": null
+        },
+        "FriendlyName": {
+          "working": "WAN Miniport (IKEv2)",
+          "failed": null
+        },
+        "InstanceId": {
+          "working": "SWD\\MSRRAS\\MS_AGILEVPNMINIPORT",
+          "failed": null
+        },
+        "Present": {
+          "working": false,
+          "failed": null
+        },
+        "Problem": {
+          "working": 45,
+          "failed": null
+        },
+        "Properties": {
+          "working": {
+            "DEVPKEY_Device_HardwareIds": [
+              "ms_agilevpnminiport"
+            ],
+            "DEVPKEY_Device_DriverVersion": "10.0.26100.1",
+            "DEVPKEY_Device_DriverProvider": "Microsoft",
+            "DEVPKEY_Device_CompatibleIds": [
+              "SWD\\Generic"
+            ],
+            "DEVPKEY_Device_Parent": "SWD\\MSRRAS\\{5e259276-bc7e-40e3-b93b-8f89b5f3abc0}"
+          },
+          "failed": null
+        },
+        "Status": {
+          "working": "Unknown",
+          "failed": null
+        }
+      }
+    },
+    {
+      "instance_id": "SWD\\MSRRAS\\MS_L2TPMINIPORT",
+      "working": {
+        "instance_id": "SWD\\MSRRAS\\MS_L2TPMINIPORT",
+        "name": "WAN Miniport (L2TP)",
+        "class": "Net",
+        "present": false,
+        "status": "Unknown",
+        "problem": 45,
+        "parent": "SWD\\MSRRAS\\{5e259276-bc7e-40e3-b93b-8f89b5f3abc0}",
+        "location_info": null,
+        "location_paths": null,
+        "hardware_ids": [
+          "ms_l2tpminiport"
+        ],
+        "compatible_ids": [
+          "SWD\\Generic"
+        ],
+        "bus_description": null,
+        "driver_provider": "Microsoft",
+        "driver_version": "10.0.26100.1"
+      },
+      "failed": null,
+      "changed_fields": {
+        "Class": {
+          "working": "Net",
+          "failed": null
+        },
+        "FriendlyName": {
+          "working": "WAN Miniport (L2TP)",
+          "failed": null
+        },
+        "InstanceId": {
+          "working": "SWD\\MSRRAS\\MS_L2TPMINIPORT",
+          "failed": null
+        },
+        "Present": {
+          "working": false,
+          "failed": null
+        },
+        "Problem": {
+          "working": 45,
+          "failed": null
+        },
+        "Properties": {
+          "working": {
+            "DEVPKEY_Device_HardwareIds": [
+              "ms_l2tpminiport"
+            ],
+            "DEVPKEY_Device_DriverVersion": "10.0.26100.1",
+            "DEVPKEY_Device_DriverProvider": "Microsoft",
+            "DEVPKEY_Device_CompatibleIds": [
+              "SWD\\Generic"
+            ],
+            "DEVPKEY_Device_Parent": "SWD\\MSRRAS\\{5e259276-bc7e-40e3-b93b-8f89b5f3abc0}"
+          },
+          "failed": null
+        },
+        "Status": {
+          "working": "Unknown",
+          "failed": null
+        }
+      }
+    },
+    {
+      "instance_id": "SWD\\MSRRAS\\MS_NDISWANBH",
+      "working": {
+        "instance_id": "SWD\\MSRRAS\\MS_NDISWANBH",
+        "name": "WAN Miniport (Network Monitor)",
+        "class": "Net",
+        "present": false,
+        "status": "Unknown",
+        "problem": 45,
+        "parent": "SWD\\MSRRAS\\{5e259276-bc7e-40e3-b93b-8f89b5f3abc0}",
+        "location_info": null,
+        "location_paths": null,
+        "hardware_ids": [
+          "ms_ndiswanbh"
+        ],
+        "compatible_ids": [
+          "SWD\\Generic"
+        ],
+        "bus_description": null,
+        "driver_provider": "Microsoft",
+        "driver_version": "10.0.26100.1"
+      },
+      "failed": null,
+      "changed_fields": {
+        "Class": {
+          "working": "Net",
+          "failed": null
+        },
+        "FriendlyName": {
+          "working": "WAN Miniport (Network Monitor)",
+          "failed": null
+        },
+        "InstanceId": {
+          "working": "SWD\\MSRRAS\\MS_NDISWANBH",
+          "failed": null
+        },
+        "Present": {
+          "working": false,
+          "failed": null
+        },
+        "Problem": {
+          "working": 45,
+          "failed": null
+        },
+        "Properties": {
+          "working": {
+            "DEVPKEY_Device_HardwareIds": [
+              "ms_ndiswanbh"
+            ],
+            "DEVPKEY_Device_DriverVersion": "10.0.26100.1",
+            "DEVPKEY_Device_DriverProvider": "Microsoft",
+            "DEVPKEY_Device_CompatibleIds": [
+              "SWD\\Generic"
+            ],
+            "DEVPKEY_Device_Parent": "SWD\\MSRRAS\\{5e259276-bc7e-40e3-b93b-8f89b5f3abc0}"
+          },
+          "failed": null
+        },
+        "Status": {
+          "working": "Unknown",
+          "failed": null
+        }
+      }
+    },
+    {
+      "instance_id": "SWD\\MSRRAS\\MS_NDISWANIP",
+      "working": {
+        "instance_id": "SWD\\MSRRAS\\MS_NDISWANIP",
+        "name": "WAN Miniport (IP)",
+        "class": "Net",
+        "present": false,
+        "status": "Unknown",
+        "problem": 45,
+        "parent": "SWD\\MSRRAS\\{5e259276-bc7e-40e3-b93b-8f89b5f3abc0}",
+        "location_info": null,
+        "location_paths": null,
+        "hardware_ids": [
+          "ms_ndiswanip"
+        ],
+        "compatible_ids": [
+          "SWD\\Generic"
+        ],
+        "bus_description": null,
+        "driver_provider": "Microsoft",
+        "driver_version": "10.0.26100.1"
+      },
+      "failed": null,
+      "changed_fields": {
+        "Class": {
+          "working": "Net",
+          "failed": null
+        },
+        "FriendlyName": {
+          "working": "WAN Miniport (IP)",
+          "failed": null
+        },
+        "InstanceId": {
+          "working": "SWD\\MSRRAS\\MS_NDISWANIP",
+          "failed": null
+        },
+        "Present": {
+          "working": false,
+          "failed": null
+        },
+        "Problem": {
+          "working": 45,
+          "failed": null
+        },
+        "Properties": {
+          "working": {
+            "DEVPKEY_Device_HardwareIds": [
+              "ms_ndiswanip"
+            ],
+            "DEVPKEY_Device_DriverVersion": "10.0.26100.1",
+            "DEVPKEY_Device_DriverProvider": "Microsoft",
+            "DEVPKEY_Device_CompatibleIds": [
+              "SWD\\Generic"
+            ],
+            "DEVPKEY_Device_Parent": "SWD\\MSRRAS\\{5e259276-bc7e-40e3-b93b-8f89b5f3abc0}"
+          },
+          "failed": null
+        },
+        "Status": {
+          "working": "Unknown",
+          "failed": null
+        }
+      }
+    },
+    {
+      "instance_id": "SWD\\MSRRAS\\MS_NDISWANIPV6",
+      "working": {
+        "instance_id": "SWD\\MSRRAS\\MS_NDISWANIPV6",
+        "name": "WAN Miniport (IPv6)",
+        "class": "Net",
+        "present": false,
+        "status": "Unknown",
+        "problem": 45,
+        "parent": "SWD\\MSRRAS\\{5e259276-bc7e-40e3-b93b-8f89b5f3abc0}",
+        "location_info": null,
+        "location_paths": null,
+        "hardware_ids": [
+          "ms_ndiswanipv6"
+        ],
+        "compatible_ids": [
+          "SWD\\Generic"
+        ],
+        "bus_description": null,
+        "driver_provider": "Microsoft",
+        "driver_version": "10.0.26100.1"
+      },
+      "failed": null,
+      "changed_fields": {
+        "Class": {
+          "working": "Net",
+          "failed": null
+        },
+        "FriendlyName": {
+          "working": "WAN Miniport (IPv6)",
+          "failed": null
+        },
+        "InstanceId": {
+          "working": "SWD\\MSRRAS\\MS_NDISWANIPV6",
+          "failed": null
+        },
+        "Present": {
+          "working": false,
+          "failed": null
+        },
+        "Problem": {
+          "working": 45,
+          "failed": null
+        },
+        "Properties": {
+          "working": {
+            "DEVPKEY_Device_HardwareIds": [
+              "ms_ndiswanipv6"
+            ],
+            "DEVPKEY_Device_DriverVersion": "10.0.26100.1",
+            "DEVPKEY_Device_DriverProvider": "Microsoft",
+            "DEVPKEY_Device_CompatibleIds": [
+              "SWD\\Generic"
+            ],
+            "DEVPKEY_Device_Parent": "SWD\\MSRRAS\\{5e259276-bc7e-40e3-b93b-8f89b5f3abc0}"
+          },
+          "failed": null
+        },
+        "Status": {
+          "working": "Unknown",
+          "failed": null
+        }
+      }
+    },
+    {
+      "instance_id": "SWD\\MSRRAS\\MS_PPPOEMINIPORT",
+      "working": {
+        "instance_id": "SWD\\MSRRAS\\MS_PPPOEMINIPORT",
+        "name": "WAN Miniport (PPPOE)",
+        "class": "Net",
+        "present": false,
+        "status": "Unknown",
+        "problem": 45,
+        "parent": "SWD\\MSRRAS\\{5e259276-bc7e-40e3-b93b-8f89b5f3abc0}",
+        "location_info": null,
+        "location_paths": null,
+        "hardware_ids": [
+          "ms_pppoeminiport"
+        ],
+        "compatible_ids": [
+          "SWD\\Generic"
+        ],
+        "bus_description": null,
+        "driver_provider": "Microsoft",
+        "driver_version": "10.0.26100.1"
+      },
+      "failed": null,
+      "changed_fields": {
+        "Class": {
+          "working": "Net",
+          "failed": null
+        },
+        "FriendlyName": {
+          "working": "WAN Miniport (PPPOE)",
+          "failed": null
+        },
+        "InstanceId": {
+          "working": "SWD\\MSRRAS\\MS_PPPOEMINIPORT",
+          "failed": null
+        },
+        "Present": {
+          "working": false,
+          "failed": null
+        },
+        "Problem": {
+          "working": 45,
+          "failed": null
+        },
+        "Properties": {
+          "working": {
+            "DEVPKEY_Device_HardwareIds": [
+              "ms_pppoeminiport"
+            ],
+            "DEVPKEY_Device_DriverVersion": "10.0.26100.1",
+            "DEVPKEY_Device_DriverProvider": "Microsoft",
+            "DEVPKEY_Device_CompatibleIds": [
+              "SWD\\Generic"
+            ],
+            "DEVPKEY_Device_Parent": "SWD\\MSRRAS\\{5e259276-bc7e-40e3-b93b-8f89b5f3abc0}"
+          },
+          "failed": null
+        },
+        "Status": {
+          "working": "Unknown",
+          "failed": null
+        }
+      }
+    },
+    {
+      "instance_id": "SWD\\MSRRAS\\MS_PPTPMINIPORT",
+      "working": {
+        "instance_id": "SWD\\MSRRAS\\MS_PPTPMINIPORT",
+        "name": "WAN Miniport (PPTP)",
+        "class": "Net",
+        "present": false,
+        "status": "Unknown",
+        "problem": 45,
+        "parent": "SWD\\MSRRAS\\{5e259276-bc7e-40e3-b93b-8f89b5f3abc0}",
+        "location_info": null,
+        "location_paths": null,
+        "hardware_ids": [
+          "ms_pptpminiport"
+        ],
+        "compatible_ids": [
+          "SWD\\Generic"
+        ],
+        "bus_description": null,
+        "driver_provider": "Microsoft",
+        "driver_version": "10.0.26100.1"
+      },
+      "failed": null,
+      "changed_fields": {
+        "Class": {
+          "working": "Net",
+          "failed": null
+        },
+        "FriendlyName": {
+          "working": "WAN Miniport (PPTP)",
+          "failed": null
+        },
+        "InstanceId": {
+          "working": "SWD\\MSRRAS\\MS_PPTPMINIPORT",
+          "failed": null
+        },
+        "Present": {
+          "working": false,
+          "failed": null
+        },
+        "Problem": {
+          "working": 45,
+          "failed": null
+        },
+        "Properties": {
+          "working": {
+            "DEVPKEY_Device_HardwareIds": [
+              "ms_pptpminiport"
+            ],
+            "DEVPKEY_Device_DriverVersion": "10.0.26100.1",
+            "DEVPKEY_Device_DriverProvider": "Microsoft",
+            "DEVPKEY_Device_CompatibleIds": [
+              "SWD\\Generic"
+            ],
+            "DEVPKEY_Device_Parent": "SWD\\MSRRAS\\{5e259276-bc7e-40e3-b93b-8f89b5f3abc0}"
+          },
+          "failed": null
+        },
+        "Status": {
+          "working": "Unknown",
+          "failed": null
+        }
+      }
+    },
+    {
+      "instance_id": "SWD\\MSRRAS\\MS_SSTPMINIPORT",
+      "working": {
+        "instance_id": "SWD\\MSRRAS\\MS_SSTPMINIPORT",
+        "name": "WAN Miniport (SSTP)",
+        "class": "Net",
+        "present": false,
+        "status": "Unknown",
+        "problem": 45,
+        "parent": "SWD\\MSRRAS\\{5e259276-bc7e-40e3-b93b-8f89b5f3abc0}",
+        "location_info": null,
+        "location_paths": null,
+        "hardware_ids": [
+          "ms_sstpminiport"
+        ],
+        "compatible_ids": [
+          "SWD\\Generic"
+        ],
+        "bus_description": null,
+        "driver_provider": "Microsoft",
+        "driver_version": "10.0.26100.1"
+      },
+      "failed": null,
+      "changed_fields": {
+        "Class": {
+          "working": "Net",
+          "failed": null
+        },
+        "FriendlyName": {
+          "working": "WAN Miniport (SSTP)",
+          "failed": null
+        },
+        "InstanceId": {
+          "working": "SWD\\MSRRAS\\MS_SSTPMINIPORT",
+          "failed": null
+        },
+        "Present": {
+          "working": false,
+          "failed": null
+        },
+        "Problem": {
+          "working": 45,
+          "failed": null
+        },
+        "Properties": {
+          "working": {
+            "DEVPKEY_Device_HardwareIds": [
+              "ms_sstpminiport"
+            ],
+            "DEVPKEY_Device_DriverVersion": "10.0.26100.1",
+            "DEVPKEY_Device_DriverProvider": "Microsoft",
+            "DEVPKEY_Device_CompatibleIds": [
+              "SWD\\Generic"
+            ],
+            "DEVPKEY_Device_Parent": "SWD\\MSRRAS\\{5e259276-bc7e-40e3-b93b-8f89b5f3abc0}"
+          },
+          "failed": null
+        },
+        "Status": {
+          "working": "Unknown",
+          "failed": null
+        }
+      }
+    },
+    {
+      "instance_id": "SWD\\MSRRAS\\{5E259276-BC7E-40E3-B93B-8F89B5F3ABC0}",
+      "working": {
+        "instance_id": "SWD\\MSRRAS\\{5E259276-BC7E-40E3-B93B-8F89B5F3ABC0}",
+        "name": "Microsoft RRAS Root Enumerator",
+        "class": "SoftwareDevice",
+        "present": false,
+        "status": "Unknown",
+        "problem": 45,
+        "parent": "HTREE\\ROOT\\0",
+        "location_info": null,
+        "location_paths": null,
+        "hardware_ids": null,
+        "compatible_ids": [
+          "SWD\\GenericRaw",
+          "SWD\\Generic"
+        ],
+        "bus_description": "Microsoft RRAS Root Enumerator",
+        "driver_provider": "Microsoft",
+        "driver_version": "10.0.26100.1"
+      },
+      "failed": null,
+      "changed_fields": {
+        "Class": {
+          "working": "SoftwareDevice",
+          "failed": null
+        },
+        "FriendlyName": {
+          "working": "Microsoft RRAS Root Enumerator",
+          "failed": null
+        },
+        "InstanceId": {
+          "working": "SWD\\MSRRAS\\{5E259276-BC7E-40E3-B93B-8F89B5F3ABC0}",
+          "failed": null
+        },
+        "Present": {
+          "working": false,
+          "failed": null
+        },
+        "Problem": {
+          "working": 45,
+          "failed": null
+        },
+        "Properties": {
+          "working": {
+            "DEVPKEY_Device_CompatibleIds": [
+              "SWD\\GenericRaw",
+              "SWD\\Generic"
+            ],
+            "DEVPKEY_Device_BusReportedDeviceDesc": "Microsoft RRAS Root Enumerator",
+            "DEVPKEY_Device_DriverVersion": "10.0.26100.1",
+            "DEVPKEY_Device_DriverProvider": "Microsoft",
+            "DEVPKEY_Device_Parent": "HTREE\\ROOT\\0"
+          },
+          "failed": null
+        },
+        "Status": {
+          "working": "Unknown",
+          "failed": null
+        }
+      }
+    },
+    {
+      "instance_id": "USB\\VID_0000&PID_0002\\5&1F456139&0&9",
+      "working": {
+        "instance_id": "USB\\VID_0000&PID_0002\\5&1F456139&0&9",
+        "name": "Unknown USB Device (Device Descriptor Request Failed)",
+        "class": "USB",
+        "present": false,
+        "status": "Unknown",
+        "problem": 45,
+        "parent": "USB\\ROOT_HUB30\\4&15ed8360&0&0",
+        "location_info": "Port_#0009.Hub_#0002",
+        "location_paths": null,
+        "hardware_ids": [
+          "USB\\DEVICE_DESCRIPTOR_FAILURE"
+        ],
+        "compatible_ids": [
+          "USB\\DEVICE_DESCRIPTOR_FAILURE"
+        ],
+        "bus_description": null,
+        "driver_provider": "Microsoft",
+        "driver_version": "10.0.26100.8737"
+      },
+      "failed": {
+        "instance_id": "USB\\VID_0000&PID_0002\\5&1F456139&0&9",
+        "name": "Unknown USB Device (Device Descriptor Request Failed)",
+        "class": "USB",
+        "present": true,
+        "status": "Error",
+        "problem": 43,
+        "parent": "USB\\ROOT_HUB30\\4&15ed8360&0&0",
+        "location_info": "Port_#0009.Hub_#0002",
+        "location_paths": null,
+        "hardware_ids": [
+          "USB\\DEVICE_DESCRIPTOR_FAILURE"
+        ],
+        "compatible_ids": [
+          "USB\\DEVICE_DESCRIPTOR_FAILURE"
+        ],
+        "bus_description": null,
+        "driver_provider": "Microsoft",
+        "driver_version": "10.0.26100.8737"
+      },
+      "changed_fields": {
+        "Present": {
+          "working": false,
+          "failed": true
+        },
+        "Problem": {
+          "working": 45,
+          "failed": 43
+        },
+        "Properties": {
+          "working": {
+            "DEVPKEY_Device_LocationInfo": "Port_#0009.Hub_#0002",
+            "DEVPKEY_Device_DriverVersion": "10.0.26100.8737",
+            "DEVPKEY_Device_HardwareIds": [
+              "USB\\DEVICE_DESCRIPTOR_FAILURE"
+            ],
+            "DEVPKEY_Device_DriverProvider": "Microsoft",
+            "DEVPKEY_Device_CompatibleIds": [
+              "USB\\DEVICE_DESCRIPTOR_FAILURE"
+            ],
+            "DEVPKEY_Device_Parent": "USB\\ROOT_HUB30\\4&15ed8360&0&0"
+          },
+          "failed": {
+            "DEVPKEY_Device_LocationInfo": "Port_#0009.Hub_#0002",
+            "DEVPKEY_Device_DriverVersion": "10.0.26100.8737",
+            "DEVPKEY_Device_HardwareIds": [
+              "USB\\DEVICE_DESCRIPTOR_FAILURE"
+            ],
+            "DEVPKEY_Device_DriverProvider": "Microsoft",
+            "DEVPKEY_Device_CompatibleIds": [
+              "USB\\DEVICE_DESCRIPTOR_FAILURE"
+            ],
+            "DEVPKEY_Device_ProblemCode": 43,
+            "DEVPKEY_Device_Parent": "USB\\ROOT_HUB30\\4&15ed8360&0&0"
+          }
+        },
+        "Status": {
+          "working": "Unknown",
+          "failed": "Error"
+        }
+      }
+    },
+    {
+      "instance_id": "USB\\VID_048D&PID_C100\\5&1F456139&0&9",
+      "working": {
+        "instance_id": "USB\\VID_048D&PID_C100\\5&1F456139&0&9",
+        "name": "USB Input Device",
+        "class": "HIDClass",
+        "present": true,
+        "status": "OK",
+        "problem": 0,
+        "parent": "USB\\ROOT_HUB30\\4&15ed8360&0&0",
+        "location_info": "Port_#0009.Hub_#0002",
+        "location_paths": null,
+        "hardware_ids": [
+          "USB\\VID_048D&PID_C100&REV_0044",
+          "USB\\VID_048D&PID_C100"
+        ],
+        "compatible_ids": [
+          "USB\\COMPAT_VID_048D&Class_03&SubClass_01&Prot_01",
+          "USB\\COMPAT_VID_048D&Class_03&SubClass_01",
+          "USB\\COMPAT_VID_048D&Class_03",
+          "USB\\Class_03&SubClass_01&Prot_01",
+          "USB\\Class_03&SubClass_01",
+          "USB\\Class_03"
+        ],
+        "bus_description": "ITE Device(8910)",
+        "driver_provider": "Microsoft",
+        "driver_version": "10.0.26100.8875"
+      },
+      "failed": {
+        "instance_id": "USB\\VID_048D&PID_C100\\5&1F456139&0&9",
+        "name": "USB Input Device",
+        "class": "HIDClass",
+        "present": false,
+        "status": "Unknown",
+        "problem": 45,
+        "parent": "USB\\ROOT_HUB30\\4&15ed8360&0&0",
+        "location_info": "Port_#0009.Hub_#0002",
+        "location_paths": null,
+        "hardware_ids": [
+          "USB\\VID_048D&PID_C100&REV_0044",
+          "USB\\VID_048D&PID_C100"
+        ],
+        "compatible_ids": [
+          "USB\\COMPAT_VID_048D&Class_03&SubClass_01&Prot_01",
+          "USB\\COMPAT_VID_048D&Class_03&SubClass_01",
+          "USB\\COMPAT_VID_048D&Class_03",
+          "USB\\Class_03&SubClass_01&Prot_01",
+          "USB\\Class_03&SubClass_01",
+          "USB\\Class_03"
+        ],
+        "bus_description": "ITE Device(8910)",
+        "driver_provider": "Microsoft",
+        "driver_version": "10.0.26100.8875"
+      },
+      "changed_fields": {
+        "Present": {
+          "working": true,
+          "failed": false
+        },
+        "Problem": {
+          "working": 0,
+          "failed": 45
+        },
+        "Properties": {
+          "working": {
+            "DEVPKEY_Device_CompatibleIds": [
+              "USB\\COMPAT_VID_048D&Class_03&SubClass_01&Prot_01",
+              "USB\\COMPAT_VID_048D&Class_03&SubClass_01",
+              "USB\\COMPAT_VID_048D&Class_03",
+              "USB\\Class_03&SubClass_01&Prot_01",
+              "USB\\Class_03&SubClass_01",
+              "USB\\Class_03"
+            ],
+            "DEVPKEY_Device_LocationInfo": "Port_#0009.Hub_#0002",
+            "DEVPKEY_Device_BusReportedDeviceDesc": "ITE Device(8910)",
+            "DEVPKEY_Device_DriverVersion": "10.0.26100.8875",
+            "DEVPKEY_Device_HardwareIds": [
+              "USB\\VID_048D&PID_C100&REV_0044",
+              "USB\\VID_048D&PID_C100"
+            ],
+            "DEVPKEY_Device_DriverProvider": "Microsoft",
+            "DEVPKEY_Device_ProblemCode": 0,
+            "DEVPKEY_Device_Parent": "USB\\ROOT_HUB30\\4&15ed8360&0&0"
+          },
+          "failed": {
+            "DEVPKEY_Device_LocationInfo": "Port_#0009.Hub_#0002",
+            "DEVPKEY_Device_BusReportedDeviceDesc": "ITE Device(8910)",
+            "DEVPKEY_Device_DriverVersion": "10.0.26100.8875",
+            "DEVPKEY_Device_HardwareIds": [
+              "USB\\VID_048D&PID_C100&REV_0044",
+              "USB\\VID_048D&PID_C100"
+            ],
+            "DEVPKEY_Device_DriverProvider": "Microsoft",
+            "DEVPKEY_Device_CompatibleIds": [
+              "USB\\COMPAT_VID_048D&Class_03&SubClass_01&Prot_01",
+              "USB\\COMPAT_VID_048D&Class_03&SubClass_01",
+              "USB\\COMPAT_VID_048D&Class_03",
+              "USB\\Class_03&SubClass_01&Prot_01",
+              "USB\\Class_03&SubClass_01",
+              "USB\\Class_03"
+            ],
+            "DEVPKEY_Device_Parent": "USB\\ROOT_HUB30\\4&15ed8360&0&0"
+          }
+        },
+        "Status": {
+          "working": "OK",
+          "failed": "Unknown"
+        }
+      }
+    },
+    {
+      "instance_id": "{5D624F94-8850-40C3-A3FA-A4FD2080BAF3}\\VWIFIMP_WFD\\4&B8EADEB&0&12",
+      "working": {
+        "instance_id": "{5D624F94-8850-40C3-A3FA-A4FD2080BAF3}\\VWIFIMP_WFD\\4&B8EADEB&0&12",
+        "name": "Microsoft Wi-Fi Direct Virtual Adapter #2",
+        "class": "Net",
+        "present": false,
+        "status": "Unknown",
+        "problem": 45,
+        "parent": "PCI\\VEN_8086&DEV_A370&SUBSYS_00348086&REV_10\\3&11583659&0&A3",
+        "location_info": "VWiFi Bus 0",
+        "location_paths": null,
+        "hardware_ids": [
+          "{5d624f94-8850-40c3-a3fa-a4fd2080baf3}\\vwifimp_wfd"
+        ],
+        "compatible_ids": [
+          "{5d624f94-8850-40c3-a3fa-a4fd2080baf3}\\vwifimp_wfd"
+        ],
+        "bus_description": "Microsoft Virtual WiFi Miniport Adapter_12",
+        "driver_provider": "Microsoft",
+        "driver_version": "10.0.26100.8521"
+      },
+      "failed": null,
+      "changed_fields": {
+        "Class": {
+          "working": "Net",
+          "failed": null
+        },
+        "FriendlyName": {
+          "working": "Microsoft Wi-Fi Direct Virtual Adapter #2",
+          "failed": null
+        },
+        "InstanceId": {
+          "working": "{5D624F94-8850-40C3-A3FA-A4FD2080BAF3}\\VWIFIMP_WFD\\4&B8EADEB&0&12",
+          "failed": null
+        },
+        "Present": {
+          "working": false,
+          "failed": null
+        },
+        "Problem": {
+          "working": 45,
+          "failed": null
+        },
+        "Properties": {
+          "working": {
+            "DEVPKEY_Device_CompatibleIds": [
+              "{5d624f94-8850-40c3-a3fa-a4fd2080baf3}\\vwifimp_wfd"
+            ],
+            "DEVPKEY_Device_LocationInfo": "VWiFi Bus 0",
+            "DEVPKEY_Device_BusReportedDeviceDesc": "Microsoft Virtual WiFi Miniport Adapter_12",
+            "DEVPKEY_Device_DriverVersion": "10.0.26100.8521",
+            "DEVPKEY_Device_HardwareIds": [
+              "{5d624f94-8850-40c3-a3fa-a4fd2080baf3}\\vwifimp_wfd"
+            ],
+            "DEVPKEY_Device_DriverProvider": "Microsoft",
+            "DEVPKEY_Device_ProblemCode": 0,
+            "DEVPKEY_Device_Parent": "PCI\\VEN_8086&DEV_A370&SUBSYS_00348086&REV_10\\3&11583659&0&A3"
+          },
+          "failed": null
+        },
+        "Status": {
+          "working": "Unknown",
+          "failed": null
+        }
+      }
+    }
+  ],
+  "events": {
+    "failed": [
+      {
+        "TimeCreated": "/Date(1785557827899)/",
+        "ProviderName": "Microsoft-Windows-Kernel-PnP",
+        "Id": 219,
+        "LevelDisplayName": "Warning",
+        "Message": "The driver \\Driver\\WUDFRd failed to load.\r\nDevice: PCI\\VEN_8086&DEV_1903&SUBSYS_382F17AA&REV_07\\3&11583659&0&20\r\nStatus: 0xC0000365"
+      },
+      {
+        "TimeCreated": "/Date(1785259739671)/",
+        "ProviderName": "Microsoft-Windows-Kernel-PnP",
+        "Id": 219,
+        "LevelDisplayName": "Warning",
+        "Message": "The driver \\Driver\\WUDFRd failed to load.\r\nDevice: PCI\\VEN_8086&DEV_1903&SUBSYS_382F17AA&REV_07\\3&11583659&0&20\r\nStatus: 0xC0000365"
+      },
+      {
+        "TimeCreated": "/Date(1785259632855)/",
+        "ProviderName": "Microsoft-Windows-Kernel-PnP",
+        "Id": 219,
+        "LevelDisplayName": "Warning",
+        "Message": "The driver \\Driver\\WUDFRd failed to load.\r\nDevice: PCI\\VEN_8086&DEV_1903&SUBSYS_382F17AA&REV_07\\3&11583659&0&20\r\nStatus: 0xC0000365"
+      },
+      {
+        "TimeCreated": "/Date(1785250195433)/",
+        "ProviderName": "Microsoft-Windows-Kernel-PnP",
+        "Id": 219,
+        "LevelDisplayName": "Warning",
+        "Message": "The driver \\Driver\\WUDFRd failed to load.\r\nDevice: PCI\\VEN_8086&DEV_1903&SUBSYS_382F17AA&REV_07\\3&11583659&0&20\r\nStatus: 0xC0000365"
+      },
+      {
+        "TimeCreated": "/Date(1785135198209)/",
+        "ProviderName": "Microsoft-Windows-Kernel-PnP",
+        "Id": 219,
+        "LevelDisplayName": "Warning",
+        "Message": "The driver \\Driver\\WUDFRd failed to load.\r\nDevice: PCI\\VEN_8086&DEV_1903&SUBSYS_382F17AA&REV_07\\3&11583659&0&20\r\nStatus: 0xC0000365"
+      },
+      {
+        "TimeCreated": "/Date(1785135140677)/",
+        "ProviderName": "Microsoft-Windows-Kernel-PnP",
+        "Id": 225,
+        "LevelDisplayName": "Warning",
+        "Message": "The application \\Device\\HarddiskVolume4\\Program Files\\Rainmeter\\Rainmeter.exe with process id 1788 stopped the removal or ejection for the device PCI\\VEN_10DE&DEV_2191&SUBSYS_3FFC17AA&REV_A1\\4&1f1ffad1&0&0008.\r\nProcess command line: \"C:\\Program Files\\Rainmeter\\Rainmeter.exe\" \r\nList of affected devices:\r\nDISPLAY\\BOE084D\\5&8788053&0&UID4355\r\n"
+      },
+      {
+        "TimeCreated": "/Date(1785080014440)/",
+        "ProviderName": "Microsoft-Windows-Kernel-PnP",
+        "Id": 219,
+        "LevelDisplayName": "Warning",
+        "Message": "The driver \\Driver\\WUDFRd failed to load.\r\nDevice: PCI\\VEN_8086&DEV_1903&SUBSYS_382F17AA&REV_07\\3&11583659&0&20\r\nStatus: 0xC0000365"
+      },
+      {
+        "TimeCreated": "/Date(1784990765926)/",
+        "ProviderName": "Microsoft-Windows-Kernel-PnP",
+        "Id": 219,
+        "LevelDisplayName": "Warning",
+        "Message": "The driver \\Driver\\WUDFRd failed to load.\r\nDevice: PCI\\VEN_8086&DEV_1903&SUBSYS_382F17AA&REV_07\\3&11583659&0&20\r\nStatus: 0xC0000365"
+      }
+    ],
+    "working": [
+      {
+        "TimeCreated": "/Date(1785592638599)/",
+        "ProviderName": "Microsoft-Windows-Kernel-PnP",
+        "Id": 219,
+        "LevelDisplayName": "Warning",
+        "Message": "The driver \\Driver\\WUDFRd failed to load.\r\nDevice: PCI\\VEN_8086&DEV_1903&SUBSYS_382F17AA&REV_07\\3&11583659&0&20\r\nStatus: 0xC0000365"
+      },
+      {
+        "TimeCreated": "/Date(1785557827899)/",
+        "ProviderName": "Microsoft-Windows-Kernel-PnP",
+        "Id": 219,
+        "LevelDisplayName": "Warning",
+        "Message": "The driver \\Driver\\WUDFRd failed to load.\r\nDevice: PCI\\VEN_8086&DEV_1903&SUBSYS_382F17AA&REV_07\\3&11583659&0&20\r\nStatus: 0xC0000365"
+      },
+      {
+        "TimeCreated": "/Date(1785259739671)/",
+        "ProviderName": "Microsoft-Windows-Kernel-PnP",
+        "Id": 219,
+        "LevelDisplayName": "Warning",
+        "Message": "The driver \\Driver\\WUDFRd failed to load.\r\nDevice: PCI\\VEN_8086&DEV_1903&SUBSYS_382F17AA&REV_07\\3&11583659&0&20\r\nStatus: 0xC0000365"
+      },
+      {
+        "TimeCreated": "/Date(1785259632855)/",
+        "ProviderName": "Microsoft-Windows-Kernel-PnP",
+        "Id": 219,
+        "LevelDisplayName": "Warning",
+        "Message": "The driver \\Driver\\WUDFRd failed to load.\r\nDevice: PCI\\VEN_8086&DEV_1903&SUBSYS_382F17AA&REV_07\\3&11583659&0&20\r\nStatus: 0xC0000365"
+      },
+      {
+        "TimeCreated": "/Date(1785250195433)/",
+        "ProviderName": "Microsoft-Windows-Kernel-PnP",
+        "Id": 219,
+        "LevelDisplayName": "Warning",
+        "Message": "The driver \\Driver\\WUDFRd failed to load.\r\nDevice: PCI\\VEN_8086&DEV_1903&SUBSYS_382F17AA&REV_07\\3&11583659&0&20\r\nStatus: 0xC0000365"
+      },
+      {
+        "TimeCreated": "/Date(1785135198209)/",
+        "ProviderName": "Microsoft-Windows-Kernel-PnP",
+        "Id": 219,
+        "LevelDisplayName": "Warning",
+        "Message": "The driver \\Driver\\WUDFRd failed to load.\r\nDevice: PCI\\VEN_8086&DEV_1903&SUBSYS_382F17AA&REV_07\\3&11583659&0&20\r\nStatus: 0xC0000365"
+      },
+      {
+        "TimeCreated": "/Date(1785135140677)/",
+        "ProviderName": "Microsoft-Windows-Kernel-PnP",
+        "Id": 225,
+        "LevelDisplayName": "Warning",
+        "Message": "The application \\Device\\HarddiskVolume4\\Program Files\\Rainmeter\\Rainmeter.exe with process id 1788 stopped the removal or ejection for the device PCI\\VEN_10DE&DEV_2191&SUBSYS_3FFC17AA&REV_A1\\4&1f1ffad1&0&0008.\r\nProcess command line: \"C:\\Program Files\\Rainmeter\\Rainmeter.exe\" \r\nList of affected devices:\r\nDISPLAY\\BOE084D\\5&8788053&0&UID4355\r\n"
+      },
+      {
+        "TimeCreated": "/Date(1785080014440)/",
+        "ProviderName": "Microsoft-Windows-Kernel-PnP",
+        "Id": 219,
+        "LevelDisplayName": "Warning",
+        "Message": "The driver \\Driver\\WUDFRd failed to load.\r\nDevice: PCI\\VEN_8086&DEV_1903&SUBSYS_382F17AA&REV_07\\3&11583659&0&20\r\nStatus: 0xC0000365"
+      },
+      {
+        "TimeCreated": "/Date(1784990765926)/",
+        "ProviderName": "Microsoft-Windows-Kernel-PnP",
+        "Id": 219,
+        "LevelDisplayName": "Warning",
+        "Message": "The driver \\Driver\\WUDFRd failed to load.\r\nDevice: PCI\\VEN_8086&DEV_1903&SUBSYS_382F17AA&REV_07\\3&11583659&0&20\r\nStatus: 0xC0000365"
+      }
+    ]
+  },
+  "artifact_inventory": [
+    {
+      "relative_path": "Board/BoardViewer.zip",
+      "bytes": 1447675,
+      "sha256": "3BF261CC55ECF64BBC8E1868C4C9256BE26840E2865A70C4625059D274621E08",
+      "archive_inventory": {
+        "tool": "tar -tf",
+        "return_code": 0,
+        "members": [
+          "BoardViewer/",
+          "BoardViewer/BoardViewer.exe",
+          "BoardViewer/BoardViewer.exe.config",
+          "BoardViewer/Ionic.Zip.dll",
+          "BoardViewer/Lang/",
+          "BoardViewer/Lang/es-ES.lng",
+          "BoardViewer/Lang/es-MX.lng",
+          "BoardViewer/Lang/fr-FR.lng",
+          "BoardViewer/Lang/it-IT.lng",
+          "BoardViewer/Lang/ru-RU.lng",
+          "BoardViewer/Lang/tr-TR.lng",
+          "BoardViewer/Lang/zh-TW.lng",
+          "BoardViewer/ObjectListView.dll",
+          "BoardViewer/SharpDX.Direct2D1.dll",
+          "BoardViewer/SharpDX.Direct3D11.dll",
+          "BoardViewer/SharpDX.dll",
+          "BoardViewer/SharpDX.DXGI.dll"
+        ],
+        "stderr": ""
+      }
+    },
+    {
+      "relative_path": "Board/Lenovo Legion Y540-15IRH - NM-C221 REV0.1 Boardview.rar",
+      "bytes": 2850869,
+      "sha256": "A3B54B0F6E5850AA578BCA447F5AADA7B797CD872C9F081BF6DB7E2FB5497B2C",
+      "archive_inventory": {
+        "tool": "tar -tf",
+        "return_code": 0,
+        "members": [
+          "Lenovo Legion Y540-15IRH - NM-C221 REV0.1 Boardview/1.jpg",
+          "Lenovo Legion Y540-15IRH - NM-C221 REV0.1 Boardview/2.jpg",
+          "Lenovo Legion Y540-15IRH - NM-C221 REV0.1 Boardview/Lenovo Legion Y540-15IRH - NM-C221 REV0.1 Boardview_/Lenovo Legion Y540-15IRH - NM-C221 REV0.1 Boardview .tvw",
+          "Lenovo Legion Y540-15IRH - NM-C221 REV0.1 Boardview/Lenovo Legion Y540-15IRH - NM-C221 REV0.1 Boardview_/NS-C221.tvw",
+          "Lenovo Legion Y540-15IRH - NM-C221 REV0.1 Boardview/Lenovo Legion Y540-15IRH - NM-C221 REV0.1 Boardview_/NS-C222.tvw",
+          "Lenovo Legion Y540-15IRH - NM-C221 REV0.1 Boardview/Lenovo Legion Y540-15IRH - NM-C221 REV0.1 Boardview_/NS-C223.tvw",
+          "Lenovo Legion Y540-15IRH - NM-C221 REV0.1 Boardview/Lenovo Legion Y540-15IRH - NM-C221 REV0.1 Boardview_/NS-c224.tvw",
+          "Lenovo Legion Y540-15IRH - NM-C221 REV0.1 Boardview/Lenovo Legion Y540-15IRH - NM-C221 REV0.1 Boardview_/NS-C225.tvw",
+          "Lenovo Legion Y540-15IRH - NM-C221 REV0.1 Boardview/Lenovo Legion Y540-15IRH - NM-C221 REV0.1 Boardview_/NS-C226.tvw",
+          "Lenovo Legion Y540-15IRH - NM-C221 REV0.1 Boardview/Lenovo Legion Y540-15IRH - NM-C221 REV0.1 Boardview_/NS-C227.tvw",
+          "Lenovo Legion Y540-15IRH - NM-C221 REV0.1 Boardview/ORGINAL link.txt",
+          "Lenovo Legion Y540-15IRH - NM-C221 REV0.1 Boardview/Lenovo Legion Y540-15IRH - NM-C221 REV0.1 Boardview_",
+          "Lenovo Legion Y540-15IRH - NM-C221 REV0.1 Boardview"
+        ],
+        "stderr": ""
+      }
+    },
+    {
+      "relative_path": "Collect-Y540KeyboardState.ps1",
+      "bytes": 3503,
+      "sha256": "2A335EB822F13134A073EDE6D2DD07720D4A3B18DBDEA171572C1FA69AC6639F"
+    },
+    {
+      "relative_path": "Files/bhcn35ww.exe",
+      "bytes": 8350344,
+      "sha256": "B3F8D741EFFA997D4D94F4F96D014F5473550E9B7A96DBBB2B9C835FA135D305"
+    },
+    {
+      "relative_path": "Files/bhcn36ww.exe",
+      "bytes": 8351672,
+      "sha256": "EF207E9A8E2507A05B8FC7B47DC9B4B7E0DA6BD25D9C211C8B44B24E161DBAC7"
+    },
+    {
+      "relative_path": "Files/bhcn45ww.exe",
+      "bytes": 7923040,
+      "sha256": "F934CECC55749D57CDB1C23F77B471769CAD001D5251D697FF05C0E0FAD9CB32"
+    },
+    {
+      "relative_path": "Files/Y540-keyboard-firmware-00000044/extracted-IT/44.bin",
+      "bytes": 55296,
+      "sha256": "3AFEC131C6ED70EFA0A3F4B601CB799011A582835D371C57FEF68AF48519E359"
+    },
+    {
+      "relative_path": "Files/Y540-keyboard-firmware-00000044/extracted-IT/ITESHFU.exe",
+      "bytes": 11485623,
+      "sha256": "AFCCA3DE209CCFAB256AFF48B8F7F59DFB6CD6A27B22FC58A41B50F0BD8BB8FA"
+    },
+    {
+      "relative_path": "Files/Y540-keyboard-firmware-00000044/extracted-IT/SHFU.ini",
+      "bytes": 890,
+      "sha256": "87D8A39D9CB1A107C0D24B5A929D46051C54A089C8042E6B044C02D2FFEFB64A"
+    },
+    {
+      "relative_path": "Files/Y540-keyboard-firmware-00000044/ite1fw11s.exe",
+      "bytes": 2835096,
+      "sha256": "E5863DCD12C40AFB98BD5577C3C9631F8F5F78868BC1B1125355F34637F31834"
+    },
+    {
+      "relative_path": "Files/Y540-keyboard-firmware-00000044/Lenovo-package-metadata.xml",
+      "bytes": 5780,
+      "sha256": "41ED1C5E66456B9D7E5931A143B31F7C6DB9107B5E115F0E28FA861CCAEDD2BE"
+    },
+    {
+      "relative_path": "Lenovo-forum-findings-keyboard-00000044.md",
+      "bytes": 10069,
+      "sha256": "8FFD6C3673253768D13A6DB963FDEAD7E9653FDE5CFAA2E7F3F4D10BC30D2E9E"
+    },
+    {
+      "relative_path": "Y540-firmware-technical-findings.md",
+      "bytes": 10459,
+      "sha256": "1C383D07370A69C3289CBF281D3863BF1D38C56B4152C8D3C56C1FD0066608AF"
+    },
+    {
+      "relative_path": "Y540-keyboard-failed-20260801-172338.json",
+      "bytes": 192521,
+      "sha256": "798252D8E2272A4AADC0175997A626407D6C70B15CA78FB599A2E35619AF99BF"
+    },
+    {
+      "relative_path": "Y540-keyboard-situation-and-findings.md",
+      "bytes": 2539,
+      "sha256": "00B4AC485B444EBD124EA3E90DE20DFB183FE91F483990BC99858D9C977D1964"
+    },
+    {
+      "relative_path": "Y540-keyboard-working-20260801-172838.json",
+      "bytes": 206488,
+      "sha256": "74B575954E1B884A273F641CB8DF226122591A3484803FBBC93166E04B04F744"
+    }
+  ]
+}

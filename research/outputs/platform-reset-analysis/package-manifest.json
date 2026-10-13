@@ -1,0 +1,23 @@
+[
+  {
+    "Name": "bhcn35ww.exe",
+    "Bytes": 8350344,
+    "SHA256": "B3F8D741EFFA997D4D94F4F96D014F5473550E9B7A96DBBB2B9C835FA135D305",
+    "SignatureStatus": "Valid",
+    "Signer": "CN=Lenovo, OU=G29, O=Lenovo, L=Morrisville, S=North Carolina, C=US"
+  },
+  {
+    "Name": "bhcn36ww.exe",
+    "Bytes": 8351672,
+    "SHA256": "EF207E9A8E2507A05B8FC7B47DC9B4B7E0DA6BD25D9C211C8B44B24E161DBAC7",
+    "SignatureStatus": "Valid",
+    "Signer": "CN=Lenovo, OU=G29, O=Lenovo, L=Morrisville, S=North Carolina, C=US"
+  },
+  {
+    "Name": "bhcn45ww.exe",
+    "Bytes": 7923040,
+    "SHA256": "F934CECC55749D57CDB1C23F77B471769CAD001D5251D697FF05C0E0FAD9CB32",
+    "SignatureStatus": "Valid",
+    "Signer": "CN=Lenovo, OU=G29, O=Lenovo, L=Morrisville, S=North Carolina, C=US"
+  }
+]
