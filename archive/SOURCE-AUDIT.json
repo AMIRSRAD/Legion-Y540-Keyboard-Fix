@@ -1,0 +1,8 @@
+{
+  "status": "passed",
+  "regular_files_metadata_unchanged_since_archive": 91114,
+  "file_and_symlink_paths_exactly_match": 91114,
+  "new_or_missing_files": 0,
+  "source_content_hashed_by_builder": true,
+  "archive_content_independently_hashed_by_full_restore_verifier": true
+}

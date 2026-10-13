@@ -1,0 +1,20 @@
+{
+  "status": "passed",
+  "files": 91114,
+  "represented_bytes": 11906824038,
+  "unique_file_hashes_checked": 43385,
+  "objects_content_checked": 43458,
+  "parts_checked": 21,
+  "mode": "verify-only",
+  "roots": [
+    "desktop-case",
+    "desktop-extra",
+    "desktop-logs",
+    "desktop-original-updater",
+    "desktop-rea-portable-kept",
+    "desktop-tries",
+    "workspace"
+  ],
+  "seconds": 266.6,
+  "archived_target_execution": false
+}
