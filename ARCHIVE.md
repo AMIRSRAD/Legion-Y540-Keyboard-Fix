@@ -33,3 +33,9 @@ No regular file in the selected available roots was intentionally omitted from t
 The owner explicitly waived the unavailable `E:\Sala\fix9-recording-20261013T115002055Z.zip`. It is **not preserved**. Its Desktop application logs and pre-erase backup are preserved. See [PRESERVATION-EXCEPTIONS.md](archive/PRESERVATION-EXCEPTIONS.md).
 
 Local cleanup is conditional on complete archive reconstruction verification and comparison of every asset's SHA-256 with its GitHub-stored digest (with download/readback fallback). Initial parts are also downloaded back and compared. Receipts distinguish actual downloads from server-reported digests. The Desktop `rea-rea-agents-6.4.0` is retained with Ghidra, Java, Node and relative-path launchers. Cleanup covers the named research copies, not unrelated Desktop files or shared installed tools.
+
+## Cleanup result
+
+All selected local research files were removed after verification: 10,090,457,183 source-file bytes (about 9.4 GiB), excluding the retained REA folder. See [CLEANUP-RECEIPT.json](archive/CLEANUP-RECEIPT.json). The active chat's empty workspace directory remained locked by a process; it contains no research files. Temporary archive/upload staging is removed after this receipt is pushed. The 91,114-file archive includes the retained portable toolkit as an additional recovery copy. No reliable keyboard repair was achieved.
+
+The scripts under `archive/maintenance/` record the one-time preservation workflow. Their original roots and deletion targets are specific to the owner's development PC; they are historical administrative source, not instructions for a new developer to execute.

@@ -1,0 +1,35 @@
+{
+  "roots": {
+    "workspace": {
+      "path": "C:\\Users\\a.saberi\\Documents\\Codex\\2026-10-12\\https-github-com-morluto-rea-https"
+    },
+    "desktop-case": {
+      "path": "C:\\Users\\a.saberi\\Desktop\\KeyboardFirmware-Issue"
+    },
+    "desktop-tries": {
+      "path": "C:\\Users\\a.saberi\\Desktop\\Tries"
+    },
+    "desktop-logs": {
+      "path": "C:\\Users\\a.saberi\\Desktop\\logs"
+    },
+    "desktop-original-updater": {
+      "path": "C:\\Users\\a.saberi\\Desktop\\Y540-keyboard-firmware-00000044"
+    },
+    "desktop-rea-portable-kept": {
+      "path": "C:\\Users\\a.saberi\\Desktop\\rea-rea-agents-6.4.0"
+    },
+    "desktop-extra": {
+      "path": "C:\\Users\\a.saberi\\Desktop",
+      "include_files": [
+        "bhcn45ww.exe",
+        "return-exp1-recording-20261013T095802730Z.zip"
+      ]
+    }
+  },
+  "user_waived_unavailable_artifacts": [
+    {
+      "path": "E:\\Sala\\fix9-recording-20261013T115002055Z.zip",
+      "reason": "Drive unavailable; owner explicitly said to ignore this recording during preservation."
+    }
+  ]
+}

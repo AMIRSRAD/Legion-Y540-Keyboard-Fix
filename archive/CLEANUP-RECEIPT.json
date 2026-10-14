@@ -1,0 +1,23 @@
+{
+  "status": "completed",
+  "owner_requested": true,
+  "completed_at": "2026-10-14T09:02:38.9643168+03:30",
+  "removed_paths": [
+    "C:\\Users\\a.saberi\\Desktop\\KeyboardFirmware-Issue",
+    "C:\\Users\\a.saberi\\Desktop\\Tries",
+    "C:\\Users\\a.saberi\\Desktop\\logs",
+    "C:\\Users\\a.saberi\\Desktop\\Y540-keyboard-firmware-00000044",
+    "C:\\Users\\a.saberi\\Desktop\\bhcn45ww.exe",
+    "C:\\Users\\a.saberi\\Desktop\\return-exp1-recording-20261013T095802730Z.zip"
+  ],
+  "contents_removed_empty_folder_locked": [
+    "C:\\Users\\a.saberi\\Documents\\Codex\\2026-10-12\\https-github-com-morluto-rea-https"
+  ],
+  "retained_rea": "C:\\Users\\a.saberi\\Desktop\\rea-rea-agents-6.4.0",
+  "unrelated_desktop_and_shared_installed_tools_preserved": true,
+  "free_bytes_before_resume": 11345145856,
+  "free_bytes_after": 11419828224,
+  "source_file_bytes_removed": 10090457183,
+  "public_archive": "https://github.com/AMIRSRAD/Y540-Keyboard/releases/tag/preservation-2026-10-13",
+  "missing_trace_explicitly_waived": "fix9-recording-20261013T115002055Z.zip"
+}
