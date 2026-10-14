@@ -1,0 +1,12 @@
+{
+  "status": "retained_due_to_automatic_approval_review_rejection",
+  "path": "C:\\Users\\a.saberi\\Documents\\Codex\\work\\y540-preserve-260e100f74",
+  "whole_folder_removal_rejected": true,
+  "narrower_verified_archive_part_removal_rejected": true,
+  "stated_reason": "blocked by policy",
+  "all_original_project_files_preserved_on_github": true,
+  "github_archive_reconstruction_verified": true,
+  "github_asset_hashes_verified": true,
+  "owner_can_safely_delete_this_temporary_folder_manually": true,
+  "retained_desktop_rea_must_not_be_deleted": "C:\\Users\\a.saberi\\Desktop\\rea-rea-agents-6.4.0"
+}

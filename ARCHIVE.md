@@ -36,6 +36,8 @@ Local cleanup is conditional on complete archive reconstruction verification and
 
 ## Cleanup result
 
-All selected local research files were removed after verification: 10,090,457,183 source-file bytes (about 9.4 GiB), excluding the retained REA folder. See [CLEANUP-RECEIPT.json](archive/CLEANUP-RECEIPT.json). The active chat's empty workspace directory remained locked by a process; it contains no research files. Temporary archive/upload staging is removed after this receipt is pushed. The 91,114-file archive includes the retained portable toolkit as an additional recovery copy. No reliable keyboard repair was achieved.
+All selected local research files were removed after verification: 10,090,457,183 source-file bytes (about 9.4 GiB), excluding the retained REA folder. See [CLEANUP-RECEIPT.json](archive/CLEANUP-RECEIPT.json). The active chat's empty workspace directory remained locked by a process; it contains no research files. The 91,114-file archive includes the retained portable toolkit as an additional recovery copy. No reliable keyboard repair was achieved.
+
+Temporary archive/upload staging remains at `C:\Users\a.saberi\Documents\Codex\work\y540-preserve-260e100f74`. Automatic approval review rejected both removal of that folder and the narrower removal of its already-verified archive-part files, reporting only “blocked by policy.” No workaround deletion was performed. The owner can safely remove this entire temporary staging folder manually: its project source, archive indexes, verification receipts, cleanup receipt and archive bytes have already been pushed and verified on GitHub. This restriction did not prevent removal of the original research copies.
 
 The scripts under `archive/maintenance/` record the one-time preservation workflow. Their original roots and deletion targets are specific to the owner's development PC; they are historical administrative source, not instructions for a new developer to execute.
