@@ -1,5 +1,7 @@
 # Lenovo Legion Y540 — built-in keyboard dies after Restart/Shut down: a fix
 
+> **The story in short:** Lenovo's *"Y540 keyboard Firmware update – 00000044"* failed on my laptop (*"Can not Find Device! - 1"*), and from then on the built-in keyboard died after every restart or shutdown. Lenovo never published a fix. So I reverse engineered Lenovo's updater, the keyboard firmware and the chip's bootloader with [REA](https://github.com/morluto/rea) and [Ghidra](https://github.com/NationalSecurityAgency/ghidra), built my own open-source updater, and after nine attempts found a firmware patch (exp4) that keeps the keyboard working. [Full story →](docs/HISTORY.md)
+
 **Symptom:** after a normal Windows **Restart** or **Shut down**, the Y540's built-in keyboard stops typing (Fn keys may still work). Holding the power button for about **10 seconds** until the laptop is fully off, then turning it on, brings it back — until the next restart. Device Manager shows **"Unknown USB Device (Device Descriptor Request Failed)"**. Many owners report this after Lenovo's *"Y540 keyboard Firmware update – 00000044"*.
 
 **Status (2026-10-16): experimental fix `exp4`, working so far.** On the author's laptop the keyboard has worked after every shutdown and Shift+shutdown since installing it, after nine earlier attempts (fix1–fix9) that did not hold. Long-term testing is still running; see [docs/STATUS.md](docs/STATUS.md). If it is still holding after about a week, it will be declared the fix.
