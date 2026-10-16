@@ -26,7 +26,7 @@ The keyboard's update mode sometimes stops answering during a long transfer. Thi
 
 1. Wait 30 seconds without touching anything — note whether it comes back by itself.
 2. Hold power 10 seconds to recover it.
-3. Run the [boot trace kit](https://github.com/AMIRSRAD/Y540-Keyboard/raw/main/download/Y540-boot-trace-kit.zip) on the next restart and attach the ZIP it makes to a GitHub issue.
+3. Run the [boot trace kit](https://github.com/AMIRSRAD/Legion-Y540-Keyboard-Fix/raw/main/download/Y540-boot-trace-kit.zip) on the next restart and attach the ZIP it makes to a GitHub issue.
 
 ## Undo / go back
 

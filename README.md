@@ -8,7 +8,7 @@
 
 ## ⬇️ Download and install (no programming needed)
 
-1. **Download:** [**Y540-Keyboard-Fix.zip**](https://github.com/AMIRSRAD/Y540-Keyboard/raw/main/download/Y540-Keyboard-Fix.zip) (140 KB)
+1. **Download:** [**Y540-Keyboard-Fix.zip**](https://github.com/AMIRSRAD/Legion-Y540-Keyboard-Fix/raw/main/download/Y540-Keyboard-Fix.zip) (140 KB)
 2. Right-click the ZIP → **Extract All**, open the folder, read **`READ ME FIRST.txt`**.
 3. Plug in the charger. **The built-in keyboard must be typing before you update** — the updater cannot reach a keyboard in its broken state. Get it working any way that works for you: hold the power button ~10 s until fully off and turn on, let the battery run flat and recharge, or whatever has worked for you before.
 4. Double-click **`INSTALL THE FIX.cmd`** → **Yes**.
@@ -36,7 +36,7 @@ The keyboard is a small separate chip (ITE IT8176) that stays powered even when 
 
 ## Help testing
 
-If you try it, please report back (GitHub issue): your model, what you tested (restart / shutdown / sleep) and whether it held. If it fails, the [boot trace kit](https://github.com/AMIRSRAD/Y540-Keyboard/raw/main/download/Y540-boot-trace-kit.zip) records what the USB system saw during one restart, without recording what you type ([tools/boot-trace-kit/READ-ME.txt](tools/boot-trace-kit/READ-ME.txt)).
+If you try it, please report back (GitHub issue): your model, what you tested (restart / shutdown / sleep) and whether it held. If it fails, the [boot trace kit](https://github.com/AMIRSRAD/Legion-Y540-Keyboard-Fix/raw/main/download/Y540-boot-trace-kit.zip) records what the USB system saw during one restart, without recording what you type ([tools/boot-trace-kit/READ-ME.txt](tools/boot-trace-kit/READ-ME.txt)).
 
 ## Repository layout
 

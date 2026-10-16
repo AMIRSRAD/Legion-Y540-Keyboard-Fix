@@ -11,7 +11,7 @@ Time needed: about 5 minutes. No programming knowledge needed.
 
 ## 1. Download
 
-Download [**Y540-Keyboard-Fix.zip**](https://github.com/AMIRSRAD/Y540-Keyboard/raw/main/download/Y540-Keyboard-Fix.zip).
+Download [**Y540-Keyboard-Fix.zip**](https://github.com/AMIRSRAD/Legion-Y540-Keyboard-Fix/raw/main/download/Y540-Keyboard-Fix.zip).
 Right-click it → **Extract All…** → **Extract**. Open the extracted `Y540-Keyboard-Fix` folder.
 
 > Windows SmartScreen may warn that the program is unrecognised, because it is not signed by a company.
