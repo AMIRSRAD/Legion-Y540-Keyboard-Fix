@@ -3,7 +3,7 @@
 ## The updater refuses to start writing
 
 **`Firmware write refused: need one healthy physical ITE keyboard; found 0`**
-The keyboard is in its broken state, so the updater cannot reach it. Hold the power button about 10 seconds until fully off, turn on, and try again.
+The keyboard is in its broken state, so the updater cannot reach it. Get it typing again first — hold the power button about 10 seconds until fully off and turn on, let the battery drain completely, or use whatever method works for you — then try again.
 
 **`Bootloader reset dependency differs; exp3/exp4 not installed, no erase performed`**
 Your keyboard chip's built-in recovery code is not the one this fix was tested on. Nothing was changed. Do not try to force it; open a GitHub issue with the log from the `logs` folder.
@@ -30,7 +30,7 @@ The keyboard's update mode sometimes stops answering during a long transfer. Thi
 
 ## Undo / go back
 
-Get the keyboard working first (10-second power hold). Run `INSTALL THE FIX.cmd`, click **Browse…** next to the firmware box, open `other-firmware` and choose:
+Get the keyboard typing first (10-second power hold, battery drain, or whatever works for you). Run `INSTALL THE FIX.cmd`, click **Browse…** next to the firmware box, open `other-firmware` and choose:
 
 | File | What it is | Validate shows |
 |---|---|---|

@@ -10,7 +10,7 @@
 
 1. **Download:** [**Y540-Keyboard-Fix.zip**](https://github.com/AMIRSRAD/Y540-Keyboard/raw/main/download/Y540-Keyboard-Fix.zip) (140 KB)
 2. Right-click the ZIP → **Extract All**, open the folder, read **`READ ME FIRST.txt`**.
-3. Plug in the charger. Make the keyboard **work** first: hold power ~10 s until off, turn on.
+3. Plug in the charger. **The built-in keyboard must be typing before you update** — the updater cannot reach a keyboard in its broken state. Get it working any way that works for you: hold the power button ~10 s until fully off and turn on, let the battery run flat and recharge, or whatever has worked for you before.
 4. Double-click **`INSTALL THE FIX.cmd`** → **Yes**.
 5. Click **Validate firmware** (should say `Sum=506A`), then **Advanced firmware write** → **Yes**.
 6. Wait for **"Firmware readback matched; reset command accepted."** Done.

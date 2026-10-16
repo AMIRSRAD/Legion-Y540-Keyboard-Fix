@@ -17,11 +17,17 @@ Right-click it → **Extract All…** → **Extract**. Open the extracted `Y540-
 > Windows SmartScreen may warn that the program is unrecognised, because it is not signed by a company.
 > Click **More info → Run anyway** only if you downloaded it from this GitHub page.
 
-## 2. Get the keyboard working first
+## 2. Get the keyboard working first (required)
 
-The updater needs to talk to the keyboard, so it must be in its **working** state:
-hold the **power button for about 10 seconds** until the laptop is completely off, then turn it on and log in.
-Check that the built-in keyboard types.
+**The built-in keyboard must be typing before you update.** In its broken state the keyboard does not answer at all, so the updater cannot reach it and will refuse to start (`need one healthy physical ITE keyboard; found 0`).
+
+Use any method that brings your keyboard back:
+
+- **Power-button hold:** hold the power button about 10 seconds until the laptop is completely off, then turn it on.
+- **Battery drain:** unplug the charger and let the battery run completely flat so the laptop switches itself off, then plug in and turn on.
+- **Anything else that has worked for you before** (for example a BIOS option to disable the built-in battery, if your BIOS has one).
+
+Log in and check that the built-in keyboard types. Then continue.
 
 ## 3. Open the updater
 
