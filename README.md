@@ -24,6 +24,10 @@ Something went wrong / want to undo: **[docs/TROUBLESHOOTING.md](docs/TROUBLESHO
 
 ---
 
+## How it started
+
+It began with Lenovo's own **"Y540 keyboard Firmware update – 00000044"**. On the author's laptop it failed with *"Can not Find Device! - 1"*, and from then on the keyboard died after every restart or shutdown. Other Y540 owners on Lenovo's forum describe the same thing after the same update, and Lenovo never published a fix. With no documentation from Lenovo or ITE, we reverse engineered Lenovo's updater, the keyboard firmware and the chip's bootloader using [REA](https://github.com/morluto/rea) and [Ghidra](https://github.com/NationalSecurityAgency/ghidra). That gave us an open-source updater, and after nine attempts, exp4. The full story and every step: **[docs/HISTORY.md](docs/HISTORY.md)**.
+
 ## What the fix does (short version)
 
 The keyboard is a small separate chip (ITE IT8176) that stays powered even when the laptop is "off" — only a 10-second power hold really cuts its power. When Windows shuts down or restarts, the keyboard's firmware notices that the computer went quiet and puts the chip into a low-power state. On this laptop the chip often never comes back from that state until its power is removed, so the next boot finds a keyboard that is plugged in but silent.
@@ -39,7 +43,7 @@ If you try it, please report back (GitHub issue): your model, what you tested (r
 | Folder | What is in it |
 |---|---|
 | [`download/`](download/) | Ready-to-use ZIPs: the fix and the boot trace kit |
-| [`docs/`](docs/) | Install guide, troubleshooting, how it works, test status, trace findings |
+| [`docs/`](docs/) | Install guide, troubleshooting, how it started and how it was found, how it works, test status, trace findings |
 | [`source/`](source/) | Updater C source, firmware generators (`build_exp4.py`) and tests — see [source/BUILD.md](source/BUILD.md) |
 | [`tools/boot-trace-kit/`](tools/boot-trace-kit/) | The boot-time USB trace scripts |
 | [`research/`](research/) | The full earlier investigation (fix1–fix9, exp1–exp3, firmware/BIOS/board analysis, preservation archive) — see [research/README.md](research/README.md) |
