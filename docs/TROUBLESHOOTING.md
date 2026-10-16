@@ -1,0 +1,47 @@
+# Troubleshooting and undo
+
+## The updater refuses to start writing
+
+**`Firmware write refused: need one healthy physical ITE keyboard; found 0`**
+The keyboard is in its broken state, so the updater cannot reach it. Hold the power button about 10 seconds until fully off, turn on, and try again.
+
+**`Bootloader reset dependency differs; exp3/exp4 not installed, no erase performed`**
+Your keyboard chip's built-in recovery code is not the one this fix was tested on. Nothing was changed. Do not try to force it; open a GitHub issue with the log from the `logs` folder.
+
+**`... permits only exact stock44, exp1, exp3 or exp4 ...`**
+You selected a firmware file that is not one of the known files. Use the files from the download only.
+
+## The write stopped part-way
+
+Example: `Update stopped: HidD_SetFeature failed (code 31).`
+
+The keyboard's update mode sometimes stops answering during a long transfer. This happened once during testing.
+
+- The keyboard will **not type** until a write completes, but its **recovery (boot) area is never erased**, so it can always be written again.
+- Run `INSTALL THE FIX.cmd` again and write again. The updater recognises a half-finished write and continues safely.
+- If it cannot find the keyboard: hold the power button 10 seconds, turn on, and try again. The keyboard comes up in update mode by itself because the half-written firmware falls through into the recovery program.
+- If it fails three times in a row, stop and open an issue with the `logs` folder.
+
+## The keyboard still dies after a restart with exp4
+
+1. Wait 30 seconds without touching anything — note whether it comes back by itself.
+2. Hold power 10 seconds to recover it.
+3. Run the [boot trace kit](https://github.com/AMIRSRAD/Y540-Keyboard/raw/main/download/Y540-boot-trace-kit.zip) on the next restart and attach the ZIP it makes to a GitHub issue.
+
+## Undo / go back
+
+Get the keyboard working first (10-second power hold). Run `INSTALL THE FIX.cmd`, click **Browse…** next to the firmware box, open `other-firmware` and choose:
+
+| File | What it is | Validate shows |
+|---|---|---|
+| `44-original-lenovo.bin` | Lenovo's original firmware 44 | `Sum=5622` |
+| `44-recovery-exp3.bin` | Earlier experiment exp3 | `Sum=0699` |
+| `44-nosleep-exp1.bin` | Earlier experiment exp1 | `Sum=5642` |
+
+Then **Validate firmware → Advanced firmware write → Yes**, as in the install guide. Your own pre-install backup is in the `logs` folder (`before-flash-….bin`), for reference.
+
+## Known side effects of exp4
+
+- Keyboard backlight flashes once at power-off: normal.
+- The built-in keyboard cannot wake the laptop from Sleep. Use the power button or lid.
+- If Windows is allowed to switch the keyboard off when idle, the first key after a long idle may be lost while it reconnects. To avoid it: Device Manager → *Universal Serial Bus controllers* → the device on *Port_#0009* → *Power Management* → untick *Allow the computer to turn off this device to save power*.

@@ -5,3 +5,4 @@ logs/
 *.zip
 samples/
 __pycache__/
+!download/*.zip

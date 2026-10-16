@@ -1,0 +1,41 @@
+Y540 BOOT-TIME USB TRACE - run on the AFFECTED Lenovo
+
+What it does
+  Records Windows USB driver events across ONE ordinary restart: the end of
+  the old Windows session (best effort) and the new boot from very early on,
+  including the moment the USB driver takes the keyboard over from the BIOS.
+  It does not flash firmware, reset devices, or change BIOS or power settings.
+  It never records what is typed: the data-payload trace options are not used.
+
+You need
+  - An external USB keyboard or mouse (the built-in keyboard may be dead after the restart).
+  - Administrator rights. Each .cmd asks Windows for permission; choose Yes.
+
+Steps
+  1. Start from a WORKING keyboard: hold the power button about 10 seconds
+     until fully off, then power on. Log in and check typing works.
+  2. Copy this folder anywhere (Desktop is fine). Double-click 1-ARM-BOOT-TRACE.cmd.
+     Wait for "BOOT TRACE ARMED".
+  3. Start > Power > Restart. Ordinary restart only: no Shift, no power button.
+  4. Watch the built-in keyboard on the way back: does it work in the F2 BIOS
+     screen / at the PIN or password screen / on the desktop? Write it down.
+  5. Once at the desktop, double-click ONE of:
+        2-COLLECT-KEYBOARD-DEAD.cmd    if the built-in keyboard does not type
+        2-COLLECT-KEYBOARD-WORKS.cmd   if it types normally
+  6. A file named Y540-boot-trace-....zip appears on your Desktop. Send it,
+     together with your note from step 4.
+
+Optional comparison run (very useful)
+  Repeat steps 2-6, but at step 3 hold the power button 10 seconds instead of
+  restarting, then power on. That gives a trace of a GOOD boot to compare with.
+
+If you change your mind after step 2, run 3-REMOVE-BOOT-TRACE.cmd. Collecting
+also removes the boot trace, so it never keeps running on later boots.
+
+Files are kept in C:\ProgramData\Y540BootTrace while recording (maximum about
+256 MB boot + 128 MB shutdown) and are deleted after the ZIP is made.
+The trace includes identifiers of other USB devices on the laptop (camera,
+Bluetooth, anything plugged in), not their data.
+
+Uses only built-in Windows tools (PowerShell, logman, wevtutil, powercfg).
+Reference: https://learn.microsoft.com/en-us/windows-hardware/drivers/usbcon/how-to-capture-a-usb-event-trace
