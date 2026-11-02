@@ -4,7 +4,7 @@
 
 **Symptom:** after a normal Windows **Restart** or **Shut down**, the Y540's built-in keyboard stops typing (Fn keys may still work). Holding the power button for about **10 seconds** until the laptop is fully off, then turning it on, brings it back — until the next restart. Device Manager shows **"Unknown USB Device (Device Descriptor Request Failed)"**. Many owners report this after Lenovo's *"Y540 keyboard Firmware update – 00000044"*.
 
-**Status (2026-10-16): experimental fix `exp4`, working so far.** On the author's laptop the keyboard has worked after every shutdown and Shift+shutdown since installing it, after nine earlier attempts (fix1–fix9) that did not hold. Long-term testing is still running; see [docs/STATUS.md](docs/STATUS.md). If it is still holding after about a week, it will be declared the fix.
+**Status (2026-11-02): experimental fix `exp4` — a big improvement, not yet perfect.** On the author's laptop exp4 kept the keyboard working through many shutdowns and Shift+shutdowns, after nine earlier attempts (fix1–fix9) that did not hold, but it missed one shutdown a few days later. Work on a follow-up continues; see [docs/STATUS.md](docs/STATUS.md).
 
 ---
 

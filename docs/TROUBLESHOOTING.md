@@ -28,6 +28,10 @@ The keyboard's update mode sometimes stops answering during a long transfer. Thi
 2. Hold power 10 seconds to recover it.
 3. Run the [boot trace kit](https://github.com/AMIRSRAD/Legion-Y540-Keyboard-Fix/raw/main/download/Y540-boot-trace-kit.zip) on the next restart and attach the ZIP it makes to a GitHub issue.
 
+## The keyboard restarts over and over and the updater can never catch it
+
+If the backlight flashes every second or two and the updater keeps saying `found 0` (this happened with a withdrawn test build, exp5), Windows is too slow to reach the keyboard between restarts. Use the **Linux rescue**: boot a Linux Mint live USB and run one command. It catches the keyboard, switches it to update mode and writes exp4 back with the same safety checks. Download [Y540-Linux-Rescue.zip](https://github.com/AMIRSRAD/Legion-Y540-Keyboard-Fix/raw/main/download/Y540-Linux-Rescue.zip) and follow its `READ ME.txt`; details in [tools/linux-rescue](../tools/linux-rescue/).
+
 ## Undo / go back
 
 Get the keyboard typing first (10-second power hold, battery drain, or whatever works for you). Run `INSTALL THE FIX.cmd`, click **Browse…** next to the firmware box, open `other-firmware` and choose:

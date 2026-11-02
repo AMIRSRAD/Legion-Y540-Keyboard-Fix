@@ -1,0 +1,37 @@
+Y540 KEYBOARD RESCUE FROM LINUX
+
+Use this only if the keyboard is stuck in a fast restart loop (the backlight
+flashes over and over and Windows never sees the keyboard long enough to
+update it). Windows is too slow to catch it; Linux can.
+
+You need: a Linux Mint live USB, an external USB keyboard, the charger.
+
+MAKE THE USB (once)
+  1. Download Linux Mint (Xfce edition) from linuxmint.com.
+  2. Write it to a flash drive with Rufus or balenaEtcher, or copy the ISO's
+     files onto a FAT32-formatted stick.
+  3. Copy this whole Y540-Linux-Rescue folder onto the same flash drive.
+
+RUN IT
+  1. Plug in the charger, the external keyboard and the flash drive.
+  2. Power on, press F12 (external keyboard), choose the USB drive,
+     then "Start Linux Mint".
+  3. Open Terminal and type these three lines (Enter after each).
+     If the folder is not at /cdrom, use the flash drive's folder instead
+     (open it in Files, right-click > Open in Terminal, skip the first two lines).
+
+       cp -r /cdrom/Y540-Linux-Rescue ~
+       cd ~/Y540-Linux-Rescue
+       sudo python3 y540_linux_rescue.py 44-reset-exp4.bin
+
+  4. Do not touch anything. Wait for:
+       SUCCESS: readback matches exp4; reset sent.
+  5. Shut down Linux, remove the stick, start Windows.
+
+If it says STOPPED or Timed out, take a photo of the last lines on the screen
+(from "kernel port 1-9 events" down) and open an issue on GitHub.
+
+What it does: waits for the keyboard, switches it to its update mode before
+it can restart, then writes exp4 with the same safety steps as the Windows
+updater (chip check, bootloader check, backup, block 0 last, full readback
+verify). The update-mode area of the chip is never erased.
