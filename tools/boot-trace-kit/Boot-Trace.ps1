@@ -142,7 +142,7 @@ try {
         $etls = @(Get-ChildItem -LiteralPath $Work -Filter '*.etl' -File)
         Write-Journal ('ETL files: ' + (($etls | ForEach-Object { $_.Name + '=' + $_.Length }) -join ', '))
         $stamp = (Get-Date).ToUniversalTime().ToString('yyyyMMddTHHmmssZ')
-        $desktop = [Environment]::GetFolderPath('Desktop')
+        $desktop = $PSScriptRoot
         $zip = Join-Path $desktop ('Y540-boot-trace-' + $stamp + '-keyboard-' + $Outcome + '.zip')
         Compress-Archive -Path (Join-Path $Work '*') -DestinationPath $zip -CompressionLevel Optimal
         Remove-Item -LiteralPath $StateFile -Force

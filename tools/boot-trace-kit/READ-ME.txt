@@ -22,7 +22,7 @@ Steps
   5. Once at the desktop, double-click ONE of:
         2-COLLECT-KEYBOARD-DEAD.cmd    if the built-in keyboard does not type
         2-COLLECT-KEYBOARD-WORKS.cmd   if it types normally
-  6. A file named Y540-boot-trace-....zip appears on your Desktop. Send it,
+  6. A file named Y540-boot-trace-....zip appears in this kit folder. Send it,
      together with your note from step 4.
 
 Optional comparison run (very useful)
