@@ -28,9 +28,12 @@ KNOWN = {
     'e0a959a63dceada1f5fad6846451372271e266ec176cfd25bb322a69199b5457': 'exp3',
     '27438bf439766926420047b4cb65fcfca2417c7d6a36f7802d824f1f7f27ca34': 'exp4',
     '393158db2365d3c987922069e796e4431703660fb63fb7b536e1a302596b1620': 'exp5',
+    '46521059f3ee796516dcccab0f7ada0b29057d17c18313116645cdf98599f998': 'exp6',
+    'fc0d0141e9468288f11d762f69820022e2936f7b9ccbf42cff147ea24e8a28c0': 'exp7',
+    '5d0312a620866d209d5a77d0c2647e27dff27e954edd67e202eff17227dea2b8': 'exp8',
 }
-WRITABLE = {'stock 44', 'exp1', 'exp3', 'exp4'}          # exp2/exp5 never written
-NEEDS_RESET_DEPS = {'exp3', 'exp4'}
+WRITABLE = {'stock 44', 'exp1', 'exp3', 'exp4', 'exp6', 'exp7', 'exp8'}          # exp2/exp5 never written
+NEEDS_RESET_DEPS = {'exp3', 'exp4', 'exp6', 'exp7'}
 DEP_F12C = bytes.fromhex('e4fdfcc3ed9fec9e5013e4fbe490200bf00bebb442f60dbd00010c80e622')
 DEP_F455 = bytes.fromhex('7f057e0012f12c902f507408f07fe87e0312f12c901058e04440f0538e3f75d80280fe')
 ITE_KEY = b'ITE Tech. Inc.\x00'                          # 15 bytes, as the Windows updater
@@ -312,7 +315,7 @@ def load_image(path):
     fw = open(path, 'rb').read()
     name = KNOWN.get(hashlib.sha256(fw).hexdigest())
     if len(fw) != IMAGE_SIZE or name not in WRITABLE:
-        raise Fail('%s is not an allowed image (stock 44, exp1, exp3, exp4)' % path)
+        raise Fail('%s is not an allowed image (stock 44, exp1, exp3, exp4, exp6, exp7, exp8)' % path)
     return fw, name
 
 # ------------------------------------------------------------- selftest ----
@@ -363,6 +366,9 @@ def selftest(image_path):
         dev = FakeBoot(start, bytes(upper))
         program(BootLink(dev), fw, name, scratch)
         assert bytes(dev.flash) == fw and dev.reset and dev.order[-1] == 0 and dev.order[0] == BLOCK
+    if name not in NEEDS_RESET_DEPS:      # exp8/stock/exp1 never jump into the bootloader
+        log('SELFTEST PASSED for %s: writes verified, block 0 last (no bootloader dependency).' % name)
+        return
     bad = bytearray(upper); bad[0xF455 - 0xD800] ^= 1
     dev = FakeBoot(bytes(stock), bytes(bad))
     try:

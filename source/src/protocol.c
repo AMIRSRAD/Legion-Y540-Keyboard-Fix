@@ -37,13 +37,17 @@ static int send(y540_hid_transport *t, const uint8_t *p, size_t n,
  * establishes backup content, not firmware correctness; exp2 is never selected by default.
  * A complete bootloader read that equals one of them exactly needs no second confirming
  * read: a corrupted read cannot hash to a known image. */
-#define KNOWN_IMAGES 5
+#define KNOWN_IMAGES 9
 static const uint8_t KNOWN_IMAGE_SHA256[KNOWN_IMAGES][32] = {
     {0x3a, 0xfe, 0xc1, 0x31, 0xc6, 0xed, 0x70, 0xef, 0xa0, 0xa3, 0xf4, 0xb6, 0x01, 0xcb, 0x79, 0x90, 0x11, 0xa5, 0x82, 0x83, 0x5d, 0x37, 0x1c, 0x57, 0xfe, 0xf6, 0x8a, 0xf4, 0x85, 0x19, 0xe3, 0x59},
     {0x2b, 0x34, 0xb6, 0xd5, 0x9d, 0xb8, 0x44, 0x38, 0x31, 0xa7, 0xe0, 0x38, 0x7a, 0xe6, 0x59, 0x70, 0x30, 0x7f, 0x51, 0x6e, 0x81, 0x6d, 0xd4, 0x81, 0xf1, 0xba, 0x51, 0x3d, 0x3f, 0x9d, 0xe7, 0x73},
       {0x82, 0xc9, 0x4f, 0xd5, 0x01, 0x91, 0xa3, 0xad, 0x8b, 0x4f, 0x97, 0x60, 0xeb, 0xf5, 0x88, 0xb9, 0x11, 0xb1, 0x93, 0x45, 0x0d, 0xd7, 0xed, 0xee, 0xec, 0x06, 0xba, 0xcb, 0xa3, 0x38, 0xe1, 0xb8},
     {0xe0, 0xa9, 0x59, 0xa6, 0x3d, 0xce, 0xad, 0xa1, 0xf5, 0xfa, 0xd6, 0x84, 0x64, 0x51, 0x37, 0x22, 0x71, 0xe2, 0x66, 0xec, 0x17, 0x6c, 0xfd, 0x25, 0xbb, 0x32, 0x2a, 0x69, 0x19, 0x9b, 0x54, 0x57},
-    {0x27, 0x43, 0x8b, 0xf4, 0x39, 0x76, 0x69, 0x26, 0x42, 0x00, 0x47, 0xb4, 0xcb, 0x65, 0xfc, 0xfc, 0xa2, 0x41, 0x7c, 0x7d, 0x6a, 0x36, 0xf7, 0x80, 0x2d, 0x82, 0x4f, 0x1f, 0x7f, 0x27, 0xca, 0x34}};
+    {0x27, 0x43, 0x8b, 0xf4, 0x39, 0x76, 0x69, 0x26, 0x42, 0x00, 0x47, 0xb4, 0xcb, 0x65, 0xfc, 0xfc, 0xa2, 0x41, 0x7c, 0x7d, 0x6a, 0x36, 0xf7, 0x80, 0x2d, 0x82, 0x4f, 0x1f, 0x7f, 0x27, 0xca, 0x34},
+    {0x39, 0x31, 0x58, 0xdb, 0x23, 0x65, 0xd3, 0xc9, 0x87, 0x92, 0x20, 0x69, 0xe7, 0x96, 0xe4, 0x43, 0x17, 0x03, 0x66, 0x0f, 0xb6, 0x3f, 0xb7, 0xb5, 0x36, 0xe1, 0xa3, 0x02, 0x59, 0x6b, 0x16, 0x20},
+    {0x46, 0x52, 0x10, 0x59, 0xf3, 0xee, 0x79, 0x65, 0x16, 0xdc, 0xcc, 0xab, 0x0f, 0x7a, 0xda, 0x0b, 0x29, 0x05, 0x7d, 0x17, 0xc1, 0x83, 0x13, 0x11, 0x66, 0x45, 0xcd, 0xf9, 0x85, 0x99, 0xf9, 0x98},
+    {0xfc, 0x0d, 0x01, 0x41, 0xe9, 0x46, 0x82, 0x88, 0xf1, 0x1d, 0x76, 0x2f, 0x69, 0x82, 0x00, 0x22, 0xe2, 0x93, 0x6f, 0x7b, 0x9c, 0xcb, 0xf4, 0x2c, 0xff, 0x14, 0x7e, 0xa2, 0x4e, 0x8a, 0x28, 0xc0},
+    {0x5d, 0x03, 0x12, 0xa6, 0x20, 0x86, 0x6d, 0x20, 0x9d, 0x5a, 0x77, 0xd0, 0xc2, 0x64, 0x7e, 0x27, 0xdf, 0xf2, 0x7e, 0x95, 0x4e, 0xdd, 0x67, 0xe2, 0x02, 0xef, 0xf1, 0x72, 0x27, 0xde, 0xa2, 0xb8}};
 /* fix10: content left by an interrupted write of the selected image. The
  * write order puts block 0 last, so block 0 is still blank and every other
  * 1 KiB block is either exactly the selected image's block or blank. A
@@ -116,12 +120,30 @@ static int validate_reset_dependencies(y540_hid_transport *t, y540_progress_fn p
   note(progress, ctx, "Verify existing bootloader reset dependency (read only, no erase)", 1u, 2u);
   if (!read_flash(t, 0xF12Cu, observed, sizeof(reset_dep_0), NULL, NULL, e)) return 0;
   if (memcmp(observed, reset_dep_0, sizeof(reset_dep_0)))
-    return fail(e, "Bootloader reset dependency differs; exp3/exp4 not installed, no erase performed");
+    return fail(e, "Bootloader reset dependency differs; exp3/exp4/exp6/exp7 not installed, no erase performed");
   note(progress, ctx, "Verify existing bootloader reset dependency (read only, no erase)", 2u, 2u);
   if (!read_flash(t, 0xF455u, observed, sizeof(reset_dep_1), NULL, NULL, e)) return 0;
   if (memcmp(observed, reset_dep_1, sizeof(reset_dep_1)))
-    return fail(e, "Bootloader reset dependency differs; exp3/exp4 not installed, no erase performed");
+    return fail(e, "Bootloader reset dependency differs; exp3/exp4/exp6/exp7 not installed, no erase performed");
   return 1;
+}
+/* fix11 rescue: a firmware that restarts the controller a few timer ticks
+ * after bus inactivity (exp5) never stays up through the paced handshake.
+ * Same ITE key handshake and 5A/09 handoff, sent back to back. */
+static y540_hid_sleep_fn unpaced_inner;
+static void unpaced_sleep(void *context, uint32_t ms) {
+  /* Keep the transport's per-command spacing; drop the protocol pauses. */
+  if (ms <= 10 && unpaced_inner) unpaced_inner(context, ms);
+}
+int y540_enter_boot_unpaced(y540_hid_transport *t, y540_hid_error *e) {
+  y540_hid_sleep_fn paced = t->sleep;
+  int ok;
+  unpaced_inner = paced;
+  t->sleep = unpaced_sleep;
+  ok = y540_enter_boot(t, e);
+  t->sleep = paced;
+  unpaced_inner = NULL;
+  return ok;
 }
 static int erase(y540_hid_transport *t, uint32_t addr, uint16_t blocks,
                  y540_hid_error *e) {
@@ -362,8 +384,8 @@ static int preflight(const uint8_t *fw, size_t size, const y540_config *c,
     return fail(e, msg);
   }
   int target = image_index(fw, size);
-  if (target != 0 && target != 1 && target != 3 && target != 4)
-    return fail(e, "fix10 permits only exact stock44, exp1, exp3 or exp4; withdrawn/unknown images are rejected before device I/O");
+  if (target != 0 && target != 1 && target != 3 && target != 4 && target != 6 && target != 7 && target != 8)
+    return fail(e, "fix10 permits only exact stock44, exp1, exp3, exp4, exp6, exp7 or exp8; withdrawn/unknown images are rejected before device I/O");
   if (!number(c, "NEWVERSION", "UPDATESTARTADDRESS", 16, 0, &start, e) ||
       !number(c, "NEWVERSION", "UPDATEONLYPARAMETER", 10, 0, &mode, e) ||
       !number(c, "DEVICE", "DOCKINGBURN", 10, 0, &docking, e)) {
@@ -446,7 +468,7 @@ static int boot_program(y540_hid_transport *t, const uint8_t *fw, size_t size,
   }
   second = readback + size;
   /* exp3 and exp4 both jump into the bootloader's F455 reset path. */
-  if ((image_index(fw, size) == 3 || image_index(fw, size) == 4) &&
+  if ((image_index(fw, size) >= 3 && image_index(fw, size) <= 7) &&
       !validate_reset_dependencies(t, progress, ctx, e)) goto done;
   note(progress, ctx, "Read complete update region for backup", 0, size);
   if (!read_flash(t, 0, readback, size, progress, ctx, e))
@@ -461,7 +483,7 @@ static int boot_program(y540_hid_transport *t, const uint8_t *fw, size_t size,
       /* fix6: shorter exposure. The device still holds the exact original
        * firmware 44 (SHA-256 matches a packaged image), so the saved backup is that known
        * file; a second read would only add ~30 s of bootloader traffic. */
-      note(progress, ctx, "Read equals known stock/exp1/exp2/exp3/exp4 bytes exactly; backup hash confirmed, second read not needed", size, size);
+      note(progress, ctx, "Read equals known stock/exp1/exp2/exp3/exp4/exp5/exp6/exp7/exp8 bytes exactly; backup hash confirmed, second read not needed", size, size);
     } else if (size == 54u * 1024u && image_index(fw, size) >= 0 &&
                interrupted_write_of(fw, readback, size)) {
       note(progress, ctx, "Read equals an interrupted write of the selected image (blank or matching blocks); second read not needed", size, size);
@@ -722,6 +744,50 @@ int y540_update_device(const uint8_t *fw, size_t size, const y540_config *c,
  * update path instead of refactoring it, so the proven update code is not
  * touched. Output is written and flushed per KiB so a stall keeps the bytes
  * already read. */
+/* fix12 probe: read-only snapshot of chip RAM/registers through bootloader
+ * command 07 (3 bytes from 24-bit address; high byte F0 = internal XDATA/MMIO,
+ * as the chip-ID query uses F0:20:00). No erase/stage/commit command is sent. */
+static int probe_mode;
+void y540_set_probe_mode(int on) { probe_mode = on; }
+static int read_xdata3(y540_hid_transport *t, uint32_t a, uint8_t out[3], y540_hid_error *e) {
+  uint8_t p[8] = {7, (uint8_t)a, (uint8_t)(a >> 8), 0xf0, 3, 0, 0, 0};
+  if (!send(t, p, 5, e) || !y540_hid_receive(t, p, 8, e)) return 0;
+  if (p[1] != (uint8_t)a || p[2] != (uint8_t)(a >> 8) || p[3] != 0xf0 || p[4] != 3)
+    return fail(e, "Probe response address mismatch");
+  memcpy(out, p + 5, 3);
+  return 1;
+}
+static int probe_line(y540_hid_transport *t, HANDLE out, const char *tag, uint32_t from, uint32_t to,
+                      y540_hid_error *e) {
+  char line[256];
+  for (uint32_t a = from; a < to; a += 3) {
+    uint8_t v[3];
+    DWORD w = 0;
+    if (!read_xdata3(t, a, v, e)) return 0;
+    int n = snprintf(line, sizeof(line), "%s %04X %02X %02X %02X\r\n", tag, (unsigned)a, v[0], v[1], v[2]);
+    if (!WriteFile(out, line, (DWORD)n, &w, NULL)) return fail(e, "Cannot write probe file");
+  }
+  return 1;
+}
+static int run_probe(y540_hid_transport *t, HANDLE out, y540_progress_fn progress, void *ctx,
+                     y540_hid_error *e) {
+  static const uint16_t regs[][2] = {
+      {0x16e0, 0x16e6}, {0x1e00, 0x1e09}, {0x1e20, 0x1e23}, {0x1e40, 0x1e43},
+      {0x1050, 0x1062}, {0x106c, 0x106f}, {0x1080, 0x1083}, {0x111c, 0x111f},
+      {0x1b06, 0x1b09}, {0x2f44, 0x2f50}, {0x2f54, 0x2f60}};
+  note(progress, ctx, "Probe: chip RAM 0000..0FFF (read only)", 0, 0x1000);
+  if (!probe_line(t, out, "RAM", 0x0000, 0x1000, e)) return 0;
+  for (int pass = 0; pass < 2; ++pass) {
+    char tag[8];
+    snprintf(tag, sizeof(tag), "REG%d", pass + 1);
+    note(progress, ctx, "Probe: hardware registers (read only)", (uint32_t)pass + 1u, 2u);
+    for (size_t i = 0; i < sizeof(regs) / sizeof(regs[0]); ++i)
+      if (!probe_line(t, out, tag, regs[i][0], regs[i][1], e)) return 0;
+    if (!pass) Sleep(50);
+  }
+  FlushFileBuffers(out);
+  return 1;
+}
 int y540_dump_flash_device(const y540_config *c, const wchar_t *out_path,
                            uint32_t start, uint32_t end,
                            y540_progress_fn progress, void *ctx,
@@ -820,6 +886,18 @@ int y540_dump_flash_device(const y540_config *c, const wchar_t *out_path,
     e->code = code;
     y540_hid_close(&t);
     return 0;
+  }
+  if (probe_mode) {
+    ok = run_probe(&t, out, progress, ctx, e);
+    CloseHandle(out);
+    if (ok) {
+      note(progress, ctx, "Probe complete; returning keyboard to normal mode (C4 reset)", 1, 1);
+      ok = reset(&t, e);
+    } else {
+      note(progress, ctx, "Probe stopped early; partial file kept; no reset sent. If the keyboard is dead hold power ~10 s", 0, 1);
+    }
+    y540_hid_close(&t);
+    return ok;
   }
   chunk = malloc(0x400);
   again = malloc(0x400);

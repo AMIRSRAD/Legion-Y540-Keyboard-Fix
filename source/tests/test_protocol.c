@@ -314,6 +314,10 @@ static void handshake_tests(void)
     setup(e, &t); t.device.vid=0x048d; t.device.pid=0xc100; t.device.usage_page=0xff89; t.device.usage=0x10; t.device.feature_report_bytes=17;
     CHECK(y540_enter_boot(&t, &error));
     CHECK(e->handshake_zero == 0 && e->handshake_alt == 1 && e->last_command == 9);
+    setup(e, &t); t.device.vid=0x048d; t.device.pid=0xc100; t.device.usage_page=0xff89; t.device.usage=0x10; t.device.feature_report_bytes=17;
+    { y540_hid_sleep_fn paced = t.sleep;
+      CHECK(y540_enter_boot_unpaced(&t, &error));
+      CHECK(e->handshake_alt == 1 && e->last_command == 9 && t.sleep == paced); }
     setup(e, &t); t.device.vid=0x048d; t.device.pid=0xc100; t.device.usage_page=0xff89; t.device.usage=0x10; t.device.feature_report_bytes=17; e->custom_enabled = 1;
     CHECK(y540_enter_boot(&t, &error));
     CHECK(e->handshake_zero == 0 && e->handshake_alt == 2 && e->last_command == 9);
@@ -671,6 +675,8 @@ int main(int argc, char **argv)
     }
     reset_dependency_tests(directory, "44-recovery-exp3.bin", firmware, cfg);
     reset_dependency_tests(directory, "44-reset-exp4.bin", firmware, cfg);
+    reset_dependency_tests(directory, "44-reset-exp6.bin", firmware, cfg);
+    reset_dependency_tests(directory, "44-reset-exp7.bin", firmware, cfg);
     known_image_tests(firmware, cfg);
     boot_discovery_tests();
     readiness_tests();

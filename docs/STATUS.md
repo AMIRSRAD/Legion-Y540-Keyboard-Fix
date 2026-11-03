@@ -1,6 +1,6 @@
 # Test status
 
-**Current state:** exp4 fixes most shutdowns but missed one; it is not yet a complete fix. The next experiment needs evidence from the next failure (whether the backlight flashed at that shutdown, plus a boot trace). exp5 was withdrawn and is not published.
+**Current state (3 Nov):** a full decompile of firmware 44 found the likely root cause: the keyboard obeys only the first USB bus reset after power-on and ignores later ones until it has slept, so after a restart it can keep a stale USB address and Windows can't find it. **exp8** (stock firmware + a 2-byte fix so every reset is obeyed) is being tested — [download/Y540-Keyboard-Fix-exp8-TEST.zip](../download/Y540-Keyboard-Fix-exp8-TEST.zip), details in [the firmware map](../research/analysis/firmware-44-full-decompile/README.md). The release (exp4) stays the recommended download until exp8 is confirmed.
 
 ## Author's laptop
 
@@ -18,7 +18,10 @@ Lenovo Legion Y540-15IRH (81SX), BIOS BHCN35WW, Windows 11 26200.
 | about 2 days later | exp4 | ordinary shutdown | **failed once** — no backlight flash at power-off; reinstall on 2 Nov showed the chip still held exactly exp4, so exp4's reset simply did not fire that time |
 | 2 Nov | exp5 (exp4 + idle-gate vetoes removed) | install | **withdrawn** — keyboard restarted every 1.6 s and could not be reached from Windows; the removed hardware check (`16E0`) is the chip's real "bus suspended" signal |
 | 2 Nov | exp4 restored | Linux live-USB rescue ([tools/linux-rescue](../tools/linux-rescue/)) | **recovered**, keyboard working again |
-| — | exp4 | continued daily use; boot trace on the next failure | ongoing |
+| 2 Nov | exp6 (exp4 without activity vetoes) | normal shutdown | **failed** — no flash, dead in Windows |
+| 2 Nov | exp4/exp6 | read-only probe | found the USB frame counter (2F55:2F56) |
+| 3 Nov | exp7 (exp4 + frame-counter watchdog) | built | kept as fallback, not tested |
+| 3 Nov | **exp8** (stock + bus-reset fix) | installing | testing |
 
 ## Other laptops
 

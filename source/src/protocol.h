@@ -39,6 +39,7 @@ int y540_wait_boot_device(y540_boot_find_fn find, void *find_context,
                           uint32_t budget_ms, y540_progress_fn progress,
                           void *progress_context, y540_hid_error *error);
 int y540_enter_boot(y540_hid_transport *main_transport, y540_hid_error *error);
+int y540_enter_boot_unpaced(y540_hid_transport *main_transport, y540_hid_error *error);
 /* Main-device handoff and boot discovery. Explicit call performs device writes.
  */
 int y540_update_device(const uint8_t *firmware, size_t size,
@@ -64,6 +65,7 @@ int y540_exit_custom_mode(y540_hid_transport *transport,
 /* fix7: read-only dump of flash [start,end) (1 KiB aligned, end <= 0x20000) to a
  * NEW file. Chip qualification and port binding as in the update path; only
  * read commands and a final reset are sent. */
+void y540_set_probe_mode(int on);
 int y540_dump_flash_device(const y540_config *cfg, const wchar_t *out_path,
                            uint32_t start, uint32_t end,
                            y540_progress_fn progress, void *context,

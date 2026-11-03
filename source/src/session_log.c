@@ -45,7 +45,7 @@ int y540_log_begin(const char *action, char *error, size_t cap) {
       snprintf(error, cap, "Cannot create log folder");
       return 0;
     }
-    swprintf(directory, 2048, L"%ls\\Y540Updater-fix10", base);
+    swprintf(directory, 2048, L"%ls\\Y540Updater-fix13", base);
     if (!mkdir_one(directory)) {
       snprintf(error, cap, "Cannot create user log folder");
       return 0;
@@ -59,7 +59,7 @@ int y540_log_begin(const char *action, char *error, size_t cap) {
   GetSystemTime(&now);
   for (i = 0; i < 100; i++) {
     swprintf(
-        path, 2048, L"%ls\\fix10-%04u%02u%02uT%02u%02u%02u%03uZ-p%lu-%lu.log",
+        path, 2048, L"%ls\\fix13-%04u%02u%02uT%02u%02u%02u%03uZ-p%lu-%lu.log",
         directory, now.wYear, now.wMonth, now.wDay, now.wHour, now.wMinute,
         now.wSecond, now.wMilliseconds, (unsigned long)GetCurrentProcessId(),
         (unsigned long)InterlockedIncrement(&sequence));
@@ -75,7 +75,7 @@ int y540_log_begin(const char *action, char *error, size_t cap) {
              (unsigned long)GetLastError());
     return 0;
   }
-  y540_logf("session action=%s version=fix10-0.10.0 utc_timestamps=1", action);
+  y540_logf("session action=%s version=fix13-0.13.0 utc_timestamps=1", action);
   return 1;
 }
 void y540_logf(const char *format, ...) {

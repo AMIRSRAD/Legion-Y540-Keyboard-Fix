@@ -1,0 +1,206 @@
+seed 0000 vector/root
+seed 0003 vector/root
+seed 000B vector/root
+seed 0013 vector/root
+seed 001B vector/root
+seed 0023 vector/root
+seed 002B vector/root
+seed 088F switch case from 86d
+seed 0891 switch case from 86d
+seed 0893 switch case from 86d
+seed 0895 switch case from 86d
+seed 0898 switch case from 86d
+seed 08A4 switch case from 86d
+table at 086D helper 890A entries 9 default 08A7
+seed 08A7 switch default from 86d
+seed 285C switch case from 27e5
+seed 2825 switch case from 27e5
+seed 288F switch case from 27e5
+seed 28D6 switch case from 27e5
+seed 28F8 switch case from 27e5
+seed 2847 switch case from 27e5
+seed 280E switch case from 27e5
+seed 2819 switch case from 27e5
+seed 2807 switch case from 27e5
+table at 27E5 helper 890A entries 9 default 291F
+seed 291F switch default from 27e5
+seed 2F7C switch case from 2f65
+seed 2FA7 switch case from 2f65
+table at 2F65 helper 8930 entries 4 default 2FF5
+seed 2FF5 switch default from 2f65
+seed EE66 switch case from ee0d
+seed EE6B switch case from ee0d
+seed EE2F switch case from ee0d
+seed EE45 switch case from ee0d
+seed EE4A switch case from ee0d
+seed EE4F switch case from ee0d
+seed EE54 switch case from ee0d
+seed EE5C switch case from ee0d
+seed EE61 switch case from ee0d
+table at EE0D helper F35A entries 9 default EE6E
+round 0 new seeds 29
+table at 086D helper 890A entries 9 default 08A7
+seed 27B9 switch case from 2732
+seed 2769 switch case from 2732
+seed 276C switch case from 2732
+seed 276F switch case from 2732
+seed 2772 switch case from 2732
+seed 2775 switch case from 2732
+seed 2778 switch case from 2732
+seed 277B switch case from 2732
+seed 277E switch case from 2732
+seed 2781 switch case from 2732
+seed 2784 switch case from 2732
+seed 279E switch case from 2732
+seed 2787 switch case from 2732
+seed 278D switch case from 2732
+seed 278A switch case from 2732
+seed 2790 switch case from 2732
+table at 2732 helper 890A entries 16 default 27BC
+seed 27BC switch default from 2732
+table at 27E5 helper 890A entries 9 default 291F
+table at 2F65 helper 8930 entries 4 default 2FF5
+table at EE0D helper F35A entries 9 default EE6E
+round 1 new seeds 17
+table at 086D helper 890A entries 9 default 08A7
+table at 2732 helper 890A entries 16 default 27BC
+table at 27E5 helper 890A entries 9 default 291F
+table at 2F65 helper 8930 entries 4 default 2FF5
+table at EE0D helper F35A entries 9 default EE6E
+round 2 new seeds 0
+extra seed 045C heuristic END=0463: decodes as 5 instructions
+extra seed 04A9 heuristic END=059C: decodes as 164 instructions
+extra seed 062C heuristic END=07C3: falls through into code at 07C4 (204 instructions)
+extra seed 0986 heuristic END=09F0: decodes as 70 instructions
+extra seed 0B2F heuristic END=0B82: decodes as 54 instructions
+extra seed 0BB8 heuristic END=0C32: decodes as 85 instructions
+extra seed 0C65 heuristic END=0C95: decodes as 25 instructions
+extra seed 0F34 heuristic END=0F3B: decodes as 7 instructions
+extra seed 0F40 heuristic END=0F65: decodes as 35 instructions
+extra seed 0F72 heuristic END=0F75: falls through into code at 0F76 (3 instructions)
+extra seed 100B heuristic END=1040: decodes as 30 instructions
+extra seed 10E6 heuristic END=1102: falls through into code at 1103 (16 instructions)
+extra seed 1178 heuristic END=11E0: falls through into code at 11E1 (55 instructions)
+extra seed 1200 heuristic END=126D: decodes as 58 instructions
+extra seed 13B5 heuristic END=13D3: decodes as 15 instructions
+extra seed 1B91 heuristic END=1C91: decodes as 123 instructions
+extra seed 1D0C heuristic END=1D79: decodes as 58 instructions
+extra seed 1DB2 heuristic END=1E20: decodes as 55 instructions
+extra seed 1E32 heuristic END=1EA6: decodes as 69 instructions
+extra seed 1F00 heuristic END=1F18: decodes as 16 instructions
+extra seed 1F2F heuristic END=1F4D: decodes as 23 instructions
+extra seed 2056 heuristic END=2102: decodes as 115 instructions
+extra seed 30CE heuristic END=30E2: decodes as 15 instructions
+extra seed 32E7 heuristic END=32FD: decodes as 12 instructions
+extra seed 3626 heuristic END=3644: decodes as 21 instructions
+extra seed 39BB heuristic END=39CD: decodes as 12 instructions
+extra seed 408F heuristic END=40EB: decodes as 39 instructions
+extra seed 427F heuristic END=4288: decodes as 6 instructions
+extra seed 4307 heuristic END=433F: decodes as 33 instructions
+extra seed 4445 heuristic END=44B3: decodes as 69 instructions
+extra seed 453B heuristic END=45B0: decodes as 73 instructions
+extra seed 4647 ljmp-table entry
+extra seed 464A ljmp-table entry
+extra seed 464D ljmp-table entry
+extra seed 4650 ljmp-table entry
+extra seed 4653 ljmp-table entry
+extra seed 4656 ljmp-table entry
+extra seed 4659 ljmp-table entry
+extra seed 465C ljmp-table entry
+extra seed 465F ljmp-table entry
+extra seed 4662 ljmp-table entry
+extra seed 50FC heuristic END=510C: decodes as 9 instructions
+extra seed 5187 heuristic END=5191: decodes as 6 instructions
+extra seed 51A2 heuristic END=51A8: decodes as 4 instructions
+extra seed 573E heuristic END=5753: falls through into code at 5754 (18 instructions)
+extra seed 57FB heuristic END=580D: falls through into code at 580E (15 instructions)
+extra seed 5859 heuristic END=5868: falls through into code at 5869 (12 instructions)
+extra seed 58F3 heuristic END=58FF: falls through into code at 5900 (9 instructions)
+extra seed 5946 heuristic END=5997: decodes as 43 instructions
+extra seed 5A36 heuristic END=5A64: decodes as 30 instructions
+extra seed 5F99 heuristic END=5FC7: decodes as 37 instructions
+extra seed 680E heuristic END=6813: decodes as 4 instructions
+extra seed 6841 heuristic END=6867: decodes as 18 instructions
+extra seed 69EB heuristic END=69F9: decodes as 7 instructions
+extra seed 6E00 heuristic END=6E29: decodes as 29 instructions
+extra seed 6FBE heuristic END=6FF5: decodes as 28 instructions
+extra seed 708C heuristic END=70C3: decodes as 28 instructions
+extra seed 70FE heuristic END=7639: decodes as 676 instructions
+extra seed 7675 heuristic END=76F4: decodes as 69 instructions
+extra seed 798B heuristic END=7993: decodes as 7 instructions
+extra seed 79B9 heuristic END=7A30: decodes as 61 instructions
+extra seed 7AD4 heuristic END=7B30: decodes as 54 instructions
+extra seed 7F30 heuristic END=7F38: decodes as 4 instructions
+extra seed 7F7E heuristic END=7FB4: decodes as 37 instructions
+extra seed 7FF0 heuristic END=7FF5: decodes as 4 instructions
+extra seed 7FF7 heuristic END=7FFC: decodes as 4 instructions
+extra seed 846B heuristic END=8506: decodes as 104 instructions
+extra seed E022 heuristic END=E03A: decodes as 16 instructions
+extra seed E2A6 heuristic END=E2DA: decodes as 23 instructions
+extra seed E2ED ljmp-table entry
+extra seed E2F0 ljmp-table entry
+extra seed E2F3 ljmp-table entry
+extra seed E2F6 ljmp-table entry
+extra seed E2F9 ljmp-table entry
+extra seed E2FC ljmp-table entry
+extra seed E304 heuristic END=E31B: decodes as 14 instructions
+extra seed E48B ljmp-table entry
+extra seed E48E ljmp-table entry
+extra seed E491 ljmp-table entry
+extra seed E494 ljmp-table entry
+extra seed E497 ljmp-table entry
+extra seed E49A ljmp-table entry
+extra seed E49D ljmp-table entry
+extra seed E4A0 ljmp-table entry
+extra seed E4A3 ljmp-table entry
+extra seed E4A6 ljmp-table entry
+extra seed F17A heuristic END=F215: decodes as 104 instructions
+extra seed F34E heuristic END=F359: decodes as 12 instructions
+extra seed F9B7 heuristic END=F9BF: decodes as 6 instructions
+table at 086D helper 890A entries 9 default 08A7
+table at 2732 helper 890A entries 16 default 27BC
+table at 27E5 helper 890A entries 9 default 291F
+table at 2F65 helper 8930 entries 4 default 2FF5
+table at EE0D helper F35A entries 9 default EE6E
+post-seed table pass 0
+second seed pass
+instruction bytes total 38202 app non-FF 34503 table bytes 165
+unreached 0040-006F (48 bytes)
+unreached 011A-011F (6 bytes)
+unreached 025A-03FF (422 bytes)
+unreached 0460-0463 (4 bytes)
+unreached 05E4-062A (71 bytes)
+unreached 0966-0983 (30 bytes)
+unreached 0E97-0EAC (22 bytes)
+unreached 0F77-0F7A (4 bytes)
+unreached 1000-1009 (10 bytes)
+unreached 10DB-10E4 (10 bytes)
+unreached 116D-1176 (10 bytes)
+unreached 11F5-11FE (10 bytes)
+unreached 1ECE-1EFE (49 bytes)
+unreached 2034-2054 (33 bytes)
+unreached 30BA-30CC (19 bytes)
+unreached 30FA-311F (38 bytes)
+unreached 5154-5185 (50 bytes)
+unreached 51B1-51E8 (56 bytes)
+unreached 51EA-51EF (6 bytes)
+unreached 51F1-5500 (784 bytes)
+unreached 5512-55FF (238 bytes)
+unreached 5F56-5F79 (36 bytes)
+unreached 5F7B-5F88 (14 bytes)
+unreached 5F8A-5F97 (14 bytes)
+unreached 67E7-680C (38 bytes)
+unreached 69E3-69E9 (7 bytes)
+unreached 6FAE-6FBC (15 bytes)
+unreached 7020-7034 (21 bytes)
+unreached 7036-708A (85 bytes)
+unreached 70EE-70FC (15 bytes)
+unreached 7B99-7CB0 (280 bytes)
+unreached 7D1B-7F23 (521 bytes)
+unreached 7F72-7F78 (7 bytes)
+unreached 7FD9-7FE3 (11 bytes)
+unreached D800-D8FF (256 bytes)
+unreached E03E-E060 (35 bytes)
+unreached E2FF-E302 (4 bytes)
+unreached F8FC-F95A (95 bytes)
+unreached F973-F9B2 (64 bytes)

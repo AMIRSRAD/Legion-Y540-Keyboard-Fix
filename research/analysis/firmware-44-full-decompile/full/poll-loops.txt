@@ -1,0 +1,28 @@
+0C81  JNB 0x8f,0x0c81                          loop 0C81-0C81 polls  TF/RI  reached-from: -
+0C8E  SJMP 0x0c71                              loop 0C71-0C8E polls  TF/RI  reached-from: -
+0CAB  JNB 0x8f,0x0cab                          loop 0CAB-0CAB polls  TF/RI  reached-from: main 2200
+0CB3  SJMP 0x0c9e                              loop 0C9E-0CB3 polls  TF/RI  reached-from: main 2200
+1063  JB 0xe0,0x105f                           loop 105F-1063 polls 103F   reached-from: -
+10CE  JB 0xe0,0x10ca                           loop 10CA-10CE polls 103F   reached-from: -
+110A  CJNE R7,#0x2,0x1103                      loop 1103-110A polls 103F   reached-from: -
+1160  JB 0xe0,0x115c                           loop 115C-1160 polls 103F   reached-from: -
+1199  JB 0xe0,0x1195                           loop 1195-1199 polls 103F   reached-from: -
+11E8  CJNE R7,#0x2,0x11e1                      loop 11E1-11E8 polls 103F   reached-from: -
+1221  JB 0xe0,0x121d                           loop 121D-1221 polls 103F   reached-from: -
+1258  JNZ 0x1252                               loop 1252-1258 polls 103F   reached-from: -
+1290  JB 0xe0,0x128c                           loop 128C-1290 polls 103F   reached-from: -
+1305  JB 0xe0,0x1301                           loop 1301-1305 polls 103F   reached-from: -
+4D89  JNB 0xe3,0x4d6b                          loop 4D6B-4D89 polls 2F52 16E0 16E0 2F52 TF/RI  reached-from: main 2200
+6462  JZ 0x6459                                loop 6459-6462 polls 1C00 TF/RI  reached-from: -
+656C  JZ 0x6563                                loop 6563-656C polls 1C11 TF/RI  reached-from: -
+6676  JZ 0x666d                                loop 666D-6676 polls 1C29 TF/RI  reached-from: -
+E611  JZ 0xe603                                loop E603-E611 polls 2F40   reached-from: -
+EB52  SJMP 0xeb45                              loop EB45-EB52 polls 2F41   reached-from: -
+ECB6  JZ 0xecab                                loop ECAB-ECB6 polls 2F52   reached-from: -
+ECC6  JZ 0xecbb                                loop ECBB-ECC6 polls 2F40   reached-from: -
+EDEA  JZ 0xeddc                                loop EDDC-EDEA polls 2F52   reached-from: -
+EF14  JZ 0xef06                                loop EF06-EF14 polls 2F52   reached-from: -
+EF87  SJMP 0xef7a                              loop EF7A-EF87 polls 2F52   reached-from: -
+F717  JZ 0xf709                                loop F709-F717 polls 2F41   reached-from: -
+F757  JB 0xe1,0xf74d                           loop F74D-F757 polls 2F40   reached-from: -
+F79D  SJMP 0xf782                              loop F782-F79D polls 2F52   reached-from: -
