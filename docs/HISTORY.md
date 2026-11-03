@@ -36,6 +36,11 @@ With no documentation from Lenovo or ITE, everything was reconstructed from the 
 | fix8 + exp2 | Software watchdog | Worse; later found a CPU register-bank bug |
 | fix9 + exp3 | Corrected watchdog using the real reset routine | Seemed better, then failed again |
 | boot trace | Recorded a failing restart from early boot | Keyboard attached but silent, never recovers, and exp3's watchdog never fired: the chip is stuck in a state exp3 cannot detect |
-| fix10 + **exp4** | Restart the chip at the exact moment it would have gone to sleep | **Keyboard works after every shutdown and Shift+shutdown tested.** Backlight flashes once at power-off — the restart happening. Under long-term test. |
+| fix10 + **exp4** | Restart the chip at the exact moment it would have gone to sleep | **Keyboard works after every shutdown and Shift+shutdown tested.** Backlight flashes once at power-off — the restart happening. Worked for days, then missed some shutdowns after normal use. |
+| exp5 / exp6 | Remove the sleep check's vetoes | exp5 restart-looped (withdrawn); exp6 changed nothing |
+| probe | Read the chip's registers | Found the hardware USB frame counter |
+| full decompile | Every function of firmware 44 and the bootloader | Found that repeat USB resets are ignored until the chip sleeps |
+| exp8 | Obey every USB reset (2 bytes) | Did **not** fix it on its own |
+| **exp7** | Restart the chip when the PC's USB frames stop for 0.4 s | **Works through repeated shutdowns and restarts**; backlight flashes ~0.5 s after power-off. Under long-term test. |
 
-Details of each step are preserved in [`research/`](../research/); how exp4 works is in [HOW-IT-WORKS.md](HOW-IT-WORKS.md); current test results are in [STATUS.md](STATUS.md).
+Details of each step are preserved in [`research/`](../research/); how the fix works is in [HOW-IT-WORKS.md](HOW-IT-WORKS.md); current test results are in [STATUS.md](STATUS.md).

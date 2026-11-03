@@ -5,10 +5,10 @@
 **`Firmware write refused: need one healthy physical ITE keyboard; found 0`**
 The keyboard is in its broken state, so the updater cannot reach it. Get it typing again first — hold the power button about 10 seconds until fully off and turn on, let the battery drain completely, or use whatever method works for you — then try again.
 
-**`Bootloader reset dependency differs; exp3/exp4 not installed, no erase performed`**
+**`Bootloader reset dependency differs; exp3/exp4/exp6/exp7/exp9 not installed, no erase performed`**
 Your keyboard chip's built-in recovery code is not the one this fix was tested on. Nothing was changed. Do not try to force it; open a GitHub issue with the log from the `logs` folder.
 
-**`... permits only exact stock44, exp1, exp3 or exp4 ...`**
+**`... permits only exact stock44, exp1, exp3, exp4, exp6, exp7, exp8 or exp9 ...`**
 You selected a firmware file that is not one of the known files. Use the files from the download only.
 
 ## The write stopped part-way
@@ -22,7 +22,7 @@ The keyboard's update mode sometimes stops answering during a long transfer. Thi
 - If it cannot find the keyboard: hold the power button 10 seconds, turn on, and try again. The keyboard comes up in update mode by itself because the half-written firmware falls through into the recovery program.
 - If it fails three times in a row, stop and open an issue with the `logs` folder.
 
-## The keyboard still dies after a restart with exp4
+## The keyboard still dies after a restart with exp7
 
 1. Wait 30 seconds without touching anything — note whether it comes back by itself.
 2. Hold power 10 seconds to recover it.
@@ -44,7 +44,7 @@ Get the keyboard typing first (10-second power hold, battery drain, or whatever 
 
 Then **Validate firmware → Advanced firmware write → Yes**, as in the install guide. Your own pre-install backup is in the `logs` folder (`before-flash-….bin`), for reference.
 
-## Known side effects of exp4
+## Known side effects of exp7
 
 - Keyboard backlight flashes once at power-off: normal.
 - The built-in keyboard cannot wake the laptop from Sleep. Use the power button or lid.

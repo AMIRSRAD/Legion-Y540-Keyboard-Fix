@@ -677,6 +677,7 @@ int main(int argc, char **argv)
     reset_dependency_tests(directory, "44-reset-exp4.bin", firmware, cfg);
     reset_dependency_tests(directory, "44-reset-exp6.bin", firmware, cfg);
     reset_dependency_tests(directory, "44-reset-exp7.bin", firmware, cfg);
+    reset_dependency_tests(directory, "44-reset-exp9.bin", firmware, cfg);
     known_image_tests(firmware, cfg);
     boot_discovery_tests();
     readiness_tests();

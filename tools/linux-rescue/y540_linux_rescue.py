@@ -31,9 +31,10 @@ KNOWN = {
     '46521059f3ee796516dcccab0f7ada0b29057d17c18313116645cdf98599f998': 'exp6',
     'fc0d0141e9468288f11d762f69820022e2936f7b9ccbf42cff147ea24e8a28c0': 'exp7',
     '5d0312a620866d209d5a77d0c2647e27dff27e954edd67e202eff17227dea2b8': 'exp8',
+    'a7297be9c454bf8b4be7498895af3e1360479c4bebe06221dcef55dcd0df1f68': 'exp9',
 }
-WRITABLE = {'stock 44', 'exp1', 'exp3', 'exp4', 'exp6', 'exp7', 'exp8'}          # exp2/exp5 never written
-NEEDS_RESET_DEPS = {'exp3', 'exp4', 'exp6', 'exp7'}
+WRITABLE = {'stock 44', 'exp1', 'exp3', 'exp4', 'exp6', 'exp7', 'exp8', 'exp9'}          # exp2/exp5 never written
+NEEDS_RESET_DEPS = {'exp3', 'exp4', 'exp6', 'exp7', 'exp9'}
 DEP_F12C = bytes.fromhex('e4fdfcc3ed9fec9e5013e4fbe490200bf00bebb442f60dbd00010c80e622')
 DEP_F455 = bytes.fromhex('7f057e0012f12c902f507408f07fe87e0312f12c901058e04440f0538e3f75d80280fe')
 ITE_KEY = b'ITE Tech. Inc.\x00'                          # 15 bytes, as the Windows updater
@@ -315,7 +316,7 @@ def load_image(path):
     fw = open(path, 'rb').read()
     name = KNOWN.get(hashlib.sha256(fw).hexdigest())
     if len(fw) != IMAGE_SIZE or name not in WRITABLE:
-        raise Fail('%s is not an allowed image (stock 44, exp1, exp3, exp4, exp6, exp7, exp8)' % path)
+        raise Fail('%s is not an allowed image (stock 44, exp1, exp3, exp4, exp6, exp7, exp8, exp9)' % path)
     return fw, name
 
 # ------------------------------------------------------------- selftest ----

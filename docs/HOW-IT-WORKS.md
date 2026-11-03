@@ -1,4 +1,19 @@
-# How exp4 works, and the evidence behind it
+# How the fix works, and the evidence behind it
+
+## Current fix: exp7 (frame-counter watchdog)
+
+While a host is talking to a USB device it sends a Start-of-Frame every 1 ms. The IT8176 latches the frame number in `2F55:2F56` (found with a read-only probe: two reads 866 ms apart advanced exactly 866). exp7 hooks the chip's timer-0 interrupt (`330A`, ticks every ~384 µs, runs whatever the main loop is doing) with a 64-byte routine at `8A10`:
+
+- frame changed → remember it; after 16 changes the watchdog is armed; stall counter = 0
+- frame unchanged while armed → stall counter + 1; at 1024 ticks (~0.4 s) → `F455`, the bootloader's own detach-and-watchdog restart
+
+Arming needs real frames since power-on, so with the PC off it can't loop; 0.4 s is far above a USB bus reset (10–50 ms). exp7 keeps exp4's change too. Generator and model test: [`build_exp7.py`](../source/firmware/build_exp7.py), [`test_exp7.py`](../source/firmware/test_exp7.py).
+
+Why exp4 was not enough: it restarted the chip only when the firmware's own sleep check passed, and after normal use that check is often vetoed (activity locks) so nothing happened at shutdown.
+
+Also found in the [full decompile](../research/analysis/firmware-44-full-decompile/README.md): the stock bus-reset handler (`39DA`) only re-initialises USB (including clearing the device address) on the first reset after power-on, until the chip has slept. **exp8** removes that check (2 bytes); on its own it did not fix the keyboard. **exp9** = exp7 + exp8 is kept as an untested spare.
+
+## Earlier fix: exp4
 
 ## The hardware
 

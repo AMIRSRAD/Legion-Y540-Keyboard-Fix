@@ -1,6 +1,6 @@
 # Test status
 
-**Current state (3 Nov):** a full decompile of firmware 44 found the likely root cause: the keyboard obeys only the first USB bus reset after power-on and ignores later ones until it has slept, so after a restart it can keep a stale USB address and Windows can't find it. **exp8** (stock firmware + a 2-byte fix so every reset is obeyed) is being tested — [download/Y540-Keyboard-Fix-exp8-TEST.zip](../download/Y540-Keyboard-Fix-exp8-TEST.zip), details in [the firmware map](../research/analysis/firmware-44-full-decompile/README.md). The release (exp4) stays the recommended download until exp8 is confirmed.
+**Current state (3 Nov):** **exp7** (frame-counter watchdog) is the recommended fix. On the author's laptop it works through repeated shutdowns and restarts, and the backlight flashes ~0.5 s after power-off each time. It is under longer-term test (exp4 also looked perfect at first and failed days later). exp8 alone did not fix it; exp9 (exp7 + exp8) is an untested spare.
 
 ## Author's laptop
 
@@ -20,8 +20,8 @@ Lenovo Legion Y540-15IRH (81SX), BIOS BHCN35WW, Windows 11 26200.
 | 2 Nov | exp4 restored | Linux live-USB rescue ([tools/linux-rescue](../tools/linux-rescue/)) | **recovered**, keyboard working again |
 | 2 Nov | exp6 (exp4 without activity vetoes) | normal shutdown | **failed** — no flash, dead in Windows |
 | 2 Nov | exp4/exp6 | read-only probe | found the USB frame counter (2F55:2F56) |
-| 3 Nov | exp7 (exp4 + frame-counter watchdog) | built | kept as fallback, not tested |
-| 3 Nov | **exp8** (stock + bus-reset fix) | installing | testing |
+| 3 Nov | exp8 (stock + bus-reset fix) | restarts / shutdowns | **failed** — backlight stays on through shutdown, dead in Windows |
+| 3 Nov | **exp7** (exp4 + frame-counter watchdog) | repeated restarts and shutdowns | **works** — flash ~0.5 s after power-off, keyboard fine in Windows; long-term test ongoing |
 
 ## Other laptops
 

@@ -1,4 +1,4 @@
-# Installing the Y540 keyboard fix (exp4) — step by step
+# Installing the Y540 keyboard fix (exp7) — step by step
 
 Time needed: about 5 minutes. No programming knowledge needed.
 
@@ -32,14 +32,14 @@ Log in and check that the built-in keyboard types. Then continue.
 ## 3. Open the updater
 
 Double-click **`INSTALL THE FIX.cmd`** and click **Yes** on the Windows prompt.
-Check the window title reads **`Y540 fix10 - Reset-instead-of-sleep exp4 (506A)`** and the firmware box shows `44-reset-exp4.bin`.
+Check the window title reads **`Y540 fix13 - Keyboard fix exp7 (3289)`** and the firmware box shows `44-reset-exp7.bin`.
 
 ## 4. Validate
 
 Click **Validate firmware**. The log must show:
 
 ```
-Validated 55296 bytes. Sum=506A stored=506A residual=0000.
+Validated 55296 bytes. Sum=3289 stored=3289 residual=0000.
 ```
 
 ## 5. Write

@@ -418,7 +418,7 @@ static void start_update(HWND owner)
     if (!verify_or_plan(firmware_path, ini_path, NULL)) return;
     if (MessageBoxA(owner,
         "Write selected keyboard firmware (048D:C100 / boot 048D:89DB)?\n\n"
-        "This writes the selected firmware. Default exp8 (5662) is the original Lenovo firmware with one 2-byte change: the keyboard handles every USB reset from the PC (stock ignores all but the first until it has slept, so it can keep a stale USB address after a restart). Sleep and wake are unchanged. It has not been tested on hardware; the keyboard re-connects instead of sleeping and cannot wake the PC from sleep. Exp3/4/6/7 require matching reset code on this device before erase. Select 44-reset-exp4.bin (506A), 44-recovery-exp3.bin (0699) or 44-nosleep-exp1.bin (5642) to return to those. Keep external input available. "
+        "This writes the selected firmware. Default exp7 (3289) restarts the keyboard controller through its existing bootloader reset sequence when the PC stops sending USB frames for about 0.4 s (shutdown, restart, sleep, BIOS-to-Windows handover), so every boot meets a freshly started keyboard. The keyboard cannot wake the PC from sleep. It has not been tested on hardware; the keyboard re-connects instead of sleeping and cannot wake the PC from sleep. Exp3/4/6/7/9 require matching reset code on this device before erase. Select 44-reset-exp4.bin (506A), 44-recovery-exp3.bin (0699) or 44-nosleep-exp1.bin (5642) to return to those. Keep external input available. "
         "A complete backup is saved before erase; exact known-image hashes need one read, other images need two matching reads. "
         "Keep AC power connected, do not touch the keyboard or close the window, and do not interrupt erase/write.",
         "Update keyboard firmware", MB_YESNO | MB_ICONQUESTION | MB_DEFBUTTON2) != IDYES) return;
@@ -557,7 +557,7 @@ static LRESULT CALLBACK window_proc(HWND window, UINT message, WPARAM wparam, LP
                 14, 170, 752, 315, ID_LOG);
         log_window = GetDlgItem(window, ID_LOG);
         SendMessageA(log_window, EM_SETLIMITTEXT, 1024 * 1024, 0);
-        output("Y540 fix13 - exp8 bus-reset fix (boot-mode contact as fix9)\r\n"
+        output("Y540 fix13 - exp7 frame watchdog (boot-mode contact as fix9)\r\n"
                "Start with Diagnose + save log. Retry USB is separate and never flashes firmware.\r\n"
                "A failed device descriptor has no usable keyboard HID interface.\r\n"
                "Advanced firmware writing requires healthy identity and a saved full backup.\r\n\r\n");
@@ -612,10 +612,10 @@ static void default_paths(void)
     slash = strrchr(executable, '\\');
     if (slash) *slash = 0;
     if (strlen(executable) > PATH_CAP - 32) return;
-    strcpy(firmware_path, executable); strcat(firmware_path, "/44-busreset-exp8.bin");
+    strcpy(firmware_path, executable); strcat(firmware_path, "/44-reset-exp7.bin");
     strcpy(ini_path, executable); strcat(ini_path, "/SHFU.ini");
     if (GetFileAttributesA(firmware_path) == INVALID_FILE_ATTRIBUTES) {
-        strcpy(firmware_path, executable); strcat(firmware_path, "/../samples/44-busreset-exp8.bin");
+        strcpy(firmware_path, executable); strcat(firmware_path, "/../samples/44-reset-exp7.bin");
     }
     if (GetFileAttributesA(ini_path) == INVALID_FILE_ATTRIBUTES) {
         strcpy(ini_path, executable); strcat(ini_path, "/../samples/SHFU.ini");
@@ -633,7 +633,7 @@ static int gui(int smoke)
     cls.hCursor = LoadCursor(NULL, IDC_ARROW); cls.hbrBackground = (HBRUSH)(COLOR_BTNFACE + 1);
     cls.lpszClassName = "Y540ResearchUpdater";
     if (!RegisterClassA(&cls)) return 1;
-    window = CreateWindowA(cls.lpszClassName, "Y540 fix13 - Bus-reset fix exp8 (5662)",
+    window = CreateWindowA(cls.lpszClassName, "Y540 fix13 - Keyboard fix exp7 (3289)",
                            WS_OVERLAPPED | WS_CAPTION | WS_SYSMENU | WS_MINIMIZEBOX,
                            CW_USEDEFAULT, CW_USEDEFAULT, 798, 540, NULL, NULL, cls.hInstance, NULL);
     if (!window) return 1;
