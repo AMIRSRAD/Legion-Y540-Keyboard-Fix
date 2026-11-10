@@ -374,7 +374,7 @@ static int rescue_then_update(const char *firmware, const char *ini)
     return 0;
 }
 
-static int dump_firmware(const char *ini, uint32_t end)
+static int dump_firmware_range(const char *ini, uint32_t start, uint32_t end)
 {
     y540_config *cfg = calloc(1, sizeof(*cfg));
     y540_hid_error error = {0};
@@ -388,18 +388,19 @@ static int dump_firmware(const char *ini, uint32_t end)
         output("Configuration error: %s\r\n", config_error); goto done;
     }
     if (!ready_for_flash()) goto done;
-    if (!y540_log_named_path(L"flash-dump-D800", out_path, 2048)) { output("Cannot allocate a dump file name.\r\n"); goto done; }
+    if (!y540_log_named_path(start ? L"flash-dump-D800" : L"flash-dump-FULL", out_path, 2048)) { output("Cannot allocate a dump file name.\r\n"); goto done; }
     {
         char text[8192];
         wide_text(out_path, text, sizeof(text));
-        output("Read-only dump of flash 0xD800..0x%05lX to: %s\r\n", (unsigned long)end, text);
+        output("Read-only dump of flash 0x%04lX..0x%05lX to: %s\r\n", (unsigned long)start, (unsigned long)end, text);
     }
-    ok = y540_dump_flash_device(cfg, out_path, 0xD800u, end, update_progress, NULL, &error);
+    ok = y540_dump_flash_device(cfg, out_path, start, end, update_progress, NULL, &error);
     if (ok) output("Dump finished; keyboard was reset back to normal mode. Verify typing.\r\n");
     else output("Dump stopped: %s (code %lu). A partial file is kept.\r\n", error.message, (unsigned long)error.code);
  done:
     free(cfg); release_device_action(guard); return ok;
 }
+static int dump_firmware(const char *ini, uint32_t end) { return dump_firmware_range(ini, 0xD800u, end); }
 
 typedef struct { HWND owner; char firmware[PATH_CAP]; char ini[PATH_CAP]; uint32_t dump_end; } update_job;
 static DWORD WINAPI update_worker(void *argument)
@@ -685,6 +686,8 @@ int main(int argc, char **argv)
         y540_set_probe_mode(1);
         return begin_session("cli-read-only-probe") && dump_firmware(argv[2], 0x10000u) ? 0 : 1;
     }
+    if (!strcmp(argv[1], "--dump-all") && argc == 3)   /* fix14: whole 64 KiB, app + bootloader */
+        return begin_session("cli-read-only-full-dump") && dump_firmware_range(argv[2], 0u, 0x10000u) ? 0 : 1;
     if (!strcmp(argv[1], "--dump-flash") && (argc == 3 || argc == 4)) {
         uint32_t end = 0x10000u;
         if (argc == 4) {
@@ -704,6 +707,7 @@ int main(int argc, char **argv)
            "  Y540Updater.exe --rescue FIRMWARE INI    Catch a restart-looping keyboard, then update\r\n"
            "  Y540Updater.exe --diagnose                Save read-only PnP/power diagnostics\r\n"
            "  Y540Updater.exe --dump-flash INI [ENDHEX] Read-only dump of flash 0xD800..END (default 10000)\r\n"
+           "  Y540Updater.exe --dump-all INI            Read-only dump of the whole flash 0000..FFFF\r\n"
            "  Y540Updater.exe --list                    Enumerate HID metadata\r\n"
            "  Y540Updater.exe --help                    Show this help\r\n\r\n"
            "Use Diagnose first. USB recovery is an explicit GUI action. No recovery is claimed verified on hardware.\r\n");

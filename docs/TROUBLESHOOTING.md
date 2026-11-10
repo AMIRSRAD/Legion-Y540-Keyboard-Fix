@@ -54,3 +54,8 @@ Then **Validate firmware → Advanced firmware write → Yes**, as in the instal
 - Keyboard backlight flashes once at power-off: normal.
 - The built-in keyboard cannot wake the laptop from Sleep. Use the power button or lid.
 - If Windows is allowed to switch the keyboard off when idle, the first key after a long idle may be lost while it reconnects. To avoid it: Device Manager → *Universal Serial Bus controllers* → the device on *Port_#0009* → *Power Management* → untick *Allow the computer to turn off this device to save power*.
+
+## Other Legion models (Y545 and similar): read-only firmware dump
+
+exp7 is a patch of **firmware 44** and is only tested on Y540s. If your keyboard reports a different revision (for example `REV_0043` on a Y545), do not flash it. Instead run the read-only dump: [Y540-Firmware-Dump.zip](https://github.com/AMIRSRAD/Legion-Y540-Keyboard-Fix/raw/main/download/Y540-Firmware-Dump.zip). It reads the whole 64 KiB of keyboard flash into a file (no erase, no write) so it can be compared with firmware 44; attach the `logs` folder to an issue.
+
