@@ -111,7 +111,7 @@ static void report_usb_suspend_policy(void)
                policy.ac_enabled?"ENABLED":"disabled",policy.dc_enabled?"ENABLED":"disabled");
     }
     if(y540_usb_suspend_may_idle_device(&policy))
-        output("NOTE: fix13 contacts the boot-mode keyboard immediately, so Windows has no time to idle it.\r\n"
+        output("NOTE: fix14 contacts the boot-mode keyboard immediately, so Windows has no time to idle it.\r\n"
                "Optional extra margin: run DISABLE-USB-SELECTIVE-SUSPEND.cmd (reversible) before updating.\r\n");
 }
 static int ready_for_flash(void)
@@ -557,7 +557,7 @@ static LRESULT CALLBACK window_proc(HWND window, UINT message, WPARAM wparam, LP
                 14, 170, 752, 315, ID_LOG);
         log_window = GetDlgItem(window, ID_LOG);
         SendMessageA(log_window, EM_SETLIMITTEXT, 1024 * 1024, 0);
-        output("Y540 fix13 - exp7 frame watchdog (boot-mode contact as fix9)\r\n"
+        output("Y540 fix14 - exp7 frame watchdog (boot-mode contact as fix9)\r\n"
                "Start with Diagnose + save log. Retry USB is separate and never flashes firmware.\r\n"
                "A failed device descriptor has no usable keyboard HID interface.\r\n"
                "Advanced firmware writing requires healthy identity and a saved full backup.\r\n\r\n");
@@ -633,7 +633,7 @@ static int gui(int smoke)
     cls.hCursor = LoadCursor(NULL, IDC_ARROW); cls.hbrBackground = (HBRUSH)(COLOR_BTNFACE + 1);
     cls.lpszClassName = "Y540ResearchUpdater";
     if (!RegisterClassA(&cls)) return 1;
-    window = CreateWindowA(cls.lpszClassName, "Y540 fix13 - Keyboard fix exp7 (3289)",
+    window = CreateWindowA(cls.lpszClassName, "Y540 fix14 - Keyboard fix exp7 (3289)",
                            WS_OVERLAPPED | WS_CAPTION | WS_SYSMENU | WS_MINIMIZEBOX,
                            CW_USEDEFAULT, CW_USEDEFAULT, 798, 540, NULL, NULL, cls.hInstance, NULL);
     if (!window) return 1;
@@ -659,7 +659,7 @@ static int gui(int smoke)
 int main(int argc, char **argv)
 {
     if (argc == 1) {
-        begin_session("gui-fix13");
+        begin_session("gui-fix14");
         HWND console = GetConsoleWindow();
         DWORD processes[2];
         if (console && GetConsoleProcessList(processes, 2) == 1) ShowWindow(console, SW_HIDE);
@@ -696,7 +696,7 @@ int main(int argc, char **argv)
         return begin_session("cli-read-only-flash-dump") && dump_firmware(argv[2], end) ? 0 : 1;
     }
     if (!strcmp(argv[1], "--list") && argc == 2) return begin_session("cli-hid-metadata") && list_devices() ? 0 : 1;
-    output("Y540 fix13 - USB recovery and source updater\r\n\r\n"
+    output("Y540 fix14 - USB recovery and source updater\r\n\r\n"
            "  Y540Updater.exe                          Open GUI\r\n"
            "  Y540Updater.exe --verify FIRMWARE INI     Validate size and checksum\r\n"
            "  Y540Updater.exe --plan FIRMWARE INI JSON  Export staging-only packet plan\r\n"

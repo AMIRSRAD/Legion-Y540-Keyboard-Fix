@@ -25,4 +25,11 @@ Lenovo Legion Y540-15IRH (81SX), BIOS BHCN35WW, Windows 11 26200.
 
 ## Other laptops
 
-None reported yet. Please open an issue with your model, BIOS version and result.
+| Model | BIOS | Firmware | Result | Report |
+|---|---|---|---|---|
+| Y540-15IRH (81SX) | BHCN45WW | exp7 | **works** — restart, shutdown, sleep | [#1](https://github.com/AMIRSRAD/Legion-Y540-Keyboard-Fix/issues/1) |
+| **Y540-17IRH (81Q4)**, 17-inch | BHCN45WW, EC 1.45 | exp7 | **works** (early) | [#4](https://github.com/AMIRSRAD/Legion-Y540-Keyboard-Fix/issues/4) |
+| Y540 | — | exp7 | install stopped during the backup read (bootloader stall, code 31), nothing erased; fix14 updater now retries stalled reads | [#5](https://github.com/AMIRSRAD/Legion-Y540-Keyboard-Fix/issues/5) |
+| Y545 (81Q6) | BHCN45WW | firmware **43** (`REV_0043`) | **not supported yet** — exp7 is a patch of firmware 44; fix14 refuses to write it onto other firmware | [#3](https://github.com/AMIRSRAD/Legion-Y540-Keyboard-Fix/issues/3) |
+
+Please open an issue with your model, BIOS version and result.

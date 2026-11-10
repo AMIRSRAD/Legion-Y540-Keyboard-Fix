@@ -21,6 +21,7 @@ typedef struct {
     uint8_t last_command, handshake_id;
     int custom_enabled, fail_boot, fail_handshake_read, mismatch_handshake;
     int no_d1_echo, backup_change, fail_backup_read, fail_chip_write;
+    unsigned stall_read_at;  /* fix14: fail exactly one D1 read (code 31 stall) */
     uint16_t chip;
 } emulator;
 
@@ -118,6 +119,12 @@ static int feature(void *context, int write, uint8_t report[64], size_t report_b
                 return 0;
             }
             ++e->reads;
+            if (e->stall_read_at && e->reads == e->stall_read_at) {
+                e->stall_read_at = 0;
+                error->code = 31;
+                strcpy(error->message, "injected one-off bootloader stall");
+                return 0;
+            }
             if (e->fail_backup_read && !e->commits) {
                 error->code = 459;
                 strcpy(error->message, "injected backup read failure");
@@ -459,6 +466,14 @@ static void reset_dependency_tests(const char *directory, const char *candidate_
     for (unsigned i = 0; i < e->commits; ++i) CHECK(e->commit_address[i] + 1024 <= IMAGE_SIZE);
     delete_backup();
 
+    /* fix14: one stalled backup read is re-requested and the install completes. */
+    setup(e, &t); memcpy(e->flash, stock, IMAGE_SIZE);
+    memcpy(e->upper, upper, 0x2800); e->upper_valid = 1;
+    e->stall_read_at = 2u + 815u;
+    CHECK(program(&t, candidate, IMAGE_SIZE, cfg, &error));
+    CHECK(e->resets == 1 && !memcmp(e->flash, candidate, IMAGE_SIZE));
+    delete_backup();
+
     /* fix10: resume after a write interrupted at block 0x5800 (block 0 blank). */
     {
         uint8_t *partial = malloc(IMAGE_SIZE);
@@ -472,12 +487,12 @@ static void reset_dependency_tests(const char *directory, const char *candidate_
             CHECK(e->reads == 2u + 2u * ((IMAGE_SIZE + 55u) / 56u));
             CHECK(e->resets == 1 && !memcmp(e->flash, candidate, IMAGE_SIZE));
             delete_backup();
-            partial[0x1234] ^= 0x01; /* not a clean interrupted write: two reads again */
+            partial[0x1234] ^= 0x01; /* fix14: unknown content gets no patched image */
             setup(e, &t); memcpy(e->flash, partial, IMAGE_SIZE);
             memcpy(e->upper, upper, 0x2800); e->upper_valid = 1;
-            CHECK(program(&t, candidate, IMAGE_SIZE, cfg, &error));
-            CHECK(e->reads == 2u + 3u * ((IMAGE_SIZE + 55u) / 56u));
-            CHECK(e->resets == 1 && !memcmp(e->flash, candidate, IMAGE_SIZE));
+            CHECK(!program(&t, candidate, IMAGE_SIZE, cfg, &error));
+            CHECK(strstr(error.message, "does not hold firmware 44") != NULL);
+            CHECK(e->erases == 0 && !memcmp(e->flash, partial, IMAGE_SIZE));
             delete_backup();
             free(partial);
         }

@@ -90,7 +90,20 @@ static int read_flash(y540_hid_transport *t, uint32_t addr, uint8_t *out,
     p[2] = (uint8_t)(a >> 8);
     p[3] = (uint8_t)(a >> 16);
     p[4] = (uint8_t)n;
-    if (!send(t, p, n + 5, e) || !y540_hid_receive(t, p, n + 5, e)) {
+    /* fix14: a stalled read (code 31) is re-requested after a pause before giving up;
+     * the D1 command is idempotent, so re-sending it cannot change the flash. */
+    int got = 0;
+    for (int tries = 0; tries < 4 && !got; ++tries) {
+      if (tries) {
+        delay(t, 500u * (uint32_t)tries);
+        memset(p, 0, sizeof(p));
+        p[0] = 0xd1; p[1] = (uint8_t)a; p[2] = (uint8_t)(a >> 8);
+        p[3] = (uint8_t)(a >> 16); p[4] = (uint8_t)n;
+        note(progress, ctx, "Flash read stalled; re-requesting the same block", (size_t)tries, 3u);
+      }
+      got = send(t, p, n + 5, e) && y540_hid_receive(t, p, n + 5, e);
+    }
+    if (!got) {
       char previous[96];
       snprintf(previous, sizeof(previous), "%.90s", e->message);
       snprintf(e->message, sizeof(e->message),
@@ -488,6 +501,13 @@ static int boot_program(y540_hid_transport *t, const uint8_t *fw, size_t size,
     } else if (size == 54u * 1024u && image_index(fw, size) >= 0 &&
                interrupted_write_of(fw, readback, size)) {
       note(progress, ctx, "Read equals an interrupted write of the selected image (blank or matching blocks); second read not needed", size, size);
+    } else if (image_index(fw, size) > 0) {
+      /* fix14: every patched image is a patch of firmware 44. A chip holding anything
+       * else (e.g. Y545 firmware 43) gets no patched image; stock 44 stays allowed. */
+      fail(e, "This keyboard does not hold firmware 44 or a known patch of it; patched firmware "
+              "is only for firmware 44, no erase performed. If an earlier write of another "
+              "image was interrupted, write that same image again first");
+      goto done;
     } else {
       note(progress, ctx, "Confirm backup with second independent read", 0, size);
       if (!read_flash(t, 0, second, size, progress, ctx, e))

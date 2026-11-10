@@ -32,7 +32,7 @@ Log in and check that the built-in keyboard types. Then continue.
 ## 3. Open the updater
 
 Double-click **`INSTALL THE FIX.cmd`** and click **Yes** on the Windows prompt.
-Check the window title reads **`Y540 fix13 - Keyboard fix exp7 (3289)`** and the firmware box shows `44-reset-exp7.bin`.
+Check the window title reads **`Y540 fix14 - Keyboard fix exp7 (3289)`** and the firmware box shows `44-reset-exp7.bin`.
 
 ## 4. Validate
 

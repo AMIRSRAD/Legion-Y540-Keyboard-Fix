@@ -5,17 +5,22 @@
 **`Firmware write refused: need one healthy physical ITE keyboard; found 0`**
 The keyboard is in its broken state, so the updater cannot reach it. Get it typing again first — hold the power button about 10 seconds until fully off and turn on, let the battery drain completely, or use whatever method works for you — then try again.
 
+**`This keyboard does not hold firmware 44 or a known patch of it`** — your keyboard runs other firmware (for example the Y545's version 43). Nothing was changed. exp7 is only for firmware 44; please open an issue.
+
 **`Bootloader reset dependency differs; exp3/exp4/exp6/exp7/exp9 not installed, no erase performed`**
 Your keyboard chip's built-in recovery code is not the one this fix was tested on. Nothing was changed. Do not try to force it; open a GitHub issue with the log from the `logs` folder.
 
 **`... permits only exact stock44, exp1, exp3, exp4, exp6, exp7, exp8 or exp9 ...`**
 You selected a firmware file that is not one of the known files. Use the files from the download only.
 
-## The write stopped part-way
+## The backup or write stopped part-way
 
-Example: `Update stopped: HidD_SetFeature failed (code 31).`
+Example: `Update stopped: HidD_SetFeature failed (code 31).` or `HidD_GetFeature failed at flash 0x…: bootloader stopped answering (code 31)`.
 
-The keyboard's update mode sometimes stops answering during a long transfer. This happened once during testing.
+The keyboard's update mode sometimes stops answering during a long transfer. Since fix14 the updater re-requests a stalled read up to three times by itself. If it still stops:
+
+- **If it stopped during "Read complete update region for backup", nothing was erased.** Hold the power button 10 seconds, turn on, and the keyboard types normally again.
+- Turn off USB selective suspend for the install: right-click `optional-usb-power\DISABLE-USB-SELECTIVE-SUSPEND.cmd` → **Run as administrator** (undo afterwards with `RESTORE-USB-SELECTIVE-SUSPEND.cmd`). Keep the charger connected.
 
 - The keyboard will **not type** until a write completes, but its **recovery (boot) area is never erased**, so it can always be written again.
 - Run `INSTALL THE FIX.cmd` again and write again. The updater recognises a half-finished write and continues safely.
