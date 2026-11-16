@@ -59,3 +59,7 @@ Then **Validate firmware → Advanced firmware write → Yes**, as in the instal
 
 exp7 is a patch of **firmware 44** and is only tested on Y540s. If your keyboard reports a different revision (for example `REV_0043` on a Y545), do not flash it. Instead run the read-only dump: [Y540-Firmware-Dump.zip](https://github.com/AMIRSRAD/Legion-Y540-Keyboard-Fix/raw/main/download/Y540-Firmware-Dump.zip). It reads the whole 64 KiB of keyboard flash into a file (no erase, no write) so it can be compared with firmware 44; attach the `logs` folder to an issue.
 
+
+## The keyboard is dead even aftera 10-second hold, battery drain, or battery removal
+
+Seen on BIOS BHCN45WW laptops ([#6](https://github.com/AMIRSRAD/Legion-Y540-Keyboard-Fix/issues/6), [#7](https://github.com/AMIRSRAD/Legion-Y540-Keyboard-Fix/issues/7)). The keyboard works in the BIOS and boot menu, but Windows and Linux can't enumerate it (`device descriptor read/64, error -71`). The updater and the Linux rescue can't reach the chip from an OS in this state. One reporter fixed it by writing exp7 from UEFI, where the firmware's own USB stack can still talk to the chip: see [issue #7](https://github.com/AMIRSRAD/Legion-Y540-Keyboard-Fix/issues/7). That tool is community-made, unreviewed by the project and tested on one laptop; read its source before running it.
