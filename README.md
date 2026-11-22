@@ -48,6 +48,8 @@ If you try it, please report back (GitHub issue): your model, what you tested (r
 | [`docs/`](docs/) | Install guide, troubleshooting, how it started and how it was found, how it works, test status, trace findings |
 | [`source/`](source/) | Updater C source, firmware generators (`build_exp4.py` … `build_exp9.py`) and tests — see [source/BUILD.md](source/BUILD.md) |
 | [`tools/boot-trace-kit/`](tools/boot-trace-kit/) | The boot-time USB trace scripts |
+| [`tools/uefi-flash/`](tools/uefi-flash/) | Community UEFI flasher (by adameq, public domain) for keyboards that are dead even after a full power cut |
+| [`tools/linux-rescue/`](tools/linux-rescue/) | Linux live-USB rescue for a restart-looping keyboard |
 | [`research/`](research/) | The full firmware decompile and the earlier investigation (fix1–fix9, exp1–exp3, firmware/BIOS/board analysis, preservation archive) — see [research/README.md](research/README.md) |
 
 Not affiliated with Lenovo or ITE. Firmware images in the download are Lenovo's firmware 44 and small patches of it; the original is Lenovo's public package `ite1fw11s.exe`.

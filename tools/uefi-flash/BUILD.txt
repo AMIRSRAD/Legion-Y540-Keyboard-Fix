@@ -1,0 +1,16 @@
+UEFI tools used to recover a Legion Y540 keyboard (ITE IT8176, fw 44) from UEFI.
+
+fw_images.h is not included: generate it from download/Y540-Keyboard-Fix.zip
+(44-reset-exp7.bin -> FW_EXP7, other-firmware/44-original-lenovo.bin -> FW_STOCK44,
+as unsigned char[55296] arrays).
+
+Build (clang + lld):
+  clang -target x86_64-unknown-windows -ffreestanding -fshort-wchar -mno-red-zone \
+        -fno-stack-protector -fno-builtin -O2 -c flash.c -o flash.o
+  lld-link /subsystem:efi_application /entry:efi_main /nodefaultlib /out:ite_flash.efi flash.o
+  (same for probe.c -> ite_probe.efi)
+
+Host test of the protocol against a FakeBoot-style model:
+  gcc -O1 -o host_test host_test.c && ./host_test
+
+Launch from Limine: edit an entry (E), set  path: boot():/EFI/ite/ite_flash.efi , F10.
