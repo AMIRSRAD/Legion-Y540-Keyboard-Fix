@@ -33,6 +33,6 @@ Lenovo Legion Y540-15IRH (81SX), BIOS BHCN35WW, Windows 11 26200.
 | Y545 (81Q6) | BHCN45WW | firmware **43** (`REV_0043`) | **not supported yet** — exp7 is a patch of firmware 44; fix14 refuses to write it onto other firmware | [#3](https://github.com/AMIRSRAD/Legion-Y540-Keyboard-Fix/issues/3) |
 | Y545 (second owner) | — | firmware **44** (`REV_0044`) | dump is byte-identical to the Y540's firmware 44 and bootloader; exp7 should apply, **not yet tried** | [#3](https://github.com/AMIRSRAD/Legion-Y540-Keyboard-Fix/issues/3) |
 | Y540-15IRH, BHCN45WW | BHCN45WW | stock 44 → exp7 **from UEFI** | keyboard dead even after full power removal; **works** after exp7 written with [tools/uefi-flash](../tools/uefi-flash/README.md) (two laptops) | [#7](https://github.com/AMIRSRAD/Legion-Y540-Keyboard-Fix/issues/7), [#6](https://github.com/AMIRSRAD/Legion-Y540-Keyboard-Fix/issues/6) |
-| Y540-15IRH-PG0 | — | not firmware 44 | updater refused ("Firmware not 44"); dump requested | [#8](https://github.com/AMIRSRAD/Legion-Y540-Keyboard-Fix/issues/8) |
+| Y540-15IRH-PG0 | BHCN45WW | not firmware 44 | updater refused ("Firmware not 44"); then **fixed in hardware** by replacing the L23 choke with wire links — works perfectly; dump requested | [#8](https://github.com/AMIRSRAD/Legion-Y540-Keyboard-Fix/issues/8) |
 
 Please open an issue with your model, BIOS version and result.

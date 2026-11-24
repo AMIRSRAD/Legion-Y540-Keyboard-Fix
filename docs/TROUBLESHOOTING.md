@@ -63,3 +63,14 @@ exp7 is a patch of **firmware 44** and is only tested on Y540s. If your keyboard
 ## The keyboard is dead even aftera 10-second hold, battery drain, or battery removal
 
 Seen on BIOS BHCN45WW laptops ([#6](https://github.com/AMIRSRAD/Legion-Y540-Keyboard-Fix/issues/6), [#7](https://github.com/AMIRSRAD/Legion-Y540-Keyboard-Fix/issues/7)). The keyboard works in the BIOS and boot menu, but Windows and Linux can't enumerate it (`device descriptor read/64, error -71`). The updater and the Linux rescue can't reach the chip from an OS in this state. Two reporters fixed it by writing exp7 from UEFI, where the firmware's own USB stack can still talk to the chip: see [tools/uefi-flash](../tools/uefi-flash/README.md) (community tool by adameq, public domain; [#7](https://github.com/AMIRSRAD/Legion-Y540-Keyboard-Fix/issues/7), [#6](https://github.com/AMIRSRAD/Legion-Y540-Keyboard-Fix/issues/6)). You compile it yourself; it is tested on two laptops, so read the README and the source first.
+
+## Hardware route: the L23 choke (soldering, last resort)
+
+Some owners fixed the same symptoms in hardware instead of firmware. **L23** is the small common-mode choke on the USB 2.0 lines (USB20_P9) between the chipset and the keyboard controller. Reports:
+
+- A repairer on [vlab.su](https://vlab.su/viewtopic.php?f=58&t=136509) measured USB20_P9 with an oscilloscope, traced the problem to L23, and fixed it by replacing L23; the original controller then worked without reflashing.
+- Two users on [Reddit](https://www.reddit.com/r/Lenovo/comments/gswrt6/comment/jtz5mxc/) bridged L23, and their keyboards have survived reboots since.
+- A Y540-15IRH-PG0 owner (BIOS BHCN45WW, [#8](https://github.com/AMIRSRAD/Legion-Y540-Keyboard-Fix/issues/8)) removed L23 and replaced it with two wire links; the keyboard works perfectly.
+
+This is not part of this project and I have not tried it. It involves opening the laptop and soldering on a dense board, can damage it, and removes the filter that protects the USB line. Try the firmware fix first (exp7, or the [UEFI tool](../tools/uefi-flash/README.md) if the keyboard is dead even after a full power cut); consider the hardware route only if those do not help, and preferably have a repair shop do it.
+
