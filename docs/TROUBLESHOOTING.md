@@ -53,6 +53,8 @@ Then **Validate firmware → Advanced firmware write → Yes**, as in the instal
 
 - Keyboard backlight flashes once at power-off: normal.
 - The built-in keyboard cannot wake the laptop from Sleep. Use the power button or lid.
+- After sleep/wake the keyboard backlight starts **off** (the chip restarts); switch it on with the backlight key ([#4](https://github.com/AMIRSRAD/Legion-Y540-Keyboard-Fix/issues/4)).
+- The **Num Lock light may be out of sync** after a restart: the light is off while Windows treats Num Lock as on, so the numpad types digits. Press Num Lock twice to resync ([#2](https://github.com/AMIRSRAD/Legion-Y540-Keyboard-Fix/issues/2)). Not yet investigated in the firmware.
 - If Windows is allowed to switch the keyboard off when idle, the first key after a long idle may be lost while it reconnects. To avoid it: Device Manager → *Universal Serial Bus controllers* → the device on *Port_#0009* → *Power Management* → untick *Allow the computer to turn off this device to save power*.
 
 ## Other Legion models (Y545 and similar): read-only firmware dump
@@ -73,4 +75,13 @@ Some owners fixed the same symptoms in hardware instead of firmware. **L23** is 
 - A Y540-15IRH-PG0 owner (BIOS BHCN45WW, [#8](https://github.com/AMIRSRAD/Legion-Y540-Keyboard-Fix/issues/8)) removed L23 and replaced it with two wire links; the keyboard works perfectly.
 
 This is not part of this project and I have not tried it. It involves opening the laptop and soldering on a dense board, can damage it, and removes the filter that protects the USB line. Try the firmware fix first (exp7, or the [UEFI tool](../tools/uefi-flash/README.md) if the keyboard is dead even after a full power cut); consider the hardware route only if those do not help, and preferably have a repair shop do it.
+
+## Windows blocks the program (Smart App Control / SmartScreen)
+
+The updater and the dump tool are **not code-signed** (a certificate costs money and this is a hobby project), so Windows 11 *Smart App Control* can block them even though Defender and VirusTotal find nothing. The ZIP contains `SHA256SUMS.txt` so you can verify the files, and the full source is in [`source/`](../source/), so you can build it yourself (also unsigned).
+
+- **SmartScreen** ("Windows protected your PC"): *More info → Run anyway*.
+- **Smart App Control** has no "run anyway". Turning it off (Windows Security → App & browser control → Smart App Control) has historically been **permanent until Windows is reinstalled**; check Microsoft's current guidance before doing it.
+- **Alternative without touching Windows settings:** use a Linux live USB and the [Linux tool](../tools/linux-rescue/): `sudo python3 y540_linux_rescue.py 44-reset-exp7.bin` (copy `44-reset-exp7.bin` from the download ZIP next to it). It follows the same steps as the updater (chip check, bootloader check, backup, erase, write, verify). It was written for a restart-looping keyboard and has been used on real hardware once; its offline self-test passes (`python3 y540_linux_rescue.py --selftest 44-reset-exp7.bin`). There is no dump-only mode; the backup it saves before writing is a full dump.
+- **Other option:** the [UEFI tool](../tools/uefi-flash/README.md) runs outside Windows entirely and has a backup-only mode (compile it yourself).
 
